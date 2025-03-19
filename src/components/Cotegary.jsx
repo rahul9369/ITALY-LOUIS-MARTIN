@@ -45,7 +45,7 @@ const Categories = () => {
   ];
 
   return (
-    <div className="bg-white py-10  flex flex-col items-center">
+    <div className="bg-white   flex flex-col items-center">
       {/* Section Title */}
       <div className="w-full text-center max-w-7xl">
         <h2 className="text-5xl font-bold text-gray-900 flex items-center justify-center">
@@ -58,12 +58,12 @@ const Categories = () => {
         {categories.map((category, index) => (
           <div key={index} className="flex flex-col items-center">
             <div
-              className="w-84 h-84 md:w-84 md:h-84 bg-white cursor-pointer hover:scale-95 rounded-md shadow-md flex items-center justify-center border border-gray-200 hover:shadow-lg transition-all overflow-hidden"
+              className="w-84 h-84 md:w-[100%] md:h-96 bg-white cursor-pointer hover:scale-95 rounded-md shadow-md flex items-center justify-center border border-gray-200 hover:shadow-lg transition-all overflow-hidden"
               onClick={() => navigate(category.path)}>
               <img
                 src={category.img}
                 alt={category.name}
-                className="w-full h-full object-contain"
+                className="w-[100%] h-full object-fit"
               />
             </div>
             <p className="text-lg font-medium text-gray-800 mt-3">
