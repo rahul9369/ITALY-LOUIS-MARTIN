@@ -2,36 +2,78 @@ import React from "react";
 import Linearray from "../assets/Linerarray.jpg";
 import Footer from "../components/Footer";
 import Linear from "../assets/Famousmartin1.jpg";
+import Q50 from "../assets/Q50.jpg";
+import Q60 from "../assets/Q60.jpg";
+import Q70 from "../assets/Q70.jpg";
+import Q80 from "../assets/Q80.jpg";
+import Cox12 from "../assets/cox12.jpg";
 
 const products = [
   {
     img: Linear,
-    title: "Xcellence Series",
-    model: "X212AFD",
+    title: "Line array Series",
+    model: "Famous 210",
     description: '2x 12"+ 4x6"+ 2x3" SELF-POWERED TRI-AMPLIFIED',
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     response: "42 Hz – 18 kHz",
+    Sensitivity: "103 dB",
     spl: "141 dB (musical program)",
     weight: "64.6 kg",
   },
   {
-    img: Linear,
-    title: "Xcellence Series",
-    model: "XA211",
+    img: Q50,
+    title: "Line Array Series",
+    model: "Q50",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
+    Sensitivity: "103 dB",
     spl: "136 dB (musical program)",
     weight: "37.4 kg",
   },
   {
-    img: Linear,
-    title: "Xcellence Series",
-    model: "XA211P",
+    img: Q60,
+    title: "Line Array Series",
+    model: "Q60",
+    description:
+      "Two-way line array module for external DSP + BI-Amplification",
+    power: "1800W (CF) + 160W (HF)",
+    response: "(± 5dB) 60Hz - 19kHz",
+    Sensitivity: "103 dB",
+    spl: " 123dB - 129dB",
+    weight: "22.8 kg",
+  },
+  {
+    img: Q70,
+    title: "Line Array Series",
+    model: "Q70",
+    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
+    response: "65 Hz – 19 kHz",
+    Sensitivity: "103 dB",
+    spl: "136 dB (musical program)",
+    weight: "37.4 kg",
+  },
+  {
+    img: Q80,
+    title: "Line Array Series",
+    model: "Q80",
+    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
+    response: "65 Hz – 19 kHz",
+    Sensitivity: "103 dB",
+    spl: "136 dB (musical program)",
+    weight: "37.4 kg",
+  },
+  {
+    img: Cox12,
+    title: "Line array Series",
+    model: "Cox12",
     description:
       "TWO-WAY LINE ARRAY MODULE FOR EXTERNAL DSP + BI-AMPLIFICATION",
     power: "1450 W (LF) + 250 W (HF)",
     response: "65 Hz – 2 kHz (LF) / 800 Hz – 19 kHz (HF)",
+    Sensitivity: "103 dB",
     spl: "136 dB (LF) / 135 dB (HF)",
     weight: "35 kg",
   },
@@ -39,24 +81,33 @@ const products = [
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 w-full text-center">
+    <div className="bg-white shadow-lg rounded-xl p-6 w-full ">
       <img
         src={product.img}
         alt={product.model}
         className="w-full h-72 object-cover rounded-lg"
       />
-      <h2 className="text-xl font-bold text-gray-800 mt-4">{product.title}</h2>
-      <h3 className="text-lg font-semibold text-gray-600">{product.model}</h3>
-      <p className="text-sm text-gray-500 my-2">{product.description}</p>
-      <p className="text-sm font-semibold text-gray-700">
-        Amplifier Power: {product.power}
+      <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
+      <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
+      <p className="text-md text-black font-bold my-2">{product.description}</p>
+      <p className="text-sm font-semibold mt-2 text-gray-700">
+        <span className="font-bold">Program Power:</span> {product.power}
       </p>
-      <p className="text-sm text-gray-700">
-        Frequency Response: {product.response}
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold"> Frequency Response:</span>{" "}
+        {product.response}
       </p>
-      <p className="text-sm text-gray-700">Max SPL: {product.spl}</p>
-      <p className="text-sm text-gray-700">Weight: {product.weight}</p>
-      <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
+        {product.Sensitivity}
+      </p>
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Max SPL:</span> {product.spl}
+      </p>
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Weight:</span> {product.weight}
+      </p>
+      <button className="mt-4 bg-orange-500  text-white px-4 py-2 rounded-lg hover:bg-orange-600">
         {product.model}
       </button>
     </div>
