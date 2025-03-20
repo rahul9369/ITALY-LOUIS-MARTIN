@@ -24,11 +24,7 @@ const About = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      <img
-        src={carausalimg2}
-        alt="About Us"
-        className="w-full h-64 object-cover"
-      />
+      <img src={carausalimg2} alt="About Us" className="w-full object-cover" />
       <h2 className="text-5xl p-5 bg-yellow-600 my-4 font-bold text-center">
         About Us
       </h2>
