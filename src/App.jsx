@@ -12,6 +12,7 @@ import Columsound from "./components/Columsoundspeaker";
 import Electronic from "./components/Electronics";
 import Productdetails from "./components/Productdetails";
 import LineArrayDetails from "./components/LineArrayDetails";
+import Distributor from "./components/Distributor";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -21,7 +22,10 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: <Hero />,
       },
-
+      {
+        path: "/distributor",
+        element: <Distributor />,
+      },
       {
         path: "/about",
         element: <About />,

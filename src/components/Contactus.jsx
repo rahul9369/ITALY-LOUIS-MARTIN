@@ -1,49 +1,127 @@
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import Footer from "./Footer";
+import Us from "../assets/Distributor/us.jpg";
+
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const emailData = {
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email, // Sender's email
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        "service_xxx123", // Replace with your EmailJS Service ID
+        "template_abc456", // Replace with your EmailJS Template ID
+        emailData,
+        "your_user_id_789xyz" // Replace with your EmailJS Public Key
+      )
+      .then(
+        (response) => {
+          alert("Message sent successfully!");
+          setFormData({ name: "", phone: "", email: "", message: "" });
+        },
+        (error) => {
+          alert("Failed to send message, please try again.");
+          console.error("Error:", error);
+        }
+      );
+  };
+
   return (
-    <div className="py-10 px-6 bg-white">
-      <h2 className="text-2xl font-bold text-center">Contact Us</h2>
-      <form className="mt-6 max-w-lg mx-auto">
-        <div className="mb-4">
-          <label
-            htmlFor="name"
-            className="block text-sm font-medium text-gray-700">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            className="mt-1 w-full border rounded p-2 focus:outline-none focus:ring focus:border-green-500"
-          />
+    <div className="min-h-screen  bg-gray-100">
+      <img src={Us} alt="img" className="w-full" />
+      <div className="w-[90%] mx-auto py-5">
+        <h1 className="text-4xl font-bold text-center py-2 bg-orange-500 rounded-md my-4">
+          Contact Us
+        </h1>
+
+        {/* Contact Info */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
+            <span className="text-orange-500 text-3xl">📞</span>
+            <h2 className="text-lg font-bold mt-2">Contact phone</h2>
+            <p className="text-gray-700">+86 13719416567</p>
+          </div>
+          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
+            <span className="text-orange-500 text-3xl">📧</span>
+            <h2 className="text-lg font-bold mt-2">Contact email</h2>
+            <p className="text-gray-700">contact@louismartinaudio.it</p>
+          </div>
+          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
+            <span className="text-orange-500 text-3xl">📍</span>
+            <h2 className="text-lg font-bold mt-2">Contact address</h2>
+            <p className="text-gray-700">
+              Via Benefactors dell'Opedaled 120159 Milano Italy
+            </p>
+          </div>
         </div>
-        <div className="mb-4">
-          <label
-            htmlFor="email"
-            className="block text-sm font-medium text-gray-700">
-            Email
-          </label>
+
+        {/* Contact Form */}
+        <h2 className="text-4xl font-bold mb-4">Online message</h2>
+        <form
+          className="bg-white shadow-lg rounded-lg p-6"
+          onSubmit={sendEmail}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Name"
+              className="p-3 border rounded-md w-full"
+              required
+            />
+            <input
+              type="text"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Phone"
+              className="p-3 border rounded-md w-full"
+              required
+            />
+          </div>
           <input
             type="email"
-            id="email"
-            className="mt-1 w-full border rounded p-2 focus:outline-none focus:ring focus:border-green-500"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Your Email"
+            className="p-3 border rounded-md w-full mb-4"
+            required
           />
-        </div>
-        <div className="mb-4">
-          <label
-            htmlFor="message"
-            className="block text-sm font-medium text-gray-700">
-            Message
-          </label>
           <textarea
-            id="message"
-            rows="4"
-            className="mt-1 w-full border rounded p-2 focus:outline-none focus:ring focus:border-green-500"></textarea>
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-green-500 text-white py-2 rounded">
-          Send
-        </button>
-      </form>
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Message content"
+            className="p-3 border rounded-md w-full mb-4 h-32"
+            required></textarea>
+          <button
+            type="submit"
+            className="w-full bg-orange-500 text-white p-3 rounded-md hover:bg-orange-600">
+            Submit now
+          </button>
+        </form>
+      </div>
+      <Footer />
     </div>
   );
 };
