@@ -4,6 +4,7 @@ import red6 from "../assets/red5.5.jpg";
 import red5 from "../assets/red5.jpg";
 import red9 from "../assets/red9.jpg";
 import red12 from "../assets/red12.jpg";
+import Footer from "./Footer";
 const products = [
   {
     img: Devilred10,
@@ -71,38 +72,41 @@ const ProductDetail = () => {
   }
 
   return (
-    <div className="w-[90%] grid grid-cols-2 gap-6 mx-auto p-6">
-      <div>
-        <img
-          src={product.img}
-          alt={product.model}
-          className="w-full h-[90%] object-cover rounded-lg"
-        />
+    <>
+      <div className="w-[90%] grid grid-cols-2 gap-6 mx-auto p-6">
+        <div>
+          <img
+            src={product.img}
+            alt={product.model}
+            className="w-full h-[90%] object-cover rounded-lg"
+          />
+        </div>
+        <div>
+          <h1 className="text-3xl font-bold mt-4">
+            {product.title} - {product.model}
+          </h1>
+          <p className="text-gray-600 text-xl mt-2">{product.description}</p>
+          <p className="text-gray-700 mt-4">
+            <strong>Power:</strong> {product.power}
+          </p>
+          <p className="text-gray-700 py-2">
+            <strong>Response:</strong> {product.response}
+          </p>
+          <p className="text-gray-700">
+            <strong>SPL:</strong> {product.spl}
+          </p>
+          <p className="text-gray-700 py-2">
+            <strong>Weight:</strong> {product.weight}
+          </p>
+          <button
+            onClick={() => window.history.back()}
+            className="mt-4 px-6 py-2 bg-gray-500 text-white rounded-lg">
+            Go Back
+          </button>
+        </div>
       </div>
-      <div>
-        <h1 className="text-3xl font-bold mt-4">
-          {product.title} - {product.model}
-        </h1>
-        <p className="text-gray-600 text-xl mt-2">{product.description}</p>
-        <p className="text-gray-700 mt-4">
-          <strong>Power:</strong> {product.power}
-        </p>
-        <p className="text-gray-700 py-2">
-          <strong>Response:</strong> {product.response}
-        </p>
-        <p className="text-gray-700">
-          <strong>SPL:</strong> {product.spl}
-        </p>
-        <p className="text-gray-700 py-2">
-          <strong>Weight:</strong> {product.weight}
-        </p>
-        <button
-          onClick={() => window.history.back()}
-          className="mt-4 px-6 py-2 bg-gray-500 text-white rounded-lg">
-          Go Back
-        </button>
-      </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
