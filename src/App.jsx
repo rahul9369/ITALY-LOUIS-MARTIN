@@ -10,6 +10,8 @@ import Stagemonitor from "./components/Stagemonitor";
 import Subwoofer from "./components/Subwoofer";
 import Columsound from "./components/Columsoundspeaker";
 import Electronic from "./components/Electronics";
+import Productdetails from "./components/Productdetails";
+import LineArrayDetails from "./components/LineArrayDetails";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -51,6 +53,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/electronics",
         element: <Electronic />,
+      },
+      {
+        path: "/product/:model",
+        element: <Productdetails />,
+      },
+      {
+        path: "/linearray/:model",
+        element: <LineArrayDetails />,
       },
     ],
   },

@@ -2,12 +2,16 @@ import React from "react";
 import pointsource from "../assets/pointsource.jpg";
 import Footer from "../components/Footer";
 import Devilred10 from "../assets/Devilred10.png";
-
+import red6 from "../assets/red5.5.jpg";
+import red5 from "../assets/red5.jpg";
+import red9 from "../assets/red9.jpg";
+import red12 from "../assets/red12.jpg";
+import { useNavigate } from "react-router-dom";
 const products = [
   {
     img: Devilred10,
-    title: "Xcellence Series",
-    model: "X212AFD",
+    title: "Point Source Series",
+    model: "Red 10",
     description: '2x 12"+ 4x6"+ 2x3" SELF-POWERED TRI-AMPLIFIED',
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     response: "42 Hz – 18 kHz",
@@ -15,9 +19,9 @@ const products = [
     weight: "64.6 kg",
   },
   {
-    img: Devilred10,
-    title: "Xcellence Series",
-    model: "XA211",
+    img: red6,
+    title: "Point Source Series",
+    model: "Red 5.5",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
@@ -25,38 +29,70 @@ const products = [
     weight: "37.4 kg",
   },
   {
-    img: Devilred10,
-    title: "Xcellence Series",
-    model: "XA211P",
-    description:
-      "TWO-WAY LINE ARRAY MODULE FOR EXTERNAL DSP + BI-AMPLIFICATION",
-    power: "1450 W (LF) + 250 W (HF)",
-    response: "65 Hz – 2 kHz (LF) / 800 Hz – 19 kHz (HF)",
-    spl: "136 dB (LF) / 135 dB (HF)",
-    weight: "35 kg",
+    img: red5,
+    title: "Point Source Series",
+    model: "Red 5",
+    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
+    response: "65 Hz – 19 kHz",
+    spl: "136 dB (musical program)",
+    weight: "37.4 kg",
+  },
+  {
+    img: red9,
+    title: "Point Source Series",
+    model: "Red 9",
+    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
+    response: "65 Hz – 19 kHz",
+    spl: "136 dB (musical program)",
+    weight: "37.4 kg",
+  },
+  {
+    img: red12,
+    title: "Point Source Series",
+    model: "Red 12",
+    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
+    response: "65 Hz – 19 kHz",
+    spl: "136 dB (musical program)",
+    weight: "37.4 kg",
   },
 ];
 
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 w-full text-center">
+    <div className="bg-white shadow-lg rounded-xl p-6 w-full ">
       <img
         src={product.img}
         alt={product.model}
         className="w-full h-72 object-cover rounded-lg"
       />
-      <h2 className="text-xl font-bold text-gray-800 mt-4">{product.title}</h2>
-      <h3 className="text-lg font-semibold text-gray-600">{product.model}</h3>
-      <p className="text-sm text-gray-500 my-2">{product.description}</p>
-      <p className="text-sm font-semibold text-gray-700">
-        Amplifier Power: {product.power}
+      <h2 className="text-xl  text-gray-800 mt-4">{product.title}</h2>
+      <h3 className="text-lg font-bold text-gray-600">{product.model}</h3>
+      <p className="text-md font-bold text-black my-2">{product.description}</p>
+      <p className="text-md  text-gray-700">
+        <span className="font-bold"> Program Power:</span> {product.power}
+      </p>
+      <p className="text-sm py-2 text-gray-700">
+        <span className="font-bold"> Frequency Response:</span>{" "}
+        {product.response}
       </p>
       <p className="text-sm text-gray-700">
-        Frequency Response: {product.response}
+        <span className="font-bold">Max SPL:</span> {product.spl}
       </p>
-      <p className="text-sm text-gray-700">Max SPL: {product.spl}</p>
-      <p className="text-sm text-gray-700">Weight: {product.weight}</p>
-      <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+      <p className="text-sm my-2 text-gray-700">
+        <span className="font-bold">Weight:</span> {product.weight}
+      </p>
+      <button
+        className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
+        onClick={() =>
+          navigate(
+            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+          )
+        }>
         {product.model}
       </button>
     </div>

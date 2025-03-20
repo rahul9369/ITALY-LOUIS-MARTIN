@@ -63,7 +63,7 @@ const Categories = () => {
               <img
                 src={category.img}
                 alt={category.name}
-                className="w-[100%] h-full object-fit"
+                className="w-full h-full object-cover"
               />
             </div>
             <p className="text-lg font-medium text-gray-800 mt-3">

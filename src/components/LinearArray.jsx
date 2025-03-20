@@ -7,13 +7,15 @@ import Q60 from "../assets/Q60.jpg";
 import Q70 from "../assets/Q70.jpg";
 import Q80 from "../assets/Q80.jpg";
 import Cox12 from "../assets/cox12.jpg";
+import { useNavigate } from "react-router-dom";
 
 const products = [
   {
     img: Linear,
     title: "Line array Series",
     model: "Famous 210",
-    description: '2x 12"+ 4x6"+ 2x3" SELF-POWERED TRI-AMPLIFIED',
+    description:
+      "Two-way line array module for external DSP + BI-Amplification",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     response: "42 Hz – 18 kHz",
     Sensitivity: "103 dB",
@@ -23,8 +25,9 @@ const products = [
   {
     img: Q50,
     title: "Line Array Series",
-    model: "Q50",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    model: "Q 50",
+    description:
+      "Two-way line array module for external DSP + BI-Amplification",
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
     Sensitivity: "103 dB",
@@ -34,7 +37,7 @@ const products = [
   {
     img: Q60,
     title: "Line Array Series",
-    model: "Q60",
+    model: "Q 60",
     description:
       "Two-way line array module for external DSP + BI-Amplification",
     power: "1800W (CF) + 160W (HF)",
@@ -46,8 +49,9 @@ const products = [
   {
     img: Q70,
     title: "Line Array Series",
-    model: "Q70",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    model: "Q 70",
+    description:
+      "Two-way line array module for external DSP + BI-Amplification",
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
     Sensitivity: "103 dB",
@@ -57,8 +61,9 @@ const products = [
   {
     img: Q80,
     title: "Line Array Series",
-    model: "Q80",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    model: "Q 80",
+    description:
+      "Two-way line array module for external DSP + BI-Amplification",
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
     Sensitivity: "103 dB",
@@ -68,7 +73,7 @@ const products = [
   {
     img: Cox12,
     title: "Line array Series",
-    model: "Cox12",
+    model: "Cox 12",
     description:
       "TWO-WAY LINE ARRAY MODULE FOR EXTERNAL DSP + BI-AMPLIFICATION",
     power: "1450 W (LF) + 250 W (HF)",
@@ -80,6 +85,7 @@ const products = [
 ];
 
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
   return (
     <div className="bg-white shadow-lg rounded-xl p-6 w-full ">
       <img
@@ -107,7 +113,13 @@ const ProductCard = ({ product }) => {
       <p className="text-sm mt-2 text-gray-700">
         <span className="font-bold">Weight:</span> {product.weight}
       </p>
-      <button className="mt-4 bg-orange-500  text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+      <button
+        className="mt-4 w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
+        onClick={() =>
+          navigate(
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+          )
+        }>
         {product.model}
       </button>
     </div>
