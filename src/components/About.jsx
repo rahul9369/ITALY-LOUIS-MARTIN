@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import img from "../assets/Distributor/us.jpg";
 import carausalimg2 from "../assets/carausalimg2.jpg";
 import Footer from "./Footer";
+import Aboutus from "../assets/AboutUs.jpg";
 
 const About = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +25,11 @@ const About = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      <img src={carausalimg2} alt="About Us" className="w-full object-cover" />
+      <img
+        src={Aboutus}
+        alt="About Us"
+        className="w-full object-cover h-[300px]"
+      />
       <h2 className="text-5xl p-5 bg-yellow-600 my-4 font-bold text-center">
         About Us
       </h2>

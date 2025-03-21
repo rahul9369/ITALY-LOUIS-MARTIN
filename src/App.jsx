@@ -13,6 +13,7 @@ import Electronic from "./components/Electronics";
 import Productdetails from "./components/Productdetails";
 import LineArrayDetails from "./components/LineArrayDetails";
 import Distributor from "./components/Distributor";
+import News from "./components/News";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +26,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/distributor",
         element: <Distributor />,
+      },
+      {
+        path: "/news",
+        element: <News />,
       },
       {
         path: "/about",

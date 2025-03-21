@@ -1,128 +1,229 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import Footer from "./Footer";
 import Linear from "../assets/Famousmartin1.jpg";
 import Q50 from "../assets/Q50.jpg";
 import Q60 from "../assets/Q60.jpg";
 import Q70 from "../assets/Q70.jpg";
 import Q80 from "../assets/Q80.jpg";
 import Cox12 from "../assets/cox12.jpg";
-import Footer from "./Footer";
+import Linearray from "../assets/Linearray.pdf";
+
 const products = [
   {
     img: Linear,
     title: "Line array Series",
-    model: "Famous 210",
+    model: "famous 210",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence, leading us to optimize every component and material. At the core of the XA211P, audio innovation ensures unparalleled clarity, accuracy and fidelity, allowing to shape and sculpt the audio to utmost precision.",
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    response: "42 Hz – 18 kHz",
-    Sensitivity: "103 dB",
+    impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
     weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: Linearray,
   },
   {
     img: Q50,
     title: "Line Array Series",
-    model: "Q 50",
+    model: "q 50",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence, leading us to optimize every component and material. At the core of the XA211P, audio innovation ensures unparalleled clarity, accuracy and fidelity, allowing to shape and sculpt the audio to utmost precision.",
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    Sensitivity: "103 dB",
+    impedance: "8Ω available",
     spl: "136 dB (musical program)",
+    maxSpl: "120 dB",
+    response: "65 Hz – 19 kHz",
+    dimensions: "500 x 250 x 270 mm",
     weight: "37.4 kg",
+    finish: "High-quality Polyurea® coated wooden cabinet",
+    grille: "Powder-coated steel with black mesh",
+    pdf: Linearray,
   },
   {
     img: Q60,
-    title: "Line Array Series",
+    title: "Line array Series",
     model: "Q 60",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence, leading us to optimize every component and material. At the core of the XA211P, audio innovation ensures unparalleled clarity, accuracy and fidelity, allowing to shape and sculpt the audio to utmost precision.",
-    power: "1800W (CF) + 160W (HF)",
-    response: "(± 5dB) 60Hz - 19kHz",
-    Sensitivity: "103 dB",
-    spl: " 123dB - 129dB",
-    weight: "22.8 kg",
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: Linearray,
   },
   {
     img: Q70,
-    title: "Line Array Series",
+    title: "Line array Series",
     model: "Q 70",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence, leading us to optimize every component and material. At the core of the XA211P, audio innovation ensures unparalleled clarity, accuracy and fidelity, allowing to shape and sculpt the audio to utmost precision.",
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    Sensitivity: "103 dB",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: Linearray,
   },
   {
     img: Q80,
-    title: "Line Array Series",
+    title: "Line array Series",
     model: "Q 80",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence, leading us to optimize every component and material. At the core of the XA211P, audio innovation ensures unparalleled clarity, accuracy and fidelity, allowing to shape and sculpt the audio to utmost precision.",
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    Sensitivity: "103 dB",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: Linearray,
   },
   {
     img: Cox12,
     title: "Line array Series",
     model: "Cox 12",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence, leading us to optimize every component and material. At the core of the XA211P, audio innovation ensures unparalleled clarity, accuracy and fidelity, allowing to shape and sculpt the audio to utmost precision.",
-    power: "1450 W (LF) + 250 W (HF)",
-    response: "65 Hz – 2 kHz (LF) / 800 Hz – 19 kHz (HF)",
-    Sensitivity: "103 dB",
-    spl: "136 dB (LF) / 135 dB (HF)",
-    weight: "35 kg",
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: Linearray,
   },
 ];
 
 const ProductDetail = () => {
   const { model } = useParams();
   const product = products.find((p) => p.model.toLowerCase() === model);
+  const [activeTab, setActiveTab] = useState("Specifications");
 
   if (!product) {
     return <h2 className="text-center text-red-500">Product not found!</h2>;
   }
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = product.pdf;
+    link.download = `${product.model}_specifications.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
-      <div className="w-[90%] grid grid-cols-2 gap-6 mx-auto p-6">
-        <div>
+      <div className="w-[90%] mx-auto p-6">
+        {/* Product Image and Title */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <img
             src={product.img}
             alt={product.model}
-            className="w-full h-[90%] object-cover rounded-lg"
+            className="w-full h-auto md:h-[600px] object-cover rounded-lg"
           />
+          <div>
+            <h1 className="text-2xl md:text-3xl font-bold">
+              {product.title} - {product.model}
+            </h1>
+            <p className="text-gray-600 text-md md:text-xl mt-2">
+              {product.description}
+            </p>
+          </div>
         </div>
-        <div>
-          <h1 className="text-3xl font-bold mt-4">
-            {product.title} - {product.model}
-          </h1>
-          <p className="text-gray-600 text-xl mt-2">{product.description}</p>
-          <p className="text-gray-700 mt-4">
-            <strong>Power:</strong> {product.power}
-          </p>
-          <p className="text-gray-700 py-2">
-            <strong>Response:</strong> {product.response}
-          </p>
-          <p className="text-gray-700">
-            <strong>SPL:</strong> {product.spl}
-          </p>
-          <p className="text-gray-700 py-2">
-            <strong>Weight:</strong> {product.weight}
-          </p>
+
+        {/* Tabs */}
+        <div className="mt-6 border-b border-gray-300 flex flex-wrap">
+          {["Specifications", "Downloads"].map((tab) => (
+            <button
+              key={tab}
+              className={`px-4 py-2 md:px-6 md:py-3 text-sm md:text-lg flex-1 ${
+                activeTab === tab
+                  ? "border-b-2 border-black font-bold"
+                  : "text-gray-500"
+              }`}
+              onClick={() => setActiveTab(tab)}>
+              {tab}
+            </button>
+          ))}
+        </div>
+
+        {/* Tab Content */}
+        <div className="mt-6">
+          {activeTab === "Specifications" && (
+            <table className="w-full border-collapse border border-gray-300 text-sm md:text-md">
+              <tbody>
+                {[
+                  { label: "Program Power", value: product.power },
+                  { label: "Impedance", value: product.impedance },
+                  { label: "SPL (1W/1m)", value: product.spl },
+                  { label: "Maximum SPL", value: product.maxSpl },
+                  { label: "Frequency Response", value: product.response },
+                  { label: "Dimensions (HxWxD)", value: product.dimensions },
+                  { label: "Weight", value: product.weight },
+                  { label: "Finish", value: product.finish },
+                  { label: "Grille", value: product.grille },
+                ].map((spec, index) => (
+                  <tr key={index} className="border-b border-gray-200">
+                    <td className="px-2 md:px-4 py-2 font-semibold">
+                      {spec.label}
+                    </td>
+                    <td className="px-2 md:px-4 py-2">{spec.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+
+          {activeTab === "Downloads" && (
+            <div className="mt-4">
+              <p className="text-gray-600 text-sm md:text-md">
+                Click below to download the specifications.
+              </p>
+              <button
+                onClick={handleDownload}
+                className="mt-4 px-4 py-2 md:px-6 md:py-2 bg-green-500 text-white rounded-lg text-sm md:text-lg">
+                Download PDF
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* Buttons */}
+        <div className="flex flex-col md:flex-row gap-4 mt-6">
           <button
             onClick={() => window.history.back()}
-            className="mt-4 px-6 py-2 bg-gray-500 text-white rounded-lg">
+            className="px-4 py-2 md:px-6 md:py-2 bg-gray-500 text-white rounded-lg text-sm md:text-lg">
             Go Back
           </button>
         </div>
       </div>
+
       <Footer />
     </>
   );

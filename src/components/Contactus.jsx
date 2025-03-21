@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Footer from "./Footer";
-import Us from "../assets/Distributor/us.jpg";
+//import Us from "../assets/Distributor/us.jpg";
+import Contactus from "../assets/contactus.jpg";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -45,8 +46,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen  bg-gray-100">
-      <img src={Us} alt="img" className="w-full" />
+    <div className=" bg-gray-100">
+      <img src={Contactus} alt="img" className="w-full h-[300px]" />
       <div className="w-[90%] mx-auto py-5">
         <h1 className="text-4xl font-bold text-center py-2 bg-orange-500 rounded-md my-4">
           Contact Us

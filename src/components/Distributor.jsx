@@ -6,7 +6,8 @@ import Maxico from "../assets/Distributor/Maxico.jpg";
 import Thailand from "../assets/Distributor/Thailand.jpg";
 import Vetnam from "../assets/Distributor/Vetnam.jpg";
 import Footer from "./Footer";
-import img from "../assets/carausalimg2.jpg";
+// import img from "../assets/carausalimg2.jpg";
+import Distributors from "../assets/Distributor/Distributors.jpg";
 
 const distributors = [
   {
@@ -44,10 +45,10 @@ const distributors = [
 const DistributorPage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      <img src={img} alt="img" className="w-full" />
+      <img src={Distributors} alt="img" className="w-full h-[300px]" />
       <div className="w-[90%] mx-auto py-5">
         <h1 className="text-4xl font-bold text-center py-2 bg-orange-500 rounded-md my-4">
-          Distributor
+          Distributors
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {distributors.map((dist, index) => (
