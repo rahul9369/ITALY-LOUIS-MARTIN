@@ -35,7 +35,7 @@ const Navbar = () => {
       path: "#",
       submenu: [
         {
-          title: "Product Types",
+          // title: "Product Types",
           links: [
             {
               name: "Line Arrays",

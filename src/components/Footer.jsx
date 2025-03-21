@@ -3,10 +3,10 @@ import Logo from "../assets/Logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10">
+    <footer className="bg-gray-900 text-gray-300 py-5">
       <div className="w-[95%] mx-auto px-4 md:px-12">
         {/* Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 mb-2 md:grid-cols-3 gap-8 text-center md:text-left">
           {/* About Section */}
           <div className="flex flex-col items-center md:items-start">
             <Link to="/">
@@ -63,10 +63,10 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t w-full border-gray-700 my-6"></div>
+        <div className="border-t w-full border-gray-700  "></div>
 
         {/* Copyright Section */}
-        <div className="text-center text-sm px-4">
+        <div className="text-center text-sm mt-6 px-4">
           <p>
             © {new Date().getFullYear()} ITALY LOUIS MARTIN AUDIO. All rights
             reserved.
