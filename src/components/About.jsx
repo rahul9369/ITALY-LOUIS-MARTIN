@@ -30,33 +30,32 @@ const About = () => {
         alt="About Us"
         className="w-full object-cover h-[300px]"
       />
-      <h2 className="text-5xl p-5 bg-yellow-600 my-4 font-bold text-center">
-        About Us
-      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 my-6 gap-6 w-[90%] mx-auto">
-        <div>
-          <p className="text-center m-5 text-xl">
-            Company History As any pro-audio veteran will tell you, many of the
-            industry's major players began life as small "mom and pop"
-            operations, run out of garages, basements, and spare bedrooms.
-            Steeped in the anti-corporate ethos of the '60s and '70s, these were
-            businesses born of the visions of young entrepreneurs typically
-            short on experience but rich in dreams, drive, and a desire to do
-            things differently. As the industry and its technology have evolved,
-            many of those early ventures have fallen by the wayside. Some of
-            them imploded, fueled by naive management, personality crises, or
-            simply a failure to evolve. Some grew so large and unwieldy that
-            their only hope for survival was to be bought out by the corporate
-            culture they'd long resisted. Over the years, only a handful have
-            managed to not simply exist, but flourish. The story of Louis Martin
-            Audio is one of professional audio’s most inspiring tales. From its
-            humble beginnings crafting handmade guitar amps from a one-room shop
-            in Florence, Louis Martin has grown to become the industry's
-            undisputed leader in power amps, loudspeakers, and complete
-            networked audio solutions.
+        <div className="">
+          <p className="text-justify text-md leading-relaxed">
+            <span className="font-bold"> Company History</span> As any pro-audio
+            veteran will tell you, many of the industry's major players began
+            life as small "mom and pop" operations, run out of garages,
+            basements, and spare bedrooms. Steeped in the anti-corporate ethos
+            of the '60s and '70s, these were businesses born of the visions of
+            young entrepreneurs typically short on experience but rich in
+            dreams, drive, and a desire to do things differently. As the
+            industry and its technology have evolved, many of those early
+            ventures have fallen by the wayside. Some of them imploded, fueled
+            by naive management, personality crises, or simply a failure to
+            evolve. Some grew so large and unwieldy that their only hope for
+            survival was to be bought out by the corporate culture they'd long
+            resisted. Over the years, only a handful have managed to not simply
+            exist, but flourish. The story of Louis Martin Audio is one of
+            professional audio’s most inspiring tales. From its humble
+            beginnings crafting handmade guitar amps from a one-room shop in
+            Florence, Louis Martin has grown to become the industry's undisputed
+            leader in power amps, loudspeakers, and complete networked audio
+            solutions.
           </p>
         </div>
+
         <div>
           <img
             src={img}
@@ -66,7 +65,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="w-[90%] bg-white shadow-lg rounded-lg p-8 mx-auto my-10">
+      {/* <div className="w-[90%] bg-white shadow-lg rounded-lg p-8 mx-auto my-10">
         <h2 className="text-lg font-semibold text-orange-500 mb-4">
           Get the latest price? We'll respond as soon as possible (within 12
           hours)
@@ -125,7 +124,7 @@ const About = () => {
             Submit
           </button>
         </form>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

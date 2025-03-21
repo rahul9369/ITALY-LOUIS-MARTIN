@@ -14,6 +14,8 @@ import Productdetails from "./components/Productdetails";
 import LineArrayDetails from "./components/LineArrayDetails";
 import Distributor from "./components/Distributor";
 import News from "./components/News";
+import CaseSection from "./components/Case";
+import DownloadPage from "./components/Download";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +32,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/news",
         element: <News />,
+      },
+      {
+        path: "/download",
+        element: <DownloadPage />,
+      },
+      {
+        path: "/case",
+        element: <CaseSection />,
       },
       {
         path: "/about",
