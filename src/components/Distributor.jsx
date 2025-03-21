@@ -47,10 +47,7 @@ const DistributorPage = () => {
     <div className="min-h-screen bg-gray-100">
       <img src={Distributors} alt="img" className="w-full h-[300px]" />
       <div className="w-[90%] mx-auto py-5">
-        <h1 className="text-4xl font-bold text-center py-2 bg-orange-500 rounded-md my-4">
-          Distributors
-        </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-5 gap-6">
           {distributors.map((dist, index) => (
             <div
               key={index}

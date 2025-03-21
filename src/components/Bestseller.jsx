@@ -21,7 +21,7 @@ const BestSeller = () => {
       {/* Section Title */}
       <div className="w-full max-w-6xl text-center">
         <h2 className="text-5xl font-bold text-gray-900 flex items-center justify-center">
-          <span className="w-1.5 h-6  mr-2"></span> Company News
+          <span className="w-1.5 h-6  mr-2"></span> Company Latest News
         </h2>
       </div>
 

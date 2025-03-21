@@ -5,30 +5,66 @@ import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(null);
+  const [subDropdown, setSubDropdown] = useState(null); // State for "Line Arrays" submenu
   const [mobileMenu, setMobileMenu] = useState(false);
+
   let timeoutId = null;
 
   const handleMouseEnter = (menu) => {
-    if (timeoutId) clearTimeout(timeoutId); // Prevent dropdown from closing immediately
+    if (timeoutId) clearTimeout(timeoutId);
     setDropdown(menu);
   };
 
   const handleMouseLeave = () => {
     timeoutId = setTimeout(() => {
       setDropdown(null);
-    }, 300); // Delay closing so user gets time to click
+      setSubDropdown(null);
+    }, 300);
   };
 
-  const toggleMobileMenu = () => setMobileMenu(!mobileMenu);
+  const handleSubMenuEnter = (submenu) => setSubDropdown(submenu);
+  const handleSubMenuLeave = () => setSubDropdown(null);
 
+  const toggleMobileMenu = () => setMobileMenu(!mobileMenu);
   const closeDropdown = () => setDropdown(null);
 
   const menuItems = [
     { name: "About Us", path: "/about" },
     {
       name: "Products",
-      path: "/products",
-      submenu: ["Protein", "Vitamins", "Accessories"],
+      path: "#",
+      submenu: [
+        {
+          title: "Product Types",
+          links: [
+            {
+              name: "Line Arrays",
+              path: "/line-arrays",
+              sublinks: ["Q Series", "Famous", "Cox Series"], // Submenu for "Line Arrays"
+            },
+            {
+              name: "Point source ",
+              path: "/point-source",
+              sublinks: ["Red series", "F series"], // Submenu for "Line Arrays"
+            },
+            {
+              name: "Sub Woofer ",
+              path: "/Sub-woofer",
+              sublinks: ["F series", "KS series"], // Submenu for "Line Arrays"
+            },
+            {
+              name: "Commercial Speaker ",
+              path: "/commercial-speaker",
+              sublinks: ["Plastic speaker", "celling Speaker"], // Submenu for "Line Arrays"
+            },
+            {
+              name: "Electronics ",
+              path: "/eletronics",
+              sublinks: ["TTA series", "TFP series", "D series", "PL series"], // Submenu for "Line Arrays"
+            },
+          ],
+        },
+      ],
     },
     { name: "News", path: "/news" },
     { name: "Case", path: "/case" },
@@ -45,7 +81,7 @@ const Navbar = () => {
           <Link to="/">
             <img src={Logo} alt="logo" className="w-20 h-20" />
           </Link>
-          <span className="md:text-xl text-sm text-white ">
+          <span className="md:text-xl text-sm text-white">
             ITALY LOUIS MARTIN AUDIO
           </span>
         </div>
@@ -59,34 +95,65 @@ const Navbar = () => {
               onMouseEnter={() => handleMouseEnter(item.name)}
               onMouseLeave={handleMouseLeave}>
               <NavLink
-                to={item.path}
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-green-500 font-bold"
-                    : "text-white text-[16px] hover:text-green-500"
-                }>
+                to={item.path === "#" ? "/" : item.path}
+                className="text-white text-[16px] hover:text-green-500">
                 {item.name}
               </NavLink>
 
-              {/* Dropdown Menu */}
+              {/* Main Dropdown Menu */}
               {item.submenu && dropdown === item.name && (
-                <div
-                  className="absolute left-0 mt-2 bg-white z-20 shadow-md w-40 text-left py-2 border rounded dropdown-menu"
-                  onMouseEnter={() => handleMouseEnter(item.name)}
-                  onMouseLeave={handleMouseLeave}>
-                  <ul>
-                    {item.submenu.map((sub) => (
-                      <li key={sub} className="py-2 hover:bg-gray-100">
-                        <NavLink
-                          to={`/${sub.toLowerCase()}`}
-                          className="block text-gray-700"
-                          onClick={closeDropdown} // Close on click
-                        >
-                          {sub}
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
+                <div className="absolute left-0 mt-2 bg-white z-20 shadow-md w-60 text-left py-2 border rounded-lg">
+                  {item.submenu.map((sub, subIndex) => (
+                    <div key={subIndex} className="px-4 py-2 relative">
+                      <h3 className="text-lg font-semibold mb-1">
+                        {sub.title}
+                      </h3>
+                      <ul>
+                        {sub.links.map((link, index) =>
+                          typeof link === "string" ? (
+                            <li
+                              key={index}
+                              className="py-1 hover:bg-gray-100 px-2">
+                              <NavLink
+                                to={`/${link
+                                  .toLowerCase()
+                                  .replace(/\s+/g, "-")}`}
+                                className="block text-gray-700">
+                                {link}
+                              </NavLink>
+                            </li>
+                          ) : (
+                            // If the link has sublinks (Like Line Arrays)
+                            <li
+                              key={index}
+                              className="relative py-1 px-2 hover:bg-gray-100"
+                              onMouseEnter={() => handleSubMenuEnter(link.name)}
+                              onMouseLeave={handleSubMenuLeave}>
+                              <span className="block text-gray-700 cursor-pointer">
+                                {link.name}
+                              </span>
+
+                              {/* Submenu for Line Arrays */}
+                              {subDropdown === link.name && (
+                                <div className="absolute left-full top-0 mt-[-5px] bg-white shadow-md w-48 text-left py-2 border rounded-lg">
+                                  {link.sublinks.map((sublink, subIdx) => (
+                                    <NavLink
+                                      key={subIdx}
+                                      to={`/${sublink
+                                        .toLowerCase()
+                                        .replace(/\s+/g, "-")}`}
+                                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                      {sublink}
+                                    </NavLink>
+                                  ))}
+                                </div>
+                              )}
+                            </li>
+                          )
+                        )}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
               )}
             </li>
@@ -109,11 +176,7 @@ const Navbar = () => {
               <li key={item.name}>
                 <NavLink
                   to={item.path}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-green-500 font-bold"
-                      : "text-gray-700 hover:text-green-500"
-                  }
+                  className="text-gray-700 hover:text-green-500"
                   onClick={() => setMobileMenu(false)}>
                   {item.name}
                 </NavLink>
@@ -121,17 +184,44 @@ const Navbar = () => {
                 {/* Mobile Dropdown */}
                 {item.submenu && (
                   <ul className="mt-2 space-y-2 pl-4">
-                    {item.submenu.map((sub) => (
-                      <li key={sub}>
-                        <NavLink
-                          to={`/${sub.toLowerCase()}`}
-                          className="text-gray-600 hover:text-green-500"
-                          onClick={() => {
-                            setMobileMenu(false);
-                            closeDropdown();
-                          }}>
-                          {sub}
-                        </NavLink>
+                    {item.submenu.map((sub, subIndex) => (
+                      <li key={subIndex}>
+                        <h3 className="text-md font-semibold">{sub.title}</h3>
+                        <ul className="space-y-1">
+                          {sub.links.map((link, index) =>
+                            typeof link === "string" ? (
+                              <li key={index}>
+                                <NavLink
+                                  to={`/${link
+                                    .toLowerCase()
+                                    .replace(/\s+/g, "-")}`}
+                                  className="text-gray-600 hover:text-green-500"
+                                  onClick={() => setMobileMenu(false)}>
+                                  {link}
+                                </NavLink>
+                              </li>
+                            ) : (
+                              <li key={index}>
+                                <span className="block text-gray-600 font-semibold">
+                                  {link.name}
+                                </span>
+                                <ul className="pl-4">
+                                  {link.sublinks.map((sublink, subIdx) => (
+                                    <li key={subIdx}>
+                                      <NavLink
+                                        to={`/${sublink
+                                          .toLowerCase()
+                                          .replace(/\s+/g, "-")}`}
+                                        className="text-gray-600 hover:text-green-500">
+                                        {sublink}
+                                      </NavLink>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </li>
+                            )
+                          )}
+                        </ul>
                       </li>
                     ))}
                   </ul>

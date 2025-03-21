@@ -49,12 +49,8 @@ const ContactUs = () => {
     <div className=" bg-gray-100">
       <img src={Contactus} alt="img" className="w-full h-[300px]" />
       <div className="w-[90%] mx-auto py-5">
-        <h1 className="text-4xl font-bold text-center py-2 bg-orange-500 rounded-md my-4">
-          Contact Us
-        </h1>
-
         {/* Contact Info */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-5 gap-6 mb-10">
           <div className="bg-white shadow-lg rounded-lg p-6 text-center">
             <span className="text-orange-500 text-3xl">📞</span>
             <h2 className="text-lg font-bold mt-2">Contact phone</h2>
@@ -75,7 +71,7 @@ const ContactUs = () => {
         </div>
 
         {/* Contact Form */}
-        <h2 className="text-4xl font-bold mb-4">Online message</h2>
+        <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
         <form
           className="bg-white shadow-lg rounded-lg p-6"
           onSubmit={sendEmail}>
