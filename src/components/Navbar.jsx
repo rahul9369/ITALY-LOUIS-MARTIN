@@ -96,7 +96,7 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeave}>
               <NavLink
                 to={item.path === "#" ? "/" : item.path}
-                className="text-white text-[16px] hover:text-green-500">
+                className="text-white text-[16px] hover:text-yellow-400">
                 {item.name}
               </NavLink>
 
