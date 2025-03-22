@@ -40,7 +40,7 @@ const newsData = [
 
 const CompanyNews = () => {
   return (
-    <div className="w-screen mx-auto">
+    <div className="w-full mx-auto">
       {/* Header Image */}
       <img
         src={News}
