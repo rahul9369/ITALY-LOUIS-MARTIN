@@ -20,14 +20,23 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold text-white">Quick Links</h3>
-            <ul className="mt-3 space-y-2 text-sm">
-              {["Products", "Contact Us", "About Us", "FAQ"].map((link) => (
+            <ul className="mt-3 grid grid-cols-2 space-y-2 text-sm">
+              {[
+                "Line Arrays",
+                "Point Source",
+                "SubWoofer",
+                "Commercial Speaker",
+                "Electronics",
+                "Contact Us",
+                "About Us",
+                "Disributor",
+              ].map((link) => (
                 <li key={link}>
-                  <a
-                    href={`#${link.toLowerCase().replace(/ /g, "-")}`}
+                  <Link
+                    to={`#${link.toLowerCase().replace(/ /g, "-")}`}
                     className="hover:text-green-500 transition-colors duration-200">
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
