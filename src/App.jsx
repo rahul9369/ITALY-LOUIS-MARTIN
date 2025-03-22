@@ -50,7 +50,7 @@ const appRouter = createBrowserRouter([
         element: <ContactUs />,
       },
       {
-        path: "/lineararray",
+        path: "/linearray",
         element: <LinearArray />,
       },
       {

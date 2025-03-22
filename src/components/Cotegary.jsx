@@ -13,7 +13,7 @@ const Categories = () => {
     {
       name: "Line Array",
       img: FAMOUS210N,
-      path: "/lineararray",
+      path: "/linearray",
     },
     {
       name: "Point Source",
