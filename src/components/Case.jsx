@@ -1,6 +1,6 @@
 import React from "react";
 import Case from "../assets/case/Case.jpg";
-import Case2 from "../assets/case/Case2.jpg";
+// import Case2 from "../assets/case/Case2.jpg";
 import Case3 from "../assets/case/Case3.jpg";
 import Case4 from "../assets/case/Case4.jpg";
 import Main from "../assets/case/casemain.jpg";
@@ -20,10 +20,10 @@ const CaseSection = () => {
             img: Case,
             text: "Auto Show Line Array",
           },
-          {
-            img: Case2,
-            text: "The opening ceremony",
-          },
+          // {
+          //   img: Case2,
+          //   text: "The opening ceremony",
+          // },
           {
             img: Case3,
             text: "Analyze the plan together",
