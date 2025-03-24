@@ -53,17 +53,14 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-5 gap-6 mb-10">
           <div className="bg-white shadow-lg rounded-lg p-6 text-center">
             <span className="text-orange-500 text-3xl">📞</span>
-            <h2 className="text-lg font-bold mt-2">Contact phone</h2>
             <p className="text-gray-700">+86 13719416567</p>
           </div>
           <div className="bg-white shadow-lg rounded-lg p-6 text-center">
             <span className="text-orange-500 text-3xl">📧</span>
-            <h2 className="text-lg font-bold mt-2">Contact email</h2>
             <p className="text-gray-700">contact@louismartinaudio.it</p>
           </div>
           <div className="bg-white shadow-lg rounded-lg p-6 text-center">
             <span className="text-orange-500 text-3xl">📍</span>
-            <h2 className="text-lg font-bold mt-2">Contact address</h2>
             <p className="text-gray-700">
               Via Benefactors dell'Opedaled 120159 Milano Italy
             </p>
