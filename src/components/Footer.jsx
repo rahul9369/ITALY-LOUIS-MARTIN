@@ -20,22 +20,22 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold text-white">Quick Links</h3>
-            <ul className="mt-3 grid grid-cols-2 space-y-2 text-sm">
+            <ul className="mt-3 space-y-2 text-sm">
               {[
-                "Line Arrays",
-                "Point Source",
-                "SubWoofer",
-                "Commercial Speaker",
-                "Electronics",
-                "Contact Us",
-                "About Us",
-                "Disributor",
-              ].map((link) => (
-                <li key={link}>
+                { name: "Line Arrays", path: "/linearray" },
+                { name: "Point Source", path: "/pointsource" },
+                { name: "SubWoofer", path: "/subwoofer" },
+                { name: "Commercial Speaker", path: "#" },
+                { name: "Electronics", path: "/electronics" },
+                { name: "Contact Us", path: "/contact" },
+                { name: "About Us", path: "/about" },
+                { name: "Distributor", path: "/distributor" },
+              ].map(({ name, path }) => (
+                <li key={name}>
                   <Link
-                    to={`#${link.toLowerCase().replace(/ /g, "-")}`}
+                    to={path}
                     className="hover:text-green-500 transition-colors duration-200">
-                    {link}
+                    {name}
                   </Link>
                 </li>
               ))}
@@ -72,7 +72,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t w-full border-gray-700  "></div>
+        <div className="border-t w-full border-gray-700"></div>
 
         {/* Copyright Section */}
         <div className="text-center text-sm mt-6 px-4">

@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "./Footer";
 import Linear from "../assets/Famousmartin1.jpg";
 import Q50 from "../assets/Q50.jpg";
@@ -120,6 +120,9 @@ const products = [
 ];
 
 const ProductDetail = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   const { model } = useParams();
   const product = products.find((p) => p.model.toLowerCase() === model);
   const [activeTab, setActiveTab] = useState("Specifications");
@@ -145,7 +148,7 @@ const ProductDetail = () => {
           <img
             src={product.img}
             alt={product.model}
-            className="w-full h-auto md:h-[600px] object-cover rounded-lg"
+            className="w-full h-auto md:h-[400px] object-cover rounded-lg"
           />
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">

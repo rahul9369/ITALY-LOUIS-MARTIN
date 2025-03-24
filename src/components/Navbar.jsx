@@ -187,11 +187,11 @@ const Navbar = () => {
                                 {link.sublinks && (
                                   <button
                                     onClick={() => toggleSubmenu(link.name)}
-                                    className="text-gray-700">
+                                    className="text-gray-700 ">
                                     {expandedMenus[link.name] ? (
-                                      <FaMinus />
+                                      <FaMinus className="text-sm" />
                                     ) : (
-                                      <FaPlus />
+                                      <FaPlus className="text-sm" />
                                     )}
                                   </button>
                                 )}
