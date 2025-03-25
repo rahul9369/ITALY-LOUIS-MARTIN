@@ -33,27 +33,31 @@ const About = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 my-6 gap-6 w-[90%] mx-auto">
         <div className="">
-          <p className="text-justify text-md leading-relaxed">
-            <span className="font-bold"> Louis Martin Audio</span> represents an
+          <p className="text-justify text-sm leading-relaxed">
+            <span className="font-bold">Louis Martin Audio</span> represents an
             exemplary journey of innovation and resilience in the professional
             audio industry. Established in 2008 at Giambrocono & C.S.P.A,
             located at Via Rosolino Pilo 19/B, 20129 Milano, Italy, the company
             began its operations in a modest one-room workshop in Florence,
             specializing in handcrafted guitar amplifiers. This modest beginning
             reflected the entrepreneurial vision and creativity of its founders,
-            who aspired to redefine standards in the audio domain. Distinguished
-            by its adaptability and commitment to technological advancements,
-            Louis Martin Audio consistently embraced innovation to meet the
-            evolving demands of the industry. By expanding its product portfolio
-            and pioneering new technologies, the company established itself as a
-            leader in professional audio solutions. Today, Louis Martin Audio is
-            celebrated globally for its cutting-edge technology in power
-            amplifiers, loudspeakers, and advanced networked audio solutions.
+            who aspired to redefine standards in the audio domain.
+            {/* Instead of <br> with className, use div for spacing */}
+            <div className="my-1"></div>
+            Distinguished by its adaptability and commitment to technological
+            advancements, Louis Martin Audio consistently embraced innovation to
+            meet the evolving demands of the industry. By expanding its product
+            portfolio and pioneering new technologies, the company established
+            itself as a leader in professional audio solutions. Today, Louis
+            Martin Audio is celebrated globally for its cutting-edge technology
+            in power amplifiers, loudspeakers, and advanced networked audio
+            solutions.
+            <div className="my-1"></div>
             The company has redefined excellence in sound quality and
             performance, setting benchmarks for the industry. Its journey, from
             humble origins to global prominence, exemplifies the values of
-            perseverance, visionary leadership, and a relentless
-            pursuit of excellence.
+            perseverance, visionary leadership, and a relentless pursuit of
+            excellence.
           </p>
         </div>
 

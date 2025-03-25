@@ -54,7 +54,7 @@ const ContactUs = () => {
           <div className="bg-white shadow-lg rounded-lg p-6 text-center">
             <span className="text-orange-500 text-3xl">📞</span>
             {/* <h2 className="text-lg font-bold mt-2">Contact phone</h2> */}
-            <p className="text-gray-700">+39 3242615626</p>
+            <p className="text-gray-700">+39 32426 15626</p>
           </div>
           <div className="bg-white shadow-lg rounded-lg p-6 text-center">
             <span className="text-orange-500 text-3xl">📧</span>

@@ -14,8 +14,7 @@ const products = [
     img: Linear,
     title: "Line array Series",
     model: "Famous 210",
-    description:
-      "2x10 Two-way Bi-amp Externally Amplified Line Array Speaker System",
+    description: `2x10" Two-way Bi-amp Externally Amplified Line Array Speaker System`,
     Power: "LF: 600W/2400W, HF: 150W/600W",
     response: "70Hz-19KHz",
     Sensitivity: "LF 103 dB , HF: 113 dB",
@@ -26,8 +25,7 @@ const products = [
     img: Q50,
     title: "Line Array Series",
     model: "Q 50",
-    description:
-      "1x10 Two-way Passive/Bi-Amp Switchable Line Array Speaker System",
+    description: `1x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "500W/2000W（Passive); LF:350W/1400W, HF:150W/600W (Bi-Amp)",
     response: "65Hz-20KHz",
     Sensitivity: "101dB(1W/1m)",
@@ -38,8 +36,7 @@ const products = [
     img: Q60,
     title: "Line Array Series",
     model: "Q 60",
-    description:
-      "2x10 Two-way Passive/Bi-Amp Switchable Line Array Speaker System",
+    description: `2x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "600W/2400W（Passive); LF:500W/2000W,HF:100W/400W(Bi-Amp)",
     response: "60Hz-20KHz",
     Sensitivity: "102dB(1W/1m)",
@@ -50,8 +47,7 @@ const products = [
     img: Q70,
     title: "Line Array Series",
     model: "Q 70",
-    description:
-      "1x12 Two-way Passive/Bi-Amp Switchable Line Array Speaker System",
+    description: `1x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "550W/2200W（Passive); LF:400W/1600W, HF:150W/600W (Bi-Amp)",
     response: "60Hz-20KHz",
     Sensitivity: "103dB(1W/1m)",
@@ -62,8 +58,7 @@ const products = [
     img: Q80,
     title: "Line Array Series",
     model: "Q 80",
-    description:
-      "2x12 Two-way Passive/Bi-Amp Switchable Line Array Speaker System",
+    description: `2x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "1000W/4000W（Passive）; LF:700W/2800W, HF:300W/1200W (Bi-Amp)",
     response: "60Hz-20KHz",
     Sensitivity: "103dB(1W/1m)",
@@ -74,7 +69,7 @@ const products = [
     img: Cox12,
     title: "Line array Series",
     model: "Cox 12",
-    description: "1x12 Passive Co-axial line array Speaker System",
+    description: `1x12" Passive Co-axial line array Speaker System`,
     power: "450W/1800W (Passive)",
     response: "60Hz-19KHz",
     Sensitivity: "98dB(1W/1m)",

@@ -9,35 +9,35 @@ const BestSeller = () => {
   const products = [
     {
       img: Eavpl,
-      desc: "Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd",
+      title:
+        "Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd",
+      desc: "After more than a year of understanding and communication, Emident Audio Visual Pvt Ltd has conducted rigorous testing on our company's products and achieved satisfactory results. Both parties have decided that Emident Audio Visual Pvt Ltd will become the Louis Martin Audio Authorized Distributor for India Market, covering regions such as Nepal and Pakistan.",
     },
     {
       img: update1,
-      desc: "Latest updates on our audio technology innovations and market expansion",
+      title: "ASIA SALES PRESIDENT",
+      desc: "In order to develop its business in the Asian region, the company has specially appointed CUI as the Sales President of the Asian region. CUI has been engaged in the audio industry for 20 years and has a good understanding of the Asian market. We hope that under his leadership, we can better serve customers in the Asian market and achieve better sales results.",
     },
     {
       img: update2,
+      title: "GET SHOW 2023",
       desc: "Join us at the upcoming International Sound Expo for live demos and networking",
     },
     {
-      img: update3,
-      desc: "Introducing our newest range of high-performance professional speakers",
-    },
-    {
       img: Eavpl,
-      desc: "Enhancing the audio experience for large venues, concerts, and conferences",
+      title:
+        "Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd",
+      desc: "After more than a year of understanding and communication, Emident Audio Visual Pvt Ltd has conducted rigorous testing on our company's products and achieved satisfactory results. Both parties have decided that Emident Audio Visual Pvt Ltd will become the Louis Martin Audio Authorized Distributor for India Market, covering regions such as Nepal and Pakistan.",
     },
     {
       img: update1,
-      desc: "Partnerships with global distributors to bring our products worldwide",
+      title: "ASIA SALES PRESIDENT",
+      desc: "In order to develop its business in the Asian region, the company has specially appointed CUI as the Sales President of the Asian region. CUI has been engaged in the audio industry for 20 years and has a good understanding of the Asian market. We hope that under his leadership, we can better serve customers in the Asian market and achieve better sales results.",
     },
     {
       img: update2,
-      desc: "Customer success stories: How our audio solutions transform events",
-    },
-    {
-      img: update3,
-      desc: "Breaking news: Our company receives industry award for innovation",
+      title: "GET SHOW 2023",
+      desc: "Join us at the upcoming International Sound Expo for live demos and networking",
     },
   ];
 
@@ -46,25 +46,25 @@ const BestSeller = () => {
   const [expandedIndex, setExpandedIndex] = useState(null); // Tracks which product is expanded
 
   // Auto-scroll effect
-  useEffect(() => {
-    if (!isAutoScrolling) return;
+  // useEffect(() => {
+  //   if (!isAutoScrolling) return;
 
-    const interval = setInterval(() => {
-      if (carouselRef.current) {
-        carouselRef.current.scrollBy({ left: 1, behavior: "smooth" });
+  //   const interval = setInterval(() => {
+  //     if (carouselRef.current) {
+  //       carouselRef.current.scrollBy({ left: 1, behavior: "smooth" });
 
-        // Reset to start when reaching the end
-        if (
-          carouselRef.current.scrollLeft >=
-          carouselRef.current.scrollWidth / 2
-        ) {
-          carouselRef.current.scrollLeft = 0;
-        }
-      }
-    }, 1000); // Smooth scrolling speed
+  //       // Reset to start when reaching the end
+  //       if (
+  //         carouselRef.current.scrollLeft >=
+  //         carouselRef.current.scrollWidth / 2
+  //       ) {
+  //         carouselRef.current.scrollLeft = 0;
+  //       }
+  //     }
+  //   }, 1); // Smooth scrolling speed
 
-    return () => clearInterval(interval);
-  }, [isAutoScrolling]);
+  //   return () => clearInterval(interval);
+  // }, [isAutoScrolling]);
 
   // Manual scrolling
   const scrollLeft = () => {
@@ -104,7 +104,7 @@ const BestSeller = () => {
           {[...products, ...products].map((product, index) => {
             const isExpanded = expandedIndex === index;
             const words = product.desc.split(" ");
-            const shortText = words.slice(0, 5).join(" ");
+            const shortText = words.slice(0, 20).join(" ");
 
             return (
               <div
@@ -116,7 +116,10 @@ const BestSeller = () => {
                   alt="Company News Image"
                   className="w-full h-60 object-fit bg-gray-800 rounded-md"
                 />
-                <p className="text-black mt-4 text-center break-words whitespace-normal w-[350px] inline">
+                <p className="text-black font-bold h-10 mt-4 text-center break-words whitespace-normal w-[350px] inline">
+                  {product.title}
+                </p>
+                <p className="text-black mt-4 text-justify break-words whitespace-normal w-[350px] mx-auto">
                   {isExpanded ? product.desc : `${shortText}...`}
                   <span
                     className="text-blue-500 font-semibold ml-1 cursor-pointer"

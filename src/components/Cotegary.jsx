@@ -21,8 +21,13 @@ const Categories = () => {
       path: "/pointsource",
     },
     {
-      name: "Stage Monitor",
+      name: "Column Speaker",
       img: SpeakerF12,
+      path: "/columsound",
+    },
+    {
+      name: "Plastic Speaker",
+      img: PlasticDs5,
       path: "/stagemonitor",
     },
 
@@ -32,11 +37,6 @@ const Categories = () => {
       path: "/subwoofer",
     },
 
-    {
-      name: "Column Loudspeaker",
-      img: PlasticDs5,
-      path: "/columsound",
-    },
     {
       name: "Electronics",
       img: AMPLIFIERSpl4,
