@@ -16,6 +16,9 @@ import Distributor from "./components/Distributor";
 import News from "./components/News";
 import CaseSection from "./components/Case";
 import DownloadPage from "./components/Download";
+import Qseries from "./components/LineArraySeries/Qseries";
+import Cox from "./components/LineArraySeries/Coxseries";
+import Famous from "./components/LineArraySeries/Famousseries";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -68,6 +71,18 @@ const appRouter = createBrowserRouter([
       {
         path: "/columsound",
         element: <Columsound />,
+      },
+      {
+        path: "/qseries",
+        element: <Qseries />,
+      },
+      {
+        path: "/famousseries",
+        element: <Famous />,
+      },
+      {
+        path: "coxseries",
+        element: <Cox />,
       },
       {
         path: "/electronics",

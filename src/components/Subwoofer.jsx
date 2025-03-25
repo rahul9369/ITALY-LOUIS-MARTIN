@@ -2,12 +2,18 @@ import React from "react";
 import Subwoofer from "../assets/Subwoofer.jpg";
 import Footer from "../components/Footer";
 import subwoofer218 from "../assets/subwoofer218.png";
+import Devilred10 from "../assets/Devilred10.png";
+import red6 from "../assets/red5.5.jpg";
+import red5 from "../assets/red5.jpg";
+import red9 from "../assets/red9.jpg";
+import red12 from "../assets/red12.jpg";
+import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: subwoofer218,
-    title: "Xcellence Series",
-    model: "X212AFD",
+    img: Devilred10,
+    title: "Point Source Series",
+    model: "Red 10",
     description: '2x 12"+ 4x6"+ 2x3" SELF-POWERED TRI-AMPLIFIED',
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     response: "42 Hz – 18 kHz",
@@ -15,9 +21,9 @@ const products = [
     weight: "64.6 kg",
   },
   {
-    img: subwoofer218,
-    title: "Xcellence Series",
-    model: "XA211",
+    img: red6,
+    title: "Point Source Series",
+    model: "Red 5.5",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
@@ -25,19 +31,39 @@ const products = [
     weight: "37.4 kg",
   },
   {
-    img: subwoofer218,
-    title: "Xcellence Series",
-    model: "XA211P",
-    description:
-      "TWO-WAY LINE ARRAY MODULE FOR EXTERNAL DSP + BI-AMPLIFICATION",
-    power: "1450 W (LF) + 250 W (HF)",
-    response: "65 Hz – 2 kHz (LF) / 800 Hz – 19 kHz (HF)",
-    spl: "136 dB (LF) / 135 dB (HF)",
-    weight: "35 kg",
+    img: red5,
+    title: "Point Source Series",
+    model: "Red 5",
+    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
+    response: "65 Hz – 19 kHz",
+    spl: "136 dB (musical program)",
+    weight: "37.4 kg",
+  },
+  {
+    img: red9,
+    title: "Point Source Series",
+    model: "Red 9",
+    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
+    response: "65 Hz – 19 kHz",
+    spl: "136 dB (musical program)",
+    weight: "37.4 kg",
+  },
+  {
+    img: red12,
+    title: "Point Source Series",
+    model: "Red 12",
+    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
+    response: "65 Hz – 19 kHz",
+    spl: "136 dB (musical program)",
+    weight: "37.4 kg",
   },
 ];
 
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
   return (
     <div className="bg-white shadow-lg rounded-xl p-6 w-full text-center">
       <img
@@ -56,7 +82,13 @@ const ProductCard = ({ product }) => {
       </p>
       <p className="text-sm text-gray-700">Max SPL: {product.spl}</p>
       <p className="text-sm text-gray-700">Weight: {product.weight}</p>
-      <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+      <button
+        className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
+        onClick={() =>
+          navigate(
+            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+          )
+        }>
         {product.model}
       </button>
     </div>
