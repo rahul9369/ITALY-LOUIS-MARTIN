@@ -15,72 +15,71 @@ const products = [
     title: "Line array Series",
     model: "Famous 210",
     description:
-      "Two-way line array module for external DSP + BI-Amplification",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    response: "42 Hz – 18 kHz",
-    Sensitivity: "103 dB",
-    spl: "141 dB (musical program)",
-    weight: "64.6 kg",
+      "2x10 Two-way Bi-amp Externally Amplified Line Array Speaker System",
+    Power: "LF: 600W/2400W, HF: 150W/600W",
+    response: "70Hz-19KHz",
+    Sensitivity: "LF 103 dB , HF: 113 dB",
+    spl: "LF (133dB) , HF (137dB)",
+    weight: "50Kg",
   },
   {
     img: Q50,
     title: "Line Array Series",
     model: "Q 50",
     description:
-      "Two-way line array module for external DSP + BI-Amplification",
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    Sensitivity: "103 dB",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+      "1x10 Two-way Passive/Bi-Amp Switchable Line Array Speaker System",
+    power: "500W/2000W（Passive); LF:350W/1400W, HF:150W/600W (Bi-Amp)",
+    response: "65Hz-20KHz",
+    Sensitivity: "101dB(1W/1m)",
+    spl: "131dB（Passive); 131dB(Bi-Amp)",
+    weight: "16.8Kg",
   },
   {
     img: Q60,
     title: "Line Array Series",
     model: "Q 60",
     description:
-      "Two-way line array module for external DSP + BI-Amplification",
-    power: "1800W (CF) + 160W (HF)",
-    response: "(± 5dB) 60Hz - 19kHz",
-    Sensitivity: "103 dB",
-    spl: " 123dB - 129dB",
-    weight: "22.8 kg",
+      "2x10 Two-way Passive/Bi-Amp Switchable Line Array Speaker System",
+    power: "600W/2400W（Passive); LF:500W/2000W,HF:100W/400W(Bi-Amp)",
+    response: "60Hz-20KHz",
+    Sensitivity: "102dB(1W/1m)",
+    spl: "132dB（Passive）, 132dB(Bi-Amp)",
+    weight: "22.8Kg",
   },
   {
     img: Q70,
     title: "Line Array Series",
     model: "Q 70",
     description:
-      "Two-way line array module for external DSP + BI-Amplification",
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    Sensitivity: "103 dB",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+      "1x12 Two-way Passive/Bi-Amp Switchable Line Array Speaker System",
+    power: "550W/2200W（Passive); LF:400W/1600W, HF:150W/600W (Bi-Amp)",
+    response: "60Hz-20KHz",
+    Sensitivity: "103dB(1W/1m)",
+    spl: "133dB（Passive）, 133dB(Bi-Amp)",
+    weight: "22Kg",
   },
   {
     img: Q80,
     title: "Line Array Series",
     model: "Q 80",
     description:
-      "Two-way line array module for external DSP + BI-Amplification",
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    Sensitivity: "103 dB",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+      "2x12 Two-way Passive/Bi-Amp Switchable Line Array Speaker System",
+    power: "1000W/4000W（Passive）; LF:700W/2800W, HF:300W/1200W (Bi-Amp)",
+    response: "60Hz-20KHz",
+    Sensitivity: "103dB(1W/1m)",
+    spl: "136dB（Passive）, 136dB(Bi-Amp)",
+    weight: "36.8Kg",
   },
   {
     img: Cox12,
     title: "Line array Series",
     model: "Cox 12",
-    description:
-      "TWO-WAY LINE ARRAY MODULE FOR EXTERNAL DSP + BI-AMPLIFICATION",
-    power: "1450 W (LF) + 250 W (HF)",
-    response: "65 Hz – 2 kHz (LF) / 800 Hz – 19 kHz (HF)",
-    Sensitivity: "103 dB",
-    spl: "136 dB (LF) / 135 dB (HF)",
-    weight: "35 kg",
+    description: "1x12 Passive Co-axial line array Speaker System",
+    power: "450W/1800W (Passive)",
+    response: "60Hz-19KHz",
+    Sensitivity: "98dB(1W/1m)",
+    spl: "127dB",
+    weight: "22Kg",
   },
 ];
 
@@ -97,7 +96,7 @@ const ProductCard = ({ product }) => {
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
       <p className="text-sm font-semibold mt-2 text-gray-700">
-        <span className="font-bold">Program Power:</span> {product.power}
+        <span className="font-bold">RMS/Peak Power:</span> {product.power}
       </p>
       <p className="text-sm mt-2 text-gray-700">
         <span className="font-bold"> Frequency Response:</span>{" "}
@@ -108,10 +107,10 @@ const ProductCard = ({ product }) => {
         {product.Sensitivity}
       </p>
       <p className="text-sm mt-2 text-gray-700">
-        <span className="font-bold">Max SPL:</span> {product.spl}
+        <span className="font-bold">Max SPL(Continuous):</span> {product.spl}
       </p>
       <p className="text-sm mt-2 text-gray-700">
-        <span className="font-bold">Weight:</span> {product.weight}
+        <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button
         className="mt-4 w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"

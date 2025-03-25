@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold text-white">Quick Links</h3>
-            <ul className="mt-3 space-y-2 text-sm">
+            <ul className="mt-3 grid grid-cols-2 space-y-2 text-sm">
               {[
                 { name: "Line Arrays", path: "/linearray" },
                 { name: "Point Source", path: "/pointsource" },
@@ -45,8 +45,10 @@ const Footer = () => {
           {/* Social Media */}
           <div>
             <h3 className="text-lg font-semibold text-white">Get in Touch</h3>
-            <p className="text-gray-400 text-sm">Email: eminent@gmail.com</p>
-            <p className="text-gray-400 text-sm">Phone: +32 - 486586008</p>
+            <p className="text-gray-400 text-sm">
+              Email:contact@louismartinaudio.it
+            </p>
+            <p className="text-gray-400 text-sm">Phone: +39 3242615626</p>
             <div className="flex justify-center md:justify-start space-x-5 mt-3">
               {[
                 { href: "https://facebook.com", icon: "facebook" },
@@ -77,8 +79,8 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="text-center text-sm mt-6 px-4">
           <p>
-            © {new Date().getFullYear()} ITALY LOUIS MARTIN AUDIO. All rights
-            reserved.
+            © {new Date().getFullYear()} ITALY LOUIS MARTIN PROFESSIONAL AUDIO
+            LIMITED. All rights reserved.
           </p>
         </div>
       </div>

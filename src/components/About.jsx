@@ -34,25 +34,26 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 my-6 gap-6 w-[90%] mx-auto">
         <div className="">
           <p className="text-justify text-md leading-relaxed">
-            <span className="font-bold"> Company History</span> As any pro-audio
-            veteran will tell you, many of the industry's major players began
-            life as small "mom and pop" operations, run out of garages,
-            basements, and spare bedrooms. Steeped in the anti-corporate ethos
-            of the '60s and '70s, these were businesses born of the visions of
-            young entrepreneurs typically short on experience but rich in
-            dreams, drive, and a desire to do things differently. As the
-            industry and its technology have evolved, many of those early
-            ventures have fallen by the wayside. Some of them imploded, fueled
-            by naive management, personality crises, or simply a failure to
-            evolve. Some grew so large and unwieldy that their only hope for
-            survival was to be bought out by the corporate culture they'd long
-            resisted. Over the years, only a handful have managed to not simply
-            exist, but flourish. The story of Louis Martin Audio is one of
-            professional audio’s most inspiring tales. From its humble
-            beginnings crafting handmade guitar amps from a one-room shop in
-            Florence, Louis Martin has grown to become the industry's undisputed
-            leader in power amps, loudspeakers, and complete networked audio
-            solutions.
+            <span className="font-bold"> Louis Martin Audio</span> represents an
+            exemplary journey of innovation and resilience in the professional
+            audio industry. Established in 2008 at Giambrocono & C.S.P.A,
+            located at Via Rosolino Pilo 19/B, 20129 Milano, Italy, the company
+            began its operations in a modest one-room workshop in Florence,
+            specializing in handcrafted guitar amplifiers. This modest beginning
+            reflected the entrepreneurial vision and creativity of its founders,
+            who aspired to redefine standards in the audio domain. Distinguished
+            by its adaptability and commitment to technological advancements,
+            Louis Martin Audio consistently embraced innovation to meet the
+            evolving demands of the industry. By expanding its product portfolio
+            and pioneering new technologies, the company established itself as a
+            leader in professional audio solutions. Today, Louis Martin Audio is
+            celebrated globally for its cutting-edge technology in power
+            amplifiers, loudspeakers, and advanced networked audio solutions.
+            The company has redefined excellence in sound quality and
+            performance, setting benchmarks for the industry. Its journey, from
+            humble origins to global prominence, exemplifies the values of
+            perseverance, visionary leadership, and a relentless
+            pursuit of excellence.
           </p>
         </div>
 
