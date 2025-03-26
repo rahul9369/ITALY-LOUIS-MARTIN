@@ -4,6 +4,7 @@ import red6 from "../assets/red5.5.jpg";
 import red5 from "../assets/red5.jpg";
 import red9 from "../assets/red9.jpg";
 import red12 from "../assets/red12.jpg";
+import Fseries from "../assets/SpeakerF12.jpg";
 import Footer from "./Footer";
 import { useState } from "react";
 const products = [
@@ -81,9 +82,81 @@ const products = [
   },
   {
     img: red12,
-
     title: "Point Source Series",
     model: "Red 12",
+    description:
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+
+  {
+    img: Fseries,
+    title: "Point Source Series",
+    model: "F8",
+    description:
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+  {
+    img: Fseries,
+    title: "Point Source Series",
+    model: "F10",
+    description:
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+  {
+    img: Fseries,
+    title: "Point Source Series",
+    model: "F12",
+    description:
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+  {
+    img: Fseries,
+    title: "Point Source Series",
+    model: "F15",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",

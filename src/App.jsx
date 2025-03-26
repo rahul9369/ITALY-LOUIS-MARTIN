@@ -19,6 +19,8 @@ import DownloadPage from "./components/Download";
 import Qseries from "./components/LineArraySeries/Qseries";
 import Cox from "./components/LineArraySeries/Coxseries";
 import Famous from "./components/LineArraySeries/Famousseries";
+import Fseries from "./components/Fseries";
+import Redseries from "./components/Redseries";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -83,6 +85,14 @@ const appRouter = createBrowserRouter([
       {
         path: "coxseries",
         element: <Cox />,
+      },
+      {
+        path: "redseries",
+        element: <Redseries />,
+      },
+      {
+        path: "fseries",
+        element: <Fseries />,
       },
       {
         path: "/electronics",

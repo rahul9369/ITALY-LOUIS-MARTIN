@@ -46,8 +46,8 @@ const Navbar = () => {
               name: "Line Arrays",
               path: "/linearray",
               sublinks: [
-                { name: "Q Series", path: "/qseries" },
                 { name: "Famous series", path: "/famousseries" },
+                { name: "Q Series", path: "/qseries" },
                 { name: "Cox series", path: "/coxseries" },
               ],
             },
@@ -55,32 +55,41 @@ const Navbar = () => {
               name: "Point Source",
               path: "/pointsource",
               sublinks: [
-                { name: "Red Series", path: "/pointsource/red-series" },
-                { name: "F series", path: "/pointsource/f-series" },
+                { name: "Red Series", path: "/redseries" },
+                { name: "F series", path: "/fseries" },
               ],
             },
             {
-              name: "Sub Woofer",
-              path: "/subwoofer",
-              sublinks: [
-                { name: "F Series", path: "/subwoofer/f-series" },
-                { name: "KS series", path: "/subwoofer/ks-series" },
-              ],
-            },
-            {
-              name: "Commercial Speaker",
+              name: "Column Speaker",
               path: "/columsound",
               sublinks: [
                 {
-                  name: "Plastic Speaker",
-                  path: "/columsound/plastic-speaker",
+                  name: "K series",
+                  path: "kseries",
                 },
               ],
             },
             {
+              name: "Plastic Speaker",
+              path: "/electronics",
+              sublinks: [{ name: "DS Series", path: "/electronics/dsseries" }],
+            },
+            {
+              name: "Subwoofer",
+              path: "/subwoofer",
+              sublinks: [
+                { name: "KS series", path: "/subwoofer/ks-series" },
+                { name: "S Series", path: "/subwoofer/f-series" },
+              ],
+            },
+
+            {
               name: "Electronics",
               path: "/electronics",
               sublinks: [
+                { name: "D Series", path: "/electronics/tta-series" },
+                { name: "PL Series", path: "/electronics/tta-series" },
+                { name: "TIP Series", path: "/electronics/tta-series" },
                 { name: "TTA Series", path: "/electronics/tta-series" },
               ],
             },

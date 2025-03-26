@@ -1,69 +1,9 @@
 import React from "react";
 import pointsource from "../assets/pointsource.jpg";
 import Footer from "../components/Footer";
-import Devilred10 from "../assets/Devilred10.png";
-import red6 from "../assets/red5.5.jpg";
-import red5 from "../assets/red5.jpg";
-import red9 from "../assets/red9.jpg";
-import red12 from "../assets/red12.jpg";
 import Fseries from "../assets/SpeakerF12.jpg";
 import { useNavigate } from "react-router-dom";
 const products = [
-  {
-    img: Devilred10,
-    title: "Point Source Series",
-    model: "Red 10",
-    description: `2x10" Two-Way Passive Full-Range High Power Loudspeaker`,
-    power: "600W/2400W (Passive)",
-    response: "65Hz-20KHz",
-    Sensitivity: "101dB(1W/1m)",
-    spl: "131dB",
-    weight: "38Kg",
-  },
-  {
-    img: red6,
-    title: "Point Source Series",
-    model: "Red 5.5",
-    description: '2x5" Two-Way Passive Full-Range High Power Loudspeaker',
-    power: "200W/800W (Passive)",
-    response: "80Hz-19KHz",
-    Sensitivity: "96dB(1W/1m)",
-    spl: "124dB",
-    weight: "9Kg",
-  },
-  {
-    img: red5,
-    title: "Point Source Series",
-    model: "Red 5",
-    description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
-    power: "100W/400W (Passive)",
-    response: "90Hz-19KHz",
-    Sensitivity: "93dB(1W/1m)",
-    spl: "115dB",
-    weight: "6Kg",
-  },
-  {
-    img: red9,
-    title: "Point Source Series",
-    model: "Red 9",
-    description: '1x10" Two-Way Passive Full-Range High Power Loudspeaker',
-    power: "200W/800W (Passive)",
-    response: "75Hz-19KHz",
-    Sensitivity: "96dB(1W/1m)",
-    spl: "121dB",
-    weight: "15Kg",
-  },
-  {
-    img: red12,
-    title: "Point Source Series",
-    model: "Red 12",
-    description: '1x12" Two-Way Passive Full-Range High Power Loudspeaker',
-    power: "250W/1000W (Passive)",
-    response: "70Hz-19KHz",
-    Sensitivity: "97dB(1W/1m)",
-    spl: "123dB",
-    weight: "18Kg",
-  },
   {
     img: Fseries,
     title: "Point Source Series",

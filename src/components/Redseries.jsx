@@ -6,7 +6,6 @@ import red6 from "../assets/red5.5.jpg";
 import red5 from "../assets/red5.jpg";
 import red9 from "../assets/red9.jpg";
 import red12 from "../assets/red12.jpg";
-import Fseries from "../assets/SpeakerF12.jpg";
 import { useNavigate } from "react-router-dom";
 const products = [
   {
@@ -63,46 +62,6 @@ const products = [
     Sensitivity: "97dB(1W/1m)",
     spl: "123dB",
     weight: "18Kg",
-  },
-  {
-    img: Fseries,
-    title: "Point Source Series",
-    model: "F8",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
-  },
-  {
-    img: Fseries,
-    title: "Point Source Series",
-    model: "F10",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
-  },
-  {
-    img: Fseries,
-    title: "Point Source Series",
-    model: "F12",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
-  },
-  {
-    img: Fseries,
-    title: "Point Source Series",
-    model: "F15",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
   },
 ];
 
