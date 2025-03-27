@@ -1,17 +1,12 @@
 import React from "react";
 import Subwoofer from "../../assets/Subwoofer.jpg";
 import Footer from "../Footer";
-// import subwoofer218 from "../assets/subwoofer218.png";
-import Devilred10 from "../../assets/Devilred10.png";
-// import red6 from "../assets/red5.5.jpg";
-import red5 from "../../assets/red5.jpg";
-// import red9 from "../assets/red9.jpg";
-// import red12 from "../assets/red12.jpg";
+import SubwooferImg from "../../assets/subwoofer218.png";
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: Devilred10,
+    img: SubwooferImg,
     title: "Subwoofer",
     model: "KS18",
     description: '1x18" High Power Passive Subwoofer',
@@ -22,7 +17,7 @@ const products = [
     weight: "58Kg",
   },
   {
-    img: red5,
+    img: SubwooferImg,
     title: "Subwoofer",
     model: "KS218",
     description: '2x18" High Power Passive Subwoofer',
@@ -73,7 +68,7 @@ const ProductList = () => {
       <img src={Subwoofer} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="text-4xl mx-auto font-bold  mb-4">
-          Sub Woofers - All Series
+          Sub Woofers - KS Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
           Our Line Array Systems are meticulously designed to provide consistent

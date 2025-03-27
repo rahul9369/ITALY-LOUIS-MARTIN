@@ -67,7 +67,7 @@ const ProductList = () => {
       <img src={Linearray} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="text-4xl mx-auto font-bold  mb-4">
-          Line Arrays - All Series
+          Line Arrays - Famous Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
           Our Line Array Systems are meticulously designed to provide consistent

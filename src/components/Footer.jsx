@@ -25,11 +25,12 @@ const Footer = () => {
                 { name: "Line Arrays", path: "/linearray" },
                 { name: "Point Source", path: "/pointsource" },
                 { name: "SubWoofer", path: "/subwoofer" },
-                { name: "Commercial Speaker", path: "#" },
+                { name: "Column Speaker", path: "/columsound" },
+                { name: "Plastic Speaker", path: "/stagemonitor" },
                 { name: "Electronics", path: "/electronics" },
                 { name: "Contact Us", path: "/contact" },
                 { name: "About Us", path: "/about" },
-                { name: "Distributor", path: "/distributor" },
+                // { name: "Distributor", path: "/distributor" },
               ].map(({ name, path }) => (
                 <li key={name}>
                   <Link
