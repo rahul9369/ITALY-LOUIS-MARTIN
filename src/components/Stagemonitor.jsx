@@ -12,6 +12,7 @@ const products = [
     description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "100W/400W (Passive)",
     response: "65Hz-19KHz",
+    Sensitivity: "93dB(1W/1m)",
     spl: "93dB",
     weight: "5Kg",
   },
@@ -21,6 +22,7 @@ const products = [
     model: "DS8",
     description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "150W/300W (Passive)",
+    Sensitivity: "95dB(1W/1m)",
     response: "60Hz-19KHz",
     spl: "95dB",
     weight: "8Kg",
@@ -31,6 +33,7 @@ const products = [
     model: "DS12",
     description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "400W/800W (Passive)",
+    Sensitivity: "99dB(1W/1m)",
     response: "70Hz-19KHz",
     spl: "99dB",
     weight: "17Kg",
@@ -40,23 +43,32 @@ const products = [
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 w-full text-center">
+    <div className="bg-white shadow-lg rounded-xl p-6 w-full ">
       <img
         src={product.img}
         alt={product.model}
         className="w-full h-72 object-cover rounded-lg"
       />
-      <h2 className="text-xl font-bold text-gray-800 mt-4">{product.title}</h2>
-      <h3 className="text-lg font-semibold text-gray-600">{product.model}</h3>
-      <p className="text-sm text-gray-500 my-2">{product.description}</p>
-      <p className="text-sm font-semibold text-gray-700">
-        Amplifier Power: {product.power}
+      <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
+      <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
+      <p className="text-md text-black font-bold my-2">{product.description}</p>
+      <p className="text-sm font-semibold mt-2 text-gray-700">
+        <span className="font-bold">RMS/Peak Power:</span> {product.power}
       </p>
-      <p className="text-sm text-gray-700">
-        Frequency Response: {product.response}
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold"> Frequency Response:</span>{" "}
+        {product.response}
       </p>
-      <p className="text-sm text-gray-700">Max SPL: {product.spl}</p>
-      <p className="text-sm text-gray-700">Weight: {product.weight}</p>
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
+        {product.Sensitivity}
+      </p>
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Max SPL(Continuous):</span> {product.spl}
+      </p>
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Net Weight:</span> {product.weight}
+      </p>
       <button
         className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
         onClick={() =>

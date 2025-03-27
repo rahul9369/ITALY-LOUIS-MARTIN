@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const products = [
   {
     img: Cox12,
-    title: "Line array Series",
+    title: "Cox Series",
     model: "Cox 12",
     description: `1x12" Passive Co-axial line array Speaker System`,
     power: "450W/1800W (Passive)",
@@ -25,7 +25,12 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover rounded-lg"
+        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+        onClick={() =>
+          navigate(
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+          )
+        }
       />
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
@@ -48,7 +53,7 @@ const ProductCard = ({ product }) => {
         <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button
-        className="mt-4 w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
+        className="mt-4 w-full bg-orange-500 cursor-pointer text-white px-4 py-2 rounded-lg hover:bg-orange-600"
         onClick={() =>
           navigate(
             `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`

@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const products = [
   {
     img: Devilred10,
-    title: "Point Source Series",
+    title: "Red Series",
     model: "Red 10",
     description: `2x10" Two-Way Passive Full-Range High Power Loudspeaker`,
     power: "600W/2400W (Passive)",
@@ -21,7 +21,7 @@ const products = [
   },
   {
     img: red6,
-    title: "Point Source Series",
+    title: "Red Series",
     model: "Red 5.5",
     description: '2x5" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "200W/800W (Passive)",
@@ -32,7 +32,7 @@ const products = [
   },
   {
     img: red5,
-    title: "Point Source Series",
+    title: "Red Series",
     model: "Red 5",
     description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "100W/400W (Passive)",
@@ -43,7 +43,7 @@ const products = [
   },
   {
     img: red9,
-    title: "Point Source Series",
+    title: "Red Series",
     model: "Red 9",
     description: '1x10" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "200W/800W (Passive)",
@@ -54,7 +54,7 @@ const products = [
   },
   {
     img: red12,
-    title: "Point Source Series",
+    title: "Red Series",
     model: "Red 12",
     description: '1x12" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "250W/1000W (Passive)",
@@ -75,24 +75,25 @@ const ProductCard = ({ product }) => {
         alt={product.model}
         className="w-full h-72 object-cover rounded-lg"
       />
-      <h2 className="text-xl  text-gray-800 mt-4">{product.title}</h2>
-      <h3 className="text-lg font-bold text-gray-600">{product.model}</h3>
-      <p className="text-md font-bold text-black my-2">{product.description}</p>
-      <p className="text-md  text-gray-700">
-        <span className="font-bold"> Program Power:</span> {product.power}
+      <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
+      <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
+      <p className="text-md text-black font-bold my-2">{product.description}</p>
+      <p className="text-sm font-semibold mt-2 text-gray-700">
+        <span className="font-bold">RMS/Peak Power:</span> {product.power}
       </p>
-      <p className="text-sm py-2 text-gray-700">
+      <p className="text-sm mt-2 text-gray-700">
         <span className="font-bold"> Frequency Response:</span>{" "}
         {product.response}
       </p>
-      <p className="text-sm text-gray-700">
-        <span className="font-bold">Max SPL:</span> {product.spl}
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
+        {product.Sensitivity}
       </p>
-      <p className="text-sm text-gray-700">
-        <span className="font-bold">Sensitivity:</span> {product.Sensitivity}
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Max SPL(Continuous):</span> {product.spl}
       </p>
-      <p className="text-sm my-2 text-gray-700">
-        <span className="font-bold">Weight:</span> {product.weight}
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button
         className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"

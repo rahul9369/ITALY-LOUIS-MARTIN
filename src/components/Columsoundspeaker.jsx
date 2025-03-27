@@ -1,15 +1,16 @@
 import React from "react";
 import Column from "../assets/Columnspeaker.jpg";
 import Footer from "../components/Footer";
-import Devilred10 from "../assets/Devilred10.png";
-import red6 from "../assets/red5.5.jpg";
-import red5 from "../assets/red5.jpg";
-import red9 from "../assets/red9.jpg";
+import K302 from "../assets/K302.jpg";
+import K304 from "../assets/K304.jpg";
+import K306 from "../assets/K306.jpg";
+import K308 from "../assets/K308.jpg";
+import K312 from "../assets/K312.png";
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: Devilred10,
+    img: K302,
     title: "Column Speaker",
     model: "K302",
     description: '2x1.75" Passive Full Range Column Speaker',
@@ -20,7 +21,7 @@ const products = [
     weight: "2.2Kg",
   },
   {
-    img: red6,
+    img: K304,
     title: "Column Speaker",
     model: "K304",
     description: '4x1.75" Passive Full Range Column Speaker',
@@ -31,7 +32,18 @@ const products = [
     weight: "4.1Kg",
   },
   {
-    img: red5,
+    img: K306,
+    title: "Column Speaker",
+    model: "K306",
+    description: '4x1.75" Passive Full Range Column Speaker',
+    power: "80W/320W (Passive)",
+    response: "150Hz-18KHz",
+    Sensitivity: "91dB(1W/1m)",
+    spl: "113dB",
+    weight: "4.1Kg",
+  },
+  {
+    img: K308,
     title: "Column Speaker",
     model: "K308",
     description: '8x1.75" Passive Full Range Column Speaker',
@@ -42,7 +54,7 @@ const products = [
     weight: "7.8Kg",
   },
   {
-    img: red9,
+    img: K312,
     title: "Column Speaker",
     model: "K312",
     description: '12x1.75" Passive Full Range Column Speaker',
@@ -57,23 +69,32 @@ const products = [
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 w-full text-center">
+    <div className="bg-white shadow-lg rounded-xl p-6 w-full ">
       <img
         src={product.img}
         alt={product.model}
         className="w-full h-72 object-cover rounded-lg"
       />
-      <h2 className="text-xl font-bold text-gray-800 mt-4">{product.title}</h2>
-      <h3 className="text-lg font-semibold text-gray-600">{product.model}</h3>
-      <p className="text-sm text-gray-500 my-2">{product.description}</p>
-      <p className="text-sm font-semibold text-gray-700">
-        Amplifier Power: {product.power}
+      <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
+      <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
+      <p className="text-md text-black font-bold my-2">{product.description}</p>
+      <p className="text-sm font-semibold mt-2 text-gray-700">
+        <span className="font-bold">RMS/Peak Power:</span> {product.power}
       </p>
-      <p className="text-sm text-gray-700">
-        Frequency Response: {product.response}
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold"> Frequency Response:</span>{" "}
+        {product.response}
       </p>
-      <p className="text-sm text-gray-700">Max SPL: {product.spl}</p>
-      <p className="text-sm text-gray-700">Weight: {product.weight}</p>
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
+        {product.Sensitivity}
+      </p>
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Max SPL(Continuous):</span> {product.spl}
+      </p>
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Net Weight:</span> {product.weight}
+      </p>
       <button
         className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
         onClick={() =>

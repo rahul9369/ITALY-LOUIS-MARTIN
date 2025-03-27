@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const products = [
   {
     img: Linear,
-    title: "Line array Series",
+    title: "Famous Series",
     model: "Famous 210",
     description: `2x10" Two-way Bi-amp Externally Amplified Line Array Speaker System`,
     Power: "LF: 600W/2400W, HF: 150W/600W",

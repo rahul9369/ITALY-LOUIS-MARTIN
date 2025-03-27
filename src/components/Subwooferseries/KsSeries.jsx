@@ -1,12 +1,13 @@
 import React from "react";
 import Subwoofer from "../../assets/Subwoofer.jpg";
 import Footer from "../Footer";
+import KS18 from "../../assets/ks18.jpg";
 import SubwooferImg from "../../assets/subwoofer218.png";
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: SubwooferImg,
+    img: KS18,
     title: "Subwoofer",
     model: "KS18",
     description: '1x18" High Power Passive Subwoofer',
@@ -32,23 +33,32 @@ const products = [
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 w-full text-center">
+    <div className="bg-white shadow-lg rounded-xl p-6 w-full ">
       <img
         src={product.img}
         alt={product.model}
         className="w-full h-72 object-cover rounded-lg"
       />
-      <h2 className="text-xl font-bold text-gray-800 mt-4">{product.title}</h2>
-      <h3 className="text-lg font-semibold text-gray-600">{product.model}</h3>
-      <p className="text-sm text-gray-500 my-2">{product.description}</p>
-      <p className="text-sm font-semibold text-gray-700">
-        Amplifier Power: {product.power}
+      <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
+      <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
+      <p className="text-md text-black font-bold my-2">{product.description}</p>
+      <p className="text-sm font-semibold mt-2 text-gray-700">
+        <span className="font-bold">RMS/Peak Power:</span> {product.power}
       </p>
-      <p className="text-sm text-gray-700">
-        Frequency Response: {product.response}
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold"> Frequency Response:</span>{" "}
+        {product.response}
       </p>
-      <p className="text-sm text-gray-700">Max SPL: {product.spl}</p>
-      <p className="text-sm text-gray-700">Weight: {product.weight}</p>
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
+        {product.Sensitivity}
+      </p>
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Max SPL(Continuous):</span> {product.spl}
+      </p>
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Net Weight:</span> {product.weight}
+      </p>
       <button
         className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
         onClick={() =>

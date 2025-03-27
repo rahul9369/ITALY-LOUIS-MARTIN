@@ -6,12 +6,16 @@ import red6 from "../assets/red5.5.jpg";
 import red5 from "../assets/red5.jpg";
 import red9 from "../assets/red9.jpg";
 import red12 from "../assets/red12.jpg";
-import Fseries from "../assets/SpeakerF12.jpg";
+import F8 from "../assets/F8.png";
+import F10 from "../assets/F10.png";
+import F12 from "../assets/F12.jpg";
+import F15 from "../assets/F15.png";
+
 import { useNavigate } from "react-router-dom";
 const products = [
   {
     img: Devilred10,
-    title: "Point Source Series",
+    title: "Red Series",
     model: "Red 10",
     description: `2x10" Two-Way Passive Full-Range High Power Loudspeaker`,
     power: "600W/2400W (Passive)",
@@ -22,7 +26,7 @@ const products = [
   },
   {
     img: red6,
-    title: "Point Source Series",
+    title: "Red Series",
     model: "Red 5.5",
     description: '2x5" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "200W/800W (Passive)",
@@ -33,7 +37,7 @@ const products = [
   },
   {
     img: red5,
-    title: "Point Source Series",
+    title: "Red Series",
     model: "Red 5",
     description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "100W/400W (Passive)",
@@ -44,7 +48,7 @@ const products = [
   },
   {
     img: red9,
-    title: "Point Source Series",
+    title: "Red Series",
     model: "Red 9",
     description: '1x10" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "200W/800W (Passive)",
@@ -55,7 +59,7 @@ const products = [
   },
   {
     img: red12,
-    title: "Point Source Series",
+    title: "Red Series",
     model: "Red 12",
     description: '1x12" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "250W/1000W (Passive)",
@@ -65,41 +69,45 @@ const products = [
     weight: "18Kg",
   },
   {
-    img: Fseries,
-    title: "Point Source Series",
+    img: F8,
+    title: "F Series",
     model: "F8",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
+    Sensitivity: "93dB(1W/1m)",
     spl: "136 dB (musical program)",
     weight: "37.4 kg",
   },
   {
-    img: Fseries,
-    title: "Point Source Series",
+    img: F10,
+    title: "F Series",
     model: "F10",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
+    Sensitivity: "96dB(1W/1m)",
     spl: "136 dB (musical program)",
     weight: "37.4 kg",
   },
   {
-    img: Fseries,
-    title: "Point Source Series",
+    img: F12,
+    title: "F Series",
     model: "F12",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
+    Sensitivity: "97dB(1W/1m)",
     spl: "136 dB (musical program)",
     weight: "37.4 kg",
   },
   {
-    img: Fseries,
-    title: "Point Source Series",
+    img: F15,
+    title: "F Series",
     model: "F15",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
+    Sensitivity: "99dB(1W/1m)",
     response: "65 Hz – 19 kHz",
     spl: "136 dB (musical program)",
     weight: "37.4 kg",
@@ -116,24 +124,25 @@ const ProductCard = ({ product }) => {
         alt={product.model}
         className="w-full h-72 object-cover rounded-lg"
       />
-      <h2 className="text-xl  text-gray-800 mt-4">{product.title}</h2>
-      <h3 className="text-lg font-bold text-gray-600">{product.model}</h3>
-      <p className="text-md font-bold text-black my-2">{product.description}</p>
-      <p className="text-md  text-gray-700">
-        <span className="font-bold"> Program Power:</span> {product.power}
+      <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
+      <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
+      <p className="text-md text-black font-bold my-2">{product.description}</p>
+      <p className="text-sm font-semibold mt-2 text-gray-700">
+        <span className="font-bold">RMS/Peak Power:</span> {product.power}
       </p>
-      <p className="text-sm py-2 text-gray-700">
+      <p className="text-sm mt-2 text-gray-700">
         <span className="font-bold"> Frequency Response:</span>{" "}
         {product.response}
       </p>
-      <p className="text-sm text-gray-700">
-        <span className="font-bold">Max SPL:</span> {product.spl}
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
+        {product.Sensitivity}
       </p>
-      <p className="text-sm text-gray-700">
-        <span className="font-bold">Sensitivity:</span> {product.Sensitivity}
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Max SPL(Continuous):</span> {product.spl}
       </p>
-      <p className="text-sm my-2 text-gray-700">
-        <span className="font-bold">Weight:</span> {product.weight}
+      <p className="text-sm mt-2 text-gray-700">
+        <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button
         className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"

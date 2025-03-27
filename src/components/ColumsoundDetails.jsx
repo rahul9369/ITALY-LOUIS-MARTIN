@@ -1,13 +1,14 @@
 import { useParams } from "react-router-dom";
-import Devilred10 from "../assets/Devilred10.png";
-import red6 from "../assets/red5.5.jpg";
-import red5 from "../assets/red5.jpg";
-import red9 from "../assets/red9.jpg";
+import K302 from "../assets/K302.jpg";
+import K304 from "../assets/K304.jpg";
+import K306 from "../assets/K306.jpg";
+import K308 from "../assets/K308.jpg";
+import K312 from "../assets/K312.png";
 import Footer from "./Footer";
 import { useState } from "react";
 const products = [
   {
-    img: Devilred10,
+    img: K302,
     title: "Column Speaker",
     model: "K302",
     description: '2x1.75" Passive Full Range Column Speaker',
@@ -25,7 +26,7 @@ const products = [
     pdf: "/assets/famous_210_specs.pdf",
   },
   {
-    img: red6,
+    img: K304,
     title: "Column Speaker",
     model: "K304",
     description: '4x1.75" Passive Full Range Column Speaker',
@@ -43,7 +44,25 @@ const products = [
     pdf: "/assets/famous_210_specs.pdf",
   },
   {
-    img: red5,
+    img: K306,
+    title: "Column Speaker",
+    model: "K306",
+    description: '4x1.75" Passive Full Range Column Speaker',
+    power: "80W/320W (Passive)",
+    response: "150Hz-18KHz",
+    Sensitivity: "91dB(1W/1m)",
+    spl: "113dB",
+    weight: "4.1Kg",
+    impedance: "8Ω or 16Ω available",
+    maxSpl: "115 dB",
+    dimensions: "400 x 230 x 250 mm",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+  {
+    img: K308,
     title: "Column Speaker",
     model: "K308",
     description: '8x1.75" Passive Full Range Column Speaker',
@@ -61,7 +80,7 @@ const products = [
     pdf: "/assets/famous_210_specs.pdf",
   },
   {
-    img: red9,
+    img: K312,
     title: "Column Speaker",
     model: "K312",
     description: '12x1.75" Passive Full Range Column Speaker',

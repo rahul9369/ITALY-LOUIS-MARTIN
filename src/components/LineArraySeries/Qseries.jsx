@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 const products = [
   {
     img: Q50,
-    title: "Line Array Series",
+    title: "Q Series",
     model: "Q 50",
     description: `1x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "500W/2000W（Passive); LF:350W/1400W, HF:150W/600W (Bi-Amp)",
@@ -22,7 +22,7 @@ const products = [
   },
   {
     img: Q60,
-    title: "Line Array Series",
+    title: "Q Series",
     model: "Q 60",
     description: `2x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "600W/2400W（Passive); LF:500W/2000W,HF:100W/400W(Bi-Amp)",
@@ -33,7 +33,7 @@ const products = [
   },
   {
     img: Q70,
-    title: "Line Array Series",
+    title: "Q Series",
     model: "Q 70",
     description: `1x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "550W/2200W（Passive); LF:400W/1600W, HF:150W/600W (Bi-Amp)",
@@ -44,7 +44,7 @@ const products = [
   },
   {
     img: Q80,
-    title: "Line Array Series",
+    title: "Q Series",
     model: "Q 80",
     description: `2x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "1000W/4000W（Passive）; LF:700W/2800W, HF:300W/1200W (Bi-Amp)",

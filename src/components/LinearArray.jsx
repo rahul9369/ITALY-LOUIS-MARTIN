@@ -12,10 +12,10 @@ import { useNavigate } from "react-router-dom";
 const products = [
   {
     img: Linear,
-    title: "Line array Series",
+    title: "Famous Series",
     model: "Famous 210",
     description: `2x10" Two-way Bi-amp Externally Amplified Line Array Speaker System`,
-    Power: "LF: 600W/2400W, HF: 150W/600W",
+    power: "LF: 600W/2400W, HF: 150W/600W",
     response: "70Hz-19KHz",
     Sensitivity: "LF 103 dB , HF: 113 dB",
     spl: "LF (133dB) , HF (137dB)",
@@ -23,7 +23,7 @@ const products = [
   },
   {
     img: Q50,
-    title: "Line Array Series",
+    title: "Q Series",
     model: "Q 50",
     description: `1x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "500W/2000W（Passive); LF:350W/1400W, HF:150W/600W (Bi-Amp)",
@@ -34,7 +34,7 @@ const products = [
   },
   {
     img: Q60,
-    title: "Line Array Series",
+    title: "Q Series",
     model: "Q 60",
     description: `2x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "600W/2400W（Passive); LF:500W/2000W,HF:100W/400W(Bi-Amp)",
@@ -45,7 +45,7 @@ const products = [
   },
   {
     img: Q70,
-    title: "Line Array Series",
+    title: "Q Series",
     model: "Q 70",
     description: `1x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "550W/2200W（Passive); LF:400W/1600W, HF:150W/600W (Bi-Amp)",
@@ -56,7 +56,7 @@ const products = [
   },
   {
     img: Q80,
-    title: "Line Array Series",
+    title: "Q Series",
     model: "Q 80",
     description: `2x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "1000W/4000W（Passive）; LF:700W/2800W, HF:300W/1200W (Bi-Amp)",
@@ -67,7 +67,7 @@ const products = [
   },
   {
     img: Cox12,
-    title: "Line array Series",
+    title: "Cox Series",
     model: "Cox 12",
     description: `1x12" Passive Co-axial line array Speaker System`,
     power: "450W/1800W (Passive)",
@@ -85,7 +85,12 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover rounded-lg"
+        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+        onClick={() =>
+          navigate(
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+          )
+        }
       />
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
@@ -108,7 +113,7 @@ const ProductCard = ({ product }) => {
         <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button
-        className="mt-4 w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
+        className="mt-4 w-full cursor-pointer bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
         onClick={() =>
           navigate(
             `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
