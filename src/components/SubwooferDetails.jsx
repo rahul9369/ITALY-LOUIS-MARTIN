@@ -1,99 +1,80 @@
 import { useParams } from "react-router-dom";
 import SpeakerF12 from "../assets/SpeakerF12.jpg";
 import Footer from "./Footer";
-import Devilred10 from "../assets/Devilred10.png";
-import red6 from "../assets/red5.5.jpg";
-import red5 from "../assets/red5.jpg";
-import red9 from "../assets/red9.jpg";
-import red12 from "../assets/red12.jpg";
+import subwooferImg from "../assets/subwoofer218.png";
+
 import { useState } from "react";
 const products = [
   {
-    img: Devilred10,
-    title: "Point Source Series",
-    model: "Red 10",
-    description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    impedance: "8Ω or 16Ω available",
-    spl: "141 dB (musical program)",
+    img: subwooferImg,
+    title: "Subwoofer",
+    model: "KS18",
+    description: '1x18" High Power Passive Subwoofer',
+    power: "1000W/4000W (Passive)",
+    response: "35Hz-120Hz",
+    Sensitivity: "98dB(1W/1m)",
+    spl: "131dB",
+    weight: "58Kg",
     maxSpl: "115 dB",
-    response: "42 Hz – 18 kHz",
+    impedance: "8Ω or 16Ω available",
     dimensions: "400 x 230 x 250 mm",
-    weight: "64.6 kg",
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
     pdf: "/assets/famous_210_specs.pdf",
   },
-  {
-    img: red6,
-    title: "Point Source Series",
-    model: "Red 6",
-    description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    impedance: "8Ω or 16Ω available",
-    spl: "141 dB (musical program)",
-    maxSpl: "115 dB",
-    response: "42 Hz – 18 kHz",
-    dimensions: "400 x 230 x 250 mm",
-    weight: "64.6 kg",
-    finish:
-      "Multilayer birch plywood with high resistant black Polyurea® coating",
-    grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
-  },
-  {
-    img: red5,
-    title: "Point Source Series",
-    model: "Red 5",
-    description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    impedance: "8Ω or 16Ω available",
-    spl: "141 dB (musical program)",
-    maxSpl: "115 dB",
-    response: "42 Hz – 18 kHz",
-    dimensions: "400 x 230 x 250 mm",
-    weight: "64.6 kg",
-    finish:
-      "Multilayer birch plywood with high resistant black Polyurea® coating",
-    grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
-  },
-  {
-    img: red9,
-    title: "Point Source Series",
-    model: "Red 9",
-    description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    impedance: "8Ω or 16Ω available",
-    spl: "141 dB (musical program)",
-    maxSpl: "115 dB",
-    response: "42 Hz – 18 kHz",
-    dimensions: "400 x 230 x 250 mm",
-    weight: "64.6 kg",
-    finish:
-      "Multilayer birch plywood with high resistant black Polyurea® coating",
-    grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
-  },
-  {
-    img: red12,
 
-    title: "Point Source Series",
-    model: "Red 12",
-    description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    impedance: "8Ω or 16Ω available",
-    spl: "141 dB (musical program)",
+  {
+    img: subwooferImg,
+    title: "Subwoofer",
+    model: "KS218",
+    description: '2x18" High Power Passive Subwoofer',
+    power: "2000W/8000W (Passive)",
+    response: "30Hz-120Hz",
+    Sensitivity: "102dB(1W/1m)",
+    spl: "138dB",
+    weight: "88Kg",
     maxSpl: "115 dB",
-    response: "42 Hz – 18 kHz",
+    impedance: "8Ω or 16Ω available",
     dimensions: "400 x 230 x 250 mm",
-    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+
+  {
+    img: subwooferImg,
+    title: "Subwoofer",
+    model: "S18",
+    description: '1x18" High Power Passive Subwoofer',
+    power: "750W/3000W (Passive)",
+    response: "38Hz-120Hz",
+    Sensitivity: "96dB(1W/1m)",
+    spl: "127dB",
+    weight: "45Kg",
+    maxSpl: "115 dB",
+    impedance: "8Ω or 16Ω available",
+    dimensions: "400 x 230 x 250 mm",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+
+  {
+    img: subwooferImg,
+    title: "Subwoofer",
+    model: "S218",
+    description: '2x18" High Power Passive Subwoofer',
+    power: "1500W/6000W (Passive)",
+    response: "35Hz-120Hz",
+    Sensitivity: "102dB(1W/1m)",
+    spl: "136dB",
+    weight: "78Kg",
+    maxSpl: "115 dB",
+    impedance: "8Ω or 16Ω available",
+    dimensions: "400 x 230 x 250 mm",
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",

@@ -65,21 +65,21 @@ const Navbar = () => {
               sublinks: [
                 {
                   name: "K series",
-                  path: "kseries",
+                  path: "/columsound",
                 },
               ],
             },
             {
               name: "Plastic Speaker",
-              path: "/electronics",
-              sublinks: [{ name: "DS Series", path: "/electronics/dsseries" }],
+              path: "/stagemonitor",
+              sublinks: [{ name: "DS Series", path: "/stagemonitor" }],
             },
             {
               name: "Subwoofer",
               path: "/subwoofer",
               sublinks: [
-                { name: "KS series", path: "/subwoofer/ks-series" },
-                { name: "S Series", path: "/subwoofer/f-series" },
+                { name: "KS series", path: "/ksseries" },
+                { name: "S Series", path: "/sseries" },
               ],
             },
 

@@ -1,64 +1,39 @@
 import React from "react";
-import Stagemoniter from "../assets/Stagemoniter.jpg";
+import PlasticSpeaker from "../assets/PlasticSpeaker.jpg";
 import Footer from "../components/Footer";
-import SpeakerF12 from "../assets/SpeakerF12.jpg";
-import Devilred10 from "../assets/Devilred10.png";
-import red6 from "../assets/red5.5.jpg";
-import red5 from "../assets/red5.jpg";
-import red9 from "../assets/red9.jpg";
-import red12 from "../assets/red12.jpg";
+import plasticDs5 from "../assets/plasticDs5.jpg";
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: Devilred10,
-    title: "Point Source Series",
-    model: "Red 10",
-    description: '2x 12"+ 4x6"+ 2x3" SELF-POWERED TRI-AMPLIFIED',
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    response: "42 Hz – 18 kHz",
-    spl: "141 dB (musical program)",
-    weight: "64.6 kg",
+    img: plasticDs5,
+    title: "Plastic Speaker",
+    model: "DS5",
+    description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "100W/400W (Passive)",
+    response: "65Hz-19KHz",
+    spl: "93dB",
+    weight: "5Kg",
   },
   {
-    img: red6,
-    title: "Point Source Series",
-    model: "Red 5.5",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+    img: plasticDs5,
+    title: "Plastic Speaker",
+    model: "DS8",
+    description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "150W/300W (Passive)",
+    response: "60Hz-19KHz",
+    spl: "95dB",
+    weight: "8Kg",
   },
   {
-    img: red5,
-    title: "Point Source Series",
-    model: "Red 5",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
-  },
-  {
-    img: red9,
-    title: "Point Source Series",
-    model: "Red 9",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
-  },
-  {
-    img: red12,
-    title: "Point Source Series",
-    model: "Red 12",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+    img: plasticDs5,
+    title: "Plastic Speaker",
+    model: "DS12",
+    description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "400W/800W (Passive)",
+    response: "70Hz-19KHz",
+    spl: "99dB",
+    weight: "17Kg",
   },
 ];
 
@@ -86,7 +61,7 @@ const ProductCard = ({ product }) => {
         className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
         onClick={() =>
           navigate(
-            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`
           )
         }>
         {product.model}
@@ -98,10 +73,10 @@ const ProductCard = ({ product }) => {
 const ProductList = () => {
   return (
     <div className="w-full">
-      <img src={Stagemoniter} alt="Line Array" className="w-full" />
+      <img src={PlasticSpeaker} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="text-4xl mx-auto font-bold  mb-4">
-          Stage Monitor - All Series
+          Plastic Speaker - All Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
           Our Line Array Systems are meticulously designed to provide consistent

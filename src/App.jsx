@@ -21,6 +21,12 @@ import Cox from "./components/LineArraySeries/Coxseries";
 import Famous from "./components/LineArraySeries/Famousseries";
 import Fseries from "./components/Fseries";
 import Redseries from "./components/Redseries";
+import ColumnDetails from "./components/ColumsoundDetails";
+import Plasticspeaker from "./components/StagemonitorDetails";
+import SubwooferDetails from "./components/SubwooferDetails";
+import KSseries from "./components/Subwooferseries/KsSeries";
+import Sseries from "./components/Subwooferseries/Sseries";
+import ElectronicDetails from "./components/ElectronicDetails";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -95,12 +101,37 @@ const appRouter = createBrowserRouter([
         element: <Fseries />,
       },
       {
+        path: "sseries",
+        element: <Sseries />,
+      },
+      {
+        path: "ksseries",
+        element: <KSseries />,
+      },
+      {
         path: "/electronics",
         element: <Electronic />,
       },
       {
         path: "/product/:model",
         element: <Productdetails />,
+      },
+      {
+        path: "/electronics/:model",
+        element: <ElectronicDetails />,
+      },
+
+      {
+        path: "/column/:model",
+        element: <ColumnDetails />,
+      },
+      {
+        path: "/plastic/:model",
+        element: <Plasticspeaker />,
+      },
+      {
+        path: "/subwoofer/:model",
+        element: <SubwooferDetails />,
       },
       {
         path: "/linearray/:model",

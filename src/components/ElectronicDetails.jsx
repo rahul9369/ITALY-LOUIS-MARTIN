@@ -4,7 +4,7 @@ import AMPLIFIERSpl4 from "../assets/AMPLIFIERSpl4.jpg";
 import { useState } from "react";
 const products = [
   {
-    img: Devilred10,
+    img: AMPLIFIERSpl4,
     title: "Point Source Series",
     model: "Red 10",
     description:
@@ -22,7 +22,7 @@ const products = [
     pdf: "/assets/famous_210_specs.pdf",
   },
   {
-    img: red6,
+    img: AMPLIFIERSpl4,
     title: "Point Source Series",
     model: "Red 6",
     description:
@@ -40,7 +40,7 @@ const products = [
     pdf: "/assets/famous_210_specs.pdf",
   },
   {
-    img: red5,
+    img: AMPLIFIERSpl4,
     title: "Point Source Series",
     model: "Red 5",
     description:
@@ -58,7 +58,7 @@ const products = [
     pdf: "/assets/famous_210_specs.pdf",
   },
   {
-    img: red9,
+    img: AMPLIFIERSpl4,
     title: "Point Source Series",
     model: "Red 9",
     description:
@@ -76,7 +76,7 @@ const products = [
     pdf: "/assets/famous_210_specs.pdf",
   },
   {
-    img: red12,
+    img: AMPLIFIERSpl4,
 
     title: "Point Source Series",
     model: "Red 12",

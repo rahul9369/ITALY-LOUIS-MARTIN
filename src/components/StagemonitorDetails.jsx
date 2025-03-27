@@ -1,99 +1,57 @@
 import { useParams } from "react-router-dom";
-import SpeakerF12 from "../assets/SpeakerF12.jpg";
-import Devilred10 from "../assets/Devilred10.png";
-import red6 from "../assets/red5.5.jpg";
-import red5 from "../assets/red5.jpg";
-import red9 from "../assets/red9.jpg";
-import red12 from "../assets/red12.jpg";
+import PlasticSpeaker from "../assets/plasticDs5.jpg";
 import Footer from "./Footer";
 import { useState } from "react";
 const products = [
   {
-    img: Devilred10,
-    title: "Point Source Series",
-    model: "Red 10",
-    description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    impedance: "8Ω or 16Ω available",
-    spl: "141 dB (musical program)",
-    maxSpl: "115 dB",
-    response: "42 Hz – 18 kHz",
-    dimensions: "400 x 230 x 250 mm",
-    weight: "64.6 kg",
-    finish:
-      "Multilayer birch plywood with high resistant black Polyurea® coating",
-    grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
-  },
-  {
-    img: red6,
-    title: "Point Source Series",
-    model: "Red 6",
-    description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    impedance: "8Ω or 16Ω available",
-    spl: "141 dB (musical program)",
-    maxSpl: "115 dB",
-    response: "42 Hz – 18 kHz",
-    dimensions: "400 x 230 x 250 mm",
-    weight: "64.6 kg",
-    finish:
-      "Multilayer birch plywood with high resistant black Polyurea® coating",
-    grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
-  },
-  {
-    img: red5,
-    title: "Point Source Series",
-    model: "Red 5",
-    description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    impedance: "8Ω or 16Ω available",
-    spl: "141 dB (musical program)",
-    maxSpl: "115 dB",
-    response: "42 Hz – 18 kHz",
-    dimensions: "400 x 230 x 250 mm",
-    weight: "64.6 kg",
-    finish:
-      "Multilayer birch plywood with high resistant black Polyurea® coating",
-    grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
-  },
-  {
-    img: red9,
-    title: "Point Source Series",
-    model: "Red 9",
-    description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    impedance: "8Ω or 16Ω available",
-    spl: "141 dB (musical program)",
-    maxSpl: "115 dB",
-    response: "42 Hz – 18 kHz",
-    dimensions: "400 x 230 x 250 mm",
-    weight: "64.6 kg",
-    finish:
-      "Multilayer birch plywood with high resistant black Polyurea® coating",
-    grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
-  },
-  {
-    img: red12,
+    img: PlasticSpeaker,
+    title: "Plastic Speaker",
+    model: "DS5",
+    description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "100W/400W (Passive)",
+    response: "65Hz-19KHz",
+    spl: "93dB",
+    weight: "5Kg",
 
-    title: "Point Source Series",
-    model: "Red 12",
-    description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
-    spl: "141 dB (musical program)",
     maxSpl: "115 dB",
-    response: "42 Hz – 18 kHz",
     dimensions: "400 x 230 x 250 mm",
-    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+  {
+    img: PlasticSpeaker,
+    title: "Plastic Speaker",
+    model: "DS8",
+    description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "150W/300W (Passive)",
+    response: "60Hz-19KHz",
+    spl: "95dB",
+    weight: "8Kg",
+
+    impedance: "8Ω or 16Ω available",
+    maxSpl: "115 dB",
+    dimensions: "400 x 230 x 250 mm",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+  {
+    img: PlasticSpeaker,
+    title: "Plastic Speaker",
+    model: "DS12",
+    description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "400W/800W (Passive)",
+    response: "70Hz-19KHz",
+    spl: "99dB",
+    weight: "17Kg",
+
+    impedance: "8Ω or 16Ω available",
+    maxSpl: "115 dB",
+    dimensions: "400 x 230 x 250 mm",
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",

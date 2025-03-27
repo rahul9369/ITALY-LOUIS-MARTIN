@@ -1,59 +1,36 @@
 import React from "react";
-import Amplifiers from "../assets/Amplifiers.jpg";
-import Footer from "../components/Footer";
+import Subwoofer from "../../assets/Subwoofer.jpg";
+import Footer from "../Footer";
+// import subwoofer218 from "../assets/subwoofer218.png";
+import Devilred10 from "../../assets/Devilred10.png";
+// import red6 from "../assets/red5.5.jpg";
+import red5 from "../../assets/red5.jpg";
+// import red9 from "../assets/red9.jpg";
+// import red12 from "../assets/red12.jpg";
 import { useNavigate } from "react-router-dom";
-import AMPLIFIER from "../assets/AMPLIFIERSpl4.jpg";
 
 const products = [
   {
-    img: AMPLIFIER,
-    title: "Electronics Series",
-    model: "Red 10",
-    description: '2x 12"+ 4x6"+ 2x3" SELF-POWERED TRI-AMPLIFIED',
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    response: "42 Hz – 18 kHz",
-    spl: "141 dB (musical program)",
-    weight: "64.6 kg",
+    img: Devilred10,
+    title: "Subwoofer",
+    model: "KS18",
+    description: '1x18" High Power Passive Subwoofer',
+    power: "1000W/4000W (Passive)",
+    response: "35Hz-120Hz",
+    Sensitivity: "98dB(1W/1m)",
+    spl: "131dB",
+    weight: "58Kg",
   },
   {
-    img: AMPLIFIER,
-    title: "Electronics Series",
-    model: "Red 5.5",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
-  },
-  {
-    img: AMPLIFIER,
-    title: "Electronics Series",
-    model: "Red 5",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
-  },
-  {
-    img: AMPLIFIER,
-    title: "Electronics Series",
-    model: "Red 9",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
-  },
-  {
-    img: AMPLIFIER,
-    title: "Electronics Series",
-    model: "Red 12",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+    img: red5,
+    title: "Subwoofer",
+    model: "KS218",
+    description: '2x18" High Power Passive Subwoofer',
+    power: "2000W/8000W (Passive)",
+    response: "30Hz-120Hz",
+    Sensitivity: "102dB(1W/1m)",
+    spl: "138dB",
+    weight: "88Kg",
   },
 ];
 
@@ -81,7 +58,7 @@ const ProductCard = ({ product }) => {
         className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
         onClick={() =>
           navigate(
-            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`
           )
         }>
         {product.model}
@@ -93,10 +70,10 @@ const ProductCard = ({ product }) => {
 const ProductList = () => {
   return (
     <div className="w-full">
-      <img src={Amplifiers} alt="Line Array" className="w-full" />
+      <img src={Subwoofer} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="text-4xl mx-auto font-bold  mb-4">
-          Amplifiers - All Series
+          Sub Woofers - All Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
           Our Line Array Systems are meticulously designed to provide consistent
