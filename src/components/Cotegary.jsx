@@ -51,7 +51,6 @@ const Categories = () => {
         <h2 className="text-5xl font-bold text-gray-900 flex items-center justify-center relative">
           <span className="w-1.5 h-6 "></span> Products
         </h2>
-        <div className="w-48 h-1.5 bg-orange-600 mx-auto "></div>
       </div>
 
       {/* Categories Grid */}
