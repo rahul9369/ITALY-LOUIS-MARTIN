@@ -3,7 +3,7 @@ import FAMOUS210N from "../assets/Famousmartin1.jpg";
 import Subwoofer218 from "../assets/subwoofer218.png";
 import AMPLIFIERSpl4 from "../assets/AMPLIFIERSpl4.jpg";
 import PlasticDs5 from "../assets/plasticDs5.jpg";
-import SpeakerF12 from "../assets/SpeakerF12.jpg";
+import SpeakerF12 from "../assets/columnImg.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Categories = () => {
