@@ -48,9 +48,10 @@ const Categories = () => {
     <div className="bg-white   flex flex-col items-center">
       {/* Section Title */}
       <div className="w-full text-center max-w-7xl">
-        <h2 className="text-5xl font-bold text-gray-900 flex items-center justify-center">
-          <span className="w-1.5 h-6  mr-2"></span> Products
+        <h2 className="text-5xl font-bold text-gray-900 flex items-center justify-center relative">
+          <span className="w-1.5 h-6 "></span> Products
         </h2>
+        <div className="w-48 h-1.5 bg-orange-600 mx-auto "></div>
       </div>
 
       {/* Categories Grid */}

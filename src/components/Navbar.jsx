@@ -62,12 +62,7 @@ const Navbar = () => {
             {
               name: "Column Speaker",
               path: "/columsound",
-              sublinks: [
-                {
-                  name: "K series",
-                  path: "/columsound",
-                },
-              ],
+              sublinks: [{ name: "K series", path: "/columsound" }],
             },
             {
               name: "Plastic Speaker",
@@ -82,7 +77,6 @@ const Navbar = () => {
                 { name: "S Series", path: "/sseries" },
               ],
             },
-
             {
               name: "Electronics",
               path: "/electronics",
@@ -105,11 +99,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="shadow-md bg-gray-500 opacity-95 relative z-50">
-      <div className="w-full flex justify-between items-center py-4 px-10">
+    <nav className="w-full shadow-md bg-gray-500 opacity-95 relative  z-50">
+      <div className="w-full flex justify-between items-center py-2 px-6 md:px-10">
         <div className="flex items-center space-x-2">
           <Link to="/">
-            <img src={Logo} alt="logo" className="w-20 h-20" />
+            <img src={Logo} alt="logo" className="w-16 h-16" />
           </Link>
           <span className="md:text-xl text-sm text-white">
             ITALY LOUIS MARTIN AUDIO
@@ -167,7 +161,81 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        <div className="md:hidden">
+          <button onClick={toggleMobileMenu} className="text-white text-2xl">
+            {mobileMenu ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
       </div>
+
+      {mobileMenu && (
+        <div className="md:hidden bg-gray-600 py-4 px-6 w-full">
+          <ul className="flex flex-col space-y-4">
+            {menuItems.map((item) => (
+              <li key={item.name}>
+                <div className="flex justify-between items-center">
+                  <NavLink
+                    to={item.path === "#" ? "/" : item.path}
+                    className="text-white text-lg block">
+                    {item.name}
+                  </NavLink>
+                  {item.submenu && (
+                    <button
+                      onClick={() => toggleSubmenu(item.name)}
+                      className="text-white">
+                      {expandedMenus[item.name] ? <FaMinus /> : <FaPlus />}
+                    </button>
+                  )}
+                </div>
+                {item.submenu && expandedMenus[item.name] && (
+                  <div className="ml-4 mt-2  p-2 rounded">
+                    {item.submenu.map((sub, subIndex) => (
+                      <ul key={subIndex}>
+                        {sub.links.map((link, index) => (
+                          <li key={index} className="py-1">
+                            <div className="flex justify-between items-center">
+                              <NavLink
+                                to={link.path}
+                                className="text-gray-200 text-sm block hover:text-white">
+                                {link.name}
+                              </NavLink>
+                              {link.sublinks && (
+                                <button
+                                  onClick={() => toggleSubmenu(link.name)}
+                                  className="text-white">
+                                  {expandedMenus[link.name] ? (
+                                    <FaMinus />
+                                  ) : (
+                                    <FaPlus />
+                                  )}
+                                </button>
+                              )}
+                            </div>
+                            {expandedMenus[link.name] && (
+                              <ul className="ml-4 mt-2  p-2 rounded">
+                                {link.sublinks.map((sublink, subIdx) => (
+                                  <li key={subIdx} className="py-1">
+                                    <NavLink
+                                      to={sublink.path}
+                                      className="text-gray-300 text-xs block hover:text-white">
+                                      {sublink.name}
+                                    </NavLink>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    ))}
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
