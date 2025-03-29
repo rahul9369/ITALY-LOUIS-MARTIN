@@ -73,12 +73,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full cursor-pointer h-72 object-cover rounded-lg"
-        onClick={() =>
-          navigate(
-            `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`
-          )
-        }
+        className="w-full h-72 object-cover rounded-lg"
       />
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
