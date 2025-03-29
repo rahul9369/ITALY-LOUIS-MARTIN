@@ -1,15 +1,18 @@
 import { useParams } from "react-router-dom";
 import SpeakerF12 from "../assets/SpeakerF12.jpg";
 import Footer from "./Footer";
+import KS18 from "../assets/ks18.jpg";
 import subwooferImg from "../assets/subwoofer218.png";
+import KS18PDF from "../assets/pdf/ks18.pdf";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const products = [
   {
-    img: subwooferImg,
+    img: KS18,
     title: "Subwoofer",
     model: "KS18",
-    description: '1x18" High Power Passive Subwoofer',
+    description:
+      "The KS-18 is a high-performance bandpass ported enclosure designed as a passive subwoofer, equipped with a high-power European driver for exceptional sound quality and reliability . Constructed from birch plywood, it offers superior durability and rigidity for long-term use.Engineered to meet the demands of both installation and rental markets, the KS-18 is a reliable choice for professionals seeking high-performance audio solutions.",
     power: "1000W/4000W (Passive)",
     response: "35Hz-120Hz",
     Sensitivity: "98dB(1W/1m)",
@@ -21,7 +24,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: KS18PDF,
   },
 
   {
@@ -83,6 +86,9 @@ const products = [
 ];
 
 const ProductDetail = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   const { model } = useParams();
   const product = products.find((p) => p.model.toLowerCase() === model);
   const [activeTab, setActiveTab] = useState("Specifications");

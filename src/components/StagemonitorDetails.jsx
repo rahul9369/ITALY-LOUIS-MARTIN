@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import PlasticSpeaker from "../assets/plasticDs5.jpg";
 import Footer from "./Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const products = [
   {
     img: PlasticSpeaker,
@@ -60,6 +60,9 @@ const products = [
 ];
 
 const ProductDetail = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   const { model } = useParams();
   const product = products.find((p) => p.model.toLowerCase() === model);
   const [activeTab, setActiveTab] = useState("Specifications");

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import Footer from "./Footer";
 import AMPLIFIERSpl4 from "../assets/AMPLIFIERSpl4.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const products = [
   {
     img: AMPLIFIERSpl4,
@@ -24,7 +24,7 @@ const products = [
   {
     img: AMPLIFIERSpl4,
     title: "Point Source Series",
-    model: "Red 6",
+    model: "Red 5.5",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
@@ -97,6 +97,9 @@ const products = [
 ];
 
 const ProductDetail = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   const { model } = useParams();
   const product = products.find((p) => p.model.toLowerCase() === model);
   const [activeTab, setActiveTab] = useState("Specifications");

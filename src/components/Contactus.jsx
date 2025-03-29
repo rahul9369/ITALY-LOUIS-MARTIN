@@ -3,6 +3,8 @@ import emailjs from "emailjs-com";
 import Footer from "./Footer";
 //import Us from "../assets/Distributor/us.jpg";
 import Contactus from "../assets/contactus.jpg";
+import { CiLocationOn } from "react-icons/ci";
+import { MdOutlineEmail } from "react-icons/md";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -61,10 +63,12 @@ const ContactUs = () => {
             {/* <h2 className="text-lg font-bold mt-2">Contact email</h2> */}
             <p className="text-gray-700">contact@louismartinaudio.it</p>
           </div>
-          <div className="bg-white shadow-lg rounded-lg p-6 text-center">
-            <span className="text-orange-500 text-3xl">📍</span>
+          <div className="bg-white flex justify-center shadow-lg rounded-lg p-6 text-center">
+            <span className="text-orange-500 mt-1 text-4xl">
+              <CiLocationOn />
+            </span>
             {/* <h2 className="text-lg font-bold mt-2">Contact address</h2> */}
-            <p className="text-gray-700">
+            <p className="text-gray-700 ml-4 flex justify-start">
               Louis Martin Address:- Giambrocono & C.S.P.A Via Rosolino Pilo
               19/B, 20129 Milano Italy.
             </p>
@@ -114,7 +118,7 @@ const ContactUs = () => {
             required></textarea>
           <button
             type="submit"
-            className="w-full bg-orange-500 text-white p-3 rounded-md hover:bg-orange-600">
+            className="w-full bg-orange-500 cursor-pointer text-white p-3 rounded-md hover:bg-orange-600">
             Submit now
           </button>
         </form>

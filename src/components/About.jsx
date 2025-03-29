@@ -28,6 +28,7 @@ const About = () => {
       <img
         src={Aboutus}
         alt="About Us"
+        loading="lazy"
         className="w-full object-cover h-[300px]"
       />
 

@@ -5,15 +5,20 @@ import red5 from "../assets/red5.jpg";
 import red9 from "../assets/red9.jpg";
 import red12 from "../assets/red12.jpg";
 import Fseries from "../assets/SpeakerF12.jpg";
+import Red10PDF from "../assets/pdf/Red10.pdf";
+import Red5PDF from "../assets/pdf/Red5.pdf";
+import Red6PDF from "../assets/pdf/Red5.5.pdf";
+import Red9PDF from "../assets/pdf/Red9.pdf";
+import Red12PDF from "../assets/pdf/Red12.pdf";
 import Footer from "./Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const products = [
   {
     img: Devilred10,
     title: "Point Source Series",
     model: "Red 10",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      "The Red - 10 has two powerful 10” (254 mm) low frequency driver and a 1.75” (44 mm) compression driver. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for live/install market applications, including nightclubs and operas. With a ruler-flat response, the cabinet offers uncoloured, transparent sound quality. Crafted from glass fiber reinforced plastic, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity,and minimal distortion without compromising transient response, making it adaptable to even the most challenging applications.",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -24,14 +29,14 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: Red10PDF,
   },
   {
     img: red6,
     title: "Point Source Series",
-    model: "Red 6",
+    model: "Red 5.5",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      " The Red – 5.5 has two powerful 5.25” (133 mm)  coaxial driver and two 1.34” (34 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install market applications, including nightclub and premium home cinema installation. ",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -42,14 +47,14 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: Red6PDF,
   },
   {
     img: red5,
     title: "Point Source Series",
     model: "Red 5",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      " The Red – 5 has one powerful 5.25” (133 mm)  coaxial driver with 1.34” (34 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install market applications, including hospitality segment and premium home cinema installation. With a ruler-flat response, the cabinet offers uncoloured, transparent sound quality. Crafted from glass fiber reinforced plastic, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -60,14 +65,14 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: Red5PDF,
   },
   {
     img: red9,
     title: "Point Source Series",
     model: "Red 9",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      " The Red – 9 is a high-performance, versatile passive speaker system designed to deliver unmatched sound reinforcement. It features a powerful 10-inch (254 mm) coaxial driver paired with a 1.34-inch (34 mm) highfrequency driver. This two-way, full-range configuration, combined with a passive crossover, ensures exceptional audio quality.",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -78,14 +83,14 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: Red9PDF,
   },
   {
     img: red12,
     title: "Point Source Series",
     model: "Red 12",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      " The Red – 12 is a high-performance, versatile passive speaker system designed to deliver unmatched sound reinforcement. It features a powerful 12-inch (304 mm) coaxial driver paired with a 1.34-inch (34 mm) highfrequency driver. This two-way, full-range configuration, combined with a passive crossover, ensures exceptional audio quality. Engineered for a wide range of installation market applications, the Red – 12 is ideal for nightclubs, restaurants, lounges, pubs, bars, and auditorium installations.",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -96,7 +101,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: Red12PDF,
   },
 
   {
@@ -174,6 +179,9 @@ const products = [
 ];
 
 const ProductDetail = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   const { model } = useParams();
   const product = products.find((p) => p.model.toLowerCase() === model);
   const [activeTab, setActiveTab] = useState("Specifications");

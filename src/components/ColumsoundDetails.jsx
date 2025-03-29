@@ -5,7 +5,7 @@ import K306 from "../assets/K306.jpg";
 import K308 from "../assets/K308.jpg";
 import K312 from "../assets/K312.png";
 import Footer from "./Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const products = [
   {
     img: K302,
@@ -100,6 +100,9 @@ const products = [
 ];
 
 const ProductDetail = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   const { model } = useParams();
   console.log(model);
   const product = products.find((p) => p.model.toLowerCase() === model);

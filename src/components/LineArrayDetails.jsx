@@ -8,6 +8,7 @@ import Q70 from "../assets/Q70.jpg";
 import Q80 from "../assets/Q80.jpg";
 import Cox12 from "../assets/cox12.jpg";
 import Linearray from "../assets/Linearray.pdf";
+import Famous210N from "../assets/pdf/Famous210N.pdf";
 
 const products = [
   {
@@ -15,7 +16,7 @@ const products = [
     title: "Line array Series",
     model: "famous 210",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      " The Famous– 210N is meticulously engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified model features two 10-inch Neodymium drivers and two 1.75inch high-frequency compression drivers, ensuring exceptional sound quality and performance.",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -26,7 +27,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: Linearray,
+    pdf: Famous210N,
   },
   {
     img: Q50,
