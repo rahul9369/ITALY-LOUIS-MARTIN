@@ -109,7 +109,7 @@ const BestSeller = () => {
             return (
               <div
                 key={index}
-                className="text-center shadow-md m-4 p-6 min-w-[400px] max-w-[400px] rounded-lg border border-gray-200 hover:shadow-lg transition-all flex flex-col items-center">
+                className="text-center shadow-md m-2 p-6 w-full rounded-lg border border-gray-200 hover:shadow-lg transition-all flex flex-col items-center">
                 {/* Product Image */}
                 <img
                   src={product.img}

@@ -133,7 +133,7 @@ const ProductList = () => {
         <h1 className="text-4xl mx-auto font-bold  mb-4">
           Line Arrays - All Series
         </h1>
-        <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
+        <p className="text-lg text-gray-700 flex  justify-start max-w-7xl mt-5  mx-auto">
           Our Line Array Systems are meticulously designed to provide consistent
           and even sound coverage across large areas. With features like Uniform
           Sound Distribution, Controlled Dispersion, and High Output Levels,
