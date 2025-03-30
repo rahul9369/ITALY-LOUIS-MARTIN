@@ -1,6 +1,10 @@
 import { useParams } from "react-router-dom";
 import Footer from "./Footer";
 import AMPLIFIERSpl4 from "../assets/AMPLIFIERSpl4.jpg";
+import DT400 from "../assets/DT400.jpg";
+import PL4 from "../assets/PL4.jpg";
+import TTA from "../assets/TTA.jpg";
+
 import { useEffect, useState } from "react";
 const products = [
   {
@@ -22,9 +26,9 @@ const products = [
     pdf: "/assets/famous_210_specs.pdf",
   },
   {
-    img: AMPLIFIERSpl4,
+    img: DT400,
     title: "Point Source Series",
-    model: "Red 5.5",
+    model: "DT400",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
@@ -40,9 +44,9 @@ const products = [
     pdf: "/assets/famous_210_specs.pdf",
   },
   {
-    img: AMPLIFIERSpl4,
+    img: PL4,
     title: "Point Source Series",
-    model: "Red 5",
+    model: "PL4",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
@@ -58,28 +62,9 @@ const products = [
     pdf: "/assets/famous_210_specs.pdf",
   },
   {
-    img: AMPLIFIERSpl4,
+    img: TTA,
     title: "Point Source Series",
-    model: "Red 9",
-    description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    impedance: "8Ω or 16Ω available",
-    spl: "141 dB (musical program)",
-    maxSpl: "115 dB",
-    response: "42 Hz – 18 kHz",
-    dimensions: "400 x 230 x 250 mm",
-    weight: "64.6 kg",
-    finish:
-      "Multilayer birch plywood with high resistant black Polyurea® coating",
-    grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
-  },
-  {
-    img: AMPLIFIERSpl4,
-
-    title: "Point Source Series",
-    model: "Red 12",
+    model: "TTA",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",

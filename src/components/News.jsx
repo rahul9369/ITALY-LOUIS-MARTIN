@@ -49,7 +49,7 @@ const CompanyNews = () => {
       />
 
       {/* News Section */}
-      <div className="space-y-8 mt-8 w-[90%] mx-auto">
+      <div className="space-y-8 my-8 w-[90%] mx-auto">
         {newsData.map((news, index) => (
           <div
             key={index}

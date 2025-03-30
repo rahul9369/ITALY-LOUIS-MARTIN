@@ -3,22 +3,15 @@ import Amplifiers from "../assets/Amplifiers.jpg";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import AMPLIFIER from "../assets/AMPLIFIERSpl4.jpg";
+import DT400 from "../assets/DT400.jpg";
+import PL4 from "../assets/PL4.jpg";
+import TTA from "../assets/TTA.jpg";
 
 const products = [
   {
-    img: AMPLIFIER,
+    img: PL4,
     title: "Electronics Series",
-    model: "Red 10",
-    description: '2x 12"+ 4x6"+ 2x3" SELF-POWERED TRI-AMPLIFIED',
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
-    response: "42 Hz – 18 kHz",
-    spl: "141 dB (musical program)",
-    weight: "64.6 kg",
-  },
-  {
-    img: AMPLIFIER,
-    title: "Electronics Series",
-    model: "Red 5.5",
+    model: "PL4",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
@@ -26,29 +19,20 @@ const products = [
     weight: "37.4 kg",
   },
   {
-    img: AMPLIFIER,
+    img: DT400,
     title: "Electronics Series",
-    model: "Red 5",
+    model: "DT400",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
     spl: "136 dB (musical program)",
     weight: "37.4 kg",
   },
+
   {
-    img: AMPLIFIER,
+    img: TTA,
     title: "Electronics Series",
-    model: "Red 9",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
-  },
-  {
-    img: AMPLIFIER,
-    title: "Electronics Series",
-    model: "Red 12",
+    model: "TTA",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",
@@ -81,10 +65,10 @@ const ProductCard = ({ product }) => {
         <span className="font-bold"> Frequency Response:</span>{" "}
         {product.response}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      {/* <p className="text-sm mt-2 text-gray-700">
         <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
         {product.Sensitivity}
-      </p>
+      </p> */}
       <p className="text-sm mt-2 text-gray-700">
         <span className="font-bold">Max SPL(Continuous):</span> {product.spl}
       </p>

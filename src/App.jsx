@@ -4,6 +4,7 @@ import About from "./components/About";
 import ContactUs from "./components/Contactus";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Hero from "./components/Hero";
+import { AnimatePresence } from "framer-motion";
 import LinearArray from "./components/LinearArray";
 import PointSource from "./components/Pointsource";
 import Stagemonitor from "./components/Stagemonitor";
@@ -144,7 +145,9 @@ const appRouter = createBrowserRouter([
 const App = () => {
   return (
     <>
-      <RouterProvider router={appRouter} />
+      <AnimatePresence mode="wait">
+        <RouterProvider router={appRouter} />
+      </AnimatePresence>
     </>
   );
 };
