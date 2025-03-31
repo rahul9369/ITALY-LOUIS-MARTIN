@@ -69,13 +69,13 @@ const BestSeller = () => {
   // Manual scrolling
   const scrollLeft = () => {
     setIsAutoScrolling(false);
-    carouselRef.current?.scrollBy({ left: -400, behavior: "smooth" });
+    carouselRef.current?.scrollBy({ left: -300, behavior: "smooth" });
     setTimeout(() => setIsAutoScrolling(true), 5000);
   };
 
   const scrollRight = () => {
     setIsAutoScrolling(false);
-    carouselRef.current?.scrollBy({ left: 400, behavior: "smooth" });
+    carouselRef.current?.scrollBy({ left: 300, behavior: "smooth" });
     setTimeout(() => setIsAutoScrolling(true), 5000);
   };
 
@@ -83,7 +83,7 @@ const BestSeller = () => {
     <div className="py-12 px-6 w-full bg-gray-50 flex flex-col items-center relative">
       {/* Section Title */}
       <div className="w-[90%] text-center">
-        <h2 className="text-5xl font-bold text-gray-900 flex items-center justify-center">
+        <h2 className="sm:text-5xl text-2xl font-bold text-gray-900 flex items-center justify-center">
           <span className="w-1.5 h-6 mr-2"></span> Company Latest News
         </h2>
       </div>
@@ -109,7 +109,7 @@ const BestSeller = () => {
             return (
               <div
                 key={index}
-                className="text-center shadow-md m-2 p-6 w-full rounded-lg border border-gray-200 hover:shadow-lg transition-all flex flex-col items-center">
+                className="text-center shadow-md m-2 p-6 w-[95%] rounded-lg border border-gray-200 hover:shadow-lg transition-all flex flex-col items-center">
                 {/* Product Image */}
                 <img
                   src={product.img}
@@ -119,7 +119,7 @@ const BestSeller = () => {
                 <p className="text-black font-bold h-10 mt-4 text-center break-words whitespace-normal w-[350px] inline">
                   {product.title}
                 </p>
-                <p className="text-black mt-4 text-justify break-words whitespace-normal w-[350px] mx-auto">
+                <p className="text-black mt-4 text-justify break-words whitespace-normal sm:w-[350px] w-[250px] mx-auto">
                   {isExpanded ? product.desc : `${shortText}...`}
                   <span
                     className="text-blue-500 font-semibold ml-1 cursor-pointer"

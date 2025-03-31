@@ -56,7 +56,7 @@ const ContactUs = () => {
       <motion.img
         src={Contactus}
         alt="Contact Us"
-        className="w-full h-[300px] object-cover"
+        className="w-full h-[90px] sm:h-[250px] "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 1 } }}
       />

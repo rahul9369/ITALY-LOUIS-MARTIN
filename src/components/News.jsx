@@ -42,11 +42,7 @@ const CompanyNews = () => {
   return (
     <div className="w-full mx-auto">
       {/* Header Image */}
-      <img
-        src={News}
-        alt="About Us"
-        className="w-full object-cover h-[350px]"
-      />
+      <img src={News} alt="About Us" className="w-full h-[90px] sm:h-[250px]" />
 
       {/* News Section */}
       <div className="space-y-8 my-8 w-[90%] mx-auto">

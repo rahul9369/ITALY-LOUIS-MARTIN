@@ -27,8 +27,8 @@ const Categories = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="w-full text-center max-w-7xl mb-8">
-        <h2 className="text-5xl font-bold text-gray-900 flex items-center justify-center relative">
+        className="w-full text-center   mb-8">
+        <h2 className="sm:text-5xl text-3xl font-bold text-gray-900 flex items-center justify-center relative">
           <motion.span
             initial={{ width: 0 }}
             animate={{ width: "1.5rem" }}
@@ -62,13 +62,13 @@ const Categories = () => {
               whileTap={{ scale: 0.95 }}
               className="flex flex-col items-center">
               <motion.div
-                className="w-84 h-84 md:w-[100%] md:h-96 bg-white cursor-pointer rounded-lg shadow-md flex items-center justify-center border border-gray-200 hover:shadow-xl transition-all overflow-hidden"
+                className="w-84 h-60 md:w-[100%] md:h-96 bg-white cursor-pointer rounded-lg shadow-md flex items-center justify-center border border-gray-200 hover:shadow-xl transition-all overflow-hidden"
                 onClick={() => navigate(category.path)}>
                 <motion.img
                   src={category.img}
                   alt={category.name}
                   loading="lazy"
-                  className="w-full h-full object-cover"
+                  className="w-full sm:h-full "
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.5 }}
                 />

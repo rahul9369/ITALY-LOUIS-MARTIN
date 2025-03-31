@@ -29,7 +29,7 @@ const About = () => {
         src={Aboutus}
         alt="About Us"
         loading="lazy"
-        className="w-full object-cover h-[300px]"
+        className="w-full h-[90px]  sm:h-[250px]"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 my-6 gap-6 w-[90%] mx-auto">
