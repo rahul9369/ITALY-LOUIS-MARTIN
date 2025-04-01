@@ -34,7 +34,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full h-[100px] md:h-[500px] lg:h-[600px] overflow-hidden">
+    <div className="relative w-full h-[100px] md:h-[500px] lg:h-[500px] overflow-hidden">
       {/* Image Slider */}
       <div className="relative w-full h-full">
         {images.map((img, index) => (
