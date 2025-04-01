@@ -1,11 +1,11 @@
 import React from "react";
 import datasheet from "../assets/Linearray.pdf"; // Ensure the PDF is placed correctly
 import Footer from "./Footer";
-import Download from "../assets/Download.jpg";
+import Download from "../assets/Download.png";
 const DownloadPage = () => {
   return (
     <div className="h-full bg-gray-100  ">
-      <img src={Download} alt="" className="" />
+      <img src={Download} alt="" className="w-full h-[90px]  sm:h-[250px]" />
       <div className="w-full  bg-white shadow-lg rounded-lg p-6">
         {/* Section Header */}
         <h2 className="text-2xl font-semibold border-b pb-2 text-gray-800">

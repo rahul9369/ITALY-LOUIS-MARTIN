@@ -7,7 +7,7 @@ import Thailand from "../assets/Distributor/Thailand.jpg";
 import Vetnam from "../assets/Distributor/Vetnam.jpg";
 import Footer from "./Footer";
 // import img from "../assets/carausalimg2.jpg";
-import Distributors from "../assets/Distributor/Distributors.jpg";
+import Distributors from "../assets/Distributor/Distributors.png";
 
 const distributors = [
   {

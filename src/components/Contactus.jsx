@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import Footer from "./Footer";
-import Contactus from "../assets/contactus.jpg";
+import Contactus from "../assets/contactus.png";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineEmail, MdPhone } from "react-icons/md";
 import { FaPaperPlane } from "react-icons/fa";
@@ -169,6 +169,7 @@ const ContactUs = () => {
             <FaPaperPlane className="ml-2" />
           </motion.button>
         </motion.form>
+        {/* <Inquiry /> */}
       </div>
 
       <Footer />

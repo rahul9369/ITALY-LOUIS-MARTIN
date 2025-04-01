@@ -166,7 +166,7 @@ const ProductDetail = () => {
           {["Specifications", "Downloads"].map((tab) => (
             <button
               key={tab}
-              className={`px-4 py-2 md:px-6 md:py-3 text-sm md:text-lg flex-1 ${
+              className={`px-4 py-2 md:px-6 md:py-3 cursor-pointer text-sm md:text-lg flex-1 ${
                 activeTab === tab
                   ? "border-b-2 border-black font-bold"
                   : "text-gray-500"
@@ -211,7 +211,7 @@ const ProductDetail = () => {
               </p>
               <button
                 onClick={handleDownload}
-                className="mt-4 px-4 py-2 md:px-6 md:py-2 bg-green-500 text-white rounded-lg text-sm md:text-lg">
+                className="mt-4 px-4 py-2 md:px-6 md:py-2 cursor-pointer bg-green-500 text-white rounded-lg text-sm md:text-lg">
                 Download PDF
               </button>
             </div>
@@ -222,7 +222,7 @@ const ProductDetail = () => {
         <div className="flex flex-col md:flex-row gap-4 mt-6">
           <button
             onClick={() => window.history.back()}
-            className="px-4 py-2 md:px-6 md:py-2 bg-gray-500 text-white rounded-lg text-sm md:text-lg">
+            className="px-4 py-2 md:px-6 md:py-2 bg-gray-500 cursor-pointer text-white rounded-lg text-sm md:text-lg">
             Go Back
           </button>
         </div>

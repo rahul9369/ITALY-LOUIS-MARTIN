@@ -3,7 +3,7 @@ import Case from "../assets/case/Case.jpg";
 import Case2 from "../assets/case/case2.jpg";
 import Case3 from "../assets/case/case3.jpg";
 import Case4 from "../assets/case/Case4.jpg";
-import Main from "../assets/case/casemain.jpg";
+import Main from "../assets/case/casemain.png";
 import Footer from "./Footer";
 
 const CaseSection = () => {
