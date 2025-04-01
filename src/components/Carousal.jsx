@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CarausalImg1 from "../assets/carausalimg1.jpg";
 import CarausalImg2 from "../assets/carausalimg2.jpg";
-import CarausalImg3 from "../assets/carausalimg3.jpg";
+import CarausalImg3 from "../assets/carausalimg3.png";
 // import CarausalImg4 from "../assets/carausalimg4.jpg";
 import CarausalImg5 from "../assets/carausalimg5.jpg";
 
