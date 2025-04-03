@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import PlasticSpeaker from "../assets/plasticDs5.jpg";
+import DS12 from "../assets/DS12.jpg";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
 const products = [
@@ -40,7 +41,7 @@ const products = [
     pdf: "/assets/famous_210_specs.pdf",
   },
   {
-    img: PlasticSpeaker,
+    img: DS12,
     title: "Plastic Speaker",
     model: "DS12",
     description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
