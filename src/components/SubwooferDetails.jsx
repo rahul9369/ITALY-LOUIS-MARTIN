@@ -18,6 +18,13 @@ const products = [
     model: "KS18",
     description:
       "The KS-18 is a high-performance bandpass ported enclosure designed as a passive subwoofer, equipped with a high-power European driver for exceptional sound quality and reliability . Constructed from birch plywood, it offers superior durability and rigidity for long-term use.Engineered to meet the demands of both installation and rental markets, the KS-18 is a reliable choice for professionals seeking high-performance audio solutions.",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "1000W/4000W (Passive)",
     response: "35Hz-120Hz",
     Sensitivity: "98dB(1W/1m)",
@@ -37,6 +44,13 @@ const products = [
     title: "Subwoofer",
     model: "KS218",
     description: '2x18" High Power Passive Subwoofer',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000W/8000W (Passive)",
     response: "30Hz-120Hz",
     Sensitivity: "102dB(1W/1m)",
@@ -56,6 +70,13 @@ const products = [
     title: "Subwoofer",
     model: "S18",
     description: '1x18" High Power Passive Subwoofer',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "750W/3000W (Passive)",
     response: "38Hz-120Hz",
     Sensitivity: "96dB(1W/1m)",
@@ -75,6 +96,13 @@ const products = [
     title: "Subwoofer",
     model: "S218",
     description: '2x18" High Power Passive Subwoofer',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "1500W/6000W (Passive)",
     response: "35Hz-120Hz",
     Sensitivity: "102dB(1W/1m)",
@@ -128,6 +156,16 @@ const ProductDetail = () => {
             <p className="text-gray-600 text-md md:text-xl mt-2">
               {product.description}
             </p>
+            <div className="mt-6">
+              <h2 className="text-xl font-semibold">Applications</h2>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                {product.application.map((app, index) => (
+                  <li className="text-lg" key={index}>
+                    {app}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 

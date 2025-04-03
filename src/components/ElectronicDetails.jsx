@@ -13,6 +13,13 @@ const products = [
     model: "Red 10",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -31,6 +38,13 @@ const products = [
     model: "DT400",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -49,6 +63,13 @@ const products = [
     model: "PL4",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -67,6 +88,13 @@ const products = [
     model: "TTA",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -119,6 +147,16 @@ const ProductDetail = () => {
             <p className="text-gray-600 text-md md:text-xl mt-2">
               {product.description}
             </p>
+            <div className="mt-6">
+              <h2 className="text-xl font-semibold">Applications</h2>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                {product.application.map((app, index) => (
+                  <li className="text-lg" key={index}>
+                    {app}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 

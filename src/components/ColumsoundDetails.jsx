@@ -12,6 +12,13 @@ const products = [
     title: "Column Speaker",
     model: "K302",
     description: '2x1.75" Passive Full Range Column Speaker',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "40W/160W (Passive)",
     response: "150Hz-18KHz",
     Sensitivity: "91dB(1W/1m)",
@@ -30,6 +37,13 @@ const products = [
     title: "Column Speaker",
     model: "K304",
     description: '4x1.75" Passive Full Range Column Speaker',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "80W/320W (Passive)",
     response: "150Hz-18KHz",
     Sensitivity: "91dB(1W/1m)",
@@ -48,6 +62,13 @@ const products = [
     title: "Column Speaker",
     model: "K306",
     description: '4x1.75" Passive Full Range Column Speaker',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "80W/320W (Passive)",
     response: "150Hz-18KHz",
     Sensitivity: "91dB(1W/1m)",
@@ -66,6 +87,13 @@ const products = [
     title: "Column Speaker",
     model: "K308",
     description: '8x1.75" Passive Full Range Column Speaker',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "160W/640W (Passive)",
     response: "150Hz-18KHz",
     Sensitivity: "91dB(1W/1m)",
@@ -84,6 +112,13 @@ const products = [
     title: "Column Speaker",
     model: "K312",
     description: '12x1.75" Passive Full Range Column Speaker',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "220W/880W (Passive)",
     response: "150Hz-18KHz",
     Sensitivity: "91dB(1W/1m)",
@@ -139,6 +174,16 @@ const ProductDetail = () => {
             <p className="text-gray-600 text-md md:text-xl mt-2">
               {product.description}
             </p>
+            <div className="mt-6">
+              <h2 className="text-xl font-semibold">Applications</h2>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                {product.application.map((app, index) => (
+                  <li className="text-lg" key={index}>
+                    {app}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 

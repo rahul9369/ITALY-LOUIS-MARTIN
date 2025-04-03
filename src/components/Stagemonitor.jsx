@@ -40,6 +40,17 @@ const products = [
     spl: "99dB",
     weight: "17Kg",
   },
+  {
+    img: DS12,
+    title: "Plastic Speaker",
+    model: "DS15",
+    description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "400W/800W (Passive)",
+    Sensitivity: "99dB(1W/1m)",
+    response: "70Hz-19KHz",
+    spl: "99dB",
+    weight: "17Kg",
+  },
 ];
 
 const ProductCard = ({ product }) => {

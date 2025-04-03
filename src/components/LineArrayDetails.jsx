@@ -7,7 +7,6 @@ import Q60 from "../assets/Q60.jpg";
 import Q70 from "../assets/Q70.jpg";
 import Q80 from "../assets/Q80.jpg";
 import Cox12 from "../assets/cox12.jpg";
-import Linearray from "../assets/Linearray.pdf";
 import Famous210N from "../assets/pdf/Famous210N.pdf";
 import Cox112 from "../assets/pdf/COX12.pdf";
 import Q50a from "../assets/pdf/Q50a.pdf";
@@ -22,6 +21,13 @@ const products = [
     model: "famous 210",
     description:
       " The Famous– 210N is meticulously engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified model features two 10-inch Neodymium drivers and two 1.75inch high-frequency compression drivers, ensuring exceptional sound quality and performance.",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -39,7 +45,14 @@ const products = [
     title: "Line Array Series",
     model: "Q 50",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      " The Q-50 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features one 10-inch neodymium drivers and two 1.4-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     impedance: "8Ω available",
     spl: "136 dB (musical program)",
@@ -56,7 +69,14 @@ const products = [
     title: "Line array Series",
     model: "Q 60",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      " The Q-60 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features two 10-inch neodymium drivers and two 1.4-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -74,7 +94,14 @@ const products = [
     title: "Line array Series",
     model: "Q 70",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      " The Q-50 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features one 12-inch neodymium drivers and one 1.75-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -92,7 +119,14 @@ const products = [
     title: "Line array Series",
     model: "Q 80",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      " The Q-80 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features two 10-inch neodymium drivers and two 1.75-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -103,14 +137,21 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: Q80a ,
+    pdf: Q80a,
   },
   {
     img: Cox12,
     title: "Line array Series",
     model: "Cox 12",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      " The Cox – 12 has one powerful 12” (304 mm)  coaxial driver with 1.5” (38 mm) HF. It is a high-performance, versatile, passive line array speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for rental market for small to medium format application along with high end install applications, including night clubs, auditorium, multipurpose hall etc.",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -121,7 +162,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf:Cox112,
+    pdf: Cox112,
   },
 ];
 
@@ -163,6 +204,16 @@ const ProductDetail = () => {
             <p className="text-gray-600 text-md md:text-xl mt-2">
               {product.description}
             </p>
+            <div className="mt-6">
+              <h2 className="text-xl font-semibold">Applications</h2>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                {product.application.map((app, index) => (
+                  <li className="text-lg" key={index}>
+                    {app}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 

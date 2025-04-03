@@ -9,6 +9,13 @@ const products = [
     title: "Plastic Speaker",
     model: "DS5",
     description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "100W/400W (Passive)",
     response: "65Hz-19KHz",
     spl: "93dB",
@@ -27,6 +34,13 @@ const products = [
     title: "Plastic Speaker",
     model: "DS8",
     description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "150W/300W (Passive)",
     response: "60Hz-19KHz",
     spl: "95dB",
@@ -45,6 +59,38 @@ const products = [
     title: "Plastic Speaker",
     model: "DS12",
     description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
+    power: "400W/800W (Passive)",
+    response: "70Hz-19KHz",
+    spl: "99dB",
+    weight: "17Kg",
+
+    impedance: "8Ω or 16Ω available",
+    maxSpl: "115 dB",
+    dimensions: "400 x 230 x 250 mm",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+  {
+    img: DS12,
+    title: "Plastic Speaker",
+    model: "DS15",
+    description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "400W/800W (Passive)",
     response: "70Hz-19KHz",
     spl: "99dB",
@@ -89,7 +135,7 @@ const ProductDetail = () => {
           <img
             src={product.img}
             alt={product.model}
-            className="w-full h-auto md:h-[400px] object-cover rounded-lg"
+            className="w-full h-auto md:h-[500px] object-cover rounded-lg"
           />
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">
@@ -98,6 +144,16 @@ const ProductDetail = () => {
             <p className="text-gray-600 text-md md:text-xl mt-2">
               {product.description}
             </p>
+            <div className="mt-6">
+              <h2 className="text-xl font-semibold">Applications</h2>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                {product.application.map((app, index) => (
+                  <li className="text-lg" key={index}>
+                    {app}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 

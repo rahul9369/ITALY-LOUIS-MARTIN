@@ -11,10 +11,10 @@ import Red6PDF from "../assets/pdf/Red5.5.pdf";
 import Red9PDF from "../assets/pdf/Red9.pdf";
 import Red12PDF from "../assets/pdf/Red12.pdf";
 import Footer from "./Footer";
-import  F12 from "../assets/pdf/F12.pdf";
-import  F8 from "../assets/pdf/F8.pdf";
-import  F15 from "../assets/pdf/F15.pdf";
-import  F10 from "../assets/pdf/F10.pdf";
+import F12 from "../assets/pdf/F12.pdf";
+import F8 from "../assets/pdf/F8.pdf";
+import F15 from "../assets/pdf/F15.pdf";
+import F10 from "../assets/pdf/F10.pdf";
 import { useEffect, useState } from "react";
 const products = [
   {
@@ -23,6 +23,13 @@ const products = [
     model: "Red 10",
     description:
       "The Red - 10 has two powerful 10” (254 mm) low frequency driver and a 1.75” (44 mm) compression driver. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for live/install market applications, including nightclubs and operas. With a ruler-flat response, the cabinet offers uncoloured, transparent sound quality. Crafted from glass fiber reinforced plastic, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity,and minimal distortion without compromising transient response, making it adaptable to even the most challenging applications.",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -41,6 +48,13 @@ const products = [
     model: "Red 5.5",
     description:
       " The Red – 5.5 has two powerful 5.25” (133 mm)  coaxial driver and two 1.34” (34 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install market applications, including nightclub and premium home cinema installation. ",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -59,6 +73,13 @@ const products = [
     model: "Red 5",
     description:
       " The Red – 5 has one powerful 5.25” (133 mm)  coaxial driver with 1.34” (34 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install market applications, including hospitality segment and premium home cinema installation. With a ruler-flat response, the cabinet offers uncoloured, transparent sound quality. Crafted from glass fiber reinforced plastic, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -77,6 +98,13 @@ const products = [
     model: "Red 9",
     description:
       " The Red – 9 is a high-performance, versatile passive speaker system designed to deliver unmatched sound reinforcement. It features a powerful 10-inch (254 mm) coaxial driver paired with a 1.34-inch (34 mm) highfrequency driver. This two-way, full-range configuration, combined with a passive crossover, ensures exceptional audio quality.",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -95,6 +123,13 @@ const products = [
     model: "Red 12",
     description:
       " The Red – 12 is a high-performance, versatile passive speaker system designed to deliver unmatched sound reinforcement. It features a powerful 12-inch (304 mm) coaxial driver paired with a 1.34-inch (34 mm) highfrequency driver. This two-way, full-range configuration, combined with a passive crossover, ensures exceptional audio quality. Engineered for a wide range of installation market applications, the Red – 12 is ideal for nightclubs, restaurants, lounges, pubs, bars, and auditorium installations.",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -105,7 +140,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf:Red12PDF,
+    pdf: Red12PDF,
   },
 
   {
@@ -114,6 +149,13 @@ const products = [
     model: "F8",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -133,6 +175,13 @@ const products = [
     model: "F10",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -152,6 +201,13 @@ const products = [
     model: "F12",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -162,7 +218,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-     pdf: F12,
+    pdf: F12,
   },
   {
     img: Fseries,
@@ -170,6 +226,13 @@ const products = [
     model: "F15",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
@@ -220,10 +283,19 @@ const ProductDetail = () => {
             <h1 className="text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}
             </h1>
-            <p className="text-gray-600 text-sm md:text-sm mt-2">
+            <p className="text-gray-600 text-sm sm:text-lg mt-2">
               {product.description}
             </p>
-            <h1 className=" text-xl font-bold">Applications:</h1>
+            <div className="mt-6">
+              <h2 className="text-xl font-semibold">Applications</h2>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                {product.application.map((app, index) => (
+                  <li className="text-lg" key={index}>
+                    {app}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
