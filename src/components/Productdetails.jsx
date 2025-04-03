@@ -105,7 +105,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: Red12PDF,
+    pdf:Red12PDF,
   },
 
   {
