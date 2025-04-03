@@ -10,7 +10,7 @@ const CaseSection = () => {
   return (
     <div className="fade-in">
       {/* Main Image */}
-      <img src={Main} alt="Main Case" className="w-full fade-in" />
+      <img src={Main} alt="Main Case" className="w-full  h-[90px]  sm:h-[250px]" />
 
       {/* Grid Layout */}
       <div className="grid grid-cols-1 w-[90%] mx-auto my-5 sm:grid-cols-2 md:grid-cols-3 gap-4">

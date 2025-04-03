@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import img from "../assets/Distributor/us.jpg";
-import carausalimg2 from "../assets/carausalimg2.jpg";
+import carausalimg2 from "../assets/carausalimg2.png";
 import Footer from "./Footer";
 import Aboutus from "../assets/AboutUs.png";
 
