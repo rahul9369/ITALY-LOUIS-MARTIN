@@ -9,6 +9,11 @@ import Q80 from "../assets/Q80.jpg";
 import Cox12 from "../assets/cox12.jpg";
 import Linearray from "../assets/Linearray.pdf";
 import Famous210N from "../assets/pdf/Famous210N.pdf";
+import Cox112 from "../assets/pdf/COX12.pdf";
+import Q50a from "../assets/pdf/Q50a.pdf";
+import Q60a from "../assets/pdf/Q60a.pdf";
+import Q70a from "../assets/pdf/Q70a.pdf";
+import Q80a from "../assets/pdf/Q80a.pdf";
 
 const products = [
   {
@@ -32,7 +37,7 @@ const products = [
   {
     img: Q50,
     title: "Line Array Series",
-    model: "q 50",
+    model: "Q 50",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
@@ -44,7 +49,7 @@ const products = [
     weight: "37.4 kg",
     finish: "High-quality Polyurea® coated wooden cabinet",
     grille: "Powder-coated steel with black mesh",
-    pdf: Linearray,
+    pdf: Q50a,
   },
   {
     img: Q60,
@@ -62,7 +67,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: Linearray,
+    pdf: Q60a,
   },
   {
     img: Q70,
@@ -80,7 +85,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: Linearray,
+    pdf: Q70a,
   },
   {
     img: Q80,
@@ -98,7 +103,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: Linearray,
+    pdf: Q80a ,
   },
   {
     img: Cox12,
@@ -116,7 +121,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: Linearray,
+    pdf:Cox112,
   },
 ];
 

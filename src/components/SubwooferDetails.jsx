@@ -3,7 +3,12 @@ import SpeakerF12 from "../assets/SpeakerF12.jpg";
 import Footer from "./Footer";
 import KS18 from "../assets/ks18.jpg";
 import subwooferImg from "../assets/subwoofer218.png";
-import KS18PDF from "../assets/pdf/ks18.pdf";
+// import KS18a from "../assets/pdf/KS18A.pdf";
+import KS18a from "../assets/pdf/KS18a.pdf";
+
+import S18a from "../assets/pdf/S18a.pdf";
+import KS218a from "../assets/pdf/KS218a.pdf";
+import S218a from "../assets/pdf/S218a.pdf";
 
 import { useEffect, useState } from "react";
 const products = [
@@ -24,7 +29,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: KS18PDF,
+    pdf: KS18a,
   },
 
   {
@@ -43,7 +48,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: KS218a,
   },
 
   {
@@ -62,7 +67,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: S18a,
   },
 
   {
@@ -81,7 +86,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: S218a,
   },
 ];
 

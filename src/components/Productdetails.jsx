@@ -11,6 +11,10 @@ import Red6PDF from "../assets/pdf/Red5.5.pdf";
 import Red9PDF from "../assets/pdf/Red9.pdf";
 import Red12PDF from "../assets/pdf/Red12.pdf";
 import Footer from "./Footer";
+import  F12 from "../assets/pdf/F12.pdf";
+import  F8 from "../assets/pdf/F8.pdf";
+import  F15 from "../assets/pdf/F15.pdf";
+import  F10 from "../assets/pdf/F10.pdf";
 import { useEffect, useState } from "react";
 const products = [
   {
@@ -101,7 +105,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: Red12PDF,
+    pdf:Red12PDF,
   },
 
   {
@@ -121,6 +125,7 @@ const products = [
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
     pdf: "/assets/famous_210_specs.pdf",
+    pdf: F8,
   },
   {
     img: Fseries,
@@ -139,6 +144,7 @@ const products = [
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
     pdf: "/assets/famous_210_specs.pdf",
+    pdf: F10,
   },
   {
     img: Fseries,
@@ -156,7 +162,7 @@ const products = [
     finish:
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
-    pdf: "/assets/famous_210_specs.pdf",
+     pdf: F12,
   },
   {
     img: Fseries,
@@ -175,6 +181,7 @@ const products = [
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
     pdf: "/assets/famous_210_specs.pdf",
+    pdf: F15,
   },
 ];
 

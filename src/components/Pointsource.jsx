@@ -78,6 +78,7 @@ const products = [
     Sensitivity: "93dB(1W/1m)",
     spl: "136 dB (musical program)",
     weight: "37.4 kg",
+    // pdf: F12,
   },
   {
     img: F10,
@@ -100,6 +101,7 @@ const products = [
     Sensitivity: "97dB(1W/1m)",
     spl: "136 dB (musical program)",
     weight: "37.4 kg",
+    pdf: F12,
   },
   {
     img: F15,
