@@ -33,13 +33,13 @@ const Categories = () => {
         {categories.map((category, index) => (
           <div key={index} className="flex flex-col items-center">
             <div
-              className="w-84 h-60 md:w-[100%] md:h-96 bg-white cursor-pointer rounded-lg shadow-md flex items-center justify-center border border-gray-200 hover:shadow-xl transition-all overflow-hidden"
+              className="w-84 h-60 md:w-[100%] md:h-auto bg-white cursor-pointer rounded-lg shadow-md flex items-center justify-center border border-gray-200 hover:shadow-xl transition-all overflow-hidden"
               onClick={() => navigate(category.path)}>
               <img
                 src={category.img}
                 alt={category.name}
                 loading="lazy"
-                className="w-full sm:h-full"
+                className="w-full object-fill sm:h-full"
               />
             </div>
             <p className="text-lg font-medium text-gray-800 mt-3">
