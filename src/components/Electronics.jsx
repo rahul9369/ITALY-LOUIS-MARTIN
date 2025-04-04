@@ -6,6 +6,7 @@ import AMPLIFIER from "../assets/AMPLIFIERSpl4.jpg";
 import DT400 from "../assets/DT400.jpg";
 import PL4 from "../assets/PL4.jpg";
 import TTA from "../assets/TTA.jpg";
+import TIP from "../assets/TIPA.jpg";
 
 const products = [
   {
@@ -28,11 +29,23 @@ const products = [
     spl: "136 dB (musical program)",
     weight: "37.4 kg",
   },
+  
 
   {
     img: TTA,
     title: "Electronics Series",
     model: "TTA",
+    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
+    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
+    response: "65 Hz – 19 kHz",
+    spl: "136 dB (musical program)",
+    weight: "37.4 kg",
+  },
+
+  {
+    img: TIP,
+    title: "Electronics Series",
+    model: "TIP",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     response: "65 Hz – 19 kHz",

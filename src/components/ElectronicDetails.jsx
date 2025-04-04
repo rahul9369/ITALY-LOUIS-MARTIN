@@ -4,6 +4,8 @@ import AMPLIFIERSpl4 from "../assets/AMPLIFIERSpl4.jpg";
 import DT400 from "../assets/DT400.jpg";
 import PL4 from "../assets/PL4.jpg";
 import TTA from "../assets/TTA.jpg";
+import TIP from "../assets/TIPA.jpg";
+import TIPPDF from "../assets/pdf/TIP.pdf"
 
 import { useEffect, useState } from "react";
 const products = [
@@ -70,7 +72,7 @@ const products = [
       "Night Club",
       "Places of worKship",
     ],
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W ",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
     maxSpl: "115 dB",
@@ -106,6 +108,31 @@ const products = [
       "Multilayer birch plywood with high resistant black Polyurea® coating",
     grille: "1.5 mm powder-coated steel with black acoustic mesh",
     pdf: "/assets/famous_210_specs.pdf",
+  },
+  {
+    img: TIP,
+    title: "Point Source Series",
+    model: "TIP",
+    description:
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: TIPPDF,
   },
 ];
 
