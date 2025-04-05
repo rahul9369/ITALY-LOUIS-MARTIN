@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import K302 from "../assets/K302.jpg";
-import K304 from "../assets/K304.jpg";
-import K306 from "../assets/K306.jpg";
-import K308 from "../assets/K308.jpg";
+import K302 from "../assets/k302.png";
+import K304 from "../assets/K304.png";
+import K306 from "../assets/K306.png";
+import K308 from "../assets/K308.png";
 import K312 from "../assets/K312.png";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
@@ -165,7 +165,7 @@ const ProductDetail = () => {
           <img
             src={product.img}
             alt={product.model}
-            className="w-full h-auto md:h-[400px] object-cover rounded-lg"
+            className="w-full h-auto md:h-[400px] object-fit rounded-lg"
           />
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">

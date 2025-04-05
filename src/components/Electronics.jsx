@@ -11,46 +11,140 @@ import TIP from "../assets/TIPA.jpg";
 const products = [
   {
     img: PL4,
-    title: "Electronics Series",
-    model: "PL4",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+    title: "PLT Amplifiers",
+    model: "PLT4.1",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω   1600W×4/4Ω",
+    response: " ＞1000",
+    weight: "10kg",
+  },
+  {
+    img: PL4,
+    title: "PLT Amplifiers",
+    model: "PLT4.5",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1500W×4/8Ω  2500W×4/4Ω",
+    response: " ＞1000",
+    weight: "10kg",
   },
   {
     img: DT400,
-    title: "Electronics Series",
+    title: "DT Series",
     model: "DT400",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω      1600W×4/4Ω",
+    response: " ＞1000",
+    weight: "10kg",
   },
-  
 
   {
     img: TTA,
-    title: "Electronics Series",
-    model: "TTA",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+    title: "TTA Series",
+    model: " TTA300",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω    1600W×4/4Ω",
+    response: " ＞500",
+    weight: "10kg",
+  },
+  {
+    img: TTA,
+    title: "TTA Series",
+    model: "TTA500",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω    1600W×4/4Ω",
+    response: " ＞500",
+    weight: "10kg",
+  },
+  {
+    img: TTA,
+    title: "TTA Series",
+    model: " TTA600",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω    1600W×4/4Ω",
+    response: " ＞500",
+    weight: "10kg",
+  },
+  {
+    img: TTA,
+    title: "TTA Series",
+    model: "TTA800",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω    1600W×4/4Ω",
+    response: " ＞500",
+    weight: "10kg",
+  },
+  {
+    img: TTA,
+    title: "TTA Series",
+    model: "TTA1000",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω    1600W×4/4Ω",
+    response: " ＞500",
+    weight: "10kg",
+  },
+  {
+    img: TTA,
+    title: "TTA Series",
+    model: " TTA1300",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω    1600W×4/4Ω",
+    response: " ＞500",
+    weight: "10kg",
+  },
+  {
+    img: TTA,
+    title: "TTA Series",
+    model: " TTA450",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω    1600W×4/4Ω",
+    response: " ＞500",
+    weight: "10kg",
+  },
+  {
+    img: TTA,
+    title: "TTA Series",
+    model: " TTA460",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω    1600W×4/4Ω",
+    response: " ＞500",
+    weight: "10kg",
   },
 
   {
     img: TIP,
-    title: "Electronics Series",
-    model: "TIP",
-    description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
-    power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
-    response: "65 Hz – 19 kHz",
-    spl: "136 dB (musical program)",
-    weight: "37.4 kg",
+    title: "TIP Series",
+    model: " TIP1002",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω   1600W×4/4Ω",
+    response: " ＞800",
+    weight: "10kg",
+  },
+  {
+    img: TIP,
+    title: "TIP Series",
+    model: " TIP1602",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω   1600W×4/4Ω",
+    response: " ＞800",
+    weight: "10kg",
+  },
+  {
+    img: TIP,
+    title: "TIP Series",
+    model: " TIP2000",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω   1600W×4/4Ω",
+    response: " ＞800",
+    weight: "10kg",
+  },
+  {
+    img: TIP,
+    title: "TIP Series",
+    model: " TIP2400",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω   1600W×4/4Ω",
+    response: " ＞800",
+    weight: "10kg",
   },
 ];
 
@@ -72,19 +166,18 @@ const ProductCard = ({ product }) => {
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
       <p className="text-sm font-semibold mt-2 text-gray-700">
-        <span className="font-bold">RMS/Peak Power:</span> {product.power}
+        <span className="font-bold">Output Power:</span> {product.power}
       </p>
       <p className="text-sm mt-2 text-gray-700">
-        <span className="font-bold"> Frequency Response:</span>{" "}
-        {product.response}
+        <span className="font-bold"> Damping factor:</span> {product.response}
       </p>
       {/* <p className="text-sm mt-2 text-gray-700">
         <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
         {product.Sensitivity}
       </p> */}
-      <p className="text-sm mt-2 text-gray-700">
+      {/* <p className="text-sm mt-2 text-gray-700">
         <span className="font-bold">Max SPL(Continuous):</span> {product.spl}
-      </p>
+      </p> */}
       <p className="text-sm mt-2 text-gray-700">
         <span className="font-bold">Net Weight:</span> {product.weight}
       </p>

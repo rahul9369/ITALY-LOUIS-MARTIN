@@ -1,10 +1,10 @@
 import React from "react";
 import Column from "../assets/Columnspeaker.jpg";
 import Footer from "../components/Footer";
-import K302 from "../assets/K302.jpg";
-import K304 from "../assets/K304.jpg";
-import K306 from "../assets/K306.jpg";
-import K308 from "../assets/K308.jpg";
+import K302 from "../assets/k302.png";
+import K304 from "../assets/K304.png";
+import K306 from "../assets/K306.png";
+import K308 from "../assets/k308.png";
 import K312 from "../assets/K312.png";
 import { useNavigate } from "react-router-dom";
 
@@ -73,7 +73,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+        className="w-full h-72 object-fit cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
             `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`
