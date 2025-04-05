@@ -72,7 +72,7 @@ const products = [
       "Night Club",
       "Places of worKship",
     ],
-    power: "2000 W (LF) + 1000 W (MF) + 1000 W ",
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
     spl: "141 dB (musical program)",
     maxSpl: "115 dB",
