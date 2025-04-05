@@ -12,8 +12,8 @@ import { useEffect, useState } from "react";
 const products = [
   {
     img: DT400,
-    title: "DT Series",
-    model: "DT400",
+    title: "D Series",
+    model: "D 400",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     application: [
@@ -37,8 +37,8 @@ const products = [
   },
   {
     img: PL4,
-    title: "PLT Series",
-    model: "PLT4.1",
+    title: "PL Series",
+    model: "PL 4.1",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     application: [
@@ -62,8 +62,8 @@ const products = [
   },
   {
     img: PL4,
-    title: "PLT Series",
-    model: "PLT4.5",
+    title: "PL Series",
+    model: "PL 4.5",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     application: [

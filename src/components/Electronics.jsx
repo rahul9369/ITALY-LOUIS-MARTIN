@@ -11,8 +11,8 @@ import TIP from "../assets/TIPA.jpg";
 const products = [
   {
     img: PL4,
-    title: "PLT Amplifiers",
-    model: "PLT4.1",
+    title: "PL Series",
+    model: "PL 4.1",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1000W×4/8Ω   1600W×4/4Ω",
     response: " ＞1000",
@@ -20,8 +20,8 @@ const products = [
   },
   {
     img: PL4,
-    title: "PLT Amplifiers",
-    model: "PLT4.5",
+    title: "PL Series",
+    model: "PL 4.5",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1500W×4/8Ω  2500W×4/4Ω",
     response: " ＞1000",
@@ -29,8 +29,8 @@ const products = [
   },
   {
     img: DT400,
-    title: "DT Series",
-    model: "DT400",
+    title: "D Series",
+    model: "D 400",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1000W×4/8Ω      1600W×4/4Ω",
     response: " ＞1000",
