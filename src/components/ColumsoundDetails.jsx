@@ -165,7 +165,7 @@ const ProductDetail = () => {
           <img
             src={product.img}
             alt={product.model}
-            className="w-full h-auto md:h-[400px] object-cover rounded-lg"
+            className="w-full h-auto md:h-[400px] object-fit rounded-lg"
           />
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">

@@ -47,11 +47,10 @@ const products = [
     description:
       " The Q-50 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features one 10-inch neodymium drivers and two 1.4-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
     application: [
-      " Outdoor Events",
-      "Concerts and Live Events",
+      "Outdoor Events",
+      "Fixed Installations",
       "Theaters and Auditoriums",
-      "Night Club",
-      "Places of worKship",
+      "Places of worship",
     ],
     power: "2500 W (LF) + 500 W (HF) Class D Bi-amp",
     impedance: "8Ω available",
@@ -71,11 +70,11 @@ const products = [
     description:
       " The Q-60 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features two 10-inch neodymium drivers and two 1.4-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
     application: [
-      " Outdoor Events",
-      "Concerts and Live Events",
+      "Outdoor Events",
+      "Live Performance",
+      "Fixed Installations",
       "Theaters and Auditoriums",
-      "Night Club",
-      "Places of worKship",
+      "Places of worship",
     ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
@@ -99,7 +98,6 @@ const products = [
       " Outdoor Events",
       "Concerts and Live Events",
       "Theaters and Auditoriums",
-      "Night Club",
       "Places of worKship",
     ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
@@ -122,9 +120,9 @@ const products = [
       " The Q-80 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features two 10-inch neodymium drivers and two 1.75-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
     application: [
       " Outdoor Events",
-      "Concerts and Live Events",
+      "Live Performance",
       "Theaters and Auditoriums",
-      "Night Club",
+      "Fixed Installations",
       "Places of worKship",
     ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
@@ -146,11 +144,11 @@ const products = [
     description:
       " The Cox – 12 has one powerful 12” (304 mm)  coaxial driver with 1.5” (38 mm) HF. It is a high-performance, versatile, passive line array speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for rental market for small to medium format application along with high end install applications, including night clubs, auditorium, multipurpose hall etc.",
     application: [
-      " Outdoor Events",
-      "Concerts and Live Events",
-      "Theaters and Auditoriums",
-      "Night Club",
-      "Places of worKship",
+      "Live Events",
+      "Auditorium & Theaters",
+      "Convention Centers",
+      "Stadium & Sport Complex",
+      "House of worKship",
     ],
     power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
     impedance: "8Ω or 16Ω available",
@@ -191,13 +189,13 @@ const ProductDetail = () => {
     <>
       <div className="w-[90%] mx-auto p-6">
         {/* Product Image and Title */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 space-x-6">
           <img
             src={product.img}
             alt={product.model}
             className="w-full h-auto md:h-[400px] object-cover rounded-lg"
           />
-          <div>
+          <div className="">
             <h1 className="text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}
             </h1>
