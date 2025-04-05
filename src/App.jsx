@@ -28,6 +28,12 @@ import SubwooferDetails from "./components/SubwooferDetails";
 import KSseries from "./components/Subwooferseries/KsSeries";
 import Sseries from "./components/Subwooferseries/Sseries";
 import ElectronicDetails from "./components/ElectronicDetails";
+import Dseries from "./components/ElectronicSeries/Dseries";
+import PLseries from "./components/ElectronicSeries/PLseries";
+import TIPseries from "./components/ElectronicSeries/TIPseries";
+import TTAseries from "./components/ElectronicSeries/TTAseries";
+import Kseries from "./components/ColumnSpeaker/Kseries";
+import DSseries from "./components/CommercialSeries/Dsseries";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -112,6 +118,30 @@ const appRouter = createBrowserRouter([
       {
         path: "/electronics",
         element: <Electronic />,
+      },
+      {
+        path: "/dseries",
+        element: <Dseries />,
+      },
+      {
+        path: "/plseries",
+        element: <PLseries />,
+      },
+      {
+        path: "/kseries",
+        element: <Kseries />,
+      },
+      {
+        path: "/dsseries",
+        element: <DSseries />,
+      },
+      {
+        path: "/tipseries",
+        element: <TIPseries />,
+      },
+      {
+        path: "/ttaseries",
+        element: <TTAseries />,
       },
       {
         path: "/product/:model",

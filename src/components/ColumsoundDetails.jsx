@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import K302 from "../assets/K302.png";
 import K304 from "../assets/K304.png";
-import K306 from "../assets/K306.jpg";
-import K308 from "../assets/K308.jpg";
+import K306 from "../assets/K306.png";
+import K308 from "../assets/K308.png";
 import K312 from "../assets/K312.png";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";

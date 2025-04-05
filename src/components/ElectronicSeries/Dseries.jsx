@@ -1,32 +1,10 @@
 import React from "react";
-import Amplifiers from "../assets/Amplifiers.jpg";
-import Footer from "../components/Footer";
+import Amplifiers from "../../assets/Amplifiers.jpg";
+import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
-import AMPLIFIER from "../assets/AMPLIFIERSpl4.jpg";
-import DT400 from "../assets/DT400.jpg";
-import PL4 from "../assets/PL4.jpg";
-import TTA from "../assets/TTA.jpg";
-import TIP from "../assets/TIPA.jpg";
+import DT400 from "../../assets/DT400.jpg";
 
 const products = [
-  {
-    img: PL4,
-    title: "PL Series",
-    model: "PL 4.1",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "1000W×4/8Ω   1600W×4/4Ω",
-    response: " ＞1000",
-    weight: "10kg",
-  },
-  {
-    img: PL4,
-    title: "PL Series",
-    model: "PL 4.5",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "1500W×4/8Ω  2500W×4/4Ω",
-    response: " ＞1000",
-    weight: "11kg",
-  },
   {
     img: DT400,
     title: "D Series",
@@ -62,116 +40,6 @@ const products = [
     power: "300W×4/8Ω      500W×4/4Ω",
     response: "＞500(1 KHz @ 8Ω)",
     weight: "5kg",
-  },
-
-  {
-    img: TTA,
-    title: "TTA Series",
-    model: "TTA 300",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "350W×2/8Ω    465W×2/4Ω",
-    response: " ＞500(1 KHz @ 8Ω)",
-    weight: "15kg",
-  },
-  {
-    img: TTA,
-    title: "TTA Series",
-    model: "TTA 500",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "450W×2/8Ω    750W×2/4Ω",
-    response: "＞500(1 KHz @ 8Ω)",
-    weight: "17kg",
-  },
-  {
-    img: TTA,
-    title: "TTA Series",
-    model: "TTA 600",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "650w×2/8Ω    930W×2/4Ω",
-    response: "＞500(1 KHz @ 8Ω)",
-    weight: "18kg",
-  },
-  {
-    img: TTA,
-    title: "TTA Series",
-    model: "TTA 800",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "850W×2/8Ω    1250W×2/4Ω",
-    response: "＞500(1 KHz @ 8Ω)",
-    weight: "20kg",
-  },
-  {
-    img: TTA,
-    title: "TTA Series",
-    model: "TTA 1000",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "1000W×2/8Ω    1600W×2/4Ω",
-    response: "＞500(1 KHz @ 8Ω)",
-    weight: "24kg",
-  },
-  {
-    img: TTA,
-    title: "TTA Series",
-    model: "TTA 1300",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "1300W×2/8Ω    1950W×2/4Ω",
-    response: "＞500(1 KHz @ 8Ω)",
-    weight: "26kg",
-  },
-  {
-    img: TTA,
-    title: "TTA Series",
-    model: "TTA 450",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "450W×4/8Ω    750W×2/4Ω",
-    response: "＞500(1 KHz @ 8Ω)",
-    weight: "23kg",
-  },
-  {
-    img: TTA,
-    title: "TTA Series",
-    model: "TTA 460",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "650W×4/8Ω    930W×2/4Ω",
-    response: "＞500(1 KHz @ 8Ω)",
-    weight: "25kg",
-  },
-
-  {
-    img: TIP,
-    title: "TIP Series",
-    model: "TIP 1002",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "1000W×2/8Ω   1600W×2/4Ω",
-    response: " ＞800",
-    weight: "5.8kg",
-  },
-  {
-    img: TIP,
-    title: "TIP Series",
-    model: "TIP 1602",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "1600W×2/8Ω   2600W×2/4Ω",
-    response: " ＞1000",
-    weight: "6.5kg",
-  },
-  {
-    img: TIP,
-    title: "TIP Series",
-    model: "TIP 2000",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "2000W×2/8Ω   3200W×2/4Ω",
-    response: " ＞100",
-    weight: "6.8kg",
-  },
-  {
-    img: TIP,
-    title: "TIP Series",
-    model: "TIP 2400",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "2400W×2/8Ω   4000W×2/4Ω",
-    response: " ＞1000",
-    weight: "7kg",
   },
 ];
 
@@ -227,7 +95,7 @@ const ProductList = () => {
       <img src={Amplifiers} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="text-4xl mx-auto font-bold  mb-4">
-          Amplifiers - All Series
+          Amplifiers - D Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
           Our Line Array Systems are meticulously designed to provide consistent

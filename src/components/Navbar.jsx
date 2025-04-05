@@ -62,12 +62,12 @@ const Navbar = () => {
             {
               name: "Column Speaker",
               path: "/columsound",
-              sublinks: [{ name: "K series", path: "/columsound" }],
+              sublinks: [{ name: "K series", path: "/kseries" }],
             },
             {
               name: "Commercial Speaker",
               path: "/stagemonitor",
-              sublinks: [{ name: "DS Series", path: "/stagemonitor" }],
+              sublinks: [{ name: "DS Series", path: "/dsseries" }],
             },
             {
               name: "Subwoofer",
