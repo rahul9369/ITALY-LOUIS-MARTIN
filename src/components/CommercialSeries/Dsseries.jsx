@@ -1,68 +1,55 @@
 import React from "react";
-import Column from "../assets/Columnspeaker.jpg";
-import Footer from "../components/Footer";
-import K302 from "../assets/k302.png";
-import K304 from "../assets/K304.png";
-import K306 from "../assets/k306.png";
-import K308 from "../assets/K308.png";
-import K312 from "../assets/K312.png";
+import PlasticSpeaker from "../../assets/PlasticSpeaker.jpg";
+import DS12 from "../../assets/DS12.jpg";
+
+import Footer from "../Footer";
+import plasticDs5 from "../../assets/plasticDs5.jpg";
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: K302,
-    title: "Column Speaker",
-    model: "K302",
-    description: '2x1.75" Passive Full Range Column Speaker',
-    power: "40W/160W (Passive)",
-    response: "150Hz-18KHz",
-    Sensitivity: "91dB(1W/1m)",
-    spl: "110dB",
-    weight: "2.2Kg",
+    img: plasticDs5,
+    title: "Plastic Speaker",
+    model: "DS5",
+    description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "100W/400W (Passive)",
+    response: "65Hz-19KHz",
+    Sensitivity: "93dB(1W/1m)",
+    spl: "93dB",
+    weight: "5Kg",
   },
   {
-    img: K304,
-    title: "Column Speaker",
-    model: "K304",
-    description: '4x1.75" Passive Full Range Column Speaker',
-    power: "80W/320W (Passive)",
-    response: "150Hz-18KHz",
-    Sensitivity: "91dB(1W/1m)",
-    spl: "113dB",
-    weight: "4.1Kg",
+    img: plasticDs5,
+    title: "Plastic Speaker",
+    model: "DS8",
+    description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "150W/300W (Passive)",
+    Sensitivity: "95dB(1W/1m)",
+    response: "60Hz-19KHz",
+    spl: "95dB",
+    weight: "8Kg",
   },
   {
-    img: K306,
-    title: "Column Speaker",
-    model: "K306",
-    description: '4x1.75" Passive Full Range Column Speaker',
-    power: "80W/320W (Passive)",
-    response: "150Hz-18KHz",
-    Sensitivity: "91dB(1W/1m)",
-    spl: "113dB",
-    weight: "4.1Kg",
+    img: DS12,
+    title: "Plastic Speaker",
+    model: "DS12",
+    description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "400W/800W (Passive)",
+    Sensitivity: "99dB(1W/1m)",
+    response: "70Hz-19KHz",
+    spl: "99dB",
+    weight: "17Kg",
   },
   {
-    img: K308,
-    title: "Column Speaker",
-    model: "K308",
-    description: '8x1.75" Passive Full Range Column Speaker',
-    power: "160W/640W (Passive)",
-    response: "150Hz-18KHz",
-    Sensitivity: "91dB(1W/1m)",
-    spl: "116dB",
-    weight: "7.8Kg",
-  },
-  {
-    img: K312,
-    title: "Column Speaker",
-    model: "K312",
-    description: '12x1.75" Passive Full Range Column Speaker',
-    power: "220W/880W (Passive)",
-    response: "150Hz-18KHz",
-    Sensitivity: "91dB(1W/1m)",
-    spl: "117dB",
-    weight: "10.6Kg",
+    img: DS12,
+    title: "Plastic Speaker",
+    model: "DS15",
+    description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "400W/800W (Passive)",
+    Sensitivity: "99dB(1W/1m)",
+    response: "70Hz-19KHz",
+    spl: "99dB",
+    weight: "17Kg",
   },
 ];
 
@@ -73,10 +60,10 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-[60%] object-fit cursor-pointer rounded-lg"
+        className="w-full h-72 object-cover cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
-            `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`
           )
         }
       />
@@ -104,7 +91,7 @@ const ProductCard = ({ product }) => {
         className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
         onClick={() =>
           navigate(
-            `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`
           )
         }>
         {product.model}
@@ -116,10 +103,10 @@ const ProductCard = ({ product }) => {
 const ProductList = () => {
   return (
     <div className="w-full">
-      <img src={Column} alt="Line Array" className="w-full" />
+      <img src={PlasticSpeaker} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="text-4xl mx-auto font-bold  mb-4">
-          Column Sound Speaker - All Series
+          Commercial Speaker - DS Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
           Our Line Array Systems are meticulously designed to provide consistent

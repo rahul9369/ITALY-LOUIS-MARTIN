@@ -13,7 +13,82 @@ const products = [
   {
     img: DT400,
     title: "D Series",
-    model: "D 400",
+    model: "D 200",
+    description:
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+  {
+    img: DT400,
+    title: "D Series",
+    model: "D 300",
+    description:
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+  {
+    img: DT400,
+    title: "D Series",
+    model: "D 4200",
+    description:
+      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+    application: [
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
+    ],
+    power: "2000 W (LF) + 1000 W (MF) + 1000 W (HF)",
+    impedance: "8Ω or 16Ω available",
+    spl: "141 dB (musical program)",
+    maxSpl: "115 dB",
+    response: "42 Hz – 18 kHz",
+    dimensions: "400 x 230 x 250 mm",
+    weight: "64.6 kg",
+    finish:
+      "Multilayer birch plywood with high resistant black Polyurea® coating",
+    grille: "1.5 mm powder-coated steel with black acoustic mesh",
+    pdf: "/assets/famous_210_specs.pdf",
+  },
+  {
+    img: DT400,
+    title: "D Series",
+    model: "D 4300",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
     application: [
@@ -114,7 +189,7 @@ const products = [
   {
     img: TTA,
     title: "TTA Series",
-    model: "TTA300",
+    model: "TTA 300",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
     application: [
@@ -151,7 +226,7 @@ const products = [
   {
     img: TTA,
     title: "TTA Series",
-    model: "TTA500",
+    model: "TTA 500",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
     application: [
@@ -188,7 +263,7 @@ const products = [
   {
     img: TTA,
     title: "TTA Series",
-    model: "TTA600",
+    model: "TTA 600",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
     application: [
@@ -225,7 +300,7 @@ const products = [
   {
     img: TTA,
     title: "TTA Series",
-    model: "TTA800",
+    model: "TTA 800",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
     application: [
@@ -262,7 +337,7 @@ const products = [
   {
     img: TTA,
     title: "TTA Series",
-    model: "TTA1000",
+    model: "TTA 1000",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
     application: [
@@ -299,7 +374,7 @@ const products = [
   {
     img: TTA,
     title: "TTA Series",
-    model: "TTA1300",
+    model: "TTA 1300",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
     application: [
@@ -336,7 +411,7 @@ const products = [
   {
     img: TTA,
     title: "TTA Series",
-    model: "TTA450",
+    model: "TTA 450",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
     application: [
@@ -373,7 +448,7 @@ const products = [
   {
     img: TTA,
     title: "TTA Series",
-    model: "TTA460",
+    model: "TTA 460",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
     application: [
@@ -410,7 +485,7 @@ const products = [
   {
     img: TIP,
     title: "TIP Series",
-    model: "TIP1002",
+    model: "TIP 1002",
     description:
       "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
     application: [
@@ -447,7 +522,7 @@ const products = [
   {
     img: TIP,
     title: "TIP Series",
-    model: "TIP1602",
+    model: "TIP 1602",
     description:
       "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
     application: [
@@ -484,7 +559,7 @@ const products = [
   {
     img: TIP,
     title: "TIP Series",
-    model: "TIP2000",
+    model: "TIP 2000",
     description:
       "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
     application: [
@@ -521,7 +596,7 @@ const products = [
   {
     img: TIP,
     title: "TIP Series",
-    model: "TIP2400",
+    model: "TIP 2400",
     description:
       "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
     application: [
