@@ -3,8 +3,12 @@ import SpeakerF12 from "../assets/SpeakerF12.jpg";
 import Footer from "./Footer";
 import KS18 from "../assets/ks18.jpg";
 import subwooferImg from "../assets/subwoofer218.png";
+// import S218 from "../assets/S218.png";
+import S218IMG from "../assets/S218.png";
 // import KS18a from "../assets/pdf/KS18A.pdf";
 import KS18a from "../assets/pdf/KS18a.pdf";
+import S218 from "../assets/S218.png";
+import S18 from "../assets/S18.png";
 
 import S18a from "../assets/pdf/S18a.pdf";
 import KS218a from "../assets/pdf/KS218a.pdf";
@@ -77,7 +81,7 @@ const products = [
   },
 
   {
-    img: subwooferImg,
+    img: S18,
     title: "Subwoofer",
     model: "S18",
     description:
@@ -109,7 +113,7 @@ const products = [
   },
 
   {
-    img: subwooferImg,
+    img: S218,
     title: "Subwoofer",
     model: "S218",
     description:
