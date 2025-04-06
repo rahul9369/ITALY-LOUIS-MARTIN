@@ -5,6 +5,11 @@ import K306 from "../assets/k306.png";
 import K308 from "../assets/K308.png";
 import K312 from "../assets/K312.png";
 import Footer from "./Footer";
+import K302PDF from "../assets/pdf/K302.pdf";
+import K304PDF from "../assets/pdf/K304.pdf";
+import K306PDF from "../assets/pdf/K306.pdf";
+import K308PDF from "../assets/pdf/K308.pdf";
+import K312PDF from "../assets/pdf/K312.pdf";
 import { useEffect, useState } from "react";
 const products = [
   {
@@ -42,7 +47,7 @@ const products = [
     Cabinet_Material: "Glass Fiber Reinforced Plastic & Birch Plywood",
     Size_mm: "330 x 1100 x 600 mm (H x W x D)",
     Weight: "50 Kg / 110.2 lbs",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: K302PDF,
   },
   {
     img: K304,
@@ -79,7 +84,7 @@ const products = [
     Cabinet_Material: "Glass Fiber Reinforced Plastic & Birch Plywood",
     Size_mm: "330 x 1100 x 600 mm (H x W x D)",
     Weight: "50 Kg / 110.2 lbs",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: K304PDF,
   },
   {
     img: K306,
@@ -116,7 +121,7 @@ const products = [
     Cabinet_Material: "Glass Fiber Reinforced Plastic & Birch Plywood",
     Size_mm: "330 x 1100 x 600 mm (H x W x D)",
     Weight: "50 Kg / 110.2 lbs",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: K306PDF,
   },
   {
     img: K308,
@@ -153,7 +158,7 @@ const products = [
     Cabinet_Material: "Glass Fiber Reinforced Plastic & Birch Plywood",
     Size_mm: "330 x 1100 x 600 mm (H x W x D)",
     Weight: "50 Kg / 110.2 lbs",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: K308PDF,
   },
   {
     img: K312,
@@ -190,7 +195,7 @@ const products = [
     Cabinet_Material: "Glass Fiber Reinforced Plastic & Birch Plywood",
     Size_mm: "330 x 1100 x 600 mm (H x W x D)",
     Weight: "50 Kg / 110.2 lbs",
-    pdf: "/assets/famous_210_specs.pdf",
+    pdf: K312PDF,
   },
 ];
 
@@ -270,28 +275,58 @@ const ProductDetail = () => {
               <tbody>
                 {[
                   { label: "Type", value: product.Type },
-                  { label: "Frequency Response", value: product.Frequency_Response },
+                  {
+                    label: "Frequency Response",
+                    value: product.Frequency_Response,
+                  },
                   { label: "LF Drivers", value: product.LF_Drivers },
                   { label: "HF Drivers", value: product.HF_Drivers },
                   { label: "RMS Power LF", value: product.RMS_Power_LF },
                   { label: "RMS Power HF", value: product.RMS_Power_HF },
-                  { label: "Program Power LF", value: product.Program_Power_LF },
-                  { label: "Program Power HF", value: product.Program_Power_HF },
+                  {
+                    label: "Program Power LF",
+                    value: product.Program_Power_LF,
+                  },
+                  {
+                    label: "Program Power HF",
+                    value: product.Program_Power_HF,
+                  },
                   { label: "Peak Power LF", value: product.Peak_Power_LF },
                   { label: "Peak Power HF", value: product.Peak_Power_HF },
                   { label: "Sensitivity LF", value: product.Sensitivity_LF },
                   { label: "Sensitivity HF", value: product.Sensitivity_HF },
-                  { label: "Max SPL (Continuous) LF", value: product.Max_SPL_Continuous_LF },
-                  { label: "Max SPL (Continuous) HF", value: product.Max_SPL_Continuous_HF },
-                  { label: "Max SPL (Peak) LF", value: product.Max_SPL_Peak_LF },
-                  { label: "Max SPL (Peak) HF", value: product.Max_SPL_Peak_HF },
-                  { label: "Nominal Impedance LF", value: product.Nominal_Impedance_LF },
-                  { label: "Nominal Impedance HF", value: product.Nominal_Impedance_HF },
+                  {
+                    label: "Max SPL (Continuous) LF",
+                    value: product.Max_SPL_Continuous_LF,
+                  },
+                  {
+                    label: "Max SPL (Continuous) HF",
+                    value: product.Max_SPL_Continuous_HF,
+                  },
+                  {
+                    label: "Max SPL (Peak) LF",
+                    value: product.Max_SPL_Peak_LF,
+                  },
+                  {
+                    label: "Max SPL (Peak) HF",
+                    value: product.Max_SPL_Peak_HF,
+                  },
+                  {
+                    label: "Nominal Impedance LF",
+                    value: product.Nominal_Impedance_LF,
+                  },
+                  {
+                    label: "Nominal Impedance HF",
+                    value: product.Nominal_Impedance_HF,
+                  },
                   { label: "Crossover Mode", value: product.Crossover_Mode },
                   { label: "Dispersion", value: product.Dispersion },
-                  { label: "Cabinet Material", value: product.Cabinet_Material },
+                  {
+                    label: "Cabinet Material",
+                    value: product.Cabinet_Material,
+                  },
                   { label: "Dimensions (HxWxD)", value: product.Size_mm },
-                  { label: "Weight", value: product.Weight }
+                  { label: "Weight", value: product.Weight },
                 ].map((spec, index) => (
                   <tr key={index} className="border-b border-gray-200">
                     <td className="px-2 md:px-4 py-2 font-semibold">
