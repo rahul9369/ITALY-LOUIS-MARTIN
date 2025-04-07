@@ -34,6 +34,7 @@ import TIPseries from "./components/ElectronicSeries/TIPseries";
 import TTAseries from "./components/ElectronicSeries/TTAseries";
 import Kseries from "./components/ColumnSpeaker/Kseries";
 import DSseries from "./components/CommercialSeries/Dsseries";
+import PDFViewer from "./components/PdfViewer";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -91,6 +92,7 @@ const appRouter = createBrowserRouter([
         path: "/qseries",
         element: <Qseries />,
       },
+
       {
         path: "/famousseries",
         element: <Famous />,
@@ -169,6 +171,10 @@ const appRouter = createBrowserRouter([
         element: <LineArrayDetails />,
       },
     ],
+  },
+  {
+    path: "/view-pdf",
+    element: <PDFViewer />,
   },
 ]);
 

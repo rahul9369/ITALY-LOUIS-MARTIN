@@ -326,14 +326,19 @@ const ProductDetail = () => {
 
           {activeTab === "Downloads" && (
             <div className="mt-4">
-              <p className="text-gray-600 text-sm md:text-md">
-                Click below to download the specifications.
+              <p className="text-gray-600 text-sm md:text-md mb-2">
+                Click below to view or download the specifications.
               </p>
-              <button
-                onClick={handleDownload}
-                className="mt-4 px-4 py-2 md:px-6 md:py-2 cursor-pointer bg-green-500 text-white rounded-lg text-sm md:text-lg">
-                Download PDF
-              </button>
+
+              <a
+                href={`/view-pdf?url=${encodeURIComponent(product.pdf)}&name=${
+                  product.model
+                }_specifications.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 md:px-6 md:py-2 bg-blue-600 text-white rounded-lg text-sm md:text-lg mr-4">
+                View PDF
+              </a>
             </div>
           )}
         </div>

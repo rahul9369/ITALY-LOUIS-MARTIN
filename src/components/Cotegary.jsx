@@ -5,12 +5,13 @@ import Subwoofer218 from "../assets/subwoofer218.png";
 import AMPLIFIERSpl4 from "../assets/AMPLIFIERSpl4.jpg";
 import PlasticDs5 from "../assets/plasticDs5.jpg";
 import SpeakerF12 from "../assets/columnImg.jpg";
+import DS12 from "../assets/DS12.jpg";
 
 const categories = [
   { name: "Line Array", img: FAMOUS210N, path: "/linearray" },
   { name: "Point Source", img: Devilred10, path: "/pointsource" },
   { name: "Column Speaker", img: SpeakerF12, path: "/columsound" },
-  { name: "Commercial Speaker", img: PlasticDs5, path: "/stagemonitor" },
+  { name: "Commercial Speaker", img: DS12, path: "/stagemonitor" },
   { name: "Subwoofer", img: Subwoofer218, path: "/subwoofer" },
   { name: "Electronics", img: AMPLIFIERSpl4, path: "/electronics" },
 ];

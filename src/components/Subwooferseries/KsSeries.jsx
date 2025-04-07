@@ -37,7 +37,12 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover rounded-lg"
+        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+        onClick={() =>
+          navigate(
+            `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+          )
+        }
       />
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>

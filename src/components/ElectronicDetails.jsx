@@ -27,19 +27,19 @@ const products = [
       "Night Club",
       "Places of worKship",
     ],
-  Stereo_8_Ohm_2_Channel: "250W×2 ",
-  Stereo_4_Ohm_2_Channel: "400W×2 ",
-  Bridge_8_Ohm_1_Channel: "700W×1 ",
-  Bridge_4_Ohm_1_Channel: "1000W×1 (Not recommended)  1200W×1",
-  Frequency_Response: "20Hz – 20kHz (±0.5dB)",
-  THD_N: "<0.05% @ 8Ω 1kHz",
-  SNR: ">98dB (A-weighted)",
-  Damping_Factor: ">500 (1kHz @ 8Ω)",
-  Crosstalk: ">80dB",
-  Input_Sensitivity: "0.775V / 1.44V",
-  Input_Impedance: "20kΩ/10kΩ",
-  Size_mm: "482 x 220 x 48",
-  Weight:" 2.5",
+    Stereo_8_Ohm_2_Channel: "250W×2 ",
+    Stereo_4_Ohm_2_Channel: "400W×2 ",
+    Bridge_8_Ohm_1_Channel: "700W×1 ",
+    Bridge_4_Ohm_1_Channel: "1000W×1 (Not recommended)  1200W×1",
+    Frequency_Response: "20Hz – 20kHz (±0.5dB)",
+    THD_N: "<0.05% @ 8Ω 1kHz",
+    SNR: ">98dB (A-weighted)",
+    Damping_Factor: ">500 (1kHz @ 8Ω)",
+    Crosstalk: ">80dB",
+    Input_Sensitivity: "0.775V / 1.44V",
+    Input_Impedance: "20kΩ/10kΩ",
+    Size_mm: "482 x 220 x 48",
+    Weight: " 2.5",
     pdf: DSeriesAmplifiers,
   },
   {
@@ -67,9 +67,8 @@ const products = [
     Input_Sensitivity: " 0.775V/1.44V",
     Input_Impedance: " 20KΩ/10KΩ",
     Size_mm: "482 x 220 x 48",
-    Weight:"2.5",
+    Weight: "2.5",
     pdf: DSeriesAmplifiers,
-  
   },
   {
     img: DT400,
@@ -96,7 +95,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ / 10kΩ",
     Size_mm: "482 x 350 x 44",
-    Weight:"2 4.8",
+    Weight: "2 4.8",
     pdf: DSeriesAmplifiers,
   },
   {
@@ -124,7 +123,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ (Balanced) / 10kΩ (Unbalanced)",
     Size_mm: " 482 x 350 x 44",
-    Weight:"5",
+    Weight: "5",
     pdf: DSeriesAmplifiers,
   },
   {
@@ -152,7 +151,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ (Balanced) / 10kΩ (Unbalanced)",
     Size_mm: "482 x 330 x88 ",
-    Weight:"10",
+    Weight: "10",
     pdf: PLSeriesAmplifiers,
   },
   {
@@ -180,7 +179,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ / 10kΩ",
     Size_mm: "482 x 330 x88 ",
-    Weight:"11",
+    Weight: "11",
     pdf: PLSeriesAmplifiers,
   },
   {
@@ -207,7 +206,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ  / 10kΩ ",
     Size_mm: "483 x 442x88mm (H x W x D)",
-    Weight:"15",
+    Weight: "15",
     pdf: TTAPDF,
   },
   {
@@ -234,7 +233,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ / 10kΩ ",
     Size_mm: "483 x 442x88mm",
-    Weight:"17",
+    Weight: "17",
     pdf: TTAPDF,
   },
   {
@@ -261,7 +260,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ / 10kΩ",
     Size_mm: "483 x 442x88mm (H x W x D)",
-    Weight:"18",
+    Weight: "18",
     pdf: TTAPDF,
   },
   {
@@ -288,7 +287,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ / 10kΩ",
     Size_mm: "483 x 442x88mm",
-    Weight:"20",
+    Weight: "20",
     pdf: TTAPDF,
   },
   {
@@ -315,7 +314,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ / 10kΩ",
     Size_mm: "(483 x 462 x 88) mm",
-    Weight:"24",
+    Weight: "24",
     pdf: TTAPDF,
   },
   {
@@ -342,7 +341,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ / 10kΩ ",
     Size_mm: " (483 x 462 x 88) mm",
-    Weight:"26",
+    Weight: "26",
     pdf: TTAPDF,
   },
   {
@@ -369,7 +368,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ  / 10kΩ",
     Size_mm: "(483 x 462 x 88) mm",
-    Weight:"23",
+    Weight: "23",
     pdf: TTAPDF,
   },
   {
@@ -396,7 +395,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ/ 10kΩ",
     Size_mm: "(483 x 462 x 88) mm",
-    Weight:"25",
+    Weight: "25",
     pdf: TTAPDF,
   },
   {
@@ -423,7 +422,7 @@ const products = [
     Input_Sensitivity: " 0.775V/1.44V",
     Input_Impedance: " 20KΩ/10KΩ",
     Size_mm: "482 x 360 x 88mm",
-    Weight:" 5.8",
+    Weight: " 5.8",
     pdf: TIPPDF,
   },
   {
@@ -450,7 +449,7 @@ const products = [
     Input_Sensitivity: " 0.775V/1.44V",
     Input_Impedance: " 20KΩ/10KΩ",
     Size_mm: "482 x 360 x 88mm",
-    Weight:" 6.5",
+    Weight: " 6.5",
     pdf: TIPPDF,
   },
   {
@@ -477,7 +476,7 @@ const products = [
     Input_Sensitivity: " 0.775V/1.44V",
     Input_Impedance: " 20KΩ/10KΩ",
     Size_mm: "482 x 360 x 88mm",
-    Weight:" 6.8",
+    Weight: " 6.8",
     pdf: TIPPDF,
   },
   {
@@ -504,7 +503,7 @@ const products = [
     Input_Sensitivity: " 0.775V/1.44V",
     Input_Impedance: " 20KΩ/10KΩ",
     Size_mm: "482 x 360 x 88mm",
-    Weight:" 7",
+    Weight: " 7",
     pdf: TIPPDF,
   },
 ];
@@ -582,19 +581,37 @@ const ProductDetail = () => {
             <table className="w-full border-collapse border border-gray-300 text-sm md:text-md">
               <tbody>
                 {[
-                   { label: "Stereo 8Ω (2 Channel)", value: product.Stereo_8_Ohm_2_Channel },
-                   { label: "Stereo 4Ω (2 Channel)", value: product.Stereo_4_Ohm_2_Channel },
-                   { label: "Bridge 8Ω (1 Channel)", value: product.Bridge_8_Ohm_1_Channel },
-                   { label: "Bridge 4Ω (1 Channel)", value: product.Bridge_4_Ohm_1_Channel },
-                   { label: "Frequency Response", value: product.Frequency_Response },
-                   { label: "THD+N", value: product.THD_N },
-                   { label: "S/N Ratio", value: product.SNR },
-                   { label: "Damping Factor", value: product.Damping_Factor },
-                   { label: "Crosstalk", value: product.Crosstalk },
-                   { label: "Input Sensitivity", value: product.Input_Sensitivity },
-                   { label: "Input Impedance", value: product.Input_Impedance },
-                   { label: "Dimensions (HxWxD)", value: product.Size_mm },
-                   { label: "Weight", value: `${product.Weight} Kg` }
+                  {
+                    label: "Stereo 8Ω (2 Channel)",
+                    value: product.Stereo_8_Ohm_2_Channel,
+                  },
+                  {
+                    label: "Stereo 4Ω (2 Channel)",
+                    value: product.Stereo_4_Ohm_2_Channel,
+                  },
+                  {
+                    label: "Bridge 8Ω (1 Channel)",
+                    value: product.Bridge_8_Ohm_1_Channel,
+                  },
+                  {
+                    label: "Bridge 4Ω (1 Channel)",
+                    value: product.Bridge_4_Ohm_1_Channel,
+                  },
+                  {
+                    label: "Frequency Response",
+                    value: product.Frequency_Response,
+                  },
+                  { label: "THD+N", value: product.THD_N },
+                  { label: "S/N Ratio", value: product.SNR },
+                  { label: "Damping Factor", value: product.Damping_Factor },
+                  { label: "Crosstalk", value: product.Crosstalk },
+                  {
+                    label: "Input Sensitivity",
+                    value: product.Input_Sensitivity,
+                  },
+                  { label: "Input Impedance", value: product.Input_Impedance },
+                  { label: "Dimensions (HxWxD)", value: product.Size_mm },
+                  { label: "Weight", value: `${product.Weight} Kg` },
                 ].map((spec, index) => (
                   <tr key={index} className="border-b border-gray-200">
                     <td className="px-2 md:px-4 py-2 font-semibold">
@@ -609,14 +626,19 @@ const ProductDetail = () => {
 
           {activeTab === "Downloads" && (
             <div className="mt-4">
-              <p className="text-gray-600 text-sm md:text-md">
-                Click below to download the specifications.
+              <p className="text-gray-600 text-sm md:text-md mb-2">
+                Click below to view or download the specifications.
               </p>
-              <button
-                onClick={handleDownload}
-                className="mt-4 px-4 py-2 md:px-6 md:py-2 bg-green-500 text-white rounded-lg text-sm md:text-lg">
-                Download PDF
-              </button>
+
+              <a
+                href={`/view-pdf?url=${encodeURIComponent(product.pdf)}&name=${
+                  product.model
+                }_specifications.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 md:px-6 md:py-2 bg-blue-600 text-white rounded-lg text-sm md:text-lg mr-4">
+                View PDF
+              </a>
             </div>
           )}
         </div>

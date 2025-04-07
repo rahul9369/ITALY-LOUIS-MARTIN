@@ -55,7 +55,7 @@ const products = [
     ],
     Type: "Full range column speaker",
     Frequency_Response: "150 Hz – 18 kHz",
-   Drivers: "4 x 1.75” (44 mm) Full range driver",
+    Drivers: "4 x 1.75” (44 mm) Full range driver",
     RMS_Power: "80W",
     Program_Power: "160W",
     Peak_Power: "320W",
@@ -84,7 +84,7 @@ const products = [
     ],
     Type: "Full range column speaker",
     Frequency_Response: "150 Hz – 18 kHz",
-   Drivers: "6 x 1.75” (44 mm) Full range driver",
+    Drivers: "6 x 1.75” (44 mm) Full range driver",
     RMS_Power: "120W",
     Program_Power: "240W",
     Peak_Power: "480W",
@@ -113,7 +113,7 @@ const products = [
     ],
     Type: "Two-way Coaxial full range passive line array speaker",
     Frequency_Response: "60 Hz – 19 kHz",
-   Drivers: "1x 12” (304 mm) Coaxial Driver",
+    Drivers: "1x 12” (304 mm) Coaxial Driver",
     RMS_Power: "450W",
     Program_Power: "900W",
     Peak_Power: "18000W",
@@ -142,7 +142,7 @@ const products = [
     ],
     Type: "Two-way Coaxial full range passive line array speaker",
     Frequency_Response: "60 Hz – 19 kHz",
-   Drivers: "1x 12” (304 mm) Coaxial Driver",
+    Drivers: "1x 12” (304 mm) Coaxial Driver",
     RMS_Power: "450W",
     Program_Power: "900W",
     Peak_Power: "18000W",
@@ -271,7 +271,6 @@ const ProductDetail = () => {
                   },
                   { label: "Dimensions (HxWxD)", value: product.Size_mm },
                   { label: "Weight(Kg)/Lbs", value: product.Weight },
-
                 ].map((spec, index) => (
                   <tr key={index} className="border-b border-gray-200">
                     <td className="px-2 md:px-4 py-2 font-semibold">
@@ -286,14 +285,19 @@ const ProductDetail = () => {
 
           {activeTab === "Downloads" && (
             <div className="mt-4">
-              <p className="text-gray-600 text-sm md:text-md">
-                Click below to download the specifications.
+              <p className="text-gray-600 text-sm md:text-md mb-2">
+                Click below to view or download the specifications.
               </p>
-              <button
-                onClick={handleDownload}
-                className="mt-4 px-4 py-2 md:px-6 md:py-2 cursor-pointer bg-green-500 text-white rounded-lg text-sm md:text-lg">
-                Download PDF
-              </button>
+
+              <a
+                href={`/view-pdf?url=${encodeURIComponent(product.pdf)}&name=${
+                  product.model
+                }_specifications.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 md:px-6 md:py-2 bg-blue-600 text-white rounded-lg text-sm md:text-lg mr-4">
+                View PDF
+              </a>
             </div>
           )}
         </div>
