@@ -19,7 +19,7 @@ const products = [
     model: "Red 10",
     description: `2x10" Two-Way Passive Full-Range High Power Loudspeaker`,
     power: "600W/2400W (Passive)",
-    response: "65Hz-20KHz",
+    response: "65Hz-20kHz",
     Sensitivity: "101dB(1W/1m)",
     spl: "131dB",
     weight: "38Kg",
@@ -30,7 +30,7 @@ const products = [
     model: "Red 5.5",
     description: '2x5" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "200W/800W (Passive)",
-    response: "80Hz-19KHz",
+    response: "80Hz-19kHz",
     Sensitivity: "96dB(1W/1m)",
     spl: "124dB",
     weight: "9Kg",
@@ -41,7 +41,7 @@ const products = [
     model: "Red 5",
     description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "100W/400W (Passive)",
-    response: "90Hz-19KHz",
+    response: "90Hz-19kHz",
     Sensitivity: "93dB(1W/1m)",
     spl: "115dB",
     weight: "6Kg",
@@ -52,7 +52,7 @@ const products = [
     model: "Red 9",
     description: '1x10" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "200W/800W (Passive)",
-    response: "75Hz-19KHz",
+    response: "75Hz-19kHz",
     Sensitivity: "96dB(1W/1m)",
     spl: "121dB",
     weight: "15Kg",
@@ -63,7 +63,7 @@ const products = [
     model: "Red 12",
     description: '1x12" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "250W/1000W (Passive)",
-    response: "70Hz-19KHz",
+    response: "70Hz-19kHz",
     Sensitivity: "97dB(1W/1m)",
     spl: "123dB",
     weight: "18Kg",
@@ -78,7 +78,7 @@ const products = [
     Sensitivity: "93dB(1W/1m)",
     spl: "136 dB (musical program)",
     weight: "37.4 kg",
-    // pdf: F12,
+    //  pdf: F12,
   },
   {
     img: F10,
@@ -101,7 +101,7 @@ const products = [
     Sensitivity: "97dB(1W/1m)",
     spl: "136 dB (musical program)",
     weight: "37.4 kg",
-    pdf: F12,
+    // pdf: F12,
   },
   {
     img: F15,
@@ -173,11 +173,12 @@ const ProductList = () => {
           Point Source - All Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
-          Experience Pure Sound with Our Point Source Loudspeaker Our point
-          source loudspeaker is designed in such a way that minimises distortion
-          and phase issues and gives crystal-clear audio with precise sound
-          reproduction, ensuring every note and beat is delivered with
-          exceptional fidelity.
+          Our Line Array Systems are meticulously designed to provide consistent
+          and even sound coverage across large areas. With features like Uniform
+          Sound Distribution, Controlled Dispersion, and High Output Levels,
+          they ensure exceptional audio clarity and quality. These systems are
+          the perfect solution for concerts, conferences, and other events where
+          reliable and immersive sound is essential.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-gray-100 justify-items-center">

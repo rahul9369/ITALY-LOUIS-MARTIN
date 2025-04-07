@@ -12,7 +12,7 @@ const products = [
     model: "Famous 210",
     description: `2x10" Two-way Bi-amp Externally Amplified Line Array Speaker System`,
     Power: "LF: 600W/2400W, HF: 150W/600W",
-    response: "70Hz-19KHz",
+    response: "70Hz-19kHz",
     Sensitivity: "LF 103 dB , HF: 113 dB",
     spl: "LF (133dB) , HF (137dB)",
     weight: "50Kg",

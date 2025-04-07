@@ -3,7 +3,8 @@ import PlasticSpeaker from "../../assets/PlasticSpeaker.jpg";
 import DS12 from "../../assets/DS12.jpg";
 
 import Footer from "../Footer";
-import plasticDs5 from "../../assets/plasticDs5.jpg";
+import plasticDs5 from "../../assets/plasticDs5.png";
+import Ds8  from "../../assets/Ds8.png";
 import { useNavigate } from "react-router-dom";
 
 const products = [
@@ -19,7 +20,7 @@ const products = [
     weight: "5Kg",
   },
   {
-    img: plasticDs5,
+    img: Ds8,
     title: "Plastic Speaker",
     model: "DS8",
     description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',

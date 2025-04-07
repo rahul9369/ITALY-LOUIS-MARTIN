@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import PlasticSpeaker from "../assets/plasticDs5.jpg";
+import PlasticSpeaker from "../assets/plasticDs5.png";
+import Ds8 from "../assets/Ds8.png";
 import DS12 from "../assets/DS12.jpg";
 import DS5PDF from "../assets/pdf/DS-5.pdf";
 import DS8PDF from "../assets/pdf/DS-8.pdf";
@@ -41,7 +42,7 @@ const products = [
     pdf: DS5PDF,
   },
   {
-    img: PlasticSpeaker,
+    img: Ds8,
     title: "Plastic Speaker",
     model: "DS8",
     description:

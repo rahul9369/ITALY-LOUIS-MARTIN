@@ -3,7 +3,8 @@ import PlasticSpeaker from "../assets/PlasticSpeaker.jpg";
 import DS12 from "../assets/DS12.jpg";
 
 import Footer from "../components/Footer";
-import plasticDs5 from "../assets/plasticDs5.jpg";
+import plasticDs5 from "../assets/plasticDs5.png";
+import Ds8  from "../assets/Ds8.png";
 import { useNavigate } from "react-router-dom";
 
 const products = [
@@ -13,19 +14,19 @@ const products = [
     model: "DS5",
     description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "100W/400W (Passive)",
-    response: "65Hz-19KHz",
+    response: "65Hz-19kHz",
     Sensitivity: "93dB(1W/1m)",
     spl: "93dB",
     weight: "5Kg",
   },
   {
-    img: plasticDs5,
+    img: Ds8,
     title: "Plastic Speaker",
     model: "DS8",
     description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "150W/300W (Passive)",
     Sensitivity: "95dB(1W/1m)",
-    response: "60Hz-19KHz",
+    response: "60Hz-19kHz",
     spl: "95dB",
     weight: "8Kg",
   },
@@ -33,10 +34,10 @@ const products = [
     img: DS12,
     title: "Plastic Speaker",
     model: "DS12",
-    description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
+    description: '1x12" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "400W/800W (Passive)",
     Sensitivity: "99dB(1W/1m)",
-    response: "70Hz-19KHz",
+    response: "70Hz-19kHz",
     spl: "99dB",
     weight: "17Kg",
   },
@@ -44,12 +45,12 @@ const products = [
     img: DS12,
     title: "Plastic Speaker",
     model: "DS15",
-    description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
-    power: "400W/800W (Passive)",
-    Sensitivity: "99dB(1W/1m)",
-    response: "70Hz-19KHz",
+    description: '1x15" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "500W/1000W (Passive)",
+    Sensitivity: "105dB(1W/1m)",
+    response: "65Hz-19kHz",
     spl: "99dB",
-    weight: "17Kg",
+    weight: "25Kg",
   },
 ];
 
