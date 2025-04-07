@@ -122,12 +122,11 @@ const ProductList = () => {
           Column Sound Speaker - All Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
-          Our Line Array Systems are meticulously designed to provide consistent
-          and even sound coverage across large areas. With features like Uniform
-          Sound Distribution, Controlled Dispersion, and High Output Levels,
-          they ensure exceptional audio clarity and quality. These systems are
-          the perfect solution for concerts, conferences, and other events where
-          reliable and immersive sound is essential.
+          Our column speakers are meticulously engineered to enhance speech
+          intelligibility and fidelity in environments where these attributes
+          are paramount. Their sleek and vertical design not only ensures
+          aesthetic appeal but also makes them highly functional for spaces such
+          as airports, churches, and educational institutions.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-gray-100 justify-items-center">

@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 const products = [
   {
     img: DT400,
-    title: "D Series",
+    title: "D ",
     model: "D 200",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
@@ -44,7 +44,7 @@ const products = [
   },
   {
     img: DT400,
-    title: "D Series",
+    title: "D ",
     model: "D 300",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
@@ -72,7 +72,7 @@ const products = [
   },
   {
     img: DT400,
-    title: "D Series",
+    title: "D ",
     model: "D 4200",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
@@ -100,7 +100,7 @@ const products = [
   },
   {
     img: DT400,
-    title: "D Series",
+    title: "D ",
     model: "D 4300",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
@@ -128,7 +128,7 @@ const products = [
   },
   {
     img: PL4,
-    title: "PL Series",
+    title: "PL ",
     model: "PL 4.1",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
@@ -156,7 +156,7 @@ const products = [
   },
   {
     img: PL4,
-    title: "PL Series",
+    title: "PL ",
     model: "PL 4.5",
     description:
       "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
@@ -184,7 +184,7 @@ const products = [
   },
   {
     img: TTA,
-    title: "TTA Series",
+    title: "TTA ",
     model: "TTA 300",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
@@ -211,7 +211,7 @@ const products = [
   },
   {
     img: TTA,
-    title: "TTA Series",
+    title: "TTA ",
     model: "TTA 500",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
@@ -238,7 +238,7 @@ const products = [
   },
   {
     img: TTA,
-    title: "TTA Series",
+    title: "TTA ",
     model: "TTA 600",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
@@ -265,7 +265,7 @@ const products = [
   },
   {
     img: TTA,
-    title: "TTA Series",
+    title: "TTA ",
     model: "TTA 800",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
@@ -292,7 +292,7 @@ const products = [
   },
   {
     img: TTA,
-    title: "TTA Series",
+    title: "TTA ",
     model: "TTA 1000",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
@@ -319,7 +319,7 @@ const products = [
   },
   {
     img: TTA,
-    title: "TTA Series",
+    title: "TTA ",
     model: "TTA 1300",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
@@ -346,7 +346,7 @@ const products = [
   },
   {
     img: TTA,
-    title: "TTA Series",
+    title: "TTA ",
     model: "TTA 450",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
@@ -373,7 +373,7 @@ const products = [
   },
   {
     img: TTA,
-    title: "TTA Series",
+    title: "TTA ",
     model: "TTA 460",
     description:
       "The TTA Series amplifier is multi-channel professional amplifier, based on Class TD that combine the efficiency of Class D amplifiers with the sonic purity of Class B amplifiers. It tracks the audio signal at all frequencies, providing the required rail voltage with additional headroom that reduces the heat emission and maintain flat response even with complex loads.",
@@ -400,7 +400,7 @@ const products = [
   },
   {
     img: TIP,
-    title: "TIP Series",
+    title: "TIP ",
     model: "TIP 1002",
     description:
       "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
@@ -427,7 +427,7 @@ const products = [
   },
   {
     img: TIP,
-    title: "TIP Series",
+    title: "TIP ",
     model: "TIP 1602",
     description:
       "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
@@ -454,8 +454,8 @@ const products = [
   },
   {
     img: TIP,
-    title: "TIP Series",
-    model: "TIP 2000",
+    title: "TIP ",
+    model: "TIP 2002",
     description:
       "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
     application: [
@@ -481,8 +481,8 @@ const products = [
   },
   {
     img: TIP,
-    title: "TIP Series",
-    model: "TIP 2400",
+    title: "TIP ",
+    model: "TIP 2402",
     description:
       "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
     application: [

@@ -158,7 +158,7 @@ const products = [
   {
     img: TIP,
     title: "TIP Series",
-    model: "TIP 2000",
+    model: "TIP 2002",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "2000W×2/8Ω   3200W×2/4Ω",
     response: " ＞100",
@@ -167,7 +167,7 @@ const products = [
   {
     img: TIP,
     title: "TIP Series",
-    model: "TIP 2400",
+    model: "TIP 2402",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "2400W×2/8Ω   4000W×2/4Ω",
     response: " ＞1000",
@@ -230,12 +230,11 @@ const ProductList = () => {
           Amplifiers - All Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
-          Our Line Array Systems are meticulously designed to provide consistent
-          and even sound coverage across large areas. With features like Uniform
-          Sound Distribution, Controlled Dispersion, and High Output Levels,
-          they ensure exceptional audio clarity and quality. These systems are
-          the perfect solution for concerts, conferences, and other events where
-          reliable and immersive sound is essential.
+          We offer amplifiers tailored for a variety of applications, from live
+          concerts to installations. Each amplifier is meticulously designed
+          with high-quality components, ensuring exceptional dynamic power and
+          long-term reliability. Our commitment to precision engineering
+          guarantees superior performance and sustainability over many years.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-gray-100 justify-items-center">

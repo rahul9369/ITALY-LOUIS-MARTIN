@@ -80,12 +80,11 @@ const ProductList = () => {
           Amplifiers - PL Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
-          Our Line Array Systems are meticulously designed to provide consistent
-          and even sound coverage across large areas. With features like Uniform
-          Sound Distribution, Controlled Dispersion, and High Output Levels,
-          they ensure exceptional audio clarity and quality. These systems are
-          the perfect solution for concerts, conferences, and other events where
-          reliable and immersive sound is essential.
+          We offer amplifiers tailored for a variety of applications, from live
+          concerts to installations. Each amplifier is meticulously designed
+          with high-quality components, ensuring exceptional dynamic power and
+          long-term reliability. Our commitment to precision engineering
+          guarantees superior performance and sustainability over many years.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-gray-100 justify-items-center">

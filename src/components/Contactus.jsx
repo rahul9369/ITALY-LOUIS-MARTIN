@@ -75,7 +75,7 @@ const ContactUs = () => {
               <MdPhone />
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">Phone</h3>
+              {/* <h3 className="text-lg font-semibold text-gray-800">Phone</h3> */}
               <p className="text-gray-600">+39 32426 15626</p>
             </div>
           </motion.div>
@@ -88,7 +88,7 @@ const ContactUs = () => {
               <MdOutlineEmail />
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">Email</h3>
+              {/* <h3 className="text-lg font-semibold text-gray-800">Email</h3> */}
               <p className="text-gray-600">contact@louismartinaudio.it</p>
             </div>
           </motion.div>
@@ -101,7 +101,7 @@ const ContactUs = () => {
               <CiLocationOn />
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">Address</h3>
+              {/* <h3 className="text-lg font-semibold text-gray-800">Address</h3> */}
               <p className="text-gray-600">
                 Giambrocono & C.S.P.A, Via Rosolino Pilo 19/B, 20129 Milano,
                 Italy.
