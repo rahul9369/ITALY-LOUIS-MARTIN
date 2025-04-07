@@ -1,5 +1,5 @@
 import React from "react";
-import Amplifiers from "../assets/Amplifiers.jpg";
+import Amplifiers from "../assets/Amplifiers.png";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import AMPLIFIER from "../assets/AMPLIFIERSpl4.jpg";

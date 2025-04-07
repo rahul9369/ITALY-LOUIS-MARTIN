@@ -16,13 +16,13 @@ const products = [
     img: K302,
     title: "Column Speaker",
     model: "K302",
-    description:
-      "The K – 302 has two full range 1.75” (44 mm) Faital prodriver. Designed from high quality aluminium alloy thatgive delivering extraordinary clarity and detailed sound,slim design. Suitable for install market applications,including public address systems, airports, railwaystations, lecture theaters, churches, and other largevenues. The cabinet`s design emphasizes vocal clarity,fidelity, and minimal distortion without compromisingtransient response.",
+    description: '2x1.75" Passive Full Range Column Speaker',
     application: [
-      "Public address systems",
-      " Lecture theatres",
-      "Church",
-      " Classrooms",
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
     ],
     Type: "Full range column speaker",
     Frequency_Response: "150 Hz – 18 kHz",
@@ -45,17 +45,17 @@ const products = [
     img: K304,
     title: "Column Speaker",
     model: "K304",
-    description:
-      " The K – 304 has four full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet`s design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
+    description: '4x1.75" Passive Full Range Column Speaker',
     application: [
-      " Public address systems",
-      " Lecture theatres",
-      "Church",
-      "Classrooms",
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
     ],
     Type: "Full range column speaker",
     Frequency_Response: "150 Hz – 18 kHz",
-    Drivers: "4 x 1.75” (44 mm) Full range driver",
+   Drivers: "4 x 1.75” (44 mm) Full range driver",
     RMS_Power: "80W",
     Program_Power: "160W",
     Peak_Power: "320W",
@@ -74,17 +74,17 @@ const products = [
     img: K306,
     title: "Column Speaker",
     model: "K306",
-    description:
-      " The K – 306 has six full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet`s design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
+    description: '4x1.75" Passive Full Range Column Speaker',
     application: [
-      " Public address systems",
-      " Lecture theatres",
-      " Church",
-      "Classrooms",
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
     ],
     Type: "Full range column speaker",
     Frequency_Response: "150 Hz – 18 kHz",
-    Drivers: "6 x 1.75” (44 mm) Full range driver",
+   Drivers: "6 x 1.75” (44 mm) Full range driver",
     RMS_Power: "120W",
     Program_Power: "240W",
     Peak_Power: "480W",
@@ -103,58 +103,58 @@ const products = [
     img: K308,
     title: "Column Speaker",
     model: "K308",
-    description:
-      " The K – 308 has eight full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet`s design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
+    description: '8x1.75" Passive Full Range Column Speaker',
     application: [
-      " Public address systems",
-      " Lecture theatres",
-      "Church",
-      "Classrooms",
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
     ],
-    Type: "Two-way Coaxial full range passive line array speaker",
-    Frequency_Response: "60 Hz – 19 kHz",
-    Drivers: "1x 12” (304 mm) Coaxial Driver",
-    RMS_Power: "450W",
-    Program_Power: "900W",
-    Peak_Power: "18000W",
-    Sensitivity: "98 dB SPL",
-    Max_SPL: "127 dB SPL",
-    Max_SPL_Peak: "130 dB SPL",
+    Type: "Full range column speaker",
+    Frequency_Response: "150 Hz – 18 kHz",
+   Drivers: "8 x 1.75” (44 mm) Full range driver",
+    RMS_Power: "160W",
+    Program_Power: "320W",
+    Peak_Power: "640W",
+    Sensitivity: "91 dB SPL",
+    Max_SPL: "116 dB SPL",
+    Max_SPL_Peak: "119 dB SPL",
     Nominal_Impedance: "8 Ohms",
-    Crossover_Mode: "Passive",
-    Dispersion: "100o(H) x 10 o(V)",
-    Cabinet_Material: "High density multi-layer plywood",
-    Size_mm: "350 x 500 x 450mm (H x W x D)",
-    Weight: "22/48.5 ",
+    Crossover_Mode: "Full range driver",
+    Dispersion: "90º(H) x 60 º(V)",
+    Cabinet_Material: "Aluminium alloy",
+    Size_mm: "859 x 101 x 110mm (H x W x D)",
+    Weight: "7.8/17.2 ",
     pdf: K308PDF,
   },
   {
     img: K312,
     title: "Column Speaker",
     model: "K312",
-    description:
-      " The K – 312 has twelve full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet`s design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
+    description: '12x1.75" Passive Full Range Column Speaker',
     application: [
-      " Public address systems",
-      " Lecture theatres",
-      "Church",
-      "Classrooms",
+      " Outdoor Events",
+      "Concerts and Live Events",
+      "Theaters and Auditoriums",
+      "Night Club",
+      "Places of worKship",
     ],
-    Type: "Two-way Coaxial full range passive line array speaker",
-    Frequency_Response: "60 Hz – 19 kHz",
-    Drivers: "1x 12” (304 mm) Coaxial Driver",
-    RMS_Power: "450W",
-    Program_Power: "900W",
-    Peak_Power: "18000W",
-    Sensitivity: "98 dB SPL",
-    Max_SPL: "127 dB SPL",
-    Max_SPL_Peak: "130 dB SPL",
+    Type: "Full range column speaker",
+    Frequency_Response: "150 Hz – 18 kHz",
+    Drivers: "12 x 1.75” (44 mm) Full range driver",
+    RMS_Power: "220W",
+    Program_Power: "440W",
+    Peak_Power: "880W",
+    Sensitivity: "91 dB SPLL",
+    Max_SPL: "117 dB SPL",
+    Max_SPL_Peak: "120 dB SPL",
     Nominal_Impedance: "8 Ohms",
-    Crossover_Mode: "Passive",
-    Dispersion: "100o(H) x 10 o(V)",
-    Cabinet_Material: "High density multi-layer plywood",
-    Size_mm: "350 x 500 x 450mm (H x W x D)",
-    Weight: "22/48.5 ",
+    Crossover_Mode: "Full range driver",
+    Dispersion: "90º(H) x 60 º(V",
+    Cabinet_Material: "Aluminium alloy",
+    Size_mm: "1120 x 101 x 110mm (H x W x D)",
+    Weight: "10.6/23.3 ",
     pdf: K312PDF,
   },
 ];
@@ -271,6 +271,7 @@ const ProductDetail = () => {
                   },
                   { label: "Dimensions (HxWxD)", value: product.Size_mm },
                   { label: "Weight(Kg)/Lbs", value: product.Weight },
+
                 ].map((spec, index) => (
                   <tr key={index} className="border-b border-gray-200">
                     <td className="px-2 md:px-4 py-2 font-semibold">
@@ -285,19 +286,14 @@ const ProductDetail = () => {
 
           {activeTab === "Downloads" && (
             <div className="mt-4">
-              <p className="text-gray-600 text-sm md:text-md mb-2">
-                Click below to view or download the specifications.
+              <p className="text-gray-600 text-sm md:text-md">
+                Click below to download the specifications.
               </p>
-
-              <a
-                href={`/view-pdf?url=${encodeURIComponent(product.pdf)}&name=${
-                  product.model
-                }_specifications.pdf`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-4 py-2 md:px-6 md:py-2 bg-blue-600 text-white rounded-lg text-sm md:text-lg mr-4">
-                View PDF
-              </a>
+              <button
+                onClick={handleDownload}
+                className="mt-4 px-4 py-2 md:px-6 md:py-2 cursor-pointer bg-green-500 text-white rounded-lg text-sm md:text-lg">
+                Download PDF
+              </button>
             </div>
           )}
         </div>

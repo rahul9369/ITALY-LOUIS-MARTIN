@@ -1,5 +1,5 @@
 import React from "react";
-import PlasticSpeaker from "../../assets/PlasticSpeaker.jpg";
+import PlasticSpeaker from "../../assets/PlasticSpeaker.png";
 import DS12 from "../../assets/DS12.jpg";
 
 import Footer from "../Footer";

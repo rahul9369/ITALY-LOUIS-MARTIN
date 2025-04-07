@@ -1,5 +1,5 @@
 import React from "react";
-import Subwoofer from "../../assets/Subwoofer.jpg";
+import Subwoofer from "../../assets/Subwoofer.png";
 import KS18 from "../../assets/ks18.jpg";
 import SubwooferImg from "../../assets/subwoofer218.png";
 import Footer from "../Footer";
