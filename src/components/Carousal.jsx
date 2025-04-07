@@ -34,7 +34,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full h-[100px] md:h-[500px] lg:h-[500px] overflow-hidden">
+    <div className="relative w-full object-contain h-[100px] md:h-[500px] lg:h-[500px] overflow-hidden">
       {/* Image Slider */}
       <div className="relative w-full h-full">
         {images.map((img, index) => (
@@ -42,7 +42,7 @@ const Carousel = () => {
             key={index}
             src={img}
             alt={`Slide ${index + 1}`}
-            className={`absolute lg:w-full md:w-[90%] sm:w-[80%] h-full object-cover transition-opacity duration-700 ${
+            className={`absolute w-full  h-full object-cover transition-opacity duration-700 ${
               index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           />
