@@ -26,7 +26,7 @@ const Footer = () => {
                 { name: "Point Source", path: "/pointsource" },
                 { name: "SubWoofer", path: "/subwoofer" },
                 { name: "Column Speaker", path: "/columsound" },
-                { name: "Plastic Speaker", path: "/stagemonitor" },
+                { name: "Commercial Speaker", path: "/stagemonitor" },
                 { name: "Electronics", path: "/electronics" },
                 { name: "Contact Us", path: "/contact" },
                 { name: "About Us", path: "/about" },
