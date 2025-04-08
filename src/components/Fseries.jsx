@@ -2,10 +2,12 @@ import React from "react";
 import pointsource from "../assets/pointsource.jpg";
 import Footer from "../components/Footer";
 import Fseries from "../assets/SpeakerF12.jpg";
+import F8IMG from "../assets/F8.png";
+
 import { useNavigate } from "react-router-dom";
 const products = [
   {
-    img: Fseries,
+    img: F8IMG,
     title: "F Series",
     model: "F8",
     description: '2x 10" TWO-WAY SELF-POWERED LINE ARRAY',
@@ -54,7 +56,12 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover rounded-lg"
+        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+        onClick={() =>
+          navigate(
+            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+          )
+        }
       />
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
@@ -77,7 +84,7 @@ const ProductCard = ({ product }) => {
         <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button
-        className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
+        className="mt-4 cursor-pointer w-full bg-orange-500  text-white px-4 py-2 rounded-lg hover:bg-orange-600"
         onClick={() =>
           navigate(
             `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`

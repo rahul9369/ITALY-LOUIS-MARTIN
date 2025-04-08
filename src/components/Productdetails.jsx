@@ -3,6 +3,8 @@ import Devilred10 from "../assets/Devilred10.png";
 import red6 from "../assets/red5.5.jpg";
 import red5 from "../assets/red5.jpg";
 import red9 from "../assets/red9.png";
+import F8IMG from "../assets/F8.png";
+
 import red12 from "../assets/red12.png";
 import TIP from "../assets/TIPA.jpg";
 import S218 from "../assets/S218.png";
@@ -24,7 +26,7 @@ import { useEffect, useState } from "react";
 const products = [
   {
     img: Devilred10,
-    title: "Point Source Series",
+    title: "Point Source ",
     model: "Red 10",
     description:
       "The Red - 10 has two powerful 10” (254 mm) low frequency driver and a 1.75” (44 mm) compression driver. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for live/install market applications, including nightclubs and operas. ",
@@ -35,7 +37,7 @@ const products = [
       "Night Club",
       "Places of worKship",
       "Auditoriums",
-      "Multi-functional room",
+      // "Multi-functional room",
       "Pub/Bar",
     ],
     Type: "Two-way full range passive loudspeaker",
@@ -80,7 +82,7 @@ const products = [
   },
   {
     img: red6,
-    title: "Point Source Series",
+    title: "Point Source",
     model: "Red 5.5",
     description:
       " The Red – 5.5 has two powerful 5.25” (133 mm)  coaxial driver and two 1.34” (34 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install market applications, including nightclub and premium home cinema installation. With a ruler-flat response, the cabinet offers uncoloured, transparent sound quality. Crafted from glass fiber reinforced plastic, it is suitable for both installation and portable use. ",
@@ -134,14 +136,14 @@ const products = [
   },
   {
     img: red5,
-    title: "Point Source Series",
+    title: "Point Source ",
     model: "Red 5",
     description:
       " The Red – 5 has one powerful 5.25” (133 mm)  coaxial driver with 1.34” (34 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install market applications, including hospitality segment and premium home cinema installation. With a ruler-flat response, the cabinet offers uncoloured, transparent sound quality. Crafted from glass fiber reinforced plastic, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response",
     application: [
       "Lounge ",
       "Pub/Bar",
-      "Delay/Fill",
+      // "Delay/Fill",
       "Multi-functional room",
       "High-end Home Cinema Installation",
     ],
@@ -187,7 +189,7 @@ const products = [
   },
   {
     img: red9,
-    title: "Point Source Series",
+    title: "Point Source ",
     model: "Red 9",
     description:
       " The Red – 9 is a high-performance, versatile passive speaker system designed to deliver unmatched sound reinforcement. It features a powerful 10-inch (254 mm) coaxial driver paired with a 1.34-inch (34 mm) highfrequency driver. This two-way, full-range configuration, combined with a passive crossover, ensures exceptional audio quality.",
@@ -241,7 +243,7 @@ const products = [
   },
   {
     img: red12,
-    title: "Point Source Series",
+    title: "Point Source ",
     model: "Red 12",
     description:
       " The Red – 12 is a high-performance, versatile passive speaker system designed to deliver unmatched sound reinforcement. It features a powerful 12-inch (304 mm) coaxial driver paired with a 1.34-inch (34 mm) highfrequency driver. This two-way, full-range configuration, combined with a passive crossover, ensures exceptional audio quality. Engineered for a wide range of installation market applications, the Red – 12 is ideal for nightclubs, restaurants, lounges, pubs, bars, and auditorium installations.",
@@ -295,14 +297,14 @@ const products = [
   },
 
   {
-    img: Fseries,
-    title: "Point Source Series",
+    img: F8IMG,
+    title: "Point Source ",
     model: "F8",
     description:
       " The F-8 has one powerful 8” (203 mm)  LF driver with 1.34” (34 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install market applications, including foreground music, restaurant, lounges. With flat frequency response, the cabinet offers uncoloured, transparent sound quality. Crafted from high density plywood, it is suitable for both installation and portable use.The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response. ",
     application: [
       "Lounge ",
-      "Pub/Bar",
+      // "Pub/Bar",
       "Gym/Fitness Center",
       "Multi-functional room",
     ],
@@ -348,7 +350,7 @@ const products = [
   },
   {
     img: Fseries,
-    title: "Point Source Series",
+    title: "Point Source ",
     model: "F10",
     description:
       " The F-10 has one powerful 10” (254 mm)  LF driver with 1.34” (34 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install market applications, including foreground music, restaurant, lounges. With flat frequency response, the cabinet offers uncoloured, transparent sound quality. Crafted from high density plywood, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
@@ -357,7 +359,7 @@ const products = [
       "Pub/Bar",
       "Gym/Fitness Center",
       "Multi-functional Room",
-      "Delay/Fill",
+      // "Delay/Fill",
     ],
     Type: "Two-way full range passive loudspeaker",
     Frequency_Response: "60 Hz – 19 kHz",
@@ -401,14 +403,14 @@ const products = [
   },
   {
     img: Fseries,
-    title: "Point Source Series",
+    title: "Point Source ",
     model: "F12",
     description:
       " The F-12 has one powerful 12” (304 mm)  LF driver with 1.45” (37 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install & portable use including Main FoH, Night Clubs, lounges, Multipurpose Hall, Live Setup etc. With flat frequency response, the cabinet offers uncoloured, transparent sound quality. Crafted from high density plywood, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
     application: [
       " Lounge  ",
-      "Pub/Bar ",
-      "Main FoH",
+      // "Pub/Bar ",
+      // "Main FoH",
       "Multi-functional Room",
       "Live portable setup",
       "Night Clubs",
@@ -455,15 +457,15 @@ const products = [
   },
   {
     img: Fseries,
-    title: "Point Source Series",
+    title: "Point Source ",
     model: "F15",
     description:
       " The F-15 has one powerful 15” (381 mm)  LF driver with 1.45” (44 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install & portable use including Main FoH, Night Clubs, lounges, Multipurpose Hall, Live Setup etc. With flat frequency response, the cabinet offers uncoloured, transparent sound quality. Crafted from high density plywood, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
     application: [
       " Lounge  ",
-      "Pub/Bar ",
+      // "Pub/Bar ",
       "Main FoH",
-      "Multi-functional Room",
+      // "Multi-functional Room",
       "Live portable setup",
       "Night Clubs",
     ],
@@ -538,7 +540,7 @@ const ProductDetail = () => {
           <img
             src={product.img}
             alt={product.model}
-            className="w-full h-auto md:h-[500px] object-contain rounded-lg"
+            className="w-full h-auto md:h-[500px] object-cover rounded-lg"
           />
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">

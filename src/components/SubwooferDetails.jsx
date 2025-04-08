@@ -383,24 +383,26 @@ const ProductDetail = () => {
             Related Product
           </h1>
 
-          <div className="flex space-x-8 mt-5 justify-center">
-            {product.relatedProducts.map((item, index) => (
-              <Link
-                to={item.path}
-                key={index}
-                className="group block  rounded-md  p-2 text-center overflow-hidden">
-                <div className="overflow-hidden rounded-sm">
-                  <img
-                    src={item.img}
-                    alt={item.name}
-                    className="w-60 h-auto object-cover transform transition duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-90"
-                  />
-                </div>
-                <p className="mt-2 hover:text-orange-400 text-md font-medium">
-                  {item.name}
-                </p>
-              </Link>
-            ))}
+          <div className="mt-5 px-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6 justify-center">
+              {product.relatedProducts.map((item, index) => (
+                <Link
+                  to={item.path}
+                  key={index}
+                  className="group block rounded-md p-2 text-center overflow-hidden">
+                  <div className="overflow-hidden rounded-sm">
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      className="w-full h-40 sm:h-36 md:h-40 object-cover transform transition duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-90"
+                    />
+                  </div>
+                  <p className="mt-2 hover:text-orange-400 text-[8px] sm:text-base sm:font-medium truncate">
+                    {item.name}
+                  </p>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
         {/* Buttons */}
