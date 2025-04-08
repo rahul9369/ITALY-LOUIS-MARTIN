@@ -57,17 +57,17 @@ const products = [
         img: TIP,
       },
       {
-        name: "RED10",
+        name: "RED 10",
         path: "/product/red%2010",
         img: Devilred10,
       },
       {
-        name: "F12",
+        name: "F 12",
         path: "/product/f12",
         img: F12,
       },
       {
-        name: "F15",
+        name: "F 15",
         path: "/product/f15",
         img: F15,
       },
@@ -266,7 +266,7 @@ const ProductDetail = () => {
           <img
             src={product.img}
             alt={product.model}
-            className="w-full h-auto md:h-[400px] object-cover rounded-lg"
+            className="w-full h-auto md:h-[500px] object-cover rounded-lg"
           />
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">
@@ -375,30 +375,39 @@ const ProductDetail = () => {
             </div>
           )}
         </div>
-        <div className="mt-5">
-          <h1 className="text-3xl font-bold text-center">Related Product</h1>
+        <div className="mb-5">
+          <h1 className="text-3xl font-bold my-10 text-center">
+            Related Product
+          </h1>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-6">
+          <div className="flex space-x-8 mt-5 justify-center">
             {product.relatedProducts.map((item, index) => (
-              <Link to={item.path} key={index} className="block text-center">
-                <img
-                  src={item.img}
-                  alt={item.name}
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-                <p className="mt-2 text-sm font-medium">{item.name}</p>
+              <Link
+                to={item.path}
+                key={index}
+                className="group block  rounded-md  p-2 text-center overflow-hidden">
+                <div className="overflow-hidden rounded-sm">
+                  <img
+                    src={item.img}
+                    alt={item.name}
+                    className="w-60 h-auto object-cover transform transition duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-90"
+                  />
+                </div>
+                <p className="mt-2 hover:text-orange-400 text-md font-medium">
+                  {item.name}
+                </p>
               </Link>
             ))}
           </div>
         </div>
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row gap-4 mt-6">
+        {/* <div className="flex flex-col md:flex-row gap-4 mt-6">
           <button
             onClick={() => window.history.back()}
             className="px-4 py-2 md:px-6 md:py-2 bg-gray-500 text-white rounded-lg cursor-pointer text-sm md:text-lg">
             Go Back
           </button>
-        </div>
+        </div> */}
       </div>
 
       <Footer />

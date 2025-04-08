@@ -6,7 +6,7 @@ import Contactus from "../assets/contactus.png";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineEmail, MdPhone } from "react-icons/md";
 import { FaPaperPlane } from "react-icons/fa";
-
+import Inquiry from "../components/Inquiry";
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -118,58 +118,7 @@ const ContactUs = () => {
           Get in Touch
         </motion.h2>
 
-        <motion.form
-          className="bg-white  shadow-lg rounded-lg p-6 w-full mx-auto"
-          onSubmit={sendEmail}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1, transition: { duration: 1 } }}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Name"
-              className="p-3 border rounded-md w-full focus:ring-2 focus:ring-orange-500"
-              required
-            />
-            <input
-              type="text"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder="Phone"
-              className="p-3 border rounded-md w-full focus:ring-2 focus:ring-orange-500"
-              required
-            />
-          </div>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Your Email"
-            className="p-3 border rounded-md w-full mb-4 focus:ring-2 focus:ring-orange-500"
-            required
-          />
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Message content"
-            className="p-3 border rounded-md w-full mb-4 h-32 focus:ring-2 focus:ring-orange-500"
-            required></textarea>
-
-          <motion.button
-            type="submit"
-            className="w-full flex items-center justify-center bg-orange-500 text-white p-3 rounded-md hover:bg-orange-600 transition-all"
-            whileHover={{ scale: 1.01 }}
-            disabled={loading}>
-            {loading ? "Sending..." : "Submit Now"}
-            <FaPaperPlane className="ml-2" />
-          </motion.button>
-        </motion.form>
-        {/* <Inquiry /> */}
+        <Inquiry />
       </div>
 
       <Footer />
