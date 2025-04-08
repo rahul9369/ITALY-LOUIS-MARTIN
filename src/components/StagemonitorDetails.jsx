@@ -10,12 +10,7 @@ import TIP from "../assets/TIPA.jpg";
 import TTA from "../assets/TTA.jpg";
 import S218 from "../assets/S218.png";
 import S18 from "../assets/S18.png";
-import Devilred10 from "../assets/Devilred10.png";
-import F12 from "../assets/SpeakerF12.jpg";
-import F15 from "../assets/SpeakerF12.jpg";
-// import S18 from "../assets/S18.png";
 import DT400 from "../assets/DT400.jpg";
-
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
 const products = [
