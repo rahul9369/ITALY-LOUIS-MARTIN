@@ -53,7 +53,7 @@ const products = [
       },
       {
         name: "D-4200",
-        path: "/product/red%2010",
+        path: "/electronics/d%204200",
         img: DT400,
       },
       {

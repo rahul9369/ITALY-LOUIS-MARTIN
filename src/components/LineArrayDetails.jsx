@@ -7,6 +7,11 @@ import Q60 from "../assets/Q60.jpg";
 import Q70 from "../assets/Q70.jpg";
 import Q80 from "../assets/Q80.jpg";
 import Cox12 from "../assets/cox12.jpg";
+import TIP from "../assets/TIPA.jpg";
+import S218 from "../assets/S218.png";
+import S18 from "../assets/S18.png";
+import TTA from "../assets/TTA.jpg";
+import subwooferImg from "../assets/subwoofer218.png";
 import Famous210N from "../assets/pdf/Famous210N.pdf";
 import Cox112 from "../assets/pdf/COX12.pdf";
 import Q50a from "../assets/pdf/Q50a.pdf";
@@ -47,23 +52,23 @@ const products = [
     pdf: Famous210N,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Q50,
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Q50,
+        name: "TTA-500",
+        path: "/electronics/tta%20500",
+        img:TTA,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: Q50,
+        name: "KS-218",
+        path: "/subwoofer/ks218",
+        img: subwooferImg,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "Q50",
+        path: "/linearray/q%2050",
         img: Q50,
       },
     ],
@@ -100,23 +105,23 @@ const products = [
     relatedProducts: [
       {
         name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Q50,
+        path: "/electronics/tip%201002",
+        img:TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Q50,
+        name: "TIP-1602",
+        path: "/electronics/tip%201602",
+        img: TIP,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: Q50,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: Q50,
+        name: "S218",
+        path: "/subwoofer/s218",
+        img:S218,
       },
     ],
   },
@@ -152,23 +157,23 @@ const products = [
     pdf: Q60a,
     relatedProducts: [
       {
-        name: "TIP-2002",
+        name: "TIP-1602",
         path: "/electronics/tip%202002",
-        img: Q50,
+        img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Q50,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: Q50,
+        name: " S218",
+        path: "/subwoofer/s218",
+        img: S218,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "Q50",
+        path: "/linearray/q%2050",
         img: Q50,
       },
     ],
@@ -204,24 +209,24 @@ const products = [
     pdf: Q70a,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Q50,
+        name: "TIP-1602",
+        path: "/electronics/tip%201602",
+        img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Q50,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: Q50,
+        name: " S218",
+        path: "/subwoofer/s218",
+        img: S218,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: Q50,
+        name: "KS218",
+        path: "/subwoofer/ks218",
+        img: subwooferImg,
       },
     ],
   },
@@ -257,25 +262,25 @@ const products = [
     pdf: Q80a,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Q50,
+        name: "TIP-1602",
+        path: "/electronics/tip%201602",
+        img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Q50,
+        name: " S218",
+        path: "/subwoofer/s218",
+        img: S218,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: Q50,
+        name: "KS218",
+        path: "/subwoofer/ks218",
+        img: subwooferImg,
       },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: Q50,
-      },
+      // {
+      //   name: "F15",
+      //   path: "/product/f15",
+      //   img: Q50,
+      // },
     ],
   },
   {
@@ -310,25 +315,22 @@ const products = [
     pdf: Cox112,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Q50,
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Q50,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: Q50,
+       
+        name: " S218",
+        path: "/subwoofer/s218",
+        img: S218,
       },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: Q50,
-      },
+    
     ],
   },
 ];

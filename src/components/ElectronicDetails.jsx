@@ -19,7 +19,7 @@ const products = [
     title: "D ",
     model: "D 200",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      "The D Series amplifier is a multi-channel professional Class-D amplifier, meticulously engineered to deliver exceptional reliability and performance. Its high efficiency is achieved through a combination of automatic temperature control and unique limiting functions, ensuring the amplifier operates efficiently by minimizing power loss and heat generation. Designed for long-term use, the D Series amplifiers offer consistent performance and durability, making them a reliable choice for professional audio installations.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -64,7 +64,7 @@ const products = [
     title: "D ",
     model: "D 300",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      "The D Series amplifier is a multi-channel professional Class-D amplifier, meticulously engineered to deliver exceptional reliability and performance. Its high efficiency is achieved through a combination of automatic temperature control and unique limiting functions, ensuring the amplifier operates efficiently by minimizing power loss and heat generation. Designed for long-term use, the D Series amplifiers offer consistent performance and durability, making them a reliable choice for professional audio installations.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -109,7 +109,7 @@ const products = [
     title: "D ",
     model: "D 4200",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      "The D Series amplifier is a multi-channel professional Class-D amplifier, meticulously engineered to deliver exceptional reliability and performance. Its high efficiency is achieved through a combination of automatic temperature control and unique limiting functions, ensuring the amplifier operates efficiently by minimizing power loss and heat generation. Designed for long-term use, the D Series amplifiers offer consistent performance and durability, making them a reliable choice for professional audio installations.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -154,7 +154,7 @@ const products = [
     title: "D ",
     model: "D 4300",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      "The D Series amplifier is a multi-channel professional Class-D amplifier, meticulously engineered to deliver exceptional reliability and performance. Its high efficiency is achieved through a combination of automatic temperature control and unique limiting functions, ensuring the amplifier operates efficiently by minimizing power loss and heat generation. Designed for long-term use, the D Series amplifiers offer consistent performance and durability, making them a reliable choice for professional audio installations.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -199,7 +199,7 @@ const products = [
     title: "PL ",
     model: "PL 4.1",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      "The PL Series amplifier is multi-channel professional built-in Digital Signal Processor (DSP) Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. Thanks to the automatic temperature control and unique limiting functions that gives high efficiency to ensures that the PL series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts and live performances, entertainment venues, lounges, pubs, bars and auditorium installations with deep, resonant sound.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -244,7 +244,7 @@ const products = [
     title: "PL ",
     model: "PL 4.5",
     description:
-      "The latest advanced design and technology from the Xcellence series is a relentless pursuit of sonic excellence...",
+      "The PL Series amplifier is multi-channel professional built-in Digital Signal Processor (DSP) Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. Thanks to the automatic temperature control and unique limiting functions that gives high efficiency to ensures that the PL series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts and live performances, entertainment venues, lounges, pubs, bars and auditorium installations with deep, resonant sound.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
