@@ -4,7 +4,12 @@ import red6 from "../assets/red5.5.jpg";
 import red5 from "../assets/red5.jpg";
 import red9 from "../assets/red9.png";
 import red12 from "../assets/red12.png";
+import TIP from "../assets/TIPA.jpg";
+import S218 from "../assets/S218.png";
+import S18 from "../assets/S18.png";
+import DT400 from "../assets/DT400.jpg";
 import Fseries from "../assets/SpeakerF12.jpg";
+import TTA from "../assets/TTA.jpg";
 import Red10PDF from "../assets/pdf/Red10.pdf";
 import Red5PDF from "../assets/pdf/Red5.pdf";
 import Red6PDF from "../assets/pdf/Red5.5.pdf";
@@ -52,24 +57,24 @@ const products = [
     pdf: Red10PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Devilred10,
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img:TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Devilred10,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: F12,
+       name: "S218",
+       path: "/subwoofer/s218",
+       img:S218,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: Devilred10,
+        name: "RED-5.5",
+        path: "/product/red%205.5",
+        img: red6,
       },
     ],
   },
@@ -106,24 +111,24 @@ const products = [
     pdf: Red6PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
+        name: "D-200",
         path: "/electronics/tip%202002",
-        img: Devilred10,
+        img: DT400,
       },
       {
-        name: "RED10",
+        name: "D-4200",
         path: "/product/red%2010",
-        img: Devilred10,
+        img: DT400,
       },
       {
-        name: "F12",
+        name: "D-4300",
         path: "/product/f12",
-        img: F12,
+        img: DT400,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: Devilred10,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
     ],
   },
@@ -159,24 +164,24 @@ const products = [
     pdf: Red5PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Devilred10,
+        name: "D-200",
+        path: "/electronics/d%20200",
+        img: DT400,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Devilred10,
+        name: "D-4200",
+        path: "/electronics/d%204200",
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: F12,
+        name: "RED-9",
+        path: "/product/red%209",
+        img: red9,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: Devilred10,
+        name: "RED-12",
+        path: "/product/red%2012",
+        img:red12,
       },
     ],
   },
@@ -213,24 +218,24 @@ const products = [
     pdf: Red9PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Devilred10,
+       name: "TTA-600",
+       path: "/electronics/tta%20600",
+       img: TTA,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Devilred10,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: F12,
+        name: "RED-5",
+        path: "/product/red%205",
+        img:red5,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: Devilred10,
+        name: "RED-5.5",
+        path: "/product/red%205.5",
+        img: red6,
       },
     ],
   },
@@ -267,25 +272,25 @@ const products = [
     pdf: Red12PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Devilred10,
-      },
-      {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Devilred10,
-      },
-      {
-        name: "F12",
-        path: "/product/f12",
-        img: F12,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: Devilred10,
-      },
+        name: "TTA-600",
+        path: "/electronics/tta%20600",
+        img: TTA,
+       },
+       {
+         name: "S18",
+         path: "/subwoofer/s18",
+         img: S18,
+       },
+       {
+         name: "RED-5",
+         path: "/product/red%205",
+         img:red5,
+       },
+       {
+         name: "RED-5.5",
+         path: "/product/red%205.5",
+         img: red6,
+       },
     ],
   },
 
@@ -320,24 +325,24 @@ const products = [
     pdf: F8,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Devilred10,
+        name: "D-200",
+        path: "/electronics/d%20200",
+        img: DT400,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Devilred10,
+        name: "D-4200",
+        path: "/electronics/d%204200",
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: F12,
+        name: "S18",
+         path: "/subwoofer/s18",
+         img: S18,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: Devilred10,
+        name: "F10",
+        path: "/product/f10",
+        img: Fseries,
       },
     ],
   },
@@ -373,24 +378,24 @@ const products = [
     pdf: F10,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Devilred10,
+        name: "TTA-600",
+        path: "/electronics/tta%20600",
+        img: TTA,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Devilred10,
+        name: "S18",
+         path: "/subwoofer/s18",
+         img: S18,
+      },
+      {
+        name: "F-8",
+        path: "/product/f8",
+        img: Fseries,
       },
       {
         name: "F12",
         path: "/product/f12",
-        img: F12,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: Devilred10,
+        img: Fseries,
       },
     ],
   },
@@ -427,24 +432,24 @@ const products = [
     pdf: F12,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Devilred10,
+        name: "TTA-600",
+        path: "/electronics/tta%20600",
+        img: TTA,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Devilred10,
+        name: "S18",
+         path: "/subwoofer/s18",
+         img: S18,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: F12,
+        name: "S218",
+        path: "/subwoofer/s218",
+        img: S218,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: Devilred10,
+        name: "F-8",
+        path: "/product/f8",
+        img: Fseries,
       },
     ],
   },
@@ -481,24 +486,24 @@ const products = [
     pdf: F15PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: Devilred10,
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img:TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Devilred10,
+        name: "S18",
+         path: "/subwoofer/s18",
+         img: S18,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: F12,
+        name: "S218",
+        path: "/subwoofer/s218",
+        img: S218,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: Devilred10,
+        name: "F10",
+        path: "/product/f10",
+        img: Fseries,
       },
     ],
   },

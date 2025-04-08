@@ -4,6 +4,10 @@ import K304 from "../assets/K304.png";
 import K306 from "../assets/k306.png";
 import K308 from "../assets/K308.png";
 import K312 from "../assets/K312.png";
+import DT400 from "../assets/DT400.jpg";
+import TIP from "../assets/TIPA.jpg";
+import S18 from "../assets/S18.png";
+import S218 from "../assets/S218.png";
 import Footer from "./Footer";
 import K302PDF from "../assets/pdf/K302.pdf";
 import K304PDF from "../assets/pdf/K304.pdf";
@@ -16,7 +20,7 @@ const products = [
     img: K302,
     title: "Column Speaker",
     model: "K302",
-    description: '2x1.75" Passive Full Range Column Speaker',
+    description: ' The K – 302 has two full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet`s design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.',
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -43,22 +47,22 @@ const products = [
     relatedProducts: [
       {
         name: "D-200",
-        path: "/electronics/tip%202002",
-        img: K304,
+        path: "/electronics/d%20200",
+        img: DT400,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: K304,
+        name: "D-4200",
+        path: "/electronics/d%204200",
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: K304,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "K304",
+        path: "/column/k304",
         img: K304,
       },
     ],
@@ -67,7 +71,7 @@ const products = [
     img: K304,
     title: "Column Speaker",
     model: "K304",
-    description: '4x1.75" Passive Full Range Column Speaker',
+    description: 'The K – 304 has four full range 1.75” (44 mm)  Faital pr driver. Designed from high quality aluminium alloy tha give delivering extraordinary clarity and detailed sound slim design. Suitable for install market applications including public address systems, airports, railwa stations, lecture theaters, churches, and other larg venues. The cabinets design emphasizes vocal clarity fidelity, and minimal distortion without compromisin transient response.',
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -93,24 +97,24 @@ const products = [
     pdf: K304PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: K304,
+        name: "D-200",
+        path: "/electronics/d%20200",
+        img: DT400,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: K304,
+        name: "D-4200",
+        path: "/electronics/d%204200",
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: K304,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: K304,
+        name: "K302",
+        path: "/column/k302",
+        img: K302,
       },
     ],
   },
@@ -118,7 +122,7 @@ const products = [
     img: K306,
     title: "Column Speaker",
     model: "K306",
-    description: '4x1.75" Passive Full Range Column Speaker',
+    description: ' The K – 306 has six full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinets design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.',
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -144,24 +148,24 @@ const products = [
     pdf: K306PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: K304,
+        name: "D300",
+        path: "/electronics/d%20300",
+        img: DT400,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: K304,
+        name: "D4300",
+        path: "/electronics/d%204300",
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: K304,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: K304,
+        name: "K302",
+        path: "/column/k302",
+        img: K302,
       },
     ],
   },
@@ -169,7 +173,7 @@ const products = [
     img: K308,
     title: "Column Speaker",
     model: "K308",
-    description: '8x1.75" Passive Full Range Column Speaker',
+    description: ' The K – 308 has eight full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinets design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.',
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -195,23 +199,23 @@ const products = [
     pdf: K308PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
+        name: "TIP-1002",
         path: "/electronics/tip%202002",
-        img: K304,
+        img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: K304,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: K304,
+        name: "S218",
+        path: "/subwoofer/s218",
+        img: S218,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "K304",
+        path: "/column/k304",
         img: K304,
       },
     ],
@@ -220,7 +224,7 @@ const products = [
     img: K312,
     title: "Column Speaker",
     model: "K312",
-    description: '12x1.75" Passive Full Range Column Speaker',
+    description: 'The K – 312 has twelve full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet`21QAAAs design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.',
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -246,23 +250,23 @@ const products = [
     pdf: K312PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
+        name: "TIP-1002",
         path: "/electronics/tip%202002",
-        img: K304,
+        img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: K304,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: K304,
+        name: "S218",
+        path: "/subwoofer/s218",
+        img: S218,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "K304",
+        path: "/column/k304",
         img: K304,
       },
     ],
