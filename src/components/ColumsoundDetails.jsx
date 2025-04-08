@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import K302 from "../assets/k302.png";
 import K304 from "../assets/K304.png";
 import K306 from "../assets/k306.png";
@@ -40,6 +40,28 @@ const products = [
     Size_mm: "114 x 101 x 110mm (H x W x D)",
     Weight: "2.2/4.85 ",
     pdf: K302PDF,
+    relatedProducts: [
+      {
+        name: "D-200",
+        path: "/electronics/tip%202002",
+        img: K304,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: K304,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: K304,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: K304,
+      },
+    ],
   },
   {
     img: K304,
@@ -55,7 +77,7 @@ const products = [
     ],
     Type: "Full range column speaker",
     Frequency_Response: "150 Hz – 18 kHz",
-   Drivers: "4 x 1.75” (44 mm) Full range driver",
+    Drivers: "4 x 1.75” (44 mm) Full range driver",
     RMS_Power: "80W",
     Program_Power: "160W",
     Peak_Power: "320W",
@@ -69,6 +91,28 @@ const products = [
     Size_mm: "439 x 101 x 110mm (H x W x D)",
     Weight: "4.1/9.03 ",
     pdf: K304PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: K304,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: K304,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: K304,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: K304,
+      },
+    ],
   },
   {
     img: K306,
@@ -84,7 +128,7 @@ const products = [
     ],
     Type: "Full range column speaker",
     Frequency_Response: "150 Hz – 18 kHz",
-   Drivers: "6 x 1.75” (44 mm) Full range driver",
+    Drivers: "6 x 1.75” (44 mm) Full range driver",
     RMS_Power: "120W",
     Program_Power: "240W",
     Peak_Power: "480W",
@@ -98,6 +142,28 @@ const products = [
     Size_mm: "649 x 101 x 110mm (H x W x D)",
     Weight: "5.9/13.0 ",
     pdf: K306PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: K304,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: K304,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: K304,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: K304,
+      },
+    ],
   },
   {
     img: K308,
@@ -113,7 +179,7 @@ const products = [
     ],
     Type: "Full range column speaker",
     Frequency_Response: "150 Hz – 18 kHz",
-   Drivers: "8 x 1.75” (44 mm) Full range driver",
+    Drivers: "8 x 1.75” (44 mm) Full range driver",
     RMS_Power: "160W",
     Program_Power: "320W",
     Peak_Power: "640W",
@@ -127,6 +193,28 @@ const products = [
     Size_mm: "859 x 101 x 110mm (H x W x D)",
     Weight: "7.8/17.2 ",
     pdf: K308PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: K304,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: K304,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: K304,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: K304,
+      },
+    ],
   },
   {
     img: K312,
@@ -156,6 +244,28 @@ const products = [
     Size_mm: "1120 x 101 x 110mm (H x W x D)",
     Weight: "10.6/23.3 ",
     pdf: K312PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: K304,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: K304,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: K304,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: K304,
+      },
+    ],
   },
 ];
 
@@ -271,7 +381,6 @@ const ProductDetail = () => {
                   },
                   { label: "Dimensions (HxWxD)", value: product.Size_mm },
                   { label: "Weight(Kg)/Lbs", value: product.Weight },
-
                 ].map((spec, index) => (
                   <tr key={index} className="border-b border-gray-200">
                     <td className="px-2 md:px-4 py-2 font-semibold">
@@ -298,14 +407,40 @@ const ProductDetail = () => {
           )}
         </div>
 
+        <div className="mb-5">
+          <h1 className="text-3xl font-bold my-10 text-center">
+            Related Product
+          </h1>
+
+          <div className="flex space-x-8 mt-5 justify-center">
+            {product.relatedProducts.map((item, index) => (
+              <Link
+                to={item.path}
+                key={index}
+                className="group block  rounded-md  p-2 text-center overflow-hidden">
+                <div className="overflow-hidden rounded-sm">
+                  <img
+                    src={item.img}
+                    alt={item.name}
+                    className="w-60 h-auto object-cover transform transition duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-90"
+                  />
+                </div>
+                <p className="mt-2 hover:text-orange-400 text-md font-medium">
+                  {item.name}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row gap-4 mt-6">
+        {/* <div className="flex flex-col md:flex-row gap-4 mt-6">
           <button
             onClick={() => window.history.back()}
             className="px-4 py-2 md:px-6 md:py-2 cursor-pointer bg-gray-500 text-white rounded-lg text-sm md:text-lg">
             Go Back
           </button>
-        </div>
+        </div> */}
       </div>
 
       <Footer />

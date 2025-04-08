@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
 import Linear from "../assets/Famousmartin1.jpg";
@@ -45,6 +45,28 @@ const products = [
     Size_mm: "330 x 1100 x 600 mm (H x W x D)",
     Weight: "50 / 110.2 ",
     pdf: Famous210N,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Q50,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Q50,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: Q50,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Q50,
+      },
+    ],
   },
   {
     img: Q50,
@@ -75,6 +97,28 @@ const products = [
     Size_mm: "286 x 478 x 360mm (H x W x D)",
     Weight: "16.8/37 ",
     pdf: Q50a,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Q50,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Q50,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: Q50,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Q50,
+      },
+    ],
   },
   {
     img: Q60,
@@ -106,6 +150,28 @@ const products = [
     Size_mm: "286 x 754 x 380mm (H x W x D)",
     Weight: "22.8/50.2 ",
     pdf: Q60a,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Q50,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Q50,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: Q50,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Q50,
+      },
+    ],
   },
   {
     img: Q70,
@@ -136,6 +202,28 @@ const products = [
     Size_mm: "348 x 600 x 422mm (H x W x D)",
     Weight: "22/48.5 ",
     pdf: Q70a,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Q50,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Q50,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: Q50,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Q50,
+      },
+    ],
   },
   {
     img: Q80,
@@ -167,6 +255,28 @@ const products = [
     Size_mm: "348 x 910 x 520mm (H x W x D)",
     Weight: "36.8/81.1 ",
     pdf: Q80a,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Q50,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Q50,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: Q50,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Q50,
+      },
+    ],
   },
   {
     img: Cox12,
@@ -198,6 +308,28 @@ const products = [
     Size_mm: "350 x 500 x 450mm (H x W x D)",
     Weight: "22/48.5 ",
     pdf: Cox112,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Q50,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Q50,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: Q50,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Q50,
+      },
+    ],
   },
 ];
 
@@ -342,15 +474,40 @@ const ProductDetail = () => {
             </div>
           )}
         </div>
+        <div className="mb-5">
+          <h1 className="text-3xl font-bold my-10 text-center">
+            Related Product
+          </h1>
+
+          <div className="flex space-x-8 mt-5 justify-center">
+            {product.relatedProducts.map((item, index) => (
+              <Link
+                to={item.path}
+                key={index}
+                className="group block  rounded-md  p-2 text-center overflow-hidden">
+                <div className="overflow-hidden rounded-sm">
+                  <img
+                    src={item.img}
+                    alt={item.name}
+                    className="w-60 h-auto object-cover transform transition duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-90"
+                  />
+                </div>
+                <p className="mt-2 hover:text-orange-400 text-md font-medium">
+                  {item.name}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
 
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row gap-4 mt-6">
+        {/* <div className="flex flex-col md:flex-row gap-4 mt-6">
           <button
             onClick={() => window.history.back()}
             className="px-4 py-2 md:px-6 md:py-2 bg-gray-500 cursor-pointer text-white rounded-lg text-sm md:text-lg">
             Go Back
           </button>
-        </div>
+        </div> */}
       </div>
 
       <Footer />

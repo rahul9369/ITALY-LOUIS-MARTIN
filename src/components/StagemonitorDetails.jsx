@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import PlasticSpeaker from "../assets/plasticDs5.png";
 import Ds8 from "../assets/Ds8.png";
 import DS12 from "../assets/DS12.jpg";
@@ -6,6 +6,11 @@ import DS5PDF from "../assets/pdf/DS-5.pdf";
 import DS8PDF from "../assets/pdf/DS-8.pdf";
 import DS12PDF from "../assets/pdf/DS-12.pdf";
 import DS15PDF from "../assets/pdf/DS-15.pdf";
+import TIP from "../assets/TIPA.jpg";
+import Devilred10 from "../assets/Devilred10.png";
+import F12 from "../assets/SpeakerF12.jpg";
+import F15 from "../assets/SpeakerF12.jpg";
+
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
 const products = [
@@ -40,6 +45,28 @@ const products = [
     Size_mm: "328 x 192 x 160mm (H x W x D)",
     Weight: "5/11.02 ",
     pdf: DS5PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: F15,
+      },
+    ],
   },
   {
     img: Ds8,
@@ -72,6 +99,28 @@ const products = [
     Size_mm: "470 x 230 x 260mm (H x W x D)",
     Weight: "8/17.6 ",
     pdf: DS8PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: F15,
+      },
+    ],
   },
   {
     img: DS12,
@@ -103,6 +152,28 @@ const products = [
     Size_mm: "425 x 415 x 435mm (H x W x D)",
     Weight: "17/37.4 ",
     pdf: DS12PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: F15,
+      },
+    ],
   },
   {
     img: DS12,
@@ -134,6 +205,28 @@ const products = [
     Size_mm: "490 x 490 x 520mm (H x W x D)",
     Weight: "25/55.1",
     pdf: DS15PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: F15,
+      },
+    ],
   },
 ];
 
@@ -283,14 +376,40 @@ const ProductDetail = () => {
           )}
         </div>
 
+        <div className="mb-5">
+          <h1 className="text-3xl font-bold my-10 text-center">
+            Related Product
+          </h1>
+
+          <div className="flex space-x-8 mt-5 justify-center">
+            {product.relatedProducts.map((item, index) => (
+              <Link
+                to={item.path}
+                key={index}
+                className="group block  rounded-md  p-2 text-center overflow-hidden">
+                <div className="overflow-hidden rounded-sm">
+                  <img
+                    src={item.img}
+                    alt={item.name}
+                    className="w-60 h-auto object-cover transform transition duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-90"
+                  />
+                </div>
+                <p className="mt-2 hover:text-orange-400 text-md font-medium">
+                  {item.name}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row gap-4 mt-6">
+        {/* <div className="flex flex-col md:flex-row gap-4 mt-6">
           <button
             onClick={() => window.history.back()}
             className="px-4 py-2 md:px-6 md:py-2 bg-gray-500 text-white cursor-pointer rounded-lg text-sm md:text-lg">
             Go Back
           </button>
-        </div>
+        </div> */}
       </div>
 
       <Footer />

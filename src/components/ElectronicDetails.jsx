@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Footer from "./Footer";
 import AMPLIFIERSpl4 from "../assets/AMPLIFIERSpl4.jpg";
 import DT400 from "../assets/DT400.jpg";
@@ -41,6 +41,28 @@ const products = [
     Size_mm: "482 x 220 x 48",
     Weight: " 2.5",
     pdf: DSeriesAmplifiers,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: DT400,
@@ -69,6 +91,28 @@ const products = [
     Size_mm: "482 x 220 x 48",
     Weight: "2.5",
     pdf: DSeriesAmplifiers,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TTA,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: DT400,
@@ -97,6 +141,28 @@ const products = [
     Size_mm: "482 x 350 x 44",
     Weight: "2 4.8",
     pdf: DSeriesAmplifiers,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TTA,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: DT400,
@@ -125,6 +191,28 @@ const products = [
     Size_mm: " 482 x 350 x 44",
     Weight: "5",
     pdf: DSeriesAmplifiers,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: PL4,
@@ -153,6 +241,28 @@ const products = [
     Size_mm: "482 x 330 x88 ",
     Weight: "10",
     pdf: PLSeriesAmplifiers,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: PL4,
@@ -181,6 +291,28 @@ const products = [
     Size_mm: "482 x 330 x88 ",
     Weight: "11",
     pdf: PLSeriesAmplifiers,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TTA,
@@ -208,6 +340,28 @@ const products = [
     Size_mm: "483 x 442x88mm (H x W x D)",
     Weight: "15",
     pdf: TTAPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TTA,
@@ -235,6 +389,28 @@ const products = [
     Size_mm: "483 x 442x88mm",
     Weight: "17",
     pdf: TTAPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TTA,
@@ -262,6 +438,28 @@ const products = [
     Size_mm: "483 x 442x88mm (H x W x D)",
     Weight: "18",
     pdf: TTAPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TTA,
@@ -289,6 +487,28 @@ const products = [
     Size_mm: "483 x 442x88mm",
     Weight: "20",
     pdf: TTAPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TTA,
@@ -316,6 +536,28 @@ const products = [
     Size_mm: "(483 x 462 x 88) mm",
     Weight: "24",
     pdf: TTAPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TTA,
@@ -343,6 +585,28 @@ const products = [
     Size_mm: " (483 x 462 x 88) mm",
     Weight: "26",
     pdf: TTAPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TTA,
@@ -370,6 +634,28 @@ const products = [
     Size_mm: "(483 x 462 x 88) mm",
     Weight: "23",
     pdf: TTAPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TTA,
@@ -397,6 +683,28 @@ const products = [
     Size_mm: "(483 x 462 x 88) mm",
     Weight: "25",
     pdf: TTAPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TIP,
@@ -424,6 +732,28 @@ const products = [
     Size_mm: "482 x 360 x 88mm",
     Weight: " 5.8",
     pdf: TIPPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TIP,
@@ -451,6 +781,28 @@ const products = [
     Size_mm: "482 x 360 x 88mm",
     Weight: " 6.5",
     pdf: TIPPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TIP,
@@ -478,6 +830,28 @@ const products = [
     Size_mm: "482 x 360 x 88mm",
     Weight: " 6.8",
     pdf: TIPPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
   {
     img: TIP,
@@ -505,6 +879,28 @@ const products = [
     Size_mm: "482 x 360 x 88mm",
     Weight: " 7",
     pdf: TIPPDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: TTA,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: TTA,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: TTA,
+      },
+    ],
   },
 ];
 
@@ -643,14 +1039,40 @@ const ProductDetail = () => {
           )}
         </div>
 
+        <div className="mb-5">
+          <h1 className="text-3xl font-bold my-10 text-center">
+            Related Product
+          </h1>
+
+          <div className="flex space-x-8 mt-5 justify-center">
+            {product.relatedProducts.map((item, index) => (
+              <Link
+                to={item.path}
+                key={index}
+                className="group block  rounded-md  p-2 text-center overflow-hidden">
+                <div className="overflow-hidden rounded-sm">
+                  <img
+                    src={item.img}
+                    alt={item.name}
+                    className="w-60 h-auto object-cover transform transition duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-90"
+                  />
+                </div>
+                <p className="mt-2 hover:text-orange-400 text-md font-medium">
+                  {item.name}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row gap-4 mt-6">
+        {/* <div className="flex flex-col md:flex-row gap-4 mt-6">
           <button
             onClick={() => window.history.back()}
             className="px-4 py-2 md:px-6 md:py-2 bg-gray-500 text-white rounded-lg text-sm md:text-lg">
             Go Back
           </button>
-        </div>
+        </div> */}
       </div>
 
       <Footer />

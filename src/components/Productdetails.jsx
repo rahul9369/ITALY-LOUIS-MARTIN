@@ -1,9 +1,9 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Devilred10 from "../assets/Devilred10.png";
 import red6 from "../assets/red5.5.jpg";
 import red5 from "../assets/red5.jpg";
 import red9 from "../assets/red9.png";
-import red12 from"../assets/red12.png";
+import red12 from "../assets/red12.png";
 import Fseries from "../assets/SpeakerF12.jpg";
 import Red10PDF from "../assets/pdf/Red10.pdf";
 import Red5PDF from "../assets/pdf/Red5.pdf";
@@ -50,6 +50,28 @@ const products = [
     Size_mm: "300 x 800 x 350mm (H x W x D)",
     Weight: "25/55.1 ",
     pdf: Red10PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Devilred10,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Devilred10,
+      },
+    ],
   },
   {
     img: red6,
@@ -82,6 +104,28 @@ const products = [
     Size_mm: "200 x320 x 200mm (H x W x D)",
     Weight: "9/19.8",
     pdf: Red6PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Devilred10,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Devilred10,
+      },
+    ],
   },
   {
     img: red5,
@@ -113,6 +157,28 @@ const products = [
     Size_mm: "200 x 200 x 200mm (H x W x D)",
     Weight: "6/13.2",
     pdf: Red5PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Devilred10,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Devilred10,
+      },
+    ],
   },
   {
     img: red9,
@@ -145,6 +211,28 @@ const products = [
     Size_mm: "310 x 320 x 310mm (H x W x D)",
     Weight: "15/33.06 ",
     pdf: Red9PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Devilred10,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Devilred10,
+      },
+    ],
   },
   {
     img: red12,
@@ -177,6 +265,28 @@ const products = [
     Size_mm: "350 x 350 x 330mm (H x W x D)",
     Weight: "18/39.6 ",
     pdf: Red12PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Devilred10,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Devilred10,
+      },
+    ],
   },
 
   {
@@ -208,6 +318,28 @@ const products = [
     Size_mm: "435 x 299 x 269mm (H x W x D)",
     Weight: "12/26.4 ",
     pdf: F8,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Devilred10,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Devilred10,
+      },
+    ],
   },
   {
     img: Fseries,
@@ -239,6 +371,28 @@ const products = [
     Size_mm: "500 x 351 x 317mm (H x W x D)",
     Weight: "17/37.4",
     pdf: F10,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Devilred10,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Devilred10,
+      },
+    ],
   },
   {
     img: Fseries,
@@ -271,6 +425,28 @@ const products = [
     Size_mm: "600 x 398 x 365mm (H x W x D)",
     Weight: "25/55.1",
     pdf: F12,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Devilred10,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Devilred10,
+      },
+    ],
   },
   {
     img: Fseries,
@@ -303,6 +479,28 @@ const products = [
     Size_mm: "690 x 470 x 443mm (H x W x D)",
     Weight: "30/66.1 ",
     pdf: F15PDF,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: Devilred10,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: Devilred10,
+      },
+    ],
   },
 ];
 
@@ -379,41 +577,41 @@ const ProductDetail = () => {
             <table className="w-full border-collapse border border-gray-300 text-sm md:text-md">
               <tbody>
                 {[
-                   { label: "Type", value: product.Type },
-                   {
-                     label: "Frequency Response",
-                     value: product.Frequency_Response,
-                   },
-                   { label: "LF Drivers", value: product.LF_Drivers },
-                   { label: "HF Drivers", value: product.HF_Drivers },
-                   { label: "RMS Power ", value: product.RMS_Power },
- 
-                   {
-                     label: "Program Power",
-                     value: product.Program_Power,
-                   },
-                   { label: "Peak Power", value: product.Peak_Power },
-                   { label: "Sensitivity", value: product.Sensitivity },
-                   {
-                     label: "Max SPL (Continuous) ",
-                     value: product.Max_SPL,
-                   },
-                   {
-                     label: "Max SPL (Peak)",
-                     value: product.Max_SPL_Peak,
-                   },
-                   {
-                     label: "Nominal Impedance",
-                     value: product.Nominal_Impedance,
-                   },
-                   { label: "Crossover Mode", value: product.Crossover_Mode },
-                   { label: "Dispersion", value: product.Dispersion },
-                   {
-                     label: "Cabinet Material",
-                     value: product.Cabinet_Material,
-                   },
-                   { label: "Dimensions (HxWxD)", value: product.Size_mm },
-                   { label: "Weight(Kg)/Lbs", value: product.Weight },
+                  { label: "Type", value: product.Type },
+                  {
+                    label: "Frequency Response",
+                    value: product.Frequency_Response,
+                  },
+                  { label: "LF Drivers", value: product.LF_Drivers },
+                  { label: "HF Drivers", value: product.HF_Drivers },
+                  { label: "RMS Power ", value: product.RMS_Power },
+
+                  {
+                    label: "Program Power",
+                    value: product.Program_Power,
+                  },
+                  { label: "Peak Power", value: product.Peak_Power },
+                  { label: "Sensitivity", value: product.Sensitivity },
+                  {
+                    label: "Max SPL (Continuous) ",
+                    value: product.Max_SPL,
+                  },
+                  {
+                    label: "Max SPL (Peak)",
+                    value: product.Max_SPL_Peak,
+                  },
+                  {
+                    label: "Nominal Impedance",
+                    value: product.Nominal_Impedance,
+                  },
+                  { label: "Crossover Mode", value: product.Crossover_Mode },
+                  { label: "Dispersion", value: product.Dispersion },
+                  {
+                    label: "Cabinet Material",
+                    value: product.Cabinet_Material,
+                  },
+                  { label: "Dimensions (HxWxD)", value: product.Size_mm },
+                  { label: "Weight(Kg)/Lbs", value: product.Weight },
                 ].map((spec, index) => (
                   <tr key={index} className="border-b border-gray-200">
                     <td className="px-2 md:px-4 py-2 font-semibold">
@@ -439,15 +637,40 @@ const ProductDetail = () => {
             </div>
           )}
         </div>
+        <div className="mb-5">
+          <h1 className="text-3xl font-bold my-10 text-center">
+            Related Product
+          </h1>
+
+          <div className="flex space-x-8 mt-5 justify-center">
+            {product.relatedProducts.map((item, index) => (
+              <Link
+                to={item.path}
+                key={index}
+                className="group block  rounded-md  p-2 text-center overflow-hidden">
+                <div className="overflow-hidden rounded-sm">
+                  <img
+                    src={item.img}
+                    alt={item.name}
+                    className="w-60 h-auto object-cover transform transition duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-90"
+                  />
+                </div>
+                <p className="mt-2 hover:text-orange-400 text-md font-medium">
+                  {item.name}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
 
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row gap-4 mt-6">
+        {/* <div className="flex flex-col md:flex-row gap-4 mt-6">
           <button
             onClick={() => window.history.back()}
             className="px-4 py-2 md:px-6 md:py-2 cursor-pointer bg-gray-500 text-white rounded-lg text-sm md:text-lg">
             Go Back
           </button>
-        </div>
+        </div> */}
       </div>
 
       <Footer />
