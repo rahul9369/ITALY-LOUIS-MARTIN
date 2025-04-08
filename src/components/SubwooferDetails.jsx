@@ -1,18 +1,22 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import SpeakerF12 from "../assets/SpeakerF12.jpg";
 import Footer from "./Footer";
 import KS18 from "../assets/ks18.jpg";
 import subwooferImg from "../assets/subwoofer218.png";
+import F12 from "../assets/F12.jpg";
+import Devilred10 from "../assets/Devilred10.png";
 // import S218 from "../assets/S218.png";
 import S218IMG from "../assets/S218.png";
 // import KS18a from "../assets/pdf/KS18A.pdf";
 import KS18a from "../assets/pdf/KS18a.pdf";
 import S218 from "../assets/S218.png";
 import S18 from "../assets/S18.png";
-
+import TIP from "../assets/TIPA.jpg";
 import S18a from "../assets/pdf/S18a.pdf";
 import KS218a from "../assets/pdf/KS218a.pdf";
 import S218a from "../assets/pdf/S218a.pdf";
+import F15 from "../assets/F15.png";
+import Linear from "../assets/Famousmartin1.jpg";
 
 import { useEffect, useState } from "react";
 const products = [
@@ -21,7 +25,7 @@ const products = [
     title: "Subwoofer",
     model: "KS18",
     description:
-      "The KS-18 is a high-performance bandpass ported enclosure designed as a passive subwoofer, equipped with a high-power European driver for exceptional sound quality and reliability . Constructed from birch plywood, it offers superior durability and rigidity for long-term use.Engineered to meet the demands of both installation and rental markets, the KS-18 is a reliable choice for professionals seeking high-performance audio solutions.",
+      "The KS-18 is a high-performance bandpass ported enclosure designed as a passive subwoofer, equipped with a high-power European driver for exceptional sound quality and reliability. Constructed from birch plywood, it offers superior durability and rigidity for long-term use. Engineered to meet the demands of both installation and rental markets, the KS-18 is a reliable choice for professionals seeking high-performance audio solutions.",
     application: [
       "Live Events",
       "Auditoriums",
@@ -32,7 +36,6 @@ const products = [
     Type: "Passive Subwoofer Speaker",
     Frequency_Response: "35 Hz – 120 Hz",
     LF_Drivers: "1x 18” High performance driver",
-    // HF_Drivers: "1 x 1.75” (44 mm) HF Driver",
     RMS_Power: "1000W",
     Program_Power: "2000W",
     Peak_Power: "4000W",
@@ -40,12 +43,35 @@ const products = [
     Max_SPL: "131 dB SPL",
     Max_SPL_Peak: "134 dB SPL",
     Nominal_Impedance: "8 Ohms",
-    // Crossover_Mode: "Passive",
     Dispersion: "Omnidirectional",
     Cabinet_Material: "Birch Plywood",
     Size_mm: "910 x 610 x710mm (H x W x D)",
     Weight: "58/127.8",
     pdf: KS18a,
+
+    // ✅ Related Products Section
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: F15,
+      },
+    ],
   },
 
   {
@@ -78,6 +104,28 @@ const products = [
     Size_mm: "580 x 1160 x890mm (H x W x D)",
     Weight: "88/194.0",
     pdf: KS218a,
+    relatedProducts: [
+      {
+        name: "TIP-2402",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "Famous 210",
+        path: "/product/f12",
+        img: Linear,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: F15,
+      },
+    ],
   },
 
   {
@@ -110,6 +158,28 @@ const products = [
     Size_mm: "690 x 560 x 595mm (H x W x D)",
     Weight: "45/99.2 ",
     pdf: S18a,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: F15,
+      },
+    ],
   },
 
   {
@@ -142,6 +212,28 @@ const products = [
     Size_mm: "580 x 1160 x890mm (H x W x D)",
     Weight: "78/171.9 ",
     pdf: S218a,
+    relatedProducts: [
+      {
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: Devilred10,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: F12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: F15,
+      },
+    ],
   },
 ];
 
@@ -283,7 +375,22 @@ const ProductDetail = () => {
             </div>
           )}
         </div>
+        <div className="mt-5">
+          <h1 className="text-3xl font-bold text-center">Related Product</h1>
 
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-6">
+            {product.relatedProducts.map((item, index) => (
+              <Link to={item.path} key={index} className="block text-center">
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="mt-2 text-sm font-medium">{item.name}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
         {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-4 mt-6">
           <button

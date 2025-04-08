@@ -8,8 +8,8 @@ const ContactUs = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
+      .sendForm("service_m8zrw7w", "template_xjwcqpr", form.current, {
+        publicKey: "_K0SBFj7SnABGDwyo",
       })
       .then(
         () => {
@@ -33,5 +33,4 @@ const ContactUs = () => {
     </form>
   );
 };
-
 export default ContactUs;
