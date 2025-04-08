@@ -20,7 +20,8 @@ const products = [
     img: K302,
     title: "Column Speaker",
     model: "K302",
-    description: ' The K – 302 has two full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet`s design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.',
+    description:
+      " The K – 302 has two full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet`s design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -71,7 +72,8 @@ const products = [
     img: K304,
     title: "Column Speaker",
     model: "K304",
-    description: 'The K – 304 has four full range 1.75” (44 mm)  Faital pr driver. Designed from high quality aluminium alloy tha give delivering extraordinary clarity and detailed sound slim design. Suitable for install market applications including public address systems, airports, railwa stations, lecture theaters, churches, and other larg venues. The cabinets design emphasizes vocal clarity fidelity, and minimal distortion without compromisin transient response.',
+    description:
+      "The K – 304 has four full range 1.75” (44 mm)  Faital pr driver. Designed from high quality aluminium alloy tha give delivering extraordinary clarity and detailed sound slim design. Suitable for install market applications including public address systems, airports, railwa stations, lecture theaters, churches, and other larg venues. The cabinets design emphasizes vocal clarity fidelity, and minimal distortion without compromisin transient response.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -122,7 +124,8 @@ const products = [
     img: K306,
     title: "Column Speaker",
     model: "K306",
-    description: ' The K – 306 has six full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinets design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.',
+    description:
+      " The K – 306 has six full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinets design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -173,7 +176,8 @@ const products = [
     img: K308,
     title: "Column Speaker",
     model: "K308",
-    description: ' The K – 308 has eight full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinets design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.',
+    description:
+      " The K – 308 has eight full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinets design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -224,7 +228,8 @@ const products = [
     img: K312,
     title: "Column Speaker",
     model: "K312",
-    description: 'The K – 312 has twelve full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet`21QAAAs design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.',
+    description:
+      "The K – 312 has twelve full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet`21QAAAs design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -310,14 +315,16 @@ const ProductDetail = () => {
             <h1 className="text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}
             </h1>
-            <p className="text-gray-600 text-md md:text-xl mt-2">
-              {product.description}
-            </p>
+            <div className="w-full ">
+              <p className="text-gray-600 text-md md:text-[18px] mt-2 text-justify">
+                {product.description}
+              </p>
+            </div>
             <div className="mt-6">
-              <h2 className="text-xl font-semibold">Applications</h2>
+              <h2 className="text-2xl font-bold">Applications</h2>
               <ul className="list-disc list-inside text-gray-600 mt-2">
                 {product.application.map((app, index) => (
-                  <li className="text-lg" key={index}>
+                  <li className="text-lg my-2" key={index}>
                     {app}
                   </li>
                 ))}
@@ -398,15 +405,21 @@ const ProductDetail = () => {
           )}
 
           {activeTab === "Downloads" && (
-            <div className="mt-4">
-              <p className="text-gray-600 text-sm md:text-md">
-                Click below to download the specifications.
-              </p>
-              <button
-                onClick={handleDownload}
-                className="mt-4 px-4 py-2 md:px-6 md:py-2 cursor-pointer bg-green-500 text-white rounded-lg text-sm md:text-lg">
-                Download PDF
-              </button>
+            <div className="mt-4 w-[100%]">
+              <div className="flex justify-between items-center mb-2">
+                <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
+                <a
+                  href={`/view-pdf?url=${encodeURIComponent(
+                    product.pdf
+                  )}&name=${product.model}_specifications.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
+                  View PDF
+                </a>
+              </div>
+
+              <hr className="border-t border-gray-300" />
             </div>
           )}
         </div>

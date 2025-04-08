@@ -889,20 +889,22 @@ const ProductDetail = () => {
           <img
             src={product.img}
             alt={product.model}
-            className="w-full h-auto md:h-[400px] object-cover rounded-lg"
+            className="w-full h-auto md:h-[500px] object-cover rounded-lg"
           />
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}
             </h1>
-            <p className="text-gray-600 text-md md:text-xl mt-2">
-              {product.description}
-            </p>
+            <div className="w-full ">
+              <p className="text-gray-600 text-md md:text-[18px] mt-2 text-justify">
+                {product.description}
+              </p>
+            </div>
             <div className="mt-6">
-              <h2 className="text-xl font-semibold">Key Features :</h2>
+              <h2 className="text-2xl font-bold">Key Features :</h2>
               <ul className="list-disc list-inside text-gray-600 mt-2">
                 {product.application.map((app, index) => (
-                  <li className="text-lg" key={index}>
+                  <li className="text-lg my-2" key={index}>
                     {app}
                   </li>
                 ))}
@@ -916,7 +918,7 @@ const ProductDetail = () => {
           {["Specifications", "Downloads"].map((tab) => (
             <button
               key={tab}
-              className={`px-4 py-2 md:px-6 md:py-3 text-sm md:text-lg flex-1 ${
+              className={`px-4 py-2 md:px-6 md:py-3 cursor-pointer text-sm md:text-lg flex-1 ${
                 activeTab === tab
                   ? "border-b-2 border-black font-bold"
                   : "text-gray-500"
@@ -977,20 +979,21 @@ const ProductDetail = () => {
           )}
 
           {activeTab === "Downloads" && (
-            <div className="mt-4">
-              <p className="text-gray-600 text-sm md:text-md mb-2">
-                Click below to view or download the specifications.
-              </p>
+            <div className="mt-4 w-[100%]">
+              <div className="flex justify-between items-center mb-2">
+                <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
+                <a
+                  href={`/view-pdf?url=${encodeURIComponent(
+                    product.pdf
+                  )}&name=${product.model}_specifications.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
+                  View PDF
+                </a>
+              </div>
 
-              <a
-                href={`/view-pdf?url=${encodeURIComponent(product.pdf)}&name=${
-                  product.model
-                }_specifications.pdf`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-4 py-2 md:px-6 md:py-2 bg-blue-600 text-white rounded-lg text-sm md:text-lg mr-4">
-                View PDF
-              </a>
+              <hr className="border-t border-gray-300" />
             </div>
           )}
         </div>

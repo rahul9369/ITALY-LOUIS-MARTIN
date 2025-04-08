@@ -59,7 +59,7 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%201002",
-        img:TIP,
+        img: TIP,
       },
       {
         name: "S18",
@@ -67,9 +67,9 @@ const products = [
         img: S18,
       },
       {
-       name: "S218",
-       path: "/subwoofer/s218",
-       img:S218,
+        name: "S218",
+        path: "/subwoofer/s218",
+        img: S218,
       },
       {
         name: "RED-5.5",
@@ -181,7 +181,7 @@ const products = [
       {
         name: "RED-12",
         path: "/product/red%2012",
-        img:red12,
+        img: red12,
       },
     ],
   },
@@ -218,9 +218,9 @@ const products = [
     pdf: Red9PDF,
     relatedProducts: [
       {
-       name: "TTA-600",
-       path: "/electronics/tta%20600",
-       img: TTA,
+        name: "TTA-600",
+        path: "/electronics/tta%20600",
+        img: TTA,
       },
       {
         name: "S18",
@@ -230,7 +230,7 @@ const products = [
       {
         name: "RED-5",
         path: "/product/red%205",
-        img:red5,
+        img: red5,
       },
       {
         name: "RED-5.5",
@@ -275,22 +275,22 @@ const products = [
         name: "TTA-600",
         path: "/electronics/tta%20600",
         img: TTA,
-       },
-       {
-         name: "S18",
-         path: "/subwoofer/s18",
-         img: S18,
-       },
-       {
-         name: "RED-5",
-         path: "/product/red%205",
-         img:red5,
-       },
-       {
-         name: "RED-5.5",
-         path: "/product/red%205.5",
-         img: red6,
-       },
+      },
+      {
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
+      },
+      {
+        name: "RED-5",
+        path: "/product/red%205",
+        img: red5,
+      },
+      {
+        name: "RED-5.5",
+        path: "/product/red%205.5",
+        img: red6,
+      },
     ],
   },
 
@@ -336,8 +336,8 @@ const products = [
       },
       {
         name: "S18",
-         path: "/subwoofer/s18",
-         img: S18,
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
         name: "F10",
@@ -384,8 +384,8 @@ const products = [
       },
       {
         name: "S18",
-         path: "/subwoofer/s18",
-         img: S18,
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
         name: "F-8",
@@ -438,8 +438,8 @@ const products = [
       },
       {
         name: "S18",
-         path: "/subwoofer/s18",
-         img: S18,
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
         name: "S218",
@@ -488,12 +488,12 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%201002",
-        img:TIP,
+        img: TIP,
       },
       {
         name: "S18",
-         path: "/subwoofer/s18",
-         img: S18,
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
         name: "S218",
@@ -544,14 +544,16 @@ const ProductDetail = () => {
             <h1 className="text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}
             </h1>
-            <p className="text-gray-600 text-sm sm:text-lg mt-2">
-              {product.description}
-            </p>
+            <div className="w-full ">
+              <p className="text-gray-600 text-md md:text-[18px] mt-2 text-justify">
+                {product.description}
+              </p>
+            </div>
             <div className="mt-6">
-              <h2 className="text-xl font-semibold">Applications</h2>
+              <h2 className="text-xl font-bold">Applications</h2>
               <ul className="list-disc list-inside text-gray-600 mt-2">
                 {product.application.map((app, index) => (
-                  <li className="text-lg" key={index}>
+                  <li className="text-lg my-2" key={index}>
                     {app}
                   </li>
                 ))}
@@ -630,15 +632,21 @@ const ProductDetail = () => {
           )}
 
           {activeTab === "Downloads" && (
-            <div className="mt-4">
-              <p className="text-gray-600 text-sm md:text-md">
-                Click below to download the specifications.
-              </p>
-              <button
-                onClick={handleDownload}
-                className="mt-4 px-4 py-2 md:px-6 md:py-2 bg-green-500 cursor-pointer text-white rounded-lg text-sm md:text-lg">
-                Download PDF
-              </button>
+            <div className="mt-4 w-[100%]">
+              <div className="flex justify-between items-center mb-2">
+                <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
+                <a
+                  href={`/view-pdf?url=${encodeURIComponent(
+                    product.pdf
+                  )}&name=${product.model}_specifications.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
+                  View PDF
+                </a>
+              </div>
+
+              <hr className="border-t border-gray-300" />
             </div>
           )}
         </div>
