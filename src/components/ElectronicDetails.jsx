@@ -43,24 +43,19 @@ const products = [
     pdf: DSeriesAmplifiers,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
+        name: "D 300",
+        path: "/electronics/d%20300",
+        img: DT400,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: TTA,
+        name: "D 4200",
+        path: "/electronics/d%204200",
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: TTA,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: TTA,
+        name: "D 4300",
+        path: "/electronics/d%204300",
+        img: DT400,
       },
     ],
   },
@@ -93,24 +88,19 @@ const products = [
     pdf: DSeriesAmplifiers,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TTA,
+        name: "D 200",
+        path: "/electronics/d%20200",
+        img: DT400,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: TTA,
+        name: "D 4200",
+        path: "/electronics/d%204200",
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: TTA,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: TTA,
+        name: "D 4300",
+        path: "/electronics/d%204300",
+        img: DT400,
       },
     ],
   },
@@ -143,24 +133,19 @@ const products = [
     pdf: DSeriesAmplifiers,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TTA,
+        name: "D 200",
+        path: "/electronics/d%20200",
+        img: DT400,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: TTA,
+        name: "D 300",
+        path: "/electronics/d%20300",
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: TTA,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: TTA,
+        name: "D 4300",
+        path: "/electronics/d%204300",
+        img: DT400,
       },
     ],
   },
@@ -193,24 +178,19 @@ const products = [
     pdf: DSeriesAmplifiers,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
+        name: "D 200",
+        path: "/electronics/d%20200",
+        img: DT400,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: TTA,
+        name: "D 300",
+        path: "/electronics/d%20300",
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: TTA,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: TTA,
+        name: "D 4200",
+        path: "/electronics/d%204200",
+        img: DT400,
       },
     ],
   },
@@ -243,24 +223,19 @@ const products = [
     pdf: PLSeriesAmplifiers,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
+        name: "PL4.5",
+        path: "/electronics/pl%204.5",
+        img: PL4,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: TTA,
+        name: "D 4200",
+        path: "/electronics/d%204200",
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: TTA,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: TTA,
+        name: "D 4300",
+        path: "/electronics/d%204300",
+        img: DT400,
       },
     ],
   },
@@ -293,24 +268,19 @@ const products = [
     pdf: PLSeriesAmplifiers,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
+        name: "PL4.1",
+        path: "/electronics/pl%204.1",
+        img: PL4,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: TTA,
+        name: "D 4200",
+        path: "/electronics/d%204200",
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: TTA,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: TTA,
+        name: "D 4300",
+        path: "/electronics/d%204300",
+        img: DT400,
       },
     ],
   },
@@ -342,23 +312,23 @@ const products = [
     pdf: TTAPDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
-      },
-      {
-        name: "RED10",
-        path: "/product/red%2010",
+        name: "TTA-500",
+        path: "/electronics/tta%20500",
         img: TTA,
       },
       {
-        name: "F12",
-        path: "/product/f12",
+        name: "TTA-600",
+        path: "/electronics/tta%20600",
         img: TTA,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: TTA,
+      },
+      {
+        name: "TTA-1000",
+        path: "/electronics/tta%201000",
         img: TTA,
       },
     ],
@@ -391,23 +361,23 @@ const products = [
     pdf: TTAPDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
-      },
-      {
-        name: "RED10",
-        path: "/product/red%2010",
+        name: "TTA-450",
+        path: "/electronics/tta%20450",
         img: TTA,
       },
       {
-        name: "F12",
-        path: "/product/f12",
+        name: "TTA-600",
+        path: "/electronics/tta%20600",
         img: TTA,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: TTA,
+      },
+      {
+        name: "TTA-1000",
+        path: "/electronics/tta%201000",
         img: TTA,
       },
     ],
@@ -440,23 +410,24 @@ const products = [
     pdf: TTAPDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
-      },
-      {
-        name: "RED10",
-        path: "/product/red%2010",
+        name: "TTA-300",
+        path: "/electronics/tta%20300",
         img: TTA,
       },
       {
-        name: "F12",
-        path: "/product/f12",
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: TTA,
+      },
+
+      {
+        name: "TTA-1000",
+        path: "/electronics/tta%201000",
         img: TTA,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "TTA-1300",
+        path: "/electronics/tta%201300",
         img: TTA,
       },
     ],
@@ -489,23 +460,24 @@ const products = [
     pdf: TTAPDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
-      },
-      {
-        name: "RED10",
-        path: "/product/red%2010",
+        name: "TTA-450",
+        path: "/electronics/tta%20450",
         img: TTA,
       },
       {
-        name: "F12",
-        path: "/product/f12",
+        name: "TTA-460",
+        path: "/electronics/tta%20460",
+        img: TTA,
+      },
+
+      {
+        name: "TTA-1000",
+        path: "/electronics/tta%201000",
         img: TTA,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "TTA-1300",
+        path: "/electronics/tta%201300",
         img: TTA,
       },
     ],
@@ -538,23 +510,24 @@ const products = [
     pdf: TTAPDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
-      },
-      {
-        name: "RED10",
-        path: "/product/red%2010",
+        name: "TTA-450",
+        path: "/electronics/tta%20450",
         img: TTA,
       },
       {
-        name: "F12",
-        path: "/product/f12",
+        name: "TTA-460",
+        path: "/electronics/tta%20460",
+        img: TTA,
+      },
+
+      {
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
         img: TTA,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "TTA-1300",
+        path: "/electronics/tta%201300",
         img: TTA,
       },
     ],
@@ -587,23 +560,24 @@ const products = [
     pdf: TTAPDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
-      },
-      {
-        name: "RED10",
-        path: "/product/red%2010",
+        name: "TTA-450",
+        path: "/electronics/tta%20450",
         img: TTA,
       },
       {
-        name: "F12",
-        path: "/product/f12",
+        name: "TTA-460",
+        path: "/electronics/tta%20460",
         img: TTA,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "TTA-600",
+        path: "/electronics/tta%20600",
+        img: TTA,
+      },
+
+      {
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
         img: TTA,
       },
     ],
@@ -636,23 +610,24 @@ const products = [
     pdf: TTAPDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
-      },
-      {
-        name: "RED10",
-        path: "/product/red%2010",
+        name: "TTA-460",
+        path: "/electronics/tta%20460",
         img: TTA,
       },
       {
-        name: "F12",
-        path: "/product/f12",
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: TTA,
+      },
+
+      {
+        name: "TTA-1000",
+        path: "/electronics/tta%201000",
         img: TTA,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "TTA-1300",
+        path: "/electronics/tta%201300",
         img: TTA,
       },
     ],
@@ -685,23 +660,24 @@ const products = [
     pdf: TTAPDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
-      },
-      {
-        name: "RED10",
-        path: "/product/red%2010",
+        name: "TTA-450",
+        path: "/electronics/tta%20450",
         img: TTA,
       },
       {
-        name: "F12",
-        path: "/product/f12",
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: TTA,
+      },
+
+      {
+        name: "TTA-1000",
+        path: "/electronics/tta%201000",
         img: TTA,
       },
       {
-        name: "F15",
-        path: "/product/f15",
+        name: "TTA-1300",
+        path: "/electronics/tta%201300",
         img: TTA,
       },
     ],
@@ -734,24 +710,19 @@ const products = [
     pdf: TIPPDF,
     relatedProducts: [
       {
+        name: "TIP-1602",
+        path: "/electronics/tip%201602",
+        img: TIP,
+      },
+      {
         name: "TIP-2002",
         path: "/electronics/tip%202002",
         img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: TTA,
-      },
-      {
-        name: "F12",
-        path: "/product/f12",
-        img: TTA,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: TTA,
+        name: "TIP-2402",
+        path: "/electronics/tip%202402",
+        img: TIP,
       },
     ],
   },
@@ -783,24 +754,19 @@ const products = [
     pdf: TIPPDF,
     relatedProducts: [
       {
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img: TIP,
+      },
+      {
         name: "TIP-2002",
         path: "/electronics/tip%202002",
         img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: TTA,
-      },
-      {
-        name: "F12",
-        path: "/product/f12",
-        img: TTA,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: TTA,
+        name: "TIP-2402",
+        path: "/electronics/tip%202402",
+        img: TIP,
       },
     ],
   },
@@ -832,24 +798,19 @@ const products = [
     pdf: TIPPDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
         img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: TTA,
+        name: "TIP-1602",
+        path: "/electronics/tip%201602",
+        img: TIP,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: TTA,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: TTA,
+        name: "TIP-2402",
+        path: "/electronics/tip%202402",
+        img: TIP,
       },
     ],
   },
@@ -881,24 +842,19 @@ const products = [
     pdf: TIPPDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
         img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: TTA,
+        name: "TIP-1602",
+        path: "/electronics/tip%201602",
+        img: TIP,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: TTA,
-      },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: TTA,
+        name: "TIP-2002",
+        path: "/electronics/tip%202002",
+        img: TIP,
       },
     ],
   },

@@ -7,9 +7,14 @@ import DS8PDF from "../assets/pdf/DS-8.pdf";
 import DS12PDF from "../assets/pdf/DS-12.pdf";
 import DS15PDF from "../assets/pdf/DS-15.pdf";
 import TIP from "../assets/TIPA.jpg";
+import TTA from "../assets/TTA.jpg";
+import S218 from "../assets/S218.png";
+import S18 from "../assets/S18.png";
 import Devilred10 from "../assets/Devilred10.png";
 import F12 from "../assets/SpeakerF12.jpg";
 import F15 from "../assets/SpeakerF12.jpg";
+// import S18 from "../assets/S18.png";
+import DT400 from "../assets/DT400.jpg";
 
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
@@ -47,24 +52,24 @@ const products = [
     pdf: DS5PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
-        img: TIP,
+        name: "D-200",
+        path: "/electronics/d%20200",
+        img: DT400,
       },
       {
-        name: "RED10",
+        name: "D-4200",
         path: "/product/red%2010",
-        img: Devilred10,
+        img: DT400,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: F12,
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: S18,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: F15,
+        name: "DS12",
+        path: "/plastic/ds12",
+        img: DS12,
       },
     ],
   },
@@ -101,24 +106,24 @@ const products = [
     pdf: DS8PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
+        name: "D-300",
         path: "/electronics/tip%202002",
-        img: TIP,
+        img: DT400,
       },
       {
-        name: "RED10",
+        name: "D-4300",
         path: "/product/red%2010",
-        img: Devilred10,
+        img: DT400,
       },
       {
-        name: "F12",
+        name: "S18",
         path: "/product/f12",
-        img: F12,
+        img: S18,
       },
       {
-        name: "F15",
+        name: "DS5",
         path: "/product/f15",
-        img: F15,
+        img: PlasticSpeaker,
       },
     ],
   },
@@ -154,24 +159,24 @@ const products = [
     pdf: DS12PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
         img: TIP,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: Devilred10,
+        name: "TTA-800",
+        path: "/product/tta%20800",
+        img: TTA,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: F12,
+        name: "S18",
+        path: "/product/s18",
+        img: S18,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: F15,
+        name: "DS5",
+        path: "/product/ds5",
+        img: PlasticSpeaker,
       },
     ],
   },
@@ -207,24 +212,24 @@ const products = [
     pdf: DS15PDF,
     relatedProducts: [
       {
-        name: "TIP-2002",
+        name: "TIP-1002",
         path: "/electronics/tip%202002",
         img: TIP,
       },
       {
-        name: "RED10",
+        name: "TIP-1300",
         path: "/product/red%2010",
-        img: Devilred10,
+        img: TIP,
       },
       {
-        name: "F12",
+        name: "S218",
         path: "/product/f12",
-        img: F12,
+        img: S218,
       },
       {
-        name: "F15",
+        name: "S18",
         path: "/product/f15",
-        img: F15,
+        img: S18,
       },
     ],
   },

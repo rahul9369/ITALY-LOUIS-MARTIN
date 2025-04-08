@@ -160,8 +160,8 @@ const products = [
     pdf: S18a,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
+        name: "TIP-1602",
+        path: "/electronics/tip%201602",
         img: TIP,
       },
       {
