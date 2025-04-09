@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import pointsource from "../assets/pointsource.jpg";
 import Footer from "../components/Footer";
 import Devilred10 from "../assets/Devilred10.png";
@@ -117,10 +117,13 @@ const products = [
 ];
 
 const ProductCard = ({ product }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 w-full ">
+    <div className="bg-white shadow-lg rounded-xl sm:p-6 p-2 w-full ">
       <img
         src={product.img}
         alt={product.model}
@@ -169,18 +172,18 @@ const ProductList = () => {
     <div className="w-full">
       <img src={pointsource} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
-        <h1 className="text-4xl mx-auto font-bold  mb-4">
+        <h1 className="md:text-4xl text-[25px] mx-auto font-bold  mb-4">
           Point Source - All Series
         </h1>
-        <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
-          Experience Pure Sound with Our Point Source Loudspeaker Our point
+        <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
+          Experience Pure Sound with Our Point Source Loudspeaker. Our point
           source loudspeaker is designed in such a way that minimises distortion
           and phase issues and gives crystal-clear audio with precise sound
           reproduction, ensuring every note and beat is delivered with
-          exceptional fidelity.
+          exceptional fidelity.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-gray-100 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2 sm:p-10 bg-gray-100 justify-items-center">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

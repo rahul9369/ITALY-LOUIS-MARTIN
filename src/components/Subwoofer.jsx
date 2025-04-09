@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Subwoofer from "../assets/Subwoofer.png";
 import KS18 from "../assets/ks18.jpg";
 import Footer from "../components/Footer";
@@ -55,6 +55,9 @@ const products = [
 ];
 
 const ProductCard = ({ product }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   const navigate = useNavigate();
   return (
     <div className="bg-white shadow-lg rounded-xl p-6 w-full ">

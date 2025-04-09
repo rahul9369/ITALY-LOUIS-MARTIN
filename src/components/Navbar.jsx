@@ -106,7 +106,7 @@ const Navbar = () => {
           <Link to="/">
             <img src={Logo} alt="logo" className="w-16 h-16" />
           </Link>
-          <span className="md:text-xl text-sm text-white">
+          <span className="md:text-xl text-[12px] text-white">
             ITALY LOUIS MARTIN AUDIO
           </span>
         </div>

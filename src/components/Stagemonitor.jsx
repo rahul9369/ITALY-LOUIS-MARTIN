@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PlasticSpeaker from "../assets/PlasticSpeaker.png";
 import DS12 from "../assets/DS12.jpg";
 
 import Footer from "../components/Footer";
 import plasticDs5 from "../assets/plasticDs5.png";
-import Ds8  from "../assets/Ds8.png";
+import Ds8 from "../assets/Ds8.png";
 import { useNavigate } from "react-router-dom";
 
 const products = [
@@ -55,6 +55,9 @@ const products = [
 ];
 
 const ProductCard = ({ product }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   const navigate = useNavigate();
   return (
     <div className="bg-white shadow-lg rounded-xl p-6 w-full ">

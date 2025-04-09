@@ -69,11 +69,11 @@ const products = [
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 w-full ">
+    <div className="bg-white  shadow-lg rounded-xl p-6 w-full ">
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-[60%] object-fit cursor-pointer rounded-lg"
+        className="w-full h-[40%] sm:h-[60%] object-fit cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
             `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`
@@ -116,12 +116,12 @@ const ProductCard = ({ product }) => {
 const ProductList = () => {
   return (
     <div className="w-full">
-      <img src={Column} alt="Line Array" className="w-full" />
+      <img src={Column} alt="Line Array" className="w-full h-auto" />
       <div className="w-full text-center py-6 px-4">
-        <h1 className="text-4xl mx-auto font-bold  mb-4">
+        <h1 className="sm:text-4xl text-[22px] mx-auto font-bold  mb-4">
           Column Sound Speaker - All Series
         </h1>
-        <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
+        <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
           Our column speakers are meticulously engineered to enhance speech
           intelligibility and fidelity in environments where these attributes
           are paramount. Their sleek and vertical design not only ensures
@@ -129,7 +129,7 @@ const ProductList = () => {
           as airports, churches, and educational institutions.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-gray-100 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2 sm:p-10 bg-gray-100 justify-items-center">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

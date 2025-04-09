@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Linearray from "../assets/Linerarray.jpg";
 import Footer from "../components/Footer";
 import Linear from "../assets/Famousmartin1.jpg";
@@ -79,6 +79,9 @@ const products = [
 ];
 
 const ProductCard = ({ product }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   const navigate = useNavigate();
   return (
     <div className="bg-white shadow-lg rounded-xl p-6 w-full ">
@@ -92,7 +95,7 @@ const ProductCard = ({ product }) => {
           )
         }
       />
-      <div className="h-68">
+      <div className="sm:h-68">
         <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
         <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
 
@@ -135,10 +138,10 @@ const ProductList = () => {
     <div className="w-full">
       <img src={Linearray} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
-        <h1 className="text-4xl mx-auto font-bold  mb-4">
+        <h1 className="sm:text-4xl text-[25px] mx-auto font-bold  mb-4">
           Line Arrays - All Series
         </h1>
-        <p className="text-lg text-gray-700 flex  justify-start max-w-7xl mt-5  mx-auto">
+        <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
           Our Line Array Systems are meticulously designed to provide consistent
           and even sound coverage across large areas. With features like Uniform
           Sound Distribution, Controlled Dispersion, and High Output Levels,
@@ -147,7 +150,7 @@ const ProductList = () => {
           reliable and immersive sound is essential.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-gray-100 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2 sm:p-10 bg-gray-100 justify-items-center">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

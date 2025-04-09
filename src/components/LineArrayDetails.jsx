@@ -22,8 +22,8 @@ import Q80a from "../assets/pdf/Q80a.pdf";
 const products = [
   {
     img: Linear,
-    title: "Line array Series",
-    model: "famous 210",
+    title: "Line array ",
+    model: "Famous 210",
     description:
       " The Famous– 210N is meticulously engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified model features two 10-inch Neodymium drivers and two 1.75inch high-frequency compression drivers, ensuring exceptional sound quality and performance.",
     application: [
@@ -75,7 +75,7 @@ const products = [
   },
   {
     img: Q50,
-    title: "Line Array Series",
+    title: "Line Array ",
     model: "Q 50",
     description:
       " The Q-50 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features one 10-inch neodymium drivers and two 1.4-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
@@ -127,7 +127,7 @@ const products = [
   },
   {
     img: Q60,
-    title: "Line array Series",
+    title: "Line array ",
     model: "Q 60",
     description:
       " The Q-60 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features two 10-inch neodymium drivers and two 1.4-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
@@ -180,7 +180,7 @@ const products = [
   },
   {
     img: Q70,
-    title: "Line array Series",
+    title: "Line array ",
     model: "Q 70",
     description:
       " The Q-70 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features one 12-inch neodymium drivers and one 1.75-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
@@ -232,7 +232,7 @@ const products = [
   },
   {
     img: Q80,
-    title: "Line array Series",
+    title: "Line array ",
     model: "Q 80",
     description:
       " The Q-80 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features two 10-inch neodymium drivers and two 1.75-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
@@ -285,7 +285,7 @@ const products = [
   },
   {
     img: Cox12,
-    title: "Line array Series",
+    title: "Line array ",
     model: "Cox 12",
     description:
       " The Cox – 12 has one powerful 12” (304 mm)  coaxial driver with 1.5” (38 mm) HF. It is a high-performance, versatile, passive line array speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for rental market for small to medium format application along with high end install applications, including night clubs, auditorium, multipurpose hall etc.",
@@ -369,7 +369,7 @@ const ProductDetail = () => {
               {product.title} - {product.model}
             </h1>
             <div className="w-full ">
-              <p className="text-gray-600 text-md md:text-[18px] mt-2 text-justify">
+              <p className="text-gray-600 text-[12px] md:text-[15px]  mt-2 text-justify">
                 {product.description}
               </p>
             </div>
@@ -377,7 +377,7 @@ const ProductDetail = () => {
               <h2 className="text-xl font-bold">Applications</h2>
               <ul className="list-disc list-inside text-gray-600 mt-2">
                 {product.application.map((app, index) => (
-                  <li className="text-lg my-2" key={index}>
+                  <li className="text-[12px] md:text-[15px]  my-2" key={index}>
                     {app}
                   </li>
                 ))}

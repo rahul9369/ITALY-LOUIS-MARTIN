@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Amplifiers from "../assets/Amplifiers.png";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
@@ -176,6 +176,9 @@ const products = [
 ];
 
 const ProductCard = ({ product }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   const navigate = useNavigate();
   return (
     <div className="bg-white shadow-lg rounded-xl p-6 w-full ">

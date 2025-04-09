@@ -4,7 +4,7 @@ import FAMOUS210N from "../assets/Famousmartin1.jpg";
 import Subwoofer218 from "../assets/subwoofer218.png";
 import AMPLIFIERSpl4 from "../assets/AMPLIFIERSpl4.jpg";
 import plasticDs5 from "../assets/plasticDs5.png";
-import Ds8  from "../assets/Ds8.png";
+import Ds8 from "../assets/Ds8.png";
 import SpeakerF12 from "../assets/columnImg.jpg";
 import DS12 from "../assets/DS12.jpg";
 
@@ -21,30 +21,31 @@ const Categories = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white flex flex-col items-center py-12">
+    <div className="bg-white flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
       {/* Section Title */}
-      <div className="w-full text-center mb-8">
-        <h2 className="sm:text-5xl text-3xl font-bold text-gray-900 flex items-center justify-center relative">
-          <span className="h-6 bg-primary mr-3 rounded-full w-6"></span>
+      <div className="w-full text-center mb-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 flex items-center justify-center relative">
+          <span className="h-6 w-6 bg-primary rounded-full mr-3"></span>
           Products
         </h2>
       </div>
 
       {/* Categories Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-[95%] mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full ">
         {categories.map((category, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div
-              className="w-84 h-60 md:w-[100%] md:h-auto bg-white cursor-pointer rounded-lg shadow-md flex items-center justify-center border border-gray-200 hover:shadow-xl transition-all overflow-hidden"
-              onClick={() => navigate(category.path)}>
+          <div
+            key={index}
+            onClick={() => navigate(category.path)}
+            className="cursor-pointer  bg-white  transition-all duration-300 overflow-hidden flex flex-col items-center">
+            <div className="w-full rounded-2xl aspect-video sm:aspect-[5/6] md:aspect-[3/2] lg:aspect-[5/3]">
               <img
                 src={category.img}
                 alt={category.name}
                 loading="lazy"
-                className="w-full object-fill sm:h-full"
+                className="w-full h-full rounded-2xl hover:rounded-2xl   transition-transform duration-300 hover:scale-105 "
               />
             </div>
-            <p className="text-lg font-medium text-gray-800 mt-3">
+            <p className="text-center text-lg font-semibold text-gray-800 mt-4 mb-4">
               {category.name}
             </p>
           </div>

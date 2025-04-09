@@ -547,7 +547,7 @@ const ProductDetail = () => {
               {product.title} - {product.model}
             </h1>
             <div className="w-full ">
-              <p className="text-gray-600 text-md md:text-[18px] mt-2 text-justify">
+              <p className="text-gray-600 text-[12px] md:text-[15px]  mt-2 text-justify">
                 {product.description}
               </p>
             </div>
@@ -555,7 +555,7 @@ const ProductDetail = () => {
               <h2 className="text-xl font-bold">Applications</h2>
               <ul className="list-disc list-inside text-gray-600 mt-2">
                 {product.application.map((app, index) => (
-                  <li className="text-lg my-2" key={index}>
+                  <li className="text-[12px] md:text-[15px]  my-2" key={index}>
                     {app}
                   </li>
                 ))}
