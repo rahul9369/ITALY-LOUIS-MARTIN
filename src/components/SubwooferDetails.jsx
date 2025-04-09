@@ -389,11 +389,11 @@ const ProductDetail = () => {
                 to={item.path}
                 key={index}
                 className="group block  rounded-md  p-2 text-center overflow-hidden">
-                <div className="relative w-full pb-[100%] overflow-hidden rounded-sm">
+                <div className="relative w-full h-60 overflow-hidden rounded-sm">
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="absolute top-0 left-0 w-full h-full object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                    className="absolute top-0 left-0 w-full h-[90%] object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
                   />
                 </div>
 
