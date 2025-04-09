@@ -4,6 +4,9 @@ import red6 from "../assets/red5.5.jpg";
 import red5 from "../assets/red5.jpg";
 import red9 from "../assets/red9.png";
 import F8IMG from "../assets/F8.png";
+import F10IMG from "../assets/F10.png";
+import F12IMG from "../assets/F12.jpg";
+import F15IMG from "../assets/F15.png";
 
 import red12 from "../assets/red12.png";
 import TIP from "../assets/TIPA.jpg";
@@ -88,7 +91,7 @@ const products = [
       " The Red – 5.5 has two powerful 5.25” (133 mm)  coaxial driver and two 1.34” (34 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install market applications, including nightclub and premium home cinema installation. With a ruler-flat response, the cabinet offers uncoloured, transparent sound quality. Crafted from glass fiber reinforced plastic, it is suitable for both installation and portable use. ",
     application: [
       "Pub/Bar ",
-      "Delay/Fill",
+      // "Delay/Fill",
       "Multi-functional room",
       "Night Club",
       "Places of worKship",
@@ -251,7 +254,7 @@ const products = [
       "Lounge",
       "Pub/Bar",
       "Night Clubs",
-      "Delay/Fill",
+      // "Delay/Fill",
       "Multi-functional room",
       "Stadiums",
     ],
@@ -349,7 +352,7 @@ const products = [
     ],
   },
   {
-    img: Fseries,
+    img: F10IMG,
     title: "Point Source ",
     model: "F10",
     description:
@@ -402,7 +405,7 @@ const products = [
     ],
   },
   {
-    img: Fseries,
+    img: F12IMG,
     title: "Point Source ",
     model: "F12",
     description:
@@ -456,7 +459,7 @@ const products = [
     ],
   },
   {
-    img: Fseries,
+    img: F15IMG,
     title: "Point Source ",
     model: "F15",
     description:
