@@ -80,7 +80,7 @@ const BestSeller = () => {
   };
 
   return (
-    <div className="py-12 px-6 w-full bg-gray-50 flex flex-col items-center relative">
+    <div className="py-12 sm:px-6 w-full bg-gray-50 flex flex-col items-center relative">
       {/* Section Title */}
       <div className="w-[90%] text-center">
         <h2 className="sm:text-5xl text-2xl font-bold text-gray-900 flex items-center justify-center">
@@ -94,7 +94,7 @@ const BestSeller = () => {
         <button
           onClick={scrollLeft}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-md z-10">
-          <FaChevronLeft size={20} />
+          <FaChevronLeft className="sm:w-4 sm:h-4 w-2 h-2" />
         </button>
 
         {/* Carousel Track */}
@@ -109,17 +109,18 @@ const BestSeller = () => {
             return (
               <div
                 key={index}
-                className="text-center shadow-md m-2 p-6 w-[95%] rounded-lg border border-gray-200 hover:shadow-lg transition-all flex flex-col items-center">
+                className="text-center shadow-md m-2 sm:p-6 p-2 w-[95%] rounded-lg border border-gray-200 hover:shadow-lg transition-all flex flex-col items-center">
                 {/* Product Image */}
                 <img
                   src={product.img}
                   alt="Company News Image"
                   className="w-full h-60 object-fit bg-gray-800 rounded-md"
                 />
-                <p className="text-black font-bold h-10 mt-4 text-center break-words whitespace-normal w-[350px] inline">
+                <p className="text-black font-bold h-10 mt-4 text-[12px] sm:text-[15px] text-justify break-words whitespace-normal w-[300px] sm:w-[360px] px-4">
                   {product.title}
                 </p>
-                <p className="text-black mt-4 text-justify break-words whitespace-normal sm:w-[350px] w-[250px] mx-auto">
+
+                <p className="text-black mt-4 text-justify text-[12px] sm:text-[15px] break-words whitespace-normal sm:w-[350px] w-[250px] mx-auto">
                   {isExpanded ? product.desc : `${shortText}...`}
                   <span
                     className="text-blue-500 font-semibold ml-1 cursor-pointer"
@@ -136,7 +137,7 @@ const BestSeller = () => {
         <button
           onClick={scrollRight}
           className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-md z-10">
-          <FaChevronRight size={20} />
+          <FaChevronRight className="sm:w-4 sm:h-4 w-2 h-2" />
         </button>
       </div>
     </div>

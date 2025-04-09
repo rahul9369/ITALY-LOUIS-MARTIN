@@ -53,7 +53,6 @@ const Footer = () => {
             <div className="flex justify-center md:justify-start space-x-5 mt-3">
               {[
                 { href: "https://facebook.com", icon: "facebook" },
-                { href: "https://twitter.com", icon: "twitter" },
                 { href: "https://instagram.com", icon: "instagram-new" },
                 { href: "https://linkedin.com", icon: "linkedin" },
               ].map(({ href, icon }) => (

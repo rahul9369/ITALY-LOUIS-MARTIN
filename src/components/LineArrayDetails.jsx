@@ -482,13 +482,13 @@ const ProductDetail = () => {
             Related Product
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-4 sm:space-x-8 mt-5 justify-center">
+          <div className="flex flex-wrap justify-center gap-8 mt-5">
             {product.relatedProducts.map((item, index) => (
               <Link
                 to={item.path}
                 key={index}
-                className="group block  rounded-md  p-2 text-center overflow-hidden">
-                <div className="relative w-full h-60  overflow-hidden rounded-sm">
+                className="group w-60 block rounded-md p-2 text-center overflow-hidden">
+                <div className="relative w-full h-60 overflow-hidden rounded-sm">
                   <img
                     src={item.img}
                     alt={item.name}
