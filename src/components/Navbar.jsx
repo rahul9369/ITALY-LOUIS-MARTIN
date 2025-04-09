@@ -8,6 +8,13 @@ const Navbar = () => {
   const [subDropdown, setSubDropdown] = useState(null);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [expandedMenus, setExpandedMenus] = useState({});
+  // const closeMobileMenu = () => setMobileMenu(false);
+
+  const closeMobileMenu = () => {
+    setTimeout(() => {
+      setMobileMenu(false);
+    }, 50);
+  };
 
   let timeoutId = null;
 
@@ -195,6 +202,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
                   <NavLink
                     to={item.path === "#" ? "/" : item.path}
+                    onClick={closeMobileMenu}
                     className={({ isActive }) =>
                       `text-[16px] hover:text-yellow-400 ${
                         isActive
@@ -222,6 +230,7 @@ const Navbar = () => {
                             <div className="flex justify-between items-center">
                               <NavLink
                                 to={link.path}
+                                onClick={closeMobileMenu}
                                 className={({ isActive }) =>
                                   `block cursor-pointer ${
                                     isActive
@@ -250,6 +259,7 @@ const Navbar = () => {
                                     <NavLink
                                       key={subIdx}
                                       to={sublink.path}
+                                      onClick={closeMobileMenu}
                                       className={({ isActive }) =>
                                         `block  hover:bg-gray-100 ${
                                           isActive

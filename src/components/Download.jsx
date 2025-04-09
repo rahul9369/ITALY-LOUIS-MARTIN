@@ -222,7 +222,7 @@ const DownloadPage = () => {
         {pdfList.map((pdf, index) => (
           <div
             key={index}
-            className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-[90%] mx-auto py-4 border-b last:border-b-0 transition duration-200 hover:bg-gray-50 px-2 rounded-md">
+            className="flex flex-row sm:flex-row justify-between items-start sm:items-center w-[90%] mx-auto py-4 border-b last:border-b-0 transition duration-200 hover:bg-gray-50 px-2 rounded-md">
             {/* Title Section */}
             <div className="text-gray-800 font-medium text-base sm:text-lg mb-2 sm:mb-0">
               {pdf.title}
