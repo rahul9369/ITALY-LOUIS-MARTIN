@@ -37,7 +37,7 @@ const Categories = () => {
             key={index}
             onClick={() => navigate(category.path)}
             className="cursor-pointer  bg-white  transition-all duration-300 overflow-hidden flex flex-col items-center">
-            <div className="w-full rounded-2xl aspect-video sm:aspect-[5/6] md:aspect-[3/2] lg:aspect-[5/3]">
+            <div className="w-full rounded-2xl aspect-video sm:aspect-[5/6] md:aspect-[5/3] lg:aspect-[5/3]">
               <img
                 src={category.img}
                 alt={category.name}

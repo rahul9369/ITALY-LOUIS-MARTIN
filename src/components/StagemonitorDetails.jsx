@@ -385,7 +385,7 @@ const ProductDetail = () => {
             Related Product
           </h1>
 
-          <div className="flex space-x-8 mt-5 justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-4 sm:space-x-8 mt-5 sm:justify-center">
             {product.relatedProducts.map((item, index) => (
               <Link
                 to={item.path}

@@ -97,7 +97,7 @@ const ProductList = () => {
         <h1 className="text-4xl mx-auto font-bold  mb-4">
           Amplifiers - D Series
         </h1>
-        <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
+        <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
           We offer amplifiers tailored for a variety of applications, from live
           concerts to installations. Each amplifier is meticulously designed
           with high-quality components, ensuring exceptional dynamic power and
@@ -105,7 +105,7 @@ const ProductList = () => {
           guarantees superior performance and sustainability over many years.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-gray-100 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2 sm:p-10 bg-gray-100 justify-items-center">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

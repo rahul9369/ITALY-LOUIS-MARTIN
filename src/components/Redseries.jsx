@@ -113,10 +113,10 @@ const ProductList = () => {
     <div className="w-full">
       <img src={pointsource} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
-        <h1 className="text-4xl mx-auto font-bold  mb-4">
+        <h1 className="sm:text-4xl text-[22px] mx-auto font-bold  mb-4">
           Point Source - Red Series
         </h1>
-        <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
+        <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
           Experience Pure Sound with Our Point Source Loudspeaker Our point
           source loudspeaker is designed in such a way that minimises distortion
           and phase issues and gives crystal-clear audio with precise sound
@@ -124,7 +124,7 @@ const ProductList = () => {
           exceptional fidelity.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-gray-100 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2 sm:p-10 bg-gray-100 justify-items-center">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

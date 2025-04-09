@@ -121,7 +121,7 @@ const ProductList = () => {
         <h1 className="text-4xl mx-auto font-bold  mb-4">
           Column Sound Speaker -K Series
         </h1>
-        <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
+        <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
           Our column speakers are meticulously engineered to enhance speech
           intelligibility and fidelity in environments where these attributes
           are paramount. Their sleek and vertical design not only ensures
@@ -129,7 +129,7 @@ const ProductList = () => {
           as airports, churches, and educational institutions.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-gray-100 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2 sm:p-10 bg-gray-100 justify-items-center">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

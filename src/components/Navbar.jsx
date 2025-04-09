@@ -120,7 +120,11 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeave}>
               <NavLink
                 to={item.path === "#" ? "/" : item.path}
-                className="text-white text-[16px] hover:text-yellow-400">
+                className={({ isActive }) =>
+                  `text-[16px] hover:text-yellow-400 ${
+                    isActive ? "text-yellow-400 font-semibold" : "text-white"
+                  }`
+                }>
                 {item.name}
               </NavLink>
 
@@ -137,16 +141,29 @@ const Navbar = () => {
                             onMouseLeave={handleSubMenuLeave}>
                             <NavLink
                               to={link.path}
-                              className="block text-gray-700 cursor-pointer">
+                              className={({ isActive }) =>
+                                `block cursor-pointer ${
+                                  isActive
+                                    ? "text-yellow-400 font-medium"
+                                    : "text-gray-700"
+                                }`
+                              }>
                               {link.name}
                             </NavLink>
+
                             {subDropdown === link.name && (
                               <div className="absolute left-full top-0 mt-[-5px] bg-white shadow-md w-48 text-left py-2 border rounded-lg">
                                 {link.sublinks.map((sublink, subIdx) => (
                                   <NavLink
                                     key={subIdx}
                                     to={sublink.path}
-                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    className={({ isActive }) =>
+                                      `block px-4 py-2 hover:bg-gray-100 ${
+                                        isActive
+                                          ? "text-yellow-400 font-medium"
+                                          : "text-gray-700"
+                                      }`
+                                    }>
                                     {sublink.name}
                                   </NavLink>
                                 ))}
@@ -178,9 +195,16 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
                   <NavLink
                     to={item.path === "#" ? "/" : item.path}
-                    className="text-white text-lg block">
+                    className={({ isActive }) =>
+                      `text-[16px] hover:text-yellow-400 ${
+                        isActive
+                          ? "text-yellow-400 font-semibold"
+                          : "text-white"
+                      }`
+                    }>
                     {item.name}
                   </NavLink>
+
                   {item.submenu && (
                     <button
                       onClick={() => toggleSubmenu(item.name)}
@@ -198,7 +222,13 @@ const Navbar = () => {
                             <div className="flex justify-between items-center">
                               <NavLink
                                 to={link.path}
-                                className="text-gray-200 text-sm block hover:text-white">
+                                className={({ isActive }) =>
+                                  `block cursor-pointer ${
+                                    isActive
+                                      ? "text-yellow-500 font-medium"
+                                      : "text-gray-100"
+                                  }`
+                                }>
                                 {link.name}
                               </NavLink>
                               {link.sublinks && (
@@ -214,12 +244,19 @@ const Navbar = () => {
                               )}
                             </div>
                             {expandedMenus[link.name] && (
-                              <ul className="ml-4 mt-2  p-2 rounded">
+                              <ul className="ml-4 mt-2   rounded">
                                 {link.sublinks.map((sublink, subIdx) => (
                                   <li key={subIdx} className="py-1">
                                     <NavLink
+                                      key={subIdx}
                                       to={sublink.path}
-                                      className="text-gray-300 text-xs block hover:text-white">
+                                      className={({ isActive }) =>
+                                        `block  hover:bg-gray-100 ${
+                                          isActive
+                                            ? "text-yellow-400 font-medium"
+                                            : "text-gray-100"
+                                        }`
+                                      }>
                                       {sublink.name}
                                     </NavLink>
                                   </li>

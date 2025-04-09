@@ -4,7 +4,7 @@ import DS12 from "../../assets/DS12.jpg";
 
 import Footer from "../Footer";
 import plasticDs5 from "../../assets/plasticDs5.png";
-import Ds8  from "../../assets/Ds8.png";
+import Ds8 from "../../assets/Ds8.png";
 import { useNavigate } from "react-router-dom";
 
 const products = [
@@ -109,7 +109,7 @@ const ProductList = () => {
         <h1 className="text-4xl mx-auto font-bold  mb-4">
           Commercial Speaker - DS Series
         </h1>
-        <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
+        <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
           The DS series is engineered to endure rigorous use and harsh
           environments, ensuring long-lasting performance with an IP54 rating.
           These systems are meticulously designed to deliver clear,
@@ -117,7 +117,7 @@ const ProductList = () => {
           announcements, stadium & sports complexes.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-10 bg-gray-100 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2 sm:p-10 bg-gray-100 justify-items-center">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}
