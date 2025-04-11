@@ -222,9 +222,9 @@ const DownloadPage = () => {
         {pdfList.map((pdf, index) => (
           <div
             key={index}
-            className="flex flex-row sm:flex-row justify-between items-start sm:items-center w-[90%] mx-auto py-4 border-b last:border-b-0 transition duration-200 hover:bg-gray-50 px-2 rounded-md">
+            className="flex flex-col items-center sm:flex-row sm:justify-between justify-center  sm:items-center w-[90%] mx-auto py-4 border-b last:border-b-0 transition duration-200 hover:bg-gray-50 px-2 rounded-md">
             {/* Title Section */}
-            <div className="text-gray-800 font-medium text-base sm:text-lg mb-2 sm:mb-0">
+            <div className="text-gray-800  font-medium  sm:text-lg mb-2 sm:mb-0">
               {pdf.title}
             </div>
 
@@ -237,7 +237,7 @@ const DownloadPage = () => {
               rel="noopener noreferrer"
               className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white rounded-md text-sm sm:text-base shadow hover:shadow-lg transition">
               <DownloadIcon className="w-5 h-5" />
-              <span> Download</span>
+              <span className="text-[12px]"> Download</span>
             </a>
           </div>
         ))}
