@@ -224,7 +224,7 @@ const DownloadPage = () => {
             key={index}
             className="flex flex-row sm:flex-row justify-between items-start sm:items-center w-[90%] mx-auto py-4 border-b last:border-b-0 transition duration-200 hover:bg-gray-50 px-2 rounded-md">
             {/* Title Section */}
-            <div className="text-gray-800 font-medium text-base sm:text-lg mb-2 sm:mb-0">
+            <div className="text-gray-800 font-medium text-[12px] sm:text-lg mb-2 sm:mb-0">
               {pdf.title}
             </div>
 
@@ -236,7 +236,7 @@ const DownloadPage = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white rounded-md text-sm sm:text-base shadow hover:shadow-lg transition">
-              <DownloadIcon className="w-5 h-5" />
+              <DownloadIcon className="sm:w-5 w-4 h-4 sm:h-5" />
               <span> Download</span>
             </a>
           </div>
