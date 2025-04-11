@@ -38,10 +38,10 @@ const products = [
       "Concerts and Live Events",
       "Main FoH",
       "Night Club",
-      "Places of worKship",
+      "Places of worship",
       "Auditoriums",
       // "Multi-functional room",
-      "Pub/Bar",
+      // "Pub/Bar",
     ],
     Type: "Two-way full range passive loudspeaker",
     Frequency_Response: "65 Hz – 18 kHz",
@@ -94,7 +94,7 @@ const products = [
       // "Delay/Fill",
       "Multi-functional room",
       "Night Club",
-      "Places of worKship",
+      "Places of worship",
       "High-end Home Cinema Installation",
     ],
     Type: "Two-way Coaxial full range passive loudspeaker",
@@ -200,7 +200,7 @@ const products = [
       "Lounge",
       "Pub/Bar",
       "Night Clubs",
-      "Delay/Fill",
+      // "Delay/Fill",
       "Multi-functional room",
       "Stadiums",
     ],
@@ -411,7 +411,7 @@ const products = [
     description:
       " The F-12 has one powerful 12” (304 mm)  LF driver with 1.45” (37 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install & portable use including Main FoH, Night Clubs, lounges, Multipurpose Hall, Live Setup etc. With flat frequency response, the cabinet offers uncoloured, transparent sound quality. Crafted from high density plywood, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
     application: [
-      " Lounge  ",
+      // " Lounge  ",
       // "Pub/Bar ",
       // "Main FoH",
       "Multi-functional Room",
@@ -465,7 +465,7 @@ const products = [
     description:
       " The F-15 has one powerful 15” (381 mm)  LF driver with 1.45” (44 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install & portable use including Main FoH, Night Clubs, lounges, Multipurpose Hall, Live Setup etc. With flat frequency response, the cabinet offers uncoloured, transparent sound quality. Crafted from high density plywood, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
     application: [
-      " Lounge  ",
+      // " Lounge  ",
       // "Pub/Bar ",
       "Main FoH",
       // "Multi-functional Room",

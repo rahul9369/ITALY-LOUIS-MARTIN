@@ -10,7 +10,7 @@ const newsData = [
   {
     img: updates, // Replace with actual image path
     title:
-      "Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd",
+      "Authorised Distributor for India Market: Eminent Audio Visual Pvt Ltd",
     date: "2024-12-25",
     description:
       "After more than a year of understanding and communication, Emident Audio Visual Pvt Ltd has conducted rigorous testing on our company's products and achieved satisfactory results. Both parties have decided that Emident Audio Visual Pvt Ltd will become the Louis Martin Audio Authorized Distributor for India Market, covering regions such as Nepal and Pakistan.",

@@ -24,7 +24,7 @@ const products = [
       "Outdoor applications",
       "Background Music",
       "Terrace",
-      "Theme Park",
+      // "Theme Park",
       "Classrooms",
     ],
     Type: "Two-way Coaxial full range plastic IP54 loudspeaker",
@@ -77,7 +77,7 @@ const products = [
     application: [
       "Outdoor applications",
       " Background Music",
-      "Terrace ",
+      // "Terrace ",
       " Theme Park",
       " Classrooms",
     ],

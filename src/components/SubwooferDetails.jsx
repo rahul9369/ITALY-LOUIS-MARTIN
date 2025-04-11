@@ -117,7 +117,7 @@ const products = [
       },
       {
         name: "Famous 210",
-        path: "/product/f12",
+        path: "/linearray/famous%20210",
         img: Linear,
       },
       {
