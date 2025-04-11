@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png";
+import { MdOutlineMail } from "react-icons/md";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -46,10 +48,15 @@ const Footer = () => {
           {/* Social Media */}
           <div>
             <h3 className="text-lg font-semibold text-white">Get in Touch</h3>
-            <p className="text-gray-400 text-sm">
-              Email:contact@louismartinaudio.it
+            <p className="text-gray-400 flex items-center gap-1 text-sm">
+              <MdOutlineMail />
+              <span className="tetx-[15px]">: contact@louismartinaudio.it</span>
             </p>
-            <p className="text-gray-400 text-sm">Phone: +39 3242615626</p>
+
+            <p className="text-gray-400  flex items-center gap-1 text-sm">
+              <FaPhoneVolume />
+              <span>: +39 3242615626</span>
+            </p>
             <div className="flex justify-center md:justify-start space-x-5 mt-3">
               {[
                 { href: "https://facebook.com", icon: "facebook" },
