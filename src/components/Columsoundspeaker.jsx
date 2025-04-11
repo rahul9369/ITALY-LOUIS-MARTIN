@@ -69,7 +69,7 @@ const products = [
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   return (
-    <div className="bg-white  shadow-lg rounded-xl p-6 w-full ">
+    <div className="bg-white h-fit shadow-lg rounded-xl p-6 w-full ">
       <img
         src={product.img}
         alt={product.model}
