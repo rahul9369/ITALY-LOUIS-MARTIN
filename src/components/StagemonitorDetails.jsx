@@ -389,6 +389,7 @@ const ProductDetail = () => {
             {product.relatedProducts.map((item, index) => (
               <Link
                 to={item.path}
+                onClick={() => window.scrollTo(0, 0)}
                 key={index}
                 className="group block  rounded-md  p-2 text-center overflow-hidden">
                 <div className="relative w-full h-60 overflow-hidden rounded-sm">
