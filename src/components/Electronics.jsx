@@ -15,7 +15,7 @@ const products = [
     model: "PL 4.1",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1000W×4/8Ω   1600W×4/4Ω",
-    response: " ＞1000",
+    response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "10kg",
   },
   {
@@ -24,7 +24,7 @@ const products = [
     model: "PL 4.5",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1500W×4/8Ω  2500W×4/4Ω",
-    response: " ＞1000",
+    response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "11kg",
   },
   {
@@ -152,7 +152,7 @@ const products = [
     model: "TIP 1602",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1600W×2/8Ω   2600W×2/4Ω",
-    response: " ＞1000",
+    response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "6.5kg",
   },
   {
@@ -161,7 +161,7 @@ const products = [
     model: "TIP 2002",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "2000W×2/8Ω   3200W×2/4Ω",
-    response: " ＞100",
+    response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "6.8kg",
   },
   {
@@ -170,7 +170,7 @@ const products = [
     model: "TIP 2402",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "2400W×2/8Ω   4000W×2/4Ω",
-    response: " ＞1000",
+    response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "7kg",
   },
 ];

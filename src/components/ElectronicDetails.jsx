@@ -210,7 +210,7 @@ const products = [
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">98dB ",
-    Damping_Factor: ">1000 ",
+    Damping_Factor: ">1000(1 kHz @ 8 Ω) ",
     Crosstalk: ">85dB",
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ (Balanced) / 10kΩ (Unbalanced)",
@@ -254,7 +254,7 @@ const products = [
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">98dB ",
-    Damping_Factor: ">1000 ",
+    Damping_Factor: ">1000(1 kHz @ 8 Ω) ",
     Crosstalk: ">85dB",
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ / 10kΩ",
@@ -590,7 +590,7 @@ const products = [
       "DC & Outputs short circuit protection",
     ],
     Stereo_8_Ohm_2_Channel: " 450W×4 ",
-    Stereo_4_Ohm_2_Channel: "750W×2 ",
+    Stereo_4_Ohm_2_Channel: "750W×4 ",
     Bridge_8_Ohm_1_Channel: "(Not recommended)",
     Bridge_4_Ohm_1_Channel: "(Not recommended)  ",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
@@ -696,7 +696,7 @@ const products = [
     Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: "＞98dB (A-weighted)",
-    Damping_Factor: "＞800",
+    Damping_Factor: "＞800(1 kHz @ 8 Ω)",
     Crosstalk: "＞85dB",
     Input_Sensitivity: " 0.775V/1.44V",
     Input_Impedance: " 20KΩ/10KΩ",
@@ -740,7 +740,7 @@ const products = [
     Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: "＞98dB (A-weighted)",
-    Damping_Factor: "＞1000",
+    Damping_Factor: "＞1000(1 kHz @ 8 Ω)",
     Crosstalk: "＞85dB",
     Input_Sensitivity: " 0.775V/1.44V",
     Input_Impedance: " 20KΩ/10KΩ",
@@ -784,7 +784,7 @@ const products = [
     Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: "＞98dB (A-weighted)",
-    Damping_Factor: "＞1000",
+    Damping_Factor: "＞1000(1 kHz @ 8 Ω)",
     Crosstalk: "＞85dB",
     Input_Sensitivity: " 0.775V/1.44V",
     Input_Impedance: " 20KΩ/10KΩ",
@@ -828,7 +828,7 @@ const products = [
     Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: "＞98dB (A-weighted)",
-    Damping_Factor: "＞1000",
+    Damping_Factor: "＞1000(1 kHz @ 8 Ω)",
     Crosstalk: "＞85dB",
     Input_Sensitivity: " 0.775V/1.44V",
     Input_Impedance: " 20KΩ/10KΩ",
@@ -930,20 +930,54 @@ const ProductDetail = () => {
             <table className="w-full border-collapse border border-gray-300 text-sm md:text-md">
               <tbody>
                 {[
+                  ...([
+                    "PL 4.1",
+                    "PL 4.5",
+                    "D 4200",
+                    "D 4300",
+                    "TTA 450",
+                    "TTA 460",
+                  ].includes(product?.model)
+                    ? [
+                        {
+                          label: "Four Channel 8Ω ",
+                          value: product.Stereo_8_Ohm_2_Channel,
+                        },
+                      ]
+                    : [
+                        {
+                          label: "Stereo 8Ω (2 Channel)",
+                          value: product.Stereo_8_Ohm_2_Channel,
+                        },
+                      ]),
+
+                  ...([
+                    "PL 4.1",
+                    "PL 4.5",
+                    "D 4200",
+                    "D 4300",
+                    "TTA 450",
+                    "TTA 460",
+                  ].includes(product?.model)
+                    ? [
+                        {
+                          label: "Four Channel 4Ω ",
+                          value: product.Stereo_4_Ohm_2_Channel,
+                        },
+                      ]
+                    : [
+                        {
+                          label: "Stereo 8Ω (2 Channel)",
+                          value: product.Stereo_4_Ohm_2_Channel,
+                        },
+                      ]),
+
                   {
-                    label: "Stereo 8Ω (2 Channel)",
-                    value: product.Stereo_8_Ohm_2_Channel,
-                  },
-                  {
-                    label: "Stereo 4Ω (2 Channel)",
-                    value: product.Stereo_4_Ohm_2_Channel,
-                  },
-                  {
-                    label: "Bridge 8Ω (1 Channel)",
+                    label: "Bridge 8Ω/Channel",
                     value: product.Bridge_8_Ohm_1_Channel,
                   },
                   {
-                    label: "Bridge 4Ω (1 Channel)",
+                    label: "Bridge 4Ω/Channel",
                     value: product.Bridge_4_Ohm_1_Channel,
                   },
                   {
