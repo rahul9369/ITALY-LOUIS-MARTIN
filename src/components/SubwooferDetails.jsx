@@ -52,8 +52,8 @@ const products = [
     // ✅ Related Products Section
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
+        name: "TIP-1302",
+        path: "/electronics/tip%201302",
         img: TIP,
       },
       {
@@ -214,8 +214,8 @@ const products = [
     pdf: S218a,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
+        name: "TIP-1302",
+        path: "/electronics/tip%201302",
         img: TIP,
       },
       {

@@ -104,8 +104,8 @@ const products = [
     pdf: Q50a,
     relatedProducts: [
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%201002",
+        name: "TIP-1302",
+        path: "/electronics/tip%201302",
         img: TIP,
       },
       {

@@ -32,7 +32,8 @@ import S218pdf from "../assets/pdf/S218a.pdf";
 import PLpdf from "../assets/pdf/PLSeriesAmplifiers.pdf";
 import TIPpdf from "../assets/pdf/TIPSeriesAmplifiers.pdf";
 import TTApdf from "../assets/pdf/TTASeriesAmplifiers.pdf";
-import Dpdf from "../assets/pdf/Da.pdf";
+import Dpdf from "../assets/pdf/DSeriesAmplifiers.pdf";
+
 import { DownloadIcon } from "lucide-react";
 
 const pdfList = [

@@ -10,8 +10,8 @@ const BestSeller = () => {
     {
       img: Eavpl,
       title:
-        "Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd",
-      desc: "After more than a year of understanding and communication, Emident Audio Visual Pvt Ltd has conducted rigorous testing on our company's products and achieved satisfactory results. Both parties have decided that Emident Audio Visual Pvt Ltd will become the Louis Martin Audio Authorized Distributor for India Market, covering regions such as Nepal and Pakistan.",
+        "Authorised Distributor for India Market: Eminent Audio Visual Pvt Ltd",
+      desc: "After more than a year of understanding and communication, Eminent Audio Visual Pvt Ltd has conducted rigorous testing on our company's products and achieved satisfactory results. Both parties have decided that Eminent Audio Visual Pvt Ltd will become the Louis Martin Audio Authorized Distributor for India Market, covering regions such as Nepal and Pakistan.",
     },
     {
       img: update1,

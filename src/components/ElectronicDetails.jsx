@@ -5,12 +5,10 @@ import DT400 from "../assets/DT400.jpg";
 import PL4 from "../assets/PL4.jpg";
 import TTA from "../assets/TTA.jpg";
 import TIP from "../assets/TIPA.jpg";
-import TIPPDF from "../assets/pdf/TIP.pdf";
 import DSeriesAmplifiers from "../assets/pdf/DSeriesAmplifiers.pdf";
 import PLSeriesAmplifiers from "../assets/pdf/PLSeriesAmplifiers.pdf";
-import TIPSeriesAmplifiers from "../assets/pdf/TIPSeriesAmplifiers.pdf";
-
-import TTAPDF from "../assets/pdf/TTAa.pdf";
+import TIPPDF from "../assets/pdf/TIPSeriesAmplifiers.pdf";
+import TTAPDF from "../assets/pdf/TTASeriesAmplifiers.pdf";
 
 import { useEffect, useState } from "react";
 const products = [
@@ -710,8 +708,8 @@ const products = [
         img: TIP,
       },
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
+        name: "TIP-1302",
+        path: "/electronics/tip%201302",
         img: TIP,
       },
       {
@@ -754,8 +752,8 @@ const products = [
         img: TIP,
       },
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
+        name: "TIP-1302",
+        path: "/electronics/tip%201302",
         img: TIP,
       },
       {
@@ -768,7 +766,7 @@ const products = [
   {
     img: TIP,
     title: "TIP ",
-    model: "TIP 2002",
+    model: "TIP 1302",
     description:
       "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
     application: [
@@ -847,8 +845,8 @@ const products = [
         img: TIP,
       },
       {
-        name: "TIP-2002",
-        path: "/electronics/tip%202002",
+        name: "TIP-1302",
+        path: "/electronics/tip%201302",
         img: TIP,
       },
     ],

@@ -158,7 +158,7 @@ const products = [
   {
     img: TIP,
     title: "TIP Series",
-    model: "TIP 2002",
+    model: "TIP 1302",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "2000W×2/8Ω   3200W×2/4Ω",
     response: " ＞1000(1 kHz @ 8 Ω)",
