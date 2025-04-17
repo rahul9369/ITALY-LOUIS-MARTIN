@@ -11,6 +11,7 @@ import TIPPDF from "../assets/pdf/TIPSeriesAmplifiers.pdf";
 import TTAPDF from "../assets/pdf/TTASeriesAmplifiers.pdf";
 
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 const products = [
   {
     img: DT400,
@@ -876,6 +877,17 @@ const ProductDetail = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{product.model} - Louis Martin Audio</title>
+        <meta
+          name="description"
+          content="Discover the journey of Louis Martin — a passionate innovator, strategist, and creator. From pioneering digital solutions to driving impactful transformations, Louis blends creativity with technology to shape meaningful experiences."
+        />
+        <meta
+          name="keywords"
+          content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
+        />
+      </Helmet>
       <div className="w-[90%] mx-auto p-6">
         {/* Product Image and Title */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

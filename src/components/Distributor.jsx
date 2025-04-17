@@ -8,6 +8,7 @@ import Vetnam from "../assets/Distributor/Vetnam.jpg";
 import Footer from "./Footer";
 // import img from "../assets/carausalimg2.jpg";
 import Distributors from "../assets/Distributor/Distributors.png";
+import { Helmet } from "react-helmet";
 
 const distributors = [
   {
@@ -45,6 +46,17 @@ const distributors = [
 const DistributorPage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
+      <Helmet>
+        <title>Distributor - Louis Martin</title>
+        <meta
+          name="description"
+          content="Discover the journey of Louis Martin — a passionate innovator, strategist, and creator. From pioneering digital solutions to driving impactful transformations, Louis blends creativity with technology to shape meaningful experiences."
+        />
+        <meta
+          name="keywords"
+          content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
+        />
+      </Helmet>
       <img
         src={Distributors}
         alt="img"

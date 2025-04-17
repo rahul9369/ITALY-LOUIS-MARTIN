@@ -5,6 +5,7 @@ import update1 from "../assets/news/update.jpg";
 import update2 from "../assets/news/update1.jpg";
 import update3 from "../assets/news/upadate3.jpg";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet";
 
 const newsData = [
   {
@@ -41,6 +42,17 @@ const newsData = [
 const CompanyNews = () => {
   return (
     <div className="w-full mx-auto">
+      <Helmet>
+        <title>News - Louis Martin</title>
+        <meta
+          name="description"
+          content="Discover the journey of Louis Martin — a passionate innovator, strategist, and creator. From pioneering digital solutions to driving impactful transformations, Louis blends creativity with technology to shape meaningful experiences."
+        />
+        <meta
+          name="keywords"
+          content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
+        />
+      </Helmet>
       {/* Header Image */}
       <img src={News} alt="About Us" className="w-full h-[90px] sm:h-[250px]" />
 

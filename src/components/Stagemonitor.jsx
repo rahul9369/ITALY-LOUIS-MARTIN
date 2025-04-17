@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import plasticDs5 from "../assets/plasticDs5.png";
 import Ds8 from "../assets/Ds8.png";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const products = [
   {
@@ -107,6 +108,17 @@ const ProductCard = ({ product }) => {
 const ProductList = () => {
   return (
     <div className="w-full">
+      <Helmet>
+        <title>Commercial Speaker - Louis Martin</title>
+        <meta
+          name="description"
+          content="Discover the journey of Louis Martin — a passionate innovator, strategist, and creator. From pioneering digital solutions to driving impactful transformations, Louis blends creativity with technology to shape meaningful experiences."
+        />
+        <meta
+          name="keywords"
+          content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
+        />
+      </Helmet>
       <img src={PlasticSpeaker} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="sm:text-4xl text-[25px] mx-auto font-bold  mb-4">

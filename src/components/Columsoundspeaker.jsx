@@ -7,6 +7,7 @@ import K306 from "../assets/k306.png";
 import K308 from "../assets/K308.png";
 import K312 from "../assets/K312.png";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const products = [
   {
@@ -116,6 +117,17 @@ const ProductCard = ({ product }) => {
 const ProductList = () => {
   return (
     <div className="w-full">
+      <Helmet>
+        <title>Column Sound Speaker - Louis Martin</title>
+        <meta
+          name="description"
+          content="Discover the journey of Louis Martin — a passionate innovator, strategist, and creator. From pioneering digital solutions to driving impactful transformations, Louis blends creativity with technology to shape meaningful experiences."
+        />
+        <meta
+          name="keywords"
+          content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
+        />
+      </Helmet>
       <img src={Column} alt="Line Array" className="w-full h-auto" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="sm:text-4xl text-[22px] mx-auto font-bold  mb-4">

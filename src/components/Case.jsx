@@ -5,10 +5,22 @@ import Case3 from "../assets/case/case3.jpg";
 import Case4 from "../assets/case/Case4.jpg";
 import Main from "../assets/case/casemain.png";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet";
 
 const CaseSection = () => {
   return (
     <div className="fade-in">
+      <Helmet>
+        <title>Case - Louis Martin</title>
+        <meta
+          name="description"
+          content="Discover the journey of Louis Martin — a passionate innovator, strategist, and creator. From pioneering digital solutions to driving impactful transformations, Louis blends creativity with technology to shape meaningful experiences."
+        />
+        <meta
+          name="keywords"
+          content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
+        />
+      </Helmet>
       {/* Main Image */}
       <img
         src={Main}

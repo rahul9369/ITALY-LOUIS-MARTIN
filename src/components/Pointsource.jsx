@@ -12,6 +12,7 @@ import F12 from "../assets/F12.jpg";
 import F15 from "../assets/F15.png";
 
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const products = [
   {
     img: Devilred10,
@@ -168,6 +169,17 @@ const ProductCard = ({ product }) => {
 const ProductList = () => {
   return (
     <div className="w-full">
+      <Helmet>
+        <title>Point Source - Louis Martin</title>
+        <meta
+          name="description"
+          content="Discover the journey of Louis Martin — a passionate innovator, strategist, and creator. From pioneering digital solutions to driving impactful transformations, Louis blends creativity with technology to shape meaningful experiences."
+        />
+        <meta
+          name="keywords"
+          content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
+        />
+      </Helmet>
       <img src={pointsource} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="md:text-4xl text-[25px] mx-auto font-bold  mb-4">

@@ -35,6 +35,7 @@ import TTApdf from "../assets/pdf/TTASeriesAmplifiers.pdf";
 import Dpdf from "../assets/pdf/DSeriesAmplifiers.pdf";
 
 import { DownloadIcon } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const pdfList = [
   {
@@ -208,6 +209,17 @@ const pdfList = [
 const DownloadPage = () => {
   return (
     <div className="h-full ">
+      <Helmet>
+        <title>Download - Louis Martin</title>
+        <meta
+          name="description"
+          content="Discover the journey of Louis Martin — a passionate innovator, strategist, and creator. From pioneering digital solutions to driving impactful transformations, Louis blends creativity with technology to shape meaningful experiences."
+        />
+        <meta
+          name="keywords"
+          content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
+        />
+      </Helmet>
       <img
         src={Download}
         alt="Download Banner"
