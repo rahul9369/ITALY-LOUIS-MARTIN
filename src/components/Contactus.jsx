@@ -7,6 +7,8 @@ import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineEmail, MdPhone } from "react-icons/md";
 import { FaPaperPlane } from "react-icons/fa";
 import Inquiry from "../components/Inquiry";
+import { Helmet } from "react-helmet";
+
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -52,6 +54,17 @@ const ContactUs = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
       exit={{ opacity: 0, y: -50, transition: { duration: 0.5 } }}>
+      <Helmet>
+        <title>Contact us - Louis Martin</title>
+        <meta
+          name="description"
+          content="Discover the journey of Louis Martin — a passionate innovator, strategist, and creator. From pioneering digital solutions to driving impactful transformations, Louis blends creativity with technology to shape meaningful experiences."
+        />
+        <meta
+          name="keywords"
+          content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
+        />
+      </Helmet>
       {/* Header Image */}
       <motion.img
         src={Contactus}

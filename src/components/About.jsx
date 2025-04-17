@@ -3,6 +3,7 @@ import img from "../assets/Distributor/us.jpg";
 import carausalimg2 from "../assets/carausalimg2.png";
 import Footer from "./Footer";
 import Aboutus from "../assets/AboutUs.png";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const [formData, setFormData] = useState({
@@ -25,6 +26,18 @@ const About = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen">
+      <Helmet>
+        <title>About - Louis Martin</title>
+        <meta
+          name="description"
+          content="Discover the journey of Louis Martin — a passionate innovator, strategist, and creator. From pioneering digital solutions to driving impactful transformations, Louis blends creativity with technology to shape meaningful experiences."
+        />
+        <meta
+          name="keywords"
+          content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
+        />
+      </Helmet>
+
       <img
         src={Aboutus}
         alt="About Us"
