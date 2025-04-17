@@ -48,20 +48,26 @@ const Footer = () => {
           {/* Social Media */}
           <div>
             <h3 className="text-lg font-semibold text-white">Get in Touch</h3>
-            <p className="text-gray-400 flex items-center gap-1 text-sm">
-              <MdOutlineMail />
+            <p className="text-gray-400 flex justify-center sm:justify-normal items-center gap-1 text-sm">
+              <MdOutlineMail style={20} />
               <span className="tetx-[15px]">: contact@louismartinaudio.it</span>
             </p>
 
-            <p className="text-gray-400  flex items-center gap-1 text-sm">
+            <p className="text-gray-400  flex justify-center sm:justify-normal items-center gap-1 text-sm">
               <FaPhoneVolume />
               <span>: +39 3242615626</span>
             </p>
             <div className="flex justify-center md:justify-start space-x-5 mt-3">
               {[
-                { href: "https://facebook.com", icon: "facebook" },
+                {
+                  href: "https://www.facebook.com/share/1EvAEusFN5/",
+                  icon: "facebook",
+                },
                 { href: "https://instagram.com", icon: "instagram-new" },
-                { href: "https://linkedin.com", icon: "linkedin" },
+                {
+                  href: "https://linkedin.com/company/louismartinaudio/",
+                  icon: "linkedin",
+                },
               ].map(({ href, icon }) => (
                 <a
                   key={icon}
