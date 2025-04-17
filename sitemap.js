@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const domain = "https://louismartinaudio.it/";
+const domain = "https://louismartinaudio.it";
 
 // Static URL definitions
 const urls = [

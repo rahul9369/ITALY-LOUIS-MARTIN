@@ -7,7 +7,6 @@ import F8IMG from "../assets/F8.png";
 import F10IMG from "../assets/F10.png";
 import F12IMG from "../assets/F12.jpg";
 import F15IMG from "../assets/F15.png";
-
 import red12 from "../assets/red12.png";
 import TIP from "../assets/TIPA.jpg";
 import S218 from "../assets/S218.png";
