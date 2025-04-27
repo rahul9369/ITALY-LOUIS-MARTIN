@@ -12,7 +12,7 @@ const products = [
     description: `1x12" Passive Co-axial line array Speaker System`,
     power: "450W/1800W (Passive)",
     response: "60Hz-19kHz",
-    Sensitivity: "98dB(1W/1m)",
+    Sensitivity: "98dB",
     spl: "127dB",
     weight: "22Kg",
   },

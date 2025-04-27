@@ -16,8 +16,8 @@ const products = [
     description: `1x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "500W/2000W（Passive); LF:350W/1400W, HF:150W/600W (Bi-Amp)",
     response: "65Hz-20kHz",
-    Sensitivity: "101dB(1W/1m)",
-    spl: "131dB（Passive); 131dB(Bi-Amp)",
+    Sensitivity: "101dB",
+    spl: "131dB（Passive/Bi-Amp)",
     weight: "16.8Kg",
   },
   {
@@ -27,8 +27,8 @@ const products = [
     description: `2x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "600W/2400W（Passive); LF:500W/2000W,HF:100W/400W(Bi-Amp)",
     response: "60Hz-20kHz",
-    Sensitivity: "102dB(1W/1m)",
-    spl: "132dB（Passive）, 132dB(Bi-Amp)",
+    Sensitivity: "102dB",
+    spl: "132dB（Passive/Bi-Amp)",
     weight: "22.8Kg",
   },
   {
@@ -38,8 +38,8 @@ const products = [
     description: `1x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "550W/2200W（Passive); LF:400W/1600W, HF:150W/600W (Bi-Amp)",
     response: "60Hz-20kHz",
-    Sensitivity: "103dB(1W/1m)",
-    spl: "133dB（Passive）, 133dB(Bi-Amp)",
+    Sensitivity: "103dB",
+    spl: "133dB（Passive/Bi-Amp)",
     weight: "22Kg",
   },
   {
@@ -49,8 +49,8 @@ const products = [
     description: `2x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "1000W/4000W（Passive）; LF:700W/2800W, HF:300W/1200W (Bi-Amp)",
     response: "60Hz-20kHz",
-    Sensitivity: "103dB(1W/1m)",
-    spl: "136dB（Passive）, 136dB(Bi-Amp)",
+    Sensitivity: "103dB",
+    spl: "136dB（Passive/Bi-Amp)",
     weight: "36.8Kg",
   },
 ];

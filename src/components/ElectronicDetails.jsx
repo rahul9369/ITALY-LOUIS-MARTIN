@@ -897,9 +897,7 @@ const ProductDetail = () => {
             className="w-full h-auto md:h-[400px] lg:h-[400px] object-cover rounded-lg"
           />
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold">
-              {product.title} - {product.model}
-            </h1>
+            <h1 className="text-2xl md:text-3xl font-bold">{product.model}</h1>
             <div className="w-full ">
               <p className="text-gray-600 text-[12px] md:text-[15px]  mt-2 text-justify">
                 {product.description}

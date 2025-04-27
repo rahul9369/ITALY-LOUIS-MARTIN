@@ -9,8 +9,7 @@ const products = [
     img: PL4,
     title: "PL Series",
     model: "PL 4.1",
-    description:
-      " The PL Series amplifier is multi-channel professional built-in Digital Signal Processor (DSP) Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. Thanks to the automatic temperature control and unique limiting functions that gives high efficiency to ensures that the PL series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts and live performances, entertainment venues, lounges, pubs, bars and auditorium installations with deep, resonant sound.",
+    description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1000W×4/8Ω   1600W×4/4Ω",
     response: " ＞1000",
     weight: "10kg",
@@ -80,13 +79,13 @@ const ProductList = () => {
         <h1 className="text-4xl mx-auto font-bold  mb-4">
           Amplifiers - PL Series
         </h1>
-        <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
+        {/* <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
           We offer amplifiers tailored for a variety of applications, from live
           concerts to installations. Each amplifier is meticulously designed
           with high-quality components, ensuring exceptional dynamic power and
           long-term reliability. Our commitment to precision engineering
           guarantees superior performance and sustainability over many years.
-        </p>
+        </p> */}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2 sm:p-10 bg-gray-100 justify-items-center">
         {products.map((product, index) => (
