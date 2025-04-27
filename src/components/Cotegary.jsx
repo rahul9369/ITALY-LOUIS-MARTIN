@@ -42,7 +42,7 @@ const Categories = () => {
                 src={category.img}
                 alt={category.name}
                 loading="lazy"
-                className="w-full h-80 sm:h-92 rounded-2xl hover:rounded-2xl   transition-transform duration-300 hover:scale-105 "
+                className="w-full h-88 sm:h-full rounded-2xl hover:rounded-2xl   transition-transform duration-300 hover:scale-105 "
               />
             </div>
             <p className="text-center text-lg font-semibold text-gray-800 mt-4 mb-4">
