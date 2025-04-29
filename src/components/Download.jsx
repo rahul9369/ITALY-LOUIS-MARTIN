@@ -25,7 +25,7 @@ import DS5pdf from "../assets/pdf/DS-5.pdf";
 import DS8pdf from "../assets/pdf/DS-8.pdf";
 import DS12pdf from "../assets/pdf/DS-12.pdf";
 import DS15pdf from "../assets/pdf/DS-15.pdf";
-import KS18pdf from "../assets/pdf/KS18a.pdf";
+import KS18pdf from "../assets/pdf/ks18a.pdf";
 import KS218pdf from "../assets/pdf/KS218a.pdf";
 import S18pdf from "../assets/pdf/S18a.pdf";
 import S218pdf from "../assets/pdf/S218a.pdf";
