@@ -8,7 +8,7 @@ import Devilred10 from "../assets/Devilred10.png";
 // import S218 from "../assets/S218.png";
 import S218IMG from "../assets/S218.png";
 // import KS18a from "../assets/pdf/KS18A.pdf";
-import KS18a from "../assets/pdf/KS18a.pdf";
+import KS18a from "../assets/pdf/ks18a.pdf";
 import S218 from "../assets/S218.png";
 import S18 from "../assets/S18.png";
 import TIP from "../assets/TIPA.jpg";
