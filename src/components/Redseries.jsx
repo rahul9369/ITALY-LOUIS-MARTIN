@@ -27,7 +27,7 @@ const products = [
     power: "200W/800W (Passive)",
     response: "80Hz-19kHz",
     Sensitivity: "96dB",
-    spl: "124dB",
+    spl: "121dB",
     weight: "9Kg",
   },
   {

@@ -377,12 +377,12 @@ const ProductDetail = () => {
                   { label: "Peak Power", value: product.Peak_Power },
                   { label: "Sensitivity（1W/1m)", value: product.Sensitivity },
                   {
-                    label: "Max SPL (Continuous) ",
+                    label: "Max SPL (Continuous/1m) ",
                     value: product.Max_SPL,
                   },
 
                   {
-                    label: "Max SPL (Peak)",
+                    label: "Max SPL (Peak/1m)",
                     value: product.Max_SPL_Peak,
                   },
 

@@ -33,7 +33,7 @@ const products = [
     power: "200W/800W (Passive)",
     response: "80Hz-19kHz",
     Sensitivity: "96dB",
-    spl: "124dB",
+    spl: "121dB",
     weight: "9Kg",
   },
   {
@@ -148,7 +148,7 @@ const ProductCard = ({ product }) => {
         {product.Sensitivity}
       </p>
       <p className="text-sm mt-2 text-gray-700">
-        <span className="font-bold">Max SPL(Continuous):</span> {product.spl}
+        <span className="font-bold">Max SPL(Continuous/1m):</span> {product.spl}
       </p>
       <p className="text-sm mt-2 text-gray-700">
         <span className="font-bold">Net Weight:</span> {product.weight}
