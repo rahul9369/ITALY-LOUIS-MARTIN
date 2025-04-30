@@ -73,7 +73,7 @@ const products = [
     title: "Column Speaker",
     model: "K304",
     description:
-      "The K – 304 has four full range 1.75” (44 mm)  Faital pr driver. Designed from high quality aluminium alloy tha give delivering extraordinary clarity and detailed sound slim design. Suitable for install market applications including public address systems, airports, railway stations, lecture theaters, churches, and other larg venues. The cabinets design emphasizes vocal clarity fidelity, and minimal distortion without compromisin transient response.",
+      "The K – 304 has four full range 1.75” (44 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
     application: [
       "Public address systems",
       "Lecture theatres",
