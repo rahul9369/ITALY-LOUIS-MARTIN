@@ -23,22 +23,22 @@ const BestSeller = () => {
       title: "GET SHOW 2023",
       desc: "Join us at the upcoming International Sound Expo for live demos and networking",
     },
-    {
-      img: Eavpl,
-      title:
-        "Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd",
-      desc: "After more than a year of understanding and communication, Emident Audio Visual Pvt Ltd has conducted rigorous testing on our company's products and achieved satisfactory results. Both parties have decided that Emident Audio Visual Pvt Ltd will become the Louis Martin Audio Authorized Distributor for India Market, covering regions such as Nepal and Pakistan.",
-    },
-    {
-      img: update1,
-      title: "ASIA SALES PRESIDENT",
-      desc: "In order to develop its business in the Asian region, the company has specially appointed CUI as the Sales President of the Asian region. CUI has been engaged in the audio industry for 20 years and has a good understanding of the Asian market. We hope that under his leadership, we can better serve customers in the Asian market and achieve better sales results.",
-    },
-    {
-      img: update2,
-      title: "GET SHOW 2023",
-      desc: "Join us at the upcoming International Sound Expo for live demos and networking",
-    },
+    // {
+    //   img: Eavpl,
+    //   title:
+    //     "Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd",
+    //   desc: "After more than a year of understanding and communication, Emident Audio Visual Pvt Ltd has conducted rigorous testing on our company's products and achieved satisfactory results. Both parties have decided that Emident Audio Visual Pvt Ltd will become the Louis Martin Audio Authorized Distributor for India Market, covering regions such as Nepal and Pakistan.",
+    // },
+    // {
+    //   img: update1,
+    //   title: "ASIA SALES PRESIDENT",
+    //   desc: "In order to develop its business in the Asian region, the company has specially appointed CUI as the Sales President of the Asian region. CUI has been engaged in the audio industry for 20 years and has a good understanding of the Asian market. We hope that under his leadership, we can better serve customers in the Asian market and achieve better sales results.",
+    // },
+    // {
+    //   img: update2,
+    //   title: "GET SHOW 2023",
+    //   desc: "Join us at the upcoming International Sound Expo for live demos and networking",
+    // },
   ];
 
   const carouselRef = useRef(null);
