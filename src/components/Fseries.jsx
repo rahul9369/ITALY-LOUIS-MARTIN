@@ -14,7 +14,7 @@ const products = [
     power: "100W/400W (Passive)",
     response: "70Hz-19kHz",
     Sensitivity: "93dB",
-    spl: "116dB",
+    spl: "115dB",
     weight: "12 Kg",
   },
   {

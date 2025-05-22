@@ -37,7 +37,7 @@ const products = [
     title: "Column Speaker",
     model: "K306",
     description: '4x1.75" Passive Full Range Column Speaker',
-    power: "80W/320W (Passive)",
+    power: "120W/480W (Passive)",
     response: "150Hz-18kHz",
     Sensitivity: "91dB",
     spl: "114dB",

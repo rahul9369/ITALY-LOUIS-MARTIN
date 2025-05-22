@@ -28,7 +28,7 @@ const products = [
     title: "TIP Series",
     model: "TIP 1302",
     description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "2000W×2/8Ω   3200W×2/4Ω",
+    power: "1300W×2/8Ω   2000W×2/4Ω",
     response: " ＞1000",
     weight: "6.8kg",
   },
