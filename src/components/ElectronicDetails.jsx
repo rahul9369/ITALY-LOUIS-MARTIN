@@ -975,7 +975,7 @@ const ProductDetail = () => {
                       ]
                     : [
                         {
-                          label: "Stereo 8Ω (2 Channel)",
+                          label: "Stereo 4Ω (2 Channel)",
                           value: product.Stereo_4_Ohm_2_Channel,
                         },
                       ]),
