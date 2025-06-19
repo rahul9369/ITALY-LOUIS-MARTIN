@@ -116,19 +116,19 @@ const products = [
     pdf: Red6PDF,
     relatedProducts: [
       {
-        name: "D-200",
-        path: "/electronics/tip%202002",
-        img: DT400,
-      },
-      {
         name: "D-4200",
-        path: "/product/red%2010",
+        path: "/electronics/d%204200",
         img: DT400,
       },
       {
-        name: "D-4300",
-        path: "/product/f12",
-        img: DT400,
+        name: "Red-5",
+        path: "/product/red%205",
+        img: red5,
+      },
+      {
+        name: "Red-10",
+        path: "/product/red%2010",
+        img: Devilred10,
       },
       {
         name: "S18",

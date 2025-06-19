@@ -4,6 +4,7 @@ import BestSeller from "./Bestseller";
 import Categories from "./Cotegary";
 import Carousal from "./Carousal";
 import { Helmet } from "react-helmet";
+import Catelog from "./Catelog";
 
 function Hero() {
   return (
@@ -21,6 +22,7 @@ function Hero() {
       </Helmet>
       <Carousal />
       <Categories />
+      <Catelog />
       <BestSeller />
       {/* <LunchItems /> */}
       <Footer />

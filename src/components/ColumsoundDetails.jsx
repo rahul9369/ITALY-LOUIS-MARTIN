@@ -252,7 +252,7 @@ const products = [
     relatedProducts: [
       {
         name: "TIP-1002",
-        path: "/electronics/tip%202002",
+        path: "/electronics/tip%201002",
         img: TIP,
       },
       {
