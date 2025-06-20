@@ -1,12 +1,12 @@
 import React from "react";
-import LOUISMARTINCATALOGUE from "../assets/pdf/LOUISMARTINCATALOGUE.pdf";
+import LOUISMARTINCATALOGUE from "../assets/pdf/LouisMartinCatalogue.pdf";
 import pointsource from "../assets/pointsource.jpg";
 import logo from "../assets/Logo.png";
 
 function Catelog() {
   const handleOpenPDF = () => {
     // Open PDF in a new window with download button
-    const pdfWindow = window.open('', '_blank');
+    const pdfWindow = window.open("", "_blank");
     pdfWindow.document.write(`
       <html>
         <head>
@@ -90,12 +90,11 @@ function Catelog() {
   return (
     <div className="relative w-[95%] mx-auto h-[200px] sm:h-[250px] md:h-[300px] rounded-md overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: `url(${pointsource})`
-        }}
-      >
+        style={{
+          backgroundImage: `url(${pointsource})`,
+        }}>
         {/* Gradient Overlay for Fade Effect */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
       </div>
@@ -105,15 +104,14 @@ function Catelog() {
         <div className="max-w-2xl text-center text-white">
           {/* <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 md:mb-6">LOUIS MARTIN Catalog</h1> */}
           <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 md:mb-8 px-2">
-            Explore our exclusive collection of premium products. 
+            Explore our exclusive collection of premium products.
             {/* Our catalog showcases the finest quality and latest innovations 
             in our product line. */}
           </p>
           <button
             onClick={handleOpenPDF}
-            className="bg-yellow-500 cursor-pointer hover:bg-yellow-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-lg sm:text-xl font-semibold transition-all duration-300 transform hover:scale-105"
-          >
-            View Catalogue 
+            className="bg-yellow-500 cursor-pointer hover:bg-yellow-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-lg sm:text-xl font-semibold transition-all duration-300 transform hover:scale-105">
+            View Catalogue
           </button>
         </div>
       </div>
