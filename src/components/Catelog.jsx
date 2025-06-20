@@ -1,5 +1,5 @@
 import React from "react";
-import LOUISMARTINCATALOGUE from "../assets/pdf/LouisMartinCatalogue.pdf";
+import LOUISMARTINCATALOGUE from "../assets/pdf/LouisMartinCataloguegit.pdf";
 import pointsource from "../assets/pointsource.jpg";
 import logo from "../assets/Logo.png";
 
