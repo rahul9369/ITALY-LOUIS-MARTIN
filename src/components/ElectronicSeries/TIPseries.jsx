@@ -17,21 +17,22 @@ const products = [
   {
     img: TIP,
     title: "TIP Series",
-    model: "TIP 1602",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "1600W×2/8Ω   2600W×2/4Ω",
-    response: " ＞1000",
-    weight: "6.5kg",
-  },
-  {
-    img: TIP,
-    title: "TIP Series",
     model: "TIP 1302",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1300W×2/8Ω   2000W×2/4Ω",
     response: " ＞1000",
     weight: "6.8kg",
   },
+  {
+    img: TIP,
+    title: "TIP Series",
+    model: "TIP 1602",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1600W×2/8Ω   2600W×2/4Ω",
+    response: " ＞1000",
+    weight: "6.5kg",
+  },
+
   {
     img: TIP,
     title: "TIP Series",

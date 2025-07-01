@@ -776,10 +776,10 @@ const products = [
       "Short circuit protection",
       "Light weight and Portable",
     ],
-    Stereo_8_Ohm_2_Channel: "2000W×2 ",
-    Stereo_4_Ohm_2_Channel: "3200W×2",
-    Bridge_8_Ohm_1_Channel: " 6000W",
-    Bridge_4_Ohm_1_Channel: "7200W(Not recommended)",
+    Stereo_8_Ohm_2_Channel: "1300W×2 ",
+    Stereo_4_Ohm_2_Channel: "2000W×2",
+    Bridge_8_Ohm_1_Channel: " 3800W",
+    Bridge_4_Ohm_1_Channel: "4400W(Not recommended)",
     Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: "＞98dB (A-weighted)",
@@ -788,7 +788,7 @@ const products = [
     Input_Sensitivity: " 0.775V/1.44V",
     Input_Impedance: " 20KΩ/10KΩ",
     Size_mm: "482 x 360 x 88mm",
-    Weight: " 6.8",
+    Weight: " 6.5",
     pdf: TIPPDF,
     relatedProducts: [
       {
