@@ -6,11 +6,14 @@ import DS5PDF from "../assets/pdf/DS-5.pdf";
 import DS8PDF from "../assets/pdf/DS-8.pdf";
 import DS12PDF from "../assets/pdf/DS-12.pdf";
 import DS15PDF from "../assets/pdf/DS-15.pdf";
+import HwPDF from "../assets/pdf/Hw.pdf";
 import TIP from "../assets/TIPA.jpg";
 import TTA from "../assets/TTA.jpg";
 import S218 from "../assets/S218.png";
 import S18 from "../assets/S18.png";
 import DT400 from "../assets/DT400.jpg";
+import Hwfornt from "../assets/Hwfront.png";
+
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -206,6 +209,61 @@ const products = [
     Size_mm: "490 x 490 x 520mm (H x W x D)",
     Weight: "25/55.1",
     pdf: DS15PDF,
+    relatedProducts: [
+      {
+        name: "TIP-1002",
+        path: "/electronics/tip%202002",
+        img: TIP,
+      },
+      {
+        name: "TIP-1300",
+        path: "/product/red%2010",
+        img: TIP,
+      },
+      {
+        name: "S218",
+        path: "/product/f12",
+        img: S218,
+      },
+      {
+        name: "S18",
+        path: "/product/f15",
+        img: S18,
+      },
+    ],
+  },
+
+  {
+    img: Hwfornt,
+    title: "Plastic Speaker",
+    model: "Hw 6.5",
+    description:
+      " The HW 6.5 has one 6.5” Woofer with 1” HF. It is designed for the commercial applications; It has built in transformer taping for high impedance uses environment. Featuring a passive crossover, two-way full-range configuration, it is ideal for outdoor/indoor install market applications,including hospitality, education segment. Made of plastic & IP65 makes it use for weatherproof applications. The cabinet's design sleek & compact, look elegant and has good vocal clarity, fidelity, and minimal distortion without compromising transient response.",
+    application: [
+      " Outdoor applications ",
+      "  Background Music",
+      " Theme Park ",
+      "Classrooms",
+      " Terrace ",
+    ],
+    Type: "Two-way full range plastic IP 65 Weatherproof loudspeaker",
+    Frequency_Response: " 65 Hz – 18 kHz",
+    LF_Drivers: " 1x 6.5” (166 mm) LF Driver",
+    HF_Drivers: " 1 x 1” (25 mm) Silk dome HF Driver",
+    RMS_Power: " 40W / 80W @8 ohms ",
+    Program_Power: "80W @ 8 ohms",
+    Peak_Power: "160W",
+    Sensitivity: " 88 dB ",
+    Max_SPL: " 109 dB ",
+    Max_SPL_Peak: " 112 dB ",
+    Nominal_Impedance: " 8 Ohms",
+    Crossover_Mode: "Passive",
+    Dispersion: "90° (H) x 60° (V)",
+    Cabinet_Material: "Plastic materials",
+    IP_Rating: " IP 65 Weatherproof",
+    Size_mm: " 328 x 205 x 182mm (H x W x D)",
+    Weight: " 3.2 / 7.05",
+    pdf: HwPDF,
     relatedProducts: [
       {
         name: "TIP-1002",

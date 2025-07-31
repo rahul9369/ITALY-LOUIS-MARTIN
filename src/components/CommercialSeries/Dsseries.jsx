@@ -1,6 +1,7 @@
 import React from "react";
 import PlasticSpeaker from "../../assets/PlasticSpeaker.png";
 import DS12 from "../../assets/DS12.jpg";
+import Hwfornt from "../../assets/Hwfront.png";
 
 import Footer from "../Footer";
 import plasticDs5 from "../../assets/plasticDs5.png";
@@ -51,6 +52,18 @@ const products = [
     response: "65Hz-19kHz",
     spl: "132dB",
     weight: "25Kg",
+  },
+
+  {
+    img: Hwfornt,
+    title: "Plastic Speaker",
+    model: "HW 6.5",
+    description: " Two-way full range plastic IP 65 Weatherproof loudspeaker",
+    power: " 40W / 80W @8 ohms",
+    Sensitivity: " 88 dB",
+    response: " 65 Hz – 18 kHz",
+    spl: "109dB",
+    weight: "3.2Kg",
   },
 ];
 

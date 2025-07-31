@@ -5,13 +5,18 @@ import DT400 from "../assets/DT400.jpg";
 import PL4 from "../assets/PL4.jpg";
 import TTA from "../assets/TTA.jpg";
 import TIP from "../assets/TIPA.jpg";
-import DSeriesAmplifiers from "../assets/pdf/DSeriesAmplifiers.pdf";
-import PLSeriesAmplifiers from "../assets/pdf/PLSeriesAmplifiers.pdf";
-import TIPPDF from "../assets/pdf/TIPSeriesAmplifiers.pdf";
-import TTAPDF from "../assets/pdf/TTASeriesAmplifiers.pdf";
+import DSeriesAmplifiers from "../assets/pdf/Dseries.pdf";
+import PLSeriesAmplifiers from "../assets/pdf/PLseries.pdf";
+import TIPPDF from "../assets/pdf/TIPseries.pdf";
+import TTAPDF from "../assets/pdf/TTAseries.pdf";
+import Tip1002back from "../assets/Tip1002back.png";
+import Tip1002front from "../assets/Tip1002front.png";
+import Tip1002frontside from "../assets/Tip1002frontside.png";
+import Tip1002frontup from "../assets/Tip1002frontup.png";
 
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 const products = [
   {
     img: DT400,
@@ -28,7 +33,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: "250W×2 ",
     Stereo_4_Ohm_2_Channel: "400W×2 ",
     Bridge_8_Ohm_1_Channel: "700W×1 ",
-    Bridge_4_Ohm_1_Channel: "1000W×1 (Not recommended)  1200W×1",
+    Bridge_4_Ohm_1_Channel: " 575W",
     Frequency_Response: "20Hz – 20kHz (±0.5dB)",
     THD_N: "<0.05% @ 8Ω 1kHz",
     SNR: ">98dB (A-weighted)",
@@ -73,7 +78,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: " 350W×2 ",
     Stereo_4_Ohm_2_Channel: " 600W×2",
     Bridge_8_Ohm_1_Channel: " 1000W×1 ",
-    Bridge_4_Ohm_1_Channel: " 1000Wx1(Not recommended)1200Wx1",
+    Bridge_4_Ohm_1_Channel: "  690W",
     Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: "<0.05%@8Ω 1KHz",
     SNR: "＞98dB (A-weighted)",
@@ -117,7 +122,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: " 200W×4 ",
     Stereo_4_Ohm_2_Channel: "350W×4",
     Bridge_8_Ohm_1_Channel: "650W×2 ",
-    Bridge_4_Ohm_1_Channel: " 900Wx2(Not recommended)1150Wx2",
+    Bridge_4_Ohm_1_Channel: "  1035W",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: "<0.05%@8Ω 1KHz",
     SNR: "＞98dB (A-weighted)",
@@ -161,7 +166,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: "300W×4 ",
     Stereo_4_Ohm_2_Channel: "500W×4 ",
     Bridge_8_Ohm_1_Channel: "900W×2 ",
-    Bridge_4_Ohm_1_Channel: "900Wx2 (Not recommended)1150Wx2",
+    Bridge_4_Ohm_1_Channel: "1150W",
     Frequency_Response: "20Hz – 20kHz (±0.5dB)",
     THD_N: "<0.05% @ 8Ω 1kHz",
     SNR: ">98dB (A-weighted)",
@@ -205,7 +210,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: " 1000W×4 ",
     Stereo_4_Ohm_2_Channel: " 1600W×4 ",
     Bridge_8_Ohm_1_Channel: " 3000W×2 ",
-    Bridge_4_Ohm_1_Channel: "1000W×1 (Not recommended)  1200W×1",
+    Bridge_4_Ohm_1_Channel: " 1495W",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">98dB ",
@@ -249,7 +254,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: " 1500W×4 ",
     Stereo_4_Ohm_2_Channel: " 2500W×4 ",
     Bridge_8_Ohm_1_Channel: " 7500W×2 ",
-    Bridge_4_Ohm_1_Channel: "1000W×1 (Not recommended)  1200W×1",
+    Bridge_4_Ohm_1_Channel: " 1725W",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">98dB ",
@@ -293,7 +298,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: "350W×2 ",
     Stereo_4_Ohm_2_Channel: "465W×2 ",
     Bridge_8_Ohm_1_Channel: "930W×1 ",
-    Bridge_4_Ohm_1_Channel: "1116W (Not recommended)  ",
+    Bridge_4_Ohm_1_Channel: " 690W ",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">95dB (A-weighted)",
@@ -342,7 +347,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: "450W×2 ",
     Stereo_4_Ohm_2_Channel: "750W×2 ",
     Bridge_8_Ohm_1_Channel: "1460W ",
-    Bridge_4_Ohm_1_Channel: "1980W(Not recommended)",
+    Bridge_4_Ohm_1_Channel: " 920W",
     Frequency_Response: "  20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">95dB (A-weighted)",
@@ -391,7 +396,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: "650W×2 ",
     Stereo_4_Ohm_2_Channel: "930W×2 ",
     Bridge_8_Ohm_1_Channel: "1860W",
-    Bridge_4_Ohm_1_Channel: "2604W(Not recommended)",
+    Bridge_4_Ohm_1_Channel: " 1035W",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">95dB (A-weighted)",
@@ -441,7 +446,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: "850W×2 ",
     Stereo_4_Ohm_2_Channel: " 1250W×2 ",
     Bridge_8_Ohm_1_Channel: " 2500W ",
-    Bridge_4_Ohm_1_Channel: "3300W (Not recommended)  ",
+    Bridge_4_Ohm_1_Channel: " 1150W  ",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">95dB (A-weighted)",
@@ -491,7 +496,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: " 1000W×2 ",
     Stereo_4_Ohm_2_Channel: "1600W×2 ",
     Bridge_8_Ohm_1_Channel: "3200W ",
-    Bridge_4_Ohm_1_Channel: "3800W (Not recommended)  ",
+    Bridge_4_Ohm_1_Channel: " 1265W  ",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">95dB (A-weighted)",
@@ -541,7 +546,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: "1300W×2 ",
     Stereo_4_Ohm_2_Channel: "1950W×2 ",
     Bridge_8_Ohm_1_Channel: "3900W ",
-    Bridge_4_Ohm_1_Channel: "4600W (Not recommended)  ",
+    Bridge_4_Ohm_1_Channel: " 1380W  ",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">95dB (A-weighted)",
@@ -591,7 +596,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: " 450W×4 ",
     Stereo_4_Ohm_2_Channel: "750W×4 ",
     Bridge_8_Ohm_1_Channel: "(Not recommended)",
-    Bridge_4_Ohm_1_Channel: "(Not recommended)  ",
+    Bridge_4_Ohm_1_Channel: " 1380W  ",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">95dB (A-weighted)",
@@ -641,7 +646,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: " 650W×4 ",
     Stereo_4_Ohm_2_Channel: "930W×2 ",
     Bridge_8_Ohm_1_Channel: "(Not recommended) ",
-    Bridge_4_Ohm_1_Channel: "(Not recommended)  ",
+    Bridge_4_Ohm_1_Channel: " 1610W  ",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">95dB (A-weighted)",
@@ -677,7 +682,7 @@ const products = [
     ],
   },
   {
-    img: TIP,
+    img: [Tip1002front, Tip1002frontup, Tip1002frontside, Tip1002back],
     title: "TIP ",
     model: "TIP 1002",
     description:
@@ -691,7 +696,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: "1000W×2 ",
     Stereo_4_Ohm_2_Channel: "1600W×2 ",
     Bridge_8_Ohm_1_Channel: "3000W",
-    Bridge_4_Ohm_1_Channel: "3600W(Not recommended)",
+    Bridge_4_Ohm_1_Channel: "1150W",
     Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: "＞98dB (A-weighted)",
@@ -735,7 +740,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: "1600W×2 ",
     Stereo_4_Ohm_2_Channel: " 2600W× ",
     Bridge_8_Ohm_1_Channel: " 4800W",
-    Bridge_4_Ohm_1_Channel: "5600W(Not recommended)",
+    Bridge_4_Ohm_1_Channel: " 1610W",
     Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: "＞98dB (A-weighted)",
@@ -779,7 +784,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: "1300W×2 ",
     Stereo_4_Ohm_2_Channel: "2000W×2",
     Bridge_8_Ohm_1_Channel: " 3800W",
-    Bridge_4_Ohm_1_Channel: "4400W(Not recommended)",
+    Bridge_4_Ohm_1_Channel: " 1380W",
     Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: "＞98dB (A-weighted)",
@@ -823,7 +828,7 @@ const products = [
     Stereo_8_Ohm_2_Channel: "2400W×2 ",
     Stereo_4_Ohm_2_Channel: " 4000W×2 ",
     Bridge_8_Ohm_1_Channel: "8000W",
-    Bridge_4_Ohm_1_Channel: "9600W(Not recommended)",
+    Bridge_4_Ohm_1_Channel: " 1840W",
     Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: "＞98dB (A-weighted)",
@@ -875,6 +880,20 @@ const ProductDetail = () => {
     document.body.removeChild(link);
   };
 
+  const [currentImgIndex, setCurrentImgIndex] = useState(0);
+
+  const images = Array.isArray(product.img) ? product.img : [product.img];
+
+  const prevImage = () => {
+    setCurrentImgIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextImage = () => {
+    setCurrentImgIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       <Helmet>
@@ -891,11 +910,78 @@ const ProductDetail = () => {
       <div className="w-[90%] mx-auto p-6">
         {/* Product Image and Title */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <img
+          {/* <img
             src={product.img}
             alt={product.model}
             className="w-full h-auto md:h-[400px] lg:h-[400px] object-cover rounded-lg"
-          />
+          /> */}
+
+          <div>
+            <div className="relative ">
+              {/* Main Image */}
+              <img
+                src={images[currentImgIndex]}
+                alt={`${product.model} - ${currentImgIndex + 1}`}
+                className="w-full cursor-pointer h-auto md:h-[400px] object-cover rounded-lg"
+                onClick={() => setIsModalOpen(true)}
+              />
+
+              {/* Left Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={prevImage}
+                  className="absolute top-1/2 left-[-50px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronLeft className="text-black" size={40} />
+                </button>
+              )}
+
+              {/* Right Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={nextImage}
+                  className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronRight className="text-black" size={40} />
+                </button>
+              )}
+            </div>
+
+            {/* Thumbnail Images */}
+            {images.length > 1 && (
+              <div className="flex justify-center space-x-2 mt-4">
+                {images.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Thumbnail ${index + 1}`}
+                    onClick={() => setCurrentImgIndex(index)}
+                    className={`w-20 h-20 object-cover rounded-md cursor-pointer border ${
+                      index === currentImgIndex
+                        ? "border-blue-500"
+                        : "border-transparent"
+                    }`}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+
+          {isModalOpen && (
+            <div className="fixed w-full inset-0 bg-white bg-opacity-80 flex items-center justify-center z-50">
+              <div className="relative  w-full p-4">
+                <button
+                  onClick={() => setIsModalOpen(false)}
+                  className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400">
+                  &times;
+                </button>
+                <img
+                  src={images[currentImgIndex]}
+                  alt="Enlarged"
+                  className="w-full max-h-[90vh] object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          )}
+
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">{product.model}</h1>
             <div className="w-full ">
@@ -985,7 +1071,7 @@ const ProductDetail = () => {
                     value: product.Bridge_8_Ohm_1_Channel,
                   },
                   {
-                    label: "Bridge 4Ω/Channel",
+                    label: "Input Power Consumption",
                     value: product.Bridge_4_Ohm_1_Channel,
                   },
                   {

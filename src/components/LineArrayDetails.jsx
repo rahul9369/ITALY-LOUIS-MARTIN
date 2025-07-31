@@ -19,6 +19,11 @@ import Q60a from "../assets/pdf/Q60a.pdf";
 import Q70a from "../assets/pdf/Q70a.pdf";
 import Q80a from "../assets/pdf/Q80a.pdf";
 import { Helmet } from "react-helmet";
+import coxback1 from "../assets/coxback1.jpg";
+import coxback2 from "../assets/coxback2.jpg";
+import coxfront from "../assets/coxfront.jpg";
+import coxside from "../assets/coxside.jpg";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
   {
@@ -285,7 +290,8 @@ const products = [
     ],
   },
   {
-    img: Cox12,
+    // img: Cox12,
+    img: [coxfront, coxback1, coxback2, coxside],
     title: "Line array ",
     model: "Cox 12",
     description:
@@ -355,6 +361,20 @@ const ProductDetail = () => {
     document.body.removeChild(link);
   };
 
+  const [currentImgIndex, setCurrentImgIndex] = useState(0);
+
+  const images = Array.isArray(product.img) ? product.img : [product.img];
+
+  const prevImage = () => {
+    setCurrentImgIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextImage = () => {
+    setCurrentImgIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       <Helmet>
@@ -371,11 +391,77 @@ const ProductDetail = () => {
       <div className="w-[90%] mx-auto p-6">
         {/* Product Image and Title */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 space-x-6">
-          <img
+          {/* <img
             src={product.img}
             alt={product.model}
             className="w-full h-auto md:h-[400px] object-cover rounded-lg"
-          />
+          /> */}
+          <div>
+            <div className="relative ">
+              {/* Main Image */}
+              <img
+                src={images[currentImgIndex]}
+                alt={`${product.model} - ${currentImgIndex + 1}`}
+                className="w-full cursor-pointer h-auto md:h-[400px] object-cover rounded-lg"
+                onClick={() => setIsModalOpen(true)}
+              />
+
+              {/* Left Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={prevImage}
+                  className="absolute top-1/2 left-[-50px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronLeft className="text-black" size={40} />
+                </button>
+              )}
+
+              {/* Right Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={nextImage}
+                  className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronRight className="text-black" size={40} />
+                </button>
+              )}
+            </div>
+
+            {/* Thumbnail Images */}
+            {images.length > 1 && (
+              <div className="flex justify-center space-x-2 mt-4">
+                {images.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Thumbnail ${index + 1}`}
+                    onClick={() => setCurrentImgIndex(index)}
+                    className={`w-20 h-20 object-cover rounded-md cursor-pointer border ${
+                      index === currentImgIndex
+                        ? "border-blue-500"
+                        : "border-transparent"
+                    }`}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+
+          {isModalOpen && (
+            <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+              <div className="relative  w-full p-4">
+                <button
+                  onClick={() => setIsModalOpen(false)}
+                  className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400">
+                  &times;
+                </button>
+                <img
+                  src={images[currentImgIndex]}
+                  alt="Enlarged"
+                  className="w-full max-h-[90vh] object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          )}
+
           <div className="">
             <h1 className="text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}

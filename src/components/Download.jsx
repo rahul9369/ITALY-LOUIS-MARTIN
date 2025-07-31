@@ -29,10 +29,10 @@ import KS18pdf from "../assets/pdf/ks18a.pdf";
 import KS218pdf from "../assets/pdf/KS218a.pdf";
 import S18pdf from "../assets/pdf/S18a.pdf";
 import S218pdf from "../assets/pdf/S218a.pdf";
-import PLpdf from "../assets/pdf/PLSeriesAmplifiers.pdf";
-import TIPpdf from "../assets/pdf/TIPSeriesAmplifiers.pdf";
-import TTApdf from "../assets/pdf/TTASeriesAmplifiers.pdf";
-import Dpdf from "../assets/pdf/DSeriesAmplifiers.pdf";
+import PLpdf from "../assets/pdf/PLseries.pdf";
+import TIPpdf from "../assets/pdf/TIPseries.pdf";
+import TTApdf from "../assets/pdf/TTAseries.pdf";
+import Dpdf from "../assets/pdf/Dseries.pdf";
 
 import { DownloadIcon } from "lucide-react";
 import { Helmet } from "react-helmet";
