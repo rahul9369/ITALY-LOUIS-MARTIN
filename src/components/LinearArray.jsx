@@ -60,10 +60,10 @@ const products = [
     title: "Q Series",
     model: "Q 80",
     description: `2x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
-    power: "1000W/4000W（Passive）; LF:700W/2800W, HF:300W/1200W (Bi-Amp)",
+    power: "1000W/4000W（Passive）; LF:850W/3400W, HF:150W/600W (Bi-Amp)",
     response: "60Hz-20kHz",
     Sensitivity: "103dB",
-    spl: "136dB（Passive/Bi-Amp)",
+    spl: " 136 dB / 139 dB",
     weight: "36.8Kg",
   },
   {
