@@ -241,7 +241,7 @@ const products = [
     title: "Line array ",
     model: "Q 80",
     description:
-      " The Q-80 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features two 12-inch neodymium drivers and two 1.75-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
+      " The Q-80 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features two 12-inch neodymium drivers and two 3-inch high frequency compression drivers, ensuring exceptional sound quality and performance.",
     application: [
       " Outdoor Events",
       "Live Performance",
