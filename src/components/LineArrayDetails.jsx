@@ -19,10 +19,14 @@ import Q60a from "../assets/pdf/Q60a.pdf";
 import Q70a from "../assets/pdf/Q70a.pdf";
 import Q80a from "../assets/pdf/Q80a.pdf";
 import { Helmet } from "react-helmet";
-import coxback1 from "../assets/coxback1.jpg";
-import coxback2 from "../assets/coxback2.jpg";
-import coxfront from "../assets/coxfront.jpg";
-import coxside from "../assets/coxside.jpg";
+import coxb from "../assets/coximg/coxb.jpg";
+import coxf from "../assets/coximg/coxf.jpg";
+import coxs from "../assets/coximg/coxs.jpg";
+// import cox12 from "../assets/coximg/coxunder.jpg";
+// import coxback1 from "../assets/coxback1.jpg";
+// import coxback2 from "../assets/coxback2.jpg";
+// import coxfront from "../assets/coxfront.jpg";
+// import coxside from "../assets/coxside.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
@@ -291,7 +295,7 @@ const products = [
   },
   {
     // img: Cox12,
-    img: [coxfront, coxback1, coxback2, coxside],
+    img: [coxf, coxb, coxs],
     title: "Line array ",
     model: "Cox 12",
     description:
@@ -434,7 +438,7 @@ const ProductDetail = () => {
                     src={img}
                     alt={`Thumbnail ${index + 1}`}
                     onClick={() => setCurrentImgIndex(index)}
-                    className={`w-20 h-20 object-cover rounded-md cursor-pointer border ${
+                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border ${
                       index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"
