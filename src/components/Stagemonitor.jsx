@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import PlasticSpeaker from "../assets/PlasticSpeaker.png";
-import DS12 from "../assets/DS12.jpg";
+
 import Hwfornt from "../assets/Hwfront.png";
 
 import Footer from "../components/Footer";
 import plasticDs5 from "../assets/plasticDs5.png";
-import Ds8 from "../assets/Ds8.png";
+
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 //newimg//
