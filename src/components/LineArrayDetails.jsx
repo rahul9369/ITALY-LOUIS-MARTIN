@@ -1,12 +1,8 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
-import Linear from "../assets/Famousmartin1.jpg";
+
 import Q50 from "../assets/Q50.jpg";
-import Q60 from "../assets/Q60.jpg";
-import Q70 from "../assets/Q70.jpg";
-import Q80 from "../assets/Q80.jpg";
-import Cox12 from "../assets/cox12.jpg";
 import TIP from "../assets/TIPA.jpg";
 import S218 from "../assets/S218.png";
 import S18 from "../assets/S18.png";

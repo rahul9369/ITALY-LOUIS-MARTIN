@@ -1,9 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import K302 from "../assets/k302.png";
 import K304 from "../assets/K304.png";
-import K306 from "../assets/k306.png";
-import K308 from "../assets/K308.png";
-import K312 from "../assets/K312.png";
 import DT400 from "../assets/DT400.jpg";
 import TIP from "../assets/TIPA.jpg";
 import S18 from "../assets/S18.png";
