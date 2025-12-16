@@ -4,14 +4,15 @@ import Footer from "../components/Footer";
 
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import coxf from "../assets/coximg/coxf.jpg";
+
 
 //new img//
-import  famouf from "../assets/fam/famouf.jpg";
+import famouf  from "../assets/fam/famouf.jpg";
 import qfront from "../assets/q50/qfront.jpg";
 import q60front from "../assets/q60/q60front.jpg";
 import q70front from "../assets/q70/q70front.jpg";
 import q80f from "../assets/q80/q80f.jpg";
+import coxf from "../assets/coximg/coxf.jpg";
 
 const products = [
   {
