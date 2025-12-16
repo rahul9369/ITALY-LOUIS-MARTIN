@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import Subwoofer from "../assets/Subwoofer.png";
-import KS18 from "../assets/ks18.jpg";
+
 import Footer from "../components/Footer";
-import S218 from "../assets/S218.png";
-import S18 from "../assets/S18.png";
-import subwooferImg from "../assets/subwoofer218.png";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 //newimg//
