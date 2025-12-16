@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 //newimg//
-import dsf5 from "../assets/d5/dsf5.jpg";
+import dsf5 from "../assets/ds5/dsf5.jpg";
 import dsf8 from "../assets/ds8/dsf8.jpg";
 import dsf12 from "../assets/ds12/dsf12.jpg";
 import dsf15 from "../assets/ds15/dsf15.jpg";
