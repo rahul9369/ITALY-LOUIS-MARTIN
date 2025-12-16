@@ -1,12 +1,7 @@
 import React, { useEffect } from "react";
 import Linearray from "../assets/Linerarray.jpg";
 import Footer from "../components/Footer";
-import Linear from "../assets/Famousmartin1.jpg";
-import Q50 from "../assets/Q50.jpg";
-import Q60 from "../assets/Q60.jpg";
-import Q70 from "../assets/Q70.jpg";
-import Q80 from "../assets/Q80.jpg";
-import Cox12 from "../assets/cox12.jpg";
+
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import coxf from "../assets/coximg/coxf.jpg";
