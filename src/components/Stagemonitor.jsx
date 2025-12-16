@@ -4,7 +4,7 @@ import PlasticSpeaker from "../assets/PlasticSpeaker.png";
 import Hwfornt from "../assets/Hwfront.png";
 
 import Footer from "../components/Footer";
-import plasticDs5 from "../assets/plasticDs5.png";
+
 
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
