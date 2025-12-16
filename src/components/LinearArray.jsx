@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 import coxf from "../assets/coximg/coxf.jpg";
 
 //new img//
-import famouf from "../assets/fam/famouf.jpg";
+import  famouf from "../assets/fam/famouf.jpg";
 import qfront from "../assets/q50/qfront.jpg";
 import q60front from "../assets/q60/q60front.jpg";
 import q70front from "../assets/q70/q70front.jpg";
