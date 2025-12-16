@@ -26,9 +26,71 @@ import F15PDF from "../assets/pdf/F15.pdf";
 import F10 from "../assets/pdf/F10.pdf";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import redfront from "../assets/red10/redfront.jpg";
+import redback from "../assets/red10/redback.jpg";
+import redn from "../assets/red10/redn.jpg";
+import redside from "../assets/red10/redside.jpg";
+import redu from "../assets/red10/redu.jpg";
+import redb5 from "../assets/red6/redb5.jpg";
+import redu5 from "../assets/red6/redu5.jpg";
+import redf5 from  "../assets/red6/redf5.jpg";
+import reds5 from "../assets/red6/reds5.jpg";
+import redfront5 from "../assets/red5/redfront5.jpg";
+import redside5 from "../assets/red5/redside5.jpg";
+import redds5 from "../assets/red5/redds5.jpg";
+import red5open from "../assets/red5/red5open.jpg";
+import redback5 from "../assets/red5/redback5.jpg";
+import redff9 from "../assets/red9/redff9.jpg";
+import red94 from "../assets/red9/red94.jpg";
+import reds9 from "../assets/red9/reds9.jpg";
+import redop9 from "../assets/red9/redop9.jpg";
+import redback9 from "../assets/red9/redback9.jpg";
+import redf12 from "../assets/red12/redf12.jpg";
+import redop12 from "../assets/red12/redop12.jpg";
+import red412 from "../assets/red12/red412.jpg";
+import redbb12 from "../assets/red12/redbb12.jpg";
+import reds12 from "../assets/red12/reds12.jpg";
+import ffront8 from "../assets/F8/ffront8.jpg";
+import fopen8 from "../assets/F8/fopen8.jpg";
+import f458 from "../assets/F8/f458.jpg";
+import fs8 from "../assets/F8/fs8.jpg";
+import ftop8 from "../assets/F8/ftop8.jpg";
+import fup8 from "../assets/F8/fup8.jpg";
+import ff10 from "../assets/F10/ff10.jpg";
+import fopen10 from "../assets/F10/fopen10.jpg";
+import fs10 from "../assets/F10/fs10.jpg";
+import fss10 from "../assets/F10/fss10.jpg";
+import f410 from "../assets/F10/f410.jpg";
+import fni10 from "../assets/F10/fni10.jpg";
+import fdoun10 from "../assets/F10/fdoun10.jpg";
+
+//f12 images//
+import ff12 from "../assets/F12/ff12.jpg";
+import fb12 from "../assets/F12/fb12.jpg";
+import f412 from "../assets/F12/f412.jpg";
+import fd12 from "../assets/F12/fd12.jpg";
+import fopen12 from "../assets/F12/fopen12.jpg";
+import fs12 from "../assets/F12/fs12.jpg";
+import ftop12 from "../assets/F12/ftop12.jpg";
+
+//f15 images//
+
+import ff15 from "../assets/f15/ff15.jpg";
+import fb15 from "../assets/f15/fb15.jpg";
+import fd15 from "../assets/f15/fd15.jpg";
+import fopen15 from "../assets/f15/fopen15.jpg";
+import fs15 from "../assets/f15/fs15.jpg";
+import ftop15 from "../assets/f15/ftop15.jpg";
+import f415 from "../assets/f15/f415.jpg";
+
+
+
+
+
 const products = [
   {
-    img: Devilred10,
+    img: [redfront,redback,redn,redside, redu],
     title: "Point Source ",
     model: "Red 10",
     description:
@@ -84,7 +146,7 @@ const products = [
     ],
   },
   {
-    img: red6,
+    img: [redb5,redu5,redf5,reds5],
     title: "Point Source",
     model: "Red 5.5",
     description:
@@ -138,7 +200,7 @@ const products = [
     ],
   },
   {
-    img: red5,
+    img: [redfront5,redds5,red5open,redside5,,redback5],
     title: "Point Source ",
     model: "Red 5",
     description:
@@ -191,7 +253,7 @@ const products = [
     ],
   },
   {
-    img: red9,
+    img: [redff9,red94,reds9,redop9,redback9],
     title: "Point Source ",
     model: "Red 9",
     description:
@@ -245,7 +307,7 @@ const products = [
     ],
   },
   {
-    img: red12,
+    img: [redf12,red412,reds12,redop12,redbb12],
     title: "Point Source ",
     model: "Red 12",
     description:
@@ -300,7 +362,7 @@ const products = [
   },
 
   {
-    img: F8IMG,
+    img: [ffront8,fopen8,f458,fs8,ftop8,fup8],
     title: "Point Source ",
     model: "F8",
     description:
@@ -352,7 +414,7 @@ const products = [
     ],
   },
   {
-    img: F10IMG,
+    img: [ff10,fopen10,fs10,fss10,f410,fdoun10,fni10],
     title: "Point Source ",
     model: "F10",
     description:
@@ -405,7 +467,7 @@ const products = [
     ],
   },
   {
-    img: F12IMG,
+    img: [ff12,fb12,f412,fd12,fopen12,fs12,ftop12],
     title: "Point Source ",
     model: "F12",
     description:
@@ -459,7 +521,7 @@ const products = [
     ],
   },
   {
-    img: F15IMG,
+    img: [ff15,fb15,f415,fd15,fopen15,fs15,ftop15],
     title: "Point Source ",
     model: "F15",
     description:
@@ -534,6 +596,19 @@ const ProductDetail = () => {
     link.click();
     document.body.removeChild(link);
   };
+  const [currentImgIndex, setCurrentImgIndex] = useState(0);
+
+  const images = Array.isArray(product.img) ? product.img : [product.img];
+
+  const prevImage = () => {
+    setCurrentImgIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextImage = () => {
+    setCurrentImgIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <>
@@ -551,11 +626,78 @@ const ProductDetail = () => {
       <div className="w-[90%] mx-auto p-6">
         {/* Product Image and Title */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <img
+          {/* <img
             src={product.img}
             alt={product.model}
             className="w-full h-auto md:h-[400px] object-cover rounded-lg"
-          />
+          /> */}
+          <div> 
+                    <div className="relative ">
+              {/* Main Image */}
+              <img
+                src={images[currentImgIndex]}
+                alt={`${product.model} - ${currentImgIndex + 1}`}
+               className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+                 loading="lazy"
+                onClick={() => setIsModalOpen(true)}
+              />
+
+              {/* Left Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={prevImage}
+                  className="absolute top-1/2 left-[-50px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronLeft className="text-black" size={40} />
+                </button>
+              )}
+
+              {/* Right Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={nextImage}
+                  className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronRight className="text-black" size={40} />
+                </button>
+              )}
+            </div>
+
+            {/* Thumbnail Images */}
+            {images.length > 1 && (
+              <div className="flex justify-center space-x-2 mt-4">
+                {images.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Thumbnail ${index + 1}`}
+                    onClick={() => setCurrentImgIndex(index)}
+                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border ${
+                      index === currentImgIndex
+                        ? "border-blue-500"
+                        : "border-transparent"
+                    }`}
+                  />
+                ))}
+              </div>
+            )}
+            </div>
+
+          {isModalOpen && (
+            <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+              <div className="relative  w-full p-4">
+                <button
+                  onClick={() => setIsModalOpen(false)}
+                  className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400">
+                  &times;
+                </button>
+                <img
+                  src={images[currentImgIndex]}
+                  alt="Enlarged"
+                  className="w-full max-h-[90vh] object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          )}
+
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}

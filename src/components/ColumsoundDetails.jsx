@@ -14,11 +14,39 @@ import K304PDF from "../assets/pdf/K304.pdf";
 import K306PDF from "../assets/pdf/K306.pdf";
 import K308PDF from "../assets/pdf/K308.pdf";
 import K312PDF from "../assets/pdf/K312.pdf";
+
+//k302 image //
+import kff302 from "../assets/k302/kff302.jpg";
+import kb302 from "../assets/k302/kb302.jpg";
+import ks302 from "../assets/k302/ks302.jpg";
+import kt302 from "../assets/k302/kt302.jpg";
+//k304//
+import kf304 from "../assets/k304/kf304.jpg";
+import kb304 from "../assets/k304/kb304.jpg";
+import ks304 from "../assets/k304/ks304.jpg";
+import ktop304 from "../assets/k304/ktop304.jpg";
+//k306//
+import kf306 from "../assets/k306/kf306.jpg";
+import kb306 from "../assets/k306/kb306.jpg";
+import ks306 from "../assets/k306/ks306.jpg";
+import ktop306 from "../assets/k306/ktop306.jpg";
+//k308//
+import kf308 from "../assets/k308/kf308.jpg";
+import kb308 from "../assets/k308/kb308.jpg";
+import ks308 from "../assets/k308/ks308.jpg";
+import ktop308 from "../assets/k308/ktop308.jpg";
+//k312//
+import kf312 from "../assets/k312/kf312.jpg";
+import kb312 from "../assets/k312/kb312.jpg";
+import ks312 from "../assets/k312/ks312.jpg";
+import ktop312 from "../assets/k312/ktop312.jpg"; 
+
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 const products = [
   {
-    img: K302,
+    img: [kff302, kb302, ks302, kt302 ],
     title: "Column Speaker",
     model: "K302",
     description:
@@ -29,7 +57,7 @@ const products = [
       "Church",
       "Classrooms",
     ],
-    Type: "Full range column speaker",
+    Type: "Full range k302 speaker",
     Frequency_Response: "150 Hz – 18 kHz",
     Drivers: "2x 1.75” (44 mm) Full range driver",
     RMS_Power: "40W",
@@ -63,13 +91,13 @@ const products = [
       },
       {
         name: "K304",
-        path: "/column/k304",
+        path: "/k302/k304",
         img: K304,
       },
     ],
   },
   {
-    img: K304,
+    img: [ kf304, kb304, ks304, ktop304],
     title: "Column Speaker",
     model: "K304",
     description:
@@ -80,7 +108,7 @@ const products = [
       "Church",
       "Classrooms",
     ],
-    Type: "Full range column speaker",
+    Type: "Full range k302 speaker",
     Frequency_Response: "150 Hz – 18 kHz",
     Drivers: "4 x 1.75” (44 mm) Full range driver",
     RMS_Power: "80W",
@@ -114,13 +142,13 @@ const products = [
       },
       {
         name: "K302",
-        path: "/column/k302",
+        path: "/k302/k302",
         img: K302,
       },
     ],
   },
   {
-    img: K306,
+    img: [kf306, kb306, ks306, ktop306],
     title: "Column Speaker",
     model: "K306",
     description:
@@ -131,7 +159,7 @@ const products = [
       "Church",
       "Classrooms",
     ],
-    Type: "Full range column speaker",
+    Type: "Full range k302 speaker",
     Frequency_Response: "150 Hz – 18 kHz",
     Drivers: "6 x 1.75” (44 mm) Full range driver",
     RMS_Power: "120W",
@@ -165,13 +193,13 @@ const products = [
       },
       {
         name: "K302",
-        path: "/column/k302",
+        path: "/k302/k302",
         img: K302,
       },
     ],
   },
   {
-    img: K308,
+    img: [kf308, kb308, ks308, ktop308],
     title: "Column Speaker",
     model: "K308",
     description:
@@ -182,7 +210,7 @@ const products = [
       "Church",
       "Classrooms",
     ],
-    Type: "Full range column speaker",
+    Type: "Full range k302 speaker",
     Frequency_Response: "150 Hz – 18 kHz",
     Drivers: "8 x 1.75” (44 mm) Full range driver",
     RMS_Power: "160W",
@@ -216,13 +244,13 @@ const products = [
       },
       {
         name: "K304",
-        path: "/column/k304",
+        path: "/k302/k304",
         img: K304,
       },
     ],
   },
   {
-    img: K312,
+    img: [kf312, kb312, ks312, ktop312],
     title: "Column Speaker",
     model: "K312",
     description:
@@ -233,7 +261,7 @@ const products = [
       "Church",
       "Classrooms",
     ],
-    Type: "Full range column speaker",
+    Type: "Full range k302 speaker",
     Frequency_Response: "150 Hz – 18 kHz",
     Drivers: "12 x 1.75” (44 mm) Full range driver",
     RMS_Power: "220W",
@@ -267,7 +295,7 @@ const products = [
       },
       {
         name: "K304",
-        path: "/column/k304",
+        path: "/k302/k304",
         img: K304,
       },
     ],
@@ -296,6 +324,19 @@ const ProductDetail = () => {
     link.click();
     document.body.removeChild(link);
   };
+  const [currentImgIndex, setCurrentImgIndex] = useState(0);
+
+  const images = Array.isArray(product.img) ? product.img : [product.img];
+
+  const prevImage = () => {
+    setCurrentImgIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextImage = () => {
+    setCurrentImgIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <>
@@ -312,12 +353,83 @@ const ProductDetail = () => {
       </Helmet>
       <div className="w-[90%] mx-auto p-6">
         {/* Product Image and Title */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <img
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* <img
             src={product.img}
             alt={product.model}
-            className="w-full h-auto md:h-[400px] object-fit rounded-lg"
-          />
+            className="w-full h-auto md:h-[400px] object-cover rounded-lg"
+          /> */}
+          <div> 
+                    <div className="relative ">
+              {/* Main Image */}
+              <img
+                src={images[currentImgIndex]}
+                alt={`${product.model} - ${currentImgIndex + 1}`}
+                className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+                 loading="lazy"
+                onClick={() => setIsModalOpen(true)}
+              />
+
+              {/* Left Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={prevImage}
+                  className="absolute top-1/2 left-[-50px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronLeft className="text-black" size={40} />
+                </button>
+              )}
+
+              {/* Right Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={nextImage}
+                  className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronRight className="text-black" size={40} />
+                </button>
+              )}
+            </div>
+
+            {/* Thumbnail Images */}
+            {images.length > 1 && (
+              <div className="flex justify-center space-x-6 mt-4">
+                {images.map((img, index) => (
+                  
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Thumbnail ${index + 1}`}
+                    onClick={() => setCurrentImgIndex(index)}
+                    className={`w-28 h-30 object-cover rounded-md cursor-pointer border ${
+                      index === currentImgIndex
+                        ? "border-blue-500"
+                        : "border-transparent"
+                    }`}
+                  />
+                ))}
+              </div>
+              
+            )}
+            </div>
+
+          {isModalOpen && (
+            <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+              <div className="relative  w-full p-4">
+                <button
+                  onClick={() => setIsModalOpen(false)}
+                  className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400">
+                  &times;
+                </button>
+                <img
+                  src={images[currentImgIndex]}
+                  alt="Enlarged"
+                  className="w-full max-h-[90vh] object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          )}
+
+          <div>
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}
@@ -339,7 +451,7 @@ const ProductDetail = () => {
             </div>
           </div>
         </div>
-
+        </div>
         {/* Tabs */}
         <div className="mt-6 border-b border-gray-300 flex flex-wrap">
           {["Specifications", "Downloads"].map((tab) => (

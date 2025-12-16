@@ -7,11 +7,17 @@ import DT400 from "../assets/DT400.jpg";
 import PL4 from "../assets/PL4.jpg";
 import TTA from "../assets/TTA.jpg";
 import TIP from "../assets/TIPA.jpg";
+import plf4 from "../assets/pl4/plf4.jpg";
+import df200 from "../assets/d200/df200.jpg";
+import fd4200 from "../assets/d4200/fd4200.jpg";
+import fd4300 from "../assets/d4300/fd4300.jpg";
 import { Helmet } from "react-helmet";
+import ft300 from "../assets/tta300/ft300.jpg";
+import ft1002 from "../assets/tip1002/ft1002.jpg";
 
 const products = [
   {
-    img: PL4,
+    img: plf4,
     title: "PL Series",
     model: "PL 4.1",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -20,7 +26,7 @@ const products = [
     weight: "10kg",
   },
   {
-    img: PL4,
+    img: plf4,
     title: "PL Series",
     model: "PL 4.5",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -29,7 +35,7 @@ const products = [
     weight: "11kg",
   },
   {
-    img: DT400,
+    img: df200,
     title: "D Series",
     model: "D 200",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -38,7 +44,7 @@ const products = [
     weight: "2.5kg",
   },
   {
-    img: DT400,
+    img: df200,
     title: "D Series",
     model: "D 300",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -47,7 +53,7 @@ const products = [
     weight: "2.5kg",
   },
   {
-    img: DT400,
+    img: fd4200,
     title: "D Series",
     model: "D 4200",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -56,7 +62,7 @@ const products = [
     weight: "4.8kg",
   },
   {
-    img: DT400,
+    img: fd4300,
     title: "D Series",
     model: "D 4300",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -66,7 +72,7 @@ const products = [
   },
 
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 300",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -75,7 +81,7 @@ const products = [
     weight: "15kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 500",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -84,7 +90,7 @@ const products = [
     weight: "17kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 600",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -93,7 +99,7 @@ const products = [
     weight: "18kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 800",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -102,7 +108,7 @@ const products = [
     weight: "20kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 1000",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -111,7 +117,7 @@ const products = [
     weight: "24kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 1300",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -120,7 +126,7 @@ const products = [
     weight: "26kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 450",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -129,7 +135,7 @@ const products = [
     weight: "23kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 460",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -139,7 +145,7 @@ const products = [
   },
 
   {
-    img: TIP,
+    img: ft1002,
     title: "TIP Series",
     model: "TIP 1002",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -148,7 +154,7 @@ const products = [
     weight: "5.8kg",
   },
   {
-    img: TIP,
+    img: ft1002,
     title: "TIP Series",
     model: "TIP 1302",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -157,7 +163,7 @@ const products = [
     weight: "6.8kg",
   },
   {
-    img: TIP,
+    img: ft1002,
     title: "TIP Series",
     model: "TIP 1602",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -167,7 +173,7 @@ const products = [
   },
 
   {
-    img: TIP,
+    img: ft1002,
     title: "TIP Series",
     model: "TIP 2402",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -187,7 +193,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+        className="w-full h-72 object-contain cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
             `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`

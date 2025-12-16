@@ -7,10 +7,15 @@ import S18 from "../assets/S18.png";
 import subwooferImg from "../assets/subwoofer218.png";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+//newimg//
+import ksf18 from "../assets/ks18/ksf18.jpg";
+import ksf218 from "../assets/ks218/ksf218.jpg";
+import sf18 from "../assets/s18/sf18.jpg";
+import sf218 from "../assets/s218/sf218.jpg";
 
 const products = [
   {
-    img: KS18,
+    img: ksf18,
     title: "Subwoofer",
     model: "KS18",
     description: '1x18" High Power Passive Subwoofer',
@@ -21,7 +26,7 @@ const products = [
     weight: "58Kg",
   },
   {
-    img: subwooferImg,
+    img: ksf218,
     title: "Subwoofer",
     model: "KS218",
     description: '2x18" High Power Passive Subwoofer',
@@ -32,7 +37,7 @@ const products = [
     weight: "88Kg",
   },
   {
-    img: S18,
+    img: sf18,
     title: "Subwoofer",
     model: "S18",
     description: '1x18" High Power Passive Subwoofer',
@@ -43,7 +48,7 @@ const products = [
     weight: "45Kg",
   },
   {
-    img: S218,
+    img: sf218,
     title: "Subwoofer",
     model: "S218",
     description: '2x18" High Power Passive Subwoofer',
@@ -65,7 +70,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 cursor-pointer object-cover rounded-lg"
+        className="w-full h-72 object-contain cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
             `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`

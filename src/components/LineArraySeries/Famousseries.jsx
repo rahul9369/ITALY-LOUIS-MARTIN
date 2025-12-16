@@ -2,12 +2,13 @@ import React from "react";
 import Linearray from "../../assets/Linerarray.jpg";
 import Footer from "../Footer";
 import Linear from "../../assets/Famousmartin1.jpg";
+import famouf from "../../assets/fam/famouf.jpg";
 
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: Linear,
+    img: famouf,
     title: "Famous Series",
     model: "Famous 210",
     description: `2x10" Two-way Bi-amp Externally Amplified Line Array Speaker System`,
@@ -26,7 +27,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 cursor-pointer object-cover rounded-lg"
+        className="w-full h-72 object-contain cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
             `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`

@@ -13,13 +13,41 @@ import S218 from "../assets/S218.png";
 import S18 from "../assets/S18.png";
 import DT400 from "../assets/DT400.jpg";
 import Hwfornt from "../assets/Hwfront.png";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+//ds5//
+import dss5 from "../assets/ds5/dss5.jpg";
+import dsb5 from "../assets/ds5/dsb5.jpg";
+import dsf5 from "../assets/ds5/dsf5.jpg";
+import dsup5 from "../assets/ds5/dsup5.jpg";
+import dsopen5 from "../assets/ds5/dsopen5.jpg";
+//ds8//
+import dsf8 from "../assets/ds8/dsf8.jpg";
+import dsb8 from "../assets/ds8/dsb8.jpg";
+import dsop8 from "../assets/ds8/dsop8.jpg";
+import dss8 from "../assets/ds8/dss8.jpg";
+import dsup8 from "../assets/ds8/dsup8.jpg";
+//ds12//
+import dsf12 from "../assets/ds12/dsf12.jpg";
+import dsb12 from "../assets/ds12/dsb12.jpg";
+import dsop12 from "../assets/ds12/dsop12.jpg";
+import dss12 from "../assets/ds12/dss12.jpg";
+import dsup12 from "../assets/ds12/dsup12.jpg";
+import ds412 from "../assets/ds12/ds412.jpg";
+//ds15//
+import dsf15 from "../assets/ds15/dsf15.jpg";
+import dsb15 from "../assets/ds15/dsb15.jpg";
+import dsop15 from "../assets/ds15/dsop15.jpg";
+import dss15 from "../assets/ds15/dss15.jpg";
+import dsup15 from "../assets/ds15/dsup15.jpg";
+import ds415 from "../assets/ds15/ds415.jpg";
+
 
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 const products = [
   {
-    img: PlasticSpeaker,
+    img: [dss5, dsb5, dsf5, dsup5, dsopen5],
     title: "Plastic Speaker",
     model: "DS5",
     description:
@@ -73,7 +101,7 @@ const products = [
     ],
   },
   {
-    img: Ds8,
+    img: [dsf8, dsb8, dsop8, dss8, dsup8],  
     title: "Plastic Speaker",
     model: "DS8",
     description:
@@ -127,7 +155,7 @@ const products = [
     ],
   },
   {
-    img: DS12,
+    img: [dsf12, dsb12, ds412, dss12,dsop12 ,dsup12],
     title: "Plastic Speaker",
     model: "DS12",
     description:
@@ -180,7 +208,7 @@ const products = [
     ],
   },
   {
-    img: DS12,
+    img: [dsf15, dsop15,dsb15, ds415, dss15, dsup15],
     title: "Plastic Speaker",
     model: "DS15",
     description:
@@ -309,7 +337,19 @@ const ProductDetail = () => {
     link.click();
     document.body.removeChild(link);
   };
+  const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
+  const images = Array.isArray(product.img) ? product.img : [product.img];
+
+  const prevImage = () => {
+    setCurrentImgIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextImage = () => {
+    setCurrentImgIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <Helmet>
@@ -326,11 +366,77 @@ const ProductDetail = () => {
       <div className="w-[90%] mx-auto p-6">
         {/* Product Image and Title */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <img
+          {/* <img
             src={product.img}
             alt={product.model}
             className="w-full h-auto md:h-[400px] lg:h-[400px] object-cover rounded-lg"
-          />
+          /> */}
+          <div> 
+                    <div className="relative ">
+              {/* Main Image */}
+              <img
+                src={images[currentImgIndex]}
+                alt={`${product.model} - ${currentImgIndex + 1}`}
+                className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+                 loading="lazy"
+                onClick={() => setIsModalOpen(true)}
+              />
+
+              {/* Left Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={prevImage}
+                  className="absolute top-1/2 left-[-50px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronLeft className="text-black" size={40} />
+                </button>
+              )}
+
+              {/* Right Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={nextImage}
+                  className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronRight className="text-black" size={40} />
+                </button>
+              )}
+            </div>
+
+            {/* Thumbnail Images */}
+            {images.length > 1 && (
+              <div className="flex justify-center space-x-2 mt-4">
+                {images.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Thumbnail ${index + 1}`}
+                    onClick={() => setCurrentImgIndex(index)}
+                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border ${
+                      index === currentImgIndex
+                        ? "border-blue-500"
+                        : "border-transparent"
+                    }`}
+                  />
+                ))}
+              </div>
+            )}
+            </div>
+
+          {isModalOpen && (
+            <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+              <div className="relative  w-full p-4">
+                <button
+                  onClick={() => setIsModalOpen(false)}
+                  className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400">
+                  &times;
+                </button>
+                <img
+                  src={images[currentImgIndex]}
+                  alt="Enlarged"
+                  className="w-full max-h-[90vh] object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          )}
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}

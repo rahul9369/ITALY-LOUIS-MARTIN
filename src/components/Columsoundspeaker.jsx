@@ -6,12 +6,20 @@ import K304 from "../assets/K304.png";
 import K306 from "../assets/k306.png";
 import K308 from "../assets/K308.png";
 import K312 from "../assets/K312.png";
+
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
+//newimg//
+import kff302 from "../assets/k302/kff302.jpg";
+import Kf304 from "../assets/k304/Kf304.jpg";
+import Kf306 from "../assets/k306/Kf306.jpg";
+import Kf308 from "../assets/k308/Kf308.jpg";
+import Kf312 from "../assets/k312/Kf312.jpg"; 
+
 const products = [
   {
-    img: K302,
+    img: kff302,
     title: "Column Speaker",
     model: "K302",
     description: '2x1.75" Passive Full Range Column Speaker',
@@ -22,7 +30,7 @@ const products = [
     weight: "2.2Kg",
   },
   {
-    img: K304,
+    img: Kf304,
     title: "Column Speaker",
     model: "K304",
     description: '4x1.75" Passive Full Range Column Speaker',
@@ -33,7 +41,7 @@ const products = [
     weight: "4.1Kg",
   },
   {
-    img: K306,
+    img: Kf306,
     title: "Column Speaker",
     model: "K306",
     description: '4x1.75" Passive Full Range Column Speaker',
@@ -44,7 +52,7 @@ const products = [
     weight: "4.1Kg",
   },
   {
-    img: K308,
+    img: Kf308,
     title: "Column Speaker",
     model: "K308",
     description: '8x1.75" Passive Full Range Column Speaker',
@@ -55,7 +63,7 @@ const products = [
     weight: "7.8Kg",
   },
   {
-    img: K312,
+    img: Kf312,
     title: "Column Speaker",
     model: "K312",
     description: '12x1.75" Passive Full Range Column Speaker',
@@ -74,7 +82,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-[40%] sm:h-[60%] object-fit cursor-pointer rounded-lg"
+        className="w-full h-72 object-contain cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
             `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`

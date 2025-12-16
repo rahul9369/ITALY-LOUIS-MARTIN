@@ -1,56 +1,87 @@
 import { useNavigate } from "react-router-dom";
-import Devilred10 from "../assets/Devilred10.png";
-import FAMOUS210N from "../assets/Famousmartin1.jpg";
-import Subwoofer218 from "../assets/subwoofer218.png";
-import AMPLIFIERSpl4 from "../assets/AMPLIFIERSpl4.jpg";
-import plasticDs5 from "../assets/plasticDs5.png";
-import Ds8 from "../assets/Ds8.png";
-import SpeakerF12 from "../assets/columnImg.jpg";
-import DS12 from "../assets/DS12.jpg";
+import { motion } from "framer-motion";
+import { useEffect } from "react";
+
+import famouf from "../assets/fam/famouf.jpg";
+import redfront from "../assets/red10/redfront.jpg";
+import kff302 from "../assets/k302/kff302.jpg";
+import ds415 from "../assets/ds15/ds415.jpg";
+import ksf218 from "../assets/ks218/ksf218.jpg";
+import ft1002 from "../assets/tip1002/ft1002.jpg";
 
 const categories = [
-  { name: "Line Array", img: FAMOUS210N, path: "/linearray" },
-  { name: "Point Source", img: Devilred10, path: "/pointsource" },
-  { name: "Column Speaker", img: SpeakerF12, path: "/columsound" },
-  { name: "Commercial Speaker", img: DS12, path: "/stagemonitor" },
-  { name: "Subwoofer", img: Subwoofer218, path: "/subwoofer" },
-  { name: "Electronics", img: AMPLIFIERSpl4, path: "/electronics" },
+  { name: "Line Array", img: famouf, path: "/linearray" },
+  { name: "Point Source", img: redfront, path: "/pointsource" },
+  { name: "Column Speaker", img: kff302, path: "/columsound" },
+  { name: "Commercial Speaker", img: ds415, path: "/stagemonitor" },
+  { name: "Subwoofer", img: ksf218, path: "/subwoofer" },
+  { name: "Electronics", img: ft1002, path: "/electronics" },
 ];
 
 const Categories = () => {
   const navigate = useNavigate();
 
+  // ⭐ PAGE RELOAD → SCROLL TO TOP
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-white flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
-      {/* Section Title */}
+
+      {/* Title */}
       <div className="w-full text-center mb-10">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 flex items-center justify-center relative">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 flex items-center justify-center">
           <span className="h-6 w-6 bg-primary rounded-full mr-3"></span>
           Products
         </h2>
       </div>
 
-      {/* Categories Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full ">
-        {categories.map((category, index) => (
+      {/* PRODUCT SECTION */}
+      <div className="w-full space-y-20">
+        {categories.map((item, index) => (
           <div
             key={index}
-            onClick={() => navigate(category.path)}
-            className="cursor-pointer h-fit  bg-white  transition-all duration-300 overflow-hidden flex flex-col items-center">
-            <div className="w-full rounded-2xl aspect-video sm:aspect-[5/6] md:aspect-[5/3] lg:aspect-[5/3]">
-              <img
-                src={category.img}
-                alt={category.name}
-                loading="lazy"
-                className="w-full h-88 sm:h-full rounded-2xl hover:rounded-2xl   transition-transform duration-300 hover:scale-105 "
-              />
+            onClick={() => navigate(item.path)}
+            className={`cursor-pointer flex flex-col md:flex-row items-center gap-12 transition-all duration-300 hover:scale-[1.01] ${
+              index % 2 === 1 ? "md:flex-row-reverse" : ""
+            }`}
+          >
+
+            {/* Image (Perfect Fit) */}
+            <div className="w-full md:w-1/2 flex justify-center">
+              <div className="w-full h-80 overflow-hidden rounded-2xl shadow-lg">
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-full h-full object-contain p-4 transition-all duration-300"
+                />
+              </div>
             </div>
-            <p className="text-center text-lg font-semibold text-gray-800 mt-4 mb-4">
-              {category.name}
-            </p>
+
+            {/* Animated Text */}
+            <motion.div
+              className="w-full md:w-1/2"
+              initial={{
+                opacity: 0,
+                x: index % 2 === 1 ? -70 : 70,
+              }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                {item.name}
+              </h2>
+              <p className="text-gray-800 text-lg leading-relaxed">
+                Click to explore full product details and specifications.
+              </p>
+            </motion.div>
+
           </div>
         ))}
       </div>
+
     </div>
   );
 };

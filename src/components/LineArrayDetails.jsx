@@ -22,6 +22,37 @@ import { Helmet } from "react-helmet";
 import coxb from "../assets/coximg/coxb.jpg";
 import coxf from "../assets/coximg/coxf.jpg";
 import coxs from "../assets/coximg/coxs.jpg";
+import Coxunder from "../assets/coximg/coxunder.jpg";
+import coxl from "../assets/coximg/coxl.jpg";
+import famous from "../assets/fam/famous.jpg";
+import famouss from "../assets/fam/famouss.jpg";
+import famouf from "../assets/fam/famouf.jpg";
+import famouu from "../assets/fam/famouu.jpg";
+import famoub from "../assets/fam/famoub.jpg";
+import qfront from "../assets/q50/qfront.jpg";
+import qback from "../assets/q50/qback.jpg";
+import qnos from "../assets/q50/qnos.jpg";
+import qs from "../assets/q50/qs.jpg";
+import qss from "../assets/q50/qss.jpg";
+import qtop from "../assets/q50/qtop.jpg";
+import q60front from "../assets/q60/q60front.jpg";
+import q60s from "../assets/q60/q60s.jpg";
+import q60back from "../assets/q60/q60back.jpg"; 
+import q60j from "../assets/q60/q60j.jpg";
+import q60ss from "../assets/q60/q60ss.jpg";
+import q60top from "../assets/q60/q60top.jpg"; 
+import q70front from "../assets/q70/q70front.jpg";
+import q70j from "../assets/q70/q70j.jpg";
+import q70s from "../assets/q70/q70s.jpg";
+import q70ss from "../assets/q70/q70ss.jpg";
+import q70back from "../assets/q70/q70back.jpg";
+import q70top from "../assets/q70/q70top.jpg";
+import q80front from "../assets/q80/q80f.jpg";
+import q80s from "../assets/q80/q80s.jpg";
+import q80back from "../assets/q80/q80b.jpg";
+import q80ss from "../assets/q80/q80ss.jpg";
+import q80j from "../assets/q80/q80j.jpg";
+import q80top from "../assets/q80/q80t.jpg";  
 // import cox12 from "../assets/coximg/coxunder.jpg";
 // import coxback1 from "../assets/coxback1.jpg";
 // import coxback2 from "../assets/coxback2.jpg";
@@ -31,7 +62,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
   {
-    img: Linear,
+    img: [famouf,famous, famouss, famouu, famoub],
     title: "Line array ",
     model: "Famous 210",
     description:
@@ -84,7 +115,7 @@ const products = [
     ],
   },
   {
-    img: Q50,
+    img: [ qfront,qnos, qback, qss,qs, qtop],
     title: "Line Array ",
     model: "Q 50",
     description:
@@ -136,7 +167,7 @@ const products = [
     ],
   },
   {
-    img: Q60,
+    img: [q60front,q60s,q60back,q60ss,q60j,q60top],
     title: "Line array ",
     model: "Q 60",
     description:
@@ -189,7 +220,7 @@ const products = [
     ],
   },
   {
-    img: Q70,
+    img: [q70front,q70j,q70s,q70back,q70ss,q70top],
     title: "Line array ",
     model: "Q 70",
     description:
@@ -241,7 +272,7 @@ const products = [
     ],
   },
   {
-    img: Q80,
+    img: [q80front,q80j,q80s,q80back,q80ss,q80top ],
     title: "Line array ",
     model: "Q 80",
     description:
@@ -295,7 +326,7 @@ const products = [
   },
   {
     // img: Cox12,
-    img: [coxf, coxb, coxs],
+    img: [coxf, coxb, coxs, Coxunder, coxl],
     title: "Line array ",
     model: "Cox 12",
     description:
@@ -406,7 +437,8 @@ const ProductDetail = () => {
               <img
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
-                className="w-full cursor-pointer h-auto md:h-[400px] object-cover rounded-lg"
+                className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+                 loading="lazy"
                 onClick={() => setIsModalOpen(true)}
               />
 
@@ -431,7 +463,7 @@ const ProductDetail = () => {
 
             {/* Thumbnail Images */}
             {images.length > 1 && (
-              <div className="flex justify-center space-x-2 mt-4">
+              <div className="w-full h-40 flex items-center justify-center bg-white">
                 {images.map((img, index) => (
                   <img
                     key={index}

@@ -17,12 +17,45 @@ import KS218a from "../assets/pdf/KS218a.pdf";
 import S218a from "../assets/pdf/S218a.pdf";
 import F15 from "../assets/F15.png";
 import Linear from "../assets/Famousmartin1.jpg";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+//ks18//
 
+import ksf18 from "../assets/ks18/ksf18.jpg";
+import ksb18 from "../assets/ks18/ksb18.jpg";
+import kss18 from "../assets/ks18/kss18.jpg";
+import kstop18 from "../assets/ks18/kstop18.jpg";
+import ks418 from "../assets/ks18/ks418.jpg";
+import ksd18 from "../assets/ks18/ksd18.jpg";
+
+//ks218//
+import ksf218 from "../assets/ks218/ksf218.jpg";
+import ksb218 from "../assets/ks218/ksb218.jpg";
+import kss218 from "../assets/ks218/kss218.jpg";
+
+import ks4218 from "../assets/ks218/ks4218.jpg";
+import ktop218 from "../assets/ks218/ktop218.jpg";
+//s18//
+import sf18 from "../assets/s18/sf18.jpg";
+import sb18 from "../assets/s18/sb18.jpg";
+import ss18 from "../assets/s18/ss18.jpg";
+import stop18 from "../assets/s18/stop18.jpg";
+import s418 from "../assets/s18/s418.jpg";
+import sop18 from "../assets/s18/sop18.jpg";
+import sup18 from "../assets/s18/sup18.jpg";
+
+//s218//
+import sf218 from "../assets/s218/sf218.jpg";
+import sb218 from "../assets/s218/sb218.jpg";
+import ss218 from "../assets/s218/ss218.jpg";
+import stop218 from "../assets/s218/stop218.jpg";
+import s4218 from "../assets/s218/s4218.jpg";
+import sop218 from "../assets/s218/sop218.jpg";
+import sdou218 from "../assets/s218/sdou218.jpg";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 const products = [
   {
-    img: KS18,
+    img: [ksf18, ksb18, kss18, kstop18, ks418, ksd18],
     title: "Subwoofer",
     model: "KS18",
     description:
@@ -76,7 +109,7 @@ const products = [
   },
 
   {
-    img: subwooferImg,
+    img: [ksf218, ksb218, kss218, ktop218, ks4218],
     title: "Subwoofer",
     model: "KS218",
     description:
@@ -130,7 +163,7 @@ const products = [
   },
 
   {
-    img: S18,
+    img: [sf18, sb18, ss18, stop18, s418, sop18, sup18],
     title: "Subwoofer",
     model: "S18",
     description:
@@ -184,7 +217,7 @@ const products = [
   },
 
   {
-    img: S218,
+    img: [sf218, sb218, ss218, stop218, s4218, sop218, sdou218],
     title: "Subwoofer",
     model: "S218",
     description:
@@ -258,6 +291,19 @@ const ProductDetail = () => {
     link.click();
     document.body.removeChild(link);
   };
+  const [currentImgIndex, setCurrentImgIndex] = useState(0);
+
+  const images = Array.isArray(product.img) ? product.img : [product.img];
+
+  const prevImage = () => {
+    setCurrentImgIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextImage = () => {
+    setCurrentImgIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <>
@@ -275,11 +321,78 @@ const ProductDetail = () => {
       <div className="w-[90%] mx-auto p-6">
         {/* Product Image and Title */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <img
+          {/* <img
             src={product.img}
             alt={product.model}
             className="w-full h-auto md:h-[400px] lg:h-[400px] object-cover rounded-lg"
-          />
+          /> */}
+           <div> 
+                    <div className="relative ">
+              {/* Main Image */}
+              <img
+                src={images[currentImgIndex]}
+                alt={`${product.model} - ${currentImgIndex + 1}`}
+                className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+                 loading="lazy"
+                onClick={() => setIsModalOpen(true)}
+              />
+
+              {/* Left Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={prevImage}
+                  className="absolute top-1/2 left-[-50px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronLeft className="text-black" size={40} />
+                </button>
+              )}
+
+              {/* Right Button */}
+              {images.length > 1 && (
+                <button
+                  onClick={nextImage}
+                  className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  <ChevronRight className="text-black" size={40} />
+                </button>
+              )}
+            </div>
+
+            {/* Thumbnail Images */}
+            {images.length > 1 && (
+              <div className="flex justify-center space-x-2 mt-4">
+                {images.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Thumbnail ${index + 1}`}
+                    onClick={() => setCurrentImgIndex(index)}
+                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border ${
+                      index === currentImgIndex
+                        ? "border-blue-500"
+                        : "border-transparent"
+                    }`}
+                  />
+                ))}
+              </div>
+            )}
+            </div>
+
+          {isModalOpen && (
+            <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+              <div className="relative  w-full p-4">
+                <button
+                  onClick={() => setIsModalOpen(false)}
+                  className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400">
+                  &times;
+                </button>
+                <img
+                  src={images[currentImgIndex]}
+                  alt="Enlarged"
+                  className="w-full max-h-[90vh] object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          )}
+
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}

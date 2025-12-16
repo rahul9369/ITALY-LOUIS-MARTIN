@@ -5,7 +5,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-5">
+    <footer className="bg-black text-gray-300 py-5">
       <div className="w-[95%] mx-auto px-4 md:px-12">
         {/* Footer Grid */}
         <div className="grid grid-cols-1 mb-2 md:grid-cols-3 gap-8 text-center md:text-left">

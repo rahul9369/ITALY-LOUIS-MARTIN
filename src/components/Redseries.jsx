@@ -7,9 +7,14 @@ import red5 from "../assets/red5.jpg";
 import red9 from "../assets/red9.png";
 import red12 from "../assets/red12.png";
 import { useNavigate } from "react-router-dom";
+import redfront from "../assets/red10/redfront.jpg";
+import redfront5 from "../assets/red5/redfront5.jpg";
+import redf5 from "../assets/red6/redf5.jpg";
+import redff9 from "../assets/red9/redff9.jpg";
+import redf12 from "../assets/red12/red412.jpg";
 const products = [
   {
-    img: Devilred10,
+    img: redfront,
     title: "Red Series",
     model: "Red 10",
     description: `2x10" Two-Way Passive Full-Range High Power Loudspeaker`,
@@ -20,7 +25,7 @@ const products = [
     weight: "38Kg",
   },
   {
-    img: red6,
+    img: redfront5,
     title: "Red Series",
     model: "Red 5.5",
     description: '2x5" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -31,7 +36,7 @@ const products = [
     weight: "9Kg",
   },
   {
-    img: red5,
+    img: redf5,
     title: "Red Series",
     model: "Red 5",
     description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -42,7 +47,7 @@ const products = [
     weight: "6Kg",
   },
   {
-    img: red9,
+    img: redff9,
     title: "Red Series",
     model: "Red 9",
     description: '1x10" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -53,7 +58,7 @@ const products = [
     weight: "15Kg",
   },
   {
-    img: red12,
+    img: redf12,
     title: "Red Series",
     model: "Red 12",
     description: '1x12" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -73,7 +78,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover rounded-lg"
+        className="w-full h-72 object-contain cursor-pointer rounded-lg"
       />
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>

@@ -35,6 +35,8 @@ import TTAseries from "./components/ElectronicSeries/TTAseries";
 import Kseries from "./components/ColumnSpeaker/Kseries";
 import DSseries from "./components/CommercialSeries/Dsseries";
 import PDFViewer from "./components/PdfViewer";
+<img loading="lazy" src="/images/product.webp" />
+
 const appRouter = createBrowserRouter([
   {
     path: "/",

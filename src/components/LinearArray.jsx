@@ -9,10 +9,18 @@ import Q80 from "../assets/Q80.jpg";
 import Cox12 from "../assets/cox12.jpg";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import coxf from "../assets/coximg/coxf.jpg";
+
+//new img//
+import famouf from "../assets/fam/famouf.jpg";
+import qfront from "../assets/q50/qfront.jpg";
+import q60front from "../assets/q60/q60front.jpg";
+import q70front from "../assets/q70/q70front.jpg";
+import q80f from "../assets/q80/q80f.jpg";
 
 const products = [
   {
-    img: Linear,
+    img: famouf,
     title: "Famous Series",
     model: "Famous 210",
     description: `2x10" Two-way Bi-amp Externally Amplified Line Array Speaker System`,
@@ -23,7 +31,7 @@ const products = [
     weight: "50Kg",
   },
   {
-    img: Q50,
+    img: qfront,
     title: "Q Series",
     model: "Q 50",
     description: `1x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -34,7 +42,7 @@ const products = [
     weight: "16.8Kg",
   },
   {
-    img: Q60,
+    img: q60front,
     title: "Q Series",
     model: "Q 60",
     description: `2x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -45,7 +53,7 @@ const products = [
     weight: "22.8Kg",
   },
   {
-    img: Q70,
+    img: q70front,
     title: "Q Series",
     model: "Q 70",
     description: `1x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -56,7 +64,7 @@ const products = [
     weight: "22Kg",
   },
   {
-    img: Q80,
+    img: q80f,
     title: "Q Series",
     model: "Q 80",
     description: `2x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -67,7 +75,7 @@ const products = [
     weight: "36.8Kg",
   },
   {
-    img: Cox12,
+    img: coxf,
     title: "Cox Series",
     model: "Cox 12",
     description: `1x12" Passive Co-axial line array Speaker System`,
@@ -89,7 +97,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+       className="w-full h-72 object-contain cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
             `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`

@@ -107,18 +107,18 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full shadow-md bg-gray-500 opacity-95 relative  z-50">
-      <div className="w-full flex justify-between items-center py-2 px-6 md:px-10">
+    <nav className="w-full shadow-md bg-black opacity-95 relative  z-50">
+      <div className="w-full flex justify-between items-center  px-6 md:px-8">
         <div className="flex items-center space-x-2">
           <Link to="/">
-            <img src={Logo} alt="logo" className="w-16 h-16" />
+            <img src={Logo} alt="logo" className="w-25 h-25" />
           </Link>
           <span className="md:text-xl text-[12px] text-white">
-            ITALY LOUIS MARTIN AUDIO
+            
           </span>
         </div>
 
-        <ul className="hidden md:flex space-x-6">
+        <ul className="hidden md:flex space-x-6 center flex-items-center">
           {menuItems.map((item) => (
             <li
               key={item.name}
