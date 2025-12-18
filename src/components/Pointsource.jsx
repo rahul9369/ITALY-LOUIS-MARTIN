@@ -1,15 +1,7 @@
 import React, { useEffect } from "react";
 import pointsource from "../assets/pointsource.jpg";
 import Footer from "../components/Footer";
-import Devilred10 from "../assets/Devilred10.png";
-import red6 from "../assets/red5.5.jpg";
-import red5 from "../assets/red5.jpg";
-import red9 from "../assets/red9.png";
-import red12 from "../assets/red12.png";
-import F8 from "../assets/F8.png";
-import F10 from "../assets/F10.png";
-import F12 from "../assets/F12.jpg";
-import F15 from "../assets/F15.png";
+
 //new image//
 import redfront from "../assets/red10/redfront.jpg";
 import redfront5 from "../assets/red5/redfront5.jpg";
