@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import Footer from "./Footer";
-import AMPLIFIERSpl4 from "../assets/AMPLIFIERSpl4.jpg";
+
 import DT400 from "../assets/DT400.jpg";
 import PL4 from "../assets/PL4.jpg";
 import TTA from "../assets/TTA.jpg";

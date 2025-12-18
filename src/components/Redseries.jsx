@@ -1,11 +1,7 @@
 import React from "react";
 import pointsource from "../assets/pointsource.jpg";
 import Footer from "../components/Footer";
-import Devilred10 from "../assets/Devilred10.png";
-import red6 from "../assets/red5.5.jpg";
-import red5 from "../assets/red5.jpg";
-import red9 from "../assets/red9.png";
-import red12 from "../assets/red12.png";
+
 import { useNavigate } from "react-router-dom";
 import redfront from "../assets/red10/redfront.jpg";
 import redfront5 from "../assets/red5/redfront5.jpg";

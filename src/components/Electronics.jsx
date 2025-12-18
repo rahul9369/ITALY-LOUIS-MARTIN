@@ -2,11 +2,7 @@ import React, { useEffect } from "react";
 import Amplifiers from "../assets/Amplifiers.png";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
-import AMPLIFIER from "../assets/AMPLIFIERSpl4.jpg";
-import DT400 from "../assets/DT400.jpg";
-import PL4 from "../assets/PL4.jpg";
-import TTA from "../assets/TTA.jpg";
-import TIP from "../assets/TIPA.jpg";
+
 import plf4 from "../assets/pl4/plf4.jpg";
 import df200 from "../assets/d200/df200.jpg";
 import fd4200 from "../assets/d4200/fd4200.jpg";
