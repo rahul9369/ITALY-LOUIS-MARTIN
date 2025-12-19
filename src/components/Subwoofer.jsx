@@ -5,10 +5,10 @@ import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 //newimg//
-import ksf18 from "../assets/ks18/ksf18.jpg";
-import ksf218 from "../assets/ks218/ksf218.jpg";
-import sf18 from "../assets/s18/sf18.jpg";
-import sf218 from "../assets/s218/sf218.jpg";
+import ksf18 from "../assets/ks18/ksf18.JPG";
+import ksf218 from "../assets/ks218/ksf218.JPG";
+import sf18 from "../assets/s18/sf18.JPG";
+import sf218 from "../assets/s218/sf218.JPG";
 
 const products = [
   {
