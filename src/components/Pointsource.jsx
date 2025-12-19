@@ -9,10 +9,10 @@ import redfront5 from "../assets/red5/redfront5.jpg";
 import redf5 from "../assets/red6/redf5.JPG";
 import redff9 from "../assets/red9/redff9.JPG";
 import red412 from "../assets/red12/red412.jpg";
-import ffront8 from "../assets/F8/ffront8.jpg";
-import fopen10 from "../assets/F10/fopen10.jpg";
-import ff12 from "../assets/F12/ff12.jpg";
-import ff15 from "../assets/F15/ff15.jpg";
+import ffront8 from "../assets/f8/ffront8.jpg";
+import fopen10 from "../assets/f10/fopen10.jpg";
+import ff12 from "../assets/f12/ff12.jpg";
+import ff15 from "../assets/f15/ff15.jpg";
 
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
