@@ -781,7 +781,7 @@ const products = [
       "Light weight and Portable",
     ],
     Stereo_8_Ohm_2_Channel: "1600W×2 ",
-    Stereo_4_Ohm_2_Channel: " 2600W× ",
+    Stereo_4_Ohm_2_Channel: " 2600W×2 ",
     Bridge_8_Ohm_1_Channel: " 4800W",
     Bridge_4_Ohm_1_Channel: " 1610W",
     Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",

@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import Devilred10 from "../assets/Devilred10.png";
+//red series images//
 import red6 from "../assets/red5.5.jpg";
 import red5 from "../assets/red5.jpg";
 import red9 from "../assets/red9.png";
@@ -23,11 +24,11 @@ import F10 from "../assets/pdf/F10.pdf";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import redfront from "../assets/red10/redfront.jpg";
-import redback from "../assets/red10/redback.jpg";
-import redn from "../assets/red10/redn.jpg";
-import redside from "../assets/red10/redside.jpg";
-import redu from "../assets/red10/redu.jpg";
+import redfront from "../assets/red10/redfront.JPG";
+import redback from "../assets/red10/redback.JPG";
+import redn from "../assets/red10/redn.JPG";
+import redside from "../assets/red10/redside.JPG";
+import redu from "../assets/red10/redu.JPG";
 import redb5 from "../assets/red6/redb5.jpg";
 import redu5 from "../assets/red6/redu5.jpg";
 import redf5 from  "../assets/red6/redf5.jpg";
