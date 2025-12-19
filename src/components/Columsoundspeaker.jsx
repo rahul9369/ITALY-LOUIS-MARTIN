@@ -8,9 +8,9 @@ import { Helmet } from "react-helmet";
 //newimg//
 import kff302 from "../assets/k302/kff302.jpg";
 import kf304 from "../assets/k304/kf304.jpg";
-import Kf306 from "../assets/k306/Kf306.jpg";
-import Kf308 from "../assets/k308/Kf308.JPG";
-import Kf312 from "../assets/k312/Kf312.jpg"; 
+import kf306 from "../assets/k306/kf306.jpg";
+import kf308 from "../assets/k308/kf308.JPG";
+import kf312 from "../assets/k312/kf312.jpg"; 
 
 const products = [
   {
