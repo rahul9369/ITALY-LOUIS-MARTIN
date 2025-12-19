@@ -6,8 +6,8 @@ import Footer from "../components/Footer";
 
 import redfront from "../assets/red10/redfront.JPG";
 import redfront5 from "../assets/red5/redfront5.jpg";
-import redf5 from "../assets/red6/redf5.jpg";
-import redff9 from "../assets/red9/redff9.jpg";
+import redf5 from "../assets/red6/redf5.JPG";
+import redff9 from "../assets/red9/redff9.JPG";
 import red412 from "../assets/red12/red412.jpg";
 import ffront8 from "../assets/F8/ffront8.jpg";
 import fopen10 from "../assets/F10/fopen10.jpg";
