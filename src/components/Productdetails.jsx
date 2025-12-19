@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import Devilred10 from "../assets/Devilred10.png";
 //red series images//
 import red6 from "../assets/red5.5.jpg";
-import red5 from "../assets/red5.jpg";
+
 import red9 from "../assets/red9.png";
 import red12 from "../assets/red12.png";
 import TIP from "../assets/TIPA.jpg";
