@@ -15,40 +15,47 @@ import Q60a from "../assets/pdf/Q60a.pdf";
 import Q70a from "../assets/pdf/Q70a.pdf";
 import Q80a from "../assets/pdf/Q80a.pdf";
 import { Helmet } from "react-helmet";
+
+///cox//
 import coxb from "../assets/coximg/coxb.jpg";
 import coxf from "../assets/coximg/coxf.jpg";
 import coxs from "../assets/coximg/coxs.jpg";
-import Coxunder from "../assets/coximg/coxunder.jpg";
+import Coxunder from "../assets/coximg/coxunder.JPG";
 import coxl from "../assets/coximg/coxl.jpg";
-import famous from "../assets/fam/famous.jpg";
-import famouss from "../assets/fam/famouss.jpg";
-import famouf from "../assets/fam/famouf.jpg";
-import famouu from "../assets/fam/famouu.jpg";
-import famoub from "../assets/fam/famoub.jpg";
-import qfront from "../assets/q50/qfront.jpg";
-import qback from "../assets/q50/qback.jpg";
-import qnos from "../assets/q50/qnos.jpg";
-import qs from "../assets/q50/qs.jpg";
-import qss from "../assets/q50/qss.jpg";
-import qtop from "../assets/q50/qtop.jpg";
-import q60front from "../assets/q60/q60front.jpg";
-import q60s from "../assets/q60/q60s.jpg";
-import q60back from "../assets/q60/q60back.jpg"; 
-import q60j from "../assets/q60/q60j.jpg";
-import q60ss from "../assets/q60/q60ss.jpg";
-import q60top from "../assets/q60/q60top.jpg"; 
-import q70front from "../assets/q70/q70front.jpg";
-import q70j from "../assets/q70/q70j.jpg";
-import q70s from "../assets/q70/q70s.jpg";
-import q70ss from "../assets/q70/q70ss.jpg";
-import q70back from "../assets/q70/q70back.jpg";
-import q70top from "../assets/q70/q70top.jpg";
-import q80front from "../assets/q80/q80f.jpg";
-import q80s from "../assets/q80/q80s.jpg";
-import q80back from "../assets/q80/q80b.jpg";
-import q80ss from "../assets/q80/q80ss.jpg";
-import q80j from "../assets/q80/q80j.jpg";
-import q80top from "../assets/q80/q80t.jpg";  
+//famous//
+import famous from "../assets/fam/famous.JPG";
+import famouss from "../assets/fam/famouss.JPG";
+import famouf from "../assets/fam/famouf.JPG";
+import famouu from "../assets/fam/famouu.JPG";
+import famoub from "../assets/fam/famoub.JPG";
+//q50//
+import qfront from "../assets/q50/qfront.JPG";
+import qback from "../assets/q50/qback.JPG";
+import qnos from "../assets/q50/qnos.JPG";
+import qs from "../assets/q50/qs.JPG";
+import qss from "../assets/q50/qss.JPG";
+import qtop from "../assets/q50/qtop.JPG";
+//q60//
+import q60front from "../assets/q60/q60front.JPG";
+import q60s from "../assets/q60/q60s.JPG";
+import q60back from "../assets/q60/q60back.JPG"; 
+import q60j from "../assets/q60/q60j.JPG";
+import q60ss from "../assets/q60/q60ss.JPG";
+import q60top from "../assets/q60/q60top.JPG"; 
+//q70//
+import q70front from "../assets/q70/q70front.JPG";
+import q70j from "../assets/q70/q70j.JPG";
+import q70s from "../assets/q70/q70s.JPG";
+import q70ss from "../assets/q70/q70ss.JPG";
+import q70back from "../assets/q70/q70back.JPG";
+import q70top from "../assets/q70/q70top.JPG";
+//q80// 
+import q80front from "../assets/q80/q80f.JPG";
+import q80s from "../assets/q80/q80s.JPG";
+import q80b from "../assets/q80/q80b.jpg";
+import q80ss from "../assets/q80/q80ss.JPG";
+import q80j from "../assets/q80/q80j.JPG";
+import q80top from "../assets/q80/q80t.JPG";  
 // import cox12 from "../assets/coximg/coxunder.jpg";
 // import coxback1 from "../assets/coxback1.jpg";
 // import coxback2 from "../assets/coxback2.jpg";
@@ -268,7 +275,7 @@ const products = [
     ],
   },
   {
-    img: [q80front,q80j,q80s,q80back,q80ss,q80top ],
+    img: [q80front,q80j,q80s,q80b,q80ss,q80top ],
     title: "Line array ",
     model: "Q 80",
     description:
