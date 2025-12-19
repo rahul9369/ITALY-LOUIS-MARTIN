@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 import plf4 from "../assets/pl4/plf4.jpg";
 import df200 from "../assets/d200/df200.JPG";
-import fd4200 from "../assets/d4200/fd4200.JPG";
+import fd4200 from "../assets/d4200/fd4200.jpg";
 import fd4300 from "../assets/d4300/fd4300.jpg";
 import { Helmet } from "react-helmet";
 import ft300 from "../assets/tta300/ft300.jpg";
