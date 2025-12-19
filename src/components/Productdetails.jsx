@@ -55,29 +55,29 @@ import red412 from "../assets/red12/red412.jpg";
 import redbb12 from "../assets/red12/redbb12.jpg";
 import reds12 from "../assets/red12/reds12.JPG";
 //f8//
-import ffront8 from "../assets/F8/ffront8.jpg";
-import fopen8 from "../assets/F8/fopen8.JPG";
-import f458 from "../assets/F8/f458.jpg";
-import fs8 from "../assets/F8/fs8.JPG";
-import ftop8 from "../assets/F8/ftop8.JPG";
-import fup8 from "../assets/F8/fup8.JPG";
+import ffront8 from "../assets/f8/ffront8.jpg";
+import fopen8 from "../assets/f8/fopen8.JPG";
+import f458 from "../assets/f8/f458.jpg";
+import fs8 from "../assets/f8/fs8.JPG";
+import ftop8 from "../assets/f8/ftop8.JPG";
+import fup8 from "../assets/f8/fup8.JPG";
 //f10//
-import ff10 from "../assets/F10/ff10.jpg";
-import fopen10 from "../assets/F10/fopen10.JPG";
-import fs10 from "../assets/F10/fs10.jpg";
-import fss10 from "../assets/F10/fss10.JPG";
-import f410 from "../assets/F10/f410.jpg";
-import fni10 from "../assets/F10/fni10.JPG";
-import fdoun10 from "../assets/F10/fdoun10.JPG";
+import ff10 from "../assets/f10/ff10.jpg";
+import fopen10 from "../assets/f10/fopen10.JPG";
+import fs10 from "../assets/f10/fs10.jpg";
+import fss10 from "../assets/f10/fss10.JPG";
+import f410 from "../assets/f10/f410.jpg";
+import fni10 from "../assets/f10/fni10.JPG";
+import fdoun10 from "../assets/f10/fdoun10.JPG";
 
 //f12 images//
-import ff12 from "../assets/F12/ff12.jpg";
-import fb12 from "../assets/F12/fb12.JPG";
-import f412 from "../assets/F12/f412.jpg";
-import fd12 from "../assets/F12/fd12.JPG";
-import fopen12 from "../assets/F12/fopen12.JPG";
-import fs12 from "../assets/F12/fs12.JPG";
-import ftop12 from "../assets/F12/ftop12.JPG";
+import ff12 from "../assets/f12/ff12.jpg";
+import fb12 from "../assets/f12/fb12.JPG";
+import f412 from "../assets/f12/f412.jpg";
+import fd12 from "../assets/f12/fd12.JPG";
+import fopen12 from "../assets/f12/fopen12.JPG";
+import fs12 from "../assets/f12/fs12.JPG";
+import ftop12 from "../assets/f12/ftop12.JPG";
 
 //f15 images//
 
