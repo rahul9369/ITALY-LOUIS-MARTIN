@@ -3,7 +3,8 @@ import pointsource from "../assets/pointsource.jpg";
 import Footer from "../components/Footer";
 
 //new image//
-import redfront from "../assets/red10/redfront.jpg";
+
+import redfront from "../assets/red10/redfront.JPG";
 import redfront5 from "../assets/red5/redfront5.jpg";
 import redf5 from "../assets/red6/redf5.jpg";
 import redff9 from "../assets/red9/redff9.jpg";
