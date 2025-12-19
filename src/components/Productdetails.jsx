@@ -1,9 +1,9 @@
 import { Link, useParams } from "react-router-dom";
 import Devilred10 from "../assets/Devilred10.png";
 //red series images//
-import red6 from "../assets/red5.5.jpg";
 
-import red9 from "../assets/red9.png";
+
+
 import red12 from "../assets/red12.png";
 import TIP from "../assets/TIPA.jpg";
 import S218 from "../assets/S218.png";
@@ -43,7 +43,7 @@ import redds5 from "../assets/red5/redds5.jpg";
 import red5open from "../assets/red5/red5open.JPG";
 import redback5 from "../assets/red5/redback5.jpg";
 //red9//
-import redff9 from "../assets/red9/redff9.jpg";
+import redff9 from "../assets/red9/redff9.JPG";
 import red94 from "../assets/red9/red94.jpg";
 import reds9 from "../assets/red9/reds9.JPG";
 import redop9 from "../assets/red9/redop9.JPG";
