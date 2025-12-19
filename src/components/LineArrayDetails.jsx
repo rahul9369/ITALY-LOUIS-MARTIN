@@ -38,7 +38,7 @@ import qtop from "../assets/q50/qtop.JPG";
 //q60//
 import q60front from "../assets/q60/q60front.JPG";
 import q60s from "../assets/q60/q60s.JPG";
-import q60back from "../assets/q60/q60back.JPG"; 
+import q60back from "../assets/q60/q60back.jpg"; 
 import q60j from "../assets/q60/q60j.JPG";
 import q60ss from "../assets/q60/q60ss.JPG";
 import q60top from "../assets/q60/q60top.JPG"; 
