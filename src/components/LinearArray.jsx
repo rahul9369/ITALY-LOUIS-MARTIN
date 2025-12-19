@@ -8,11 +8,11 @@ import { Helmet } from "react-helmet";
 
 //new img//
 
-import famouf from "../assets/fam/famouf.jpg";
-import qfront from "../assets/q50/qfront.jpg";
-import q60front from "../assets/q60/q60front.jpg";
-import q70front from "../assets/q70/q70front.jpg";
-import q80f from "../assets/q80/q80f.jpg";
+import famouf from "../assets/fam/famouf.JPG";
+import qfront from "../assets/q50/qfront.JPG";
+import q60front from "../assets/q60/q60front.JPG";
+import q70front from "../assets/q70/q70front.JPG";
+import q80f from "../assets/q80/q80f.JPG";
 import coxf from "../assets/coximg/coxf.jpg";
 
 const products = [
