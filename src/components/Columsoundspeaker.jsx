@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 
 //newimg//
 import kff302 from "../assets/k302/kff302.jpg";
-import Kf304 from "../assets/k304/Kf304.jpg";
+import kf304 from "../assets/k304/kf304.jpg";
 import Kf306 from "../assets/k306/Kf306.jpg";
 import Kf308 from "../assets/k308/Kf308.JPG";
 import Kf312 from "../assets/k312/Kf312.jpg"; 
@@ -25,7 +25,7 @@ const products = [
     weight: "2.2Kg",
   },
   {
-    img: Kf304,
+    img: kf304,
     title: "Column Speaker",
     model: "K304",
     description: '4x1.75" Passive Full Range Column Speaker',
