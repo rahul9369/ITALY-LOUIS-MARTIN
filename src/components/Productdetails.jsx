@@ -29,56 +29,64 @@ import redback from "../assets/red10/redback.JPG";
 import redn from "../assets/red10/redn.JPG";
 import redside from "../assets/red10/redside.JPG";
 import redu from "../assets/red10/redu.JPG";
-import redb5 from "../assets/red6/redb5.jpg";
-import redu5 from "../assets/red6/redu5.jpg";
-import redf5 from  "../assets/red6/redf5.jpg";
-import reds5 from "../assets/red6/reds5.jpg";
+//red6//  
+import redb5 from "../assets/red6/redb5.JPG";
+import redu5 from "../assets/red6/redu5.JPG";
+import redf5 from  "../assets/red6/redf5.JPG";
+import reds5 from "../assets/red6/reds5.JPG";
+import red5 from "../assets/red6/red5.JPG";
+import redo5 from "../assets/red6/redo5.JPG"; 
+//red5//
 import redfront5 from "../assets/red5/redfront5.jpg";
-import redside5 from "../assets/red5/redside5.jpg";
+import redside5 from "../assets/red5/redside5.JPG";
 import redds5 from "../assets/red5/redds5.jpg";
-import red5open from "../assets/red5/red5open.jpg";
+import red5open from "../assets/red5/red5open.JPG";
 import redback5 from "../assets/red5/redback5.jpg";
+//red9//
 import redff9 from "../assets/red9/redff9.jpg";
 import red94 from "../assets/red9/red94.jpg";
-import reds9 from "../assets/red9/reds9.jpg";
-import redop9 from "../assets/red9/redop9.jpg";
+import reds9 from "../assets/red9/reds9.JPG";
+import redop9 from "../assets/red9/redop9.JPG";
 import redback9 from "../assets/red9/redback9.jpg";
-import redf12 from "../assets/red12/redf12.jpg";
-import redop12 from "../assets/red12/redop12.jpg";
+//red12//
+import redf12 from "../assets/red12/redf12.JPG";
+import redop12 from "../assets/red12/redop12.JPG";
 import red412 from "../assets/red12/red412.jpg";
 import redbb12 from "../assets/red12/redbb12.jpg";
-import reds12 from "../assets/red12/reds12.jpg";
+import reds12 from "../assets/red12/reds12.JPG";
+//f8//
 import ffront8 from "../assets/F8/ffront8.jpg";
-import fopen8 from "../assets/F8/fopen8.jpg";
+import fopen8 from "../assets/F8/fopen8.JPG";
 import f458 from "../assets/F8/f458.jpg";
-import fs8 from "../assets/F8/fs8.jpg";
-import ftop8 from "../assets/F8/ftop8.jpg";
-import fup8 from "../assets/F8/fup8.jpg";
+import fs8 from "../assets/F8/fs8.JPG";
+import ftop8 from "../assets/F8/ftop8.JPG";
+import fup8 from "../assets/F8/fup8.JPG";
+//f10//
 import ff10 from "../assets/F10/ff10.jpg";
-import fopen10 from "../assets/F10/fopen10.jpg";
+import fopen10 from "../assets/F10/fopen10.JPG";
 import fs10 from "../assets/F10/fs10.jpg";
-import fss10 from "../assets/F10/fss10.jpg";
+import fss10 from "../assets/F10/fss10.JPG";
 import f410 from "../assets/F10/f410.jpg";
-import fni10 from "../assets/F10/fni10.jpg";
-import fdoun10 from "../assets/F10/fdoun10.jpg";
+import fni10 from "../assets/F10/fni10.JPG";
+import fdoun10 from "../assets/F10/fdoun10.JPG";
 
 //f12 images//
 import ff12 from "../assets/F12/ff12.jpg";
-import fb12 from "../assets/F12/fb12.jpg";
+import fb12 from "../assets/F12/fb12.JPG";
 import f412 from "../assets/F12/f412.jpg";
-import fd12 from "../assets/F12/fd12.jpg";
-import fopen12 from "../assets/F12/fopen12.jpg";
-import fs12 from "../assets/F12/fs12.jpg";
-import ftop12 from "../assets/F12/ftop12.jpg";
+import fd12 from "../assets/F12/fd12.JPG";
+import fopen12 from "../assets/F12/fopen12.JPG";
+import fs12 from "../assets/F12/fs12.JPG";
+import ftop12 from "../assets/F12/ftop12.JPG";
 
 //f15 images//
 
 import ff15 from "../assets/f15/ff15.jpg";
 import fb15 from "../assets/f15/fb15.jpg";
-import fd15 from "../assets/f15/fd15.jpg";
-import fopen15 from "../assets/f15/fopen15.jpg";
-import fs15 from "../assets/f15/fs15.jpg";
-import ftop15 from "../assets/f15/ftop15.jpg";
+import fd15 from "../assets/f15/fd15.JPG";
+import fopen15 from "../assets/f15/fopen15.JPG";
+import fs15 from "../assets/f15/fs15.JPG";
+import ftop15 from "../assets/f15/ftop15.JPG";
 import f415 from "../assets/f15/f415.jpg";
 
 
@@ -143,7 +151,7 @@ const products = [
     ],
   },
   {
-    img: [redb5,redu5,redf5,reds5],
+    img: [redb5,redu5,redf5,reds5,red5,redo5],
     title: "Point Source",
     model: "Red 5.5",
     description:
