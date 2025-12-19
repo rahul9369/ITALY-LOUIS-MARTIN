@@ -1,8 +1,9 @@
 import React from "react";
 import Linearray from "../../assets/Linerarray.jpg";
 import Footer from "../Footer";
-import Linear from "../../assets/Famousmartin1.jpg";
-import famouf from "../../assets/fam/famouf.jpg";
+
+
+import famouf from "../../assets/fam/famouf.JPG";
 
 import { useNavigate } from "react-router-dom";
 
