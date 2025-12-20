@@ -7,7 +7,7 @@ import redfront from "../assets/red10/redfront.JPG";
 import redfront5 from "../assets/red5/redfront5.jpg";
 import redf5 from "../assets/red6/redf5.JPG";
 import redff9 from "../assets/red9/redff9.JPG";
-import redf12 from "../assets/red12/red412.JPG";
+import redf12 from "../assets/red12/redf12.JPG";
 const products = [
   {
     img: redfront,
