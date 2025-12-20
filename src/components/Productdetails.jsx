@@ -604,6 +604,12 @@ const ProductDetail = () => {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
   const images = Array.isArray(product.img) ? product.img : [product.img];
+  useEffect(() => {
+  if (!images || !images[currentImgIndex]) return;
+
+  const img = new Image();
+  img.src = images[currentImgIndex];
+}, [currentImgIndex, images]);
 
   const prevImage = () => {
     setCurrentImgIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
