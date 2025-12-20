@@ -20,37 +20,37 @@ import Linear from "../assets/Famousmartin1.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 //ks18//
 
-import ksf18 from "../assets/ks18/ksf18.jpg";
-import ksb18 from "../assets/ks18/ksb18.jpg";
-import kss18 from "../assets/ks18/kss18.jpg";
-import kstop18 from "../assets/ks18/kstop18.jpg";
+import ksf18 from "../assets/ks18/ksf18.JPG";
+import ksb18 from "../assets/ks18/ksb18.JPG";
+import kss18 from "../assets/ks18/kss18.JPG";
+import kstop18 from "../assets/ks18/kstop18.JPG";
 import ks418 from "../assets/ks18/ks418.jpg";
-import ksd18 from "../assets/ks18/ksd18.jpg";
+import ksd18 from "../assets/ks18/ksd18.JPG";
 
 //ks218//
-import ksf218 from "../assets/ks218/ksf218.jpg";
-import ksb218 from "../assets/ks218/ksb218.jpg";
-import kss218 from "../assets/ks218/kss218.jpg";
+import ksf218 from "../assets/ks218/ksf218.JPG";
+import ksb218 from "../assets/ks218/ksb218.JPG";
+import kss218 from "../assets/ks218/kss218.JPG";
 
 import ks4218 from "../assets/ks218/ks4218.jpg";
-import ktop218 from "../assets/ks218/ktop218.jpg";
+import ktop218 from "../assets/ks218/ktop218.JPG";
 //s18//
-import sf18 from "../assets/s18/sf18.jpg";
-import sb18 from "../assets/s18/sb18.jpg";
-import ss18 from "../assets/s18/ss18.jpg";
-import stop18 from "../assets/s18/stop18.jpg";
-import s418 from "../assets/s18/s418.jpg";
-import sop18 from "../assets/s18/sop18.jpg";
-import sup18 from "../assets/s18/sup18.jpg";
+import sf18 from "../assets/s18/sf18.JPG";
+import sb18 from "../assets/s18/sb18.JPG";
+import ss18 from "../assets/s18/ss18.JPG";
+import stop18 from "../assets/s18/stop18.JPG";
+import s418 from "../assets/s18/s418.JPG";
+import sop18 from "../assets/s18/sop18.JPG";
+import sup18 from "../assets/s18/sup18.JPG";
 
 //s218//
-import sf218 from "../assets/s218/sf218.jpg";
-import sb218 from "../assets/s218/sb218.jpg";
-import ss218 from "../assets/s218/ss218.jpg";
+import sf218 from "../assets/s218/sf218.JPG";
+import sb218 from "../assets/s218/sb218.JPG";
+import ss218 from "../assets/s218/ss218.JPG";
 import stop218 from "../assets/s218/stop218.jpg";
-import s4218 from "../assets/s218/s4218.jpg";
-import sop218 from "../assets/s218/sop218.jpg";
-import sdou218 from "../assets/s218/sdou218.jpg";
+import s4218 from "../assets/s218/s4218.JPG";
+import sop218 from "../assets/s218/sop218.JPG";
+import sdou218 from "../assets/s218/sdou218.JPG";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 const products = [
