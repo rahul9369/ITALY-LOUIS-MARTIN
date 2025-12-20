@@ -248,7 +248,7 @@ const products = [
       {
         name: "RED-9",
         path: "/product/red%209",
-        img: red9,
+        img: redff9,
       },
       {
         name: "RED-12",
