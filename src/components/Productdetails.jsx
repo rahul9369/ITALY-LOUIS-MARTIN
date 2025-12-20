@@ -674,8 +674,9 @@ const ProductDetail = () => {
                     key={index}
                     src={img}
                     alt={`Thumbnail ${index + 1}`}
-                    onClick={() => setCurrentImgIndex(index)}
-                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border ${
+                    onClick={() => setCurrentImgIndex(index)} 
+                    loading="lazy"
+                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border  ${
                       index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"
