@@ -2,11 +2,11 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
-import famouf from "../assets/fam/famouf.jpg";
-import redfront from "../assets/red10/redfront.jpg";
+import famouf from "../assets/fam/famouf.JPG";
+import redfront from "../assets/red10/redfront.JPG";
 import kff302 from "../assets/k302/kff302.jpg";
-import ds415 from "../assets/ds15/ds415.jpg";
-import ksf218 from "../assets/ks218/ksf218.jpg";
+import ds415 from "../assets/ds15/ds415.JPG";
+import ksf218 from "../assets/ks218/ksf218.JPG";
 import ft1002 from "../assets/tip1002/ft1002.jpg";
 
 const categories = [
