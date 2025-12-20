@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Subwoofer from "../../assets/Subwoofer.png";
-import sf18 from "../../assets/s18/sf18.jpg";
-import sf218 from "../../assets/s218/sf218.jpg";
+import sf18 from "../../assets/s18/sf18.JPG";
+import sf218 from "../../assets/s218/sf218.JPG";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 
