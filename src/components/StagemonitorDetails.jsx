@@ -15,31 +15,32 @@ import DT400 from "../assets/DT400.jpg";
 import Hwfornt from "../assets/Hwfront.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 //ds5//
-import dss5 from "../assets/ds5/dss5.jpg";
-import dsb5 from "../assets/ds5/dsb5.jpg";
+import dss5 from "../assets/ds5/dss5.JPG";
+import dsb5 from "../assets/ds5/dsb5.JPG";
 import dsf5 from "../assets/ds5/dsf5.jpg";
-import dsup5 from "../assets/ds5/dsup5.jpg";
-import dsopen5 from "../assets/ds5/dsopen5.jpg";
+import dsup5 from "../assets/ds5/dsup5.JPG";
+import dsopen5 from "../assets/ds5/dsopen5.JPG";
 //ds8//
-import dsf8 from "../assets/ds8/dsf8.jpg";
-import dsb8 from "../assets/ds8/dsb8.jpg";
-import dsop8 from "../assets/ds8/dsop8.jpg";
-import dss8 from "../assets/ds8/dss8.jpg";
-import dsup8 from "../assets/ds8/dsup8.jpg";
+import dsf8 from "../assets/ds8/dsf8.JPG";
+import dsb8 from "../assets/ds8/dsb8.JPG";
+import dsop8 from "../assets/ds8/dsop8.JPG";
+import dss8 from "../assets/ds8/dss8.JPG";
+import dsup8 from "../assets/ds8/dsup8.JPG";
+import d88 from "../assets/ds8/d88.jpg";
 //ds12//
-import dsf12 from "../assets/ds12/dsf12.jpg";
-import dsb12 from "../assets/ds12/dsb12.jpg";
-import dsop12 from "../assets/ds12/dsop12.jpg";
-import dss12 from "../assets/ds12/dss12.jpg";
-import dsup12 from "../assets/ds12/dsup12.jpg";
-import ds412 from "../assets/ds12/ds412.jpg";
+import dsf12 from "../assets/ds12/dsf12.JPG";
+import dsb12 from "../assets/ds12/dsb12.JPG";
+import dsop12 from "../assets/ds12/dsop12.JPG";
+import dss12 from "../assets/ds12/dss12.JPG";
+import dsup12 from "../assets/ds12/dsup12.JPG";
+import ds412 from "../assets/ds12/ds412.JPG";
 //ds15//
-import dsf15 from "../assets/ds15/dsf15.jpg";
-import dsb15 from "../assets/ds15/dsb15.jpg";
-import dsop15 from "../assets/ds15/dsop15.jpg";
-import dss15 from "../assets/ds15/dss15.jpg";
-import dsup15 from "../assets/ds15/dsup15.jpg";
-import ds415 from "../assets/ds15/ds415.jpg";
+import dsf15 from "../assets/ds15/dsf15.JPG";
+import dsb15 from "../assets/ds15/dsb15.JPG";
+import dsop15 from "../assets/ds15/dsop15.JPG";
+import dss15 from "../assets/ds15/dss15.JPG";
+import dsup15 from "../assets/ds15/dsup15.JPG";
+import ds415 from "../assets/ds15/ds415.JPG";
 
 
 import Footer from "./Footer";
@@ -101,7 +102,7 @@ const products = [
     ],
   },
   {
-    img: [dsf8, dsb8, dsop8, dss8, dsup8],  
+    img: [dsf8, dsb8, dsop8, dss8, dsup8, d88],  
     title: "Plastic Speaker",
     model: "DS8",
     description:
