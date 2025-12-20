@@ -1,13 +1,15 @@
 import React from "react";
 import pointsource from "../assets/pointsource.jpg";
 import Footer from "../components/Footer";
-import Fseries from "../assets/SpeakerF12.jpg";
-import F8IMG from "../assets/F8.png";
+import ffront8 from "../assets/f8/ffront8.jpg"
+import ff10 from "../assets/f10/ff10.jpg"
+import ff12 from "../assets/f12/ff12.jpg"
+import ff15 from "../assets/f15/ff15.jpg"
 
 import { useNavigate } from "react-router-dom";
 const products = [
   {
-    img: F8IMG,
+    img: ffront8,
     title: "F Series",
     model: "F8",
     description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -18,7 +20,7 @@ const products = [
     weight: "12 Kg",
   },
   {
-    img: Fseries,
+    img: ff10,
     title: "F Series",
     model: "F10",
     description: '1x10" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -29,7 +31,7 @@ const products = [
     weight: "17 Kg",
   },
   {
-    img: Fseries,
+    img: ff12,
     title: "F Series",
     model: "F12",
     description: '1x12" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -40,7 +42,7 @@ const products = [
     weight: "25 Kg",
   },
   {
-    img: Fseries,
+    img: ff15,
     title: "F Series",
     model: "F15",
     description: '1x15" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -60,7 +62,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+          className="w-full h-72 object-contain cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
             `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`

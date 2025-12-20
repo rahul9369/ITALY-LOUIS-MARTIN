@@ -1,16 +1,19 @@
 import React from "react";
 import PlasticSpeaker from "../../assets/PlasticSpeaker.png";
-import DS12 from "../../assets/DS12.jpg";
+
 import Hwfornt from "../../assets/Hwfront.png";
 
 import Footer from "../Footer";
-import plasticDs5 from "../../assets/plasticDs5.png";
-import Ds8 from "../../assets/Ds8.png";
+import dsf5 from "../../assets/ds5/dsf5.jpg"
+import dsf8 from "../../assets/ds8/dsf8.JPG"
+import dsf12 from "../../assets/ds12/dsf12.JPG"
+import dsf15 from "../../assets/ds15/dsf15.JPG"
 import { useNavigate } from "react-router-dom";
+import { Import } from "lucide-react";
 
 const products = [
   {
-    img: plasticDs5,
+    img: dsf5,
     title: "Plastic Speaker",
     model: "DS5",
     description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -21,7 +24,7 @@ const products = [
     weight: "5Kg",
   },
   {
-    img: Ds8,
+    img: dsf8,
     title: "Plastic Speaker",
     model: "DS8",
     description: '1x8" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -32,7 +35,7 @@ const products = [
     weight: "8Kg",
   },
   {
-    img: DS12,
+    img: dsf12,
     title: "Plastic Speaker",
     model: "DS12",
     description: '1x12" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -43,7 +46,7 @@ const products = [
     weight: "17Kg",
   },
   {
-    img: DS12,
+    img: dsf15,
     title: "Plastic Speaker",
     model: "DS15",
     description: '1x15" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -74,7 +77,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+        className="w-full h-72 object-contain cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
             `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`

@@ -1,12 +1,12 @@
 import React from "react";
 import Linearray from "../../assets/Linerarray.jpg";
 import Footer from "../Footer";
-import Cox12 from "../../assets/cox12.jpg";
+import coxf from "../../assets/coximg/coxf.jpg"
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: Cox12,
+    img: coxf,
     title: "Cox Series",
     model: "Cox 12",
     description: `1x12" Passive Co-axial line array Speaker System`,
@@ -25,7 +25,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+        className="w-full h-72 object-contain cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
             `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`

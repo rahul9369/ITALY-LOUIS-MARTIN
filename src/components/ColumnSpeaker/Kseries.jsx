@@ -1,16 +1,16 @@
 import React from "react";
 import Column from "../../assets/Columnspeaker.jpg";
 import Footer from "../Footer";
-import K302 from "../../assets/k302.png";
-import K304 from "../../assets/K304.png";
-import K306 from "../../assets/k306.png";
-import K308 from "../../assets/K308.png";
-import K312 from "../../assets/K312.png";
+import kff302 from "../../assets/k302/kff302.jpg"
+import kf304 from "../../assets/k304/kf304.jpg"
+import kf306 from "../../assets/k306/kf306.jpg"
+import kf308 from "../../assets/k308/kf308.JPG"
+import kf312 from "../../assets/k312/kf312.jpg"
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: K302,
+    img: kff302,
     title: "Column Speaker",
     model: "K302",
     description: '2x1.75" Passive Full Range Column Speaker',
@@ -21,7 +21,7 @@ const products = [
     weight: "2.2Kg",
   },
   {
-    img: K304,
+    img: kf304,
     title: "Column Speaker",
     model: "K304",
     description: '4x1.75" Passive Full Range Column Speaker',
@@ -32,7 +32,7 @@ const products = [
     weight: "4.1Kg",
   },
   {
-    img: K306,
+    img: kf306,
     title: "Column Speaker",
     model: "K306",
     description: '4x1.75" Passive Full Range Column Speaker',
@@ -43,7 +43,7 @@ const products = [
     weight: "4.1Kg",
   },
   {
-    img: K308,
+    img: kf308,
     title: "Column Speaker",
     model: "K308",
     description: '8x1.75" Passive Full Range Column Speaker',
@@ -54,7 +54,7 @@ const products = [
     weight: "7.8Kg",
   },
   {
-    img: K312,
+    img: kf312,
     title: "Column Speaker",
     model: "K312",
     description: '12x1.75" Passive Full Range Column Speaker',
@@ -73,7 +73,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-[60%] object-fit cursor-pointer rounded-lg"
+         className="w-full h-72 object-contain cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
             `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`

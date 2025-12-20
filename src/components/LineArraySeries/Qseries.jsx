@@ -1,16 +1,16 @@
 import React from "react";
 import Linearray from "../../assets/Linerarray.jpg";
 import Footer from "../Footer";
-import Q50 from "../../assets/Q50.jpg";
-import Q60 from "../../assets/Q60.jpg";
-import Q70 from "../../assets/Q70.jpg";
-import Q80 from "../../assets/Q80.jpg";
+import qfront from "../../assets/q50/qfront.JPG"
+import q60front from "../../assets/q60/q60front.JPG"
+import q70front from "../../assets/q70/q70front.JPG"
+import q80f from "../../assets/q80/q80f.JPG"
 
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: Q50,
+    img: qfront,
     title: "Q Series",
     model: "Q 50",
     description: `1x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -21,7 +21,7 @@ const products = [
     weight: "16.8Kg",
   },
   {
-    img: Q60,
+    img: q60front,
     title: "Q Series",
     model: "Q 60",
     description: `2x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -32,7 +32,7 @@ const products = [
     weight: "22.8Kg",
   },
   {
-    img: Q70,
+    img: q70front,
     title: "Q Series",
     model: "Q 70",
     description: `1x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -43,7 +43,7 @@ const products = [
     weight: "22Kg",
   },
   {
-    img: Q80,
+    img: q80f,
     title: "Q Series",
     model: "Q 80",
     description: `2x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -62,7 +62,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+         className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
         onClick={() =>
           navigate(
             `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`

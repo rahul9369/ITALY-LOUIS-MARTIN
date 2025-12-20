@@ -5,6 +5,7 @@ import Footer from "../Footer";
 
 import famouf from "../../assets/fam/famouf.JPG";
 
+
 import { useNavigate } from "react-router-dom";
 
 const products = [
