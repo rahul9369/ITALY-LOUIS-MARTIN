@@ -361,7 +361,7 @@ const products = [
       {
         name: "RED-5.5",
         path: "/product/red%205.5",
-        img: red6,
+        img: redfront5,
       },
     ],
   },
