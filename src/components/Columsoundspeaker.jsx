@@ -36,7 +36,7 @@ const products = [
     weight: "4.1Kg",
   },
   {
-    img: Kf306,
+    img: kf306,
     title: "Column Speaker",
     model: "K306",
     description: '4x1.75" Passive Full Range Column Speaker',
@@ -47,7 +47,7 @@ const products = [
     weight: "4.1Kg",
   },
   {
-    img: Kf308,
+    img: kf308,
     title: "Column Speaker",
     model: "K308",
     description: '8x1.75" Passive Full Range Column Speaker',
@@ -58,7 +58,7 @@ const products = [
     weight: "7.8Kg",
   },
   {
-    img: Kf312,
+    img: kf312,
     title: "Column Speaker",
     model: "K312",
     description: '12x1.75" Passive Full Range Column Speaker',
