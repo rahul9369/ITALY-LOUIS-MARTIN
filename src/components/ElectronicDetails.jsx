@@ -12,48 +12,48 @@ import TTAPDF from "../assets/pdf/TTAseries.pdf";
 
 //pl4//
 import plf4 from "../assets/pl4/plf4.jpg"; 
-import pls4 from "../assets/pl4/pls4.jpg";
-import plss4 from "../assets/pl4/plss4.jpg";
+import pls4 from "../assets/pl4/pls4.JPG";
+import plss4 from "../assets/pl4/plss4.JPG";
 import plt4 from "../assets/pl4/plt4.jpg";
-import plup4 from "../assets/pl4/plup4.jpg";
-import plb4 from "../assets/pl4/plb4.jpg";
+import plup4 from "../assets/pl4/plup4.JPG";
+import plb4 from "../assets/pl4/plb4.JPG";
 
 //d200  d300//
-import df200 from "../assets/d200/df200.jpg";
-import db200 from "../assets/d200/db200.jpg";
-import ds200 from "../assets/d200/ds200.jpg";
+import df200 from "../assets/d200/df200.JPG";
+import db200 from "../assets/d200/db200.JPG";
+import ds200 from "../assets/d200/ds200.JPG";
 import dt200 from "../assets/d200/dt200.jpg";
-import dup200 from "../assets/d200/dup200.jpg";
-import dss200 from "../assets/d200/dss200.jpg";
+import dup200 from "../assets/d200/dup200.JPG";
+import dss200 from "../assets/d200/dss200.JPG";
 //d4200//
 import fd4200 from "../assets/d4200/fd4200.jpg";
 import sd4200 from "../assets/d4200/sd4200.jpg";
 import td4200 from "../assets/d4200/td4200.jpg";
-import nd4200 from "../assets/d4200/nd4200.jpg";
-import bs4200 from "../assets/d4200/bs4200.jpg";
-import ssd4200 from "../assets/d4200/ssd4200.jpg";
+import nd4200 from "../assets/d4200/nd4200.JPG";
+import bs4200 from "../assets/d4200/bs4200.JPG";
+import ssd4200 from "../assets/d4200/ssd4200.JPG";
 
 //4300//
 import fd4300 from "../assets/d4300/fd4300.jpg";
 import sd4300 from "../assets/d4300/sd4300.jpg";
 import td4300 from "../assets/d4300/td4300.jpg";
-import nd4300 from "../assets/d4300/nd4300.jpg";
-import bd4300 from "../assets/d4300/bd4300.jpg";
-import ssd4300 from "../assets/d4300/ssd4300.jpg";
+import nd4300 from "../assets/d4300/nd4300.JPG";
+import bd4300 from "../assets/d4300/bd4300.JPG";
+import ssd4300 from "../assets/d4300/ssd4300.JPG";
 
 //tta300//
 import ft300 from "../assets/tta300/ft300.jpg";
-import st300 from "../assets/tta300/st300.jpg";
-import sst300 from "../assets/tta300/sst300.jpg";
+import st300 from "../assets/tta300/st300.JPG";
+import sst300 from "../assets/tta300/sst300.JPG";
 import tot300 from "../assets/tta300/tot300.jpg";
-import nt300 from "../assets/tta300/nt300.jpg";
+import nt300 from "../assets/tta300/nt300.JPG";
 import bt300 from "../assets/tta300/bt300.jpg";
 //tip1002//
 import ft1002 from "../assets/tip1002/ft1002.jpg";
-import st1002 from "../assets/tip1002/st1002.jpg";
-import sst1002 from "../assets/tip1002/sst1002.jpg";
+import st1002 from "../assets/tip1002/st1002.JPG";
+import sst1002 from "../assets/tip1002/sst1002.JPG";
 import stt1002 from "../assets/tip1002/stt1002.jpg";
-import nt1002 from "../assets/tip1002/nt1002.jpg";
+import nt1002 from "../assets/tip1002/nt1002.JPG";
 import bt1002 from "../assets/tip1002/bt1002.jpg";
 
 
@@ -725,7 +725,7 @@ const products = [
     ],
   },
   {
-    img: [ft1002, st1002, sst1002, nt1002, bt1002],
+    img: [ft1002, st1002, sst1002, nt1002, bt1002,stt1002],
     title: "TIP ",
     model: "TIP 1002",
     description:
