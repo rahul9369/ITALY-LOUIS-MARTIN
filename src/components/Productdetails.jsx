@@ -32,10 +32,10 @@ import redu from "../assets/red10/redu.JPG";
 //red6//  
 import redb5 from "../assets/red6/redb5.JPG";
 import redu5 from "../assets/red6/redu5.JPG";
-import redf5 from  "../assets/red6/redf5.JPG";
+import redf5 from "../assets/red6/redf5.JPG";
 import reds5 from "../assets/red6/reds5.JPG";
 import red5 from "../assets/red6/red5.JPG";
-import redo5 from "../assets/red6/redo5.JPG"; 
+import redo5 from "../assets/red6/redo5.JPG";
 //red5//
 import redfront5 from "../assets/red5/redfront5.jpg";
 import redside5 from "../assets/red5/redside5.JPG";
@@ -95,7 +95,7 @@ import f415 from "../assets/f15/f415.jpg";
 
 const products = [
   {
-    img: [redfront,redback,redn,redside, redu],
+    img: [redfront, redback, redn, redside, redu],
     title: "Point Source ",
     model: "Red 10",
     description:
@@ -151,7 +151,7 @@ const products = [
     ],
   },
   {
-    img: [redb5,redu5,redf5,reds5,red5,redo5],
+    img: [redb5, redu5, redf5, reds5, red5, redo5],
     title: "Point Source",
     model: "Red 5.5",
     description:
@@ -205,7 +205,7 @@ const products = [
     ],
   },
   {
-    img: [redfront5,redds5,red5open,redside5,,redback5],
+    img: [redfront5, redds5, red5open, redside5, , redback5],
     title: "Point Source ",
     model: "Red 5",
     description:
@@ -258,7 +258,7 @@ const products = [
     ],
   },
   {
-    img: [redff9,red94,reds9,redop9,redback9],
+    img: [redff9, red94, reds9, redop9, redback9],
     title: "Point Source ",
     model: "Red 9",
     description:
@@ -312,7 +312,7 @@ const products = [
     ],
   },
   {
-    img: [redf12,red412,reds12,redop12,redbb12],
+    img: [redf12, red412, reds12, redop12, redbb12],
     title: "Point Source ",
     model: "Red 12",
     description:
@@ -367,7 +367,7 @@ const products = [
   },
 
   {
-    img: [ffront8,fopen8,f458,fs8,ftop8,fup8],
+    img: [ffront8, fopen8, f458, fs8, ftop8, fup8],
     title: "Point Source ",
     model: "F8",
     description:
@@ -419,7 +419,7 @@ const products = [
     ],
   },
   {
-    img: [ff10,fopen10,fs10,fss10,f410,fdoun10,fni10],
+    img: [ff10, fopen10, fs10, fss10, f410, fdoun10, fni10],
     title: "Point Source ",
     model: "F10",
     description:
@@ -472,7 +472,7 @@ const products = [
     ],
   },
   {
-    img: [ff12,fb12,f412,fd12,fopen12,fs12,ftop12],
+    img: [ff12, fb12, f412, fd12, fopen12, fs12, ftop12],
     title: "Point Source ",
     model: "F12",
     description:
@@ -526,7 +526,7 @@ const products = [
     ],
   },
   {
-    img: [ff15,fb15,f415,fd15,fopen15,fs15,ftop15],
+    img: [ff15, fb15, f415, fd15, fopen15, fs15, ftop15],
     title: "Point Source ",
     model: "F15",
     description:
@@ -636,14 +636,16 @@ const ProductDetail = () => {
             alt={product.model}
             className="w-full h-auto md:h-[400px] object-cover rounded-lg"
           /> */}
-          <div> 
-                    <div className="relative ">
+          <div>
+            <div className="relative ">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
-               className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
-                 loading="lazy"
+                className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+
+                loading="eager"
+                decoding="async"
                 onClick={() => setIsModalOpen(true)}
               />
 
@@ -674,18 +676,18 @@ const ProductDetail = () => {
                     key={index}
                     src={img}
                     alt={`Thumbnail ${index + 1}`}
-                    onClick={() => setCurrentImgIndex(index)} 
-                    loading="lazy"
-                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border  ${
-                      index === currentImgIndex
-                        ? "border-blue-500"
-                        : "border-transparent"
-                    }`}
+                    onClick={() => setCurrentImgIndex(index)}
+                    loading="eager"
+                    decoding="async"
+                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border  ${index === currentImgIndex
+                      ? "border-blue-500"
+                      : "border-transparent"
+                      }`}
                   />
                 ))}
               </div>
             )}
-            </div>
+          </div>
 
           {isModalOpen && (
             <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
@@ -731,11 +733,10 @@ const ProductDetail = () => {
           {["Specifications", "Downloads"].map((tab) => (
             <button
               key={tab}
-              className={`px-4 py-2 md:px-6 md:py-3 cursor-pointer text-sm md:text-lg flex-1 ${
-                activeTab === tab
-                  ? "border-b-2 border-black font-bold"
-                  : "text-gray-500"
-              }`}
+              className={`px-4 py-2 md:px-6 md:py-3 cursor-pointer text-sm md:text-lg flex-1 ${activeTab === tab
+                ? "border-b-2 border-black font-bold"
+                : "text-gray-500"
+                }`}
               onClick={() => setActiveTab(tab)}>
               {tab}
             </button>
