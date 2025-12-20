@@ -38,7 +38,7 @@ const Categories = () => {
       </div>
 
       {/* PRODUCT SECTION */}
-      <div className="w-full space-y-20">
+      <div className="w-[90%] space-y-20">
         {categories.map((item, index) => (
           <div
             key={index}
