@@ -16,27 +16,27 @@ import K312PDF from "../assets/pdf/K312.pdf";
 import kff302 from "../assets/k302/kff302.jpg";
 import kb302 from "../assets/k302/kb302.jpg";
 import ks302 from "../assets/k302/ks302.jpg";
-import kt302 from "../assets/k302/kt302.jpg";
+import kt302 from "../assets/k302/kt302.JPG";
 //k304//
 import kf304 from "../assets/k304/kf304.jpg";
 import kb304 from "../assets/k304/kb304.jpg";
 import ks304 from "../assets/k304/ks304.jpg";
-import ktop304 from "../assets/k304/ktop304.jpg";
+import ktop304 from "../assets/k304/ktop304.JPG";
 //k306//
 import kf306 from "../assets/k306/kf306.jpg";
 import kb306 from "../assets/k306/kb306.jpg";
 import ks306 from "../assets/k306/ks306.jpg";
-import ktop306 from "../assets/k306/ktop306.jpg";
+import ktop306 from "../assets/k306/ktop306.JPG";
 //k308//
-import kf308 from "../assets/k308/kf308.jpg";
-import kb308 from "../assets/k308/kb308.jpg";
-import ks308 from "../assets/k308/ks308.jpg";
-import ktop308 from "../assets/k308/ktop308.jpg";
+import kf308 from "../assets/k308/kf308.JPG";
+import kb308 from "../assets/k308/kb308.JPG";
+import ks308 from "../assets/k308/ks308.JPG";
+import ktop308 from "../assets/k308/ktop308.JPG";
 //k312//
 import kf312 from "../assets/k312/kf312.jpg";
 import kb312 from "../assets/k312/kb312.jpg";
 import ks312 from "../assets/k312/ks312.jpg";
-import ktop312 from "../assets/k312/ktop312.jpg"; 
+import ktop312 from "../assets/k312/ktop312.JPG"; 
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
