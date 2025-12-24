@@ -35,7 +35,7 @@ import TTAseries from "./components/ElectronicSeries/TTAseries";
 import Kseries from "./components/ColumnSpeaker/Kseries";
 import DSseries from "./components/CommercialSeries/Dsseries";
 import PDFViewer from "./components/PdfViewer";
-import Dsp from "./components/dsp";
+
 
 <img loading="lazy" src="/images/product.webp" />
 
