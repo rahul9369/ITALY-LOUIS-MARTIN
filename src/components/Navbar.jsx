@@ -107,15 +107,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full shadow-md bg-black opacity-95 relative  z-50">
+    <nav className="w-full shadow-md bg-gray-500 opacity-95 relative  z-50">
       <div className="w-full flex justify-between items-center  px-6 md:px-8">
-        <div className="flex items-center space-x-2">
+        <div className="flex my-2 items-center space-x-2">
           <Link to="/">
-            <img src={Logo} alt="logo" className="w-25 h-25" />
+            <img src={Logo} alt="logo" className="w-12 h-12" />
           </Link>
-          <span className="md:text-xl text-[12px] text-white">
-            
-          </span>
+          <span className="md:text-xl text-[12px] text-white"></span>
         </div>
 
         <ul className="hidden md:flex space-x-6 center flex-items-center">

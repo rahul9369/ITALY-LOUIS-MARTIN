@@ -38,10 +38,10 @@ import qtop from "../assets/q50/qtop.JPG";
 //q60//
 import q60front from "../assets/q60/q60front.JPG";
 import q60s from "../assets/q60/q60s.JPG";
-import q60back from "../assets/q60/q60back.jpg"; 
+import q60back from "../assets/q60/q60back.jpg";
 import q60j from "../assets/q60/q60j.JPG";
 import q60ss from "../assets/q60/q60ss.JPG";
-import q60top from "../assets/q60/q60top.JPG"; 
+// import q60top from "../assets/q60/q60top.JPG";
 //q70//
 import q70front from "../assets/q70/q70front.JPG";
 import q70j from "../assets/q70/q70j.JPG";
@@ -49,20 +49,19 @@ import q70s from "../assets/q70/q70s.JPG";
 import q70ss from "../assets/q70/q70ss.JPG";
 import q70back from "../assets/q70/q70back.JPG";
 import q70top from "../assets/q70/q70top.JPG";
-//q80// 
+//q80//
 import q80front from "../assets/q80/q80f.JPG";
 import q80s from "../assets/q80/q80s.JPG";
 import q80b from "../assets/q80/q80b.jpg";
 import q80ss from "../assets/q80/q80ss.JPG";
 import q80j from "../assets/q80/q80j.JPG";
-import q80top from "../assets/q80/q80t.JPG";  
+import q80top from "../assets/q80/q80t.JPG";
 
 import ft1002 from "../assets/tip1002/ft1002.jpg";
 import ft300 from "../assets/tta300/ft300.jpg";
 import ksf218 from "../assets/ks218/ksf218.JPG";
 import sf218 from "../assets/s218/sf218.JPG";
 import sf18 from "../assets/s18/sf18.JPG";
-
 
 // import cox12 from "../assets/coximg/coxunder.jpg";
 // import coxback1 from "../assets/coxback1.jpg";
@@ -74,7 +73,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
   {
-    img: [famouf,famous, famouss, famouu, famoub],
+    img: [famouf, famous, famouss, famouu, famoub],
     title: "Line array ",
     model: "Famous 210",
     description:
@@ -127,7 +126,7 @@ const products = [
     ],
   },
   {
-    img: [ qfront,qnos, qback, qss,qs, qtop],
+    img: [qfront, qnos, qback, qss, qs],
     title: "Line Array ",
     model: "Q 50",
     description:
@@ -179,7 +178,7 @@ const products = [
     ],
   },
   {
-    img: [q60front,q60s,q60back,q60ss,q60j,q60top],
+    img: [q60front, q60s, q60back, q60ss, q60j],
     title: "Line array ",
     model: "Q 60",
     description:
@@ -232,7 +231,7 @@ const products = [
     ],
   },
   {
-    img: [q70front,q70j,q70s,q70back,q70ss,q70top],
+    img: [q70front, q70j, q70s, q70back, q70ss],
     title: "Line array ",
     model: "Q 70",
     description:
@@ -284,7 +283,7 @@ const products = [
     ],
   },
   {
-    img: [q80front,q80j,q80s,q80b,q80ss,q80top ],
+    img: [q80front, q80j, q80s, q80b, q80ss],
     title: "Line array ",
     model: "Q 80",
     description:
@@ -435,7 +434,7 @@ const ProductDetail = () => {
           content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
         />
       </Helmet>
-      <div className="w-[90%] mx-auto p-30">
+      <div className="w-[90%] mx-auto mt-4 ">
         {/* Product Image and Title */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 space-x-6">
           {/* <img
@@ -449,10 +448,9 @@ const ProductDetail = () => {
               <img
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
-                className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+                className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
                 loading="eager"
                 decoding="async"
-               
                 onClick={() => setIsModalOpen(true)}
               />
 
@@ -484,7 +482,7 @@ const ProductDetail = () => {
                     src={img}
                     alt={`Thumbnail ${index + 1}`}
                     onClick={() => setCurrentImgIndex(index)}
-                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border ${
+                    className={`w-36 h-20 object-contain rounded-md cursor-pointer border ${
                       index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"
@@ -641,7 +639,7 @@ const ProductDetail = () => {
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="absolute top-0 left-0 w-full h-[95%] object-cover transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                    className="absolute top-0 left-0 w-full h-[95%] object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
                   />
                 </div>
 
