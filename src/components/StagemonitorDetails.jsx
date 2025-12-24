@@ -49,7 +49,7 @@ import fd4300 from "../assets/d4300/fd4300.jpg"
 
 import ft1002 from "../assets/tip1002/ft1002.jpg"
 import sf218 from "../assets/s218/sf218.JPG"
-import ft300 from "../assets/tta300/ft300.JPG"
+import ft300 from "../assets/tta300/ft300.jpg"
 
 
 
