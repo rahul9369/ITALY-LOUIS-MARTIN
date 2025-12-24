@@ -11,7 +11,7 @@ import TIPPDF from "../assets/pdf/TIPseries.pdf";
 import TTAPDF from "../assets/pdf/TTAseries.pdf";
 
 //pl4//
-import plf4 from "../assets/pl4/plf4.jpg"; 
+import plf4 from "../assets/pl4/plf4.jpg";
 import pls4 from "../assets/pl4/pls4.JPG";
 import plss4 from "../assets/pl4/plss4.JPG";
 import plt4 from "../assets/pl4/plt4.jpg";
@@ -56,13 +56,12 @@ import stt1002 from "../assets/tip1002/stt1002.jpg";
 import nt1002 from "../assets/tip1002/nt1002.JPG";
 import bt1002 from "../assets/tip1002/bt1002.jpg";
 
-
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 const products = [
   {
-    img: [df200, db200, ds200, dt200, dup200, dss200],
+    img: [df200, db200, ds200, dup200, dss200],
     title: "D ",
     model: "D 200",
     description:
@@ -106,7 +105,7 @@ const products = [
     ],
   },
   {
-    img: [df200, db200, ds200, dt200, dup200, dss200],
+    img: [df200, db200, ds200, dup200, dss200],
     title: "D ",
     model: "D 300",
     description:
@@ -151,7 +150,7 @@ const products = [
     ],
   },
   {
-    img: [fd4200, sd4200, td4200, nd4200, bs4200, ssd4200],
+    img: [fd4200, sd4200, nd4200, bs4200, ssd4200],
     title: "D ",
     model: "D 4200",
     description:
@@ -195,7 +194,7 @@ const products = [
     ],
   },
   {
-    img: [fd4300, sd4300, td4300, nd4300, bd4300, ssd4300],
+    img: [fd4300, sd4300, nd4300, bd4300, ssd4300],
     title: "D ",
     model: "D 4300",
     description:
@@ -239,7 +238,7 @@ const products = [
     ],
   },
   {
-    img: [ plf4, plb4,pls4, plss4, plt4, plup4, ],
+    img: [plf4, plb4, pls4, plss4, plt4],
     title: "PL ",
     model: "PL 4.1",
     description:
@@ -273,7 +272,7 @@ const products = [
       {
         name: "D 4200",
         path: "/electronics/d%204200",
-        img: fd4200
+        img: fd4200,
       },
       {
         name: "D 4300",
@@ -283,7 +282,7 @@ const products = [
     ],
   },
   {
-    img: [ plf4, pls4, plss4, plt4, plup4],
+    img: [plf4, pls4, plss4, plt4],
     title: "PL ",
     model: "PL 4.5",
     description:
@@ -327,7 +326,7 @@ const products = [
     ],
   },
   {
-    img: [ft300, st300, sst300, tot300, nt300, bt300],
+    img: [ft300, st300, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 300",
     description:
@@ -376,7 +375,7 @@ const products = [
     ],
   },
   {
-    img: [ft300, st300, sst300, tot300, nt300, bt300],
+    img: [ft300, st300, sst300, , nt300, bt300],
     title: "TTA ",
     model: "TTA 500",
     description:
@@ -425,7 +424,7 @@ const products = [
     ],
   },
   {
-    img:  [ft300, st300, sst300, tot300, nt300, bt300],
+    img: [ft300, st300, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 600",
     description:
@@ -475,7 +474,7 @@ const products = [
     ],
   },
   {
-    img:  [ft300, st300, sst300, tot300, nt300, bt300],
+    img: [ft300, st300, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 800",
     description:
@@ -525,7 +524,7 @@ const products = [
     ],
   },
   {
-    img: [ft300, st300, sst300, tot300, nt300, bt300],
+    img: [ft300, st300, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 1000",
     description:
@@ -575,7 +574,7 @@ const products = [
     ],
   },
   {
-    img: [ft300, st300, sst300, tot300, nt300, bt300],
+    img: [ft300, st300, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 1300",
     description:
@@ -625,7 +624,7 @@ const products = [
     ],
   },
   {
-    img: [ft300, st300, sst300, tot300, nt300, bt300],
+    img: [ft300, st300, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 450",
     description:
@@ -675,7 +674,7 @@ const products = [
     ],
   },
   {
-    img: [ft300, st300, sst300, tot300, nt300, bt300],
+    img: [ft300, st300, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 460",
     description:
@@ -725,7 +724,7 @@ const products = [
     ],
   },
   {
-    img: [ft1002, st1002, sst1002, nt1002, bt1002,stt1002],
+    img: [ft1002, st1002, sst1002, nt1002, bt1002],
     title: "TIP ",
     model: "TIP 1002",
     description:
@@ -813,7 +812,7 @@ const products = [
     ],
   },
   {
-    img:  [ft1002, st1002, sst1002, nt1002, bt1002],
+    img: [ft1002, st1002, sst1002, nt1002, bt1002],
     title: "TIP ",
     model: "TIP 1302",
     description:
@@ -857,7 +856,7 @@ const products = [
     ],
   },
   {
-    img:  [ft1002, st1002, sst1002, nt1002, bt1002],
+    img: [ft1002, st1002, sst1002, nt1002, bt1002],
     title: "TIP ",
     model: "TIP 2402",
     description:
@@ -958,15 +957,14 @@ const ProductDetail = () => {
             alt={product.model}
             className="w-full h-auto md:h-[400px] lg:h-[400px] object-cover rounded-lg"
           /> */}
-           <div> 
-                    <div className="relative ">
+          <div>
+            <div className="relative ">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
                 className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
-
-                 loading="eager"
+                loading="eager"
                 decoding="async"
                 onClick={() => setIsModalOpen(true)}
               />
@@ -999,7 +997,7 @@ const ProductDetail = () => {
                     src={img}
                     alt={`Thumbnail ${index + 1}`}
                     onClick={() => setCurrentImgIndex(index)}
-                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border ${
+                    className={`w-28 h-20 object-contain rounded-md cursor-pointer border ${
                       index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"
@@ -1008,7 +1006,7 @@ const ProductDetail = () => {
                 ))}
               </div>
             )}
-            </div>
+          </div>
 
           {isModalOpen && (
             <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
@@ -1026,9 +1024,7 @@ const ProductDetail = () => {
               </div>
             </div>
           )}
-          
 
-        
           <div>
             <h1 className="text-2xl md:text-3xl font-bold">{product.model}</h1>
             <div className="w-full ">
@@ -1184,7 +1180,7 @@ const ProductDetail = () => {
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="absolute top-0 left-0 w-full h-[95%] object-cover transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                    className="absolute top-0 left-0 w-full h-[95%] object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
                   />
                 </div>
 

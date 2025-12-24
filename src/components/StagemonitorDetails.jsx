@@ -42,21 +42,14 @@ import dss15 from "../assets/ds15/dss15.JPG";
 import dsup15 from "../assets/ds15/dsup15.JPG";
 import ds415 from "../assets/ds15/ds415.JPG";
 //AMP//
-import df200 from "../assets/d200/df200.JPG"
-import fd4200 from "../assets/d4200/fd4200.jpg"
-import sf18 from "../assets/s18/sf18.JPG"
-import fd4300 from "../assets/d4300/fd4300.jpg"
+import df200 from "../assets/d200/df200.JPG";
+import fd4200 from "../assets/d4200/fd4200.jpg";
+import sf18 from "../assets/s18/sf18.JPG";
+import fd4300 from "../assets/d4300/fd4300.jpg";
 
-import ft1002 from "../assets/tip1002/ft1002.jpg"
-import sf218 from "../assets/s218/sf218.JPG"
-import ft300 from "../assets/tta300/ft300.jpg"
-
-
-
-
-
-
-
+import ft1002 from "../assets/tip1002/ft1002.jpg";
+import sf218 from "../assets/s218/sf218.JPG";
+import ft300 from "../assets/tta300/ft300.jpg";
 
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
@@ -112,12 +105,12 @@ const products = [
       {
         name: "DS12",
         path: "/plastic/ds12",
-        img:dsf12,
+        img: dsf12,
       },
     ],
   },
   {
-    img: [dsf8, dsb8, dsop8, dss8, dsup8],  
+    img: [dsf8, dsb8, dsop8, dss8, dsup8],
     title: "Plastic Speaker",
     model: "DS8",
     description:
@@ -171,7 +164,7 @@ const products = [
     ],
   },
   {
-    img: [dsf12, dsb12, ds412, dss12,dsop12 ,dsup12],
+    img: [dsf12, dsb12, ds412, dss12, dsop12],
     title: "Plastic Speaker",
     model: "DS12",
     description:
@@ -204,7 +197,7 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%201002",
-        img:ft1002,
+        img: ft1002,
       },
       {
         name: "TTA-800",
@@ -224,7 +217,7 @@ const products = [
     ],
   },
   {
-    img: [dsf15, dsop15,dsb15, ds415, dss15, dsup15],
+    img: [dsf15, dsop15, dsb15, ds415, dss15],
     title: "Plastic Speaker",
     model: "DS15",
     description:
@@ -387,16 +380,15 @@ const ProductDetail = () => {
             alt={product.model}
             className="w-full h-auto md:h-[400px] lg:h-[400px] object-cover rounded-lg"
           /> */}
-          <div> 
-                    <div className="relative ">
+          <div>
+            <div className="relative ">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
-                className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+                className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
                 loading="eager"
                 decoding="async"
-                 
                 onClick={() => setIsModalOpen(true)}
               />
 
@@ -428,7 +420,7 @@ const ProductDetail = () => {
                     src={img}
                     alt={`Thumbnail ${index + 1}`}
                     onClick={() => setCurrentImgIndex(index)}
-                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border ${
+                    className={`w-28 h-20 object-contain rounded-md cursor-pointer border ${
                       index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"
@@ -437,7 +429,7 @@ const ProductDetail = () => {
                 ))}
               </div>
             )}
-            </div>
+          </div>
 
           {isModalOpen && (
             <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">

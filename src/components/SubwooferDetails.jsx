@@ -2,14 +2,12 @@ import { Link, useParams } from "react-router-dom";
 
 import Footer from "./Footer";
 
-
 import F12 from "../assets/F12.jpg";
 import Devilred10 from "../assets/Devilred10.png";
 // import S218 from "../assets/S218.png";
 
 // import KS18a from "../assets/pdf/KS18A.pdf";
 import KS18a from "../assets/pdf/ks18a.pdf";
-
 
 import TIP from "../assets/TIPA.jpg";
 import S18a from "../assets/pdf/S18a.pdf";
@@ -58,10 +56,10 @@ import ft1002 from "../assets/tip1002/ft1002.jpg";
 import redfront from "../assets/red10/redfront.JPG";
 import ff12 from "../assets/f12/ff12.jpg";
 import ff15 from "../assets/f15/ff15.jpg";
-import famouf  from "../assets/fam/famouf.JPG";
+import famouf from "../assets/fam/famouf.JPG";
 const products = [
   {
-    img: [ksf18, ksb18, kss18, kstop18, ks418, ksd18],
+    img: [ksf18, ksb18, kstop18, ks418, ksd18],
     title: "Subwoofer",
     model: "KS18",
     description:
@@ -115,7 +113,7 @@ const products = [
   },
 
   {
-    img: [ksf218, ksb218, kss218, ktop218, ks4218],
+    img: [ksf218, ksb218, kss218, ks4218],
     title: "Subwoofer",
     model: "KS218",
     description:
@@ -169,7 +167,7 @@ const products = [
   },
 
   {
-    img: [sf18, sb18, ss18, stop18, s418, sop18, sup18],
+    img: [sf18, sb18, ss18, stop18, s418, sop18],
     title: "Subwoofer",
     model: "S18",
     description:
@@ -223,7 +221,7 @@ const products = [
   },
 
   {
-    img: [sf218, sb218, ss218, stop218, s4218, sop218, sdou218],
+    img: [sf218, sb218, ss218, s4218, sop218],
     title: "Subwoofer",
     model: "S218",
     description:
@@ -332,16 +330,15 @@ const ProductDetail = () => {
             alt={product.model}
             className="w-full h-auto md:h-[400px] lg:h-[400px] object-cover rounded-lg"
           /> */}
-           <div> 
-                    <div className="relative ">
+          <div>
+            <div className="relative ">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
-                className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+                className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
                 loading="eager"
                 decoding="async"
-                 
                 onClick={() => setIsModalOpen(true)}
               />
 
@@ -373,7 +370,7 @@ const ProductDetail = () => {
                     src={img}
                     alt={`Thumbnail ${index + 1}`}
                     onClick={() => setCurrentImgIndex(index)}
-                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border ${
+                    className={`w-28 h-20 object-contain rounded-md cursor-pointer border ${
                       index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"
@@ -382,7 +379,7 @@ const ProductDetail = () => {
                 ))}
               </div>
             )}
-            </div>
+          </div>
 
           {isModalOpen && (
             <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">

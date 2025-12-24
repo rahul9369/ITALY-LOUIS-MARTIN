@@ -2,8 +2,6 @@ import { Link, useParams } from "react-router-dom";
 import Devilred10 from "../assets/Devilred10.png";
 //red series images//
 
-
-
 import red12 from "../assets/red12.png";
 import TIP from "../assets/TIPA.jpg";
 import S218 from "../assets/S218.png";
@@ -29,7 +27,7 @@ import redback from "../assets/red10/redback.JPG";
 import redn from "../assets/red10/redn.JPG";
 import redside from "../assets/red10/redside.JPG";
 import redu from "../assets/red10/redu.JPG";
-//red6//  
+//red6//
 import redb5 from "../assets/red6/redb5.JPG";
 import redu5 from "../assets/red6/redu5.JPG";
 import redf5 from "../assets/red6/redf5.JPG";
@@ -89,19 +87,12 @@ import fs15 from "../assets/f15/fs15.JPG";
 import ftop15 from "../assets/f15/ftop15.JPG";
 import f415 from "../assets/f15/f415.jpg";
 
-import ft1002 from "../assets/tip1002/ft1002.jpg"
-import sf18 from "../assets/s18/sf18.JPG"
-import sf218 from "../assets/s218/sf218.JPG"
-import fd4200 from "../assets/d4200/fd4200.jpg"
-import df200 from "../assets/d200/df200.JPG"
-import ft300 from "../assets/tta300/ft300.jpg"
-
-
-
-
-
-
-
+import ft1002 from "../assets/tip1002/ft1002.jpg";
+import sf18 from "../assets/s18/sf18.JPG";
+import sf218 from "../assets/s218/sf218.JPG";
+import fd4200 from "../assets/d4200/fd4200.jpg";
+import df200 from "../assets/d200/df200.JPG";
+import ft300 from "../assets/tta300/ft300.jpg";
 
 const products = [
   {
@@ -161,7 +152,7 @@ const products = [
     ],
   },
   {
-    img: [redfront5, redds5, red5open, redside5, , redback5],
+    img: [redfront5, redds5, red5open, redside5, redback5],
     title: "Point Source",
     model: "Red 5.5",
     description:
@@ -215,7 +206,7 @@ const products = [
     ],
   },
   {
-    img:  [ redf5,redb5, redu5,  reds5, red5, redo5],
+    img: [redf5, red5, redo5, redb5, reds5],
     title: "Point Source ",
     model: "Red 5",
     description:
@@ -377,7 +368,7 @@ const products = [
   },
 
   {
-    img: [ffront8, fopen8, f458, fs8, ftop8, fup8],
+    img: [ffront8, fopen8, f458, fs8, ftop8],
     title: "Point Source ",
     model: "F8",
     description:
@@ -429,7 +420,7 @@ const products = [
     ],
   },
   {
-    img: [ff10, fopen10, fs10, fss10, f410, fdoun10, fni10],
+    img: [ff10, fopen10, fs10, f410, fdoun10],
     title: "Point Source ",
     model: "F10",
     description:
@@ -536,7 +527,7 @@ const products = [
     ],
   },
   {
-    img: [ff15, fb15, f415, fd15, fopen15, fs15, ftop15],
+    img: [ff15, fb15, f415, fd15, fopen15],
     title: "Point Source ",
     model: "F15",
     description:
@@ -615,11 +606,11 @@ const ProductDetail = () => {
 
   const images = Array.isArray(product.img) ? product.img : [product.img];
   useEffect(() => {
-  if (!images || !images[currentImgIndex]) return;
+    if (!images || !images[currentImgIndex]) return;
 
-  const img = new Image();
-  img.src = images[currentImgIndex];
-}, [currentImgIndex, images]);
+    const img = new Image();
+    img.src = images[currentImgIndex];
+  }, [currentImgIndex, images]);
 
   const prevImage = () => {
     setCurrentImgIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -659,7 +650,6 @@ const ProductDetail = () => {
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
                 className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
-
                 loading="eager"
                 decoding="async"
                 onClick={() => setIsModalOpen(true)}
@@ -695,10 +685,11 @@ const ProductDetail = () => {
                     onClick={() => setCurrentImgIndex(index)}
                     loading="eager"
                     decoding="async"
-                    className={`w-28 h-20 object-cover rounded-md cursor-pointer border  ${index === currentImgIndex
-                      ? "border-blue-500"
-                      : "border-transparent"
-                      }`}
+                    className={`w-28 h-20 object-contain rounded-md cursor-pointer border  ${
+                      index === currentImgIndex
+                        ? "border-blue-500"
+                        : "border-transparent"
+                    }`}
                   />
                 ))}
               </div>
@@ -749,10 +740,11 @@ const ProductDetail = () => {
           {["Specifications", "Downloads"].map((tab) => (
             <button
               key={tab}
-              className={`px-4 py-2 md:px-6 md:py-3 cursor-pointer text-sm md:text-lg flex-1 ${activeTab === tab
-                ? "border-b-2 border-black font-bold"
-                : "text-gray-500"
-                }`}
+              className={`px-4 py-2 md:px-6 md:py-3 cursor-pointer text-sm md:text-lg flex-1 ${
+                activeTab === tab
+                  ? "border-b-2 border-black font-bold"
+                  : "text-gray-500"
+              }`}
               onClick={() => setActiveTab(tab)}>
               {tab}
             </button>
@@ -847,7 +839,7 @@ const ProductDetail = () => {
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="absolute top-0 left-0 w-full h-[95%] object-cover transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                    className="absolute top-0 left-0 w-full h-[95%] object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
                   />
                 </div>
 

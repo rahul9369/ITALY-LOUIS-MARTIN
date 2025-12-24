@@ -36,8 +36,7 @@ import ktop308 from "../assets/k308/ktop308.JPG";
 import kf312 from "../assets/k312/kf312.jpg";
 import kb312 from "../assets/k312/kb312.jpg";
 import ks312 from "../assets/k312/ks312.jpg";
-import ktop312 from "../assets/k312/ktop312.JPG"; 
-
+import ktop312 from "../assets/k312/ktop312.JPG";
 
 import df200 from "../assets/d200/df200.JPG";
 import fd4200 from "../assets/d4200/fd4200.jpg";
@@ -46,14 +45,12 @@ import ft1002 from "../assets/tip1002/ft1002.jpg";
 import sf218 from "../assets/s218/sf218.JPG";
 import fd4300 from "../assets/d4300/fd4300.jpg";
 
-
-
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 const products = [
   {
-    img: [kff302, kb302, ks302, kt302 ],
+    img: [kff302, kb302, ks302, kt302],
     title: "Column Speaker",
     model: "K302",
     description:
@@ -104,7 +101,7 @@ const products = [
     ],
   },
   {
-    img: [ kf304, kb304, ks304, ktop304],
+    img: [kf304, kb304, ks304, ktop304],
     title: "Column Speaker",
     model: "K304",
     description:
@@ -358,25 +355,24 @@ const ProductDetail = () => {
           content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
         />
       </Helmet>
-      <div className="w-[90%] mx-auto p-30">
+      <div className="w-[90%] mx-auto mt-4">
         {/* Product Image and Title */}
         {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* <img
             src={product.img}
             alt={product.model}
             className="w-full h-auto md:h-[400px] object-cover rounded-lg"
           /> */}
-          <div> 
-                    <div className="relative ">
+          <div>
+            <div className="relative ">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
-                className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+                className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
                 loading="eager"
                 decoding="async"
-                 
                 onClick={() => setIsModalOpen(true)}
               />
 
@@ -403,13 +399,12 @@ const ProductDetail = () => {
             {images.length > 1 && (
               <div className="flex justify-center space-x-6 mt-4">
                 {images.map((img, index) => (
-                  
                   <img
                     key={index}
                     src={img}
                     alt={`Thumbnail ${index + 1}`}
                     onClick={() => setCurrentImgIndex(index)}
-                    className={`w-28 h-30 object-cover rounded-md cursor-pointer border ${
+                    className={`w-28 h-30 object-contain rounded-md cursor-pointer border ${
                       index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"
@@ -417,9 +412,8 @@ const ProductDetail = () => {
                   />
                 ))}
               </div>
-              
             )}
-            </div>
+          </div>
 
           {isModalOpen && (
             <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
@@ -439,27 +433,27 @@ const ProductDetail = () => {
           )}
 
           <div>
-          <div>
-            <h1 className="text-2xl md:text-3xl font-bold">
-              {product.title} - {product.model}
-            </h1>
-            <div className="w-full ">
-              <p className="text-gray-600 text-[12px] md:text-[15px] mt-2 text-justify">
-                {product.description}
-              </p>
-            </div>
-            <div className="mt-6">
-              <h2 className="text-2xl font-bold">Applications</h2>
-              <ul className="list-disc list-inside text-gray-600 mt-2">
-                {product.application.map((app, index) => (
-                  <li className="text-[12px] lg:text-[15px] my-2" key={index}>
-                    {app}
-                  </li>
-                ))}
-              </ul>
+            <div>
+              <h1 className="text-2xl md:text-3xl font-bold">
+                {product.title} - {product.model}
+              </h1>
+              <div className="w-full ">
+                <p className="text-gray-600 text-[12px] md:text-[15px] mt-2 text-justify">
+                  {product.description}
+                </p>
+              </div>
+              <div className="mt-6">
+                <h2 className="text-2xl font-bold">Applications</h2>
+                <ul className="list-disc list-inside text-gray-600 mt-2">
+                  {product.application.map((app, index) => (
+                    <li className="text-[12px] lg:text-[15px] my-2" key={index}>
+                      {app}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
         </div>
         {/* Tabs */}
         <div className="mt-6 border-b border-gray-300 flex flex-wrap">
