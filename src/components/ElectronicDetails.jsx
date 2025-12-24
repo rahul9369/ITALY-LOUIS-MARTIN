@@ -949,7 +949,7 @@ const ProductDetail = () => {
           content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
         />
       </Helmet>
-      <div className="w-[90%] mx-auto p-6">
+      <div className="w-[90%] mx-auto smp-6">
         {/* Product Image and Title */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* <img
@@ -982,7 +982,7 @@ const ProductDetail = () => {
               {images.length > 1 && (
                 <button
                   onClick={nextImage}
-                  className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  className="absolute top-1/2 sm:right-[-30px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
                   <ChevronRight className="text-black" size={40} />
                 </button>
               )}
@@ -997,7 +997,7 @@ const ProductDetail = () => {
                     src={img}
                     alt={`Thumbnail ${index + 1}`}
                     onClick={() => setCurrentImgIndex(index)}
-                    className={`w-28 h-20 object-contain rounded-md cursor-pointer border ${
+                    className={`sm:w-28 w-12 h-20 object-contain rounded-md cursor-pointer border ${
                       index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"

@@ -668,7 +668,7 @@ const ProductDetail = () => {
               {images.length > 1 && (
                 <button
                   onClick={nextImage}
-                  className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  className="absolute top-1/2 sm:right-[-20px] right-[-40px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
                   <ChevronRight className="text-black" size={40} />
                 </button>
               )}
@@ -685,7 +685,7 @@ const ProductDetail = () => {
                     onClick={() => setCurrentImgIndex(index)}
                     loading="eager"
                     decoding="async"
-                    className={`w-28 h-20 object-contain rounded-md cursor-pointer border  ${
+                    className={`sm:w-28 w-18 h-20 sm:h-20 object-contain rounded-md cursor-pointer border  ${
                       index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"

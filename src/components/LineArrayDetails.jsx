@@ -448,7 +448,7 @@ const ProductDetail = () => {
               <img
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
-                className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
+                className="sm:w-full w-[100%] h-[100px] sm:h-[300px] object-contain rounded-lg cursor-pointer"
                 loading="eager"
                 decoding="async"
                 onClick={() => setIsModalOpen(true)}
@@ -458,7 +458,7 @@ const ProductDetail = () => {
               {images.length > 1 && (
                 <button
                   onClick={prevImage}
-                  className="absolute top-1/2 left-[-50px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  className="absolute top-1/2 sm:left-[-50px] left-[-20px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
                   <ChevronLeft className="text-black" size={40} />
                 </button>
               )}
@@ -467,7 +467,7 @@ const ProductDetail = () => {
               {images.length > 1 && (
                 <button
                   onClick={nextImage}
-                  className="absolute top-1/2 right-[-50px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  className="absolute top-1/2 sm:right-[-50px] right-[-30px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
                   <ChevronRight className="text-black" size={40} />
                 </button>
               )}
@@ -482,7 +482,7 @@ const ProductDetail = () => {
                     src={img}
                     alt={`Thumbnail ${index + 1}`}
                     onClick={() => setCurrentImgIndex(index)}
-                    className={`w-36 h-20 object-contain rounded-md cursor-pointer border ${
+                    className={`sm:w-36 w-18 h-20 sm:h-20 object-contain rounded-md cursor-pointer border ${
                       index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"
@@ -634,7 +634,7 @@ const ProductDetail = () => {
                 to={item.path}
                 onClick={() => window.scrollTo(0, 0)}
                 key={index}
-                className="group w-60 block rounded-md p-2 text-center overflow-hidden">
+                className="group w-90 block rounded-md py-2 px-6 text-center overflow-hidden">
                 <div className="relative w-full h-60 overflow-hidden rounded-sm">
                   <img
                     src={item.img}
