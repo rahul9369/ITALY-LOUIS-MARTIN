@@ -639,6 +639,8 @@ const ProductDetail = () => {
                   <img
                     src={item.img}
                     alt={item.name}
+                    loading="eager"
+                    decoding="async"
                     className="absolute top-0 left-0 w-full h-[95%] object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
                   />
                 </div>
