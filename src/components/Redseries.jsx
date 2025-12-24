@@ -75,6 +75,8 @@ const ProductCard = ({ product }) => {
         src={product.img}
         alt={product.model}
         className="w-full h-72 object-contain cursor-pointer rounded-lg"
+        loading="eager"
+                decoding="async"
       />
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>

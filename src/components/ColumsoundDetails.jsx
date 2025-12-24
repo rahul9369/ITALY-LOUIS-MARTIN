@@ -38,6 +38,16 @@ import kb312 from "../assets/k312/kb312.jpg";
 import ks312 from "../assets/k312/ks312.jpg";
 import ktop312 from "../assets/k312/ktop312.JPG"; 
 
+
+import df200 from "../assets/d200/df200.JPG";
+import fd4200 from "../assets/d4200/fd4200.jpg";
+import sf18 from "../assets/s18/sf18.JPG";
+import ft1002 from "../assets/tip1002/ft1002.jpg";
+import sf218 from "../assets/s218/sf218.JPG";
+import fd4300 from "../assets/d4300/fd4300.jpg";
+
+
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -74,22 +84,22 @@ const products = [
       {
         name: "D-200",
         path: "/electronics/d%20200",
-        img: DT400,
+        img: df200,
       },
       {
         name: "D-4200",
         path: "/electronics/d%204200",
-        img: DT400,
+        img: fd4200,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "K304",
         path: "/k302/k304",
-        img: K304,
+        img: kf304,
       },
     ],
   },
@@ -125,22 +135,22 @@ const products = [
       {
         name: "D-200",
         path: "/electronics/d%20200",
-        img: DT400,
+        img: df200,
       },
       {
         name: "D-4200",
         path: "/electronics/d%204200",
-        img: DT400,
+        img: fd4200,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "K302",
         path: "/k302/k302",
-        img: K302,
+        img: kff302,
       },
     ],
   },
@@ -176,22 +186,22 @@ const products = [
       {
         name: "D300",
         path: "/electronics/d%20300",
-        img: DT400,
+        img: df200,
       },
       {
         name: "D4300",
         path: "/electronics/d%204300",
-        img: DT400,
+        img: fd4300,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "K302",
         path: "/k302/k302",
-        img: K302,
+        img: kff302,
       },
     ],
   },
@@ -227,22 +237,22 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%202002",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "S218",
         path: "/subwoofer/s218",
-        img: S218,
+        img: sf218,
       },
       {
         name: "K304",
         path: "/k302/k304",
-        img: K304,
+        img: kf304,
       },
     ],
   },
@@ -278,22 +288,22 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%201002",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "S218",
         path: "/subwoofer/s218",
-        img: S218,
+        img: sf218,
       },
       {
         name: "K304",
         path: "/k302/k304",
-        img: K304,
+        img: kf304,
       },
     ],
   },
@@ -348,7 +358,7 @@ const ProductDetail = () => {
           content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
         />
       </Helmet>
-      <div className="w-[90%] mx-auto p-6">
+      <div className="w-[90%] mx-auto p-30">
         {/* Product Image and Title */}
         {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -364,7 +374,9 @@ const ProductDetail = () => {
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
                 className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
-                 loading="lazy"
+                loading="eager"
+                decoding="async"
+                 
                 onClick={() => setIsModalOpen(true)}
               />
 
@@ -372,7 +384,7 @@ const ProductDetail = () => {
               {images.length > 1 && (
                 <button
                   onClick={prevImage}
-                  className="absolute top-1/2 left-[-50px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  className="absolute top-1/2 left-[-10px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
                   <ChevronLeft className="text-black" size={40} />
                 </button>
               )}
@@ -381,7 +393,7 @@ const ProductDetail = () => {
               {images.length > 1 && (
                 <button
                   onClick={nextImage}
-                  className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  className="absolute top-1/2 right-[-10px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
                   <ChevronRight className="text-black" size={40} />
                 </button>
               )}

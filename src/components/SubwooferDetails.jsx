@@ -17,7 +17,7 @@ import KS218a from "../assets/pdf/KS218a.pdf";
 import S218a from "../assets/pdf/S218a.pdf";
 import F15 from "../assets/F15.png";
 import Linear from "../assets/Famousmartin1.jpg";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Import } from "lucide-react";
 //ks18//
 
 import ksf18 from "../assets/ks18/ksf18.JPG";
@@ -53,6 +53,12 @@ import sop218 from "../assets/s218/sop218.JPG";
 import sdou218 from "../assets/s218/sdou218.JPG";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+
+import ft1002 from "../assets/tip1002/ft1002.jpg";
+import redfront from "../assets/red10/redfront.JPG";
+import ff12 from "../assets/f12/ff12.jpg";
+import ff15 from "../assets/f15/ff15.jpg";
+import famouf  from "../assets/fam/famouf.JPG";
 const products = [
   {
     img: [ksf18, ksb18, kss18, kstop18, ks418, ksd18],
@@ -88,22 +94,22 @@ const products = [
       {
         name: "TIP-1302",
         path: "/electronics/tip%201302",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "RED 10",
         path: "/product/red%2010",
-        img: Devilred10,
+        img: redfront,
       },
       {
         name: "F 12",
         path: "/product/f12",
-        img: F12,
+        img: ff12,
       },
       {
         name: "F 15",
         path: "/product/f15",
-        img: F15,
+        img: ff15,
       },
     ],
   },
@@ -142,22 +148,22 @@ const products = [
       {
         name: "TIP-2402",
         path: "/electronics/tip%202002",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "RED10",
         path: "/product/red%2010",
-        img: Devilred10,
+        img: redfront,
       },
       {
         name: "Famous 210",
         path: "/linearray/famous%20210",
-        img: Linear,
+        img: famouf,
       },
       {
         name: "F15",
         path: "/product/f15",
-        img: F15,
+        img: ff15,
       },
     ],
   },
@@ -196,22 +202,22 @@ const products = [
       {
         name: "TIP-1602",
         path: "/electronics/tip%201602",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "RED10",
         path: "/product/red%2010",
-        img: Devilred10,
+        img: redfront,
       },
       {
         name: "F12",
         path: "/product/f12",
-        img: F12,
+        img: ff12,
       },
       {
         name: "F15",
         path: "/product/f15",
-        img: F15,
+        img: ff15,
       },
     ],
   },
@@ -250,22 +256,22 @@ const products = [
       {
         name: "TIP-1302",
         path: "/electronics/tip%201302",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "RED10",
         path: "/product/red%2010",
-        img: Devilred10,
+        img: redfront,
       },
       {
         name: "F12",
         path: "/product/f12",
-        img: F12,
+        img: ff12,
       },
       {
         name: "F15",
         path: "/product/f15",
-        img: F15,
+        img: ff15,
       },
     ],
   },
@@ -333,7 +339,9 @@ const ProductDetail = () => {
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
                 className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
-                 loading="lazy"
+                loading="eager"
+                decoding="async"
+                 
                 onClick={() => setIsModalOpen(true)}
               />
 

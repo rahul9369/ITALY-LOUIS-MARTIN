@@ -55,6 +55,8 @@ const Categories = () => {
                   src={item.img}
                   alt={item.name}
                   className="w-full h-full object-contain p-4 transition-all duration-300"
+                  loading="eager"
+                decoding="async"
                 />
               </div>
             </div>

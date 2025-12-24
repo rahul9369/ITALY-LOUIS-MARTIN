@@ -4,9 +4,11 @@ import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 import TTA from "../../assets/TTA.jpg";
 
+import ft300 from "../../assets/tta300/ft300.jpg";
+
 const products = [
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 300",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -15,7 +17,7 @@ const products = [
     weight: "15kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 500",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -24,7 +26,7 @@ const products = [
     weight: "17kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 600",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -33,7 +35,7 @@ const products = [
     weight: "18kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 800",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -42,7 +44,7 @@ const products = [
     weight: "20kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 1000",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -51,7 +53,7 @@ const products = [
     weight: "24kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 1300",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -60,7 +62,7 @@ const products = [
     weight: "26kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 450",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -69,7 +71,7 @@ const products = [
     weight: "23kg",
   },
   {
-    img: TTA,
+    img: ft300,
     title: "TTA Series",
     model: "TTA 460",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -86,7 +88,9 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+       className="w-full h-[200px] object-contain rounded-lg cursor-pointer"
+        loading="eager"
+                decoding="async"
         onClick={() =>
           navigate(
             `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`

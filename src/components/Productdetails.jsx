@@ -23,7 +23,7 @@ import F15PDF from "../assets/pdf/F15.pdf";
 import F10 from "../assets/pdf/F10.pdf";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Import } from "lucide-react";
 import redfront from "../assets/red10/redfront.JPG";
 import redback from "../assets/red10/redback.JPG";
 import redn from "../assets/red10/redn.JPG";
@@ -89,6 +89,16 @@ import fs15 from "../assets/f15/fs15.JPG";
 import ftop15 from "../assets/f15/ftop15.JPG";
 import f415 from "../assets/f15/f415.jpg";
 
+import ft1002 from "../assets/tip1002/ft1002.jpg"
+import sf18 from "../assets/s18/sf18.JPG"
+import sf218 from "../assets/s218/sf218.JPG"
+import fd4200 from "../assets/d4200/fd4200.jpg"
+import df200 from "../assets/d200/df200.JPG"
+import ft300 from "../assets/tta300/ft300.jpg"
+
+
+
+
 
 
 
@@ -131,27 +141,27 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%201002",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "S218",
         path: "/subwoofer/s218",
-        img: S218,
+        img: sf218,
       },
       {
         name: "RED-5.5",
         path: "/product/red%205.5",
-        img: red12,
+        img: redf5,
       },
     ],
   },
   {
-    img: [redb5, redu5, redf5, reds5, red5, redo5],
+    img: [redfront5, redds5, red5open, redside5, , redback5],
     title: "Point Source",
     model: "Red 5.5",
     description:
@@ -200,12 +210,12 @@ const products = [
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
     ],
   },
   {
-    img: [redfront5, redds5, red5open, redside5, , redback5],
+    img:  [ redf5,redb5, redu5,  reds5, red5, redo5],
     title: "Point Source ",
     model: "Red 5",
     description:
@@ -238,12 +248,12 @@ const products = [
       {
         name: "D-200",
         path: "/electronics/d%20200",
-        img: DT400,
+        img: df200,
       },
       {
         name: "D-4200",
         path: "/electronics/d%204200",
-        img: DT400,
+        img: fd4200,
       },
       {
         name: "RED-9",
@@ -292,22 +302,22 @@ const products = [
       {
         name: "TTA-600",
         path: "/electronics/tta%20600",
-        img: TTA,
+        img: ft300,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "RED-5",
         path: "/product/red%205",
-        img: red5,
+        img: redfront5,
       },
       {
         name: "RED-5.5",
         path: "/product/red%205.5",
-        img: redfront5,
+        img: redf5,
       },
     ],
   },
@@ -346,22 +356,22 @@ const products = [
       {
         name: "TTA-600",
         path: "/electronics/tta%20600",
-        img: TTA,
+        img: ft300,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "RED-5",
         path: "/product/red%205",
-        img: red5,
+        img: redfront5,
       },
       {
         name: "RED-5.5",
         path: "/product/red%205.5",
-        img: redfront5,
+        img: redf5,
       },
     ],
   },
@@ -399,22 +409,22 @@ const products = [
       {
         name: "D-200",
         path: "/electronics/d%20200",
-        img: DT400,
+        img: df200,
       },
       {
         name: "D-4200",
         path: "/electronics/d%204200",
-        img: DT400,
+        img: fd4200,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "F10",
         path: "/product/f10",
-        img: Fseries,
+        img: ff10,
       },
     ],
   },
@@ -452,22 +462,22 @@ const products = [
       {
         name: "TTA-600",
         path: "/electronics/tta%20600",
-        img: TTA,
+        img: ft300,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "F-8",
         path: "/product/f8",
-        img: Fseries,
+        img: ffront8,
       },
       {
         name: "F12",
         path: "/product/f12",
-        img: Fseries,
+        img: ff12,
       },
     ],
   },
@@ -506,22 +516,22 @@ const products = [
       {
         name: "TTA-600",
         path: "/electronics/tta%20600",
-        img: TTA,
+        img: ft300,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "S218",
         path: "/subwoofer/s218",
-        img: S218,
+        img: sf218,
       },
       {
         name: "F-8",
         path: "/product/f8",
-        img: Fseries,
+        img: ffront8,
       },
     ],
   },
@@ -560,22 +570,22 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%201002",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "S218",
         path: "/subwoofer/s218",
-        img: S218,
+        img: sf218,
       },
       {
         name: "F10",
         path: "/product/f10",
-        img: Fseries,
+        img: ff10,
       },
     ],
   },
@@ -648,7 +658,7 @@ const ProductDetail = () => {
               <img
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
-                className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+                className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
 
                 loading="eager"
                 decoding="async"

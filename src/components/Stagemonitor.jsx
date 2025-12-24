@@ -84,7 +84,9 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-contain cursor-pointer rounded-lg"
+        className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
+        loading="eager"
+                decoding="async"
         onClick={() =>
           navigate(
             `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`

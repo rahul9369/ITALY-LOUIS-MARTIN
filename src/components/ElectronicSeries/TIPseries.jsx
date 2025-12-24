@@ -3,10 +3,11 @@ import Amplifiers from "../../assets/Amplifiers.png";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 import TIP from "../../assets/TIPA.jpg";
+import ft1002 from "../../assets/tip1002/ft1002.jpg";
 
 const products = [
   {
-    img: TIP,
+    img: ft1002,
     title: "TIP Series",
     model: "TIP 1002",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -15,7 +16,7 @@ const products = [
     weight: "5.8kg",
   },
   {
-    img: TIP,
+    img: ft1002,
     title: "TIP Series",
     model: "TIP 1302",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -24,7 +25,7 @@ const products = [
     weight: "6.8kg",
   },
   {
-    img: TIP,
+    img: ft1002,
     title: "TIP Series",
     model: "TIP 1602",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -34,7 +35,7 @@ const products = [
   },
 
   {
-    img: TIP,
+    img: ft1002,
     title: "TIP Series",
     model: "TIP 2402",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -51,7 +52,7 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+        className="w-full h-[200px] object-contain rounded-lg cursor-pointer"
         onClick={() =>
           navigate(
             `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`

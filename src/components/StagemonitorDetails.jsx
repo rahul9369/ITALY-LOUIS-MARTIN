@@ -41,6 +41,21 @@ import dsop15 from "../assets/ds15/dsop15.JPG";
 import dss15 from "../assets/ds15/dss15.JPG";
 import dsup15 from "../assets/ds15/dsup15.JPG";
 import ds415 from "../assets/ds15/ds415.JPG";
+//AMP//
+import df200 from "../assets/d200/df200.JPG"
+import fd4200 from "../assets/d4200/fd4200.jpg"
+import sf18 from "../assets/s18/sf18.JPG"
+import fd4300 from "../assets/d4300/fd4300.jpg"
+
+import ft1002 from "../assets/tip1002/ft1002.jpg"
+import sf218 from "../assets/s218/sf218.JPG"
+import ft300 from "../assets/tta300/ft300.JPG"
+
+
+
+
+
+
 
 
 import Footer from "./Footer";
@@ -82,27 +97,27 @@ const products = [
       {
         name: "D-200",
         path: "/electronics/d%20200",
-        img: DT400,
+        img: df200,
       },
       {
         name: "D-4200",
         path: "/electronics/d%204200",
-        img: DT400,
+        img: fd4200,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "DS12",
         path: "/plastic/ds12",
-        img: DS12,
+        img:dsf12,
       },
     ],
   },
   {
-    img: [dsf8, dsb8, dsop8, dss8, dsup8, d88],  
+    img: [dsf8, dsb8, dsop8, dss8, dsup8],  
     title: "Plastic Speaker",
     model: "DS8",
     description:
@@ -135,23 +150,23 @@ const products = [
     relatedProducts: [
       {
         name: "D-300",
-        path: "/electronics/tip%202002",
-        img: DT400,
+        path: "/electronics/d%20300",
+        img: df200,
       },
       {
         name: "D-4300",
         path: "/product/red%2010",
-        img: DT400,
+        img: fd4300,
       },
       {
         name: "S18",
-        path: "/product/f12",
-        img: S18,
+        path: "/subwoofer/s18",
+        img: sf18,
       },
       {
         name: "DS5",
-        path: "/product/f15",
-        img: PlasticSpeaker,
+        path: "/plastic/ds5",
+        img: dsf15,
       },
     ],
   },
@@ -189,22 +204,22 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%201002",
-        img: TIP,
+        img:ft1002,
       },
       {
         name: "TTA-800",
         path: "/product/tta%20800",
-        img: TTA,
+        img: ft300,
       },
       {
         name: "S18",
         path: "/product/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "DS5",
         path: "/product/ds5",
-        img: PlasticSpeaker,
+        img: dsf5,
       },
     ],
   },
@@ -242,22 +257,22 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%202002",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "TIP-1300",
         path: "/product/red%2010",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "S218",
         path: "/product/f12",
-        img: S218,
+        img: sf218,
       },
       {
         name: "S18",
         path: "/product/f15",
-        img: S18,
+        img: sf18,
       },
     ],
   },
@@ -297,22 +312,22 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%202002",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "TIP-1300",
         path: "/product/red%2010",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "S218",
         path: "/product/f12",
-        img: S218,
+        img: sf218,
       },
       {
         name: "S18",
         path: "/product/f15",
-        img: S18,
+        img: sf18,
       },
     ],
   },
@@ -379,7 +394,9 @@ const ProductDetail = () => {
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
                 className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
-                 loading="lazy"
+                loading="eager"
+                decoding="async"
+                 
                 onClick={() => setIsModalOpen(true)}
               />
 

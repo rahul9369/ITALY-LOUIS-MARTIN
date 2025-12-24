@@ -62,7 +62,9 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-         className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
+         className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
+         loading="eager"
+                decoding="async"
         onClick={() =>
           navigate(
             `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`

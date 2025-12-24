@@ -56,11 +56,20 @@ import q80b from "../assets/q80/q80b.jpg";
 import q80ss from "../assets/q80/q80ss.JPG";
 import q80j from "../assets/q80/q80j.JPG";
 import q80top from "../assets/q80/q80t.JPG";  
+
+import ft1002 from "../assets/tip1002/ft1002.jpg";
+import ft300 from "../assets/tta300/ft300.jpg";
+import ksf218 from "../assets/ks218/ksf218.JPG";
+import sf218 from "../assets/s218/sf218.JPG";
+import sf18 from "../assets/s18/sf18.JPG";
+
+
 // import cox12 from "../assets/coximg/coxunder.jpg";
 // import coxback1 from "../assets/coxback1.jpg";
 // import coxback2 from "../assets/coxback2.jpg";
 // import coxfront from "../assets/coxfront.jpg";
 // import coxside from "../assets/coxside.jpg";
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
@@ -98,22 +107,22 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%201002",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "TTA-500",
         path: "/electronics/tta%20500",
-        img: TTA,
+        img: ft300,
       },
       {
         name: "KS-218",
         path: "/subwoofer/ks218",
-        img: subwooferImg,
+        img: ksf218,
       },
       {
         name: "Q50",
         path: "/linearray/q%2050",
-        img: Q50,
+        img: qfront,
       },
     ],
   },
@@ -150,22 +159,22 @@ const products = [
       {
         name: "TIP-1302",
         path: "/electronics/tip%201302",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "TIP-1602",
         path: "/electronics/tip%201602",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: "S218",
         path: "/subwoofer/s218",
-        img: S218,
+        img: sf218,
       },
     ],
   },
@@ -203,22 +212,22 @@ const products = [
       {
         name: "TIP-1602",
         path: "/electronics/tip%201602",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: " S218",
         path: "/subwoofer/s218",
-        img: S218,
+        img: sf218,
       },
       {
         name: "Q50",
         path: "/linearray/q%2050",
-        img: Q50,
+        img: qfront,
       },
     ],
   },
@@ -255,22 +264,22 @@ const products = [
       {
         name: "TIP-1602",
         path: "/electronics/tip%201602",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: " S218",
         path: "/subwoofer/s218",
-        img: S218,
+        img: sf218,
       },
       {
         name: "KS218",
         path: "/subwoofer/ks218",
-        img: subwooferImg,
+        img: ksf218,
       },
     ],
   },
@@ -308,17 +317,17 @@ const products = [
       {
         name: "TIP-1602",
         path: "/electronics/tip%201602",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: " S218",
         path: "/subwoofer/s218",
-        img: S218,
+        img: sf218,
       },
       {
         name: "KS218",
         path: "/subwoofer/ks218",
-        img: subwooferImg,
+        img: ksf218,
       },
       // {
       //   name: "F15",
@@ -362,17 +371,17 @@ const products = [
       {
         name: "TIP-1002",
         path: "/electronics/tip%201002",
-        img: TIP,
+        img: ft1002,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: S18,
+        img: sf18,
       },
       {
         name: " S218",
         path: "/subwoofer/s218",
-        img: S218,
+        img: sf218,
       },
     ],
   },
@@ -426,7 +435,7 @@ const ProductDetail = () => {
           content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
         />
       </Helmet>
-      <div className="w-[90%] mx-auto p-6">
+      <div className="w-[90%] mx-auto p-30">
         {/* Product Image and Title */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 space-x-6">
           {/* <img
@@ -441,7 +450,9 @@ const ProductDetail = () => {
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
                 className="w-full h-[500px] object-contain rounded-lg cursor-pointer"
-                 loading="lazy"
+                loading="eager"
+                decoding="async"
+               
                 onClick={() => setIsModalOpen(true)}
               />
 
@@ -458,7 +469,7 @@ const ProductDetail = () => {
               {images.length > 1 && (
                 <button
                   onClick={nextImage}
-                  className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  className="absolute top-1/2 right-[-50px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
                   <ChevronRight className="text-black" size={40} />
                 </button>
               )}
@@ -619,7 +630,7 @@ const ProductDetail = () => {
             Related Product
           </h1>
 
-          <div className="flex flex-wrap justify-center gap-8 mt-5">
+          <div className="grid grid-cols-1 sm:grid-cols-4 sm:space-x-8 mt-5 justify-center">
             {product.relatedProducts.map((item, index) => (
               <Link
                 to={item.path}

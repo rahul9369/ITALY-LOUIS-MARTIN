@@ -4,10 +4,12 @@ import Footer from "../Footer";
 import KS18 from "../../assets/ks18.jpg";
 import SubwooferImg from "../../assets/subwoofer218.png";
 import { useNavigate } from "react-router-dom";
+import ksf18 from "../../assets/ks18/ksf18.JPG";
+import ksf218 from "../../assets/ks218/ksf218.JPG";
 
 const products = [
   {
-    img: KS18,
+    img: ksf18,
     title: "Subwoofer",
     model: "KS18",
     description: '1x18" High Power Passive Subwoofer',
@@ -18,7 +20,7 @@ const products = [
     weight: "58Kg",
   },
   {
-    img: SubwooferImg,
+    img: ksf218,
     title: "Subwoofer",
     model: "KS218",
     description: '2x18" High Power Passive Subwoofer',
@@ -37,7 +39,9 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-        className="w-full h-72 object-cover cursor-pointer rounded-lg"
+      className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
+        loading="eager"
+                decoding="async"
         onClick={() =>
           navigate(
             `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`
