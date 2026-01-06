@@ -35,9 +35,9 @@ import TTAseries from "./components/ElectronicSeries/TTAseries";
 import Kseries from "./components/ColumnSpeaker/Kseries";
 import DSseries from "./components/CommercialSeries/Dsseries";
 import PDFViewer from "./components/PdfViewer";
+import DSPSeries from "./components/ElectronicSeries/Dspseries";
 
-
-<img loading="lazy" src="/images/product.webp" />
+<img loading="lazy" src="/images/product.webp" />;
 
 const appRouter = createBrowserRouter([
   {
@@ -122,6 +122,10 @@ const appRouter = createBrowserRouter([
         element: <KSseries />,
       },
       {
+        path: "dspseries",
+        element: <DSPSeries />,
+      },
+      {
         path: "/electronics",
         element: <Electronic />,
       },
@@ -157,7 +161,7 @@ const appRouter = createBrowserRouter([
         path: "/electronics/:model",
         element: <ElectronicDetails />,
       },
-      
+
       {
         path: "/column/:model",
         element: <ColumnDetails />,

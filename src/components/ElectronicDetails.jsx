@@ -5,6 +5,7 @@ import DSeriesAmplifiers from "../assets/pdf/Dseries.pdf";
 import PLSeriesAmplifiers from "../assets/pdf/PLseries.pdf";
 import TIPPDF from "../assets/pdf/TIPseries.pdf";
 import TTAPDF from "../assets/pdf/TTAseries.pdf";
+import coxf from "../assets/coximg/coxf.jpg";
 
 //pl4//
 import plf4 from "../assets/pl4/plf4.jpg";
@@ -64,6 +65,11 @@ import ft2402 from "../assets/tip1002/ft2402.jpg";
 import df2001 from "../assets/d200/df2001.jpg";
 import pl45 from "../assets/pl4/pl45.jpg";
 import plb42 from "../assets/pl4/plb42.jpg";
+import Dsp26front from "../assets/dsp/dl2.6f.JPG";
+import Dsp26back from "../assets/dsp/dl2.6b.JPG";
+import Dsp48front from "../assets/dsp/dl4.8front.JPG";
+import Dsp48back from "../assets/dsp/dl4.8back.JPG";
+import redfront from "../assets/red10/redfront.JPG";
 
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -998,7 +1004,7 @@ const products = [
     ],
   },
   {
-    img: [ft2402, st1002, nt1002, bt1002],
+    img: [Dsp26front, Dsp26back, nt1002, bt1002],
     title: "DSP ",
     model: "DL 2.6",
     description:
@@ -1025,24 +1031,29 @@ const products = [
     pdf: TIPPDF,
     relatedProducts: [
       {
-        name: "TIP-1002",
-        path: "/electronics/tip%201002",
-        img: ft1002,
+        name: "RED10",
+        path: "/product/red%2010",
+        img: redfront,
       },
       {
-        name: "TIP-1602",
-        path: "/electronics/tip%201602",
-        img: ft1002,
+        name: "COX-12",
+        path: "/linearray/cox%2012",
+        img: coxf,
       },
       {
-        name: "TIP-1302",
-        path: "/electronics/tip%201302",
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: ft300,
+      },
+      {
+        name: "PL-1004",
+        path: "/electronics/pl%201004",
         img: ft1002,
       },
     ],
   },
   {
-    img: [ft2402, st1002, nt1002, bt1002],
+    img: [Dsp48front, Dsp48back, nt1002, bt1002],
     title: "DSP ",
     model: "DL 4.8",
     description:
@@ -1069,18 +1080,23 @@ const products = [
     pdf: TIPPDF,
     relatedProducts: [
       {
-        name: "TIP-1002",
-        path: "/electronics/tip%201002",
-        img: ft1002,
+        name: "RED10",
+        path: "/product/red%2010",
+        img: redfront,
       },
       {
-        name: "TIP-1602",
-        path: "/electronics/tip%201602",
-        img: ft1002,
+        name: "COX-12",
+        path: "/linearray/cox%2012",
+        img: coxf,
       },
       {
-        name: "TIP-1302",
-        path: "/electronics/tip%201302",
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: ft300,
+      },
+      {
+        name: "PL-1004",
+        path: "/electronics/pl%201004",
         img: ft1002,
       },
     ],
