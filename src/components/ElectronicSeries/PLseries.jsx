@@ -25,6 +25,24 @@ const products = [
     response: " ＞1000",
     weight: "11kg",
   },
+   {
+    img: plf4,
+    title: "PL Series",
+    model: "PL 4.5",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1500W×4/8Ω  2500W×4/4Ω",
+    response: " ＞1000",
+    weight: "11kg",
+  },
+   {
+    img: plf4,
+    title: "PL Series",
+    model: "PL 4.5",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1500W×4/8Ω  2500W×4/4Ω",
+    response: " ＞1000",
+    weight: "11kg",
+  },
 ];
 
 const ProductCard = ({ product }) => {

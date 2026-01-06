@@ -10,28 +10,59 @@ import fd4300 from "../assets/d4300/fd4300.jpg";
 import { Helmet } from "react-helmet";
 import ft300 from "../assets/tta300/ft300.jpg";
 import ft1002 from "../assets/tip1002/ft1002.jpg";
-
+import plf42 from "../assets/pl4/plf42.jpg";
+import ft1302 from "../assets/tip1002/ft1302.jpg";
+import ft2402 from "../assets/tip1002/ft2402.jpg";
+import ft1003 from "../assets/tip1002/ft1003.jpg";
+import ft800 from "../assets/tta300/ft800.jpg";
+import ft600 from "../assets/tta300/ft600.jpg";
+import ft500 from "../assets/tta300/ft500.jpg";
+import ft3001 from "../assets/tta300/ft3001.jpg";
+import ft1000 from "../assets/tta300/ft1000.jpg";
+import ft1300 from "../assets/tta300/ft1300.jpg";
+import df2001 from "../assets/d200/df2001.jpg";
+import pl423 from "../assets/pl4/pl423.jpg";
+import plf405 from "../assets/pl4/plf405.jpg";
 const products = [
   {
-    img: plf4,
+    img: pl423,
     title: "PL Series",
     model: "PL 4.1",
-    description: " PROFESSIONAL POWER AMPLIFIER",
+    description: " DIGITAL POWER AMPLIFIER",
     power: "1000W×4/8Ω   1600W×4/4Ω",
-    response: " ＞1000(1 kHz @ 8 Ω)",
+    response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "10kg",
   },
   {
     img: plf4,
     title: "PL Series",
     model: "PL 4.5",
-    description: " PROFESSIONAL POWER AMPLIFIER",
+    description: " DIGITAL POWER AMPLIFIER",
     power: "1500W×4/8Ω  2500W×4/4Ω",
     response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "11kg",
   },
+    {
+    img: plf42,
+    title: "PL Series",
+    model: "PL 1004",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1000W×4/8Ω  1600W×4/4Ω",
+    response: " ＞3000(1 kHz @ 8 Ω)",
+    weight: "10kg",
+  },
+    {
+    img: plf405,
+    title: "PL Series",
+    model: "PL 1504",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "1500W×4/8Ω  2500W×4/4Ω",
+    response: " ＞3000(1 kHz @ 8 Ω)",
+    weight: "11kg",
+  },
+  
   {
-    img: df200,
+    img: df2001,
     title: "D Series",
     model: "D 200",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -68,7 +99,7 @@ const products = [
   },
 
   {
-    img: ft300,
+    img: ft3001,
     title: "TTA Series",
     model: "TTA 300",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -77,7 +108,7 @@ const products = [
     weight: "15kg",
   },
   {
-    img: ft300,
+    img: ft500,
     title: "TTA Series",
     model: "TTA 500",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -86,7 +117,7 @@ const products = [
     weight: "17kg",
   },
   {
-    img: ft300,
+    img: ft600,
     title: "TTA Series",
     model: "TTA 600",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -95,7 +126,7 @@ const products = [
     weight: "18kg",
   },
   {
-    img: ft300,
+    img: ft800,
     title: "TTA Series",
     model: "TTA 800",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -104,7 +135,7 @@ const products = [
     weight: "20kg",
   },
   {
-    img: ft300,
+    img: ft1000,
     title: "TTA Series",
     model: "TTA 1000",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -113,7 +144,7 @@ const products = [
     weight: "24kg",
   },
   {
-    img: ft300,
+    img: ft1300,
     title: "TTA Series",
     model: "TTA 1300",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -126,7 +157,7 @@ const products = [
     title: "TTA Series",
     model: "TTA 450",
     description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "450W×4/8Ω    750W×2/4Ω",
+    power: "450W×4/8Ω    750W×4/4Ω",
     response: "＞500(1 KHz @ 8Ω)",
     weight: "23kg",
   },
@@ -135,13 +166,13 @@ const products = [
     title: "TTA Series",
     model: "TTA 460",
     description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "650W×4/8Ω    930W×2/4Ω",
+    power: "650W×4/8Ω    930W×4/4Ω",
     response: "＞500(1 KHz @ 8Ω)",
     weight: "25kg",
   },
 
   {
-    img: ft1002,
+    img: ft1003,
     title: "TIP Series",
     model: "TIP 1002",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -150,7 +181,7 @@ const products = [
     weight: "5.8kg",
   },
   {
-    img: ft1002,
+    img: ft1302,
     title: "TIP Series",
     model: "TIP 1302",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -169,12 +200,12 @@ const products = [
   },
 
   {
-    img: ft1002,
+    img: ft2402,
     title: "TIP Series",
     model: "TIP 2402",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "2400W×2/8Ω   4000W×2/4Ω",
-    response: " ＞1000(1 kHz @ 8 Ω)",
+    response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "7kg",
   },
 ];

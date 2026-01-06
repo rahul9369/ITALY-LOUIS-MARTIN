@@ -1,10 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import Footer from "./Footer";
 
-import DT400 from "../assets/DT400.jpg";
-import PL4 from "../assets/PL4.jpg";
-import TTA from "../assets/TTA.jpg";
-import TIP from "../assets/TIPA.jpg";
+
 import DSeriesAmplifiers from "../assets/pdf/Dseries.pdf";
 import PLSeriesAmplifiers from "../assets/pdf/PLseries.pdf";
 import TIPPDF from "../assets/pdf/TIPseries.pdf";
@@ -12,11 +9,13 @@ import TTAPDF from "../assets/pdf/TTAseries.pdf";
 
 //pl4//
 import plf4 from "../assets/pl4/plf4.jpg";
-import pls4 from "../assets/pl4/pls4.JPG";
+
 import plss4 from "../assets/pl4/plss4.JPG";
 import plt4 from "../assets/pl4/plt4.jpg";
 import plup4 from "../assets/pl4/plup4.JPG";
 import plb4 from "../assets/pl4/plb4.JPG";
+import pl423 from "../assets/pl4/pl423.jpg";
+
 
 //d200  d300//
 import df200 from "../assets/d200/df200.JPG";
@@ -48,6 +47,12 @@ import sst300 from "../assets/tta300/sst300.JPG";
 import tot300 from "../assets/tta300/tot300.jpg";
 import nt300 from "../assets/tta300/nt300.JPG";
 import bt300 from "../assets/tta300/bt300.jpg";
+import ft800 from "../assets/tta300/ft800.jpg";
+import ft600 from "../assets/tta300/ft600.jpg";
+import ft500 from "../assets/tta300/ft500.jpg";
+import ft3001 from "../assets/tta300/ft3001.jpg";
+import ft1000 from "../assets/tta300/ft1000.jpg";
+import ft1300 from "../assets/tta300/ft1300.jpg";
 //tip1002//
 import ft1002 from "../assets/tip1002/ft1002.jpg";
 import st1002 from "../assets/tip1002/st1002.JPG";
@@ -55,13 +60,19 @@ import sst1002 from "../assets/tip1002/sst1002.JPG";
 import stt1002 from "../assets/tip1002/stt1002.jpg";
 import nt1002 from "../assets/tip1002/nt1002.JPG";
 import bt1002 from "../assets/tip1002/bt1002.jpg";
+import ft1003 from "../assets/tip1002/ft1003.jpg";
+import ft1302 from "../assets/tip1002/ft1302.jpg";
+import ft2402 from "../assets/tip1002/ft2402.jpg";
+import df2001 from "../assets/d200/df2001.jpg";
+import pl45 from "../assets/pl4/pl45.jpg";
+import plb42 from "../assets/pl4/plb42.jpg";
 
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 const products = [
   {
-    img: [df200, db200, ds200, dup200, dss200],
+    img: [df2001, db200, ds200, dup200, dss200],
     title: "D ",
     model: "D 200",
     description:
@@ -238,7 +249,7 @@ const products = [
     ],
   },
   {
-    img: [plf4, plb4, pls4, plss4, plt4],
+    img: [pl423, plb4, plss4, plt4],
     title: "PL ",
     model: "PL 4.1",
     description:
@@ -281,8 +292,9 @@ const products = [
       },
     ],
   },
-  {
-    img: [plf4, pls4, plss4, plt4],
+ 
+   {
+    img: [plf4,plss4,plb4, plt4],
     title: "PL ",
     model: "PL 4.5",
     description:
@@ -325,8 +337,96 @@ const products = [
       },
     ],
   },
+   {
+    img: [plf4,plb42,plss4, ],
+    title: "PL ",
+    model: "PL 1004",
+    description:
+      "The PL Series amplifier is multi-channel professional built-in Digital Signal Processor (DSP) Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. Thanks to the automatic temperature control and unique limiting functions that gives high efficiency to ensures that the PL series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts and live performances, entertainment venues, lounges, pubs, bars and auditorium installations with deep, resonant sound.",
+    application: [
+      " 64-bit Multimode DSP",
+      "Over temperature protections",
+      "Short circuit protection",
+      "Light weight and Portable",
+    ],
+    Stereo_8_Ohm_2_Channel: " 1500W×4 ",
+    Stereo_4_Ohm_2_Channel: " 2500W×4 ",
+    Bridge_8_Ohm_1_Channel: " 7500W×2 ",
+    Bridge_4_Ohm_1_Channel: " 1725W",
+    Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
+    THD_N: " <0.05%@8Ω 1kHz",
+    SNR: ">98dB ",
+    Damping_Factor: ">1000(1 kHz @ 8 Ω) ",
+    Crosstalk: ">85dB",
+    Input_Sensitivity: "0.775V / 1.44V",
+    Input_Impedance: "20kΩ / 10kΩ",
+    Size_mm: "482 x 330 x88 ",
+    Weight: "11",
+    pdf: PLSeriesAmplifiers,
+    relatedProducts: [
+      {
+        name: "PL4.1",
+        path: "/electronics/pl%204.1",
+        img: plf4,
+      },
+      {
+        name: "D 4200",
+        path: "/electronics/d%204200",
+        img: fd4200,
+      },
+      {
+        name: "D 4300",
+        path: "/electronics/d%204300",
+        img: fd4300,
+      },
+    ],
+  },
   {
-    img: [ft300, st300, sst300, nt300, bt300],
+    img: [plf4,plb42,plss4],
+    title: "PL ",
+    model: "PL 1504",
+    description:
+      "The PL Series amplifier is multi-channel professional built-in Digital Signal Processor (DSP) Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. Thanks to the automatic temperature control and unique limiting functions that gives high efficiency to ensures that the PL series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts and live performances, entertainment venues, lounges, pubs, bars and auditorium installations with deep, resonant sound.",
+    application: [
+      " 64-bit Multimode DSP",
+      "Over temperature protections",
+      "Short circuit protection",
+      "Light weight and Portable",
+    ],
+    Stereo_8_Ohm_2_Channel: " 1500W×4 ",
+    Stereo_4_Ohm_2_Channel: " 2500W×4 ",
+    Bridge_8_Ohm_1_Channel: " 7500W×2 ",
+    Bridge_4_Ohm_1_Channel: " 1725W",
+    Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
+    THD_N: " <0.05%@8Ω 1kHz",
+    SNR: ">98dB ",
+    Damping_Factor: ">1000(1 kHz @ 8 Ω) ",
+    Crosstalk: ">85dB",
+    Input_Sensitivity: "0.775V / 1.44V",
+    Input_Impedance: "20kΩ / 10kΩ",
+    Size_mm: "482 x 330 x88 ",
+    Weight: "11",
+    pdf: PLSeriesAmplifiers,
+    relatedProducts: [
+      {
+        name: "PL4.1",
+        path: "/electronics/pl%204.1",
+        img: plf4,
+      },
+      {
+        name: "D 4200",
+        path: "/electronics/d%204200",
+        img: fd4200,
+      },
+      {
+        name: "D 4300",
+        path: "/electronics/d%204300",
+        img: fd4300,
+      },
+    ],
+  },
+  {
+    img: [ft3001,  sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 300",
     description:
@@ -355,27 +455,27 @@ const products = [
       {
         name: "TTA-500",
         path: "/electronics/tta%20500",
-        img: ft300,
+        img: ft500,
       },
       {
         name: "TTA-600",
         path: "/electronics/tta%20600",
-        img: ft300,
+        img: ft600,
       },
       {
         name: "TTA-800",
         path: "/electronics/tta%20800",
-        img: ft300,
+        img: ft800,
       },
       {
         name: "TTA-1000",
         path: "/electronics/tta%201000",
-        img: ft300,
+        img: ft1000,
       },
     ],
   },
   {
-    img: [ft300, st300, sst300, , nt300, bt300],
+    img: [ft500, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 500",
     description:
@@ -409,22 +509,22 @@ const products = [
       {
         name: "TTA-600",
         path: "/electronics/tta%20600",
-        img: ft300,
+        img: ft600,
       },
       {
         name: "TTA-800",
         path: "/electronics/tta%20800",
-        img: ft300,
+        img: ft800,
       },
       {
         name: "TTA-1000",
         path: "/electronics/tta%201000",
-        img: ft300,
+        img: ft1000,
       },
     ],
   },
   {
-    img: [ft300, st300, sst300, nt300, bt300],
+    img: [ft600, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 600",
     description:
@@ -453,28 +553,28 @@ const products = [
       {
         name: "TTA-300",
         path: "/electronics/tta%20300",
-        img: ft300,
+        img: ft3001,
       },
       {
         name: "TTA-800",
         path: "/electronics/tta%20800",
-        img: ft300,
+        img: ft800,
       },
 
       {
         name: "TTA-1000",
         path: "/electronics/tta%201000",
-        img: ft300,
+        img: ft1000,
       },
       {
         name: "TTA-1300",
         path: "/electronics/tta%201300",
-        img: ft300,
+        img: ft1300,
       },
     ],
   },
   {
-    img: [ft300, st300, sst300, nt300, bt300],
+    img: [ft800, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 800",
     description:
@@ -514,17 +614,17 @@ const products = [
       {
         name: "TTA-1000",
         path: "/electronics/tta%201000",
-        img: ft300,
+        img: ft1000,
       },
       {
         name: "TTA-1300",
         path: "/electronics/tta%201300",
-        img: ft300,
+        img: ft1300,
       },
     ],
   },
   {
-    img: [ft300, st300, sst300, nt300, bt300],
+    img: [ft1000, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 1000",
     description:
@@ -564,17 +664,17 @@ const products = [
       {
         name: "TTA-800",
         path: "/electronics/tta%20800",
-        img: ft300,
+        img: ft800,
       },
       {
         name: "TTA-1300",
         path: "/electronics/tta%201300",
-        img: ft300,
+        img: ft1300,
       },
     ],
   },
   {
-    img: [ft300, st300, sst300, nt300, bt300],
+    img: [ft1300, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 1300",
     description:
@@ -613,18 +713,18 @@ const products = [
       {
         name: "TTA-600",
         path: "/electronics/tta%20600",
-        img: ft300,
+        img: ft600,
       },
 
       {
         name: "TTA-800",
         path: "/electronics/tta%20800",
-        img: ft300,
+        img: ft800,
       },
     ],
   },
   {
-    img: [ft300, st300, sst300, nt300, bt300],
+    img: [ft300,  sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 450",
     description:
@@ -658,7 +758,7 @@ const products = [
       {
         name: "TTA-800",
         path: "/electronics/tta%20800",
-        img: ft300,
+        img: ft800,
       },
 
       {
@@ -674,7 +774,7 @@ const products = [
     ],
   },
   {
-    img: [ft300, st300, sst300, nt300, bt300],
+    img: [ft300,  sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 460",
     description:
@@ -724,7 +824,7 @@ const products = [
     ],
   },
   {
-    img: [ft1002, st1002, sst1002, nt1002, bt1002],
+    img: [ft1003, st1002, nt1002, bt1002],
     title: "TIP ",
     model: "TIP 1002",
     description:
@@ -768,7 +868,7 @@ const products = [
     ],
   },
   {
-    img: [ft1002, st1002, sst1002, nt1002, bt1002],
+    img: [ft1002, st1002, nt1002, bt1002],
     title: "TIP ",
     model: "TIP 1602",
     description:
@@ -812,7 +912,7 @@ const products = [
     ],
   },
   {
-    img: [ft1002, st1002, sst1002, nt1002, bt1002],
+    img: [ft1302, st1002,  nt1002, bt1002],
     title: "TIP ",
     model: "TIP 1302",
     description:
@@ -856,7 +956,7 @@ const products = [
     ],
   },
   {
-    img: [ft1002, st1002, sst1002, nt1002, bt1002],
+    img: [ft2402, st1002, nt1002, bt1002],
     title: "TIP ",
     model: "TIP 2402",
     description:

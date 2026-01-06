@@ -13,6 +13,7 @@ import ffront8 from "../assets/f8/ffront8.jpg";
 import fopen10 from "../assets/f10/fopen10.JPG";
 import ff12 from "../assets/f12/ff12.jpg";
 import ff15 from "../assets/f15/ff15.jpg";
+import ff10 from "../assets/f10/ff10.jpg";
 
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -29,7 +30,7 @@ const products = [
     weight: "38Kg",
   },
   {
-    img: redfront5,
+    img: redf5,
     title: "Red Series",
     model: "Red 5.5",
     description: '2x5" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -40,7 +41,7 @@ const products = [
     weight: "9Kg",
   },
   {
-    img: redf5,
+    img: redfront5,
     title: "Red Series",
     model: "Red 5",
     description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -84,7 +85,7 @@ const products = [
     weight: "12 Kg",
   },
   {
-    img: fopen10,
+    img: ff10,
     title: "F Series",
     model: "F10",
     description: '1x10" Two-Way Passive Full-Range High Power Loudspeaker',

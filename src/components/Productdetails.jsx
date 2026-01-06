@@ -93,6 +93,9 @@ import sf218 from "../assets/s218/sf218.JPG";
 import fd4200 from "../assets/d4200/fd4200.jpg";
 import df200 from "../assets/d200/df200.JPG";
 import ft300 from "../assets/tta300/ft300.jpg";
+import ksf18 from "../assets/ks18/ksf18.JPG";
+import ksf218 from "../assets/ks218/ksf218.JPG";
+
 
 const products = [
   {
@@ -137,12 +140,12 @@ const products = [
       {
         name: "S18",
         path: "/subwoofer/s18",
-        img: sf18,
+        img: ksf18,
       },
       {
         name: "S218",
         path: "/subwoofer/s218",
-        img: sf218,
+        img: ksf218,
       },
       {
         name: "RED-5.5",
@@ -152,7 +155,7 @@ const products = [
     ],
   },
   {
-    img: [redfront5, redds5, red5open, redside5, redback5],
+    img: [redf5, red5, redo5, redb5, reds5, redu5],
     title: "Point Source",
     model: "Red 5.5",
     description:
@@ -186,17 +189,17 @@ const products = [
       {
         name: "D-4200",
         path: "/electronics/d%204200",
-        img: DT400,
+        img: fd4200,
       },
       {
         name: "Red-5",
         path: "/product/red%205",
-        img: red5,
+        img: redfront5,
       },
       {
         name: "Red-10",
         path: "/product/red%2010",
-        img: Devilred10,
+        img: redfront,
       },
       {
         name: "S18",
@@ -206,7 +209,7 @@ const products = [
     ],
   },
   {
-    img: [redf5, red5, redo5, redb5, reds5],
+    img: [redfront5, redside5, redds5, red5open, redback5],
     title: "Point Source ",
     model: "Red 5",
     description:
@@ -254,7 +257,7 @@ const products = [
       {
         name: "RED-12",
         path: "/product/red%2012",
-        img: red12,
+        img: redf12,
       },
     ],
   },
