@@ -25,7 +25,7 @@ const products = [
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "350W×2/8Ω      600W×2/4Ω",
     response: " ＞500(1 KHz @ 8Ω)",
-    weight: "2.5kg",
+    weight: "2.8kg",
   },
 ];
 
