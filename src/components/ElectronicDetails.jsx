@@ -1,7 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import Footer from "./Footer";
 
-
 import DSeriesAmplifiers from "../assets/pdf/Dseries.pdf";
 import PLSeriesAmplifiers from "../assets/pdf/PLseries.pdf";
 import TIPPDF from "../assets/pdf/TIPseries.pdf";
@@ -15,7 +14,6 @@ import plt4 from "../assets/pl4/plt4.jpg";
 import plup4 from "../assets/pl4/plup4.JPG";
 import plb4 from "../assets/pl4/plb4.JPG";
 import pl423 from "../assets/pl4/pl423.jpg";
-
 
 //d200  d300//
 import df200 from "../assets/d200/df200.JPG";
@@ -292,9 +290,9 @@ const products = [
       },
     ],
   },
- 
-   {
-    img: [plf4,plss4,plb4, plt4],
+
+  {
+    img: [plf4, plss4, plb4, plt4],
     title: "PL ",
     model: "PL 4.5",
     description:
@@ -337,8 +335,8 @@ const products = [
       },
     ],
   },
-   {
-    img: [plf4,plb42,plss4, ],
+  {
+    img: [plf4, plb42, plss4],
     title: "PL ",
     model: "PL 1004",
     description:
@@ -382,7 +380,7 @@ const products = [
     ],
   },
   {
-    img: [plf4,plb42,plss4],
+    img: [plf4, plb42, plss4],
     title: "PL ",
     model: "PL 1504",
     description:
@@ -426,7 +424,7 @@ const products = [
     ],
   },
   {
-    img: [ft3001,  sst300, nt300, bt300],
+    img: [ft3001, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 300",
     description:
@@ -724,7 +722,7 @@ const products = [
     ],
   },
   {
-    img: [ft300,  sst300, nt300, bt300],
+    img: [ft300, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 450",
     description:
@@ -774,7 +772,7 @@ const products = [
     ],
   },
   {
-    img: [ft300,  sst300, nt300, bt300],
+    img: [ft300, sst300, nt300, bt300],
     title: "TTA ",
     model: "TTA 460",
     description:
@@ -912,7 +910,7 @@ const products = [
     ],
   },
   {
-    img: [ft1302, st1002,  nt1002, bt1002],
+    img: [ft1302, st1002, nt1002, bt1002],
     title: "TIP ",
     model: "TIP 1302",
     description:
@@ -959,6 +957,94 @@ const products = [
     img: [ft2402, st1002, nt1002, bt1002],
     title: "TIP ",
     model: "TIP 2402",
+    description:
+      "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
+    application: [
+      " Clip limiters",
+      "Over temperature protections",
+      "Short circuit protection",
+      "Light weight and Portable",
+    ],
+    Stereo_8_Ohm_2_Channel: "2400W×2 ",
+    Stereo_4_Ohm_2_Channel: " 4000W×2 ",
+    Bridge_8_Ohm_1_Channel: "8000W",
+    Bridge_4_Ohm_1_Channel: " 1840W",
+    Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
+    THD_N: " <0.05%@8Ω 1kHz",
+    SNR: "＞98dB (A-weighted)",
+    Damping_Factor: "＞1000(1 kHz @ 8 Ω)",
+    Crosstalk: "＞85dB",
+    Input_Sensitivity: " 0.775V/1.44V",
+    Input_Impedance: " 20KΩ/10KΩ",
+    Size_mm: "482 x 360 x 88mm",
+    Weight: " 7",
+    pdf: TIPPDF,
+    relatedProducts: [
+      {
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img: ft1002,
+      },
+      {
+        name: "TIP-1602",
+        path: "/electronics/tip%201602",
+        img: ft1002,
+      },
+      {
+        name: "TIP-1302",
+        path: "/electronics/tip%201302",
+        img: ft1002,
+      },
+    ],
+  },
+  {
+    img: [ft2402, st1002, nt1002, bt1002],
+    title: "DSP ",
+    model: "DL 2.6",
+    description:
+      "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
+    application: [
+      " Clip limiters",
+      "Over temperature protections",
+      "Short circuit protection",
+      "Light weight and Portable",
+    ],
+    Stereo_8_Ohm_2_Channel: "2400W×2 ",
+    Stereo_4_Ohm_2_Channel: " 4000W×2 ",
+    Bridge_8_Ohm_1_Channel: "8000W",
+    Bridge_4_Ohm_1_Channel: " 1840W",
+    Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
+    THD_N: " <0.05%@8Ω 1kHz",
+    SNR: "＞98dB (A-weighted)",
+    Damping_Factor: "＞1000(1 kHz @ 8 Ω)",
+    Crosstalk: "＞85dB",
+    Input_Sensitivity: " 0.775V/1.44V",
+    Input_Impedance: " 20KΩ/10KΩ",
+    Size_mm: "482 x 360 x 88mm",
+    Weight: " 7",
+    pdf: TIPPDF,
+    relatedProducts: [
+      {
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img: ft1002,
+      },
+      {
+        name: "TIP-1602",
+        path: "/electronics/tip%201602",
+        img: ft1002,
+      },
+      {
+        name: "TIP-1302",
+        path: "/electronics/tip%201302",
+        img: ft1002,
+      },
+    ],
+  },
+  {
+    img: [ft2402, st1002, nt1002, bt1002],
+    title: "DSP ",
+    model: "DL 4.8",
     description:
       "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
     application: [
@@ -1073,7 +1159,7 @@ const ProductDetail = () => {
               {images.length > 1 && (
                 <button
                   onClick={prevImage}
-                  className="absolute top-1/2 left-[-50px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  className="absolute top-1/2 sm:left-[-50px] left-[-36px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
                   <ChevronLeft className="text-black" size={40} />
                 </button>
               )}
@@ -1082,7 +1168,7 @@ const ProductDetail = () => {
               {images.length > 1 && (
                 <button
                   onClick={nextImage}
-                  className="absolute top-1/2 sm:right-[-30px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
+                  className="absolute top-1/2 sm:right-[-30px] right-[-30px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
                   <ChevronRight className="text-black" size={40} />
                 </button>
               )}

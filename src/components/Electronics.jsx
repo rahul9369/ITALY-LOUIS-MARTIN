@@ -23,6 +23,8 @@ import ft1300 from "../assets/tta300/ft1300.jpg";
 import df2001 from "../assets/d200/df2001.jpg";
 import pl423 from "../assets/pl4/pl423.jpg";
 import plf405 from "../assets/pl4/plf405.jpg";
+import dsp26 from "../assets/dsp/FRONT.JPG";
+import dsp48 from "../assets/dsp/DL4.8f.JPG";
 const products = [
   {
     img: pl423,
@@ -42,7 +44,7 @@ const products = [
     response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "11kg",
   },
-    {
+  {
     img: plf42,
     title: "PL Series",
     model: "PL 1004",
@@ -51,7 +53,7 @@ const products = [
     response: " ＞3000(1 kHz @ 8 Ω)",
     weight: "10kg",
   },
-    {
+  {
     img: plf405,
     title: "PL Series",
     model: "PL 1504",
@@ -60,7 +62,7 @@ const products = [
     response: " ＞3000(1 kHz @ 8 Ω)",
     weight: "11kg",
   },
-  
+
   {
     img: df2001,
     title: "D Series",
@@ -208,6 +210,24 @@ const products = [
     response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "7kg",
   },
+  {
+    img: dsp26,
+    title: "DIP Series",
+    model: "DL 2.6",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "2400W×2/8Ω   4000W×2/4Ω",
+    response: " ＞1000(1 kHz @ 8 Ω)",
+    weight: "2.5kg",
+  },
+  {
+    img: dsp48,
+    title: "DIP Series",
+    model: "DL 4.8",
+    description: " PROFESSIONAL POWER AMPLIFIER",
+    power: "2400W×2/8Ω   4000W×2/4Ω",
+    response: " ＞1000(1 kHz @ 8 Ω)",
+    weight: "2.8kg",
+  },
 ];
 
 const ProductCard = ({ product }) => {
@@ -220,9 +240,9 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-         className="w-full h-[150px] object-contain rounded-lg cursor-pointer"
+        className="w-full h-[150px] object-contain rounded-lg cursor-pointer"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() =>
           navigate(
             `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`

@@ -10,12 +10,48 @@ import ksf218 from "../assets/ks218/ksf218.JPG";
 import ft1002 from "../assets/tip1002/ft1002.jpg";
 
 const categories = [
-  { name: "Line Array", img: famouf, path: "/linearray" },
-  { name: "Point Source", img: redfront, path: "/pointsource" },
-  { name: "Column Speaker", img: kff302, path: "/columsound" },
-  { name: "Commercial Speaker", img: ds415, path: "/stagemonitor" },
-  { name: "Subwoofer", img: ksf218, path: "/subwoofer" },
-  { name: "Electronics", img: ft1002, path: "/electronics" },
+  {
+    name: "Line Array",
+    img: famouf,
+    description:
+      "Crafted for perfection, delivering seamless coverage, refined clarity, and commanding power—the ultimate sound solution for unforgettable events and beyond!",
+    path: "/linearray",
+  },
+  {
+    name: "Point Source",
+    img: redfront,
+    description:
+      "Unmatched clarity. No distortion. No compromise. Just pure audio perfection.",
+    path: "/pointsource",
+  },
+  {
+    name: "Column Speaker",
+    img: kff302,
+    description:
+      "Engineered for clarity and fidelity, with a sleek design. Perfect for spaces where intelligibility matters most.",
+    path: "/columsound",
+  },
+  {
+    name: "Commercial Speaker",
+    img: ds415,
+    description:
+      "Engineered to endure. Designed to perform. Crystal‑clear sound for music, announcements, and large venues.",
+    path: "/stagemonitor",
+  },
+  {
+    name: "Subwoofer",
+    img: ksf218,
+    description:
+      "Feel the difference: state‑of‑the‑art drivers, deep precision bass, and rugged durability. Built to perform, built to last.",
+    path: "/subwoofer",
+  },
+  {
+    name: "Electronics",
+    img: ft1002,
+    description:
+      "Built with high‑quality components to ensure superior performance, sustainability, and long‑term endurance.",
+    path: "/electronics",
+  },
 ];
 
 const Categories = () => {
@@ -28,7 +64,6 @@ const Categories = () => {
 
   return (
     <div className="bg-white flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
-
       {/* Title */}
       <div className="w-full text-center mb-10">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 flex items-center justify-center">
@@ -45,9 +80,7 @@ const Categories = () => {
             onClick={() => navigate(item.path)}
             className={`cursor-pointer flex flex-col md:flex-row items-center gap-12 transition-all duration-300 hover:scale-[1.01] ${
               index % 2 === 1 ? "md:flex-row-reverse" : ""
-            }`}
-          >
-
+            }`}>
             {/* Image (Perfect Fit) */}
             <div className="w-full md:w-1/2 flex justify-center">
               <div className="w-full h-80 overflow-hidden rounded-2xl shadow-lg">
@@ -56,7 +89,7 @@ const Categories = () => {
                   alt={item.name}
                   className="w-full h-full object-contain p-4 transition-all duration-300"
                   loading="eager"
-                decoding="async"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -70,20 +103,17 @@ const Categories = () => {
               }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              viewport={{ once: true }}
-            >
+              viewport={{ once: true }}>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 {item.name}
               </h2>
               <p className="text-gray-800 text-lg leading-relaxed">
-                Click to explore full product details and specifications.
+                {item.description}.
               </p>
             </motion.div>
-
           </div>
         ))}
       </div>
-
     </div>
   );
 };
