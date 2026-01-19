@@ -5,42 +5,44 @@ import { useNavigate } from "react-router-dom";
 import PL4 from "../../assets/PL4.jpg";
 
 import plf4 from "../../assets/pl4/plf4.jpg";
+import plf42 from "../../assets/pl4/plf42.jpg";
+import plf405 from "../../assets/pl4/plf405.jpg";
 
 const products = [
   {
     img: plf4,
     title: "PL Series",
     model: "PL 4.1",
-    description: " PROFESSIONAL POWER AMPLIFIER",
+    description: "DIGITAL POWER AMPLIFIER",
     power: "1000W×4/8Ω   1600W×4/4Ω",
-    response: " ＞1000",
+    response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "10kg",
   },
   {
     img: plf4,
     title: "PL Series",
     model: "PL 4.5",
-    description: " PROFESSIONAL POWER AMPLIFIER",
+    description: "DIGITAL POWER AMPLIFIER",
     power: "1500W×4/8Ω  2500W×4/4Ω",
-    response: " ＞1000",
+    response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "11kg",
   },
    {
-    img: plf4,
+    img: plf42,
     title: "PL Series",
-    model: "PL 4.5",
+    model: "PL 1004",
     description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "1500W×4/8Ω  2500W×4/4Ω",
-    response: " ＞1000",
-    weight: "11kg",
+    power: "1000W×4/8Ω  1600W×4/4Ω",
+    response: " ＞3000(1 kHz @ 8 Ω)",
+    weight: "10kg",
   },
    {
-    img: plf4,
+    img: plf405,
     title: "PL Series",
-    model: "PL 4.5",
+    model: "PL 1504",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1500W×4/8Ω  2500W×4/4Ω",
-    response: " ＞1000",
+    response: " ＞3000(1 kHz @ 8 Ω)",
     weight: "11kg",
   },
 ];

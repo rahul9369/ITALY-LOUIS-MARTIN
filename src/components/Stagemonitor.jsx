@@ -15,6 +15,8 @@ import dsf15 from "../assets/ds15/dsf15.JPG";
 import Hwfornt from "../assets/Hwfront.png";
 import dsf8 from "../assets/ds8/dsf8.JPG";
 
+import tlfront5 from "../assets/tl55/tlfront5.png";
+
 
 const products = [
   {
@@ -71,6 +73,18 @@ const products = [
     response: " 65 Hz – 18 kHz",
     spl: "109dB",
     weight: "3.2Kg",
+  },
+
+  {
+    img: tlfront5,
+    title: " Motorised Ceiling Speaker",
+    model: "TL5.5",
+    description: " Two-way full range ceiling loudspeaker",
+    power: " 30W / 120W @8 ohms",
+    Sensitivity: " 88 dB",
+    response: " 65 Hz – 19 kHz",
+    spl: "109dB",
+    weight: "2.5Kg",
   },
 ];
 

@@ -107,7 +107,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full shadow-md bg-gray-500 opacity-95 relative  z-50">
+    <nav className="w-full shadow-md bg-black opacity-95 relative  z-50">
       <div className="w-full flex justify-between items-center  px-6 md:px-8">
         <div className="flex my-2 items-center space-x-2">
           <Link to="/">

@@ -4,25 +4,29 @@ import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 import TIP from "../../assets/TIPA.jpg";
 import ft1002 from "../../assets/tip1002/ft1002.jpg";
+import ft1302 from "../../assets/tip1002/ft1302.jpg";
+import ft2402 from "../../assets/tip1002/ft2402.jpg";
+import ft1003 from "../../assets/tip1002/ft1003.jpg";
+
 
 const products = [
   {
-    img: ft1002,
+    img: ft1003,
     title: "TIP Series",
     model: "TIP 1002",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1000W×2/8Ω   1600W×2/4Ω",
-    response: " ＞800",
+    response: " ＞800(1 kHz @ 8 Ω)",
     weight: "5.8kg",
   },
   {
-    img: ft1002,
+    img: ft1302,
     title: "TIP Series",
     model: "TIP 1302",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1300W×2/8Ω   2000W×2/4Ω",
-    response: " ＞1000",
-    weight: "6.8kg",
+    response: " ＞1000(1 kHz @ 8 Ω)",
+    weight: "6.5kg",
   },
   {
     img: ft1002,
@@ -30,17 +34,17 @@ const products = [
     model: "TIP 1602",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1600W×2/8Ω   2600W×2/4Ω",
-    response: " ＞1000",
-    weight: "6.5kg",
+    response: " ＞1000(1 kHz @ 8 Ω)",
+    weight: "6.8kg",
   },
 
   {
-    img: ft1002,
+    img: ft2402,
     title: "TIP Series",
     model: "TIP 2402",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "2400W×2/8Ω   4000W×2/4Ω",
-    response: " ＞1000",
+    response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "7kg",
   },
 ];

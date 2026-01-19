@@ -25,6 +25,7 @@ import pl423 from "../assets/pl4/pl423.jpg";
 import plf405 from "../assets/pl4/plf405.jpg";
 import dsp26 from "../assets/dsp/dl2.6f.JPG";
 import dsp48 from "../assets/dsp/DL4.8front.JPG";
+import ttaf450 from "../assets/tta300/ttaf450.jpg";
 const products = [
   {
     img: pl423,
@@ -155,7 +156,7 @@ const products = [
     weight: "26kg",
   },
   {
-    img: ft300,
+    img: ttaf450,
     title: "TTA Series",
     model: "TTA 450",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -164,7 +165,7 @@ const products = [
     weight: "23kg",
   },
   {
-    img: ft300,
+    img: ttaf450,
     title: "TTA Series",
     model: "TTA 460",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -179,7 +180,7 @@ const products = [
     model: "TIP 1002",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1000W×2/8Ω   1600W×2/4Ω",
-    response: " ＞800",
+    response: " ＞800(1 kHz @ 8 Ω)",
     weight: "5.8kg",
   },
   {
@@ -189,7 +190,7 @@ const products = [
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1300W×2/8Ω   2000W×2/4Ω",
     response: " ＞1000(1 kHz @ 8 Ω)",
-    weight: "6.8kg",
+    weight: "6.5kg",
   },
   {
     img: ft1002,
@@ -198,7 +199,7 @@ const products = [
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "1600W×2/8Ω   2600W×2/4Ω",
     response: " ＞1000(1 kHz @ 8 Ω)",
-    weight: "6.5kg",
+    weight: "6.8kg",
   },
 
   {
@@ -212,16 +213,16 @@ const products = [
   },
   {
     img: dsp26,
-    title: "DIP Series",
+    title: "DSP",
     model: "DL 2.6",
-    description: " PROFESSIONAL POWER AMPLIFIER",
+    description: "DIGITAL LOUDSPEAKER MANAGEMENT SYSTEM",
     power: "2400W×2/8Ω   4000W×2/4Ω",
     response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "2.5kg",
   },
   {
     img: dsp48,
-    title: "DIP Series",
+    title: "DSP",
     model: "DL 4.8",
     description: " PROFESSIONAL POWER AMPLIFIER",
     power: "2400W×2/8Ω   4000W×2/4Ω",

@@ -5,10 +5,17 @@ import { useNavigate } from "react-router-dom";
 import TTA from "../../assets/TTA.jpg";
 
 import ft300 from "../../assets/tta300/ft300.jpg";
+import ft500 from "../../assets/tta300/ft500.jpg";
+import ft600 from "../../assets/tta300/ft600.jpg";
+import ft800 from "../../assets/tta300/ft800.jpg";
+import ft1000 from "../../assets/tta300/ft1000.jpg";
+import ft1300 from "../../assets/tta300/ft1300.jpg";
+import ft3001 from "../../assets/tta300/ft3001.jpg";
+import ttaf450 from "../../assets/tta300/ttaf450.jpg";
 
 const products = [
   {
-    img: ft300,
+    img: ft3001,
     title: "TTA Series",
     model: "TTA 300",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -17,7 +24,7 @@ const products = [
     weight: "15kg",
   },
   {
-    img: ft300,
+    img: ft500,
     title: "TTA Series",
     model: "TTA 500",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -26,7 +33,7 @@ const products = [
     weight: "17kg",
   },
   {
-    img: ft300,
+    img: ft600,
     title: "TTA Series",
     model: "TTA 600",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -35,7 +42,7 @@ const products = [
     weight: "18kg",
   },
   {
-    img: ft300,
+    img: ft800,
     title: "TTA Series",
     model: "TTA 800",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -44,7 +51,7 @@ const products = [
     weight: "20kg",
   },
   {
-    img: ft300,
+    img: ft1000,
     title: "TTA Series",
     model: "TTA 1000",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -53,7 +60,7 @@ const products = [
     weight: "24kg",
   },
   {
-    img: ft300,
+    img: ft1300,
     title: "TTA Series",
     model: "TTA 1300",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -62,7 +69,7 @@ const products = [
     weight: "26kg",
   },
   {
-    img: ft300,
+    img: ttaf450,
     title: "TTA Series",
     model: "TTA 450",
     description: " PROFESSIONAL POWER AMPLIFIER",
@@ -71,7 +78,7 @@ const products = [
     weight: "23kg",
   },
   {
-    img: ft300,
+    img: ttaf450,
     title: "TTA Series",
     model: "TTA 460",
     description: " PROFESSIONAL POWER AMPLIFIER",

@@ -10,6 +10,8 @@ import ksf218 from "../assets/ks218/ksf218.JPG";
 import sf18 from "../assets/s18/sf18.JPG";
 import sf218 from "../assets/s218/sf218.JPG";
 
+import fronts12 from "../assets/s12/fronts12.JPG";
+
 const products = [
   {
     img: ksf18,
@@ -33,25 +35,37 @@ const products = [
     spl: "138dB",
     weight: "88Kg",
   },
+  //s12 new product //
+  {
+    img: fronts12,
+    title: "Subwoofer",
+    model: "S12",
+    description: '1x12" High Power Passive Subwoofer',
+    power: "450W/1800W (Passive)",
+    response: "38 Hz – 120 Hz",
+    Sensitivity: "96dB",
+    spl: "123dB",
+    weight: "20Kg",
+  },
   {
     img: sf18,
     title: "Subwoofer",
     model: "S18",
     description: '1x18" High Power Passive Subwoofer',
-    power: "750W/3000W (Passive)",
-    response: "38Hz-120Hz",
-    Sensitivity: "96dB",
-    spl: "127dB",
-    weight: "45Kg",
+    power: "1000W/4000W (Passive)",
+    response: "35Hz-120Hz",
+    Sensitivity: "97dB",
+    spl: "130dB",
+    weight: "48Kg",
   },
   {
     img: sf218,
     title: "Subwoofer",
     model: "S218",
     description: '2x18" High Power Passive Subwoofer',
-    power: "1500W/6000W (Passive)",
+    power: "2000W/8000W (Passive)",
     response: "35Hz-120Hz",
-    Sensitivity: "102dB",
+    Sensitivity: "99dB",
     spl: "136dB",
     weight: "78Kg",
   },

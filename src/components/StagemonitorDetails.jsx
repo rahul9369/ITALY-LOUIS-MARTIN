@@ -51,6 +51,11 @@ import ft1002 from "../assets/tip1002/ft1002.jpg";
 import sf218 from "../assets/s218/sf218.JPG";
 import ft300 from "../assets/tta300/ft300.jpg";
 
+import hwside from "../assets/hw65/hwside.jpg";
+import hwback from "../assets/hw65/hwback.jpg";
+
+import tlfront5 from "../assets/tl55/tlfront5.png";
+
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -148,7 +153,7 @@ const products = [
       },
       {
         name: "D-4300",
-        path: "/product/red%2010",
+        path: "/electronics/d%204300",
         img: fd4300,
       },
       {
@@ -201,17 +206,17 @@ const products = [
       },
       {
         name: "TTA-800",
-        path: "/product/tta%20800",
+        path: "/electronics/tta%20800",
         img: ft300,
       },
       {
         name: "S18",
-        path: "/product/s18",
+        path: "/subwoofer/s18",
         img: sf18,
       },
       {
         name: "DS5",
-        path: "/product/ds5",
+        path: "/plastic/ds5",
         img: dsf5,
       },
     ],
@@ -249,29 +254,29 @@ const products = [
     relatedProducts: [
       {
         name: "TIP-1002",
-        path: "/electronics/tip%202002",
+        path: "/electronics/tip%201002",
         img: ft1002,
       },
       {
         name: "TIP-1300",
-        path: "/product/red%2010",
+        path: "/electronics/tip%201302",
         img: ft1002,
       },
       {
         name: "S218",
-        path: "/product/f12",
+        path: "/subwoofer/s218",
         img: sf218,
       },
       {
         name: "S18",
-        path: "/product/f15",
+        path: "/subwoofer/s18",
         img: sf18,
       },
     ],
   },
 
   {
-    img: Hwfornt,
+    img: [Hwfornt,hwback,hwside],
     title: "Plastic Speaker",
     model: "Hw 6.5",
     description:
@@ -304,22 +309,76 @@ const products = [
     relatedProducts: [
       {
         name: "TIP-1002",
-        path: "/electronics/tip%202002",
+        path: "/electronics/tip%201002",
         img: ft1002,
       },
       {
         name: "TIP-1300",
-        path: "/product/red%2010",
+        path: "/electronics/tip%201302",
         img: ft1002,
       },
       {
         name: "S218",
-        path: "/product/f12",
+        path: "/subwoofer/s218",
         img: sf218,
       },
       {
         name: "S18",
-        path: "/product/f15",
+        path: "/subwoofer/s18",
+        img: sf18,
+      },
+    ],
+  },
+   {
+    img: [tlfront5],
+    title: "Plastic Speaker",
+    model: "TL5.5",
+    description:
+      " The HW 6.5 has one 6.5” Woofer with 1” HF. It is designed for the commercial applications; It has built in transformer taping for high impedance uses environment. Featuring a passive crossover, two-way full-range configuration, it is ideal for outdoor/indoor install market applications,including hospitality, education segment. Made of plastic & IP65 makes it use for weatherproof applications. The cabinet's design sleek & compact, look elegant and has good vocal clarity, fidelity, and minimal distortion without compromising transient response.",
+    application: [
+      " Outdoor applications ",
+      "  Background Music",
+      " Theme Park ",
+      "Classrooms",
+      " Terrace ",
+    ],
+    Type: "Two-way full range ceiling loudspeaker",
+    Frequency_Response: " 65 Hz – 19 kHz",
+    LF_Drivers: "1 x 5.5” Polypropylene cone woofer Driver",
+    HF_Drivers: "1 x 1” (25 mm) HF Driver",
+    RMS_Power: "30W ",
+    Program_Power: "60W",
+    Peak_Power: "120W",
+    Sensitivity: " 88 dB ",
+    Max_SPL: " 109 dB ",
+    Max_SPL_Peak: " 112 dB ",
+    Nominal_Impedance: " 8 Ohms  (typical)",
+    Crossover_Mode: "Passive, optimized for linearity",
+    Dispersion: "115°(H) x 90°(V) ",
+    Cabinet_Material: "Plastic materials",
+    // IP_Rating: " IP 65 Weatherproof",
+    Size_mm: " 220 x 220 x 160 mm (H x W x D)",
+    Weight: "2.5/5.51",
+    pdf: HwPDF,
+    relatedProducts: [
+      {
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img: ft1002,
+      },
+      {
+        name: "TIP-1300",
+        path: "/electronics/tip%201302",
+        img: ft1002,
+      },
+      {
+        name: "S218",
+        path: "/subwoofer/s218",
+        img: sf218,
+      },
+      {
+        name: "S18",
+        path: "/subwoofer/s18",
         img: sf18,
       },
     ],

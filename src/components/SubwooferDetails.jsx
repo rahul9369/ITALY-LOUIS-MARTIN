@@ -41,8 +41,19 @@ import s418 from "../assets/s18/s418.JPG";
 import sop18 from "../assets/s18/sop18.JPG";
 import sup18 from "../assets/s18/sup18.JPG";
 
+//s12//
+
+import  s1245 from "../assets/s12/s1245.JPG";
+import fronts12 from "../assets/s12/fronts12.JPG";
+import opens12 from "../assets/s12/opens12.JPG";
+import backs12 from "../assets/s12/backs12.JPG";
+import sides12 from "../assets/s12/sides12.JPG";
+import tops12 from "../assets/s12/tops12.JPG";
+
 //s218//
+
 import sf218 from "../assets/s218/sf218.JPG";
+
 import sb218 from "../assets/s218/sb218.JPG";
 import ss218 from "../assets/s218/ss218.JPG";
 import stop218 from "../assets/s218/stop218.jpg";
@@ -82,7 +93,7 @@ const products = [
     Max_SPL_Peak: "134 dB ",
     Nominal_Impedance: "8 Ohms",
     Dispersion: "Omnidirectional",
-    Cabinet_Material: "Birch Plywood",
+    Cabinet_Material: "Birch Plywood with Polyurea Paint",
     Size_mm: "910 x 610 x710mm (H x W x D)",
     Weight: "58/127.8",
     pdf: KS18a,
@@ -138,14 +149,14 @@ const products = [
     Nominal_Impedance: "4 Ohms",
     // Crossover_Mode: "Passive",
     Dispersion: "Omnidirectional",
-    Cabinet_Material: "Birch Plywood",
+    Cabinet_Material: "Birch Plywood with Polyurea Paint",
     Size_mm: "580 x 1160 x890mm (H x W x D)",
     Weight: "88/194.0",
     pdf: KS218a,
     relatedProducts: [
       {
         name: "TIP-2402",
-        path: "/electronics/tip%202002",
+        path: "/electronics/tip%202402",
         img: ft1002,
       },
       {
@@ -165,36 +176,35 @@ const products = [
       },
     ],
   },
-
-  {
-    img: [sf18, sb18, ss18, stop18, s418, sop18],
+{
+    img: [fronts12, s1245,opens12, backs12, tops12 ,sides12, ],
     title: "Subwoofer",
-    model: "S18",
+    model: "S12",
     description:
-      " The S-18 is a high-performance, front loaded enclosure designed passive subwoofer, equipped with a high-power European driver, it provides exceptional sound quality and reliability. The multi-layer high density plywood construction gives the robust,  rigidness & perfect acoustics to the long term uses. The S -18 is engineered to meet the demands of the installation and rental market, making it a reliable choice for professionals seeking high-performance audio solutions.",
+      "The S-12 has single 12” driver with 3” voice coil and high-performance, front-loaded passive subwoofer engineered for exceptional sound quality and reliability. Powered by a premium European driver, it delivers deep, impactful low-frequency reproduction with precision and consistency. Crafted from multi-layer birch plywood, the enclosure offers outstanding rigidity and acoustical integrity, ensuring durability and long-term performance. Designed to meet the rigorous demands of both installation and rental markets, the S-12 stands as a robust and dependable solution for audio professionals seeking uncompromising performance.",
     application: [
-      "Live Events",
-      "Auditoriums",
-      "Multi-functional Hall",
-      "Night Club",
-      "Stadiums & Sport Complex",
+      "Multipurpose Hall,",
+      " Café",
+      "Restaurants",
+      " Gyms & Fitness ",
+      ,
     ],
     Type: "Passive Subwoofer Speaker",
-    Frequency_Response: "38 Hz – 120 Hz",
-    LF_Drivers: "1x 18” High performance driver",
+    Frequency_Response: "35 Hz – 120 Hz",
+    LF_Drivers: "1x 12” High performance driver",
     // HF_Drivers: "1 x 1.75” (44 mm) HF Driver",
-    RMS_Power: "750W",
-    Program_Power: "1500W",
-    Peak_Power: "3000W",
+    RMS_Power: "450",
+    Program_Power: "900W",
+    Peak_Power: "1800W",
     Sensitivity: "96 dB ",
-    Max_SPL: "127 dB ",
-    Max_SPL_Peak: "130 dB ",
+    Max_SPL: "123 dB ",
+    Max_SPL_Peak: "126 dB ",
     Nominal_Impedance: "8 Ohms",
     // Crossover_Mode: "Passive",
     Dispersion: "Omnidirectional",
-    Cabinet_Material: "Birch Plywood",
-    Size_mm: "690 x 560 x 595mm (H x W x D)",
-    Weight: "45/99.2 ",
+    Cabinet_Material: "Birch Plywood with Polyurea Paint",
+    Size_mm: "360x 421x 500mm (H x W x D)",
+    Weight: "20/44.1",
     pdf: S18a,
     relatedProducts: [
       {
@@ -221,7 +231,61 @@ const products = [
   },
 
   {
-    img: [sf218, sb218, ss218, s4218, sop218],
+    img: [sf18, sb18, ss18, stop18, s418, sop18],
+    title: "Subwoofer",
+    model: "S18",
+    description:
+      " The S-18 is a high-performance, front loaded enclosure designed passive subwoofer, equipped with a high-power European driver, it provides exceptional sound quality and reliability. The multi-layer high density plywood construction gives the robust,  rigidness & perfect acoustics to the long term uses. The S -18 is engineered to meet the demands of the installation and rental market, making it a reliable choice for professionals seeking high-performance audio solutions.",
+    application: [
+      "Live Events",
+      "Auditoriums",
+      "Multi-functional Hall",
+      "Night Club",
+      "Stadiums & Sport Complex",
+    ],
+    Type: "Passive Subwoofer Speaker",
+    Frequency_Response: "35 Hz – 120 Hz",
+    LF_Drivers: "1x 18” High performance driver",
+    // HF_Drivers: "1 x 1.75” (44 mm) HF Driver",
+    RMS_Power: "1000W",
+    Program_Power: "2000W",
+    Peak_Power: "4000W",
+    Sensitivity: "97 dB ",
+    Max_SPL: "130 dB ",
+    Max_SPL_Peak: "133 dB ",
+    Nominal_Impedance: "8 Ohms",
+    // Crossover_Mode: "Passive",
+    Dispersion: "Omnidirectional",
+    Cabinet_Material: "Birch Plywood with Polyurea Paint",
+    Size_mm: "690 x 560 x 595mm (H x W x D)",
+    Weight: "48/105.8",
+    pdf: S18a,
+    relatedProducts: [
+      {
+        name: "TIP-1602",
+        path: "/electronics/tip%201602",
+        img: ft1002,
+      },
+      {
+        name: "RED10",
+        path: "/product/red%2010",
+        img: redfront,
+      },
+      {
+        name: "F12",
+        path: "/product/f12",
+        img: ff12,
+      },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: ff15,
+      },
+    ],
+  },
+
+  {
+    img: [sf218, sb218, ss218, s4218, sop218, sdou218,],
     title: "Subwoofer",
     model: "S218",
     description:
@@ -237,16 +301,16 @@ const products = [
     Frequency_Response: "35 Hz – 120 Hz",
     LF_Drivers: "2 x 18” High performance driver",
     // HF_Drivers: "1 x 1.75” (44 mm) HF Driver",
-    RMS_Power: "1500W",
-    Program_Power: "3000W",
-    Peak_Power: "6000W",
-    Sensitivity: "102 dB ",
+    RMS_Power: "2000W",
+    Program_Power: "4000W",
+    Peak_Power: "8000W",
+    Sensitivity: " 99 dB ",
     Max_SPL: "136 dB ",
     Max_SPL_Peak: "139 dB ",
     Nominal_Impedance: "4 Ohms",
     // Crossover_Mode: "Passive",
     Dispersion: "Omnidirectional",
-    Cabinet_Material: "Multi-layer high density plywood",
+    Cabinet_Material: "Birch Plywood with Polyurea Paint",
     Size_mm: "580 x 1160 x890mm (H x W x D)",
     Weight: "78/171.9 ",
     pdf: S218a,

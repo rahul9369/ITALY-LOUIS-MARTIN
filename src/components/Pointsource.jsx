@@ -27,7 +27,7 @@ const products = [
     response: "65Hz-20kHz",
     Sensitivity: "101dB",
     spl: "131dB",
-    weight: "38Kg",
+    weight: "25Kg",
   },
   {
     img: redf5,
@@ -68,7 +68,7 @@ const products = [
     model: "Red 12",
     description: '1x12" Two-Way Passive Full-Range High Power Loudspeaker',
     power: "250W/1000W (Passive)",
-    response: "70Hz-19kHz",
+    response: "75Hz-19kHz",
     Sensitivity: "97dB",
     spl: "123dB",
     weight: "18Kg",

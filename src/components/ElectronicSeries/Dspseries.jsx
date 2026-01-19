@@ -11,18 +11,18 @@ import DSP48 from "../../assets/dsp/dl4.8front.JPG";
 const products = [
   {
     img: DSP26,
-    title: "DSP Series",
+    title: "DSP",
     model: "DL 2.6",
-    description: " PROFESSIONAL POWER AMPLIFIER",
+    description: "DIGITAL LOUDSPEAKER MANAGEMENT SYSTEM",
     power: "250W×2/8Ω      400W×2/4Ω",
     response: " ＞500(1 KHz @ 8Ω)",
     weight: "2.5kg",
   },
   {
     img: DSP48,
-    title: "DSP Series",
+    title: "DSP",
     model: "DL 4.8",
-    description: " PROFESSIONAL POWER AMPLIFIER",
+    description: "DIGITAL LOUDSPEAKER MANAGEMENT SYSTEM",
     power: "350W×2/8Ω      600W×2/4Ω",
     response: " ＞500(1 KHz @ 8Ω)",
     weight: "2.8kg",
@@ -83,14 +83,10 @@ const ProductList = () => {
       <img src={Amplifiers} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="text-4xl mx-auto font-bold  mb-4">
-          Amplifiers - DSP Series
+           DSP
         </h1>
         <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
-          We offer amplifiers tailored for a variety of applications, from live
-          concerts to installations. Each amplifier is meticulously designed
-          with high-quality components, ensuring exceptional dynamic power and
-          long-term reliability. Our commitment to precision engineering
-          guarantees superior performance and sustainability over many years.
+         Our all DSP offers High‑precision 64‑bit DSP technology ensures crystal‑clear sound and exceptional dynamic range. A flexible 4‑in/8‑out matrix design allows seamless routing and integration into any system. Each channel offers complete control with gain, 10‑band parametric EQ, crossover, delay, phase, and limiter. Extensive preset storage enables quick recall of tailored audio setups for different environments. Professional‑grade processing delivers reliable, customizable performance with outstanding sound quality
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2 sm:p-10 bg-gray-100 justify-items-center">

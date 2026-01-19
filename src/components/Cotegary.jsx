@@ -66,7 +66,7 @@ const Categories = () => {
     <div className="bg-white flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
       {/* Title */}
       <div className="w-full text-center mb-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 flex items-center justify-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-red-900 flex items-center justify-center">
           <span className="h-6 w-6 bg-primary rounded-full mr-3"></span>
           Products
         </h2>
@@ -104,7 +104,7 @@ const Categories = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true }}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-bold text-red-900 mb-4">
                 {item.name}
               </h2>
               <p className="text-gray-800 text-lg leading-relaxed">

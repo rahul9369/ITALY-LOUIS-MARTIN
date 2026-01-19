@@ -15,6 +15,7 @@ import plt4 from "../assets/pl4/plt4.jpg";
 import plup4 from "../assets/pl4/plup4.JPG";
 import plb4 from "../assets/pl4/plb4.JPG";
 import pl423 from "../assets/pl4/pl423.jpg";
+import plf42 from "../assets/pl4/plf42.jpg";  
 
 //d200  d300//
 import df200 from "../assets/d200/df200.JPG";
@@ -52,6 +53,8 @@ import ft500 from "../assets/tta300/ft500.jpg";
 import ft3001 from "../assets/tta300/ft3001.jpg";
 import ft1000 from "../assets/tta300/ft1000.jpg";
 import ft1300 from "../assets/tta300/ft1300.jpg";
+import ttaf450 from "../assets/tta300/ttaf450.jpg"; 
+import ttab450 from "../assets/tta300/ttab450.jpg";
 //tip1002//
 import ft1002 from "../assets/tip1002/ft1002.jpg";
 import st1002 from "../assets/tip1002/st1002.JPG";
@@ -76,7 +79,7 @@ import { Helmet } from "react-helmet";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 const products = [
   {
-    img: [df2001, db200, ds200, dup200, dss200],
+    img: [df2001, db200, dup200, dss200],
     title: "D ",
     model: "D 200",
     description:
@@ -188,7 +191,7 @@ const products = [
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ / 10kΩ",
     Size_mm: "482 x 350 x 44",
-    Weight: "2 4.8",
+    Weight: "4.8",
     pdf: DSeriesAmplifiers,
     relatedProducts: [
       {
@@ -253,7 +256,7 @@ const products = [
     ],
   },
   {
-    img: [pl423, plb4, plss4, plt4],
+    img: [pl423, plb4, plss4,],
     title: "PL ",
     model: "PL 4.1",
     description:
@@ -298,7 +301,7 @@ const products = [
   },
 
   {
-    img: [plf4, plss4, plb4, plt4],
+    img: [plf4, plss4, plb4],
     title: "PL ",
     model: "PL 4.5",
     description:
@@ -342,7 +345,7 @@ const products = [
     ],
   },
   {
-    img: [plf4, plb42, plss4],
+    img: [plf42, plb42, plss4,plt4],
     title: "PL ",
     model: "PL 1004",
     description:
@@ -353,14 +356,14 @@ const products = [
       "Short circuit protection",
       "Light weight and Portable",
     ],
-    Stereo_8_Ohm_2_Channel: " 1500W×4 ",
-    Stereo_4_Ohm_2_Channel: " 2500W×4 ",
-    Bridge_8_Ohm_1_Channel: " 7500W×2 ",
-    Bridge_4_Ohm_1_Channel: " 1725W",
+    Stereo_8_Ohm_2_Channel: " 1000W×4 ",
+    Stereo_4_Ohm_2_Channel: " 1600W×4 ",
+    Bridge_8_Ohm_1_Channel: " 3000W x2 ",
+    Bridge_4_Ohm_1_Channel: " 1495W",
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">98dB ",
-    Damping_Factor: ">1000(1 kHz @ 8 Ω) ",
+    Damping_Factor: ">3000(1 kHz @ 8 Ω) ",
     Crosstalk: ">85dB",
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ / 10kΩ",
@@ -386,7 +389,7 @@ const products = [
     ],
   },
   {
-    img: [plf4, plb42, plss4],
+    img: [plf42, plb42, plss4,plt4],
     title: "PL ",
     model: "PL 1504",
     description:
@@ -404,7 +407,7 @@ const products = [
     Frequency_Response: " 20HZ~20KHZ(0.5dB/-0.5dB)",
     THD_N: " <0.05%@8Ω 1kHz",
     SNR: ">98dB ",
-    Damping_Factor: ">1000(1 kHz @ 8 Ω) ",
+    Damping_Factor: ">3000(1 kHz @ 8 Ω) ",
     Crosstalk: ">85dB",
     Input_Sensitivity: "0.775V / 1.44V",
     Input_Impedance: "20kΩ / 10kΩ",
@@ -728,7 +731,7 @@ const products = [
     ],
   },
   {
-    img: [ft300, sst300, nt300, bt300],
+    img: [ttaf450, ttab450],
     title: "TTA ",
     model: "TTA 450",
     description:
@@ -778,7 +781,7 @@ const products = [
     ],
   },
   {
-    img: [ft300, sst300, nt300, bt300],
+    img: [ttaf450,ttab450,],
     title: "TTA ",
     model: "TTA 460",
     description:
@@ -895,7 +898,7 @@ const products = [
     Input_Sensitivity: " 0.775V/1.44V",
     Input_Impedance: " 20KΩ/10KΩ",
     Size_mm: "482 x 360 x 88mm",
-    Weight: " 6.5",
+    Weight: " 6.8",
     pdf: TIPPDF,
     relatedProducts: [
       {
@@ -1004,16 +1007,16 @@ const products = [
     ],
   },
   {
-    img: [Dsp26front, Dsp26back, nt1002, bt1002],
+    img: [Dsp26front, Dsp26back,],
     title: "DSP ",
     model: "DL 2.6",
     description:
-      "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
+      "The DL 2.6 digital loudspeaker management system is a powerful and easy-to-operate processor. It adopts a switching power supply design and automatically adjusts to external input voltages from 95V to 250V, making it suitable for worldwide use without any manual adjustment. The digital signal processor uses a high-precision DSP chip with 48-bit internal data processing, delivering an extremely high dynamic range and excellent sound quality. It is a 2-in / 6-out processor with multiple preset multi-way crossover modes, including 2 × 2 + 2-way, 2 × 3-way, 4 × 2 + 2-way, 5 + 1-way, and 6-way configurations. The signal source of each output channel can be freely selected. Each channel includes gain, a 5-band parametric equalizer, crossover, delay, phase, and limiter.",
     application: [
-      " Clip limiters",
-      "Over temperature protections",
-      "Short circuit protection",
-      "Light weight and Portable",
+      "48-bit DSP Processing",
+      "8-band parametric EQs for each output",
+      "Remote control software for PC Windows only",
+      "Memory storage for 20 presets",
     ],
     Stereo_8_Ohm_2_Channel: "2400W×2 ",
     Stereo_4_Ohm_2_Channel: " 4000W×2 ",
@@ -1053,16 +1056,16 @@ const products = [
     ],
   },
   {
-    img: [Dsp48front, Dsp48back, nt1002, bt1002],
+    img: [Dsp48front, Dsp48back,],
     title: "DSP ",
     model: "DL 4.8",
     description:
-      "The TIP Series amplifier is multi-channel professional Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. It has high efficiency due to combination of automatic temperature control and unique limiting functions ensures that the TIP series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts.",
+      "The DL 4.8 digital loudspeaker management system is a powerful and easy-to-operate processor. It adopts a switching power supply design and automatically adjusts to external input voltages from 90V to 250V, making it suitable for worldwide use without any manual adjustment. The digital signal processor uses a high-precision DSP chip with 64-bit internal data processing, delivering an extremely high dynamic range and excellent sound quality. It is a 4-in / 8-out matrix processor with multiple presets. The signal source of each output channel can be freely selected. Each channel includes gain, a 10-band parametric equalizer, crossover, delay, phase, and limiter.",
     application: [
-      " Clip limiters",
-      "Over temperature protections",
-      "Short circuit protection",
-      "Light weight and Portable",
+      " 800 FIR taps per output",
+      "64-bit DSP Processing / 96 kHz sample rate ",
+      "Dual channel AES/EBU Input",
+      "Memory storage for 250 presets",
     ],
     Stereo_8_Ohm_2_Channel: "2400W×2 ",
     Stereo_4_Ohm_2_Channel: " 4000W×2 ",
