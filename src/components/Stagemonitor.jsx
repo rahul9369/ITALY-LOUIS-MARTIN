@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
-import PlasticSpeaker from "../assets/PlasticSpeaker.JPG";
-
-
+import PlasticSpeaker from "../assets/PlasticSpeaker.jpg";
 
 import Footer from "../components/Footer";
-
 
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -16,7 +13,6 @@ import Hwfornt from "../assets/Hwfront.png";
 import dsf8 from "../assets/ds8/dsf8.JPG";
 
 import tlfront from "../assets/tl55/tlfront.jpg";
-
 
 const products = [
   {
@@ -100,7 +96,7 @@ const ProductCard = ({ product }) => {
         alt={product.model}
         className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() =>
           navigate(
             `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`
