@@ -114,12 +114,12 @@ const Carousel = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-30 flex flex-col items-center gap-4">
 
         {/* TITLE */}
-        <div className="text-red-800 text-3xl sm:text-7xl md:text-7xl font-bold drop-shadow-lg">
+        <div className="text-gray-300 text-3xl sm:text-7xl md:text-7xl font-bold drop-shadow-lg">
           {slides[currentIndex].title}
         </div>
 
         {/* SUBTITLE */}
-        <div className="text-red-800 text-2xl sm:text-6xl md:text-7xl font-bold drop-shadow-lg">
+        <div className="text-gray-300 text-2xl sm:text-6xl md:text-7xl font-bold drop-shadow-lg">
           {slides[currentIndex].subtitle}
         </div>
 
