@@ -39,7 +39,7 @@ const products = [
     img: kf306,
     title: "Column Speaker",
     model: "K306",
-    description: '4x3" Passive Full Range Column Speaker',
+    description: '6x3" Passive Full Range Column Speaker',
     power: "120W/480W (Passive)",
     response: "150Hz-18kHz",
     Sensitivity: "95dB",
@@ -89,25 +89,31 @@ const ProductCard = ({ product }) => {
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
-      <p className="text-sm font-semibold mt-2 text-gray-700">
+      <p className="text-sm font- mt-4 text-gray-700">
         <span className="font-bold">RMS/Peak Power:</span> {product.power}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold"> Frequency Response:</span>{" "}
         {product.response}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
         {product.Sensitivity}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Max SPL(Continuous/1m):</span> {product.spl}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button
-        className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
+        className="mt-4 mx-auto block cursor-pointer 
+border border-red-800 text-red-800 
+px-3 py-2 sm:px-5 sm:py-2 
+text-sm sm:text-base
+rounded-lg bg-transparent 
+hover:bg-red-800 hover:text-white 
+transition duration-300"
         onClick={() =>
           navigate(
             `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`
@@ -123,7 +129,7 @@ const ProductList = () => {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Column Sound Speaker - Louis Martin</title>
+        <title>Column Speaker - Louis Martin</title>
         <meta
           name="description"
           content="Discover the journey of Louis Martin — a passionate innovator, strategist, and creator. From pioneering digital solutions to driving impactful transformations, Louis blends creativity with technology to shape meaningful experiences."
@@ -135,8 +141,8 @@ const ProductList = () => {
       </Helmet>
       <img src={Column} alt="Line Array" className="w-full h-auto" />
       <div className="w-full text-center py-6 px-4">
-        <h1 className="sm:text-4xl text-[22px] mx-auto font-bold  mb-4">
-          Column Sound Speaker - All Series
+        <h1 className="sm:text-4xl text-[22px] mx-auto font-bold  mb-4 text-red-800">
+          Column Speaker - All Series
         </h1>
         <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
           Our column speakers are meticulously engineered to enhance speech

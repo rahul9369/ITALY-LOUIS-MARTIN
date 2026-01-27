@@ -109,8 +109,22 @@ function Catelog() {
           </p> */}
           <button
             onClick={handleOpenPDF}
-            className="bg-yellow-500 mt-16 sm:mt-40 cursor-pointer hover:bg-yellow-600 text-white px-6 sm:px-8 py-1 sm:py-4 rounded-lg text-[12px] sm:text-xl font-semibold transition-all duration-300 transform hover:scale-105">
-            View Catalogue
+            className="
+  bg-transparent 
+  border border-white/40
+  mt-16 sm:mt-40 
+  cursor-pointer 
+  hover:bg-red-800 hover:border-red-800
+  text-white 
+  px-6 sm:px-8 
+  py-1 sm:py-4 
+  rounded-lg 
+  text-[12px] sm:text-xl 
+  font-semibold 
+  transition-all duration-300 
+  transform hover:scale-105
+">
+             Catalogue
           </button>
         </div>
       </div>

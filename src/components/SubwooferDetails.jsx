@@ -68,6 +68,17 @@ import redfront from "../assets/red10/redfront.JPG";
 import ff12 from "../assets/f12/ff12.jpg";
 import ff15 from "../assets/f15/ff15.jpg";
 import famouf from "../assets/fam/famouf.JPG";
+import redo5 from "../assets/red6/redo5.JPG";
+import redff9 from "../assets/red9/redff9.JPG";
+import ft800 from "../assets/tta300/ft800.jpg";
+import ff10 from "../assets/f10/ff10.jpg";
+
+import dsf8 from "../assets/ds8/dsf8.jpg";
+import coxf from "../assets/coximg/coxf.JPG";
+import ft2402 from "../assets/tip1002/ft2402.jpg";
+import q60front from "../assets/q60/q60front.JPG";
+import q80f from "../assets/q80/q80f.JPG";
+import redfront5 from "../assets/red5/redfront5.jpg"
 const products = [
   {
     img: [ksf18, ksb18, kstop18, ks418, ksd18],
@@ -101,8 +112,8 @@ const products = [
     // ✅ Related Products Section
     relatedProducts: [
       {
-        name: "TIP-1302",
-        path: "/electronics/tip%201302",
+        name: "TIP-1602",
+        path: "/electronics/tip%201602",
         img: ft1002,
       },
       {
@@ -111,15 +122,15 @@ const products = [
         img: redfront,
       },
       {
-        name: "F 12",
-        path: "/product/f12",
-        img: ff12,
+        name: "RED5.5",
+        path: "/product/red%205.5",
+        img: redo5,
       },
-      {
-        name: "F 15",
-        path: "/product/f15",
-        img: ff15,
-      },
+      // {
+      //   name: "F 15",
+      //   path: "/product/f15",
+      //   img: ff15,
+      // },
     ],
   },
 
@@ -169,11 +180,11 @@ const products = [
         path: "/linearray/famous%20210",
         img: famouf,
       },
-      {
-        name: "F15",
-        path: "/product/f15",
-        img: ff15,
-      },
+      // {
+      //   name: "F15",
+      //   path: "/product/f15",
+      //   img: ff15,
+      // },
     ],
   },
 {
@@ -193,7 +204,7 @@ const products = [
     Frequency_Response: "35 Hz – 120 Hz",
     LF_Drivers: "1x 12” High performance driver",
     // HF_Drivers: "1 x 1.75” (44 mm) HF Driver",
-    RMS_Power: "450",
+    RMS_Power: "450W",
     Program_Power: "900W",
     Peak_Power: "1800W",
     Sensitivity: "96 dB ",
@@ -208,24 +219,24 @@ const products = [
     pdf: S18a,
     relatedProducts: [
       {
-        name: "TIP-1602",
-        path: "/electronics/tip%201602",
-        img: ft1002,
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: ft800,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: redfront,
+        name: "F10",
+        path: "/product/f10",
+        img: ff10,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: ff12,
+        name: "RED 5",
+        path: "/product/red%205",
+        img: redfront5,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: ff15,
+        name: "RED 9",
+        path: "/product/red%209",
+        img: redff9,
       },
     ],
   },
@@ -266,21 +277,22 @@ const products = [
         path: "/electronics/tip%201602",
         img: ft1002,
       },
-      {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: redfront,
-      },
-      {
-        name: "F12",
-        path: "/product/f12",
-        img: ff12,
-      },
-      {
+       {
         name: "F15",
         path: "/product/f15",
         img: ff15,
       },
+      {
+        name: "DS8",
+        path: "/plastic/ds8",
+        img: dsf8,
+      },
+      {
+        name: "COX12",
+        path: "/linearray/cox%2012",
+        img: coxf,
+      },
+     
     ],
   },
 
@@ -316,24 +328,24 @@ const products = [
     pdf: S218a,
     relatedProducts: [
       {
-        name: "TIP-1302",
-        path: "/electronics/tip%201302",
-        img: ft1002,
+        name: "TIP-2402",
+        path: "/electronics/tip%202402",
+        img: ft2402,
       },
       {
-        name: "RED10",
-        path: "/product/red%2010",
-        img: redfront,
+        name: "Q60",
+        path: "/linearray/q%2060",
+        img: q60front,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: ff12,
+        name: "Q80",
+        path: "/linearray/q%2080",
+        img: q80f,
       },
       {
-        name: "F15",
-        path: "/product/f15",
-        img: ff15,
+        name: "COX12",
+        path: "/linearray/cox%2012",
+        img: coxf,
       },
     ],
   },

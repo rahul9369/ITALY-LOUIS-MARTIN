@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import img from "../assets/Distributor/us.jpg";
-import carausalimg2 from "../assets/carausalimg2.png";
+import carausalimg2 from "../assets/carausalimg2.jpg";
 import Footer from "./Footer";
 import Aboutus from "../assets/AboutUs.png";
 import { Helmet } from "react-helmet";

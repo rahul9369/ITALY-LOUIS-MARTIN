@@ -1,5 +1,5 @@
 import React from "react";
-import Subwoofer from "../../assets/Subwoofer.png";
+import Subwoofer from "../../assets/Subwoofer.jpg";
 import Footer from "../Footer";
 import KS18 from "../../assets/ks18.jpg";
 import SubwooferImg from "../../assets/subwoofer218.png";
@@ -51,25 +51,31 @@ const ProductCard = ({ product }) => {
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
-      <p className="text-sm font-semibold mt-2 text-gray-700">
+      <p className="text-sm font mt-4 text-gray-700">
         <span className="font-bold">RMS/Peak Power:</span> {product.power}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold"> Frequency Response:</span>{" "}
         {product.response}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
         {product.Sensitivity}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Max SPL(Continuous/1m):</span> {product.spl}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button
-        className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
+        className="mt-4 mx-auto block cursor-pointer 
+border border-red-800 text-red-800 
+px-3 py-2 sm:px-5 sm:py-2 
+text-sm sm:text-base
+rounded-lg bg-transparent 
+hover:bg-red-800 hover:text-white 
+transition duration-300"
         onClick={() =>
           navigate(
             `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`
@@ -86,7 +92,7 @@ const ProductList = () => {
     <div className="w-full">
       <img src={Subwoofer} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
-        <h1 className="sm:text-4xl text-[22px] mx-auto font-bold  mb-4">
+        <h1 className="sm:text-4xl text-[22px] mx-auto font-bold  mb-4 text-red-800">
           Sub Woofers - KS Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">

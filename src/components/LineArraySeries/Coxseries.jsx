@@ -9,8 +9,8 @@ const products = [
     img: coxf,
     title: "Cox Series",
     model: "Cox 12",
-    description: `1x12" Passive Co-axial line array Speaker System`,
-    power: "450W/1800W (Passive)",
+    description: `1x12"Two-way Coaxial full Range Bi-amp/Passive Switchable line Array Speaker System`,
+    power: "450W/1800W（Passive); LF:400W/1600W, HF:50W/200W (Bi-Amp)",
     response: "60Hz-19kHz",
     Sensitivity: "98dB",
     spl: "127dB",
@@ -37,25 +37,31 @@ const ProductCard = ({ product }) => {
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
-      <p className="text-sm font-semibold mt-2 text-gray-700">
+      <p className="text-sm font mt-4 text-gray-700">
         <span className="font-bold">RMS/Peak Power:</span> {product.power}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold"> Frequency Response:</span>{" "}
         {product.response}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
         {product.Sensitivity}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Max SPL(Continuous/1m):</span> {product.spl}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button
-        className="mt-4 w-full bg-orange-500 cursor-pointer text-white px-4 py-2 rounded-lg hover:bg-orange-600"
+        className="mt-4 mx-auto block cursor-pointer 
+border border-red-800 text-red-800 
+px-3 py-2 sm:px-5 sm:py-2 
+text-sm sm:text-base
+rounded-lg bg-transparent 
+hover:bg-red-800 hover:text-white 
+transition duration-300"
         onClick={() =>
           navigate(
             `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
@@ -72,7 +78,7 @@ const ProductList = () => {
     <div className="w-full">
       <img src={Linearray} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
-        <h1 className="sm:text-4xl text-[22px] mx-auto font-bold  mb-4">
+        <h1 className="sm:text-4xl text-[22px] mx-auto font-bold  mb-4 text-red-800">
           Line Arrays - COX Series
         </h1>
         <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">

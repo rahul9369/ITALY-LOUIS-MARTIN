@@ -35,12 +35,14 @@ import qnos from "../assets/q50/qnos.JPG";
 import qs from "../assets/q50/qs.JPG";
 import qss from "../assets/q50/qss.JPG";
 import qtop from "../assets/q50/qtop.JPG";
+import q50layer from "../assets/q50/q50layer.jpg";
 //q60//
 import q60front from "../assets/q60/q60front.JPG";
 import q60s from "../assets/q60/q60s.JPG";
 import q60back from "../assets/q60/q60back.jpg";
 import q60j from "../assets/q60/q60j.JPG";
 import q60ss from "../assets/q60/q60ss.JPG";
+import q60layer from "../assets/q60/q60layer.jpg";
 // import q60top from "../assets/q60/q60top.JPG";
 //q70//
 import q70front from "../assets/q70/q70front.JPG";
@@ -49,6 +51,7 @@ import q70s from "../assets/q70/q70s.JPG";
 import q70ss from "../assets/q70/q70ss.JPG";
 import q70back from "../assets/q70/q70back.JPG";
 import q70top from "../assets/q70/q70top.JPG";
+import q70layer from "../assets/q70/q70layer.jpg";
 //q80//
 import q80front from "../assets/q80/q80f.JPG";
 import q80s from "../assets/q80/q80s.JPG";
@@ -56,12 +59,17 @@ import q80b from "../assets/q80/q80b.jpg";
 import q80ss from "../assets/q80/q80ss.JPG";
 import q80j from "../assets/q80/q80j.JPG";
 import q80top from "../assets/q80/q80t.JPG";
+import q80layer from "../assets/q80/q80layer.jpg";
 
 import ft1002 from "../assets/tip1002/ft1002.jpg";
 import ft300 from "../assets/tta300/ft300.jpg";
 import ksf218 from "../assets/ks218/ksf218.JPG";
 import sf218 from "../assets/s218/sf218.JPG";
 import sf18 from "../assets/s18/sf18.JPG";
+import ft800 from "../assets/tta300/ft800.jpg";
+
+ import redfront from "../assets/red10/redfront.JPG";
+ import ft1003 from "../assets/tip1002/ft1003.jpg";
 
 // import cox12 from "../assets/coximg/coxunder.jpg";
 // import coxback1 from "../assets/coxback1.jpg";
@@ -97,6 +105,7 @@ const products = [
     Max_SPL_Peak: "LF:136 dB  & HF:136 dB ",
     Nominal_Impedance: "LF:4 Ohms & HF:4 Ohms",
     Crossover_Mode: "Active, Bi-amplified",
+    Crossover_Point_Biamp_Mode :"LF : 70 Hz – 2 kHz | HF : 2 kHz – 19 kHz" ,
     Dispersion: "70° / 90° / 110° (H) x 10° (V)",
     Cabinet_Material: "Glass Fiber Reinforced Plastic & Birch Plywood",
     Size_mm: "330 x 1100 x 600 mm (H x W x D)",
@@ -104,13 +113,13 @@ const products = [
     pdf: Famous210N,
     relatedProducts: [
       {
-        name: "TIP-1002",
-        path: "/electronics/tip%201002",
-        img: ft1002,
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: ft800,
       },
       {
-        name: "TTA-500",
-        path: "/electronics/tta%20500",
+        name: "TTA-300",
+        path: "/electronics/tta%20300",
         img: ft300,
       },
       {
@@ -119,14 +128,14 @@ const products = [
         img: ksf218,
       },
       {
-        name: "Q50",
-        path: "/linearray/q%2050",
-        img: qfront,
+        name: "Red-10",
+        path: "/product/red%2010",
+        img: redfront,
       },
     ],
   },
   {
-    img: [qfront, qnos, qback, qss, qs],
+    img: [qfront, qnos, qback, qss, qs,q50layer],
     title: "Line Array ",
     model: "Q 50",
     description:
@@ -149,6 +158,7 @@ const products = [
     Max_SPL_Peak: "134 dB  (Passive/Bi-Amp)",
     Nominal_Impedance: "LF : 8 Ohms & HF : 8 Ohms",
     Crossover_Mode: "Passive/Bi-amplified Switchable",
+    Crossover_Point_Biamp_Mode :"LF : 65 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz" ,
     Dispersion: "100° (H) x 10° (V)",
     Cabinet_Material: "Birch Plywood",
     Size_mm: "286 x 478 x 360mm (H x W x D)",
@@ -156,14 +166,14 @@ const products = [
     pdf: Q50a,
     relatedProducts: [
       {
-        name: "TIP-1302",
-        path: "/electronics/tip%201302",
-        img: ft1002,
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: ft800,
       },
       {
-        name: "TIP-1602",
-        path: "/electronics/tip%201602",
-        img: ft1002,
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img: ft1003,
       },
       {
         name: "S18",
@@ -178,7 +188,7 @@ const products = [
     ],
   },
   {
-    img: [q60front, q60s, q60back, q60ss, q60j],
+    img: [q60front, q60s, q60back, q60ss, q60j,q60layer],
     title: "Line array ",
     model: "Q 60",
     description:
@@ -194,14 +204,15 @@ const products = [
     Frequency_Response: "60 Hz – 20 kHz",
     LF_Drivers: "2x 10” (254 mm) with a 2.5” Voice Coil",
     HF_Drivers: "2 x 1.4” (35 mm) High Compression Driver",
-    RMS_Power: "650W (Passive) / LF:500W,HF:150W (Bi-Amp)",
-    Program_Power: "1300W (Passive) / LF:1000W,HF:300W (Bi-Amp)",
+    RMS_Power: "750W (Passive) / LF:500W,HF:150W (Bi-Amp)",
+    Program_Power: "1500W (Passive) / LF:1000W,HF:300W (Bi-Amp)",
     Peak_Power: "2600W (Passive) / LF:2000W,HF:600W (Bi-Amp)",
     Sensitivity: "102 dB ",
     Max_SPL: "133 dB  (Passive/Bi-Amp)",
     Max_SPL_Peak: "136 dB  (Passive/Bi-Amp)",
     Nominal_Impedance: "LF : 8 Ohms & HF : 8 Ohms",
     Crossover_Mode: "Passive/Bi-amplified Switchable",
+    Crossover_Point_Biamp_Mode :"LF : 60 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz" ,
     Dispersion: "100° (H) x 10° (V)",
     Cabinet_Material: "Birch Plywood",
     Size_mm: "286 x 754 x 380mm (H x W x D)",
@@ -209,9 +220,9 @@ const products = [
     pdf: Q60a,
     relatedProducts: [
       {
-        name: "TIP-1602",
-        path: "/electronics/tip%201602",
-        img: ft1002,
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img: ft1003,
       },
       {
         name: "S18",
@@ -224,14 +235,14 @@ const products = [
         img: sf218,
       },
       {
-        name: "Q50",
-        path: "/linearray/q%2050",
-        img: qfront,
+        name: "COX-12",
+        path: "/linearray/cox%2012",
+        img: coxf,
       },
     ],
   },
   {
-    img: [q70front, q70j, q70s, q70back, q70ss],
+    img: [q70front, q70j, q70s, q70back, q70ss,q70layer],
     title: "Line array ",
     model: "Q 70",
     description:
@@ -254,6 +265,7 @@ const products = [
     Max_SPL_Peak: "136 dB  (Passive/Bi-Amp)",
     Nominal_Impedance: "LF : 8 Ohms & HF : 8 Ohms",
     Crossover_Mode: "Passive/Bi-amplified Switchable",
+    Crossover_Point_Biamp_Mode :"LF : 60 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz" ,
     Dispersion: "100° (H) x 10° (V)",
     Cabinet_Material: "Birch Plywood",
     Size_mm: "348 x 600 x 422mm (H x W x D)",
@@ -261,9 +273,9 @@ const products = [
     pdf: Q70a,
     relatedProducts: [
       {
-        name: "TIP-1602",
-        path: "/electronics/tip%201602",
-        img: ft1002,
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img: ft1003,
       },
       {
         name: "S18",
@@ -276,14 +288,14 @@ const products = [
         img: sf218,
       },
       {
-        name: "KS218",
-        path: "/subwoofer/ks218",
-        img: ksf218,
+        name: "COX-12",
+        path: "/linearray/cox%2012",
+        img: coxf,
       },
     ],
   },
   {
-    img: [q80front, q80j, q80s, q80b, q80ss],
+    img: [q80front, q80j, q80s, q80b, q80ss,q80layer],
     title: "Line array ",
     model: "Q 80",
     description:
@@ -307,6 +319,7 @@ const products = [
     Max_SPL_Peak: "139 dB  (Passive/Bi-Amp)",
     Nominal_Impedance: " 8 Ohms (Passive/Bi-Amp)",
     Crossover_Mode: "Passive/Bi-amplified Switchable",
+    Crossover_Point_Biamp_Mode :"LF : 60 Hz – 1.8 kHz | HF : 1.8 kHz – 20 kHz" ,
     Dispersion: "100° (H) x 10° (V)",
     Cabinet_Material: "High density multi-layer birch plywood",
     Size_mm: "348 x 910 x 520mm (H x W x D)",
@@ -328,11 +341,11 @@ const products = [
         path: "/subwoofer/ks218",
         img: ksf218,
       },
-      // {
-      //   name: "F15",
-      //   path: "/product/f15",
-      //   img: Q50,
-      // },
+      {
+        name: "COX-12",
+        path: "/linearray/cox%2012",
+        img: coxf,
+      },
     ],
   },
   {
@@ -361,16 +374,17 @@ const products = [
     Max_SPL_Peak: "130 dB ",
     Nominal_Impedance: "8 Ohms",
     Crossover_Mode: "Passive",
+    Crossover_Point_Biamp_Mode :"LF : 65 Hz – 3 kHz | HF : 3 kHz – 19 kHz" ,
     Dispersion: "100°(H) x 10° (V)",
     Cabinet_Material: "High density multi-layer plywood",
     Size_mm: "350 x 500 x 450mm (H x W x D)",
     Weight: "22/48.5 ",
     pdf: Cox112,
     relatedProducts: [
-      {
-        name: "TIP-1002",
-        path: "/electronics/tip%201002",
-        img: ft1002,
+     {
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: ft800,
       },
       {
         name: "S18",
@@ -448,7 +462,7 @@ const ProductDetail = () => {
               <img
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
-                className="sm:w-full w-[100%] h-[100px] sm:h-[300px] object-contain rounded-lg cursor-pointer"
+                className="sm:w-full w-[100%] h-[100px] sm:h-[350px] object-contain rounded-lg cursor-pointer"
                 loading="eager"
                 decoding="async"
                 onClick={() => setIsModalOpen(true)}
@@ -585,6 +599,7 @@ const ProductDetail = () => {
                   },
                   ,
                   { label: "Crossover Mode", value: product.Crossover_Mode },
+                  { label: "Crossover Point (Bi-amp Mode)", value: product.Crossover_Point_Biamp_Mode },
                   { label: "Dispersion", value: product.Dispersion },
                   {
                     label: "Cabinet Material",

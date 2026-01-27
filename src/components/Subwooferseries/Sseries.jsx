@@ -1,11 +1,23 @@
 import React, { useState } from "react";
-import Subwoofer from "../../assets/Subwoofer.png";
+import Subwoofer from "../../assets/Subwoofer.jpg";
 import sf18 from "../../assets/s18/sf18.JPG";
 import sf218 from "../../assets/s218/sf218.JPG";
+import fronts12 from "../../assets/s12/fronts12.JPG"
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 
 const products = [
+  {
+     img: fronts12,
+     title: "Subwoofer",
+     model: "S12",
+     description: '1x12" High Power Passive Subwoofer',
+     power: "450W/1800W (Passive)",
+     response: "38 Hz – 120 Hz",
+     Sensitivity: "96dB",
+     spl: "123dB",
+     weight: "20Kg",
+   },
   {
     img: sf18,
     title: "Subwoofer",
@@ -55,28 +67,34 @@ const ProductCard = ({ product }) => {
 
       <p className="text-md text-black font-bold my-2">{product.description}</p>
 
-      <p className="text-sm font-semibold mt-2 text-gray-700">
+      <p className="text-sm font mt-4 text-gray-700">
         <span className="font-bold">RMS/Peak Power:</span> {product.power}
       </p>
 
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Frequency Response:</span> {product.response}
       </p>
 
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Sensitivity(1W/1m):</span> {product.Sensitivity}
       </p>
 
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Max SPL(Continuous/1m):</span> {product.spl}
       </p>
 
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
 
       <button
-        className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
+        className="mt-4 mx-auto block cursor-pointer 
+border border-red-800 text-red-800 
+px-3 py-2 sm:px-5 sm:py-2 
+text-sm sm:text-base
+rounded-lg bg-transparent 
+hover:bg-red-800 hover:text-white 
+transition duration-300"
         onClick={() => navigate(`/subwoofer/${product.model.toLowerCase()}`)}
       >
         {product.model}

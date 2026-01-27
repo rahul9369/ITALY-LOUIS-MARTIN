@@ -96,6 +96,9 @@ import ft300 from "../assets/tta300/ft300.jpg";
 import ksf18 from "../assets/ks18/ksf18.JPG";
 import ksf218 from "../assets/ks218/ksf218.JPG";
 
+import ft800 from "../assets/tta300/ft800.jpg"; 
+import fronts12 from "../assets/s12/fronts12.JPG";        
+import ft500 from "../assets/tta300/ft500.jpg";
 
 const products = [
   {
@@ -133,24 +136,24 @@ const products = [
     pdf: Red10PDF,
     relatedProducts: [
       {
-        name: "TIP-1002",
-        path: "/electronics/tip%201002",
-        img: ft1002,
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: ft800,
       },
       {
-        name: "S18",
-        path: "/subwoofer/s18",
-        img: sf18,
+        name: "KS18",
+        path: "/subwoofer/ks18",
+        img: ksf18,
       },
       {
-        name: "S218",
-        path: "/subwoofer/s218",
-        img: sf218,
+        name: "K218",
+        path: "/subwoofer/ks218",
+        img: ksf218,
       },
       {
-        name: "RED-5.5",
-        path: "/product/red%205.5",
-        img: redf5,
+        name: "RED-12",
+        path: "/product/red%2012",
+        img: redf12,
       },
     ],
   },
@@ -180,31 +183,31 @@ const products = [
     Max_SPL_Peak: "124 dB ",
     Nominal_Impedance: "4 Ohms (typical)",
     Crossover_Mode: "Passive, optimized for linearity",
-    Dispersion: "115° (H) x 115° (V)",
+    Dispersion: "115° (H) x 70° (V)",
     Cabinet_Material: "Glass Fiber Reinforced Plastic with Car Paint Coating",
     Size_mm: "200 x320 x 200mm (H x W x D)",
     Weight: "9/19.8",
     pdf: Red6PDF,
     relatedProducts: [
       {
+        name: "TTA-300",
+        path: "/electronics/tta%20300",
+        img: ft300,
+      },
+      {
         name: "D-4200",
         path: "/electronics/d%204200",
         img: fd4200,
       },
       {
-        name: "Red-5",
+        name: "KS18",
+        path: "/subwoofer/ks18",
+        img: ksf18,
+      },
+      {
+        name: "RED 5",
         path: "/product/red%205",
         img: redfront5,
-      },
-      {
-        name: "Red-10",
-        path: "/product/red%2010",
-        img: redfront,
-      },
-      {
-        name: "S18",
-        path: "/subwoofer/s18",
-        img: sf18,
       },
     ],
   },
@@ -250,9 +253,9 @@ const products = [
         img: fd4200,
       },
       {
-        name: "RED-9",
-        path: "/product/red%209",
-        img: redff9,
+        name: "S12",
+        path: "/subwoofer/s12",
+        img: fronts12,
       },
       {
         name: "RED-12",
@@ -294,25 +297,26 @@ const products = [
     pdf: Red9PDF,
     relatedProducts: [
       {
-        name: "TTA-600",
-        path: "/electronics/tta%20600",
-        img: ft300,
+        name: "TTA-500",
+        path: "/electronics/tta%20500",
+        img: ft500,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
         img: sf18,
       },
+       {
+        name: "RED-5.5",
+        path: "/product/red%205.5",
+        img: redf5,
+      },
       {
         name: "RED-5",
         path: "/product/red%205",
         img: redfront5,
       },
-      {
-        name: "RED-5.5",
-        path: "/product/red%205.5",
-        img: redf5,
-      },
+     
     ],
   },
   {
@@ -348,14 +352,14 @@ const products = [
     pdf: Red12PDF,
     relatedProducts: [
       {
-        name: "TTA-600",
-        path: "/electronics/tta%20600",
-        img: ft300,
+        name: "TTA-500",
+        path: "/electronics/tta%20500",
+        img: ft500,
       },
       {
-        name: "S18",
-        path: "/subwoofer/s18",
-        img: sf18,
+        name: "KS18",
+        path: "/subwoofer/ks18",
+        img: ksf18,
       },
       {
         name: "RED-5",
@@ -400,10 +404,10 @@ const products = [
     Weight: "12/26.4 ",
     pdf: F8,
     relatedProducts: [
-      {
-        name: "D-200",
-        path: "/electronics/d%20200",
-        img: df200,
+        {
+        name: "TTA-300",
+        path: "/electronics/tta%20300",
+        img: ft300,
       },
       {
         name: "D-4200",
@@ -454,9 +458,9 @@ const products = [
     pdf: F10,
     relatedProducts: [
       {
-        name: "TTA-600",
-        path: "/electronics/tta%20600",
-        img: ft300,
+        name: "TTA-500",
+        path: "/electronics/tta%20500",
+        img: ft500,
       },
       {
         name: "S18",
@@ -469,9 +473,9 @@ const products = [
         img: ffront8,
       },
       {
-        name: "F12",
-        path: "/product/f12",
-        img: ff12,
+        name: "S218",
+        path: "/subwoofer/s218",
+        img: sf218,
       },
     ],
   },
@@ -508,9 +512,9 @@ const products = [
     pdf: F12,
     relatedProducts: [
       {
-        name: "TTA-600",
-        path: "/electronics/tta%20600",
-        img: ft300,
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: ft800,
       },
       {
         name: "S18",
@@ -688,11 +692,10 @@ const ProductDetail = () => {
                     onClick={() => setCurrentImgIndex(index)}
                     loading="eager"
                     decoding="async"
-                    className={`sm:w-28 w-18 h-20 sm:h-20 object-contain rounded-md cursor-pointer border  ${
-                      index === currentImgIndex
+                    className={`sm:w-28 w-18 h-20 sm:h-20 object-contain rounded-md cursor-pointer border  ${index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"
-                    }`}
+                      }`}
                   />
                 ))}
               </div>
@@ -743,11 +746,10 @@ const ProductDetail = () => {
           {["Specifications", "Downloads"].map((tab) => (
             <button
               key={tab}
-              className={`px-4 py-2 md:px-6 md:py-3 cursor-pointer text-sm md:text-lg flex-1 ${
-                activeTab === tab
+              className={`px-4 py-2 md:px-6 md:py-3 cursor-pointer text-sm md:text-lg flex-1 ${activeTab === tab
                   ? "border-b-2 border-black font-bold"
                   : "text-gray-500"
-              }`}
+                }`}
               onClick={() => setActiveTab(tab)}>
               {tab}
             </button>

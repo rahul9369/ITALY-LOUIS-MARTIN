@@ -44,6 +44,10 @@ import sf18 from "../assets/s18/sf18.JPG";
 import ft1002 from "../assets/tip1002/ft1002.jpg";
 import sf218 from "../assets/s218/sf218.JPG";
 import fd4300 from "../assets/d4300/fd4300.jpg";
+import fronts12 from "../assets/s12/fronts12.JPG";
+import ft300 from "../assets/tta300/ft300.jpg";
+import ffront8 from "../assets/f8/ffront8.jpg";
+import df2001 from "../assets/d200/df2001.JPG";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -89,9 +93,9 @@ const products = [
         img: fd4200,
       },
       {
-        name: "S18",
-        path: "/subwoofer/s18",
-        img: sf18,
+        name: "S12",
+        path: "/subwoofer/s12",
+        img: fronts12,
       },
       {
         name: "K304",
@@ -140,9 +144,9 @@ const products = [
         img: fd4200,
       },
       {
-        name: "S18",
-        path: "/subwoofer/s18",
-        img: sf18,
+        name: "S12",
+        path: "/subwoofer/s12",
+        img: fronts12,
       },
       {
         name: "K302",
@@ -181,9 +185,9 @@ const products = [
     pdf: K306PDF,
     relatedProducts: [
       {
-        name: "D300",
-        path: "/electronics/d%20300",
-        img: df200,
+        name: "D200",
+        path: "/electronics/d%20200",
+        img: df2001,
       },
       {
         name: "D4300",
@@ -191,9 +195,9 @@ const products = [
         img: fd4300,
       },
       {
-        name: "S18",
-        path: "/subwoofer/s18",
-        img: sf18,
+        name: "S12",
+        path: "/subwoofer/s12",
+        img: fronts12,
       },
       {
         name: "K302",
@@ -232,24 +236,24 @@ const products = [
     pdf: K308PDF,
     relatedProducts: [
       {
-        name: "TIP-1002",
-        path: "/electronics/tip%202002",
-        img: ft1002,
+        name: "D-200",
+        path: "/electronics/d%20200",
+        img: df200,
+      },
+      {
+        name: "D-4200",
+        path: "/electronics/d%204200",
+        img: fd4200,
+      },
+      {
+        name: "S12",
+        path: "/subwoofer/s12",
+        img: fronts12,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
         img: sf18,
-      },
-      {
-        name: "S218",
-        path: "/subwoofer/s218",
-        img: sf218,
-      },
-      {
-        name: "K304",
-        path: "/column/k304",
-        img: kf304,
       },
     ],
   },
@@ -283,24 +287,24 @@ const products = [
     pdf: K312PDF,
     relatedProducts: [
       {
-        name: "TIP-1002",
-        path: "/electronics/tip%201002",
-        img: ft1002,
+        name: "D-4300",
+        path: "/electronics/d%204300",
+        img: fd4300,
+      },
+      {
+        name: "TTA-300",
+        path: "/electronics/tta%20300",
+        img: ft300,
+      },
+      {
+        name: "S12",
+        path: "/subwoofer/s12",
+        img: fronts12,
       },
       {
         name: "S18",
         path: "/subwoofer/s18",
         img: sf18,
-      },
-      {
-        name: "S218",
-        path: "/subwoofer/s218",
-        img: sf218,
-      },
-      {
-        name: "K304",
-        path: "/column/k304",
-        img: kf304,
       },
     ],
   },

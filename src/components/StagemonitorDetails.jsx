@@ -53,9 +53,17 @@ import ft300 from "../assets/tta300/ft300.jpg";
 
 import hwside from "../assets/hw65/hwside.jpg";
 import hwback from "../assets/hw65/hwback.jpg";
+import hw45 from "../assets/hw65/hw45.jpg";
+import fronts12 from "../assets/s12/fronts12.jpg";
+//tl5.5//
 
-import tlfront5 from "../assets/tl55/tlfront5.png";
-
+import tlfront from "../assets/tl55/tlfront.jpg";
+import tlback from "../assets/tl55/tlback.jpg";
+import tlside5 from "../assets/tl55/tlside5.jpg";
+import tl45 from "../assets/tl55/tl45.jpg";
+import hwtop from "../assets/hw65/hwtop.jpg";
+import df2001 from "../assets/d200/df2001.JPG";
+import ft800 from "../assets/tta300/ft800.jpg";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -147,14 +155,14 @@ const products = [
     pdf: DS8PDF,
     relatedProducts: [
       {
-        name: "D-300",
-        path: "/electronics/d%20300",
-        img: df200,
+        name: "D-200",
+        path: "/electronics/d%20200",
+        img: df2001,
       },
       {
-        name: "D-4300",
-        path: "/electronics/d%204300",
-        img: fd4300,
+        name: "D-4200",
+        path: "/electronics/d%204200",
+        img: fd4200,
       },
       {
         name: "S18",
@@ -164,7 +172,7 @@ const products = [
       {
         name: "DS5",
         path: "/plastic/ds5",
-        img: dsf15,
+        img: dsf5,
       },
     ],
   },
@@ -200,14 +208,9 @@ const products = [
     pdf: DS12PDF,
     relatedProducts: [
       {
-        name: "TIP-1002",
-        path: "/electronics/tip%201002",
-        img: ft1002,
-      },
-      {
         name: "TTA-800",
         path: "/electronics/tta%20800",
-        img: ft300,
+        img: ft800,
       },
       {
         name: "S18",
@@ -215,10 +218,15 @@ const products = [
         img: sf18,
       },
       {
-        name: "DS5",
-        path: "/plastic/ds5",
-        img: dsf5,
+        name: "S218",
+        path: "/subwoofer/s218",
+        img: sf218,
       },
+      // {
+      //   name: "DS5",
+      //   path: "/plastic/ds5",
+      //   img: dsf5,
+      // },
     ],
   },
   {
@@ -257,26 +265,27 @@ const products = [
         path: "/electronics/tip%201002",
         img: ft1002,
       },
-      {
-        name: "TIP-1300",
-        path: "/electronics/tip%201302",
-        img: ft1002,
+        {
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: sf18,
       },
+      // {
+      //   name: "TIP-1300",
+      //   path: "/electronics/tip%201302",
+      //   img: ft1002,
+      // },
       {
         name: "S218",
         path: "/subwoofer/s218",
         img: sf218,
       },
-      {
-        name: "S18",
-        path: "/subwoofer/s18",
-        img: sf18,
-      },
+    
     ],
   },
 
   {
-    img: [Hwfornt,hwback,hwside],
+    img: [Hwfornt,hwback,hwside ,hw45,hwtop],
     title: "Plastic Speaker",
     model: "Hw 6.5",
     description:
@@ -308,39 +317,39 @@ const products = [
     pdf: HwPDF,
     relatedProducts: [
       {
-        name: "TIP-1002",
-        path: "/electronics/tip%201002",
-        img: ft1002,
+        name: "D-200",
+        path: "/electronics/d%20200",
+        img: df200,
       },
       {
-        name: "TIP-1300",
-        path: "/electronics/tip%201302",
-        img: ft1002,
+        name: "D-4200",
+        path: "/electronics/d%204200",
+        img: fd4200,
       },
       {
-        name: "S218",
-        path: "/subwoofer/s218",
-        img: sf218,
+        name: "S12",
+        path: "/subwoofer/s12",
+        img: fronts12,
       },
-      {
-        name: "S18",
-        path: "/subwoofer/s18",
-        img: sf18,
-      },
+      // {
+      //   name: "S18",
+      //   path: "/subwoofer/s18",
+      //   img: sf18,
+      // },
     ],
   },
    {
-    img: [tlfront5],
-    title: "Plastic Speaker",
+    img: [tlfront, tlback, tlside5, tl45],
+    title: " Motorised Ceiling Speaker",
     model: "TL5.5",
     description:
-      " The HW 6.5 has one 6.5” Woofer with 1” HF. It is designed for the commercial applications; It has built in transformer taping for high impedance uses environment. Featuring a passive crossover, two-way full-range configuration, it is ideal for outdoor/indoor install market applications,including hospitality, education segment. Made of plastic & IP65 makes it use for weatherproof applications. The cabinet's design sleek & compact, look elegant and has good vocal clarity, fidelity, and minimal distortion without compromising transient response.",
+      "The TL-5.5 is a high-performance, versatile passive ceiling speaker engineered for exceptional sound reinforcement with motorized direction control. It features a powerful 5.5” polypropylene cone woofer with rubber surround and a 1” (25 mm) ferrofluid-cooled silk dome high-frequency driver, delivering clear, balanced audio across a wide range." ,
     application: [
-      " Outdoor applications ",
+      "  Conference Room  ",
       "  Background Music",
-      " Theme Park ",
+      "  Hotel & Restaurants ",
       "Classrooms",
-      " Terrace ",
+      "Cafe's  ",
     ],
     Type: "Two-way full range ceiling loudspeaker",
     Frequency_Response: " 65 Hz – 19 kHz",
@@ -356,31 +365,31 @@ const products = [
     Crossover_Mode: "Passive, optimized for linearity",
     Dispersion: "115°(H) x 90°(V) ",
     Cabinet_Material: "Plastic materials",
-    // IP_Rating: " IP 65 Weatherproof",
+    IP_Rating: " Not applicable",
     Size_mm: " 220 x 220 x 160 mm (H x W x D)",
     Weight: "2.5/5.51",
     pdf: HwPDF,
     relatedProducts: [
       {
-        name: "TIP-1002",
-        path: "/electronics/tip%201002",
-        img: ft1002,
+        name: "D-200",
+        path: "/electronics/d%20200",
+        img: df200,
       },
       {
-        name: "TIP-1300",
-        path: "/electronics/tip%201302",
-        img: ft1002,
+        name: "D-4200",
+        path: "/electronics/d%204200",
+        img: fd4200,
       },
       {
-        name: "S218",
-        path: "/subwoofer/s218",
-        img: sf218,
+        name: "S12",
+        path: "/subwoofer/s12",
+        img: fronts12,
       },
-      {
-        name: "S18",
-        path: "/subwoofer/s18",
-        img: sf18,
-      },
+      // {
+      //   name: "S18",
+      //   path: "/subwoofer/s18",
+      //   img: sf18,
+      // },
     ],
   },
 ];

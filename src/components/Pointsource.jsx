@@ -126,13 +126,13 @@ const ProductCard = ({ product }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white shadow-lg rounded-xl sm:p-6 p-2 w-full ">
+    <div className="bg-white shadow-lg rounded-xl sm:p-6 p-2 w-full">
       <img
         src={product.img}
         alt={product.model}
         className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() =>
           navigate(
             `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`
@@ -142,25 +142,31 @@ const ProductCard = ({ product }) => {
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
-      <p className="text-sm font-semibold mt-2 text-gray-700">
+      <p className="text-sm font mt-4 text-gray-700">
         <span className="font-bold">RMS/Peak Power:</span> {product.power}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold"> Frequency Response:</span>{" "}
         {product.response}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
         {product.Sensitivity}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Max SPL(Continuous/1m):</span> {product.spl}
       </p>
-      <p className="text-sm mt-2 text-gray-700">
+      <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button
-        className="mt-4 cursor-pointer w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600"
+        className="mt-4 mx-auto block cursor-pointer 
+border border-red-800 text-red-800 
+px-3 py-2 sm:px-5 sm:py-2 
+text-sm sm:text-base
+rounded-lg bg-transparent 
+hover:bg-red-800 hover:text-white 
+transition duration-300"
         onClick={() =>
           navigate(
             `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`
@@ -188,7 +194,7 @@ const ProductList = () => {
       </Helmet>
       <img src={pointsource} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
-        <h1 className="md:text-4xl text-[25px] mx-auto font-bold  mb-4">
+        <h1 className="md:text-4xl text-[25px] mx-auto font-bold  mb-4 text-red-800">
           Point Source - All Series
         </h1>
         <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">

@@ -62,3 +62,4 @@ ${urls
 fs.writeFileSync(path.join(__dirname, "sitemap.xml"), sitemap, "utf8");
 
 console.log("✅ Sitemap generated successfully!");
+

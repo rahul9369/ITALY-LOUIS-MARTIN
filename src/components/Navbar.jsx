@@ -5,10 +5,8 @@ import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(null);
-  const [subDropdown, setSubDropdown] = useState(null);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [expandedMenus, setExpandedMenus] = useState({});
-  // const closeMobileMenu = () => setMobileMenu(false);
 
   const closeMobileMenu = () => {
     setTimeout(() => {
@@ -26,12 +24,8 @@ const Navbar = () => {
   const handleMouseLeave = () => {
     timeoutId = setTimeout(() => {
       setDropdown(null);
-      setSubDropdown(null);
-    }, 300);
+    }, 200);
   };
-
-  const handleSubMenuEnter = (submenu) => setSubDropdown(submenu);
-  const handleSubMenuLeave = () => setSubDropdown(null);
 
   const toggleMobileMenu = () => setMobileMenu(!mobileMenu);
   const toggleSubmenu = (name) => {
@@ -92,7 +86,7 @@ const Navbar = () => {
                 { name: "PL Series", path: "/plseries" },
                 { name: "TIP Series", path: "/tipseries" },
                 { name: "TTA Series", path: "/ttaseries" },
-                { name: "DSP Series", path: "/dspseries" },
+                { name: "DSP ", path: "/dspseries" },
               ],
             },
           ],
@@ -107,181 +101,72 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full shadow-md bg-black opacity-95 relative  z-50">
-      <div className="w-full flex justify-between items-center  px-6 md:px-8">
-        <div className="flex my-2 items-center space-x-2">
+    <nav className="w-full shadow-md bg-black opacity-90 relative z-50">
+      <div className="w-full flex justify-between items-center px-6 md:px-20 py-4">
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
           <Link to="/">
-            <img src={Logo} alt="logo" className="w-12 h-12" />
+            <img src={Logo} alt="logo" className="w-16 h-16" />
           </Link>
-          <span className="md:text-xl text-[12px] text-white"></span>
         </div>
 
-        <ul className="hidden md:flex space-x-6 center flex-items-center">
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex space-x-8 items-center">
           {menuItems.map((item) => (
             <li
               key={item.name}
               className="relative"
               onMouseEnter={() => handleMouseEnter(item.name)}
-              onMouseLeave={handleMouseLeave}>
+              onMouseLeave={handleMouseLeave}
+            >
               <NavLink
                 to={item.path === "#" ? "/" : item.path}
-                className={({ isActive }) =>
-                  `text-[16px] hover:text-yellow-400 ${
-                    isActive ? "text-yellow-400 font-semibold" : "text-white"
-                  }`
-                }>
+                className="text-[18px] text-gray-300 hover:text-red-600"
+              >
                 {item.name}
               </NavLink>
 
+              {/* ===== MEGA MENU ONLY FOR PRODUCTS ===== */}
               {item.submenu && dropdown === item.name && (
-                <div className="absolute left-0 mt-2 bg-white z-20 shadow-md w-60 text-left py-2 border rounded-lg">
-                  {item.submenu.map((sub, subIndex) => (
-                    <div key={subIndex} className="px-4 py-2 relative">
-                      <ul>
-                        {sub.links.map((link, index) => (
-                          <li
-                            key={index}
-                            className="relative py-1 px-2 hover:bg-gray-100"
-                            onMouseEnter={() => handleSubMenuEnter(link.name)}
-                            onMouseLeave={handleSubMenuLeave}>
-                            <NavLink
-                              to={link.path}
-                              className={({ isActive }) =>
-                                `block cursor-pointer ${
-                                  isActive
-                                    ? "text-yellow-400 font-medium"
-                                    : "text-gray-700"
-                                }`
-                              }>
-                              {link.name}
-                            </NavLink>
+                <div className="absolute left-1/2 top-full w-screen w-[90%] max-w-[950px] mx-auto -translate-x-1/2 bg-white shadow-xl border-t z-50 animate-fadeDown">
+                  <div className="max-w-6xl mx-auto px-12 py-10 grid grid-cols-6 gap-10">
+                    {item.submenu[0].links.map((link, index) => (
+                      <div key={index}>
+                        <NavLink
+                          to={link.path}
+                          className="block font-bold text-gray-900 mb-3 hover:text-red-700"
+                        >
+                          {link.name}
+                        </NavLink>
 
-                            {subDropdown === link.name && (
-                              <div className="absolute left-full top-0 mt-[-5px] bg-white shadow-md w-48 text-left py-2 border rounded-lg">
-                                {link.sublinks.map((sublink, subIdx) => (
-                                  <NavLink
-                                    key={subIdx}
-                                    to={sublink.path}
-                                    className={({ isActive }) =>
-                                      `block px-4 py-2 hover:bg-gray-100 ${
-                                        isActive
-                                          ? "text-yellow-400 font-medium"
-                                          : "text-gray-700"
-                                      }`
-                                    }>
-                                    {sublink.name}
-                                  </NavLink>
-                                ))}
-                              </div>
-                            )}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
+                        <ul className="space-y-2">
+                          {link.sublinks.map((sublink, subIdx) => (
+                            <li key={subIdx}>
+                              <NavLink
+                                to={sublink.path}
+                                className=" font-semibold text-gray-800 text-sm hover:text-red-600"
+                              >
+                                {sublink.name}
+                              </NavLink>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </li>
           ))}
         </ul>
 
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button onClick={toggleMobileMenu} className="text-white text-2xl">
+          <button onClick={toggleMobileMenu} className="text-white text-3xl">
             {mobileMenu ? <FaTimes /> : <FaBars />}
           </button>
         </div>
       </div>
-
-      {mobileMenu && (
-        <div className="md:hidden bg-gray-600 py-4 px-6 w-full">
-          <ul className="flex flex-col space-y-4">
-            {menuItems.map((item) => (
-              <li key={item.name}>
-                <div className="flex justify-between items-center">
-                  <NavLink
-                    to={item.path === "#" ? "/" : item.path}
-                    onClick={closeMobileMenu}
-                    className={({ isActive }) =>
-                      `text-[16px] hover:text-yellow-400 ${
-                        isActive
-                          ? "text-yellow-400 font-semibold"
-                          : "text-white"
-                      }`
-                    }>
-                    {item.name}
-                  </NavLink>
-
-                  {item.submenu && (
-                    <button
-                      onClick={() => toggleSubmenu(item.name)}
-                      className="text-white">
-                      {expandedMenus[item.name] ? <FaMinus /> : <FaPlus />}
-                    </button>
-                  )}
-                </div>
-                {item.submenu && expandedMenus[item.name] && (
-                  <div className="ml-4 mt-2  p-2 rounded">
-                    {item.submenu.map((sub, subIndex) => (
-                      <ul key={subIndex}>
-                        {sub.links.map((link, index) => (
-                          <li key={index} className="py-1">
-                            <div className="flex justify-between items-center">
-                              <NavLink
-                                to={link.path}
-                                onClick={closeMobileMenu}
-                                className={({ isActive }) =>
-                                  `block cursor-pointer ${
-                                    isActive
-                                      ? "text-yellow-500 font-medium"
-                                      : "text-gray-100"
-                                  }`
-                                }>
-                                {link.name}
-                              </NavLink>
-                              {link.sublinks && (
-                                <button
-                                  onClick={() => toggleSubmenu(link.name)}
-                                  className="text-white">
-                                  {expandedMenus[link.name] ? (
-                                    <FaMinus />
-                                  ) : (
-                                    <FaPlus />
-                                  )}
-                                </button>
-                              )}
-                            </div>
-                            {expandedMenus[link.name] && (
-                              <ul className="ml-4 mt-2   rounded">
-                                {link.sublinks.map((sublink, subIdx) => (
-                                  <li key={subIdx} className="py-1">
-                                    <NavLink
-                                      key={subIdx}
-                                      to={sublink.path}
-                                      onClick={closeMobileMenu}
-                                      className={({ isActive }) =>
-                                        `block  hover:bg-gray-100 ${
-                                          isActive
-                                            ? "text-yellow-400 font-medium"
-                                            : "text-gray-100"
-                                        }`
-                                      }>
-                                      {sublink.name}
-                                    </NavLink>
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                          </li>
-                        ))}
-                      </ul>
-                    ))}
-                  </div>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </nav>
   );
 };

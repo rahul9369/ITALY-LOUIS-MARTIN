@@ -1,154 +1,164 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import CarausalImg1 from "../assets/carausalimg1.png";
-import CarausalImg2 from "../assets/carausalimg2.png";
-import CarausalImg3 from "../assets/carausalimg3.png";
-import CarausalImg5 from "../assets/carausalimg5.png";
+import CarausalImg1 from "../assets/carausalimg1.jpg";
+import CarausalImg2 from "../assets/carausalimg2.jpg";
+import CarausalImg3 from "../assets/carausalimg3.jpg";
+import CarausalImg5 from "../assets/carausalimg5.jpg";
 
 const Carousel = () => {
-  const originalSlides = [
-    { image: CarausalImg1 },
-    { image: CarausalImg2 },
-    { image: CarausalImg3 },
-    { image: CarausalImg5 },
-  ];
-
-  // Clone slides for infinite scrolling
   const slides = [
-    originalSlides[originalSlides.length - 1],
-    ...originalSlides,
-    originalSlides[0],
+    {
+      image: CarausalImg1,
+      text: "Read More",
+      link: "/redseries",
+      title: "RED-SERIES",
+      subtitle: "Object of Desire",
+    },
+    {
+      image: CarausalImg2,
+      text: "Read More",
+      link: "/qseries",
+      title: "Q-SERIES",
+      subtitle: "High Performance Line Array",
+    },
+    {
+      image: CarausalImg3,
+      text: "Read More",
+      link: "/fseries",
+      title: "F-SERIES",
+      subtitle: "Seamless Sound for Every Space",
+    },
+    {
+      image: CarausalImg5,
+      text: "Read More",
+      link: "/linearray/cox%2012",
+      title: "COX12",
+      subtitle: "Engineered for Clarity Designed for Impact",
+    },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(1);
-  const [transition, setTransition] = useState(true);
-  const intervalRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
-  // Auto slide every 3s
+  // Auto slide
   useEffect(() => {
-    intervalRef.current = setInterval(() => {
+    const interval = setInterval(() => {
       nextSlide();
-    }, 3000);
-
-    return () => clearInterval(intervalRef.current);
-  }, []);
-
-  const nextSlide = () => setCurrentIndex((prev) => prev + 1);
-  const prevSlide = () => setCurrentIndex((prev) => prev - 1);
-
-  // Infinite loop logic
-  useEffect(() => {
-    if (currentIndex === slides.length - 1) {
-      setTimeout(() => {
-        setTransition(false);
-        setCurrentIndex(1);
-      }, 650);
-    }
-
-    if (currentIndex === 0) {
-      setTimeout(() => {
-        setTransition(false);
-        setCurrentIndex(slides.length - 2);
-      }, 650);
-    }
-
-    const t = setTimeout(() => setTransition(true), 50);
-    return () => clearTimeout(t);
+    }, 5500);
+    return () => clearInterval(interval);
   }, [currentIndex]);
 
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) =>
+      prev === 0 ? slides.length - 1 : prev - 1
+    );
+  };
+
+  // Swipe handlers
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current - touchEndX.current > 50) nextSlide();
+    if (touchEndX.current - touchStartX.current > 50) prevSlide();
+  };
+
   return (
-    <div className="relative w-full overflow-hidden 
-      aspect-[10/5] sm:aspect-[16/7] md:aspect-[16/6] lg:aspect-[16/5]">
+    <div
+      className="relative w-full overflow-hidden 
+      min-h-[300px] sm:min-h-[500px] md:min-h-[550px] lg:min-h-[600px]"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
+      {/* IMAGE */}
+      <img
+        key={currentIndex}
+        src={slides[currentIndex].image}
+        className="w-full h-full object-cover animate-zoomOnly"
+        alt="carousel"
+      />
 
-      {/* SLIDER WRAPPER */}
-      <div
-        className={`flex w-full h-full ${
-          transition ? "transition-transform duration-700 ease-in-out" : ""
-        }`}
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      {/* LEFT BUTTON */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-40 
+        bg-black/40 text-white px-3 py-2 rounded-full 
+        hover:bg-red-800 transition"
       >
-        {slides.map((slide, index) => (
-          <div key={index} className="w-full h-full flex-shrink-0 relative">
+        ❮
+      </button>
 
-            {/* IMAGE */}
-            <img src={slide.image} className="w-full h-full object-cover" />
+      {/* RIGHT BUTTON */}
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-40 
+        bg-black/40 text-white px-3 py-2 rounded-full 
+        hover:bg-red-800 transition"
+      >
+        ❯
+      </button>
 
-            {/* RESPONSIVE MOVING BUTTON */}
-            <Link
-              to="/fseries"
-              className="
-                absolute top-1/2 -translate-y-1/2 
-                right-2 sm:right-4 md:right-6 
-                bg-gray-800 text-white 
-                px-3 py-1.5 text-xs 
-                sm:px-4 sm:py-2 sm:text-sm 
-                md:px-6 md:py-3 md:text-base 
-                rounded-lg sm:rounded-xl md:rounded-2xl 
-                shadow-lg hover:bg-yellow-600 transition 
-                z-30
-              "
-            >
-              F-Series
-            </Link>
+      {/* TEXT AREA */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-30 flex flex-col items-center gap-4">
 
-          </div>
-        ))}
+        {/* TITLE */}
+        <div className="text-red-800 text-3xl sm:text-7xl md:text-7xl font-bold drop-shadow-lg">
+          {slides[currentIndex].title}
+        </div>
+
+        {/* SUBTITLE */}
+        <div className="text-red-800 text-2xl sm:text-6xl md:text-7xl font-bold drop-shadow-lg">
+          {slides[currentIndex].subtitle}
+        </div>
+
+        {/* BUTTON */}
+        <Link
+          to={slides[currentIndex].link}
+          className="
+             mt-6 sm:mt-8 md:mt-10
+    bg-white/10 backdrop-blur-md
+    border border-white/20
+    text-white font-semibold tracking-wide
+    px-6 py-3 text-base sm:px-7 sm:py-3.5 sm:text-lg
+    rounded-xl
+    shadow-lg
+    transition-all duration-500 ease-out
+    hover:bg-red-900 hover:shadow-red-500/50 hover:scale-105
+  "
+        >
+          {slides[currentIndex].text}
+        </Link>
       </div>
 
       {/* DOTS */}
-      <div className="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2 z-20">
-        {originalSlides.map((_, dotIndex) => (
-          <div
-            key={dotIndex}
-            className={`rounded-full cursor-pointer transition
-              ${currentIndex - 1 === dotIndex 
-                ? "bg-green-500 scale-110" 
-                : "bg-gray-300"
-              }
-              w-2 h-2 sm:w-3 sm:h-3
-            `}
-            onClick={() => setCurrentIndex(dotIndex + 1)}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-40">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentIndex
+                ? "bg-red-600 scale-125"
+                : "bg-white/60 hover:bg-white"
+            }`}
           />
         ))}
       </div>
-
-      {/* LEFT ARROW */}
-      <button
-        className="absolute top-1/2 left-2 sm:left-3 -translate-y-1/2 
-          bg-black bg-opacity-40 text-white 
-          p-1.5 sm:p-2 md:p-3 
-          rounded-full z-20"
-        onClick={prevSlide}
-      >
-        &#10094;
-      </button>
-
-      {/* RIGHT ARROW */}
-      <button
-        className="absolute top-1/2 right-2 sm:right-3 -translate-y-1/2 
-          bg-black bg-opacity-40 text-white 
-          p-1.5 sm:p-2 md:p-3 
-          rounded-full z-20"
-        onClick={nextSlide}
-      >
-        &#10095;
-      </button>
     </div>
+    
   );
 };
 
 export default Carousel;
-
-
-
-
-
-
-
-
-
-
-
-
-
