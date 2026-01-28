@@ -73,7 +73,7 @@ import redff9 from "../assets/red9/redff9.JPG";
 import ft800 from "../assets/tta300/ft800.jpg";
 import ff10 from "../assets/f10/ff10.jpg";
 
-import dsf8 from "../assets/ds8/dsf8.jpg";
+// import dsf8 from "../assets/ds8/";
 import coxf from "../assets/coximg/coxf.JPG";
 import ft2402 from "../assets/tip1002/ft2402.jpg";
 import q60front from "../assets/q60/q60front.JPG";
