@@ -53,7 +53,7 @@ import ft300 from "../assets/tta300/ft300.jpg";
 
 import hwside from "../assets/hw65/hwside.jpg";
 import hwback from "../assets/hw65/hwback.jpg";
-import hw45 from "../assets/hw65/hw45.jpg";
+// import hw45 from "../assets/hw65/hw45.jpg";
 import fronts12 from "../assets/s12/fronts12.jpg";
 //tl5.5//
 
@@ -265,7 +265,7 @@ const products = [
         path: "/electronics/tip%201002",
         img: ft1002,
       },
-        {
+      {
         name: "S18",
         path: "/subwoofer/s18",
         img: sf18,
@@ -280,12 +280,11 @@ const products = [
         path: "/subwoofer/s218",
         img: sf218,
       },
-    
     ],
   },
 
   {
-    img: [Hwfornt,hwback,hwside ,hw45,hwtop],
+    img: [Hwfornt, hwback, hwside, hw45, hwtop],
     title: "Plastic Speaker",
     model: "Hw 6.5",
     description:
@@ -338,12 +337,12 @@ const products = [
       // },
     ],
   },
-   {
+  {
     img: [tlfront, tlback, tlside5, tl45],
     title: " Motorised Ceiling Speaker",
     model: "TL5.5",
     description:
-      "The TL-5.5 is a high-performance, versatile passive ceiling speaker engineered for exceptional sound reinforcement with motorized direction control. It features a powerful 5.5” polypropylene cone woofer with rubber surround and a 1” (25 mm) ferrofluid-cooled silk dome high-frequency driver, delivering clear, balanced audio across a wide range." ,
+      "The TL-5.5 is a high-performance, versatile passive ceiling speaker engineered for exceptional sound reinforcement with motorized direction control. It features a powerful 5.5” polypropylene cone woofer with rubber surround and a 1” (25 mm) ferrofluid-cooled silk dome high-frequency driver, delivering clear, balanced audio across a wide range.",
     application: [
       "  Conference Room  ",
       "  Background Music",
@@ -620,7 +619,7 @@ const ProductDetail = () => {
                 <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
                 <a
                   href={`/view-pdf?url=${encodeURIComponent(
-                    product.pdf
+                    product.pdf,
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
