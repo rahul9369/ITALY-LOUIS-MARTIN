@@ -1,13 +1,13 @@
 import React from "react";
-import PlasticSpeaker from "../../assets/PlasticSpeaker.JPG";
+import PlasticSpeaker from "../../assets/PlasticSpeaker.jpg";
 
 import Hwfornt from "../../assets/Hwfront.png";
 
 import Footer from "../Footer";
-import dsf5 from "../../assets/ds5/dsf5.jpg"
-import dsf8 from "../../assets/ds8/dsf8.JPG"
-import dsf12 from "../../assets/ds12/dsf12.JPG"
-import dsf15 from "../../assets/ds15/dsf15.JPG"
+import dsf5 from "../../assets/ds5/dsf5.jpg";
+import dsf8 from "../../assets/ds8/dsf8.JPG";
+import dsf12 from "../../assets/ds12/dsf12.JPG";
+import dsf15 from "../../assets/ds15/dsf15.JPG";
 import { useNavigate } from "react-router-dom";
 import { Import } from "lucide-react";
 
@@ -79,10 +79,10 @@ const ProductCard = ({ product }) => {
         alt={product.model}
         className="w-full h-72 object-contain cursor-pointer rounded-lg"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() =>
           navigate(
-            `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -116,7 +116,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}
