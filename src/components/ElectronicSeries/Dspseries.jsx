@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 import DT400 from "../../assets/DT400.jpg";
 
 import df200 from "../../assets/d200/df200.JPG";
-import DSP26 from "../../assets/dsp/dl2.6f.JPG";
-import DSP48 from "../../assets/dsp/dl4.8front.JPG";
+import DSP26 from "../../assets/dsp/dl2.JPG";
+import DSP48 from "../../assets/dsp/front.JPG";
 
 const products = [
   {
@@ -41,7 +41,7 @@ const ProductCard = ({ product }) => {
         decoding="async"
         onClick={() =>
           navigate(
-            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -74,7 +74,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}
@@ -88,11 +88,16 @@ const ProductList = () => {
     <div className="w-full">
       <img src={Amplifiers} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
-        <h1 className="text-4xl mx-auto font-bold  mb-4 text-red-800">
-           DSP
-        </h1>
+        <h1 className="text-4xl mx-auto font-bold  mb-4 text-red-800">DSP</h1>
         <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
-         Our all DSP offers High‑precision 64‑bit DSP technology ensures crystal‑clear sound and exceptional dynamic range. A flexible 4‑in/8‑out matrix design allows seamless routing and integration into any system. Each channel offers complete control with gain, 10‑band parametric EQ, crossover, delay, phase, and limiter. Extensive preset storage enables quick recall of tailored audio setups for different environments. Professional‑grade processing delivers reliable, customizable performance with outstanding sound quality
+          Our all DSP offers High‑precision 64‑bit DSP technology ensures
+          crystal‑clear sound and exceptional dynamic range. A flexible
+          4‑in/8‑out matrix design allows seamless routing and integration into
+          any system. Each channel offers complete control with gain, 10‑band
+          parametric EQ, crossover, delay, phase, and limiter. Extensive preset
+          storage enables quick recall of tailored audio setups for different
+          environments. Professional‑grade processing delivers reliable,
+          customizable performance with outstanding sound quality
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2 sm:p-10 bg-gray-100 justify-items-center">
