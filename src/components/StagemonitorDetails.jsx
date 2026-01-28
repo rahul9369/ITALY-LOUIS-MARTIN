@@ -54,7 +54,7 @@ import ft300 from "../assets/tta300/ft300.jpg";
 import hwside from "../assets/hw65/hwside.jpg";
 import hwback from "../assets/hw65/hwback.jpg";
 // import hw45 from "../assets/hw65/hw45.jpg";
-import fronts12 from "../assets/s12/fronts12.jpg";
+// import fronts12 from "../assets/s12/fronts12.jpg";
 //tl5.5//
 
 import tlfront from "../assets/tl55/tlfront.jpg";
