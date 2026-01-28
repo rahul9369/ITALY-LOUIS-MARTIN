@@ -54,7 +54,7 @@ import ft3001 from "../assets/tta300/ft3001.jpg";
 import ft1000 from "../assets/tta300/ft1000.jpg";
 import ft1300 from "../assets/tta300/ft1300.jpg";
 import ttaf450 from "../assets/tta300/ttaf450.jpg";
-import ttab450 from "../assets/tta300/ttab450.jpg";
+// import ttab450 from "../assets/tta300/ttab450.jpg";
 //tip1002//
 import ft1002 from "../assets/tip1002/ft1002.jpg";
 import st1002 from "../assets/tip1002/st1002.JPG";
