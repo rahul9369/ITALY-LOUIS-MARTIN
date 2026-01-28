@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import PlasticSpeaker from "../assets/PlasticSpeaker.JPG";
+// import PlasticSpeaker from "../assets/PlasticSpeaker.JPG";
 
 import Footer from "../components/Footer";
 
@@ -99,7 +99,7 @@ const ProductCard = ({ product }) => {
         decoding="async"
         onClick={() =>
           navigate(
-            `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -133,7 +133,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/plastic/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}
