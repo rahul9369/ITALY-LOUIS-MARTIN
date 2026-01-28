@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import PlasticSpeaker from "../assets/PlasticSpeaker.jpg";
+import PlasticSpeaker from "../assets/PlasticSpeaker.JPG";
 
 import Footer from "../components/Footer";
 
