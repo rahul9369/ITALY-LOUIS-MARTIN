@@ -14,7 +14,7 @@ import plt4 from "../assets/pl4/plt4.jpg";
 import plup4 from "../assets/pl4/plup4.JPG";
 import plb4 from "../assets/pl4/plb4.JPG";
 import pl423 from "../assets/pl4/pl423.jpg";
-import plf42 from "../assets/pl4/plf42.jpg";
+// import plf42 from "../assets/pl4/plf42.jpg";
 import plf405 from "../assets/pl4/plf405.jpg";
 
 //d200  d300//
