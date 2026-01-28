@@ -14,7 +14,7 @@ import plt4 from "../assets/pl4/plt4.jpg";
 import plup4 from "../assets/pl4/plup4.JPG";
 import plb4 from "../assets/pl4/plb4.JPG";
 import pl423 from "../assets/pl4/pl423.jpg";
-// import plf42 from "../assets/pl4/plf42.jpg";
+import plf42 from "../assets/pl4/plf42.jpg";
 import plf405 from "../assets/pl4/plf405.jpg";
 
 //d200  d300//
@@ -67,7 +67,7 @@ import ft1302 from "../assets/tip1002/ft1302.jpg";
 import ft2402 from "../assets/tip1002/ft2402.jpg";
 import df2001 from "../assets/d200/df2001.jpg";
 import pl45 from "../assets/pl4/pl45.jpg";
-import plb42 from "../assets/pl4/plb42.jpg";
+// import plb42 from "../assets/pl4/plb42.jpg";
 import Dsp26front from "../assets/dsp/dl2.6f.JPG";
 import Dsp26back from "../assets/dsp/dl2.6b.JPG";
 import Dsp48front from "../assets/dsp/dl4.8front.JPG";
