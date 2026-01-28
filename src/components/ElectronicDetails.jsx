@@ -14,8 +14,8 @@ import plt4 from "../assets/pl4/plt4.jpg";
 import plup4 from "../assets/pl4/plup4.JPG";
 import plb4 from "../assets/pl4/plb4.JPG";
 import pl423 from "../assets/pl4/pl423.jpg";
-import plf42 from "../assets/pl4/plf42.jpg"; 
-import plf405 from "../assets/pl4/plf405.jpg"; 
+import plf42 from "../assets/pl4/plf42.jpg";
+import plf405 from "../assets/pl4/plf405.jpg";
 
 //d200  d300//
 import df200 from "../assets/d200/df200.JPG";
@@ -53,7 +53,7 @@ import ft500 from "../assets/tta300/ft500.jpg";
 import ft3001 from "../assets/tta300/ft3001.jpg";
 import ft1000 from "../assets/tta300/ft1000.jpg";
 import ft1300 from "../assets/tta300/ft1300.jpg";
-import ttaf450 from "../assets/tta300/ttaf450.jpg"; 
+import ttaf450 from "../assets/tta300/ttaf450.jpg";
 import ttab450 from "../assets/tta300/ttab450.jpg";
 //tip1002//
 import ft1002 from "../assets/tip1002/ft1002.jpg";
@@ -76,11 +76,7 @@ import redfront from "../assets/red10/redfront.JPG";
 import q80f from "../assets/q80/q80f.JPG";
 import sf218 from "../assets/s218/sf218.JPG";
 
-
 import q60front from "../assets/q60/q60front.JPG";
- 
-
-
 
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -264,7 +260,7 @@ const products = [
     ],
   },
   {
-    img: [pl423, plb4, plss4,],
+    img: [pl423, plb4, plss4],
     title: "PL ",
     model: "PL 4.1",
     description:
@@ -353,7 +349,7 @@ const products = [
     ],
   },
   {
-    img: [plf42, plb42, plss4,plt4],
+    img: [plf42, plb42, plss4, plt4],
     title: "PL ",
     model: "PL 1004",
     description:
@@ -397,7 +393,7 @@ const products = [
     ],
   },
   {
-    img: [plf42, plb42, plss4,plt4],
+    img: [plf42, plb42, plss4, plt4],
     title: "PL ",
     model: "PL 1504",
     description:
@@ -789,7 +785,7 @@ const products = [
     ],
   },
   {
-    img: [ttaf450,ttab450,],
+    img: [ttaf450, ttab450],
     title: "TTA ",
     model: "TTA 460",
     description:
@@ -1000,7 +996,7 @@ const products = [
       {
         name: "PL 1504",
         path: "/electronics/pl%201504",
-        img: plf42 ,
+        img: plf42,
       },
       {
         name: "TIP-1602",
@@ -1015,7 +1011,7 @@ const products = [
     ],
   },
   {
-    img: [Dsp26front, Dsp26back,],
+    img: [Dsp26front, Dsp26back],
     title: "DSP ",
     model: "DL 2.6",
     description:
@@ -1064,7 +1060,7 @@ const products = [
     ],
   },
   {
-    img: [Dsp48front, Dsp48back,],
+    img: [Dsp48front, Dsp48back],
     title: "DSP ",
     model: "DL 4.8",
     description:
@@ -1363,7 +1359,7 @@ const ProductDetail = () => {
                 <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
                 <a
                   href={`/view-pdf?url=${encodeURIComponent(
-                    product.pdf
+                    product.pdf,
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
