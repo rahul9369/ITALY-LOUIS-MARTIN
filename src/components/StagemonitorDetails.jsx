@@ -154,11 +154,11 @@ const products = [
     Weight: "8/17.6 ",
     pdf: DS8PDF,
     relatedProducts: [
-      {
-        name: "D-200",
-        path: "/electronics/d%20200",
-        img: df2001,
-      },
+      // {
+      //   name: "D-200",
+      //   path: "/electronics/d%20200",
+      //   img: ,
+      // },
       {
         name: "D-4200",
         path: "/electronics/d%204200",
@@ -284,7 +284,7 @@ const products = [
   },
 
   {
-    img: [Hwfornt, hwback, hwside, hw45],
+    img: [Hwfornt, hwback, hwside],
     title: "Plastic Speaker",
     model: "Hw 6.5",
     description:
@@ -325,11 +325,11 @@ const products = [
         path: "/electronics/d%204200",
         img: fd4200,
       },
-      {
-        name: "S12",
-        path: "/subwoofer/s12",
-        img: fronts12,
-      },
+      // {
+      //   name: "S12",
+      //   path: "/subwoofer/s12",
+      //   img: fronts12,
+      // },
       // {
       //   name: "S18",
       //   path: "/subwoofer/s18",
@@ -379,11 +379,11 @@ const products = [
         path: "/electronics/d%204200",
         img: fd4200,
       },
-      {
-        name: "S12",
-        path: "/subwoofer/s12",
-        img: fronts12,
-      },
+      // {
+      //   name: "S12",
+      //   path: "/subwoofer/s12",
+      //   img: fronts12,
+      // },
       // {
       //   name: "S18",
       //   path: "/subwoofer/s18",

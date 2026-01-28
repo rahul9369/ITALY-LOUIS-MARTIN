@@ -349,7 +349,7 @@ const products = [
     ],
   },
   {
-    img: [plf42, plb42, plss4, plt4],
+    img: [plf42, plss4, plt4],
     title: "PL ",
     model: "PL 1004",
     description:
@@ -393,7 +393,7 @@ const products = [
     ],
   },
   {
-    img: [plf42, plb42, plss4, plt4],
+    img: [plf42, plss4, plt4],
     title: "PL ",
     model: "PL 1504",
     description:
@@ -735,7 +735,7 @@ const products = [
     ],
   },
   {
-    img: [ttaf450, ttab450],
+    img: [ttaf450],
     title: "TTA ",
     model: "TTA 450",
     description:
@@ -785,7 +785,7 @@ const products = [
     ],
   },
   {
-    img: [ttaf450, ttab450],
+    img: [ttaf450],
     title: "TTA ",
     model: "TTA 460",
     description:
@@ -1011,7 +1011,7 @@ const products = [
     ],
   },
   {
-    img: [Dsp26front, Dsp26back],
+    img: [],
     title: "DSP ",
     model: "DL 2.6",
     description:
@@ -1037,11 +1037,11 @@ const products = [
     Weight: " 7",
     pdf: TIPPDF,
     relatedProducts: [
-      {
-        name: "DL 4.8",
-        path: "/electronics/dl%204.8",
-        img: Dsp48front,
-      },
+      // {
+      //   name: "DL 4.8",
+      //   path: "/electronics/dl%204.8",
+      //   img: Dsp48front,
+      // },
       {
         name: "Q 60",
         path: "/linearray/q%2060",
@@ -1060,7 +1060,7 @@ const products = [
     ],
   },
   {
-    img: [Dsp48front, Dsp48back],
+    img: [],
     title: "DSP ",
     model: "DL 4.8",
     description:
@@ -1086,11 +1086,11 @@ const products = [
     Weight: " 7",
     pdf: TIPPDF,
     relatedProducts: [
-      {
-        name: "DL 2.6",
-        path: "/electronics/dl%202.6",
-        img: Dsp26front,
-      },
+      // {
+      //   name: "DL 2.6",
+      //   path: "/electronics/dl%202.6",
+      //   img: Dsp26front,
+      // },
       {
         name: "Q 80",
         path: "/linearray/q%2080",

@@ -19,7 +19,7 @@ const products = [
     weight: "2.5kg",
   },
   {
-    img: DSP48,
+    img: "",
     title: "DSP",
     model: "DL 4.8",
     description: "DIGITAL LOUDSPEAKER MANAGEMENT SYSTEM",

@@ -282,16 +282,16 @@ const products = [
         path: "/product/f15",
         img: ff15,
       },
-      {
-        name: "DS8",
-        path: "/plastic/ds8",
-        img: dsf8,
-      },
-      {
-        name: "COX12",
-        path: "/linearray/cox%2012",
-        img: coxf,
-      },
+      // {
+      //   name: "DS8",
+      //   path: "/plastic/ds8",
+      //   img: dsf8,
+      // },
+      // {
+      //   name: "COX12",
+      //   path: "/linearray/cox%2012",
+      //   img: coxf,
+      // },
     ],
   },
 
@@ -341,11 +341,11 @@ const products = [
         path: "/linearray/q%2080",
         img: q80f,
       },
-      {
-        name: "COX12",
-        path: "/linearray/cox%2012",
-        img: coxf,
-      },
+      // {
+      //   name: "COX12",
+      //   path: "/linearray/cox%2012",
+      //   img: coxf,
+      // },
     ],
   },
 ];
