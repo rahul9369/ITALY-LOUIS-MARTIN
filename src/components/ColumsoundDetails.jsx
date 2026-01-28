@@ -47,7 +47,7 @@ import fd4300 from "../assets/d4300/fd4300.jpg";
 import fronts12 from "../assets/s12/fronts12.JPG";
 import ft300 from "../assets/tta300/ft300.jpg";
 import ffront8 from "../assets/f8/ffront8.jpg";
-import df2001 from "../assets/d200/df2001.JPG";
+import df2001 from "../assets/d200/df2001.jpg";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -536,7 +536,7 @@ const ProductDetail = () => {
                 <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
                 <a
                   href={`/view-pdf?url=${encodeURIComponent(
-                    product.pdf
+                    product.pdf,
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
