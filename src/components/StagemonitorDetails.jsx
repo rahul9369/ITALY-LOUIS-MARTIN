@@ -62,7 +62,7 @@ import tlback from "../assets/tl55/tlback.jpg";
 import tlside5 from "../assets/tl55/tlside5.jpg";
 import tl45 from "../assets/tl55/tl45.jpg";
 // import hwtop1 from "../assets/hw65/hwtop.jpg";
-import df2001 from "../assets/d200/df2001.JPG";
+// import df2001 from "../assets/d200/df2001.JPG";
 import ft800 from "../assets/tta300/ft800.jpg";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
