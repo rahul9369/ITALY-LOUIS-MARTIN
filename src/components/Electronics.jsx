@@ -23,7 +23,7 @@ import ft1300 from "../assets/tta300/ft1300.jpg";
 import df2001 from "../assets/d200/df2001.jpg";
 import pl423 from "../assets/pl4/pl423.jpg";
 import plf405 from "../assets/pl4/plf405.jpg";
-import dsp26 from "../assets/dsp/dl2.JPG";
+import dsp26 from "../assets/dsp/dl2.jpg";
 import dsp48 from "../assets/dsp/front.JPG";
 import ttaf450 from "../assets/tta300/ttaf450.jpg";
 const products = [
