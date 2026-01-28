@@ -47,7 +47,7 @@ import s1245 from "../assets/s12/s1245.JPG";
 import fronts12 from "../assets/s12/fronts12.JPG";
 import opens12 from "../assets/s12/opens12.JPG";
 import backs12 from "../assets/s12/backs12.jpg";
-import sides12 from "../assets/s12/sides12.JPG";
+import sides12 from "../assets/s12/sides12.jpg";
 import tops12 from "../assets/s12/tops12.JPG";
 
 //s218//
