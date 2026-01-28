@@ -43,10 +43,10 @@ import sup18 from "../assets/s18/sup18.JPG";
 
 //s12//
 
-import  s1245 from "../assets/s12/s1245.JPG";
+import s1245 from "../assets/s12/s1245.JPG";
 import fronts12 from "../assets/s12/fronts12.JPG";
 import opens12 from "../assets/s12/opens12.JPG";
-import backs12 from "../assets/s12/backs12.JPG";
+import backs12 from "../assets/s12/backs12.jpg";
 import sides12 from "../assets/s12/sides12.JPG";
 import tops12 from "../assets/s12/tops12.JPG";
 
@@ -78,7 +78,7 @@ import coxf from "../assets/coximg/coxf.JPG";
 import ft2402 from "../assets/tip1002/ft2402.jpg";
 import q60front from "../assets/q60/q60front.JPG";
 import q80f from "../assets/q80/q80f.JPG";
-import redfront5 from "../assets/red5/redfront5.jpg"
+import redfront5 from "../assets/red5/redfront5.jpg";
 const products = [
   {
     img: [ksf18, ksb18, kstop18, ks418, ksd18],
@@ -187,8 +187,8 @@ const products = [
       // },
     ],
   },
-{
-    img: [fronts12, s1245,opens12, backs12, tops12 ,sides12, ],
+  {
+    img: [fronts12, s1245, opens12, backs12, tops12, sides12],
     title: "Subwoofer",
     model: "S12",
     description:
@@ -277,7 +277,7 @@ const products = [
         path: "/electronics/tip%201602",
         img: ft1002,
       },
-       {
+      {
         name: "F15",
         path: "/product/f15",
         img: ff15,
@@ -292,12 +292,11 @@ const products = [
         path: "/linearray/cox%2012",
         img: coxf,
       },
-     
     ],
   },
 
   {
-    img: [sf218, sb218, ss218, s4218, sop218, sdou218,],
+    img: [sf218, sb218, ss218, s4218, sop218, sdou218],
     title: "Subwoofer",
     model: "S218",
     description:
@@ -571,7 +570,7 @@ const ProductDetail = () => {
                 <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
                 <a
                   href={`/view-pdf?url=${encodeURIComponent(
-                    product.pdf
+                    product.pdf,
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
