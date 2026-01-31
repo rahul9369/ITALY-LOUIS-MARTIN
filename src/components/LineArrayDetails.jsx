@@ -8,12 +8,12 @@ import S218 from "../assets/S218.png";
 import S18 from "../assets/S18.png";
 import TTA from "../assets/TTA.jpg";
 import subwooferImg from "../assets/subwoofer218.png";
-import Famous210N from "../assets/pdf/Famous210N.pdf";
-import Cox112 from "../assets/pdf/COX12.pdf";
-import Q50a from "../assets/pdf/Q50a.pdf";
-import Q60a from "../assets/pdf/Q60a.pdf";
-import Q70a from "../assets/pdf/Q70a.pdf";
-import Q80a from "../assets/pdf/Q80a.pdf";
+import Famous210N from "../assets/newpdf/Famous210New.pdf";
+import Cox112 from "../assets/newpdf/COX12new.pdf";
+import Q50a from "../assets/newpdf/Q50new.pdf";
+import Q60a from "../assets/newpdf/Q60new.pdf";
+import Q70a from "../assets/newpdf/Q70new.pdf";
+import Q80a from "../assets/newpdf/Q80new.pdf";
 import { Helmet } from "react-helmet";
 
 ///cox//
@@ -68,8 +68,8 @@ import sf218 from "../assets/s218/sf218.JPG";
 import sf18 from "../assets/s18/sf18.JPG";
 import ft800 from "../assets/tta300/ft800.jpg";
 
- import redfront from "../assets/red10/redfront.JPG";
- import ft1003 from "../assets/tip1002/ft1003.jpg";
+import redfront from "../assets/red10/redfront.JPG";
+import ft1003 from "../assets/tip1002/ft1003.jpg";
 
 // import cox12 from "../assets/coximg/coxunder.jpg";
 // import coxback1 from "../assets/coxback1.jpg";
@@ -105,7 +105,7 @@ const products = [
     Max_SPL_Peak: "LF:136 dB  & HF:136 dB ",
     Nominal_Impedance: "LF:4 Ohms & HF:4 Ohms",
     Crossover_Mode: "Active, Bi-amplified",
-    Crossover_Point_Biamp_Mode :"LF : 70 Hz – 2 kHz | HF : 2 kHz – 19 kHz" ,
+    Crossover_Point_Biamp_Mode: "LF : 70 Hz – 2 kHz | HF : 2 kHz – 19 kHz",
     Dispersion: "70° / 90° / 110° (H) x 10° (V)",
     Cabinet_Material: "Glass Fiber Reinforced Plastic & Birch Plywood",
     Size_mm: "330 x 1100 x 600 mm (H x W x D)",
@@ -135,7 +135,7 @@ const products = [
     ],
   },
   {
-    img: [qfront, qnos, qback, qss, qs,q50layer],
+    img: [qfront, qnos, qback, qss, qs, q50layer],
     title: "Line Array ",
     model: "Q 50",
     description:
@@ -158,7 +158,7 @@ const products = [
     Max_SPL_Peak: "134 dB  (Passive/Bi-Amp)",
     Nominal_Impedance: "LF : 8 Ohms & HF : 8 Ohms",
     Crossover_Mode: "Passive/Bi-amplified Switchable",
-    Crossover_Point_Biamp_Mode :"LF : 65 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz" ,
+    Crossover_Point_Biamp_Mode: "LF : 65 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
     Cabinet_Material: "Birch Plywood",
     Size_mm: "286 x 478 x 360mm (H x W x D)",
@@ -188,7 +188,7 @@ const products = [
     ],
   },
   {
-    img: [q60front, q60s, q60back, q60ss, q60j,q60layer],
+    img: [q60front, q60s, q60back, q60ss, q60j, q60layer],
     title: "Line array ",
     model: "Q 60",
     description:
@@ -212,7 +212,7 @@ const products = [
     Max_SPL_Peak: "136 dB  (Passive/Bi-Amp)",
     Nominal_Impedance: "LF : 8 Ohms & HF : 8 Ohms",
     Crossover_Mode: "Passive/Bi-amplified Switchable",
-    Crossover_Point_Biamp_Mode :"LF : 60 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz" ,
+    Crossover_Point_Biamp_Mode: "LF : 60 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
     Cabinet_Material: "Birch Plywood",
     Size_mm: "286 x 754 x 380mm (H x W x D)",
@@ -242,7 +242,7 @@ const products = [
     ],
   },
   {
-    img: [q70front, q70j, q70s, q70back, q70ss,q70layer],
+    img: [q70front, q70j, q70s, q70back, q70ss, q70layer],
     title: "Line array ",
     model: "Q 70",
     description:
@@ -265,7 +265,7 @@ const products = [
     Max_SPL_Peak: "136 dB  (Passive/Bi-Amp)",
     Nominal_Impedance: "LF : 8 Ohms & HF : 8 Ohms",
     Crossover_Mode: "Passive/Bi-amplified Switchable",
-    Crossover_Point_Biamp_Mode :"LF : 60 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz" ,
+    Crossover_Point_Biamp_Mode: "LF : 60 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
     Cabinet_Material: "Birch Plywood",
     Size_mm: "348 x 600 x 422mm (H x W x D)",
@@ -295,7 +295,7 @@ const products = [
     ],
   },
   {
-    img: [q80front, q80j, q80s, q80b, q80ss,q80layer],
+    img: [q80front, q80j, q80s, q80b, q80ss, q80layer],
     title: "Line array ",
     model: "Q 80",
     description:
@@ -319,7 +319,7 @@ const products = [
     Max_SPL_Peak: "139 dB  (Passive/Bi-Amp)",
     Nominal_Impedance: " 8 Ohms (Passive/Bi-Amp)",
     Crossover_Mode: "Passive/Bi-amplified Switchable",
-    Crossover_Point_Biamp_Mode :"LF : 60 Hz – 1.8 kHz | HF : 1.8 kHz – 20 kHz" ,
+    Crossover_Point_Biamp_Mode: "LF : 60 Hz – 1.8 kHz | HF : 1.8 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
     Cabinet_Material: "High density multi-layer birch plywood",
     Size_mm: "348 x 910 x 520mm (H x W x D)",
@@ -374,14 +374,14 @@ const products = [
     Max_SPL_Peak: "130 dB ",
     Nominal_Impedance: "8 Ohms",
     Crossover_Mode: "Passive",
-    Crossover_Point_Biamp_Mode :"LF : 65 Hz – 3 kHz | HF : 3 kHz – 19 kHz" ,
+    Crossover_Point_Biamp_Mode: "LF : 65 Hz – 3 kHz | HF : 3 kHz – 19 kHz",
     Dispersion: "100°(H) x 10° (V)",
     Cabinet_Material: "High density multi-layer plywood",
     Size_mm: "350 x 500 x 450mm (H x W x D)",
     Weight: "22/48.5 ",
     pdf: Cox112,
     relatedProducts: [
-     {
+      {
         name: "TTA-800",
         path: "/electronics/tta%20800",
         img: ft800,
@@ -599,7 +599,10 @@ const ProductDetail = () => {
                   },
                   ,
                   { label: "Crossover Mode", value: product.Crossover_Mode },
-                  { label: "Crossover Point (Bi-amp Mode)", value: product.Crossover_Point_Biamp_Mode },
+                  {
+                    label: "Crossover Point (Bi-amp Mode)",
+                    value: product.Crossover_Point_Biamp_Mode,
+                  },
                   { label: "Dispersion", value: product.Dispersion },
                   {
                     label: "Cabinet Material",
@@ -625,7 +628,7 @@ const ProductDetail = () => {
                 <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
                 <a
                   href={`/view-pdf?url=${encodeURIComponent(
-                    product.pdf
+                    product.pdf,
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"

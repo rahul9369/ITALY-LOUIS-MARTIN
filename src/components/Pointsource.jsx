@@ -117,6 +117,17 @@ const products = [
     spl: "129dB",
     weight: "30 Kg",
   },
+  {
+    img: ff15,
+    title: "F Series",
+    model: "F12 AM",
+    description: '1x15" Two-Way Passive Full-Range High Power Loudspeaker',
+    power: "500W/2000W (Passive)",
+    Sensitivity: "99dB",
+    response: "50Hz-19kHz",
+    spl: "129dB",
+    weight: "30 Kg",
+  },
 ];
 
 const ProductCard = ({ product }) => {
@@ -135,7 +146,7 @@ const ProductCard = ({ product }) => {
         decoding="async"
         onClick={() =>
           navigate(
-            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -169,7 +180,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

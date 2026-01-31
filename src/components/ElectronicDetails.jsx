@@ -1,11 +1,12 @@
 import { Link, useParams } from "react-router-dom";
 import Footer from "./Footer";
 
-import DSeriesAmplifiers from "../assets/pdf/Dseries.pdf";
-import PLSeriesAmplifiers from "../assets/pdf/PLseries.pdf";
-import TIPPDF from "../assets/pdf/TIPseries.pdf";
-import TTAPDF from "../assets/pdf/TTAseries.pdf";
-import coxf from "../assets/coximg/coxf.jpg";
+import DSeriesAmplifiers from "../assets/newpdf/Dseriesnew.pdf";
+import PLSeriesAmplifiers from "../assets/newpdf/PLseriesnew.pdf";
+import TIPPDF from "../assets/newpdf/TIPseriesnew.pdf";
+import TTAPDF from "../assets/newpdf/TTAseriesnew.pdf";
+import DSPPDF4 from "../assets/newpdf/DSP4seriesnew.pdf";
+import DSPPDF2 from "../assets/newpdf/DSP2seriesnew.pdf";
 
 //pl4//
 import plf4 from "../assets/pl4/plf4.jpg";
@@ -1035,7 +1036,7 @@ const products = [
     Input_Impedance: " 20KΩ/10KΩ",
     Size_mm: "482 x 360 x 88mm",
     Weight: " 7",
-    pdf: TIPPDF,
+    pdf: DSPPDF2,
     relatedProducts: [
       // {
       //   name: "DL 4.8",
@@ -1084,7 +1085,7 @@ const products = [
     Input_Impedance: " 20KΩ/10KΩ",
     Size_mm: "482 x 360 x 88mm",
     Weight: " 7",
-    pdf: TIPPDF,
+    pdf: DSPPDF4,
     relatedProducts: [
       // {
       //   name: "DL 2.6",

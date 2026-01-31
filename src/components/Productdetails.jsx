@@ -2,23 +2,18 @@ import { Link, useParams } from "react-router-dom";
 import Devilred10 from "../assets/Devilred10.png";
 //red series images//
 
-import red12 from "../assets/red12.png";
-import TIP from "../assets/TIPA.jpg";
-import S218 from "../assets/S218.png";
-import S18 from "../assets/S18.png";
-import DT400 from "../assets/DT400.jpg";
-import Fseries from "../assets/SpeakerF12.jpg";
-import TTA from "../assets/TTA.jpg";
-import Red10PDF from "../assets/pdf/Red10.pdf";
-import Red5PDF from "../assets/pdf/Red5.pdf";
-import Red6PDF from "../assets/pdf/Red5.5.pdf";
-import Red9PDF from "../assets/pdf/Red9.pdf";
-import Red12PDF from "../assets/pdf/Red12.pdf";
+import Red10PDF from "../assets/newpdf/Red10new.pdf";
+import Red5PDF from "../assets/newpdf/Red5new.pdf";
+import Red6PDF from "../assets/newpdf/Red5.5new.pdf";
+import Red9PDF from "../assets/newpdf/Red9new.pdf";
+import Red12PDF from "../assets/newpdf/Red12new.pdf";
 import Footer from "./Footer";
-import F12 from "../assets/pdf/F12.pdf";
-import F8 from "../assets/pdf/F8.pdf";
-import F15PDF from "../assets/pdf/F15.pdf";
-import F10 from "../assets/pdf/F10.pdf";
+import F12 from "../assets/newpdf/F12new.pdf";
+import F8 from "../assets/newpdf/F8new.pdf";
+import F15PDF from "../assets/newpdf/F15new.pdf";
+import F10 from "../assets/newpdf/F10new.pdf";
+import F12AMPDF from "../assets/newpdf/F12AMnew.pdf";
+
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { ChevronLeft, ChevronRight, Import } from "lucide-react";
@@ -96,8 +91,8 @@ import ft300 from "../assets/tta300/ft300.jpg";
 import ksf18 from "../assets/ks18/ksf18.JPG";
 import ksf218 from "../assets/ks218/ksf218.JPG";
 
-import ft800 from "../assets/tta300/ft800.jpg"; 
-import fronts12 from "../assets/s12/fronts12.JPG";        
+import ft800 from "../assets/tta300/ft800.jpg";
+import fronts12 from "../assets/s12/fronts12.JPG";
 import ft500 from "../assets/tta300/ft500.jpg";
 
 const products = [
@@ -306,7 +301,7 @@ const products = [
         path: "/subwoofer/s18",
         img: sf18,
       },
-       {
+      {
         name: "RED-5.5",
         path: "/product/red%205.5",
         img: redf5,
@@ -316,7 +311,6 @@ const products = [
         path: "/product/red%205",
         img: redfront5,
       },
-     
     ],
   },
   {
@@ -404,7 +398,7 @@ const products = [
     Weight: "12/26.4 ",
     pdf: F8,
     relatedProducts: [
-        {
+      {
         name: "TTA-300",
         path: "/electronics/tta%20300",
         img: ft300,
@@ -587,6 +581,60 @@ const products = [
       },
     ],
   },
+  {
+    img: [ff15, fb15, f415, fd15, fopen15],
+    title: "Point Source ",
+    model: "F12 AM",
+    description:
+      " The F-12AM has one powerful 15” (381 mm)  LF driver with 1.45” (44 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install & portable use including Main FoH, Night Clubs, lounges, Multipurpose Hall, Live Setup etc. With flat frequency response, the cabinet offers uncoloured, transparent sound quality. Crafted from high density plywood, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
+    application: [
+      // " Lounge  ",
+      // "Pub/Bar ",
+      "Main FoH",
+      // "Multi-functional Room",
+      "Live portable setup",
+      "Night Clubs",
+    ],
+    Type: "Two-way full range passive loudspeaker",
+    Frequency_Response: "50 Hz – 19 kHz",
+    LF_Drivers: "1x 15” (381 mm) LF Driver with 3” Voice coil",
+    HF_Drivers: "1 x 1.75” (44 mm) HF Driver",
+    RMS_Power: "500W",
+    Program_Power: "1000W",
+    Peak_Power: "2000W",
+    Sensitivity: "99 dB ",
+    Max_SPL: "129 dB ",
+    Max_SPL_Peak: "132 dB ",
+    Nominal_Impedance: "8 Ohms",
+    Crossover_Mode: "Passive",
+    Dispersion: "90° (H) x 50° (V)",
+    Cabinet_Material: "High density plywood",
+    Size_mm: "690 x 470 x 443mm (H x W x D)",
+    Weight: "30/66.1 ",
+    pdf: F12AMPDF,
+    relatedProducts: [
+      {
+        name: "TIP-1002",
+        path: "/electronics/tip%201002",
+        img: ft1002,
+      },
+      {
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: sf18,
+      },
+      {
+        name: "S218",
+        path: "/subwoofer/s218",
+        img: sf218,
+      },
+      {
+        name: "F10",
+        path: "/product/f10",
+        img: ff10,
+      },
+    ],
+  },
 ];
 
 const ProductDetail = () => {
@@ -692,10 +740,11 @@ const ProductDetail = () => {
                     onClick={() => setCurrentImgIndex(index)}
                     loading="eager"
                     decoding="async"
-                    className={`sm:w-28 w-18 h-20 sm:h-20 object-contain rounded-md cursor-pointer border  ${index === currentImgIndex
+                    className={`sm:w-28 w-18 h-20 sm:h-20 object-contain rounded-md cursor-pointer border  ${
+                      index === currentImgIndex
                         ? "border-blue-500"
                         : "border-transparent"
-                      }`}
+                    }`}
                   />
                 ))}
               </div>
@@ -746,10 +795,11 @@ const ProductDetail = () => {
           {["Specifications", "Downloads"].map((tab) => (
             <button
               key={tab}
-              className={`px-4 py-2 md:px-6 md:py-3 cursor-pointer text-sm md:text-lg flex-1 ${activeTab === tab
+              className={`px-4 py-2 md:px-6 md:py-3 cursor-pointer text-sm md:text-lg flex-1 ${
+                activeTab === tab
                   ? "border-b-2 border-black font-bold"
                   : "text-gray-500"
-                }`}
+              }`}
               onClick={() => setActiveTab(tab)}>
               {tab}
             </button>
@@ -815,7 +865,7 @@ const ProductDetail = () => {
                 <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
                 <a
                   href={`/view-pdf?url=${encodeURIComponent(
-                    product.pdf
+                    product.pdf,
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"

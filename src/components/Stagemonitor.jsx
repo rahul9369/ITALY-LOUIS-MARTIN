@@ -156,7 +156,7 @@ const ProductList = () => {
           content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
         />
       </Helmet>
-      <img src={PlasticSpeaker} alt="Line Array" className="w-full" />
+      {/* <img src={PlasticSpeaker} alt="Line Array" className="w-full" /> */}
       <div className="w-full text-center py-6 px-4">
         <h1 className="sm:text-4xl text-[25px] mx-auto font-bold  mb-4 text-red-800">
           Commercial Speaker - All Series

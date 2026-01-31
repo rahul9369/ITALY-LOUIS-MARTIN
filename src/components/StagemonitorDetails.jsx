@@ -2,11 +2,13 @@ import { Link, useParams } from "react-router-dom";
 import PlasticSpeaker from "../assets/plasticDs5.png";
 
 import DS12 from "../assets/DS12.jpg";
-import DS5PDF from "../assets/pdf/DS-5.pdf";
-import DS8PDF from "../assets/pdf/DS-8.pdf";
-import DS12PDF from "../assets/pdf/DS-12.pdf";
-import DS15PDF from "../assets/pdf/DS-15.pdf";
-import HwPDF from "../assets/pdf/Hw.pdf";
+import DS5PDF from "../assets/newpdf/DS-5new.pdf";
+import DS8PDF from "../assets/newpdf/DS-8new.pdf";
+import DS12PDF from "../assets/newpdf/DS-12new.pdf";
+import DS15PDF from "../assets/newpdf/DS-15new.pdf";
+import HwPDF from "../assets/newpdf/Hwnew.pdf";
+import TLPDF from "../assets/newpdf/TLnew.pdf";
+
 import TIP from "../assets/TIPA.jpg";
 import TTA from "../assets/TTA.jpg";
 import S218 from "../assets/S218.png";
@@ -367,7 +369,7 @@ const products = [
     IP_Rating: " Not applicable",
     Size_mm: " 220 x 220 x 160 mm (H x W x D)",
     Weight: "2.5/5.51",
-    pdf: HwPDF,
+    pdf: TLPDF,
     relatedProducts: [
       {
         name: "D-200",

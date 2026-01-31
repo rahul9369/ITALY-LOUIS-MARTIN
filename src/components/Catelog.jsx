@@ -1,5 +1,5 @@
 import React from "react";
-import LOUISMARTINCATALOGUE from "../assets/pdf/LouisMartinCatalogue.pdf";
+import LOUISMARTINCATALOGUE from "../assets/newpdf/LouisMartinCataloguenew.pdf";
 import pointsource from "../assets/imagecatelog.jpg";
 import logo from "../assets/Logo.png";
 
@@ -124,7 +124,7 @@ function Catelog() {
   transition-all duration-300 
   transform hover:scale-105
 ">
-             Catalogue
+            Catalogue
           </button>
         </div>
       </div>

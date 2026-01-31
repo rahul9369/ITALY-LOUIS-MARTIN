@@ -6,11 +6,11 @@ import TIP from "../assets/TIPA.jpg";
 import S18 from "../assets/S18.png";
 import S218 from "../assets/S218.png";
 import Footer from "./Footer";
-import K302PDF from "../assets/pdf/K302.pdf";
-import K304PDF from "../assets/pdf/K304.pdf";
-import K306PDF from "../assets/pdf/K306.pdf";
-import K308PDF from "../assets/pdf/K308.pdf";
-import K312PDF from "../assets/pdf/K312.pdf";
+import K302PDF from "../assets/newpdf/K302new.pdf";
+import K304PDF from "../assets/newpdf/K302new.pdf";
+import K306PDF from "../assets/newpdf/K302new.pdf";
+import K308PDF from "../assets/newpdf/K302new.pdf";
+import K312PDF from "../assets/newpdf/K302new.pdf";
 
 //k302 image //
 import kff302 from "../assets/k302/kff302.jpg";

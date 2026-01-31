@@ -6,15 +6,12 @@ import F12 from "../assets/F12.jpg";
 import Devilred10 from "../assets/Devilred10.png";
 // import S218 from "../assets/S218.png";
 
-// import KS18a from "../assets/pdf/KS18A.pdf";
-import KS18a from "../assets/pdf/ks18a.pdf";
+import KS18a from "../assets/newpdf/ks18new.pdf";
+import S18a from "../assets/newpdf/S18new.pdf";
+import KS218a from "../assets/newpdf/KS218new.pdf";
+import S218a from "../assets/newpdf/S218new.pdf";
+import S12a from "../assets/newpdf/S12new.pdf";
 
-import TIP from "../assets/TIPA.jpg";
-import S18a from "../assets/pdf/S18a.pdf";
-import KS218a from "../assets/pdf/KS218a.pdf";
-import S218a from "../assets/pdf/S218a.pdf";
-import F15 from "../assets/F15.png";
-import Linear from "../assets/Famousmartin1.jpg";
 import { ChevronLeft, ChevronRight, Import } from "lucide-react";
 //ks18//
 
@@ -216,7 +213,7 @@ const products = [
     Cabinet_Material: "Birch Plywood with Polyurea Paint",
     Size_mm: "360x 421x 500mm (H x W x D)",
     Weight: "20/44.1",
-    pdf: S18a,
+    pdf: S12a,
     relatedProducts: [
       {
         name: "TTA-800",
