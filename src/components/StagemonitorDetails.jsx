@@ -427,8 +427,11 @@ const ProductDetail = () => {
         />
       </Helmet>
       <div className="w-[90%] mx-auto p-6">
+        <h1 className="md:hidden  block  text-2xl md:text-3xl font-bold">
+          {product.title} - {product.model}
+        </h1>
         {/* Product Image and Title */}
-        <div className="grid grid-cols-1 md:grid-cols-[65%_35%] gap-12 mt-4 w-[90%] ">
+        <div className="grid grid-cols-1 mx-auto md:mx-0 md:grid-cols-[65%_35%] gap-12 mt-4 w-[90%] ">
           {/* <img
             src={product.img}
             alt={product.model}
@@ -436,7 +439,7 @@ const ProductDetail = () => {
           /> */}
           <div className="bg-white w-full ">
             {/* Image Viewer */}
-            <div className="relative bg-gray-50 rounded-xl flex items-center justify-center h-[360px] overflow-hidden">
+            <div className="relative w-full bg-gray-50 rounded-xl flex items-center justify-center h-[200px] sm:h-[360px] overflow-hidden">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}
@@ -449,8 +452,18 @@ const ProductDetail = () => {
               {images.length > 1 && (
                 <button
                   onClick={prevImage}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 hover:bg-gray-100 transition">
-                  <ChevronLeft size={26} className="text-gray-700" />
+                  className="
+      absolute left-1 md:left-3
+      top-1/2 -translate-y-1/2
+      bg-white shadow-md rounded-full
+      p-1 md:p-2
+      hover:bg-gray-100
+      transition
+    ">
+                  <ChevronLeft
+                    size={20}
+                    className="md:w-[26px] md:h-[26px] text-gray-700"
+                  />
                 </button>
               )}
 
@@ -458,8 +471,18 @@ const ProductDetail = () => {
               {images.length > 1 && (
                 <button
                   onClick={nextImage}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 hover:bg-gray-100 transition">
-                  <ChevronRight size={26} className="text-gray-700" />
+                  className="
+      absolute right-1 md:right-3
+      top-1/2 -translate-y-1/2
+      bg-white shadow-md rounded-full
+      p-1 md:p-2
+      hover:bg-gray-100
+      transition
+    ">
+                  <ChevronRight
+                    size={20}
+                    className="md:w-[26px] md:h-[26px] text-gray-700"
+                  />
                 </button>
               )}
             </div>
@@ -479,7 +502,8 @@ const ProductDetail = () => {
                     <img
                       src={img}
                       alt={`Thumbnail ${index + 1}`}
-                      className="w-20 h-20 object-contain bg-gray-50 rounded-md"
+                      className="w-10 h-12 sm:w-18 sm:h-18 md:w-20 md:h-20 
+                     object-contain bg-gray-50 rounded-full"
                     />
                   </div>
                 ))}
@@ -505,7 +529,7 @@ const ProductDetail = () => {
           )}
 
           <div className="">
-            <h1 className="text-2xl md:text-3xl font-bold">
+            <h1 className="hidden md:block text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}
             </h1>
             <div className="w-full ">
