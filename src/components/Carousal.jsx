@@ -46,7 +46,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5500);
+    }, 4000); // 4s per slide
     return () => clearInterval(interval);
   }, [currentIndex]);
 
@@ -74,7 +74,7 @@ const Carousel = () => {
 
   return (
     <div
-      className="relative w-full overflow-hidden min-h-[50px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[600px]"
+      className="relative w-full overflow-hidden min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[600px]"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}>
@@ -82,7 +82,7 @@ const Carousel = () => {
       <img
         key={currentIndex}
         src={slides[currentIndex].image}
-        className=" h-full object-cover animate-zoomOnly"
+        className="w-full h-full object-cover animate-zoomOnly transition-transform duration-1000 ease-in-out"
         alt="carousel"
       />
 
