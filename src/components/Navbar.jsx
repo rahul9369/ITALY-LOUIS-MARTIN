@@ -93,7 +93,7 @@ const Navbar = () => {
         },
       ],
     },
-    { name: "News", path: "/news" },
+    { name: "News & Updates", path: "/news" },
     { name: "Case", path: "/case" },
     { name: "Download", path: "/download" },
     { name: "Distributor", path: "/distributor" },
@@ -101,52 +101,50 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full shadow-md bg-black opacity-90 relative z-50">
+    <nav className="w-full bg-black/90 backdrop-blur shadow-md relative z-50">
       <div className="w-full flex justify-between items-center px-6 md:px-20 py-4">
-        {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <Link to="/">
-            <img src={Logo} alt="logo" className="w-16 h-16" />
-          </Link>
-        </div>
+        {/* LOGO */}
+        <Link to="/" className="flex items-center">
+          <img src={Logo} alt="logo" className="w-14 h-14 object-contain" />
+        </Link>
 
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 items-center">
+        {/* ================= DESKTOP MENU ================= */}
+        <ul className="hidden md:flex items-center gap-8">
           {menuItems.map((item) => (
             <li
               key={item.name}
               className="relative"
-              onMouseEnter={() => handleMouseEnter(item.name)}
-              onMouseLeave={handleMouseLeave}
-            >
+              onMouseEnter={() => setDropdown(item.name)}>
               <NavLink
                 to={item.path === "#" ? "/" : item.path}
-                className="text-[18px] text-gray-300 hover:text-red-600"
-              >
+                className="text-gray-300 text-[16px] font-medium hover:text-red-500 transition">
                 {item.name}
               </NavLink>
 
-              {/* ===== MEGA MENU ONLY FOR PRODUCTS ===== */}
+              {/* ===== DESKTOP MEGA MENU ===== */}
               {item.submenu && dropdown === item.name && (
-                <div className="absolute left-1/2 top-full w-screen w-[90%] max-w-[950px] mx-auto -translate-x-1/2 bg-white shadow-xl border-t z-50 animate-fadeDown">
-                  <div className="max-w-6xl mx-auto px-12 py-10 grid grid-cols-6 gap-10">
-                    {item.submenu[0].links.map((link, index) => (
-                      <div key={index}>
+                <div
+                  onMouseEnter={() => setDropdown(item.name)}
+                  onMouseLeave={() => setDropdown(null)}
+                  className="absolute left-1/2 top-full mt-4 -translate-x-1/2 w-[900px] bg-white shadow-xl rounded-lg border z-50">
+                  <div className="grid grid-cols-6 gap-8 px-10 py-8">
+                    {item.submenu[0].links.map((link, i) => (
+                      <div key={i}>
                         <NavLink
                           to={link.path}
-                          className="block font-bold text-gray-900 mb-3 hover:text-red-700"
-                        >
+                          onClick={() => setDropdown(null)}
+                          className="block font-semibold text-gray-900 mb-3 hover:text-red-600">
                           {link.name}
                         </NavLink>
 
                         <ul className="space-y-2">
-                          {link.sublinks.map((sublink, subIdx) => (
-                            <li key={subIdx}>
+                          {link.sublinks.map((s, j) => (
+                            <li key={j}>
                               <NavLink
-                                to={sublink.path}
-                                className=" font-semibold text-gray-800 text-sm hover:text-red-600"
-                              >
-                                {sublink.name}
+                                to={s.path}
+                                onClick={() => setDropdown(null)}
+                                className="text-sm text-gray-700 hover:text-red-500">
+                                {s.name}
                               </NavLink>
                             </li>
                           ))}
@@ -160,13 +158,73 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button onClick={toggleMobileMenu} className="text-white text-3xl">
-            {mobileMenu ? <FaTimes /> : <FaBars />}
-          </button>
-        </div>
+        {/* ================= MOBILE TOGGLE ================= */}
+        <button
+          onClick={() => setMobileMenu(!mobileMenu)}
+          className="md:hidden text-white text-3xl">
+          {mobileMenu ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
+
+      {/* ================= MOBILE MENU ================= */}
+      {mobileMenu && (
+        <div className="md:hidden bg-black text-white px-6 pb-6 space-y-4">
+          {menuItems.map((item) => (
+            <div key={item.name}>
+              {!item.submenu ? (
+                <NavLink
+                  to={item.path}
+                  onClick={() => setMobileMenu(false)}
+                  className="block py-2 border-b border-gray-700 text-gray-200">
+                  {item.name}
+                </NavLink>
+              ) : (
+                <>
+                  <button
+                    onClick={() =>
+                      setExpandedMenus((prev) => ({
+                        ...prev,
+                        [item.name]: !prev[item.name],
+                      }))
+                    }
+                    className="w-full flex justify-between items-center py-2 border-b border-gray-700 text-gray-200">
+                    {item.name}
+                    {expandedMenus[item.name] ? <FaMinus /> : <FaPlus />}
+                  </button>
+
+                  {expandedMenus[item.name] && (
+                    <div className="pl-4 mt-2 space-y-3">
+                      {item.submenu[0].links.map((link, i) => (
+                        <div key={i}>
+                          <NavLink
+                            to={link.path}
+                            onClick={() => setMobileMenu(false)}
+                            className="block font-semibold text-gray-300">
+                            {link.name}
+                          </NavLink>
+
+                          <ul className="pl-4 mt-1 space-y-1">
+                            {link.sublinks.map((s, j) => (
+                              <li key={j}>
+                                <NavLink
+                                  to={s.path}
+                                  onClick={() => setMobileMenu(false)}
+                                  className="text-sm text-gray-400">
+                                  {s.name}
+                                </NavLink>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };
