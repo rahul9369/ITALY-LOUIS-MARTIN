@@ -75,13 +75,13 @@ function Catalog() {
   return (
     <div className="w-full py-5 bg-gray-100 flex flex-col items-center ">
       <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-        Louis Martin Product Catalogue
+        Product Catalogue
       </h2>
 
       <button
         onClick={openPDFWithDownload}
         className="bg-red-700 hover:bg-red-800 text-white px-8 py-3 rounded-md font-medium transition">
-        Open Catalogue
+        view
       </button>
     </div>
   );
