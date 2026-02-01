@@ -18,14 +18,14 @@ import plf42 from "../assets/pl4/plf42.jpg";
 import plf405 from "../assets/pl4/plf405.jpg";
 
 import dsp26 from "../assets/dsp/dl2.jpg";
-import dsp26b from "../assets/dsp/dl26b.jpg";
-import dsp26bottom from "../assets/dsp/bottomdsp.jpg";
+import dsp26b from "../assets/dsp/dl26b.JPG";
+import dsp26bottom from "../assets/dsp/bottomdsp.JPG";
 // import dsp26bottom from "../assets/dsp/dl26b.jpg";
 // import dsp26b from "../assets/dsp/dl26b.jpg";
 
 import dsp48 from "../assets/dsp/front.jpg";
-import dsp48side from "../assets/dsp/dspside.jpg";
-import dsp48back from "../assets/dsp/dl48back.jpg";
+import dsp48side from "../assets/dsp/dspside.JPG";
+import dsp48back from "../assets/dsp/dl48back.JPG";
 import dsp48top from "../assets/dsp/dsp48top.jpg";
 
 //d200  d300//
