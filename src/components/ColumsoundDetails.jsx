@@ -1,10 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import K302 from "../assets/k302.png";
-import K304 from "../assets/K304.png";
-import DT400 from "../assets/DT400.jpg";
-import TIP from "../assets/TIPA.jpg";
-import S18 from "../assets/S18.png";
-import S218 from "../assets/S218.png";
+
 import Footer from "./Footer";
 import K302PDF from "../assets/newpdf/K302new.pdf";
 import K304PDF from "../assets/newpdf/K302new.pdf";
@@ -41,12 +36,9 @@ import ktop312 from "../assets/k312/ktop312.JPG";
 import df200 from "../assets/d200/df200.JPG";
 import fd4200 from "../assets/d4200/fd4200.jpg";
 import sf18 from "../assets/s18/sf18.JPG";
-import ft1002 from "../assets/tip1002/ft1002.jpg";
-import sf218 from "../assets/s218/sf218.JPG";
 import fd4300 from "../assets/d4300/fd4300.jpg";
 import fronts12 from "../assets/s12/fronts12.JPG";
 import ft300 from "../assets/tta300/ft300.jpg";
-import ffront8 from "../assets/f8/ffront8.jpg";
 import df2001 from "../assets/d200/df2001.jpg";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";

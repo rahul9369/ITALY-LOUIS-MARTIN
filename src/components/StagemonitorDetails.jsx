@@ -1,7 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import PlasticSpeaker from "../assets/plasticDs5.png";
 
-import DS12 from "../assets/DS12.jpg";
 import DS5PDF from "../assets/newpdf/DS-5new.pdf";
 import DS8PDF from "../assets/newpdf/DS-8new.pdf";
 import DS12PDF from "../assets/newpdf/DS-12new.pdf";
@@ -9,11 +7,6 @@ import DS15PDF from "../assets/newpdf/DS-15new.pdf";
 import HwPDF from "../assets/newpdf/Hwnew.pdf";
 import TLPDF from "../assets/newpdf/TLnew.pdf";
 
-import TIP from "../assets/TIPA.jpg";
-import TTA from "../assets/TTA.jpg";
-import S218 from "../assets/S218.png";
-import S18 from "../assets/S18.png";
-import DT400 from "../assets/DT400.jpg";
 import Hwfornt from "../assets/Hwfront.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 //ds5//
@@ -28,43 +21,35 @@ import dsb8 from "../assets/ds8/dsb8.JPG";
 import dsop8 from "../assets/ds8/dsop8.JPG";
 import dss8 from "../assets/ds8/dss8.JPG";
 import dsup8 from "../assets/ds8/dsup8.JPG";
-import d88 from "../assets/ds8/d88.jpg";
+
 //ds12//
 import dsf12 from "../assets/ds12/dsf12.JPG";
 import dsb12 from "../assets/ds12/dsb12.JPG";
 import dsop12 from "../assets/ds12/dsop12.JPG";
 import dss12 from "../assets/ds12/dss12.JPG";
-import dsup12 from "../assets/ds12/dsup12.JPG";
 import ds412 from "../assets/ds12/ds412.JPG";
 //ds15//
 import dsf15 from "../assets/ds15/dsf15.JPG";
 import dsb15 from "../assets/ds15/dsb15.JPG";
 import dsop15 from "../assets/ds15/dsop15.JPG";
 import dss15 from "../assets/ds15/dss15.JPG";
-import dsup15 from "../assets/ds15/dsup15.JPG";
+
 import ds415 from "../assets/ds15/ds415.JPG";
 //AMP//
 import df200 from "../assets/d200/df200.JPG";
 import fd4200 from "../assets/d4200/fd4200.jpg";
 import sf18 from "../assets/s18/sf18.JPG";
-import fd4300 from "../assets/d4300/fd4300.jpg";
 
 import ft1002 from "../assets/tip1002/ft1002.jpg";
 import sf218 from "../assets/s218/sf218.JPG";
-import ft300 from "../assets/tta300/ft300.jpg";
 
 import hwside from "../assets/hw65/hwside.jpg";
 import hwback from "../assets/hw65/hwback.jpg";
-// import hw45 from "../assets/hw65/hw45.jpg";
-// import fronts12 from "../assets/s12/fronts12.jpg";
-//tl5.5//
 
 import tlfront from "../assets/tl55/tlfront.jpg";
 import tlback from "../assets/tl55/tlback.jpg";
 import tlside5 from "../assets/tl55/tlside5.jpg";
 import tl45 from "../assets/tl55/tl45.jpg";
-// import hwtop1 from "../assets/hw65/hwtop.jpg";
-// import df2001 from "../assets/d200/df2001.JPG";
 import ft800 from "../assets/tta300/ft800.jpg";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";

@@ -2,9 +2,7 @@ import React from "react";
 import Amplifiers from "../../assets/Amplifiers.jpg";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
-import TTA from "../../assets/TTA.jpg";
 
-import ft300 from "../../assets/tta300/ft300.jpg";
 import ft500 from "../../assets/tta300/ft500.jpg";
 import ft600 from "../../assets/tta300/ft600.jpg";
 import ft800 from "../../assets/tta300/ft800.jpg";
@@ -95,12 +93,12 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-       className="w-full h-[200px] object-contain rounded-lg cursor-pointer"
+        className="w-full h-[200px] object-contain rounded-lg cursor-pointer"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() =>
           navigate(
-            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -133,7 +131,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

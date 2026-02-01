@@ -2,12 +2,11 @@ import React from "react";
 import Amplifiers from "../../assets/Amplifiers.jpg";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
-import TIP from "../../assets/TIPA.jpg";
+
 import ft1002 from "../../assets/tip1002/ft1002.jpg";
 import ft1302 from "../../assets/tip1002/ft1302.jpg";
 import ft2402 from "../../assets/tip1002/ft2402.jpg";
 import ft1003 from "../../assets/tip1002/ft1003.jpg";
-
 
 const products = [
   {
@@ -59,7 +58,7 @@ const ProductCard = ({ product }) => {
         className="w-full h-[200px] object-contain rounded-lg cursor-pointer"
         onClick={() =>
           navigate(
-            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -92,7 +91,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

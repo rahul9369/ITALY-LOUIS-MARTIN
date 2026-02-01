@@ -2,8 +2,6 @@ import { Link, useParams } from "react-router-dom";
 
 import Footer from "./Footer";
 
-import F12 from "../assets/F12.jpg";
-import Devilred10 from "../assets/Devilred10.png";
 // import S218 from "../assets/S218.png";
 
 import KS18a from "../assets/newpdf/ks18new.pdf";
@@ -17,7 +15,7 @@ import { ChevronLeft, ChevronRight, Import } from "lucide-react";
 
 import ksf18 from "../assets/ks18/ksf18.JPG";
 import ksb18 from "../assets/ks18/ksb18.JPG";
-import kss18 from "../assets/ks18/kss18.JPG";
+
 import kstop18 from "../assets/ks18/kstop18.JPG";
 import ks418 from "../assets/ks18/ks418.jpg";
 import ksd18 from "../assets/ks18/ksd18.JPG";
@@ -28,7 +26,7 @@ import ksb218 from "../assets/ks218/ksb218.JPG";
 import kss218 from "../assets/ks218/kss218.JPG";
 
 import ks4218 from "../assets/ks218/ks4218.jpg";
-import ktop218 from "../assets/ks218/ktop218.JPG";
+
 //s18//
 import sf18 from "../assets/s18/sf18.JPG";
 import sb18 from "../assets/s18/sb18.JPG";
@@ -36,7 +34,6 @@ import ss18 from "../assets/s18/ss18.JPG";
 import stop18 from "../assets/s18/stop18.JPG";
 import s418 from "../assets/s18/s418.JPG";
 import sop18 from "../assets/s18/sop18.JPG";
-import sup18 from "../assets/s18/sup18.JPG";
 
 //s12//
 
@@ -53,7 +50,7 @@ import sf218 from "../assets/s218/sf218.JPG";
 
 import sb218 from "../assets/s218/sb218.JPG";
 import ss218 from "../assets/s218/ss218.JPG";
-import stop218 from "../assets/s218/stop218.jpg";
+
 import s4218 from "../assets/s218/s4218.JPG";
 import sop218 from "../assets/s218/sop218.JPG";
 import sdou218 from "../assets/s218/sdou218.JPG";
@@ -62,16 +59,13 @@ import { Helmet } from "react-helmet";
 
 import ft1002 from "../assets/tip1002/ft1002.jpg";
 import redfront from "../assets/red10/redfront.JPG";
-import ff12 from "../assets/f12/ff12.jpg";
+
 import ff15 from "../assets/f15/ff15.jpg";
 import famouf from "../assets/fam/famouf.JPG";
 import redo5 from "../assets/red6/redo5.JPG";
 import redff9 from "../assets/red9/redff9.JPG";
 import ft800 from "../assets/tta300/ft800.jpg";
 import ff10 from "../assets/f10/ff10.jpg";
-
-// import dsf8 from "../assets/ds8/";
-// import coxf from "../assets/coximg/coxf.JPG";
 import ft2402 from "../assets/tip1002/ft2402.jpg";
 import q60front from "../assets/q60/q60front.JPG";
 import q80f from "../assets/q80/q80f.JPG";

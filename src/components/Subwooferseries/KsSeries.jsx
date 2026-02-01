@@ -1,8 +1,6 @@
 import React from "react";
 import Subwoofer from "../../assets/Subwoofer.jpg";
 import Footer from "../Footer";
-import KS18 from "../../assets/ks18.jpg";
-import SubwooferImg from "../../assets/subwoofer218.png";
 import { useNavigate } from "react-router-dom";
 import ksf18 from "../../assets/ks18/ksf18.JPG";
 import ksf218 from "../../assets/ks218/ksf218.JPG";
@@ -39,12 +37,12 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-      className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
+        className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() =>
           navigate(
-            `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -78,7 +76,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

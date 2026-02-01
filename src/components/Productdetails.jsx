@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import Devilred10 from "../assets/Devilred10.png";
+
 //red series images//
 
 import Red10PDF from "../assets/newpdf/Red10new.pdf";
@@ -53,14 +53,12 @@ import fopen8 from "../assets/f8/fopen8.JPG";
 import f458 from "../assets/f8/f458.jpg";
 import fs8 from "../assets/f8/fs8.JPG";
 import ftop8 from "../assets/f8/ftop8.JPG";
-import fup8 from "../assets/f8/fup8.JPG";
+
 //f10//
 import ff10 from "../assets/f10/ff10.jpg";
 import fopen10 from "../assets/f10/fopen10.JPG";
 import fs10 from "../assets/f10/fs10.jpg";
-import fss10 from "../assets/f10/fss10.JPG";
 import f410 from "../assets/f10/f410.jpg";
-import fni10 from "../assets/f10/fni10.JPG";
 import fdoun10 from "../assets/f10/fdoun10.JPG";
 
 //f12 images//
@@ -78,8 +76,6 @@ import ff15 from "../assets/f15/ff15.jpg";
 import fb15 from "../assets/f15/fb15.jpg";
 import fd15 from "../assets/f15/fd15.JPG";
 import fopen15 from "../assets/f15/fopen15.JPG";
-import fs15 from "../assets/f15/fs15.JPG";
-import ftop15 from "../assets/f15/ftop15.JPG";
 import f415 from "../assets/f15/f415.jpg";
 
 import ft1002 from "../assets/tip1002/ft1002.jpg";

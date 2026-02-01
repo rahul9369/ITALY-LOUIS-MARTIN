@@ -2,8 +2,6 @@ import React from "react";
 import Amplifiers from "../../assets/Amplifiers.jpg";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
-import DT400 from "../../assets/DT400.jpg";
-
 
 import df200 from "../../assets/d200/df200.JPG";
 import fd4200 from "../../assets/d4200/fd4200.jpg";
@@ -57,10 +55,10 @@ const ProductCard = ({ product }) => {
         alt={product.model}
         className="w-full h-[150px] object-contain rounded-lg cursor-pointer"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() =>
           navigate(
-            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -93,7 +91,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

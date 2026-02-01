@@ -2,9 +2,7 @@ import React from "react";
 import Amplifiers from "../../assets/Amplifiers.jpg";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
-import DT400 from "../../assets/DT400.jpg";
 
-import df200 from "../../assets/d200/df200.JPG";
 import DSP26 from "../../assets/dsp/dl2.jpg";
 // import DSP48 from "../../assets/dsp/front.jpg";
 

@@ -2,7 +2,6 @@ import React from "react";
 import Amplifiers from "../../assets/Amplifiers.jpg";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
-import PL4 from "../../assets/PL4.jpg";
 
 import plf4 from "../../assets/pl4/plf4.jpg";
 import plf42 from "../../assets/pl4/plf42.jpg";
@@ -27,7 +26,7 @@ const products = [
     response: " ＞1000(1 kHz @ 8 Ω)",
     weight: "11kg",
   },
-   {
+  {
     img: plf42,
     title: "PL Series",
     model: "PL 1004",
@@ -36,7 +35,7 @@ const products = [
     response: " ＞3000(1 kHz @ 8 Ω)",
     weight: "10kg",
   },
-   {
+  {
     img: plf405,
     title: "PL Series",
     model: "PL 1504",
@@ -54,12 +53,12 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-       className="w-full h-[200px] object-contain rounded-lg cursor-pointer"
+        className="w-full h-[200px] object-contain rounded-lg cursor-pointer"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() =>
           navigate(
-            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -92,7 +91,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/electronics/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

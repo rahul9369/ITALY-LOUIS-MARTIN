@@ -2,12 +2,6 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
 
-import Q50 from "../assets/Q50.jpg";
-import TIP from "../assets/TIPA.jpg";
-import S218 from "../assets/S218.png";
-import S18 from "../assets/S18.png";
-import TTA from "../assets/TTA.jpg";
-import subwooferImg from "../assets/subwoofer218.png";
 import Famous210N from "../assets/newpdf/Famous210New.pdf";
 import Cox112 from "../assets/newpdf/COX12new.pdf";
 import Q50a from "../assets/newpdf/Q50new.pdf";
@@ -34,7 +28,6 @@ import qback from "../assets/q50/qback.JPG";
 import qnos from "../assets/q50/qnos.JPG";
 import qs from "../assets/q50/qs.JPG";
 import qss from "../assets/q50/qss.JPG";
-import qtop from "../assets/q50/qtop.JPG";
 import q50layer from "../assets/q50/q50layer.jpg";
 //q60//
 import q60front from "../assets/q60/q60front.JPG";
@@ -43,14 +36,13 @@ import q60back from "../assets/q60/q60back.jpg";
 import q60j from "../assets/q60/q60j.JPG";
 import q60ss from "../assets/q60/q60ss.JPG";
 import q60layer from "../assets/q60/q60layer.jpg";
-// import q60top from "../assets/q60/q60top.JPG";
+
 //q70//
 import q70front from "../assets/q70/q70front.JPG";
 import q70j from "../assets/q70/q70j.JPG";
 import q70s from "../assets/q70/q70s.JPG";
 import q70ss from "../assets/q70/q70ss.JPG";
 import q70back from "../assets/q70/q70back.JPG";
-import q70top from "../assets/q70/q70top.JPG";
 import q70layer from "../assets/q70/q70layer.jpg";
 //q80//
 import q80front from "../assets/q80/q80f.JPG";
@@ -58,7 +50,6 @@ import q80s from "../assets/q80/q80s.JPG";
 import q80b from "../assets/q80/q80b.jpg";
 import q80ss from "../assets/q80/q80ss.JPG";
 import q80j from "../assets/q80/q80j.JPG";
-import q80top from "../assets/q80/q80t.JPG";
 import q80layer from "../assets/q80/q80layer.jpg";
 
 import ft1002 from "../assets/tip1002/ft1002.jpg";
@@ -70,12 +61,6 @@ import ft800 from "../assets/tta300/ft800.jpg";
 
 import redfront from "../assets/red10/redfront.JPG";
 import ft1003 from "../assets/tip1002/ft1003.jpg";
-
-// import cox12 from "../assets/coximg/coxunder.jpg";
-// import coxback1 from "../assets/coxback1.jpg";
-// import coxback2 from "../assets/coxback2.jpg";
-// import coxfront from "../assets/coxfront.jpg";
-// import coxside from "../assets/coxside.jpg";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -661,7 +646,7 @@ const ProductDetail = () => {
                     alt={item.name}
                     loading="eager"
                     decoding="async"
-                    className="absolute top-0 left-0 w-full h-[95%] object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                    className="absolute top-0 left-0 w-full h-[100%] object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
                   />
                 </div>
 
