@@ -23,57 +23,63 @@ const CompanyNews = () => {
   ];
 
   return (
-    <section className="bg-white text-black py-20 px-4">
+    <section className="bg-white text-black py-14 sm:py-20 w-full">
       {/* Heading */}
-      <div className="max-w-7xl mx-auto mb-14">
-        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
+      <div className="w-[92%] sm:w-[90%] lg:w-[85%] mx-auto mb-10 sm:mb-14">
+        <h2 className="text-3xl sm:text-5xl font-bold tracking-tight">
           Company News
         </h2>
-        <p className="text-gray-400 mt-3 max-w-xl">
+        <p className="text-gray-400 mt-3 max-w-xl text-sm sm:text-base">
           Latest announcements, global presence & company milestones
         </p>
       </div>
 
       {/* Layout */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div className="w-[92%] sm:w-[90%] lg:w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10">
         {/* Featured News */}
         <div className="lg:col-span-2 relative group rounded-2xl overflow-hidden">
           <img
             src={featured.img}
-            className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-700"
-            alt=""
+            className="w-full h-[260px] sm:h-[360px] lg:h-[420px]
+            object-cover transition-transform duration-700 group-hover:scale-105"
+            alt="featured"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
-          <div className="absolute bottom-0 p-8">
-            <span className="text-sm uppercase tracking-widest text-gray-300">
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+
+          <div className="absolute bottom-0 p-5 sm:p-8">
+            <span className="text-xs sm:text-sm uppercase tracking-widest text-gray-300">
               Featured
             </span>
-            <h3 className="text-2xl sm:text-3xl font-semibold mt-3">
+
+            <h3 className="text-lg sm:text-2xl lg:text-3xl font-semibold mt-2 sm:mt-3 text-white">
               {featured.title}
             </h3>
-            <p className="text-gray-300 mt-4 max-w-xl leading-relaxed">
+
+            <p className="text-gray-300 mt-3 sm:mt-4 max-w-xl leading-relaxed text-sm sm:text-base line-clamp-4">
               {featured.desc}
             </p>
           </div>
         </div>
 
         {/* Side News */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6 sm:gap-8">
           {news.map((item, index) => (
             <div
               key={index}
-              className="group flex gap-4 items-start border-b border-white/10 pb-6">
+              className="group flex gap-4 items-start border-b border-gray-200 pb-5 last:border-none">
               <img
                 src={item.img}
-                className="w-24 h-24 object-cover rounded-lg group-hover:scale-105 transition"
-                alt=""
+                className="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-lg
+                transition-transform duration-300 group-hover:scale-105"
+                alt="news"
               />
 
               <div>
-                <h4 className="font-semibold text-lg leading-snug group-hover:text-blue-400 transition">
+                <h4 className="font-semibold text-base sm:text-lg leading-snug group-hover:text-blue-500 transition">
                   {item.title}
                 </h4>
+
                 <p className="text-gray-400 text-sm mt-2 line-clamp-3">
                   {item.desc}
                 </p>
