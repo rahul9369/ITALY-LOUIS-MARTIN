@@ -362,58 +362,60 @@ const ProductDetail = () => {
       <div className="w-[90%] mx-auto mt-4">
         {/* Product Image and Title */}
         {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-[65%_35%] gap-12 mt-4 w-[90%] ">
           {/* <img
             src={product.img}
             alt={product.model}
             className="w-full h-auto md:h-[400px] object-cover rounded-lg"
           /> */}
-          <div>
-            <div className="relative ">
+          <div className="bg-white w-full ">
+            {/* Image Viewer */}
+            <div className="relative bg-gray-50 rounded-xl flex items-center justify-center h-[360px] overflow-hidden">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}
                 alt={`${product.model} - ${currentImgIndex + 1}`}
-                className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
-                loading="eager"
-                decoding="async"
+                className="w-[85%] max-h-[350px] object-contain cursor-zoom-in transition-transform duration-300 hover:scale-105"
                 onClick={() => setIsModalOpen(true)}
               />
 
-              {/* Left Button */}
+              {/* Left Arrow */}
               {images.length > 1 && (
                 <button
                   onClick={prevImage}
-                  className="absolute top-1/2 left-[-10px] transform -translate-y-1/2  cursor-pointer bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
-                  <ChevronLeft className="text-black" size={40} />
+                  className="absolute left-3 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 hover:bg-gray-100 transition">
+                  <ChevronLeft size={26} className="text-gray-700" />
                 </button>
               )}
 
-              {/* Right Button */}
+              {/* Right Arrow */}
               {images.length > 1 && (
                 <button
                   onClick={nextImage}
-                  className="absolute top-1/2 right-[-10px] transform -translate-y-1/2 cursor-pointer  bg-opacity-50 text-white px-3 py-3 rounded-full hover:bg-opacity-80">
-                  <ChevronRight className="text-black" size={40} />
+                  className="absolute right-3 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 hover:bg-gray-100 transition">
+                  <ChevronRight size={26} className="text-gray-700" />
                 </button>
               )}
             </div>
 
-            {/* Thumbnail Images */}
+            {/* Thumbnails */}
             {images.length > 1 && (
-              <div className="flex justify-center space-x-6 mt-4">
+              <div className="flex justify-center gap-4 mt-5 flex-wrap">
                 {images.map((img, index) => (
-                  <img
+                  <div
                     key={index}
-                    src={img}
-                    alt={`Thumbnail ${index + 1}`}
                     onClick={() => setCurrentImgIndex(index)}
-                    className={`sm:w-28 w-18 sm:h-30 object-contain rounded-md cursor-pointer border ${
+                    className={`cursor-pointer p-1 rounded-lg transition-all ${
                       index === currentImgIndex
-                        ? "border-blue-500"
-                        : "border-transparent"
-                    }`}
-                  />
+                        ? "ring-2 ring-blue-500"
+                        : "hover:ring-2 hover:ring-gray-300"
+                    }`}>
+                    <img
+                      src={img}
+                      alt={`Thumbnail ${index + 1}`}
+                      className="w-20 h-20 object-contain bg-gray-50 rounded-md"
+                    />
+                  </div>
                 ))}
               </div>
             )}
@@ -436,26 +438,24 @@ const ProductDetail = () => {
             </div>
           )}
 
-          <div>
-            <div>
-              <h1 className="text-2xl md:text-3xl font-bold">
-                {product.title} - {product.model}
-              </h1>
-              <div className="w-full ">
-                <p className="text-gray-600 text-[12px] md:text-[15px] mt-2 text-justify">
-                  {product.description}
-                </p>
-              </div>
-              <div className="mt-6">
-                <h2 className="text-2xl font-bold">Applications</h2>
-                <ul className="list-disc list-inside text-gray-600 mt-2">
-                  {product.application.map((app, index) => (
-                    <li className="text-[12px] lg:text-[15px] my-2" key={index}>
-                      {app}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <div className="">
+            <h1 className="text-2xl md:text-3xl font-bold">
+              {product.title} - {product.model}
+            </h1>
+            <div className="w-full ">
+              <p className="text-gray-600 text-[12px] md:text-[15px]  mt-2 text-justify">
+                {product.description}
+              </p>
+            </div>
+            <div className="mt-6">
+              <h2 className="text-xl font-bold">Applications</h2>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                {product.application.map((app, index) => (
+                  <li className="text-[12px] md:text-[15px]  my-2" key={index}>
+                    {app}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

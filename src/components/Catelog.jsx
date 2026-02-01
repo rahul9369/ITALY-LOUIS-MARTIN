@@ -1,82 +1,67 @@
 import React from "react";
 import LOUISMARTINCATALOGUE from "../assets/newpdf/LouisMartinCataloguenew.pdf";
-import pointsource from "../assets/imagecatelog.jpg";
-import logo from "../assets/Logo.png";
 
-function Catelog() {
-  const handleOpenPDF = () => {
-    // Open PDF in a new window with download button
+function Catalog() {
+  const openPDFWithDownload = () => {
     const pdfWindow = window.open("", "_blank");
+
     pdfWindow.document.write(`
+      <!DOCTYPE html>
       <html>
         <head>
-          <title>LOUIS MARTIN CATALOGUE</title>
-          <link rel="icon" type="image/png" href="/logo.png">
+          <title>Louis Martin Catalogue</title>
           <style>
-            body { margin: 0; padding: 0px 0px; font-family: Arial, sans-serif; }
-            .header { 
-              position: fixed; 
-              top: 0; 
-              left: 0; 
-              right: 0; 
-              background: #9ca3af; 
-              padding: 1px 20px; 
-              box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-              z-index: 1000;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
+            body {
+              margin: 0;
+              font-family: Arial, sans-serif;
+            }
+            .header {
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
               height: 60px;
-            }
-            .logo-container {
+              background: #ffffff;
+              border-bottom: 1px solid #e5e7eb;
               display: flex;
+              justify-content: flex-end;
               align-items: center;
-              gap: 10px;
-            }
-            .logo {
-              height: 40px;
-              width: auto;
-            }
-            .header-title {
-              font-size: 1.2rem;
-              font-weight: 600;
-              color: #333;
+              padding: 0 20px;
+              z-index: 1000;
             }
             .download-btn {
-              background:	#eab308;
+              background: #dc2626;
               color: white;
               border: none;
               padding: 8px 16px;
               border-radius: 6px;
-              cursor: pointer;
+              font-size: 14px;
               font-weight: 600;
-              transition: background 0.3s;
+              cursor: pointer;
             }
             .download-btn:hover {
-              background:#ca8a04;
+              background: #b91c1c;
             }
             iframe {
               margin-top: 60px;
               width: 100%;
-              height: calc(100vh - 6px);
+              height: calc(100vh - 60px);
               border: none;
             }
           </style>
         </head>
         <body>
           <div class="header">
-            <div class="logo-container">
-              <img src="${logo}" alt="Louis Martin Logo" class="logo">
-              <span class="header-title">LOUIS MARTIN CATALOGUE</span>
-            </div>
-            <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
+            <button class="download-btn" onclick="downloadPDF()">Download</button>
           </div>
-          <iframe src="${LOUISMARTINCATALOGUE}#page=1" type="application/pdf"></iframe>
+
+          <iframe src="${LOUISMARTINCATALOGUE}" type="application/pdf"></iframe>
+
           <script>
             function downloadPDF() {
               const link = document.createElement('a');
-              link.href = '${LOUISMARTINCATALOGUE}#page=1';
-              link.download = 'LOUIS_MARTIN_Catalogue.pdf';
+              link.href = '${LOUISMARTINCATALOGUE}';
+              link.download = 'Louis_Martin_Catalogue.pdf';
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);
@@ -88,48 +73,18 @@ function Catelog() {
   };
 
   return (
-    <div className="relative w-[95%] mx-auto h-[120px] sm:h-[250px] md:h-[300px] rounded-md overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${pointsource})`,
-        }}>
-        {/* Gradient Overlay for Fade Effect */}
-        <div className="absolute inset-0 "></div>
-      </div>
+    <div className="w-full py-5 bg-gray-100 flex flex-col items-center ">
+      <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+        Louis Martin Product Catalogue
+      </h2>
 
-      {/* Content */}
-      <div className="relative z-10 flex items-center justify-center p-4 sm:p-6 md:p-8 h-full">
-        <div className="max-w-2xl text-center text-white">
-          {/* <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 md:mb-6">LOUIS MARTIN Catalog</h1> */}
-          {/* <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 md:mb-8 px-2">
-            Explore our exclusive collection of premium products.
-           
-          </p> */}
-          <button
-            onClick={handleOpenPDF}
-            className="
-  bg-transparent 
-  border border-white/40
-  mt-16 sm:mt-40 
-  cursor-pointer 
-  hover:bg-red-800 hover:border-red-800
-  text-white 
-  px-6 sm:px-8 
-  py-1 sm:py-4 
-  rounded-lg 
-  text-[12px] sm:text-xl 
-  font-semibold 
-  transition-all duration-300 
-  transform hover:scale-105
-">
-            Catalogue
-          </button>
-        </div>
-      </div>
+      <button
+        onClick={openPDFWithDownload}
+        className="bg-red-700 hover:bg-red-800 text-white px-8 py-3 rounded-md font-medium transition">
+        Open Catalogue
+      </button>
     </div>
   );
 }
 
-export default Catelog;
+export default Catalog;

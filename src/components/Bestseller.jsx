@@ -1,147 +1,89 @@
-import { useState, useEffect, useRef } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Eavpl from "../assets/eavPl.png";
 import update1 from "../assets/news/update.jpg";
 import update2 from "../assets/news/update1.jpg";
-import update3 from "../assets/news/upadate3.jpg";
 
-const BestSeller = () => {
-  const products = [
-    {
-      img: Eavpl,
-      title:
-        "Authorised Distributor for India Market: Eminent Audio Visual Pvt Ltd",
-      desc: "After more than a year of understanding and communication, Eminent Audio Visual Pvt Ltd has conducted rigorous testing on our company's products and achieved satisfactory results. Both parties have decided that Eminent Audio Visual Pvt Ltd will become the Louis Martin Audio Authorized Distributor for India Market, covering regions such as Nepal and Pakistan.",
-    },
+const CompanyNews = () => {
+  const featured = {
+    img: Eavpl,
+    title: "Louis Martin Audio Appoints Eminent AV as India Distributor",
+    desc: "After extensive testing and long-term evaluation, Eminent Audio Visual Pvt Ltd has been officially appointed as the authorized distributor for India, Nepal, and Pakistan.",
+  };
+
+  const news = [
     {
       img: update1,
-      title: "ASIA SALES PRESIDENT",
-      desc: "In order to develop its business in the Asian region, the company has specially appointed CUI as the Sales President of the Asian region. CUI has been engaged in the audio industry for 20 years and has a good understanding of the Asian market. We hope that under his leadership, we can better serve customers in the Asian market and achieve better sales results.",
+      title: "Asia Sales President Appointed",
+      desc: "CUI brings 20+ years of audio industry experience to expand Asian markets.",
     },
     {
       img: update2,
       title: "GET SHOW 2023",
-      desc: "Join us at the upcoming International Sound Expo for live demos and networking",
+      desc: "Live demos, professional networking, and next-gen audio technology.",
     },
-    // {
-    //   img: Eavpl,
-    //   title:
-    //     "Authorised Distributor for India Market: Emident Audio Visual Pvt Ltd",
-    //   desc: "After more than a year of understanding and communication, Emident Audio Visual Pvt Ltd has conducted rigorous testing on our company's products and achieved satisfactory results. Both parties have decided that Emident Audio Visual Pvt Ltd will become the Louis Martin Audio Authorized Distributor for India Market, covering regions such as Nepal and Pakistan.",
-    // },
-    // {
-    //   img: update1,
-    //   title: "ASIA SALES PRESIDENT",
-    //   desc: "In order to develop its business in the Asian region, the company has specially appointed CUI as the Sales President of the Asian region. CUI has been engaged in the audio industry for 20 years and has a good understanding of the Asian market. We hope that under his leadership, we can better serve customers in the Asian market and achieve better sales results.",
-    // },
-    // {
-    //   img: update2,
-    //   title: "GET SHOW 2023",
-    //   desc: "Join us at the upcoming International Sound Expo for live demos and networking",
-    // },
   ];
 
-  const carouselRef = useRef(null);
-  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
-  const [expandedIndex, setExpandedIndex] = useState(null); // Tracks which product is expanded
-
-  // Auto-scroll effect
-  // useEffect(() => {
-  //   if (!isAutoScrolling) return;
-
-  //   const interval = setInterval(() => {
-  //     if (carouselRef.current) {
-  //       carouselRef.current.scrollBy({ left: 1, behavior: "smooth" });
-
-  //       // Reset to start when reaching the end
-  //       if (
-  //         carouselRef.current.scrollLeft >=
-  //         carouselRef.current.scrollWidth / 2
-  //       ) {
-  //         carouselRef.current.scrollLeft = 0;
-  //       }
-  //     }
-  //   }, 1); // Smooth scrolling speed
-
-  //   return () => clearInterval(interval);
-  // }, [isAutoScrolling]);
-
-  // Manual scrolling
-  const scrollLeft = () => {
-    setIsAutoScrolling(false);
-    carouselRef.current?.scrollBy({ left: -300, behavior: "smooth" });
-    setTimeout(() => setIsAutoScrolling(true), 5000);
-  };
-
-  const scrollRight = () => {
-    setIsAutoScrolling(false);
-    carouselRef.current?.scrollBy({ left: 300, behavior: "smooth" });
-    setTimeout(() => setIsAutoScrolling(true), 5000);
-  };
-
   return (
-    <div className="py-12 sm:px-6 w-full bg-gray-50 flex flex-col items-center relative">
-      {/* Section Title */}
-      <div className="w-[90%] text-center">
-        <h2 className="sm:text-5xl text-2xl font-bold text-gray-900 flex items-center justify-center">
-          <span className="w-1.5 h-6 mr-2"></span> Company Latest News
+    <section className="bg-white text-black py-20 px-4">
+      {/* Heading */}
+      <div className="max-w-7xl mx-auto mb-14">
+        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
+          Company News
         </h2>
+        <p className="text-gray-400 mt-3 max-w-xl">
+          Latest announcements, global presence & company milestones
+        </p>
       </div>
 
-      {/* Carousel Container */}
-      <div className="relative w-full overflow-hidden mt-6">
-        {/* Left Button */}
-        <button
-          onClick={scrollLeft}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-md z-10">
-          <FaChevronLeft className="sm:w-4 sm:h-4 w-2 h-2" />
-        </button>
+      {/* Layout */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
+        {/* Featured News */}
+        <div className="lg:col-span-2 relative group rounded-2xl overflow-hidden">
+          <img
+            src={featured.img}
+            className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-700"
+            alt=""
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
-        {/* Carousel Track */}
-        <div
-          ref={carouselRef}
-          className="overflow-hidden whitespace-nowrap flex">
-          {[...products, ...products].map((product, index) => {
-            const isExpanded = expandedIndex === index;
-            const words = product.desc.split(" ");
-            const shortText = words.slice(0, 20).join(" ");
-
-            return (
-              <div
-                key={index}
-                className="text-center shadow-md m-2 sm:p-6 p-2 w-[95%] rounded-lg border border-gray-200 hover:shadow-lg transition-all flex flex-col items-center">
-                {/* Product Image */}
-                <img
-                  src={product.img}
-                  alt="Company News Image"
-                  className="w-full h-60 object-fit bg-gray-800 rounded-md"
-                />
-                <p className="text-black font-bold h-10 mt-4 text-[12px] sm:text-[15px] text-justify break-words whitespace-normal w-[300px] sm:w-[360px] px-4">
-                  {product.title}
-                </p>
-
-                <p className="text-black mt-4 text-justify text-[12px] sm:text-[15px] break-words whitespace-normal sm:w-[350px] w-[250px] mx-auto">
-                  {isExpanded ? product.desc : `${shortText}...`}
-                  <span
-                    className="text-blue-500 font-semibold ml-1 cursor-pointer"
-                    onClick={() => setExpandedIndex(isExpanded ? null : index)}>
-                    {isExpanded ? "Less" : "More"}
-                  </span>
-                </p>
-              </div>
-            );
-          })}
+          <div className="absolute bottom-0 p-8">
+            <span className="text-sm uppercase tracking-widest text-gray-300">
+              Featured
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-semibold mt-3">
+              {featured.title}
+            </h3>
+            <p className="text-gray-300 mt-4 max-w-xl leading-relaxed">
+              {featured.desc}
+            </p>
+          </div>
         </div>
 
-        {/* Right Button */}
-        <button
-          onClick={scrollRight}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-md z-10">
-          <FaChevronRight className="sm:w-4 sm:h-4 w-2 h-2" />
-        </button>
+        {/* Side News */}
+        <div className="flex flex-col gap-8">
+          {news.map((item, index) => (
+            <div
+              key={index}
+              className="group flex gap-4 items-start border-b border-white/10 pb-6">
+              <img
+                src={item.img}
+                className="w-24 h-24 object-cover rounded-lg group-hover:scale-105 transition"
+                alt=""
+              />
+
+              <div>
+                <h4 className="font-semibold text-lg leading-snug group-hover:text-blue-400 transition">
+                  {item.title}
+                </h4>
+                <p className="text-gray-400 text-sm mt-2 line-clamp-3">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default BestSeller;
+export default CompanyNews;

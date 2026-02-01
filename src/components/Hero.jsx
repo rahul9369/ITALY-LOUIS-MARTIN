@@ -22,7 +22,7 @@ function Hero() {
       </Helmet>
       <Carousal />
       <Categories />
-      <Catelog />
+      {/* <Catelog /> */}
       <BestSeller />
       {/* <LunchItems /> */}
       <Footer />

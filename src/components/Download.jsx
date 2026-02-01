@@ -1,6 +1,8 @@
 import React from "react";
 import Footer from "./Footer";
 import Download from "../assets/Download.png";
+import Catelog from "./Catelog";
+
 import Famous210pdf from "../assets/newpdf/Famous210New.pdf";
 import Q50pdf from "../assets/newpdf/Q50new.pdf";
 import Q60pdf from "../assets/newpdf/Q60new.pdf";
@@ -225,6 +227,7 @@ const DownloadPage = () => {
         alt="Download Banner"
         className="w-full h-[90px] sm:h-[250px]"
       />
+      <Catelog />
 
       <div className="w-full mx-auto  shadow-lg rounded-lg p-6">
         <h1 className="text-2xl  text-center font-semibold border-b pb-2 text-gray-800">
@@ -248,7 +251,7 @@ const DownloadPage = () => {
               }`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white rounded-md text-sm sm:text-base shadow hover:shadow-lg transition">
+              className="flex items-center space-x-2 px-4 py-2 bg-red-700 hover:bg-red-800 text-white rounded-md text-sm sm:text-base shadow hover:shadow-lg transition">
               <DownloadIcon className="w-5 h-5" />
               <span className="text-[12px]"> Download</span>
             </a>
