@@ -36,6 +36,7 @@ import Kseries from "./components/ColumnSpeaker/Kseries";
 import DSseries from "./components/CommercialSeries/Dsseries";
 import PDFViewer from "./components/PdfViewer";
 import DSPSeries from "./components/ElectronicSeries/Dspseries";
+import NewsDetails from "./components/NewsDetails";
 
 <img loading="lazy" src="/images/product.webp" />;
 
@@ -166,6 +167,11 @@ const appRouter = createBrowserRouter([
         path: "/column/:model",
         element: <ColumnDetails />,
       },
+      {
+        path: "/news/:id",
+        element: <NewsDetails />,
+      },
+
       {
         path: "/plastic/:model",
         element: <Plasticspeaker />,

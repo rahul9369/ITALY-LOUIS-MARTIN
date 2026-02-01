@@ -71,7 +71,7 @@ const Carousel = () => {
       {/* <div className="absolute w-[90%] inset-0 bg-black/40 z-10" /> */}
 
       {/* CONTENT */}
-      <div className="absolute inset-0 z-20 flex flex-col items-center w-[90%] justify-center text-center ">
+      <div className="absolute inset-0 z-20 flex flex-col items-center  justify-center text-center ">
         <h1 className="text-white text-2xl sm:text-4xl md:text-6xl font-bold drop-shadow-2xl">
           {slide.title}
         </h1>
