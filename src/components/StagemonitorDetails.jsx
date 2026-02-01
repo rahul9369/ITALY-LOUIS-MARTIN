@@ -439,7 +439,7 @@ const ProductDetail = () => {
           /> */}
           <div className="bg-white w-full ">
             {/* Image Viewer */}
-            <div className="relative w-full bg-gray-50 rounded-xl flex items-center justify-center h-[200px] sm:h-[360px] overflow-hidden">
+            <div className="relative w-full bg-gray-50 rounded-xl flex items-center justify-center h-[300px] sm:h-[360px] overflow-hidden">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}
@@ -502,7 +502,7 @@ const ProductDetail = () => {
                     <img
                       src={img}
                       alt={`Thumbnail ${index + 1}`}
-                      className="w-10 h-12 sm:w-18 sm:h-18 md:w-20 md:h-20 
+                      className="w-6 h-12 sm:w-18 sm:h-18 md:w-20 md:h-20 
                      object-contain bg-gray-50 rounded-full"
                     />
                   </div>
@@ -658,7 +658,7 @@ const ProductDetail = () => {
                 onClick={() => window.scrollTo(0, 0)}
                 key={index}
                 className="group block  rounded-md  p-2 text-center overflow-hidden">
-                <div className="relative w-full h-60 overflow-hidden rounded-sm">
+                <div className="relative w-full h-40 sm:h-60 overflow-hidden rounded-sm">
                   <img
                     src={item.img}
                     alt={item.name}
@@ -666,7 +666,7 @@ const ProductDetail = () => {
                   />
                 </div>
 
-                <p className="mt-2 hover:text-orange-400 text-md font-medium">
+                <p className="sm:mt-2 hover:text-orange-400 text-md font-medium">
                   {item.name}
                 </p>
               </Link>

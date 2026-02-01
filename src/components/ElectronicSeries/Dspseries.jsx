@@ -3,6 +3,7 @@ import Amplifiers from "../../assets/Amplifiers.jpg";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 
+import dsp48 from "../../assets/dsp/front.JPG";
 import DSP26 from "../../assets/dsp/dl2.jpg";
 // import DSP48 from "../../assets/dsp/front.jpg";
 
@@ -17,7 +18,7 @@ const products = [
     weight: "2.5kg",
   },
   {
-    img: "",
+    img: dsp48,
     title: "DSP",
     model: "DL 4.8",
     description: "DIGITAL LOUDSPEAKER MANAGEMENT SYSTEM",

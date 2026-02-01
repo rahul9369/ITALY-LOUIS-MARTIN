@@ -510,7 +510,7 @@ const ProductDetail = () => {
                     <img
                       src={img}
                       alt={`Thumbnail ${index + 1}`}
-                      className="w-10 h-12 sm:w-18 sm:h-18 md:w-20 md:h-20 
+                      className="w-8 h-12 sm:w-18 sm:h-18 md:w-20 md:h-20 
                      object-contain bg-gray-50 rounded-full"
                     />
                   </div>
@@ -658,14 +658,14 @@ const ProductDetail = () => {
             Related Product
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-4 sm:space-x-8 mt-5 justify-center">
+          <div className="grid grid-cols-1  sm:grid-cols-4 sm:space-x-8 mt-5 justify-center">
             {product.relatedProducts.map((item, index) => (
               <Link
                 to={item.path}
                 onClick={() => window.scrollTo(0, 0)}
                 key={index}
-                className="group w-90 block rounded-md py-2 px-6 text-center overflow-hidden">
-                <div className="relative w-full h-60 overflow-hidden rounded-sm">
+                className="group  w-90 block rounded-md py-2 px-6 text-center overflow-hidden">
+                <div className="relative w-full h-40 sm:h-60 overflow-hidden rounded-sm">
                   <img
                     src={item.img}
                     alt={item.name}
@@ -675,7 +675,7 @@ const ProductDetail = () => {
                   />
                 </div>
 
-                <p className="mt-2 hover:text-orange-400 text-md font-medium">
+                <p className="sm:mt-2 hover:text-orange-400 text-md font-medium">
                   {item.name}
                 </p>
               </Link>

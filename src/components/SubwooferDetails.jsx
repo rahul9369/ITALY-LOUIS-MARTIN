@@ -233,7 +233,7 @@ const products = [
   },
 
   {
-    img: [sf18, sb18, ss18, stop18, s418, sop18],
+    img: [sf18, sb18, ss18, stop18, sop18],
     title: "Subwoofer",
     model: "S18",
     description:
@@ -287,7 +287,7 @@ const products = [
   },
 
   {
-    img: [sf218, sb218, ss218, s4218, sop218, sdou218],
+    img: [sf218, sb218, ss218, s4218, sop218],
     title: "Subwoofer",
     model: "S218",
     description:
@@ -401,7 +401,7 @@ const ProductDetail = () => {
           /> */}
           <div className="bg-white w-full ">
             {/* Image Viewer */}
-            <div className="relative w-full bg-gray-50 rounded-xl flex items-center justify-center h-[200px] sm:h-[360px] overflow-hidden">
+            <div className="relative w-full bg-gray-50 rounded-xl flex items-center justify-center h-[300px] sm:h-[360px] overflow-hidden">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}
@@ -451,7 +451,7 @@ const ProductDetail = () => {
 
             {/* Thumbnails */}
             {images.length > 1 && (
-              <div className="flex justify-center gap-4 mt-5 flex-wrap">
+              <div className="flex justify-center gap-3 mt-5 overflow-hidden">
                 {images.map((img, index) => (
                   <div
                     key={index}
@@ -464,8 +464,8 @@ const ProductDetail = () => {
                     <img
                       src={img}
                       alt={`Thumbnail ${index + 1}`}
-                      className="w-10 h-12 sm:w-18 sm:h-18 md:w-20 md:h-20 
-                     object-contain bg-gray-50 rounded-full"
+                      className="w-8 h-14 sm:w-14 sm:h-14 md:w-16 md:h-16 
+          object-contain bg-gray-50 rounded-full"
                     />
                   </div>
                 ))}
@@ -474,13 +474,16 @@ const ProductDetail = () => {
           </div>
 
           {isModalOpen && (
-            <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-              <div className="relative  w-full p-4">
-                <button
-                  onClick={() => setIsModalOpen(false)}
-                  className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400">
-                  &times;
-                </button>
+            <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+              {/* Close Button - Always Top Right */}
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="fixed top-4 right-4 z-[999] text-white text-4xl font-bold hover:text-red-400">
+                &times;
+              </button>
+
+              {/* Image Container */}
+              <div className="relative w-full max-w-5xl p-4 flex justify-center">
                 <img
                   src={images[currentImgIndex]}
                   alt="Enlarged"
@@ -612,7 +615,7 @@ const ProductDetail = () => {
                 onClick={() => window.scrollTo(0, 0)}
                 key={index}
                 className="group block  rounded-md  p-2 text-center overflow-hidden">
-                <div className="relative w-full h-60 overflow-hidden rounded-sm">
+                <div className="relative w-full h-40 sm:h-60 overflow-hidden rounded-sm">
                   <img
                     src={item.img}
                     alt={item.name}
@@ -620,7 +623,7 @@ const ProductDetail = () => {
                   />
                 </div>
 
-                <p className="mt-2 hover:text-orange-400 text-md font-medium">
+                <p className="sm:mt-2 hover:text-orange-400 text-md font-medium">
                   {item.name}
                 </p>
               </Link>

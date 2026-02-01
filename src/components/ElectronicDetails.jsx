@@ -17,6 +17,17 @@ import pl423 from "../assets/pl4/pl423.jpg";
 import plf42 from "../assets/pl4/plf42.jpg";
 import plf405 from "../assets/pl4/plf405.jpg";
 
+import dsp26 from "../assets/dsp/dl2.jpg";
+import dsp26b from "../assets/dsp/dl26b.jpg";
+import dsp26bottom from "../assets/dsp/bottomdsp.jpg";
+// import dsp26bottom from "../assets/dsp/dl26b.jpg";
+// import dsp26b from "../assets/dsp/dl26b.jpg";
+
+import dsp48 from "../assets/dsp/front.jpg";
+import dsp48side from "../assets/dsp/dspside.jpg";
+import dsp48back from "../assets/dsp/dl48back.jpg";
+import dsp48top from "../assets/dsp/dsp48top.jpg";
+
 //d200  d300//
 import df200 from "../assets/d200/df200.JPG";
 import db200 from "../assets/d200/db200.JPG";
@@ -996,7 +1007,7 @@ const products = [
     ],
   },
   {
-    img: [],
+    img: [dsp26, dsp26b, dsp48side, dsp26bottom],
     title: "DSP ",
     model: "DL 2.6",
     description:
@@ -1045,7 +1056,7 @@ const products = [
     ],
   },
   {
-    img: [],
+    img: [dsp48, dsp48side, dsp48top, dsp48back],
     title: "DSP ",
     model: "DL 4.8",
     description:
@@ -1148,7 +1159,7 @@ const ProductDetail = () => {
           {product.title} - {product.model}
         </h1>
         {/* Product Image and Title */}
-        <div className="grid grid-cols-1 mx-auto md:mx-0 md:grid-cols-[65%_35%] gap-12 mt-4 w-[90%] ">
+        <div className="grid grid-cols-1 mx-auto md:mx-0 md:grid-cols-[65%_35%] gap-12 mt-4 w-[95%] ">
           {/* <img
             src={product.img}
             alt={product.model}
@@ -1229,13 +1240,16 @@ const ProductDetail = () => {
           </div>
 
           {isModalOpen && (
-            <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-              <div className="relative  w-full p-4">
-                <button
-                  onClick={() => setIsModalOpen(false)}
-                  className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400">
-                  &times;
-                </button>
+            <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+              {/* Close Button - Always Top Right */}
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="fixed top-4 right-4 z-[999] text-white text-4xl font-bold hover:text-red-400">
+                &times;
+              </button>
+
+              {/* Image Container */}
+              <div className="relative w-full max-w-5xl p-4 flex justify-center">
                 <img
                   src={images[currentImgIndex]}
                   alt="Enlarged"
@@ -1391,22 +1405,22 @@ const ProductDetail = () => {
             Related Product
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-4 sm:space-x-8 mt-5 justify-center">
+          <div className="grid grid-cols-1 w-[90%] sm:grid-cols-4 gap-4 sm:gap-8 mt-5 place-items-center sm:px-3">
             {product.relatedProducts.map((item, index) => (
               <Link
                 to={item.path}
                 onClick={() => window.scrollTo(0, 0)}
                 key={index}
-                className="group w-60 block rounded-md p-2 text-center overflow-hidden">
-                <div className="relative w-full h-60 overflow-hidden rounded-sm">
+                className="group w-full max-w-[160px] sm:max-w-[240px] block rounded-md p-2 text-center overflow-hidden">
+                <div className="relative w-full h-20 sm:h-60 overflow-hidden rounded-sm bg-gray-50">
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="absolute top-0 left-0 w-full h-[95%] object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                    className="absolute inset-0 w-full h-full object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
                   />
                 </div>
 
-                <p className="mt-2 hover:text-orange-400 text-md font-medium">
+                <p className="sm:mt-2 text-sm sm:text-md font-medium hover:text-orange-400">
                   {item.name}
                 </p>
               </Link>

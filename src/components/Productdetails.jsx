@@ -762,7 +762,7 @@ const ProductDetail = () => {
                     <img
                       src={img}
                       alt={`Thumbnail ${index + 1}`}
-                      className="w-8 h-12 sm:w-18 sm:h-18 md:w-20 md:h-20 
+                      className="w-6 h-12 sm:w-18 sm:h-18 md:w-20 md:h-20 
                      object-contain bg-gray-50 rounded-full"
                     />
                   </div>
