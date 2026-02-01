@@ -512,13 +512,16 @@ const ProductDetail = () => {
           </div>
 
           {isModalOpen && (
-            <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-              <div className="relative  w-full p-4">
-                <button
-                  onClick={() => setIsModalOpen(false)}
-                  className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400">
-                  &times;
-                </button>
+            <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+              {/* Close Button - Always Top Right */}
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="fixed top-4 right-4 z-[999] text-white text-4xl font-bold hover:text-red-400">
+                &times;
+              </button>
+
+              {/* Image Container */}
+              <div className="relative w-full max-w-5xl p-4 flex justify-center">
                 <img
                   src={images[currentImgIndex]}
                   alt="Enlarged"

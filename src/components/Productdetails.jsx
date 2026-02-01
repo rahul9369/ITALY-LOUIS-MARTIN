@@ -149,7 +149,7 @@ const products = [
     ],
   },
   {
-    img: [redf5, red5, redo5, redb5, reds5, redu5],
+    img: [redf5, red5, redo5, redb5, redu5],
     title: "Point Source",
     model: "Red 5.5",
     description:
@@ -470,7 +470,7 @@ const products = [
     ],
   },
   {
-    img: [ff12, fb12, f412, fd12, fopen12, fs12, ftop12],
+    img: [ff12, fb12, f412, fd12, fopen12],
     title: "Point Source ",
     model: "F12",
     description:
@@ -772,13 +772,16 @@ const ProductDetail = () => {
           </div>
 
           {isModalOpen && (
-            <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-              <div className="relative  w-full p-4">
-                <button
-                  onClick={() => setIsModalOpen(false)}
-                  className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400">
-                  &times;
-                </button>
+            <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+              {/* Close Button - Always Top Right */}
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="fixed top-4 right-4 z-[999] text-white text-4xl font-bold hover:text-red-400">
+                &times;
+              </button>
+
+              {/* Image Container */}
+              <div className="relative w-full max-w-5xl p-4 flex justify-center">
                 <img
                   src={images[currentImgIndex]}
                   alt="Enlarged"

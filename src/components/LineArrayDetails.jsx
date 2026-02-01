@@ -173,7 +173,7 @@ const products = [
     ],
   },
   {
-    img: [q60front, q60s, q60back, q60ss, q60j, q60layer],
+    img: [q60front, q60s, q60back, q60j, q60layer],
     title: "Line array ",
     model: "Q 60",
     description:
@@ -227,7 +227,7 @@ const products = [
     ],
   },
   {
-    img: [q70front, q70j, q70s, q70back, q70ss, q70layer],
+    img: [q70front, q70j, q70back, q70ss, q70layer],
     title: "Line array ",
     model: "Q 70",
     description:
@@ -280,7 +280,7 @@ const products = [
     ],
   },
   {
-    img: [q80front, q80j, q80s, q80b, q80ss, q80layer],
+    img: [q80front, q80j, q80s, q80b, q80layer],
     title: "Line array ",
     model: "Q 80",
     description:
@@ -446,7 +446,7 @@ const ProductDetail = () => {
           /> */}
           <div className="bg-white  w-full ">
             {/* Image Viewer */}
-            <div className="relative  bg-gray-50 rounded-xl flex items-center justify-center h-[200px] sm:h-[360px] overflow-hidden">
+            <div className="relative  bg-gray-50 rounded-xl flex items-center justify-center h-[280px] sm:h-[360px] overflow-hidden">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}
@@ -520,13 +520,16 @@ const ProductDetail = () => {
           </div>
 
           {isModalOpen && (
-            <div className="fixed w-full inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-              <div className="relative  w-full p-4">
-                <button
-                  onClick={() => setIsModalOpen(false)}
-                  className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400">
-                  &times;
-                </button>
+            <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+              {/* Close Button - Always Top Right */}
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="fixed top-4 right-4 z-[999] text-white text-4xl font-bold hover:text-red-400">
+                &times;
+              </button>
+
+              {/* Image Container */}
+              <div className="relative w-full max-w-5xl p-4 flex justify-center">
                 <img
                   src={images[currentImgIndex]}
                   alt="Enlarged"
@@ -535,7 +538,6 @@ const ProductDetail = () => {
               </div>
             </div>
           )}
-
           <div className="">
             <h1 className="hidden md:block  text-2xl md:text-3xl font-bold">
               {product.title} - {product.model}
@@ -665,7 +667,7 @@ const ProductDetail = () => {
                 onClick={() => window.scrollTo(0, 0)}
                 key={index}
                 className="group  w-90 block rounded-md py-2 px-6 text-center overflow-hidden">
-                <div className="relative w-full h-40 sm:h-60 overflow-hidden rounded-sm">
+                <div className="relative w-full h-36 sm:h-60 overflow-hidden rounded-sm">
                   <img
                     src={item.img}
                     alt={item.name}
