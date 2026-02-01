@@ -23,7 +23,7 @@ import dsp26bottom from "../assets/dsp/bottomdsp.JPG";
 // import dsp26bottom from "../assets/dsp/dl26b.jpg";
 // import dsp26b from "../assets/dsp/dl26b.jpg";
 
-import dsp48 from "../assets/dsp/front.jpg";
+import dsp48 from "../assets/dsp/front.JPG";
 import dsp48side from "../assets/dsp/dspside.JPG";
 import dsp48back from "../assets/dsp/dl48back.JPG";
 import dsp48top from "../assets/dsp/dsp48top.jpg";
