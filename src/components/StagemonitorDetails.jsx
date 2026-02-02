@@ -8,7 +8,7 @@ import HwPDF from "../assets/newpdf/Hwnew.pdf";
 import TLPDF from "../assets/newpdf/TLnew.pdf";
 import fronts12 from "../assets/s12/fronts12.JPG";
 
-import Hwfornt from "../assets/hw65/hwfront.jpg";
+import Hwfornt from "../assets/hw65/hwfornt.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 //ds5//
 import dss5 from "../assets/ds5/dss5.JPG";
