@@ -15,6 +15,7 @@ import { ChevronLeft, ChevronRight, Import } from "lucide-react";
 
 import ksf18 from "../assets/ks18/ksf18.JPG";
 import ksb18 from "../assets/ks18/ksb18.JPG";
+import dsf8 from "../assets/ds8/dsf8.JPG";
 
 import kstop18 from "../assets/ks18/kstop18.JPG";
 import ks418 from "../assets/ks18/ks418.jpg";
@@ -34,6 +35,7 @@ import ss18 from "../assets/s18/ss18.JPG";
 import stop18 from "../assets/s18/stop18.JPG";
 import s418 from "../assets/s18/s418.JPG";
 import sop18 from "../assets/s18/sop18.JPG";
+import coxf from "../assets/coximg/coxf.jpg";
 
 //s12//
 

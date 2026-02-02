@@ -1036,7 +1036,7 @@ const products = [
       {
         name: "DL 4.8",
         path: "/electronics/dl%204.8",
-        img: Dsp48front,
+        img: dsp48,
       },
       {
         name: "Q 60",
@@ -1085,7 +1085,7 @@ const products = [
       {
         name: "DL 2.6",
         path: "/electronics/dl%202.6",
-        img: Dsp26front,
+        img: dsp26,
       },
       {
         name: "Q 80",
