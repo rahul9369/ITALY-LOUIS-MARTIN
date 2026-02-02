@@ -22,6 +22,12 @@ import redback from "../assets/red10/redback.JPG";
 import redn from "../assets/red10/redn.JPG";
 import redside from "../assets/red10/redside.JPG";
 import redu from "../assets/red10/redu.JPG";
+
+import f12front from "../assets/f12am/45.jpg";
+import f12down from "../assets/f12am/down.jpg";
+import f12open from "../assets/f12am/open.jpg";
+import f12side from "../assets/f12am/side.jpg";
+import f12back from "../assets/f12am/back.jpg";
 //red6//
 import redb5 from "../assets/red6/redb5.JPG";
 import redu5 from "../assets/red6/redu5.JPG";
@@ -578,8 +584,8 @@ const products = [
     ],
   },
   {
-    img: [ff15, fb15, f415, fd15, fopen15],
-    title: "Point Source ",
+    img: [f12front, f12back, f12side, f12open, f12down],
+    title: "Stage Monitor ",
     model: "F12 AM",
     description:
       " The F-12AM has one powerful 15” (381 mm)  LF driver with 1.45” (44 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install & portable use including Main FoH, Night Clubs, lounges, Multipurpose Hall, Live Setup etc. With flat frequency response, the cabinet offers uncoloured, transparent sound quality. Crafted from high density plywood, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
@@ -699,7 +705,7 @@ const ProductDetail = () => {
           /> */}
           <div className="bg-white w-full ">
             {/* Image Viewer */}
-            <div className="relative bg-gray-50 w-full  rounded-xl flex items-center justify-center h-[300px] sm:h-[360px] overflow-hidden">
+            <div className="relative  w-full  rounded-xl flex items-center justify-center h-[300px] sm:h-[360px] overflow-hidden">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}

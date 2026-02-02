@@ -14,6 +14,7 @@ import fopen10 from "../assets/f10/fopen10.JPG";
 import ff12 from "../assets/f12/ff12.jpg";
 import ff15 from "../assets/f15/ff15.jpg";
 import ff10 from "../assets/f10/ff10.jpg";
+import f12am from "../assets/f12am/45.jpg";
 
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -118,10 +119,10 @@ const products = [
     weight: "30 Kg",
   },
   {
-    img: ff15,
+    img: f12am,
     title: "F Series",
     model: "F12 AM",
-    description: '1x15" Two-Way Passive Full-Range High Power Loudspeaker',
+    description: "12” Two-Way Coaxial Full - Range Active Loudspeaker",
     power: "500W/2000W (Passive)",
     Sensitivity: "99dB",
     response: "50Hz-19kHz",

@@ -446,7 +446,7 @@ const ProductDetail = () => {
           /> */}
           <div className="bg-white  w-full ">
             {/* Image Viewer */}
-            <div className="relative  bg-gray-50 rounded-xl flex items-center justify-center h-[280px] sm:h-[360px] overflow-hidden">
+            <div className="relative   rounded-xl flex items-center justify-center h-[280px] sm:h-[360px] overflow-hidden">
               {/* Main Image */}
               <img
                 src={images[currentImgIndex]}

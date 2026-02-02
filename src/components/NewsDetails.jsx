@@ -2,6 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import Eavpl from "../assets/eavPl.png";
 import update1 from "../assets/news/update.jpg";
 import update2 from "../assets/news/update1.jpg";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const newsData = [
   {
@@ -47,41 +49,84 @@ const NewsDetails = () => {
   const { id } = useParams();
   const news = newsData.find((item) => item.id === id);
 
-  if (!news) return <div className="p-20">News not found</div>;
+  if (!news)
+    return (
+      <div className="min-h-[80vh] flex items-center justify-center text-gray-500 text-lg">
+        News not found
+      </div>
+    );
 
   return (
-    <section className="bg-white">
-      {/* HERO */}
-      <div className="relative h-[55vh] w-full">
+    <div className="bg-gray-50 min-h-screen flex flex-col">
+      {/* <Navbar /> */}
+
+      {/* HERO SECTION */}
+      <div className="relative h-[60vh] w-full">
         <img
           src={news.img}
           alt={news.title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/60" />
-
-        <div className="absolute bottom-10 w-full">
-          <div className="w-[92%] lg:w-[70%] mx-auto text-white">
-            <Link to="/" className="text-sm text-gray-300 hover:text-white">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
+        <div className="absolute bottom-8 w-full">
+          <div className="max-w-4xl mx-auto px-6 text-white">
+            <Link
+              to="/"
+              className="inline-block text-sm text-gray-300 hover:text-white mb-2">
               ← Back to News
             </Link>
-
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mt-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mt-2">
               {news.title}
             </h1>
-
-            <p className="mt-3 text-gray-300 text-sm">{news.date}</p>
+            <p className="mt-2 text-gray-300 text-sm sm:text-base">
+              {news.date}
+            </p>
           </div>
         </div>
       </div>
 
-      {/* CONTENT */}
-      <div className="w-[92%] lg:w-[70%] mx-auto py-16">
-        <div className="text-gray-700 text-base sm:text-lg leading-relaxed whitespace-pre-line">
-          {news.content}
+      {/* CONTENT SECTION */}
+      <main className="flex-1">
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <div className="bg-white rounded-2xl shadow-lg p-8 sm:p-12">
+            <p className="text-gray-700 text-base sm:text-lg leading-relaxed whitespace-pre-line">
+              {news.content}
+            </p>
+          </div>
+
+          {/* RELATED NEWS / CTA (optional) */}
+          <div className="mt-12">
+            <h2 className="text-2xl font-semibold mb-6 text-gray-800">
+              Other News
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {newsData
+                .filter((item) => item.id !== news.id)
+                .map((item) => (
+                  <Link
+                    to={`/news/${item.id}`}
+                    key={item.id}
+                    className="block bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="w-full h-40 object-cover"
+                    />
+                    <div className="p-4">
+                      <h3 className="font-semibold text-gray-800">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-500 text-sm mt-1">{item.date}</p>
+                    </div>
+                  </Link>
+                ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </main>
+
+      <Footer />
+    </div>
   );
 };
 

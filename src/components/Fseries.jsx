@@ -1,11 +1,11 @@
 import React from "react";
 import pointsource from "../assets/pointsource.jpg";
 import Footer from "../components/Footer";
-import ffront8 from "../assets/f8/ffront8.jpg"
-import ff10 from "../assets/f10/ff10.jpg"
-import ff12 from "../assets/f12/ff12.jpg"
-import ff15 from "../assets/f15/ff15.jpg"
-
+import ffront8 from "../assets/f8/ffront8.jpg";
+import ff10 from "../assets/f10/ff10.jpg";
+import ff12 from "../assets/f12/ff12.jpg";
+import ff15 from "../assets/f15/ff15.jpg";
+import f12am from "../assets/f12am/45.jpg";
 import { useNavigate } from "react-router-dom";
 const products = [
   {
@@ -52,6 +52,17 @@ const products = [
     spl: "129dB",
     weight: "30 Kg",
   },
+  {
+    img: f12am,
+    title: "F Series",
+    model: "F12 AM",
+    description: "12” Two-Way Coaxial Full - Range Active Loudspeaker",
+    power: "500W/2000W (Passive)",
+    Sensitivity: "99dB",
+    response: "50Hz-19kHz",
+    spl: "129dB",
+    weight: "30 Kg",
+  },
 ];
 
 const ProductCard = ({ product }) => {
@@ -62,12 +73,12 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-          className="w-full h-72 object-contain cursor-pointer rounded-lg"
-          loading="eager"
-                decoding="async"
+        className="w-full h-72 object-contain cursor-pointer rounded-lg"
+        loading="eager"
+        decoding="async"
         onClick={() =>
           navigate(
-            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -101,7 +112,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}
