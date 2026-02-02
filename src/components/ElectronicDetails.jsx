@@ -1156,7 +1156,7 @@ const ProductDetail = () => {
       </Helmet>
       <div className="w-[90%] mx-auto smp-6">
         <h1 className="md:hidden  block  text-2xl md:text-3xl font-bold">
-          {product.title} - {product.model}
+          {product.model}
         </h1>
         {/* Product Image and Title */}
         <div className="grid grid-cols-1 mx-auto md:mx-0 md:grid-cols-[65%_35%] gap-12 mt-4 w-[95%] ">
@@ -1261,7 +1261,7 @@ const ProductDetail = () => {
 
           <div className="">
             <h1 className="hidden md:block text-2xl md:text-3xl font-bold">
-              {product.title} - {product.model}
+              {product.model}
             </h1>
             <div className="w-full ">
               <p className="text-gray-600 text-[12px] md:text-[15px]  mt-2 text-justify">
@@ -1405,22 +1405,47 @@ const ProductDetail = () => {
             Related Product
           </h1>
 
-          <div className="grid grid-cols-1 w-[90%] sm:grid-cols-4 gap-4 sm:gap-8 mt-5 place-items-center sm:px-3">
+          <div
+            className="
+      grid 
+      w-[90%] 
+      mx-auto
+      grid-cols-[repeat(auto-fit,minmax(160px,1fr))]
+      gap-6
+      justify-items-center
+    ">
             {product.relatedProducts.map((item, index) => (
               <Link
                 to={item.path}
                 onClick={() => window.scrollTo(0, 0)}
                 key={index}
-                className="group w-full max-w-[160px] sm:max-w-[240px] block rounded-md p-2 text-center overflow-hidden">
-                <div className="relative w-full h-20 sm:h-60 overflow-hidden rounded-sm bg-gray-50">
+                className="
+          group 
+          w-[160px] 
+          sm:w-[220px] 
+          text-center 
+          rounded-md 
+          p-2 
+          overflow-hidden
+        ">
+                {/* Image */}
+                <div className="relative w-full  h-28 sm:h-40 overflow-hidden rounded-sm  flex items-center justify-center">
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="absolute inset-0 w-full h-full object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                    className="
+              max-w-full 
+              max-h-full 
+              object-contain 
+              transition 
+              duration-300 
+              group-hover:scale-105
+            "
                   />
                 </div>
 
-                <p className="sm:mt-2 text-sm sm:text-md font-medium hover:text-orange-400">
+                {/* Title */}
+                <p className=" text-sm sm:text-base text-center font-medium hover:text-orange-400">
                   {item.name}
                 </p>
               </Link>
