@@ -10,6 +10,7 @@ import dsf12 from "../assets/ds12/dsf12.JPG";
 import dsf15 from "../assets/ds15/dsf15.JPG";
 import Hwfornt from "../assets/Hwfront.png";
 import dsf8 from "../assets/ds8/dsf8.JPG";
+import PlasticSpeaker from "../assets/PlasticSpeaker.JPG";
 
 import tlfront from "../assets/tl55/tlfront.jpg";
 
@@ -155,7 +156,7 @@ const ProductList = () => {
           content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
         />
       </Helmet>
-      {/* <img src={PlasticSpeaker} alt="Line Array" className="w-full" /> */}
+      <img src={PlasticSpeaker} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="sm:text-4xl text-[25px] mx-auto font-bold  mb-4 text-red-800">
           Commercial Speaker - All Series

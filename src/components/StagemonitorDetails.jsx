@@ -6,6 +6,7 @@ import DS12PDF from "../assets/newpdf/DS-12new.pdf";
 import DS15PDF from "../assets/newpdf/DS-15new.pdf";
 import HwPDF from "../assets/newpdf/Hwnew.pdf";
 import TLPDF from "../assets/newpdf/TLnew.pdf";
+import fronts12 from "../assets/s12/fronts12.JPG";
 
 import Hwfornt from "../assets/Hwfront.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -209,11 +210,11 @@ const products = [
         path: "/subwoofer/s218",
         img: sf218,
       },
-      // {
-      //   name: "DS5",
-      //   path: "/plastic/ds5",
-      //   img: dsf5,
-      // },
+      {
+        name: "DS5",
+        path: "/plastic/ds5",
+        img: dsf5,
+      },
     ],
   },
   {
@@ -257,11 +258,11 @@ const products = [
         path: "/subwoofer/s18",
         img: sf18,
       },
-      // {
-      //   name: "TIP-1300",
-      //   path: "/electronics/tip%201302",
-      //   img: ft1002,
-      // },
+      {
+        name: "TIP-1300",
+        path: "/electronics/tip%201302",
+        img: ft1002,
+      },
       {
         name: "S218",
         path: "/subwoofer/s218",
@@ -312,16 +313,16 @@ const products = [
         path: "/electronics/d%204200",
         img: fd4200,
       },
-      // {
-      //   name: "S12",
-      //   path: "/subwoofer/s12",
-      //   img: fronts12,
-      // },
-      // {
-      //   name: "S18",
-      //   path: "/subwoofer/s18",
-      //   img: sf18,
-      // },
+      {
+        name: "S12",
+        path: "/subwoofer/s12",
+        img: fronts12,
+      },
+      {
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: sf18,
+      },
     ],
   },
   {
@@ -366,16 +367,16 @@ const products = [
         path: "/electronics/d%204200",
         img: fd4200,
       },
-      // {
-      //   name: "S12",
-      //   path: "/subwoofer/s12",
-      //   img: fronts12,
-      // },
-      // {
-      //   name: "S18",
-      //   path: "/subwoofer/s18",
-      //   img: sf18,
-      // },
+      {
+        name: "S12",
+        path: "/subwoofer/s12",
+        img: fronts12,
+      },
+      {
+        name: "S18",
+        path: "/subwoofer/s18",
+        img: sf18,
+      },
     ],
   },
 ];
