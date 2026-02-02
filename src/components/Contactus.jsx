@@ -31,7 +31,7 @@ const ContactUs = () => {
         "service_xxx123", // 🔹 Replace with your EmailJS Service ID
         "template_abc456", // 🔹 Replace with your EmailJS Template ID
         formData,
-        "your_user_id_789xyz" // 🔹 Replace with your EmailJS Public Key
+        "your_user_id_789xyz", // 🔹 Replace with your EmailJS Public Key
       )
       .then(
         () => {
@@ -43,7 +43,7 @@ const ContactUs = () => {
           alert("Failed to send message, please try again.");
           console.error("Error:", error);
           setLoading(false);
-        }
+        },
       );
   };
 
@@ -84,7 +84,7 @@ const ContactUs = () => {
           <motion.div
             className="bg-white shadow-md rounded-lg p-6 flex items-center gap-4 hover:shadow-xl transition-all duration-300"
             whileHover={{ scale: 1.05 }}>
-            <div className="bg-orange-500 text-white p-4 rounded-full text-3xl">
+            <div className="bg-red-600 text-white p-4 rounded-full text-3xl">
               <MdPhone />
             </div>
             <div>
@@ -97,7 +97,7 @@ const ContactUs = () => {
           <motion.div
             className="bg-white shadow-md rounded-lg p-6 flex items-center gap-4 hover:shadow-xl transition-all duration-300"
             whileHover={{ scale: 1.05 }}>
-            <div className="bg-orange-500 text-white p-4 rounded-full text-3xl">
+            <div className="bg-red-600 text-white p-4 rounded-full text-3xl">
               <MdOutlineEmail />
             </div>
             <div>
@@ -110,7 +110,7 @@ const ContactUs = () => {
           <motion.div
             className="bg-white shadow-md rounded-lg p-6 flex items-center gap-4 hover:shadow-xl transition-all duration-300"
             whileHover={{ scale: 1.05 }}>
-            <div className="bg-orange-500 text-white p-4 rounded-full text-3xl">
+            <div className="bg-red-600 text-white p-4 rounded-full text-3xl">
               <CiLocationOn />
             </div>
             <div>

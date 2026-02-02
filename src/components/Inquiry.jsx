@@ -20,7 +20,7 @@ const ContactUs = () => {
         (error) => {
           console.log("FAILED...", error.text);
           alert("❌ Failed to send message.");
-        }
+        },
       );
   };
 
@@ -67,7 +67,7 @@ const ContactUs = () => {
 
         <button
           type="submit"
-          className="w-full bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-4 rounded-md  transition duration-200">
+          className="w-full bg-red-600 hover:bg-red-500 cursor-pointer text-white font-semibold py-2 px-4 rounded-md  transition duration-200">
           Send Message
         </button>
       </form>

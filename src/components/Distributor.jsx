@@ -28,7 +28,7 @@ const distributors = [
   },
   {
     country: "Thailand (Bangkok)",
-    company: "Alab Professional Audio Co., Ltd",
+    company: "Alab Professional Audio Com. Ltd",
     image: Thailand,
   },
   {
@@ -75,7 +75,7 @@ const DistributorPage = () => {
               />
               <div className="absolute inset-0    bg-opacity-50 flex flex-col justify-center items-center text-white text-center p-4">
                 <h2 className="text-3xl  font-bold">{dist.country}</h2>
-                <p className="mt-2 text-2xl hover:bg-orange-600 px-2 py-2 rounded-md">
+                <p className="mt-2 text-2xl hover:bg-red-600 px-2 py-2 rounded-md">
                   {dist.company}
                 </p>
               </div>
