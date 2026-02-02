@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 import dsf5 from "../assets/ds5/dsf5.jpg";
 import dsf12 from "../assets/ds12/dsf12.JPG";
 import dsf15 from "../assets/ds15/dsf15.JPG";
-import Hwfornt from "../assets/Hwfront.jpg";
+import Hwfornt from "../assets/hwfront.jpg";
 import dsf8 from "../assets/ds8/dsf8.JPG";
 import PlasticSpeaker from "../assets/PlasticSpeaker.jpg";
 
