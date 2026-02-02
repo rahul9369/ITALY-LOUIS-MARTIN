@@ -216,17 +216,21 @@ const products = [
     title: "DSP",
     model: "DL 2.6",
     description: "DIGITAL LOUDSPEAKER MANAGEMENT SYSTEM",
-    power: "2400W×2/8Ω   4000W×2/4Ω",
-    response: " ＞1000(1 kHz @ 8 Ω)",
+    power: "2 Channel electronically balanced",
+    output: "6 Channel electronically balanced",
+    response: " >100 dB (20 Hz – 20 kHz)",
+
     weight: "2.5kg",
   },
   {
     img: dsp48,
     title: "DSP",
     model: "DL 4.8",
-    description: " PROFESSIONAL POWER AMPLIFIER",
-    power: "2400W×2/8Ω   4000W×2/4Ω",
-    response: " ＞1000(1 kHz @ 8 Ω)",
+    description: "DIGITAL LOUDSPEAKER MANAGEMENT SYSTEM",
+    power: "4 Channel electronically balanced",
+    output: "8 Channel electronically balanced",
+    response: " >120 dB (20 Hz – 20 kHz)",
+    fir: "800 FIR taps per output",
     weight: "2.8kg",
   },
 ];
@@ -253,22 +257,58 @@ const ProductCard = ({ product }) => {
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
-      <p className="text-sm font mt-4 text-gray-700">
-        <span className="font-bold">Output Power:</span> {product.power}
-      </p>
-      <p className="text-sm mt-5 text-gray-700">
-        <span className="font-bold"> Damping factor:</span> {product.response}
-      </p>
-      {/* <p className="text-sm mt-2 text-gray-700">
-        <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
-        {product.Sensitivity}
-      </p> */}
-      {/* <p className="text-sm mt-2 text-gray-700">
-        <span className="font-bold">Max SPL(Continuous):</span> {product.spl}
-      </p> */}
-      <p className="text-sm mt-5 text-gray-700">
+      {product.title === "DSP" ? (
+        <div className="mt-4 space-y-2 text-sm text-gray-700">
+          {/* 🔥 Special title only for DL 4.8 */}
+
+          <p>
+            <span className="font-bold">Inputs: </span> {product.power}
+          </p>
+
+          <p>
+            <span className="font-bold">Outputs: </span> {product.output}
+          </p>
+
+          <p>
+            <span className="font-bold">Input Dynamic Range: </span>
+            {product.response}
+          </p>
+          {product.model === "DL 4.8" && (
+            <p>
+              <span className="font-bold">FIR Filters: </span>
+              {product.fir}
+            </p>
+          )}
+
+          {/* <p>
+            <span className="font-bold">A/D Converters:</span>
+            {product.response}
+          </p> */}
+
+          <p className="text-sm mt-5 text-gray-700">
+            <span className="font-bold">Net Weight:</span> {product.weight}
+          </p>
+        </div>
+      ) : (
+        <>
+          <p className="text-sm mt-4 text-gray-700">
+            <span className="font-bold">Output Power:</span> {product.power}
+          </p>
+
+          <p className="text-sm mt-5 text-gray-700">
+            <span className="font-bold">Damping Factor:</span>{" "}
+            {product.response}
+          </p>
+
+          <p className="text-sm mt-5 text-gray-700">
+            <span className="font-bold">Net Weight:</span> {product.weight}
+          </p>
+        </>
+      )}
+
+      {/* <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Net Weight:</span> {product.weight}
-      </p>
+      </p> */}
       <button
         className="mt-4 mx-auto block cursor-pointer 
 border border-red-800 text-red-800 

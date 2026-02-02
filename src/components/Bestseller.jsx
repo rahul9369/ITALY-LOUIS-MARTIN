@@ -30,9 +30,11 @@ const newsData = [
 const CompanyNews = () => {
   return (
     <section className="bg-white py-16">
-      <div className="w-[92%] lg:w-[85%] mx-auto mb-12">
-        <h2 className="text-3xl sm:text-5xl font-bold">Latest News</h2>
-        <p className="text-gray-400 mt-3">
+      <div className="w-[92%] lg:w-[90%] mx-auto mb-12">
+        <h2 className="text-3xl text-center text-red-700 sm:text-5xl font-bold">
+          Latest News
+        </h2>
+        <p className="text-gray-400 text-center mt-3">
           Latest announcements & company milestones
         </p>
       </div>
