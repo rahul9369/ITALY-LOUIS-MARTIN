@@ -117,11 +117,11 @@ const products = [
         path: "/product/red%205.5",
         img: redo5,
       },
-      // {
-      //   name: "F 15",
-      //   path: "/product/f15",
-      //   img: ff15,
-      // },
+      {
+        name: "F 15",
+        path: "/product/f15",
+        img: ff15,
+      },
     ],
   },
 
@@ -171,11 +171,11 @@ const products = [
         path: "/linearray/famous%20210",
         img: famouf,
       },
-      // {
-      //   name: "F15",
-      //   path: "/product/f15",
-      //   img: ff15,
-      // },
+      {
+        name: "F15",
+        path: "/product/f15",
+        img: ff15,
+      },
     ],
   },
   {
@@ -273,16 +273,16 @@ const products = [
         path: "/product/f15",
         img: ff15,
       },
-      // {
-      //   name: "DS8",
-      //   path: "/plastic/ds8",
-      //   img: dsf8,
-      // },
-      // {
-      //   name: "COX12",
-      //   path: "/linearray/cox%2012",
-      //   img: coxf,
-      // },
+      {
+        name: "DS8",
+        path: "/plastic/ds8",
+        img: dsf8,
+      },
+      {
+        name: "COX12",
+        path: "/linearray/cox%2012",
+        img: coxf,
+      },
     ],
   },
 
@@ -332,11 +332,11 @@ const products = [
         path: "/linearray/q%2080",
         img: q80f,
       },
-      // {
-      //   name: "COX12",
-      //   path: "/linearray/cox%2012",
-      //   img: coxf,
-      // },
+      {
+        name: "COX12",
+        path: "/linearray/cox%2012",
+        img: coxf,
+      },
     ],
   },
 ];

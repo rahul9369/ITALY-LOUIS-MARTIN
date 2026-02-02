@@ -464,11 +464,11 @@ const products = [
         path: "/electronics/tta%20500",
         img: ft500,
       },
-      // {
-      //   name: "TTA-600",
-      //   path: "/electronics/tta%20600",
-      //   img: ft600,
-      // },
+      {
+        name: "TTA-600",
+        path: "/electronics/tta%20600",
+        img: ft600,
+      },
       {
         name: "TTA-800",
         path: "/electronics/tta%20800",
@@ -513,11 +513,11 @@ const products = [
         path: "/electronics/tta%20450",
         img: ft300,
       },
-      // {
-      //   name: "TTA-600",
-      //   path: "/electronics/tta%20600",
-      //   img: ft600,
-      // },
+      {
+        name: "TTA-600",
+        path: "/electronics/tta%20600",
+        img: ft600,
+      },
       {
         name: "TTA-800",
         path: "/electronics/tta%20800",
@@ -573,11 +573,11 @@ const products = [
         path: "/electronics/tip%201602",
         img: ft1002,
       },
-      // {
-      //   name: "TTA-1300",
-      //   path: "/electronics/tta%201300",
-      //   img: ft1300,
-      // },
+      {
+        name: "TTA-1300",
+        path: "/electronics/tta%201300",
+        img: ft1300,
+      },
     ],
   },
   {
@@ -623,11 +623,11 @@ const products = [
         path: "/electronics/tip%202402",
         img: ft2402,
       },
-      // {
-      //   name: "TTA-1300",
-      //   path: "/electronics/tta%201300",
-      //   img: ft1300,
-      // },
+      {
+        name: "TTA-1300",
+        path: "/electronics/tta%201300",
+        img: ft1300,
+      },
     ],
   },
   {
@@ -673,11 +673,11 @@ const products = [
         path: "/electronics/tta%20800",
         img: ft800,
       },
-      // {
-      //   name: "TTA-1300",
-      //   path: "/electronics/tta%201300",
-      //   img: ft1300,
-      // },
+      {
+        name: "TTA-1300",
+        path: "/electronics/tta%201300",
+        img: ft1300,
+      },
     ],
   },
   {
@@ -723,11 +723,11 @@ const products = [
         img: ft1002,
       },
 
-      // {
-      //   name: "TTA-800",
-      //   path: "/electronics/tta%20800",
-      //   img: ft800,
-      // },
+      {
+        name: "TTA-800",
+        path: "/electronics/tta%20800",
+        img: ft800,
+      },
     ],
   },
   {
@@ -773,11 +773,11 @@ const products = [
         path: "/electronics/pl%201504",
         img: plf42,
       },
-      // {
-      //   name: "TTA-1300",
-      //   path: "/electronics/tta%201300",
-      //   img: ft300,
-      // },
+      {
+        name: "TTA-1300",
+        path: "/electronics/tta%201300",
+        img: ft300,
+      },
     ],
   },
   {
@@ -823,11 +823,11 @@ const products = [
         path: "/electronics/pl%201504",
         img: plf42,
       },
-      // {
-      //   name: "TTA-1300",
-      //   path: "/electronics/tta%201300",
-      //   img: ft300,
-      // },
+      {
+        name: "TTA-1300",
+        path: "/electronics/tta%201300",
+        img: ft300,
+      },
     ],
   },
   {
@@ -1033,11 +1033,11 @@ const products = [
     Weight: " 7",
     pdf: DSPPDF2,
     relatedProducts: [
-      // {
-      //   name: "DL 4.8",
-      //   path: "/electronics/dl%204.8",
-      //   img: Dsp48front,
-      // },
+      {
+        name: "DL 4.8",
+        path: "/electronics/dl%204.8",
+        img: Dsp48front,
+      },
       {
         name: "Q 60",
         path: "/linearray/q%2060",
@@ -1048,11 +1048,11 @@ const products = [
         path: "/electronics/tta%20800",
         img: redfront,
       },
-      // {
-      //   name: "PL-1004",
-      //   path: "/electronics/pl%201004",
-      //   img: ft1002,
-      // },
+      {
+        name: "PL-1004",
+        path: "/electronics/pl%201004",
+        img: ft1002,
+      },
     ],
   },
   {
@@ -1082,11 +1082,11 @@ const products = [
     Weight: " 7",
     pdf: DSPPDF4,
     relatedProducts: [
-      // {
-      //   name: "DL 2.6",
-      //   path: "/electronics/dl%202.6",
-      //   img: Dsp26front,
-      // },
+      {
+        name: "DL 2.6",
+        path: "/electronics/dl%202.6",
+        img: Dsp26front,
+      },
       {
         name: "Q 80",
         path: "/linearray/q%2080",
@@ -1097,11 +1097,11 @@ const products = [
         path: "/electronics/tta%20800",
         img: sf218,
       },
-      // {
-      //   name: "PL-1004",
-      //   path: "/electronics/pl%201004",
-      //   img: ft1002,
-      // },
+      {
+        name: "PL-1004",
+        path: "/electronics/pl%201004",
+        img: ft1002,
+      },
     ],
   },
 ];

@@ -141,11 +141,11 @@ const products = [
     Weight: "8/17.6 ",
     pdf: DS8PDF,
     relatedProducts: [
-      // {
-      //   name: "D-200",
-      //   path: "/electronics/d%20200",
-      //   img: ,
-      // },
+      {
+        name: "D-200",
+        path: "/electronics/d%20200",
+        img: df200,
+      },
       {
         name: "D-4200",
         path: "/electronics/d%204200",
