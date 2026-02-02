@@ -2,9 +2,7 @@ import React from "react";
 import Linearray from "../../assets/Linerarray.jpg";
 import Footer from "../Footer";
 
-
 import famouf from "../../assets/fam/famouf.JPG";
-
 
 import { useNavigate } from "react-router-dom";
 
@@ -32,15 +30,15 @@ const ProductCard = ({ product }) => {
         className="w-full h-72 object-contain cursor-pointer rounded-lg"
         onClick={() =>
           navigate(
-            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
-      <p className="text-sm font-semibold mt-6 text-gray-700">
-        <span className="font-bold">RMS/Peak Power:</span> {product.power}
+      <p className="text-sm font-sm mt-6 text-gray-700">
+        <span className="font-bold">RMS/Peak Power:</span> {product.Power}
       </p>
       <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold"> Frequency Response:</span>{" "}
@@ -66,7 +64,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

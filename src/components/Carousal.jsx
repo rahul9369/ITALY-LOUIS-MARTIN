@@ -82,8 +82,17 @@ const Carousel = () => {
 
         <Link
           to={slide.link}
-          className="mt-6 bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-xl
-          font-semibold shadow-xl transition hover:scale-105">
+          className="
+    mt-6 inline-flex items-center
+    px-8 py-3 rounded-xl
+    font-semibold text-white
+    bg-transparent
+    border border-white
+    transition-all duration-300 ease-in-out
+    hover:bg-white hover:text-black
+    hover:scale-105
+    active:scale-95
+  ">
           {slide.text}
         </Link>
       </div>
