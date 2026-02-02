@@ -10,7 +10,7 @@ import dsf12 from "../assets/ds12/dsf12.JPG";
 import dsf15 from "../assets/ds15/dsf15.JPG";
 import Hwfornt from "../assets/Hwfront.png";
 import dsf8 from "../assets/ds8/dsf8.JPG";
-import PlasticSpeaker from "../assets/PlasticSpeaker.JPG";
+import PlasticSpeaker from "../assets/PlasticSpeaker.jpg";
 
 import tlfront from "../assets/tl55/tlfront.jpg";
 
