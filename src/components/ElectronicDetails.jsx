@@ -1018,19 +1018,22 @@ const products = [
       "Remote control software for PC Windows only",
       "Memory storage for 20 presets",
     ],
-    Stereo_8_Ohm_2_Channel: "2400W×2 ",
-    Stereo_4_Ohm_2_Channel: " 4000W×2 ",
-    Bridge_8_Ohm_1_Channel: "8000W",
-    Bridge_4_Ohm_1_Channel: " 1840W",
-    Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
-    THD_N: " <0.05%@8Ω 1kHz",
-    SNR: "＞98dB (A-weighted)",
-    Damping_Factor: "＞1000(1 kHz @ 8 Ω)",
-    Crosstalk: "＞85dB",
-    Input_Sensitivity: " 0.775V/1.44V",
-    Input_Impedance: " 20KΩ/10KΩ",
-    Size_mm: "482 x 360 x 88mm",
-    Weight: " 7",
+    input: "2 Channel electronically balanced ",
+    output: " 6 Channel electronically balanced ",
+    maximum: "+15 dBm",
+    range: " >100 dB (20 Hz – 20 kHz)",
+    delay: "500 milliseconds",
+    step: " 0.021 milliseconds",
+    gain: "+12 dB ≈ -40 dB, step 0.1 dB",
+    parametric: "9 bands on Inputs & 8 bands on Outputs",
+    frequency: "20 Hz – 22 kHz (±0.2 dB)",
+    signal: " 110 dB typical (a weighted)",
+    distortion: "<0.0029% @1K;0 dBu",
+    audio: "XLR Connector",
+    control: "RS232 DB-9; USB type – B",
+    power: "95~250V AC, 50/60Hz adaptive",
+    Size_mm: "483mm x 160mm x 45mm (H x W x D)",
+    Weight: " 2.5",
     pdf: DSPPDF2,
     relatedProducts: [
       {
@@ -1056,7 +1059,7 @@ const products = [
     ],
   },
   {
-    img: [dsp48, dsp48side, dsp48top, dsp48back],
+    img: [dsp48, dsp48side, dsp48back],
     title: "DSP ",
     model: "DL 4.8",
     description:
@@ -1067,19 +1070,26 @@ const products = [
       "Dual channel AES/EBU Input",
       "Memory storage for 250 presets",
     ],
-    Stereo_8_Ohm_2_Channel: "2400W×2 ",
-    Stereo_4_Ohm_2_Channel: " 4000W×2 ",
-    Bridge_8_Ohm_1_Channel: "8000W",
-    Bridge_4_Ohm_1_Channel: " 1840W",
-    Frequency_Response: "20HZ~20KHZ(0.5dB/-0.5dB)",
-    THD_N: " <0.05%@8Ω 1kHz",
-    SNR: "＞98dB (A-weighted)",
-    Damping_Factor: "＞1000(1 kHz @ 8 Ω)",
-    Crosstalk: "＞85dB",
-    Input_Sensitivity: " 0.775V/1.44V",
-    Input_Impedance: " 20KΩ/10KΩ",
-    Size_mm: "482 x 360 x 88mm",
-    Weight: " 7",
+    input:
+      "4 Channel electronically balanced XLR + AES3 1 & 2 Phoenix Connector ",
+    output: "8 Channel electronically balanced XLR Connector",
+    maximum: "0 dBu / +24 dBu",
+    range: " >120 dB (20 Hz – 20 kHz) (A-Weighted)",
+    display: "2 x 20 Character Backlit LCD",
+    analog: " High Performance 24-bit",
+    gain: "+12 dB ≈ -40 dB, step 0.1 dB",
+    parametric: "10 bands on Inputs & Outputs",
+    frequency: "20 Hz – 22 kHz (±0.2 dB)",
+    signal: " 110 dB typical (a weighted)",
+    distortion: "<0.004% @1K;+4dBu",
+    audio: "XLR Connector / Phoenix Connector",
+    control: "Ethernet with Link Output",
+    fir: "800 FIR taps per output",
+    crossover: "2 Crossover Filter per Input/Output",
+    dail: "Embedded Wheel on front panel",
+    power: "90~250V AC, 50/60Hz adaptive",
+    Size_mm: "485mm x 255mm x 44mm (H x W x D)",
+    Weight: " 2.8",
     pdf: DSPPDF4,
     relatedProducts: [
       {
@@ -1155,9 +1165,12 @@ const ProductDetail = () => {
         />
       </Helmet>
       <div className="w-[90%] mx-auto smp-6">
-        <h1 className="md:hidden  block  text-2xl md:text-3xl font-bold">
-          {product.model}
+        <h1 className="md:hidden block text-2xl md:text-3xl font-bold">
+          {product?.title === "DSP "
+            ? `DSP - ${product.model}`
+            : `Amplifier - ${product.model}`}
         </h1>
+
         {/* Product Image and Title */}
         <div className="grid grid-cols-1 mx-auto md:mx-0 md:grid-cols-[65%_35%] gap-12 mt-4 w-[95%] ">
           {/* <img
@@ -1261,7 +1274,9 @@ const ProductDetail = () => {
 
           <div className="">
             <h1 className="hidden md:block text-2xl md:text-3xl font-bold">
-              {product.model}
+              {product?.title === "DSP "
+                ? `DSP - ${product.model}`
+                : `Amplifier - ${product.model}`}
             </h1>
             <div className="w-full ">
               <p className="text-gray-600 text-[12px] md:text-[15px]  mt-2 text-justify">
@@ -1302,78 +1317,155 @@ const ProductDetail = () => {
           {activeTab === "Specifications" && (
             <table className="w-full border-collapse border border-gray-300 text-sm md:text-md">
               <tbody>
-                {[
-                  ...([
-                    "PL 4.1",
-                    "PL 4.5",
-                    "D 4200",
-                    "D 4300",
-                    "TTA 450",
-                    "TTA 460",
-                  ].includes(product?.model)
-                    ? [
-                        {
-                          label: "Four Channel 8Ω ",
-                          value: product.Stereo_8_Ohm_2_Channel,
-                        },
-                      ]
-                    : [
-                        {
-                          label: "Stereo 8Ω (2 Channel)",
-                          value: product.Stereo_8_Ohm_2_Channel,
-                        },
-                      ]),
+                {(product?.title === "DSP "
+                  ? [
+                      { label: "Input", value: product.input },
+                      { label: "Output", value: product.output },
+                      {
+                        label:
+                          product?.model === "DL 4.8"
+                            ? "Input Level (Nominal/Max)"
+                            : "Maximum Level",
+                        value: product.maximum,
+                      },
+                      { label: "Dynamic Range", value: product.range },
 
-                  ...([
-                    "PL 4.1",
-                    "PL 4.5",
-                    "D 4200",
-                    "D 4300",
-                    "TTA 450",
-                    "TTA 460",
-                  ].includes(product?.model)
-                    ? [
-                        {
-                          label: "Four Channel 4Ω ",
-                          value: product.Stereo_4_Ohm_2_Channel,
-                        },
-                      ]
-                    : [
-                        {
-                          label: "Stereo 4Ω (2 Channel)",
-                          value: product.Stereo_4_Ohm_2_Channel,
-                        },
-                      ]),
+                      ...(product?.model === "DL 2.6"
+                        ? [
+                            {
+                              label: "Maximum Delay",
+                              value: product.delay,
+                            },
+                            {
+                              label: "Minimum Step",
+                              value: product.step,
+                            },
+                          ]
+                        : []),
 
-                  {
-                    label: "Bridge 8Ω/Channel",
-                    value: product.Bridge_8_Ohm_1_Channel,
-                  },
-                  {
-                    label: "Input Power Consumption",
-                    value: product.Bridge_4_Ohm_1_Channel,
-                  },
-                  {
-                    label: "Frequency Response",
-                    value: product.Frequency_Response,
-                  },
-                  { label: "THD+N", value: product.THD_N },
-                  { label: "S/N Ratio", value: product.SNR },
-                  { label: "Damping Factor", value: product.Damping_Factor },
-                  { label: "Crosstalk", value: product.Crosstalk },
-                  {
-                    label: "Input Sensitivity",
-                    value: product.Input_Sensitivity,
-                  },
-                  { label: "Input Impedance", value: product.Input_Impedance },
-                  { label: "Dimensions (HxWxD)", value: product.Size_mm },
-                  { label: "Weight", value: `${product.Weight} Kg` },
-                ].map((spec, index) => (
+                      {
+                        label: "Gain",
+                        value: product.gain,
+                      },
+                      {
+                        label: "Parametric Equalizer",
+                        value: product.parametric,
+                      },
+                      {
+                        label: "Frequency Response",
+                        value: product.frequency,
+                      },
+                      {
+                        label: "Signal to Noise Ratio",
+                        value: product.signal,
+                      },
+                      {
+                        label: "Distortion",
+                        value: product.distortion,
+                      },
+                      ...(product?.model === "DL 4.8"
+                        ? [
+                            {
+                              label: "Analog Converters",
+                              value: product.analog,
+                            },
+                            { label: "Display", value: product.display },
+                            { label: "FIR Filter", value: product.fir },
+                            {
+                              label: "Crossover  Filter",
+                              value: product.crossover,
+                            },
+                            { label: "Dial Encoder", value: product.dail },
+                          ]
+                        : []),
+                      { label: "Audio Interface", value: product.audio },
+                      {
+                        label: "Control Interface",
+                        value: product.control,
+                      },
+                      { label: "working Power Supply", value: product.power },
+                      { label: "Dimensions", value: product.Size_mm },
+                      { label: "Weight", value: `${product.Weight} Kg` },
+                    ]
+                  : [
+                      ...([
+                        "PL 4.1",
+                        "PL 4.5",
+                        "D 4200",
+                        "D 4300",
+                        "TTA 450",
+                        "TTA 460",
+                      ].includes(product?.model)
+                        ? [
+                            {
+                              label: "Four Channel 8Ω",
+                              value: product.Stereo_8_Ohm_2_Channel,
+                            },
+                          ]
+                        : [
+                            {
+                              label: "Stereo 8Ω (2 Channel)",
+                              value: product.Stereo_8_Ohm_2_Channel,
+                            },
+                          ]),
+
+                      ...([
+                        "PL 4.1",
+                        "PL 4.5",
+                        "D 4200",
+                        "D 4300",
+                        "TTA 450",
+                        "TTA 460",
+                      ].includes(product?.model)
+                        ? [
+                            {
+                              label: "Four Channel 4Ω",
+                              value: product.Stereo_4_Ohm_2_Channel,
+                            },
+                          ]
+                        : [
+                            {
+                              label: "Stereo 4Ω (2 Channel)",
+                              value: product.Stereo_4_Ohm_2_Channel,
+                            },
+                          ]),
+
+                      {
+                        label: "Bridge 8Ω/Channel",
+                        value: product.Bridge_8_Ohm_1_Channel,
+                      },
+                      {
+                        label: "Input Power Consumption",
+                        value: product.Bridge_4_Ohm_1_Channel,
+                      },
+                      {
+                        label: "Frequency Response",
+                        value: product.Frequency_Response,
+                      },
+                      { label: "THD+N", value: product.THD_N },
+                      { label: "S/N Ratio", value: product.SNR },
+                      {
+                        label: "Damping Factor",
+                        value: product.Damping_Factor,
+                      },
+                      { label: "Crosstalk", value: product.Crosstalk },
+                      {
+                        label: "Input Sensitivity",
+                        value: product.Input_Sensitivity,
+                      },
+                      {
+                        label: "Input Impedance",
+                        value: product.Input_Impedance,
+                      },
+                      { label: "Dimensions (HxWxD)", value: product.Size_mm },
+                      { label: "Weight", value: `${product.Weight} Kg` },
+                    ]
+                ).map((spec, index) => (
                   <tr key={index} className="border-b border-gray-200">
                     <td className="px-2 md:px-4 py-2 font-semibold">
                       {spec.label}
                     </td>
-                    <td className="px-2 md:px-4 py-2">{spec.value}</td>
+                    <td className="px-2 md:px-4 py-2">{spec.value || "-"}</td>
                   </tr>
                 ))}
               </tbody>

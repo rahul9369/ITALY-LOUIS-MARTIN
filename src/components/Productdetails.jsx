@@ -597,22 +597,24 @@ const products = [
       "Live portable setup",
       "Night Clubs",
     ],
-    Type: "Two-way full range passive loudspeaker",
-    Frequency_Response: "50 Hz – 19 kHz",
-    LF_Drivers: "1x 15” (381 mm) LF Driver with 3” Voice coil",
-    HF_Drivers: "1 x 1.75” (44 mm) HF Driver",
-    RMS_Power: "500W",
-    Program_Power: "1000W",
-    Peak_Power: "2000W",
-    Sensitivity: "99 dB ",
-    Max_SPL: "129 dB ",
-    Max_SPL_Peak: "132 dB ",
-    Nominal_Impedance: "8 Ohms",
-    Crossover_Mode: "Passive",
-    Dispersion: "90° (H) x 50° (V)",
-    Cabinet_Material: "High density plywood",
-    Size_mm: "690 x 470 x 443mm (H x W x D)",
-    Weight: "30/66.1 ",
+    Type: "Two-way Coaxial full range Active loudspeaker",
+    Frequency_Response: "55 Hz – 19 kHz",
+    LF_Drivers: "1x 12” (304 mm) Coaxial Driver",
+    HF_Drivers: "1 x 1.5” (38 mm) HF Driver",
+    RMS_Power:
+      "Integrated DSP Control with Factory presets/User defined presets",
+    Program_Power: "600W",
+    Peak_Power: "1200W",
+    Sensitivity: "Stage Monitors/ Main PA/ Fix Installation ",
+    Max_SPL: "122 dB ",
+    Max_SPL_Peak: "128 dB ",
+    Nominal_Impedance:
+      "2 x XLR/TRS Combo Jack Input | 1 x Stereo RCA Input | 1 x XLR Mix Output",
+    Crossover_Mode: "USB Type A for Input | USB Type B for Software Control",
+    Dispersion: "90°(H) x 90°(V) ",
+    Cabinet_Material: "HHigh density multi-layer plywood",
+    Size_mm: "525 x 410 x 385mm (H x W x D)",
+    Weight: "21.5/47.4 ",
     pdf: F12AMPDF,
     relatedProducts: [
       {
@@ -843,19 +845,41 @@ const ProductDetail = () => {
                 {[
                   { label: "Type", value: product.Type },
                   {
-                    label: "Frequency Response",
+                    label: "Frequency Response(-10dB)",
                     value: product.Frequency_Response,
                   },
                   { label: "LF Drivers", value: product.LF_Drivers },
                   { label: "HF Drivers", value: product.HF_Drivers },
-                  { label: "RMS Power ", value: product.RMS_Power },
 
                   {
-                    label: "Program Power",
+                    label:
+                      product?.model === "F12 AM"
+                        ? "DSP Control"
+                        : "RMS Power ",
+                    value: product.RMS_Power,
+                  },
+
+                  {
+                    label:
+                      product?.model === "F12 AM"
+                        ? "Amplifier Continuous Power"
+                        : "Program Power",
                     value: product.Program_Power,
                   },
-                  { label: "Peak Power", value: product.Peak_Power },
-                  { label: "Sensitivity（1W/1m)", value: product.Sensitivity },
+                  {
+                    label:
+                      product?.model === "F12 AM"
+                        ? "Amplifier Peak Power"
+                        : "Peak Power",
+                    value: product.Peak_Power,
+                  },
+                  {
+                    label:
+                      product?.model === "F12 AM"
+                        ? "Applications"
+                        : "Sensitivity（1W/1m)",
+                    value: product.Sensitivity,
+                  },
                   {
                     label: "Max SPL (Continuous/1m) ",
                     value: product.Max_SPL,
@@ -865,10 +889,19 @@ const ProductDetail = () => {
                     value: product.Max_SPL_Peak,
                   },
                   {
-                    label: "Nominal Impedance",
+                    label:
+                      product?.model === "F12 AM"
+                        ? "Connectors"
+                        : "Nominal Impedance",
                     value: product.Nominal_Impedance,
                   },
-                  { label: "Crossover Mode", value: product.Crossover_Mode },
+                  {
+                    label:
+                      product?.model === "F12 AM"
+                        ? "USB Interface"
+                        : "Crossover Mode",
+                    value: product.Crossover_Mode,
+                  },
                   { label: "Dispersion", value: product.Dispersion },
                   {
                     label: "Cabinet Material",

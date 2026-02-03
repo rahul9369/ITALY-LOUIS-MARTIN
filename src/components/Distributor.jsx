@@ -15,7 +15,7 @@ const distributors = [
     country: "India (New Delhi)",
     company: "Eminent Audio Visual Pvt Ltd",
     image: India,
-    link: "https://www.eminentaudiovisual.com",
+    link: "https://eminentav.in/",
   },
   {
     country: "China (GuangZhou)",
