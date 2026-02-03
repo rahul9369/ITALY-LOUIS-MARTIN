@@ -96,6 +96,30 @@ export const newsData = [
       "We welcome partners, clients, and collaborators to visit and experience the future of sound manufacturing at Louis Martin.",
   },
   {
+    id: 7,
+    img: plam,
+    title: "Louis Martin Showcases Innovation at PALM Expo 2025",
+    date: "29 May 2025 - 31 May 2025",
+    description:
+      "Presented by Eminent Audio Visual, our booth featured a dynamic showcase of high-performance speaker systems, customizable audio solutions, and next-generation sound reinforcement tools. Visitors experienced firsthand the clarity, depth, and precision that define the Louis Martin brand.",
+    highlights: [
+      {
+        text: "Live Demonstrations: Real-time audio performance of our flagship systems drew strong interest from integrators, rental companies, and sound engineers.",
+      },
+      {
+        text: "Multi-Color Customization: Our new design options offered aesthetic flexibility without compromising acoustic integrity.",
+      },
+      {
+        text: "Industry Engagement: The booth became a hub for technical discussions, product evaluations, and strategic networking.",
+      },
+      {
+        text: "Brand Synergy: The collaboration with Eminent Audio Visual reinforced our commitment to delivering premium audio solutions with local expertise and support.",
+      },
+    ],
+    quote:
+      "PALM Expo 2025 marked a significant step in Louis Martin’s expansion across South Asia. We thank all attendees, partners, and organizers for their enthusiasm and engagement. With Eminent Audio Visual as our trusted distributor, we look forward to deeper market penetration and continued innovation in the Indian professional audio landscape.",
+  },
+  {
     id: 8,
     img: prolight,
     title: "Louis Martin Audio to Exhibit at Prolight + Sound China 2025",
@@ -120,30 +144,6 @@ export const newsData = [
       "Prolight + Sound China is a key event in our global calendar, aligning with our mission to deliver premium audio performance and design excellence. Our presence at the show underscores our commitment to innovation, reliability, and customer-focused engineering.",
     conclusion:
       "We invite all attendees to visit the Louis Martin Audio booth and discover how we’re redefining the future of professional sound.",
-  },
-  {
-    id: 7,
-    img: plam,
-    title: "Louis Martin Showcases Innovation at PALM Expo 2025",
-    date: "29 May 2025 - 31 May 2025",
-    description:
-      "Presented by Eminent Audio Visual, our booth featured a dynamic showcase of high-performance speaker systems, customizable audio solutions, and next-generation sound reinforcement tools. Visitors experienced firsthand the clarity, depth, and precision that define the Louis Martin brand.",
-    highlights: [
-      {
-        text: "Live Demonstrations: Real-time audio performance of our flagship systems drew strong interest from integrators, rental companies, and sound engineers.",
-      },
-      {
-        text: "Multi-Color Customization: Our new design options offered aesthetic flexibility without compromising acoustic integrity.",
-      },
-      {
-        text: "Industry Engagement: The booth became a hub for technical discussions, product evaluations, and strategic networking.",
-      },
-      {
-        text: "Brand Synergy: The collaboration with Eminent Audio Visual reinforced our commitment to delivering premium audio solutions with local expertise and support.",
-      },
-    ],
-    quote:
-      "PALM Expo 2025 marked a significant step in Louis Martin’s expansion across South Asia. We thank all attendees, partners, and organizers for their enthusiasm and engagement. With Eminent Audio Visual as our trusted distributor, we look forward to deeper market penetration and continued innovation in the Indian professional audio landscape.",
   },
 
   {
@@ -199,7 +199,7 @@ export const newsData = [
     id: 2,
     img: asian,
     title: "Leadership Announcement: Asia Sales President Appointed",
-    date: "24 May 2023",
+    date: "2 May 2023",
     description:
       "With over 20+ years of experience in professional audio sales and strategic market development, Mr. Cui brings deep industry insight and a proven track record of driving growth across diverse Asian markets. His leadership will play a pivotal role in expanding Louis Martin’s presence throughout the region, enhancing distributor relationships, and delivering premium audio solutions to new and existing clients.",
     highlights: [
