@@ -11,11 +11,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 mb-2 md:grid-cols-3 gap-8 text-center md:text-left">
           {/* About Section */}
           <div className="flex flex-col items-center md:items-start">
-            <Link to="/">
-              <img src={Logo} className="w-24 h-24" alt="Logo" />
+            <Link to="/" className="flex justify-center md:justify-start">
+              <img src={Logo} alt="Logo" className="w-24 h-24 object-contain" />
             </Link>
-            <p className="mt-3 font-bold leading-relaxed text-center md:text-left">
-              ITALY LOUIS MARTIN <br /> PROFESSIONAL AUDIO LIMITED
+
+            <p className="mt-4 text-sm leading-relaxed text-center md:text-left text-white">
+              Engineered for Clarity. Built for Impact —
+              <br />
+              redefining audio excellence with power, precision and passion.
             </p>
           </div>
 

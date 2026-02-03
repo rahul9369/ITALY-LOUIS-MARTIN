@@ -37,6 +37,7 @@ import DSseries from "./components/CommercialSeries/Dsseries";
 import PDFViewer from "./components/PdfViewer";
 import DSPSeries from "./components/ElectronicSeries/Dspseries";
 import NewsDetails from "./components/NewsDetails";
+import NewDetails from "./components/NewDetails";
 
 <img loading="lazy" src="/images/product.webp" />;
 
@@ -166,6 +167,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/column/:model",
         element: <ColumnDetails />,
+      },
+      {
+        path: "/company-news/:id",
+        element: <NewDetails />,
       },
       {
         path: "/news/:id",

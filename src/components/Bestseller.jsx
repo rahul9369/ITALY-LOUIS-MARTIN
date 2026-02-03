@@ -9,6 +9,7 @@ const newsData = [
     id: 1,
     img: cox15,
     title: "Product Launch: Introducing the COX15 Coaxial Line Array System",
+    date: "Comming Soon",
     shortDesc:
       "The COX15 delivers exceptional clarity and dynamic range with a passive MF/HF configuration, combining advanced driver technology and optimized acoustic architecture.",
   },
@@ -16,6 +17,7 @@ const newsData = [
     id: 2,
     img: gril,
     title: "Q Series Line Array Gets a Sleek New Grill Design",
+    date: "Comming Soon",
     shortDesc:
       "Louis Martin Audio is excited to announce a grill upgrade for the acclaimed Q Series line array, combining refined visual appeal with improved mechanical integrity.",
   },
@@ -33,7 +35,7 @@ const CompanyNews = () => {
   return (
     <section className="bg-white py-16">
       <div className="w-[92%] lg:w-[90%] mx-auto mb-12">
-        <h2 className="text-3xl text-center text-red-700 sm:text-5xl font-bold">
+        <h2 className="text-3xl text-center text-red-900 sm:text-5xl font-bold">
           Latest News
         </h2>
         <p className="text-gray-400 text-center mt-3">
@@ -42,7 +44,7 @@ const CompanyNews = () => {
       </div>
 
       {/* SAME ROW – SAME DESIGN */}
-      <div className="w-[92%] lg:w-[85%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="w-[92%]  mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {newsData.map((item) => (
           <Link
             key={item.id}
@@ -57,6 +59,10 @@ const CompanyNews = () => {
             </div>
 
             <div className="p-6">
+              <p className="text-xs  tracking-widest text-gray-400 mb-2">
+                Company Update • {item.date}
+              </p>
+
               <h3 className="font-semibold text-lg group-hover:text-blue-500 transition">
                 {item.title}
               </h3>

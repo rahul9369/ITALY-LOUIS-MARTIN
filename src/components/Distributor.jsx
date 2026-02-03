@@ -13,12 +13,13 @@ import { Helmet } from "react-helmet";
 const distributors = [
   {
     country: "India (New Delhi)",
-    company: "Eminent Audio Visual Pvt ltd",
+    company: "Eminent Audio Visual Pvt Ltd",
     image: India,
+    link: "https://www.eminentaudiovisual.com",
   },
   {
     country: "China (GuangZhou)",
-    company: "Jing Ying Electronics co., ltd",
+    company: "Jing Ying Electronics com. Ltd",
     image: Chaina,
   },
   {
@@ -75,9 +76,23 @@ const DistributorPage = () => {
               />
               <div className="absolute inset-0    bg-opacity-50 flex flex-col justify-center items-center text-white text-center p-4">
                 <h2 className="text-3xl  font-bold">{dist.country}</h2>
-                <p className="mt-2 text-2xl hover:bg-red-600 px-2 py-2 rounded-md">
-                  {dist.company}
-                </p>
+
+                {dist.link ? (
+                  <a
+                    href={dist.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 text-2xl hover:bg-red-600 px-2 py-2 rounded-md transition cursor-pointer">
+                    {dist.company}
+                  </a>
+                ) : (
+                  <p
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 text-2xl hover:bg-red-600 px-2 cursor-pointer py-2 rounded-md transition">
+                    {dist.company}
+                  </p>
+                )}
               </div>
             </div>
           ))}

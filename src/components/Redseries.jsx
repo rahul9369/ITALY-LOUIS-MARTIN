@@ -21,7 +21,7 @@ const products = [
     weight: "38Kg",
   },
   {
-    img:   redf5,
+    img: redf5,
     title: "Red Series",
     model: "Red 5.5",
     description: '2x5" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -32,7 +32,7 @@ const products = [
     weight: "9Kg",
   },
   {
-    img:redfront5,
+    img: redfront5,
     title: "Red Series",
     model: "Red 5",
     description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -76,7 +76,12 @@ const ProductCard = ({ product }) => {
         alt={product.model}
         className="w-full h-72 object-contain cursor-pointer rounded-lg"
         loading="eager"
-                decoding="async"
+        decoding="async"
+        onClick={() =>
+          navigate(
+            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
+          )
+        }
       />
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
@@ -108,7 +113,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/product/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

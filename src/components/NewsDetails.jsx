@@ -3,12 +3,14 @@ import Footer from "./Footer";
 import cox15 from "../assets/news/cox15.jpg";
 import gril from "../assets/news/gril.jpg";
 import factory from "../assets/news/factory.jpg";
+import { useEffect } from "react";
 
 const newsData = [
   {
     id: 1,
     img: cox15,
     title: "Product Launch: Introducing the COX15 Coaxial Line Array System",
+    date: "Comming Soon",
     description:
       "The COX15 delivers exceptional clarity and dynamic range with a passive MF/HF configuration, combining advanced driver technology and optimized acoustic architecture.",
     highlights: [
@@ -33,6 +35,7 @@ const newsData = [
     id: 2,
     img: gril,
     title: "Q Series Line Array Gets a Sleek New Grill Design",
+    date: "Comming Soon",
     description:
       "Louis Martin Audio is excited to announce a grill upgrade for the acclaimed Q Series line array, combining refined visual appeal with improved mechanical integrity.",
     highlights: [
@@ -78,6 +81,9 @@ const newsData = [
 const NewsDetails = () => {
   const { id } = useParams();
   const news = newsData.find((item) => item.id === Number(id));
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
 
   if (!news) {
     return (
@@ -90,7 +96,7 @@ const NewsDetails = () => {
   return (
     <div className=" min-h-screen flex flex-col">
       {/* Back Button */}
-      <div className="%] mx-auto ">
+      <div className=" mx-auto ">
         <article className="bg-white  overflow-hidden">
           <img
             src={news.img}
@@ -98,7 +104,7 @@ const NewsDetails = () => {
             className="w-full h-[320px] py-2 sm:h-[420px] object-contain"
           />
 
-          <div className="p-6 sm:p-10">
+          <div className="w-full p-6 sm:p-10">
             {news.date && (
               <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">
                 Company Update • {news.date}
