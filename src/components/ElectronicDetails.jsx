@@ -1415,7 +1415,7 @@ const ProductDetail = () => {
                   {/* DL48 */}
                   {product?.model === "DL 4.8" && (
                     <a
-                      href="/dl48.zip"
+                      href="https://drive.google.com/file/d/1NPNxVgJfUDR4k67oUsFlLsTUDyg7ZshI/view"
                       download
                       className="px-4 py-2 bg-green-600 text-white rounded-lg text-sm md:text-base hover:bg-green-700 transition-colors">
                       Download

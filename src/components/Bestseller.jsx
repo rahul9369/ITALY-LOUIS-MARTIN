@@ -1,29 +1,31 @@
 import { Link } from "react-router-dom";
-import Eavpl from "../assets/eavPl.png";
-import update1 from "../assets/news/update.jpg";
-import update2 from "../assets/news/update1.jpg";
+
+import cox15 from "../assets/news/cox15.jpg";
+import gril from "../assets/news/gril.jpg";
+import factory from "../assets/news/factory.jpg";
 
 const newsData = [
   {
-    id: "eminent-av",
-    img: Eavpl,
-    title: "Louis Martin Audio Appoints Eminent AV as India Distributor",
+    id: 1,
+    img: cox15,
+    title: "Product Launch: Introducing the COX15 Coaxial Line Array System",
     shortDesc:
-      "Eminent Audio Visual appointed as distributor for India, Nepal & Pakistan.",
+      "The COX15 delivers exceptional clarity and dynamic range with a passive MF/HF configuration, combining advanced driver technology and optimized acoustic architecture.",
   },
   {
-    id: "asia-sales-president",
-    img: update1,
-    title: "Asia Sales President Appointed",
+    id: 2,
+    img: gril,
+    title: "Q Series Line Array Gets a Sleek New Grill Design",
     shortDesc:
-      "CUI brings 20+ years of audio industry experience to expand Asian markets.",
+      "Louis Martin Audio is excited to announce a grill upgrade for the acclaimed Q Series line array, combining refined visual appeal with improved mechanical integrity.",
   },
   {
-    id: "get-show-2023",
-    img: update2,
-    title: "GET SHOW 2023",
+    id: 3,
+    img: factory,
+    title: "Louis Martin Audio Opens New Factory Facility",
+    date: "26 November 2025",
     shortDesc:
-      "Live demos, professional networking, and next-gen audio technology.",
+      "Louis Martin Audio is proud to announce the opening of our new factory facility, effective November 26, 2025.",
   },
 ];
 
@@ -49,7 +51,7 @@ const CompanyNews = () => {
             <div className="h-56 overflow-hidden">
               <img
                 src={item.img}
-                className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                className="w-full h-full object-contain group-hover:scale-105 transition duration-500"
                 alt={item.title}
               />
             </div>
