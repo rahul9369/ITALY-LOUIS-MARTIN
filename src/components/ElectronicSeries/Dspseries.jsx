@@ -13,8 +13,9 @@ const products = [
     title: "DSP",
     model: "DL 2.6",
     description: "DIGITAL LOUDSPEAKER MANAGEMENT SYSTEM",
-    power: "250W×2/8Ω      400W×2/4Ω",
-    response: " ＞500(1 KHz @ 8Ω)",
+    power: "2 Channel electronically balanced",
+    output: "6 Channel electronically balanced",
+    response: " >100 dB (20 Hz – 20 kHz)",
     weight: "2.5kg",
   },
   {
@@ -22,8 +23,10 @@ const products = [
     title: "DSP",
     model: "DL 4.8",
     description: "DIGITAL LOUDSPEAKER MANAGEMENT SYSTEM",
-    power: "350W×2/8Ω      600W×2/4Ω",
-    response: " ＞500(1 KHz @ 8Ω)",
+    power: "4 Channel electronically balanced",
+    output: "8 Channel electronically balanced",
+    response: " >120 dB (20 Hz – 20 kHz)",
+    fir: "800 FIR taps per output",
     weight: "2.8kg",
   },
 ];
@@ -47,20 +50,31 @@ const ProductCard = ({ product }) => {
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
-      <p className="text-sm font mt-4 text-gray-700">
-        <span className="font-bold">Output Power:</span> {product.power}
+      <p>
+        <span className="font-bold">Inputs: </span> {product.power}
       </p>
-      <p className="text-sm mt-5 text-gray-700">
-        <span className="font-bold"> Damping factor:</span> {product.response}
+
+      <p>
+        <span className="font-bold">Outputs: </span> {product.output}
       </p>
-      {/* <p className="text-sm mt-2 text-gray-700">
-        <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
-        {product.Sensitivity}
-      </p> */}
-      {/* <p className="text-sm mt-2 text-gray-700">
-        <span className="font-bold">Max SPL(Continuous):</span> {product.spl}
-      </p> */}
-      <p className="text-sm mt-5 text-gray-700">
+
+      <p>
+        <span className="font-bold">Input Dynamic Range: </span>
+        {product.response}
+      </p>
+      {product.model === "DL 4.8" && (
+        <p>
+          <span className="font-bold">FIR Filters: </span>
+          {product.fir}
+        </p>
+      )}
+
+      {/* <p>
+            <span className="font-bold">A/D Converters:</span>
+            {product.response}
+          </p> */}
+
+      <p className="text-sm  text-gray-700">
         <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button

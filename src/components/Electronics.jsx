@@ -219,7 +219,6 @@ const products = [
     power: "2 Channel electronically balanced",
     output: "6 Channel electronically balanced",
     response: " >100 dB (20 Hz – 20 kHz)",
-
     weight: "2.5kg",
   },
   {

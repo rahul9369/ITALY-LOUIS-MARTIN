@@ -1396,6 +1396,33 @@ const ProductDetail = () => {
               </div>
 
               <hr className="border-t border-gray-300" />
+              {product?.title?.trim() === "DSP" && (
+                <div className="flex justify-between my-2 items-center">
+                  <p className="text-gray-700 text-lg font-bold">
+                    Control Software
+                  </p>
+
+                  {/* DL26 */}
+                  {product?.model === "DL 2.6" && (
+                    <a
+                      href="/dl26.zip"
+                      download
+                      className="px-4 py-2 bg-green-600 text-white rounded-lg text-sm md:text-base hover:bg-green-700 transition-colors">
+                      Download
+                    </a>
+                  )}
+
+                  {/* DL48 */}
+                  {product?.model === "DL 4.8" && (
+                    <a
+                      href="/dl48.zip"
+                      download
+                      className="px-4 py-2 bg-green-600 text-white rounded-lg text-sm md:text-base hover:bg-green-700 transition-colors">
+                      Download
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           )}
         </div>

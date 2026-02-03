@@ -57,11 +57,11 @@ const products = [
     title: "F Series",
     model: "F12 AM",
     description: "12” Two-Way Coaxial Full - Range Active Loudspeaker",
-    power: "500W/2000W (Passive)",
-    Sensitivity: "99dB",
+    power: "1200W Class-D Amplifier with DSP",
+    Sensitivity: "55 Hz – 19 kHz",
     response: "50Hz-19kHz",
-    spl: "129dB",
-    weight: "30 Kg",
+    spl: "122 dB",
+    weight: "21.5 Kg",
   },
 ];
 
@@ -85,17 +85,34 @@ const ProductCard = ({ product }) => {
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
-      <p className="text-sm font- mt-4 text-gray-700">
+
+      {product.model === "F12 AM" ? (
+        <p className="text-sm font mt-4 text-gray-700">
+          <span className="font-bold">Amplifier Program Power:</span>{" "}
+          {product.power}
+        </p>
+      ) : (
+        <>
+          <p className="text-sm font mt-4 text-gray-700">
+            <span className="font-bold">RMS/Peak Power:</span> {product.power}
+          </p>
+          <p className="text-sm mt-5 text-gray-700">
+            <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
+            {product.Sensitivity}
+          </p>
+        </>
+      )}
+      {/* <p className="text-sm font- mt-4 text-gray-700">
         <span className="font-bold">RMS/Peak Power:</span> {product.power}
-      </p>
+      </p> */}
       <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold"> Frequency Response:</span>{" "}
         {product.response}
       </p>
-      <p className="text-sm mt-5 text-gray-700">
+      {/* <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Sensitivity(1W/1m) :</span>{" "}
         {product.Sensitivity}
-      </p>
+      </p> */}
       <p className="text-sm mt-5 text-gray-700">
         <span className="font-bold">Max SPL(Continuous/1m):</span> {product.spl}
       </p>
