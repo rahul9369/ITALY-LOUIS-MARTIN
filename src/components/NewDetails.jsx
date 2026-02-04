@@ -39,7 +39,7 @@ const NewsDetails = () => {
           </ul>
         )}
         {news.quote && (
-          <blockquote className="mt-6 border-l-4 border-blue-600 pl-4 italic text-gray-700">
+          <blockquote className="mt-6  pl-4 italic text-gray-700">
             “{news.quote}”
           </blockquote>
         )}

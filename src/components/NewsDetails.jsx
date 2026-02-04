@@ -115,7 +115,7 @@ const NewsDetails = () => {
               {news.title}
             </h1>
 
-            <div className="mt-4 h-1 w-16 bg-blue-600 rounded-full" />
+            {/* <div className="mt-4 h-1 w-16 bg-blue-600 rounded-full" /> */}
 
             <p className="mt-6 text-gray-700 text-base sm:text-lg">
               {news.description}
@@ -133,7 +133,7 @@ const NewsDetails = () => {
             )}
 
             {news.quote && (
-              <blockquote className="mt-6 border-l-4 border-blue-600 pl-4 italic text-gray-700">
+              <blockquote className="mt-6  border-blue-600 pl-4 italic text-gray-700">
                 “{news.quote}”
               </blockquote>
             )}
