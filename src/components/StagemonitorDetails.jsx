@@ -274,7 +274,7 @@ const products = [
   {
     img: [Hwfornt, hwback, hwside],
     title: "Plastic Speaker",
-    model: "Hw 6.5",
+    model: "Hw6.5",
     description:
       " The HW 6.5 has one 6.5” Woofer with 1” HF. It is designed for the commercial applications; It has built in transformer taping for high impedance uses environment. Featuring a passive crossover, two-way full-range configuration, it is ideal for outdoor/indoor install market applications,including hospitality, education segment. Made of plastic & IP65 makes it use for weatherproof applications. The cabinet's design sleek & compact, look elegant and has good vocal clarity, fidelity, and minimal distortion without compromising transient response.",
     application: [
@@ -289,7 +289,7 @@ const products = [
     LF_Drivers: " 1x 6.5” (166 mm) LF Driver",
     HF_Drivers: " 1 x 1” (25 mm) Silk dome HF Driver",
     RMS_Power: " 40W @ 8Ω",
-    Program_Power: "80W @ 8 ohms",
+    Program_Power: "80W @ 8Ω",
     Peak_Power: "20W-10W-5W-2.5W/100V/8Ω",
     Sensitivity: " 88 dB ",
     Max_SPL: " 109 dB ",

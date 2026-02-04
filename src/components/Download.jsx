@@ -35,6 +35,11 @@ import PLpdf from "../assets/newpdf/PLseriesnew.pdf";
 import TIPpdf from "../assets/newpdf/TIPseriesnew.pdf";
 import TTApdf from "../assets/newpdf/TTAseriesnew.pdf";
 import Dpdf from "../assets/newpdf/Dseriesnew.pdf";
+import F12AMPDF from "../assets/newpdf/F12AMnew.pdf";
+import DSPPDF2 from "../assets/newpdf/DSP2seriesnew.pdf";
+import DSPPDF4 from "../assets/newpdf/DSP4seriesnew.pdf";
+import TLPDF from "../assets/newpdf/TLnew.pdf";
+import HWPDF from "../assets/newpdf/Hwnew.pdf";
 
 import { DownloadIcon } from "lucide-react";
 import { Helmet } from "react-helmet";
@@ -117,6 +122,11 @@ const pdfList = [
     filename: "F15_Loudspeaker_Datasheet.pdf",
   },
   {
+    title: "F12AM_Loudspeaker",
+    path: F12AMPDF,
+    filename: "F12AM_Loudspeaker_Datasheet.pdf",
+  },
+  {
     title: "K302_Column_Speaker",
     path: K302pdf,
     filename: "K302_Column_Speaker_Datasheet.pdf",
@@ -161,10 +171,16 @@ const pdfList = [
     path: DS15pdf,
     filename: "DS15_Speaker_Datasheet.pdf",
   },
+
   {
-    title: "DS15_Speaker",
-    path: DS15pdf,
-    filename: "DS15_Speaker_Datasheet.pdf",
+    title: "HW6.5_Speaker",
+    path: HWPDF,
+    filename: "HW6.5_Speaker_Datasheet.pdf",
+  },
+  {
+    title: "TL5.5_Speaker",
+    path: TLPDF,
+    filename: "TL5.5_Speaker_Datasheet.pdf",
   },
   {
     title: "KS18_Subwoofer",
@@ -205,6 +221,16 @@ const pdfList = [
     title: "TTA_Series_Amplifier",
     path: TTApdf,
     filename: "TTA_Series_Amplifier_Datasheet.pdf",
+  },
+  {
+    title: "DL2.6_DSP",
+    path: DSPPDF2,
+    filename: "DL2.6_DSP_Datasheet.pdf",
+  },
+  {
+    title: "DL4.8_DSP",
+    path: DSPPDF4,
+    filename: "DL4.8_DSP_Datasheet.pdf",
   },
 ];
 

@@ -65,9 +65,9 @@ const products = [
   {
     img: hwside,
     title: "Plastic Speaker",
-    model: "HW 6.5",
+    model: "HW6.5",
     description: " Two-way full range plastic IP 65 Weatherproof loudspeaker",
-    power: " 40W / 80W @8 ohms",
+    power: " 40W / 80W @8Ω",
     Sensitivity: " 88 dB",
     response: " 65 Hz – 18 kHz",
     spl: "109dB",

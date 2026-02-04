@@ -347,18 +347,19 @@ const products = [
       "Stadium & Sport Complex",
       // "House of worKship",
     ],
-    Type: "Two-way Coaxial full range passive line array speaker",
+    Type: "Two-way Coaxial full range Bi-amp/passive switchable line array speaker",
     Frequency_Response: "60 Hz – 19 kHz",
     LF_Drivers: "1x 12” (304 mm) Coaxial Driver",
     HF_Drivers: "1 x 1.5” (38 mm) HF Compression Driver",
-    RMS_Power: "450W",
-    Program_Power: "900W",
+    RMS_Power: "450W (RMS) / 900W (Program) / 1800W (Peak)",
+    Program_Power:
+      "LF: 400W, HF: 50W (RMS) / LF: 800W, HF: 100W (Program), LF: 1600W, HF:200W (Peak)",
     Peak_Power: "1800W",
     Sensitivity: "98 dB ",
     Max_SPL: "127 dB ",
     Max_SPL_Peak: "130 dB ",
     Nominal_Impedance: "8 Ohms",
-    Crossover_Mode: "Passive",
+    Crossover_Mode: "Passive/Bi-amp Switchable",
     Crossover_Point_Biamp_Mode: "LF : 65 Hz – 3 kHz | HF : 3 kHz – 19 kHz",
     Dispersion: "100°(H) x 10° (V)",
     Cabinet_Material: "High density multi-layer plywood",
@@ -591,13 +592,25 @@ const ProductDetail = () => {
                   },
                   { label: "LF Drivers", value: product.LF_Drivers },
                   { label: "HF Drivers", value: product.HF_Drivers },
-                  { label: "RMS Power ", value: product.RMS_Power },
+                  {
+                    label:
+                      product?.model === "Cox 12"
+                        ? "Power (Passive Mode)"
+                        : "RMS Power ",
+                    value: product.RMS_Power,
+                  },
 
                   {
-                    label: "Program Power",
+                    label:
+                      product?.model === "Cox 12"
+                        ? "Power (Bi-amp Mode)"
+                        : "Program Power",
                     value: product.Program_Power,
                   },
-                  { label: "Peak Power", value: product.Peak_Power },
+
+                  ...(product?.model === "Cox 12"
+                    ? []
+                    : [{ label: "Peak Power", value: product.Peak_Power }]),
                   { label: "Sensitivity（1W/1m) ", value: product.Sensitivity },
                   {
                     label: "Max SPL (Continuous/1m) ",

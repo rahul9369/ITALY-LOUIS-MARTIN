@@ -617,11 +617,11 @@ const products = [
     Weight: "21.5/47.4 ",
     pdf: F12AMPDF,
     relatedProducts: [
-      {
-        name: "TIP-1002",
-        path: "/electronics/tip%201002",
-        img: ft1002,
-      },
+      // {
+      //   name: "TIP-1002",
+      //   path: "/electronics/tip%201002",
+      //   img: ft1002,
+      // },
       {
         name: "S18",
         path: "/subwoofer/s18",
@@ -631,11 +631,6 @@ const products = [
         name: "S218",
         path: "/subwoofer/s218",
         img: sf218,
-      },
-      {
-        name: "F10",
-        path: "/product/f10",
-        img: ff10,
       },
     ],
   },
@@ -947,22 +942,47 @@ const ProductDetail = () => {
             Related Product
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-4 sm:space-x-8 mt-5 justify-center">
+          <div
+            className="
+      grid 
+      w-[90%] 
+      mx-auto
+      grid-cols-[repeat(auto-fit,minmax(160px,1fr))]
+      gap-6
+      justify-items-center
+    ">
             {product.relatedProducts.map((item, index) => (
               <Link
                 to={item.path}
                 onClick={() => window.scrollTo(0, 0)}
                 key={index}
-                className="group block  rounded-md  p-2 text-center overflow-hidden">
-                <div className="relative w-full h-36 sm:h-60  overflow-hidden rounded-sm">
+                className="
+          group 
+          w-[160px] 
+          sm:w-[220px] 
+          text-center 
+          rounded-md 
+          p-2 
+          overflow-hidden
+        ">
+                {/* Image */}
+                <div className="relative w-full  h-28 sm:h-40 overflow-hidden rounded-sm  flex items-center justify-center">
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="absolute top-0 left-0 w-full h-[110%] sm:h-[95%] object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                    className="
+              max-w-full 
+              max-h-full 
+              object-contain 
+              transition 
+              duration-300 
+              group-hover:scale-105
+            "
                   />
                 </div>
 
-                <p className="sm:mt-2 hover:text-orange-400 text-md font-medium">
+                {/* Title */}
+                <p className=" text-sm sm:text-base text-center font-medium hover:text-red-900">
                   {item.name}
                 </p>
               </Link>
