@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 import ksf18 from "../assets/ks18/ksf18.JPG";
 import ksf218 from "../assets/ks218/ksf218.JPG";
 // import sf18 from "../assets/s18/sf18.JPG";
-import sf18 from "../assets/s18/s18front.JPG";
+import sf18 from "../assets/s18/s18front.jpg";
 
 import sf218 from "../assets/s218/sf218.JPG";
 
