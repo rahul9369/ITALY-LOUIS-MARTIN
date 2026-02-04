@@ -63,7 +63,7 @@ const Categories = () => {
   }, []);
 
   return (
-    <div className="bg-white flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white mx-auto w-[90%] sm:w-full flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
       {/* Title */}
       <div className="w-full text-center mb-10">
         <h2 className="text-4xl md:text-5xl font-bold text-red-900 flex items-center justify-center">
@@ -73,7 +73,7 @@ const Categories = () => {
       </div>
 
       {/* PRODUCT SECTION */}
-      <div className="w-[90%] space-y-20">
+      <div className="w-[90%]  space-y-20">
         {categories.map((item, index) => (
           <div
             key={index}
