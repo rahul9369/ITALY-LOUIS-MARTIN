@@ -284,18 +284,18 @@ const products = [
       "Classrooms",
       " Terrace ",
     ],
-    Type: "Two-way full range plastic IP 65 Weatherproof loudspeaker",
+    Type: "Two-way full range plastic IP65 Weatherproof loudspeaker",
     Frequency_Response: " 65 Hz – 18 kHz",
     LF_Drivers: " 1x 6.5” (166 mm) LF Driver",
     HF_Drivers: " 1 x 1” (25 mm) Silk dome HF Driver",
-    RMS_Power: " 20W-10W-5W-2.5W/100V ",
+    RMS_Power: " 40W @ 8Ω",
     Program_Power: "80W @ 8 ohms",
-    Peak_Power: "160W",
+    Peak_Power: "20W-10W-5W-2.5W/100V/8Ω",
     Sensitivity: " 88 dB ",
     Max_SPL: " 109 dB ",
     Max_SPL_Peak: " 112 dB ",
     Nominal_Impedance: " 8 Ohms",
-    Crossover_Mode: "Passive",
+    Crossover_Mode: "Passive, optimized for linearity",
     Dispersion: "90° (H) x 60° (V)",
     Cabinet_Material: "Plastic materials",
     IP_Rating: " IP 65 Weatherproof",
@@ -318,11 +318,11 @@ const products = [
         path: "/subwoofer/s12",
         img: fronts12,
       },
-      {
-        name: "S18",
-        path: "/subwoofer/s18",
-        img: sf18,
-      },
+      // {
+      //   name: "S18",
+      //   path: "/subwoofer/s18",
+      //   img: sf18,
+      // },
     ],
   },
   {
@@ -586,10 +586,7 @@ const ProductDetail = () => {
                   { label: "LF Drivers", value: product.LF_Drivers },
                   { label: "HF Drivers", value: product.HF_Drivers },
                   {
-                    label:
-                      product?.model === "Hw 6.5"
-                        ? "Transformer Tapping"
-                        : "RMS Power ",
+                    label: "RMS Power ",
                     value: product.RMS_Power,
                   },
 
@@ -597,7 +594,13 @@ const ProductDetail = () => {
                     label: "Program Power",
                     value: product.Program_Power,
                   },
-                  { label: "Peak Power", value: product.Peak_Power },
+                  {
+                    label:
+                      product?.model === "Hw 6.5"
+                        ? "Transformer Tapping"
+                        : "Peak Power",
+                    value: product.Peak_Power,
+                  },
                   { label: "Sensitivity（1W/1m)", value: product.Sensitivity },
                   {
                     label: "Max SPL (Continuous/1m) ",
@@ -663,22 +666,47 @@ const ProductDetail = () => {
             Related Product
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-4 sm:space-x-8 mt-5 sm:justify-center">
+          <div
+            className="
+      grid 
+      w-[90%] 
+      mx-auto
+      grid-cols-[repeat(auto-fit,minmax(160px,1fr))]
+      gap-6
+      justify-items-center
+    ">
             {product.relatedProducts.map((item, index) => (
               <Link
                 to={item.path}
                 onClick={() => window.scrollTo(0, 0)}
                 key={index}
-                className="group block  rounded-md  p-2 text-center overflow-hidden">
-                <div className="relative w-full h-40 sm:h-60 overflow-hidden rounded-sm">
+                className="
+          group 
+          w-[160px] 
+          sm:w-[220px] 
+          text-center 
+          rounded-md 
+          p-2 
+          overflow-hidden
+        ">
+                {/* Image */}
+                <div className="relative w-full  h-28 sm:h-40 overflow-hidden rounded-sm  flex items-center justify-center">
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="absolute top-0 left-0 w-full h-[90%] object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                    className="
+              max-w-full 
+              max-h-full 
+              object-contain 
+              transition 
+              duration-300 
+              group-hover:scale-105
+            "
                   />
                 </div>
 
-                <p className="sm:mt-2 hover:text-orange-400 text-md font-medium">
+                {/* Title */}
+                <p className=" text-sm sm:text-base text-center font-medium hover:text-red-900">
                   {item.name}
                 </p>
               </Link>

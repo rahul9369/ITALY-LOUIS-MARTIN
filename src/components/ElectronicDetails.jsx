@@ -1566,7 +1566,7 @@ const ProductDetail = () => {
                 </div>
 
                 {/* Title */}
-                <p className=" text-sm sm:text-base text-center font-medium hover:text-orange-400">
+                <p className=" text-sm sm:text-base text-center font-medium hover:text-red-900">
                   {item.name}
                 </p>
               </Link>
