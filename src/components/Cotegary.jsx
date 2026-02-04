@@ -21,7 +21,7 @@ const categories = [
     name: "Point Source",
     img: redfront,
     description:
-      "Unmatched clarity. No distortion. No compromise. Just pure audio perfection.",
+      "Unmatched clarity, Pure detail, Absolute audio perfection - Elevating audio into an art form, where engineering meets emotion.",
     path: "/pointsource",
   },
   {

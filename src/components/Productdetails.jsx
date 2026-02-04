@@ -588,14 +588,14 @@ const products = [
     title: "Stage Monitor ",
     model: "F12 AM",
     description:
-      " The F-12AM has one powerful 15” (381 mm)  LF driver with 1.45” (44 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install & portable use including Main FoH, Night Clubs, lounges, Multipurpose Hall, Live Setup etc. With flat frequency response, the cabinet offers uncoloured, transparent sound quality. Crafted from high density plywood, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
+      "The F12AM is engineered for clarity, power, and versatility, this Powered Active Stage Monitor is your go-to solution for any live stage performance environments and small Main PA applications. With a robust coaxial design featuring a 12″ LF driver and 1.5″ HF driver, it delivers full-range audio from 55 Hz to 19 kHz with wide, even coverage - 90° horizontal and 90° vertical.Whether you're performing, presenting, or monitoring, the system adapts instantly with three onboard DSP presets: Music, Monitor, and Flat Mode. Its powerful amplifier delivers 600 W continuous and up to 1200 W peak output, ensuring your sound is always clean and commanding.",
     application: [
       // " Lounge  ",
       // "Pub/Bar ",
       "Main FoH",
       // "Multi-functional Room",
       "Live portable setup",
-      "Night Clubs",
+      "Stage Monitor",
     ],
     Type: "Two-way Coaxial full range Active loudspeaker",
     Frequency_Response: "55 Hz – 19 kHz",

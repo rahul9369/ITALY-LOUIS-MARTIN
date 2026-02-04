@@ -15,10 +15,10 @@ const Footer = () => {
               <img src={Logo} alt="Logo" className="w-24 h-24 object-contain" />
             </Link>
 
-            <p className="mt-4 text-[10px] sm:text-sm leading-relaxed text-center md:text-left text-white">
-              Engineered for Clarity. Built for Impact —
+            <p className="mt-4 text-sm leading-relaxed text-center md:text-left text-white">
+              Redefining Audio Excellence with
               <br />
-              redefining audio excellence with power, precision and passion.
+              power, precision and passion.
             </p>
           </div>
 
