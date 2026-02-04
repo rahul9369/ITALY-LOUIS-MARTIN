@@ -8,6 +8,7 @@ import kff302 from "../assets/k302/kff302.jpg";
 import ds415 from "../assets/ds15/ds415.JPG";
 import ksf218 from "../assets/ks218/ksf218.JPG";
 import ft1002 from "../assets/tip1002/ft1002.jpg";
+import ks4218 from "../assets/ks218/ks4218.jpg";
 
 const categories = [
   {
@@ -40,7 +41,7 @@ const categories = [
   },
   {
     name: "Subwoofer",
-    img: ksf218,
+    img: ks4218,
     description:
       "Feel the difference: state‑of‑the‑art drivers, deep precision bass, and rugged durability. Built to perform, built to last.",
     path: "/subwoofer",
