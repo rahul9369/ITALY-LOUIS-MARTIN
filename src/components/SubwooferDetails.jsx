@@ -34,7 +34,7 @@ import sb18 from "../assets/s18/s18side.jpg";
 import ss18 from "../assets/s18/s18side1.jpg";
 import stop18 from "../assets/s18/stop18.JPG";
 import s418 from "../assets/s18/s418.JPG";
-import sop18 from "../assets/s18/s1845.JPG";
+import sop18 from "../assets/s18/s1845.jpg";
 import coxf from "../assets/coximg/coxf.jpg";
 
 //s12//
