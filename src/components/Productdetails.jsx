@@ -924,7 +924,7 @@ const ProductDetail = () => {
           {activeTab === "Downloads" && (
             <div className="mt-4 w-[100%]">
               <div className="flex justify-between items-center mb-2">
-                <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
+                <p className="text-gray-700 text-lg font-bold">Datasheet</p>
                 <a
                   href={`/view-pdf?url=${encodeURIComponent(
                     product.pdf,

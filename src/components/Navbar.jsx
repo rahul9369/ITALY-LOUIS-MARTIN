@@ -94,7 +94,7 @@ const Navbar = () => {
       ],
     },
     { name: "News & Updates", path: "/news" },
-    { name: "Case", path: "/case" },
+    // { name: "Case", path: "/case" },
     { name: "Download", path: "/download" },
     { name: "Distributor", path: "/distributor" },
     { name: "Contact Us", path: "/contact" },

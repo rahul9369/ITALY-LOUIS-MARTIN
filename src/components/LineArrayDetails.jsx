@@ -209,11 +209,11 @@ const products = [
         path: "/electronics/tip%201002",
         img: ft1003,
       },
-      {
-        name: "S18",
-        path: "/subwoofer/s18",
-        img: sf18,
-      },
+      // {
+      //   name: "S18",
+      //   path: "/subwoofer/s18",
+      //   img: sf18,
+      // },
       {
         name: " S218",
         path: "/subwoofer/s218",
@@ -321,11 +321,11 @@ const products = [
         path: "/subwoofer/s218",
         img: sf218,
       },
-      {
-        name: "KS218",
-        path: "/subwoofer/ks218",
-        img: ksf218,
-      },
+      // {
+      //   name: "KS218",
+      //   path: "/subwoofer/ks218",
+      //   img: ksf218,
+      // },
       {
         name: "COX-12",
         path: "/linearray/cox%2012",
@@ -639,7 +639,7 @@ const ProductDetail = () => {
           {activeTab === "Downloads" && (
             <div className="mt-4 w-[100%]">
               <div className="flex justify-between items-center mb-2">
-                <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
+                <p className="text-gray-700 text-lg font-bold">Datasheet</p>
                 <a
                   href={`/view-pdf?url=${encodeURIComponent(
                     product.pdf,
@@ -660,24 +660,47 @@ const ProductDetail = () => {
             Related Product
           </h1>
 
-          <div className="grid grid-cols-1  sm:grid-cols-4 sm:space-x-8 mt-5 justify-center">
+          <div
+            className="
+      grid 
+      w-[90%] 
+      mx-auto
+      grid-cols-[repeat(auto-fit,minmax(160px,1fr))]
+      gap-6
+      justify-items-center
+    ">
             {product.relatedProducts.map((item, index) => (
               <Link
                 to={item.path}
                 onClick={() => window.scrollTo(0, 0)}
                 key={index}
-                className="group  w-90 block rounded-md py-2 px-6 text-center overflow-hidden">
-                <div className="relative w-full h-36 sm:h-60 overflow-hidden rounded-sm">
+                className="
+          group 
+          w-[160px] 
+          sm:w-[220px] 
+          text-center 
+          rounded-md 
+          p-2 
+          overflow-hidden
+        ">
+                {/* Image */}
+                <div className="relative w-full  h-28 sm:h-40 overflow-hidden rounded-sm  flex items-center justify-center">
                   <img
                     src={item.img}
                     alt={item.name}
-                    loading="eager"
-                    decoding="async"
-                    className="absolute top-0 left-0 w-full h-[100%] object-contain transition duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                    className="
+              max-w-full 
+              max-h-full 
+              object-contain 
+              transition 
+              duration-300 
+              group-hover:scale-105
+            "
                   />
                 </div>
 
-                <p className="sm:mt-2 hover:text-orange-400 text-md font-medium">
+                {/* Title */}
+                <p className=" text-sm sm:text-base text-center font-medium hover:text-orange-400">
                   {item.name}
                 </p>
               </Link>

@@ -288,7 +288,7 @@ const products = [
     Frequency_Response: " 65 Hz – 18 kHz",
     LF_Drivers: " 1x 6.5” (166 mm) LF Driver",
     HF_Drivers: " 1 x 1” (25 mm) Silk dome HF Driver",
-    RMS_Power: " 40W / 80W @8 ohms ",
+    RMS_Power: " 20W-10W-5W-2.5W/100V ",
     Program_Power: "80W @ 8 ohms",
     Peak_Power: "160W",
     Sensitivity: " 88 dB ",
@@ -534,7 +534,7 @@ const ProductDetail = () => {
 
           <div className="">
             <h1 className="hidden md:block text-2xl md:text-3xl font-bold">
-              {product.title} - {product.model}
+              {product.title} - {product.model.toUpperCase()}
             </h1>
             <div className="w-full ">
               <p className="text-gray-600 text-[12px] md:text-[15px]  mt-2 text-justify">
@@ -583,7 +583,13 @@ const ProductDetail = () => {
                   },
                   { label: "LF Drivers", value: product.LF_Drivers },
                   { label: "HF Drivers", value: product.HF_Drivers },
-                  { label: "RMS Power ", value: product.RMS_Power },
+                  {
+                    label:
+                      product?.model === "Hw 6.5"
+                        ? "Transformer Tapping"
+                        : "RMS Power ",
+                    value: product.RMS_Power,
+                  },
 
                   {
                     label: "Program Power",
@@ -633,7 +639,7 @@ const ProductDetail = () => {
           {activeTab === "Downloads" && (
             <div className="mt-4 w-[100%]">
               <div className="flex justify-between items-center mb-2">
-                <p className="text-gray-700 text-lg font-bold">Data Sheet</p>
+                <p className="text-gray-700 text-lg font-bold">Datasheet</p>
                 <a
                   href={`/view-pdf?url=${encodeURIComponent(
                     product.pdf,
