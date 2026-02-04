@@ -7,7 +7,9 @@ import { Helmet } from "react-helmet";
 //newimg//
 import ksf18 from "../assets/ks18/ksf18.JPG";
 import ksf218 from "../assets/ks218/ksf218.JPG";
-import sf18 from "../assets/s18/sf18.JPG";
+// import sf18 from "../assets/s18/sf18.JPG";
+import sf18 from "../assets/s18/s18front.JPG";
+
 import sf218 from "../assets/s218/sf218.JPG";
 
 import fronts12 from "../assets/s12/fronts12.JPG";
@@ -83,10 +85,10 @@ const ProductCard = ({ product }) => {
         alt={product.model}
         className="w-full h-72 object-contain cursor-pointer rounded-lg"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() =>
           navigate(
-            `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -120,7 +122,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/subwoofer/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

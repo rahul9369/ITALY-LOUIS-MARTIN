@@ -12,6 +12,8 @@ import DSPPDF2 from "../assets/newpdf/DSP2seriesnew.pdf";
 import plf4 from "../assets/pl4/plf4.jpg";
 import plss4 from "../assets/pl4/plss4.JPG";
 import plt4 from "../assets/pl4/plt4.jpg";
+import plback from "../assets/pl4/plback.jpg";
+import ttaback from "../assets/pl4/ttaback.jpg";
 import plb4 from "../assets/pl4/plb4.JPG";
 import pl423 from "../assets/pl4/pl423.jpg";
 import plf42 from "../assets/pl4/plf42.jpg";
@@ -345,7 +347,7 @@ const products = [
     ],
   },
   {
-    img: [plf42, plss4, plt4],
+    img: [plf42, plback, plss4, plt4],
     title: "PL ",
     model: "PL 1004",
     description:
@@ -389,7 +391,7 @@ const products = [
     ],
   },
   {
-    img: [plf42, plss4, plt4],
+    img: [plf42, plback, plss4, plt4],
     title: "PL ",
     model: "PL 1504",
     description:
@@ -731,7 +733,7 @@ const products = [
     ],
   },
   {
-    img: [ttaf450],
+    img: [ttaf450, ttaback],
     title: "TTA ",
     model: "TTA 450",
     description:
@@ -781,7 +783,7 @@ const products = [
     ],
   },
   {
-    img: [ttaf450],
+    img: [ttaf450, ttaback],
     title: "TTA ",
     model: "TTA 460",
     description:

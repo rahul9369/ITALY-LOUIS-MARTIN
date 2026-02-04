@@ -29,12 +29,12 @@ import kss218 from "../assets/ks218/kss218.JPG";
 import ks4218 from "../assets/ks218/ks4218.jpg";
 
 //s18//
-import sf18 from "../assets/s18/sf18.JPG";
-import sb18 from "../assets/s18/sb18.JPG";
-import ss18 from "../assets/s18/ss18.JPG";
+import sf18 from "../assets/s18/s18front.JPG";
+import sb18 from "../assets/s18/s18side.JPG";
+import ss18 from "../assets/s18/s18side1.JPG";
 import stop18 from "../assets/s18/stop18.JPG";
 import s418 from "../assets/s18/s418.JPG";
-import sop18 from "../assets/s18/sop18.JPG";
+import sop18 from "../assets/s18/s1845.JPG";
 import coxf from "../assets/coximg/coxf.jpg";
 
 //s12//

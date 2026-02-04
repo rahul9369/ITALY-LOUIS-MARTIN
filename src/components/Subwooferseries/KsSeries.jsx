@@ -90,8 +90,8 @@ const ProductList = () => {
     <div className="w-full">
       <img src={Subwoofer} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
-        <h1 className="sm:text-4xl text-[22px] mx-auto font-bold  mb-4 text-red-800">
-          Sub Woofers - KS Series
+        <h1 className="sm:text-4xl  text-[22px] mx-auto font-bold  mb-4 text-red-800">
+          Subwoofers - KS Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
           Our subwoofers are equipped with state-of-the-art high-excursion

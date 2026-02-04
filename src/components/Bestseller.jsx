@@ -63,7 +63,7 @@ const CompanyNews = () => {
                 Company Update • {item.date}
               </p>
 
-              <h3 className="font-semibold text-lg group-hover:text-blue-500 transition">
+              <h3 className="font-semibold text-lg group-hover:text-red-800 transition">
                 {item.title}
               </h3>
               <p className="text-gray-400 text-sm mt-3 line-clamp-3">

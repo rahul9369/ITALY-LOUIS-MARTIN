@@ -1,23 +1,25 @@
 import React, { useState } from "react";
 import Subwoofer from "../../assets/Subwoofer.jpg";
-import sf18 from "../../assets/s18/sf18.JPG";
+// import sf18 from "../../assets/s18/sf18.JPG";
+import sf18 from "../../assets/s18/s18front.JPG";
+
 import sf218 from "../../assets/s218/sf218.JPG";
-import fronts12 from "../../assets/s12/fronts12.JPG"
+import fronts12 from "../../assets/s12/fronts12.JPG";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-     img: fronts12,
-     title: "Subwoofer",
-     model: "S12",
-     description: '1x12" High Power Passive Subwoofer',
-     power: "450W/1800W (Passive)",
-     response: "38 Hz – 120 Hz",
-     Sensitivity: "96dB",
-     spl: "123dB",
-     weight: "20Kg",
-   },
+    img: fronts12,
+    title: "Subwoofer",
+    model: "S12",
+    description: '1x12" High Power Passive Subwoofer',
+    power: "450W/1800W (Passive)",
+    response: "38 Hz – 120 Hz",
+    Sensitivity: "96dB",
+    spl: "123dB",
+    weight: "20Kg",
+  },
   {
     img: sf18,
     title: "Subwoofer",
@@ -51,14 +53,13 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="bg-white shadow-lg rounded-xl p-6 w-full">
-      
       {/* IMAGE FIX — SHOW FULL IMAGE (NO CUT) */}
       <img
         src={images[currentImgIndex]}
         alt={product.model}
         className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() => navigate(`/subwoofer/${product.model.toLowerCase()}`)}
       />
 
@@ -72,11 +73,13 @@ const ProductCard = ({ product }) => {
       </p>
 
       <p className="text-sm mt-5 text-gray-700">
-        <span className="font-bold">Frequency Response:</span> {product.response}
+        <span className="font-bold">Frequency Response:</span>{" "}
+        {product.response}
       </p>
 
       <p className="text-sm mt-5 text-gray-700">
-        <span className="font-bold">Sensitivity(1W/1m):</span> {product.Sensitivity}
+        <span className="font-bold">Sensitivity(1W/1m):</span>{" "}
+        {product.Sensitivity}
       </p>
 
       <p className="text-sm mt-5 text-gray-700">
@@ -95,8 +98,7 @@ text-sm sm:text-base
 rounded-lg bg-transparent 
 hover:bg-red-800 hover:text-white 
 transition duration-300"
-        onClick={() => navigate(`/subwoofer/${product.model.toLowerCase()}`)}
-      >
+        onClick={() => navigate(`/subwoofer/${product.model.toLowerCase()}`)}>
         {product.model}
       </button>
     </div>
@@ -109,8 +111,8 @@ const ProductList = () => {
       <img src={Subwoofer} alt="Line Array" className="w-full" />
 
       <div className="w-full text-center py-6 px-4">
-        <h1 className="sm:text-4xl text-[22px] mx-auto font-bold mb-4">
-          Sub Woofers - S Series
+        <h1 className="sm:text-4xl text-red-800 text-[22px] mx-auto font-bold mb-4">
+          Subwoofers - S Series
         </h1>
 
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">

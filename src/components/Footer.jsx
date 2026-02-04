@@ -40,7 +40,7 @@ const Footer = () => {
                 <li key={name}>
                   <Link
                     to={path}
-                    className="hover:text-green-500 transition-colors duration-200">
+                    className="hover:text-red-800 transition-colors duration-200">
                     {name}
                   </Link>
                 </li>
@@ -63,10 +63,13 @@ const Footer = () => {
             <div className="flex justify-center md:justify-start space-x-5 mt-3">
               {[
                 {
-                  href: "https://www.facebook.com/share/1EvAEusFN5/",
+                  href: "https://www.facebook.com/share/1abZsBoiSX/",
                   icon: "facebook",
                 },
-                { href: "https://instagram.com", icon: "instagram-new" },
+                {
+                  href: "https://www.instagram.com/louismartinaudio?igsh=d25tNzBtanhsMHA3",
+                  icon: "instagram-new",
+                },
                 {
                   href: "https://linkedin.com/company/louismartinaudio/",
                   icon: "linkedin",

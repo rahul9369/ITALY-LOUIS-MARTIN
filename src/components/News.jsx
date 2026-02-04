@@ -34,13 +34,13 @@ const CompanyNews = () => {
               <h3 className="font-semibold text-lg text-gray-600">
                 {news.date}
               </h3>
-              <h3 className="font-bold text-lg group-hover:text-blue-600">
+              <h3 className="font-bold text-lg group-hover:text-red-800">
                 {news.title}
               </h3>
               <p className="text-gray-500 text-sm mt-2 line-clamp-3">
                 {news.description}
               </p>
-              <span className="text-blue-600 font-semibold text-sm mt-4 inline-block">
+              <span className="text-red-800 font-semibold text-sm mt-4 inline-block">
                 Read More →
               </span>
             </div>

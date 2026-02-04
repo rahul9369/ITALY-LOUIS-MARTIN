@@ -1,11 +1,11 @@
 import React from "react";
 import Column from "../../assets/Columnspeaker.jpg";
 import Footer from "../Footer";
-import kff302 from "../../assets/k302/kff302.jpg"
-import kf304 from "../../assets/k304/kf304.jpg"
-import kf306 from "../../assets/k306/kf306.jpg"
-import kf308 from "../../assets/k308/kf308.JPG"
-import kf312 from "../../assets/k312/kf312.jpg"
+import kff302 from "../../assets/k302/kff302.jpg";
+import kf304 from "../../assets/k304/kf304.jpg";
+import kf306 from "../../assets/k306/kf306.jpg";
+import kf308 from "../../assets/k308/kf308.JPG";
+import kf312 from "../../assets/k312/kf312.jpg";
 import { useNavigate } from "react-router-dom";
 
 const products = [
@@ -73,12 +73,12 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-         className="w-full h-72 object-contain cursor-pointer rounded-lg"
-         loading="eager"
-                decoding="async"
+        className="w-full h-72 object-contain cursor-pointer rounded-lg"
+        loading="eager"
+        decoding="async"
         onClick={() =>
           navigate(
-            `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -112,7 +112,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}
@@ -127,7 +127,7 @@ const ProductList = () => {
       <img src={Column} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="text-4xl mx-auto font-bold  mb-4 text-red-800">
-          Column Sound Speaker -K Series
+          Column Speaker -K Series
         </h1>
         <p className="text-lg text-gray-700 leading-relaxed text-justify max-w-7xl mt-5 px-4 sm:px-8 mx-auto">
           Our column speakers are meticulously engineered to enhance speech
