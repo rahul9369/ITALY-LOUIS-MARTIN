@@ -1,16 +1,20 @@
 import React from "react";
 import Linearray from "../../assets/Linerarray.jpg";
 import Footer from "../Footer";
-import qfront from "../../assets/q50/qfront.JPG"
-import q60front from "../../assets/q60/q60front.JPG"
-import q70front from "../../assets/q70/q70front.JPG"
-import q80f from "../../assets/q80/q80f.JPG"
+import qfront from "../../assets/q50/qfront.JPG";
+import q60front from "../../assets/q60/q60front.JPG";
+import q70front from "../../assets/q70/q70front.JPG";
+import q80f from "../../assets/q80/q80f.JPG";
+import qss from "../../assets/q50/qss.JPG";
+import q60s from "../../assets/q60/q60s.JPG";
+import q70ss from "../../assets/q70/q70ss.JPG";
+// import coxs from "../assets/coximg/coxs.jpg";
 
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: qfront,
+    img: qss,
     title: "Q Series",
     model: "Q 50",
     description: `1x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -21,7 +25,7 @@ const products = [
     weight: "16.8Kg",
   },
   {
-    img: q60front,
+    img: q60s,
     title: "Q Series",
     model: "Q 60",
     description: `2x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -32,7 +36,7 @@ const products = [
     weight: "22.8Kg",
   },
   {
-    img: q70front,
+    img: q70ss,
     title: "Q Series",
     model: "Q 70",
     description: `1x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -43,7 +47,7 @@ const products = [
     weight: "22Kg",
   },
   {
-    img: q80f,
+    img: q60s,
     title: "Q Series",
     model: "Q 80",
     description: `2x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
@@ -62,12 +66,12 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-         className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
-         loading="eager"
-                decoding="async"
+        className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
+        loading="eager"
+        decoding="async"
         onClick={() =>
           navigate(
-            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -101,7 +105,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

@@ -131,11 +131,10 @@ const products = [
     description:
       "The D Series amplifier is a multi-channel professional Class-D amplifier, meticulously engineered to deliver exceptional reliability and performance. Its high efficiency is achieved through a combination of automatic temperature control and unique limiting functions, ensuring the amplifier operates efficiently by minimizing power loss and heat generation. Designed for long-term use, the D Series amplifiers offer consistent performance and durability, making them a reliable choice for professional audio installations.",
     application: [
-      " Outdoor Events",
-      "Concerts and Live Events",
-      "Theaters and Auditoriums",
-      "Night Club",
-      "Places of worKship",
+      "Clip limiters",
+      " Over temperature protections",
+      " Short circuit protection",
+      "Light weight and Portable",
     ],
     Stereo_8_Ohm_2_Channel: " 350W×2 ",
     Stereo_4_Ohm_2_Channel: " 600W×2",
@@ -1288,7 +1287,7 @@ const ProductDetail = () => {
               </p>
             </div>
             <div className="mt-6">
-              <h2 className="text-xl font-bold">Applications</h2>
+              <h2 className="text-xl font-bold">Features</h2>
               <ul className="list-disc list-inside text-gray-600 mt-2">
                 {product.application.map((app, index) => (
                   <li className="text-[12px] md:text-[15px]  my-2" key={index}>

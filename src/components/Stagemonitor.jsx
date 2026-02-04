@@ -11,6 +11,9 @@ import dsf15 from "../assets/ds15/dsf15.JPG";
 import Hwfornt from "../assets/hw65/hwfornt.jpg";
 import dsf8 from "../assets/ds8/dsf8.JPG";
 import PlasticSpeaker from "../assets/PlasticSpeaker.jpg";
+import hwside from "../assets/hw65/hwside.jpg";
+import ds415 from "../assets/ds15/ds415.JPG";
+import ds412 from "../assets/ds12/ds412.JPG";
 
 import tlfront from "../assets/tl55/tlfront.jpg";
 
@@ -38,7 +41,7 @@ const products = [
     weight: "8Kg",
   },
   {
-    img: dsf12,
+    img: ds412,
     title: "Plastic Speaker",
     model: "DS12",
     description: '1x12" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -49,7 +52,7 @@ const products = [
     weight: "17Kg",
   },
   {
-    img: dsf15,
+    img: ds415,
     title: "Plastic Speaker",
     model: "DS15",
     description: '1x15" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -60,7 +63,7 @@ const products = [
     weight: "25Kg",
   },
   {
-    img: Hwfornt,
+    img: hwside,
     title: "Plastic Speaker",
     model: "HW 6.5",
     description: " Two-way full range plastic IP 65 Weatherproof loudspeaker",

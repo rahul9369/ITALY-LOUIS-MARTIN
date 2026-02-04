@@ -1,12 +1,14 @@
 import React from "react";
 import Linearray from "../../assets/Linerarray.jpg";
 import Footer from "../Footer";
-import coxf from "../../assets/coximg/coxf.jpg"
+import coxf from "../../assets/coximg/coxf.jpg";
+import coxs from "../../assets/coximg/coxs.jpg";
+
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: coxf,
+    img: coxs,
     title: "Cox Series",
     model: "Cox 12",
     description: `1x12"Two-way Coaxial full Range Bi-amp/Passive Switchable line Array Speaker System`,
@@ -25,12 +27,12 @@ const ProductCard = ({ product }) => {
       <img
         src={product.img}
         alt={product.model}
-       className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
+        className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() =>
           navigate(
-            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -64,7 +66,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

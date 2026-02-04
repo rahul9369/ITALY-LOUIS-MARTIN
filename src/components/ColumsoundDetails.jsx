@@ -254,7 +254,7 @@ const products = [
     title: "Column Speaker",
     model: "K312",
     description:
-      "The K – 312 has twelve full range 3” (76 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet`21QAAAs design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
+      "The K – 312 has twelve full range 3” (76 mm)  Faital pro driver. Designed from high quality aluminium alloy that give delivering extraordinary clarity and detailed sound, slim design. Suitable for install market applications, including public address systems, airports, railway stations, lecture theaters, churches, and other large venues. The cabinet design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response.",
     application: [
       "Public address systems",
       "Lecture theatres",

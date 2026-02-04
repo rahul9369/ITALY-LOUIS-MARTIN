@@ -13,6 +13,10 @@ import q60front from "../assets/q60/q60front.JPG";
 import q70front from "../assets/q70/q70front.JPG";
 import q80f from "../assets/q80/q80f.JPG";
 import coxf from "../assets/coximg/coxf.jpg";
+import qss from "../assets/q50/qss.JPG";
+import q60s from "../assets/q60/q60s.JPG";
+import q70ss from "../assets/q70/q70ss.JPG";
+import coxs from "../assets/coximg/coxs.jpg";
 
 const products = [
   {
@@ -27,7 +31,7 @@ const products = [
     weight: "50Kg",
   },
   {
-    img: qfront,
+    img: qss,
     title: "Q Series",
     model: "Q 50",
     description: `1x10" Two-way Passive/ Bi-Amp Switchable Line Array Speaker System`,
@@ -38,7 +42,7 @@ const products = [
     weight: "16.8Kg",
   },
   {
-    img: q60front,
+    img: q60s,
     title: "Q Series",
     model: "Q 60",
     description: `2x10" Two-way Passive/ Bi-Amp Switchable Line Array Speaker System`,
@@ -49,7 +53,7 @@ const products = [
     weight: "22.8Kg",
   },
   {
-    img: q70front,
+    img: q70ss,
     title: "Q Series",
     model: "Q 70",
     description: `1x12" Two-way Passive/ Bi-Amp Switchable Line Array Speaker System`,
@@ -60,7 +64,7 @@ const products = [
     weight: "22Kg",
   },
   {
-    img: q80f,
+    img: q60s,
     title: "Q Series",
     model: "Q 80",
     description: `2x12" Two-way Passive/ Bi-Amp Switchable Line Array Speaker System`,
@@ -71,7 +75,7 @@ const products = [
     weight: "36.8Kg",
   },
   {
-    img: coxf,
+    img: coxs,
     title: "Cox Series",
     model: "Cox 12",
     description: `1x12"Two-way Coaxial full Range Bi-amp/Passive Switchable line Array Speaker System`,
