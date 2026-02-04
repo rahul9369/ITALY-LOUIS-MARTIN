@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Subwoofer from "../../assets/Subwoofer.jpg";
 // import sf18 from "../../assets/s18/sf18.JPG";
-import sf18 from "../../assets/s18/s18front.JPG";
+import sf18 from "../../assets/s18/s18front.jpg";
 
 import sf218 from "../../assets/s218/sf218.JPG";
 import fronts12 from "../../assets/s12/fronts12.JPG";
