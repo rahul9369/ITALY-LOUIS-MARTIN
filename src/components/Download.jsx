@@ -3,8 +3,8 @@ import Footer from "./Footer";
 import Download from "../assets/Download.png";
 import Catelog from "./Catelog";
 
-import Famous210pdf from "../assets/newpdf/Famous210New.pdf";
-import Q50pdf from "../assets/newpdf/Q50new.pdf";
+import Famous210pdf from "../assets/newpdf/Famous210update.pdf";
+import Q50pdf from "../assets/newpdf/Q50update.pdf";
 import Q60pdf from "../assets/newpdf/Q60new.pdf";
 import Q70pdf from "../assets/newpdf/Q70new.pdf";
 import Q80pdf from "../assets/newpdf/Q80new.pdf";

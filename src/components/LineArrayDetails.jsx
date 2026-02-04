@@ -2,9 +2,9 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
 
-import Famous210N from "../assets/newpdf/Famous210New.pdf";
+import Famous210N from "../assets/newpdf/Famous210update.pdf";
 import Cox112 from "../assets/newpdf/COX12new.pdf";
-import Q50a from "../assets/newpdf/Q50new.pdf";
+import Q50a from "../assets/newpdf/Q50update.pdf";
 import Q60a from "../assets/newpdf/Q60new.pdf";
 import Q70a from "../assets/newpdf/Q70new.pdf";
 import Q80a from "../assets/newpdf/Q80new.pdf";
