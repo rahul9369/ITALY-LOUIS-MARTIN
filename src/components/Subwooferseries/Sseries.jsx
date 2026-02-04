@@ -6,11 +6,14 @@ import sf18 from "../../assets/s18/s18front.jpg";
 import sf218 from "../../assets/s218/sf218.JPG";
 import fronts12 from "../../assets/s12/fronts12.JPG";
 import Footer from "../Footer";
+import s1245 from "../../assets/s12/s1245.JPG";
+import sop18 from "../../assets/s18/s1845.jpg";
+import s4218 from "../../assets/s218/s4218.JPG";
 import { useNavigate } from "react-router-dom";
 
 const products = [
   {
-    img: fronts12,
+    img: s1245,
     title: "Subwoofer",
     model: "S12",
     description: '1x12" High Power Passive Subwoofer',
@@ -21,7 +24,7 @@ const products = [
     weight: "20Kg",
   },
   {
-    img: sf18,
+    img: sop18,
     title: "Subwoofer",
     model: "S18",
     description: '1x18" High Power Passive Subwoofer',
@@ -32,7 +35,7 @@ const products = [
     weight: "45Kg",
   },
   {
-    img: sf218,
+    img: s4218,
     title: "Subwoofer",
     model: "S218",
     description: '2x18" High Power Passive Subwoofer',

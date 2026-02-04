@@ -4,10 +4,12 @@ import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 import ksf18 from "../../assets/ks18/ksf18.JPG";
 import ksf218 from "../../assets/ks218/ksf218.JPG";
+import ks418 from "../../assets/ks18/ks418.jpg";
+import ks4218 from "../../assets/ks218/ks4218.jpg";
 
 const products = [
   {
-    img: ksf18,
+    img: ks418,
     title: "Subwoofer",
     model: "KS18",
     description: '1x18" High Power Passive Subwoofer',
@@ -18,7 +20,7 @@ const products = [
     weight: "58Kg",
   },
   {
-    img: ksf218,
+    img: ks4218,
     title: "Subwoofer",
     model: "KS218",
     description: '2x18" High Power Passive Subwoofer',

@@ -9,6 +9,11 @@ import ksf18 from "../assets/ks18/ksf18.JPG";
 import ksf218 from "../assets/ks218/ksf218.JPG";
 // import sf18 from "../assets/s18/sf18.JPG";
 import sf18 from "../assets/s18/s18front.jpg";
+import ks418 from "../assets/ks18/ks418.jpg";
+import ks4218 from "../assets/ks218/ks4218.jpg";
+import s1245 from "../assets/s12/s1245.JPG";
+import sop18 from "../assets/s18/s1845.jpg";
+import s4218 from "../assets/s218/s4218.JPG";
 
 import sf218 from "../assets/s218/sf218.JPG";
 
@@ -16,7 +21,7 @@ import fronts12 from "../assets/s12/fronts12.JPG";
 
 const products = [
   {
-    img: ksf18,
+    img: ks418,
     title: "Subwoofer",
     model: "KS18",
     description: '1x18" High Power Passive Subwoofer',
@@ -27,7 +32,7 @@ const products = [
     weight: "58Kg",
   },
   {
-    img: ksf218,
+    img: ks4218,
     title: "Subwoofer",
     model: "KS218",
     description: '2x18" High Power Passive Subwoofer',
@@ -39,7 +44,7 @@ const products = [
   },
   //s12 new product //
   {
-    img: fronts12,
+    img: s1245,
     title: "Subwoofer",
     model: "S12",
     description: '1x12" High Power Passive Subwoofer',
@@ -50,7 +55,7 @@ const products = [
     weight: "20Kg",
   },
   {
-    img: sf18,
+    img: sop18,
     title: "Subwoofer",
     model: "S18",
     description: '1x18" High Power Passive Subwoofer',
@@ -61,7 +66,7 @@ const products = [
     weight: "48Kg",
   },
   {
-    img: sf218,
+    img: s4218,
     title: "Subwoofer",
     model: "S218",
     description: '2x18" High Power Passive Subwoofer',
