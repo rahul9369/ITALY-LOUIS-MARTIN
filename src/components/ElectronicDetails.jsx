@@ -350,12 +350,12 @@ const products = [
     title: "PL ",
     model: "PL 1004",
     description:
-      "The PL Series amplifier is multi-channel professional built-in Digital Signal Processor (DSP) Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. Thanks to the automatic temperature control and unique limiting functions that gives high efficiency to ensures that the PL series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts and live performances, entertainment venues, lounges, pubs, bars and auditorium installations with deep, resonant sound.",
+      "This PL Series Amplifier is analog version of PL Series Digital Amplifiers. It is Class-D amplifier, meticulously designed to ensure outstanding reliability and performance. Thanks to the automatic temperature control and unique limiting functions that gives high efficiency to ensures that the PL series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts and live performances, entertainment venues, lounges, pubs, bars and auditorium installations with deep, resonant sound.",
     application: [
-      " 64-bit Multimode DSP",
       "Over temperature protections",
       "Short circuit protection",
-      "Light weight and Portable",
+      "Light weight and Portable",
+      "Overloads Protection",
     ],
     Stereo_8_Ohm_2_Channel: " 1000W×4 ",
     Stereo_4_Ohm_2_Channel: " 1600W×4 ",
@@ -394,12 +394,12 @@ const products = [
     title: "PL ",
     model: "PL 1504",
     description:
-      "The PL Series amplifier is multi-channel professional built-in Digital Signal Processor (DSP) Class – D amplifier, meticulously designed to ensure outstanding reliability and performance. Thanks to the automatic temperature control and unique limiting functions that gives high efficiency to ensures that the PL series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts and live performances, entertainment venues, lounges, pubs, bars and auditorium installations with deep, resonant sound.",
+      "This PL Series Amplifier is analog version of PL Series Digital Amplifiers. It is Class-D amplifier, meticulously designed to ensure outstanding reliability and performance. Thanks to the automatic temperature control and unique limiting functions that gives high efficiency to ensures that the PL series amplifiers operate efficiently, minimizing power loss and heat generation, and designed for long-term use, these amplifiers offer consistent performance and durability, making them a reliable choice for professional audio applications such as concerts and live performances, entertainment venues, lounges, pubs, bars and auditorium installations with deep, resonant sound.",
     application: [
-      " 64-bit Multimode DSP",
       "Over temperature protections",
       "Short circuit protection",
-      "Light weight and Portable",
+      "Light weight and Portable",
+      "Overloads Protection",
     ],
     Stereo_8_Ohm_2_Channel: " 1500W×4 ",
     Stereo_4_Ohm_2_Channel: " 2500W×4 ",
