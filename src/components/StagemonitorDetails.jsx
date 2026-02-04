@@ -454,6 +454,7 @@ const ProductDetail = () => {
                 <button
                   onClick={prevImage}
                   className="
+                  cursor-pointer
       absolute left-1 md:left-3
       top-1/2 -translate-y-1/2
       bg-white shadow-md rounded-full
@@ -473,6 +474,7 @@ const ProductDetail = () => {
                 <button
                   onClick={nextImage}
                   className="
+                  cursor-pointer
       absolute right-1 md:right-3
       top-1/2 -translate-y-1/2
       bg-white shadow-md rounded-full
@@ -517,7 +519,7 @@ const ProductDetail = () => {
               {/* Close Button - Always Top Right */}
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="fixed top-4 right-4 z-[999] text-white text-4xl font-bold hover:text-red-400">
+                className="fixed cursor-pointer top-4 right-4 z-[999] text-white text-4xl font-bold hover:text-red-400">
                 &times;
               </button>
 

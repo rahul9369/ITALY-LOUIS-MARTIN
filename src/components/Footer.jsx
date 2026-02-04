@@ -18,7 +18,7 @@ const Footer = () => {
             <p className="mt-4 text-sm leading-relaxed text-center md:text-left text-white">
               Redefining Audio Excellence with
               <br />
-              power, precision and passion.
+              Power, Precision and Passion.
             </p>
           </div>
 

@@ -8,6 +8,10 @@ import redfront5 from "../assets/red5/redfront5.jpg";
 import redf5 from "../assets/red6/redf5.JPG";
 import redff9 from "../assets/red9/redff9.JPG";
 import redf12 from "../assets/red12/redf12.JPG";
+import redds5 from "../assets/red5/redds5.jpg";
+import red94 from "../assets/red9/red94.jpg";
+import red412 from "../assets/red12/red412.jpg";
+
 const products = [
   {
     img: redfront,
@@ -32,7 +36,7 @@ const products = [
     weight: "9Kg",
   },
   {
-    img: redfront5,
+    img: redds5,
     title: "Red Series",
     model: "Red 5",
     description: '1x5" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -43,7 +47,7 @@ const products = [
     weight: "6Kg",
   },
   {
-    img: redff9,
+    img: red94,
     title: "Red Series",
     model: "Red 9",
     description: '1x10" Two-Way Passive Full-Range High Power Loudspeaker',
@@ -54,7 +58,7 @@ const products = [
     weight: "15Kg",
   },
   {
-    img: redf12,
+    img: red412,
     title: "Red Series",
     model: "Red 12",
     description: '1x12" Two-Way Passive Full-Range High Power Loudspeaker',

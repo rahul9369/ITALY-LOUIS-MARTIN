@@ -8,6 +8,8 @@ import dsf5 from "../../assets/ds5/dsf5.jpg";
 import dsf8 from "../../assets/ds8/dsf8.JPG";
 import dsf12 from "../../assets/ds12/dsf12.JPG";
 import dsf15 from "../../assets/ds15/dsf15.JPG";
+import Hwfornt1 from "../../assets/hw65/hwfornt.jpg";
+
 import { useNavigate } from "react-router-dom";
 import { Import } from "lucide-react";
 
@@ -58,7 +60,7 @@ const products = [
   },
 
   {
-    img: Hwfornt,
+    img: Hwfornt1,
     title: "Plastic Speaker",
     model: "HW 6.5",
     description: " Two-way full range plastic IP 65 Weatherproof loudspeaker",

@@ -16,7 +16,7 @@ const newsData = [
   {
     id: 2,
     img: gril,
-    title: "Q Series Line Array Gets a Sleek New Grill Design",
+    title: "Q Series Line Array Gets a  New Grill Design",
     date: "Comming Soon",
     shortDesc:
       "Louis Martin Audio is excited to announce a grill upgrade for the acclaimed Q Series line array, combining refined visual appeal with improved mechanical integrity.",

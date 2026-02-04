@@ -260,20 +260,20 @@ const ProductCard = ({ product }) => {
         <div className="mt-4 space-y-2 text-sm text-gray-700">
           {/* 🔥 Special title only for DL 4.8 */}
 
-          <p>
+          <p className="text-sm font mt-4 text-gray-700">
             <span className="font-bold">Inputs: </span> {product.power}
           </p>
 
-          <p>
+          <p className="text-sm font mt-4 text-gray-700">
             <span className="font-bold">Outputs: </span> {product.output}
           </p>
 
-          <p>
+          <p className="text-sm font mt-4 text-gray-700">
             <span className="font-bold">Input Dynamic Range: </span>
             {product.response}
           </p>
           {product.model === "DL 4.8" && (
-            <p>
+            <p className="text-sm font mt-4 text-gray-700">
               <span className="font-bold">FIR Filters: </span>
               {product.fir}
             </p>

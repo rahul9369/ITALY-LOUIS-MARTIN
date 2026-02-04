@@ -50,20 +50,20 @@ const ProductCard = ({ product }) => {
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
-      <p>
+      <p className="text-sm font mt-4 text-gray-700">
         <span className="font-bold">Inputs: </span> {product.power}
       </p>
 
-      <p>
+      <p className="text-sm font mt-4 text-gray-700">
         <span className="font-bold">Outputs: </span> {product.output}
       </p>
 
-      <p>
+      <p className="text-sm font mt-4 text-gray-700">
         <span className="font-bold">Input Dynamic Range: </span>
         {product.response}
       </p>
       {product.model === "DL 4.8" && (
-        <p>
+        <p className="text-sm font mt-4 text-gray-700">
           <span className="font-bold">FIR Filters: </span>
           {product.fir}
         </p>
@@ -74,7 +74,7 @@ const ProductCard = ({ product }) => {
             {product.response}
           </p> */}
 
-      <p className="text-sm  text-gray-700">
+      <p className="text-sm font mt-4 text-gray-700">
         <span className="font-bold">Net Weight:</span> {product.weight}
       </p>
       <button
