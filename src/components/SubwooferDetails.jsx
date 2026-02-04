@@ -29,9 +29,9 @@ import kss218 from "../assets/ks218/kss218.JPG";
 import ks4218 from "../assets/ks218/ks4218.jpg";
 
 //s18//
-import sf18 from "../assets/s18/s18front.JPG";
-import sb18 from "../assets/s18/s18side.JPG";
-import ss18 from "../assets/s18/s18side1.JPG";
+import sf18 from "../assets/s18/s18front.jpg";
+import sb18 from "../assets/s18/s18side.jpg";
+import ss18 from "../assets/s18/s18side1.jpg";
 import stop18 from "../assets/s18/stop18.JPG";
 import s418 from "../assets/s18/s418.JPG";
 import sop18 from "../assets/s18/s1845.JPG";
