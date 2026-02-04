@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-
 //new img//
 
 import famouf from "../assets/fam/famouf.JPG";
@@ -99,7 +98,7 @@ const ProductCard = ({ product }) => {
         decoding="async"
         onClick={() =>
           navigate(
-            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -139,7 +138,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}
@@ -162,7 +161,7 @@ const ProductList = () => {
           content="Louis Martin, innovation strategist, digital solutions, creative technologist, professional journey, personal brand, portfolio, about Louis, digital transformation"
         />
       </Helmet>
-      <img src={Linearray} alt="Line Array" className="w-full" />
+      <img src={Linearray} alt="Line Array" className="w-full " />
       <div className="w-full text-center py-6 px-4">
         <h1 className="sm:text-4xl  text-[25px] mx-auto font-bold  mb-4 text-red-800">
           Line Arrays - All Series

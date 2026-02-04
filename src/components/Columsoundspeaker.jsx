@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Column from "../assets/Columnspeaker.jpg";
 import Footer from "../components/Footer";
 
@@ -10,7 +10,7 @@ import kff302 from "../assets/k302/kff302.jpg";
 import kf304 from "../assets/k304/kf304.jpg";
 import kf306 from "../assets/k306/kf306.jpg";
 import kf308 from "../assets/k308/kf308.JPG";
-import kf312 from "../assets/k312/kf312.jpg"; 
+import kf312 from "../assets/k312/kf312.jpg";
 
 const products = [
   {
@@ -72,6 +72,9 @@ const products = [
 
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
   return (
     <div className="bg-white h-fit shadow-lg rounded-xl p-6 w-full ">
       <img
@@ -79,10 +82,10 @@ const ProductCard = ({ product }) => {
         alt={product.model}
         className="w-full h-72 object-contain cursor-pointer rounded-lg"
         loading="eager"
-                decoding="async"
+        decoding="async"
         onClick={() =>
           navigate(
-            `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }
       />
@@ -116,7 +119,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            `/column/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
           )
         }>
         {product.model}

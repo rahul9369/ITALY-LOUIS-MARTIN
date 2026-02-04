@@ -38,13 +38,13 @@ const CompanyNews = () => {
         <h2 className="text-3xl text-center text-red-900 sm:text-5xl font-bold">
           Latest News
         </h2>
-        <p className="text-gray-400 text-center mt-3">
+        <p className="text-gray-400 text-sm sm:text-md text-center mt-3">
           Latest announcements & company milestones
         </p>
       </div>
 
       {/* SAME ROW – SAME DESIGN */}
-      <div className="w-[92%]  mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="w-[90%]  mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {newsData.map((item) => (
           <Link
             key={item.id}
