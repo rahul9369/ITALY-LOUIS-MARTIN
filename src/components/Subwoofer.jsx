@@ -72,7 +72,7 @@ const products = [
     description: '2x18" High Power Passive Subwoofer',
     power: "1500W/6000W (Passive)",
     response: "35Hz-120Hz",
-    Sensitivity: "99dB",
+    Sensitivity: "102dB",
     spl: "136dB",
     weight: "78Kg",
   },
