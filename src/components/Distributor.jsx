@@ -39,8 +39,9 @@ const distributors = [
   },
   {
     country: "Mexico (Mexico City)",
-    company: "Juan Carlos Laguna Sierra",
+    company: "The Show Project ",
     image: Maxico,
+    link: "https://theshowproject.com.mx/",
   },
 ];
 
@@ -82,14 +83,14 @@ const DistributorPage = () => {
                     href={dist.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-2 text-2xl hover:bg-red-600 px-2 py-2 rounded-md transition cursor-pointer">
+                    className="mt-2 text-2xl hover:bg-red-800 px-2 py-2 rounded-md transition cursor-pointer">
                     {dist.company}
                   </a>
                 ) : (
                   <p
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-2 text-2xl hover:bg-red-600 px-2 cursor-pointer py-2 rounded-md transition">
+                    className="mt-2 text-2xl hover:bg-red-800 px-2 cursor-pointer py-2 rounded-md transition">
                     {dist.company}
                   </p>
                 )}

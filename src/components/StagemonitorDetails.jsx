@@ -39,7 +39,7 @@ import ds415 from "../assets/ds15/ds415.JPG";
 //AMP//
 import df200 from "../assets/d200/df200.JPG";
 import fd4200 from "../assets/d4200/fd4200.jpg";
-import sf18 from "../assets/s18/sf18.JPG";
+// import sf18 from "../assets/s18/sf18.JPG";
 
 import ft1002 from "../assets/tip1002/ft1002.jpg";
 import sf218 from "../assets/s218/sf218.JPG";
@@ -52,6 +52,7 @@ import tlback from "../assets/tl55/tlback.jpg";
 import tlside5 from "../assets/tl55/tlside5.jpg";
 import tl45 from "../assets/tl55/tl45.jpg";
 import ft800 from "../assets/tta300/ft800.jpg";
+import sf18 from "../assets/s18/s18front.jpg";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";

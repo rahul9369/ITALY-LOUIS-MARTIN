@@ -84,7 +84,7 @@ const ContactUs = () => {
           <motion.div
             className="bg-white shadow-md rounded-lg p-6 flex items-center gap-4 hover:shadow-xl transition-all duration-300"
             whileHover={{ scale: 1.05 }}>
-            <div className="bg-red-600 text-white p-4 rounded-full text-3xl">
+            <div className="bg-red-800 text-white p-4 rounded-full text-3xl">
               <MdPhone />
             </div>
             <div>
@@ -97,7 +97,7 @@ const ContactUs = () => {
           <motion.div
             className="bg-white shadow-md rounded-lg p-6 flex items-center gap-4 hover:shadow-xl transition-all duration-300"
             whileHover={{ scale: 1.05 }}>
-            <div className="bg-red-600 text-white p-4 rounded-full text-3xl">
+            <div className="bg-red-800 text-white p-4 rounded-full text-3xl">
               <MdOutlineEmail />
             </div>
             <div>
@@ -110,7 +110,7 @@ const ContactUs = () => {
           <motion.div
             className="bg-white shadow-md rounded-lg p-6 flex items-center gap-4 hover:shadow-xl transition-all duration-300"
             whileHover={{ scale: 1.05 }}>
-            <div className="bg-red-600 text-white p-4 rounded-full text-3xl">
+            <div className="bg-red-800 text-white p-4 rounded-full text-3xl">
               <CiLocationOn />
             </div>
             <div>

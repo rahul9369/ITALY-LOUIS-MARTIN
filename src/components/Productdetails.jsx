@@ -85,7 +85,7 @@ import fopen15 from "../assets/f15/fopen15.JPG";
 import f415 from "../assets/f15/f415.jpg";
 
 import ft1002 from "../assets/tip1002/ft1002.jpg";
-import sf18 from "../assets/s18/sf18.JPG";
+// import sf18 from "../assets/s18/sf18.JPG";
 import sf218 from "../assets/s218/sf218.JPG";
 import fd4200 from "../assets/d4200/fd4200.jpg";
 import df200 from "../assets/d200/df200.JPG";
@@ -96,6 +96,7 @@ import ksf218 from "../assets/ks218/ksf218.JPG";
 import ft800 from "../assets/tta300/ft800.jpg";
 import fronts12 from "../assets/s12/fronts12.JPG";
 import ft500 from "../assets/tta300/ft500.jpg";
+import sf18 from "../assets/s18/s18front.jpg";
 
 const products = [
   {
@@ -612,7 +613,7 @@ const products = [
       "2 x XLR/TRS Combo Jack Input | 1 x Stereo RCA Input | 1 x XLR Mix Output",
     Crossover_Mode: "USB Type A for Input | USB Type B for Software Control",
     Dispersion: "90°(H) x 90°(V) ",
-    Cabinet_Material: "HHigh density multi-layer plywood",
+    Cabinet_Material: "High density multi-layer plywood",
     Size_mm: "525 x 410 x 385mm (H x W x D)",
     Weight: "21.5/47.4 ",
     pdf: F12AMPDF,
@@ -627,11 +628,11 @@ const products = [
         path: "/subwoofer/s18",
         img: sf18,
       },
-      {
-        name: "S218",
-        path: "/subwoofer/s218",
-        img: sf218,
-      },
+      // {
+      //   name: "S218",
+      //   path: "/subwoofer/s218",
+      //   img: sf218,
+      // },
     ],
   },
 ];

@@ -29,6 +29,7 @@ import DS12pdf from "../assets/newpdf/DS-12new.pdf";
 import DS15pdf from "../assets/newpdf/DS-15new.pdf";
 import KS18pdf from "../assets/newpdf/ks18new.pdf";
 import KS218pdf from "../assets/newpdf/KS218new.pdf";
+import s12new from "../assets/newpdf/S12new.pdf";
 import S18pdf from "../assets/newpdf/S18new.pdf";
 import S218pdf from "../assets/newpdf/S218new.pdf";
 import PLpdf from "../assets/newpdf/PLseriesnew.pdf";
@@ -186,6 +187,11 @@ const pdfList = [
     title: "KS18_Subwoofer",
     path: KS18pdf,
     filename: "KS18_Subwoofer_Datasheet.pdf",
+  },
+  {
+    title: "S12_Subwoofer",
+    path: s12new,
+    filename: "S12_Subwoofer_Datasheet.pdf",
   },
   {
     title: "S18_Subwoofer",

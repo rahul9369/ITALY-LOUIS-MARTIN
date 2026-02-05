@@ -23,6 +23,7 @@ const products = [
     Sensitivity: "91dB",
     spl: "110dB",
     weight: "2.2Kg",
+    //lll
   },
   {
     img: kf304,

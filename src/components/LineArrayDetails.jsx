@@ -56,8 +56,9 @@ import ft1002 from "../assets/tip1002/ft1002.jpg";
 import ft300 from "../assets/tta300/ft300.jpg";
 import ksf218 from "../assets/ks218/ksf218.JPG";
 import sf218 from "../assets/s218/sf218.JPG";
-import sf18 from "../assets/s18/sf18.JPG";
+// import sf18 from "../assets/s18/sf18.JPG";
 import ft800 from "../assets/tta300/ft800.jpg";
+import sf18 from "../assets/s18/s18front.jpg";
 
 import redfront from "../assets/red10/redfront.JPG";
 import ft1003 from "../assets/tip1002/ft1003.jpg";
@@ -70,7 +71,7 @@ const products = [
     title: "Line array ",
     model: "Famous 210",
     description:
-      " The Famous– 210N is meticulously engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified model features two 10-inch Neodymium drivers and two 1.75inch high-frequency compression drivers, ensuring exceptional sound quality and performance.",
+      " The Famous–210 is meticulously engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified model features two 10-inch Neodymium drivers and two 1.75 inch high-frequency compression drivers, ensuring exceptional sound quality and performance.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",

@@ -10,10 +10,11 @@ import prolight from "../assets/news/prolight.jpg";
 import asian from "../assets/news/asian.png";
 import linearray from "../assets/news/linearray.jpg";
 import raipur from "../assets/news/raipur.jpg";
+import max1 from "../assets/news/max1.jpg";
 
 export const newsData = [
   {
-    id: 9,
+    id: 1,
     img: cox15,
     title: "Product Launch: Introducing the COX15 Coaxial Line Array System",
     date: "Comming Soon ",
@@ -48,7 +49,7 @@ export const newsData = [
       "The COX15 will be available through authorized Louis Martin Audio distributors worldwide. For technical documentation, demo scheduling, or dealer inquiries, please contact our sales team.",
   },
   {
-    id: 5,
+    id: 2,
     img: gril,
     title: "Q Series Line Array Gets a  New Grill Design",
     date: "Comming Soon",
@@ -72,7 +73,7 @@ export const newsData = [
       "The new grill design is now standard on all Q Series models and available soon from new production only. ",
   },
   {
-    id: 6,
+    id: 3,
     img: raipur,
     title: " Red Series Installed at Romeo Lane, Raipur, India.",
     date: "December 2025",
@@ -92,7 +93,7 @@ export const newsData = [
       "Eminent Audio Visual is a leading distributor of professional audio solutions in India, specializing in delivering world-class sound systems and installations. Their expertise and commitment to excellence make them a trusted partner for venues seeking premium audio experiences.",
   },
   {
-    id: 6,
+    id: 4,
     img: factory,
     title: "Louis Martin Audio Opens New Factory Facility",
     date: "26 November 2025",
@@ -117,8 +118,35 @@ export const newsData = [
     conclusion:
       "We welcome partners, clients, and collaborators to visit and experience the future of sound manufacturing at Louis Martin.",
   },
+  //new add//
+   {
+    id: 5,
+    img: max1,
+    title: "Louis Martin Audio Appoints The Show Project as Exclusive Distributor in Mexico",
+    date: "July 2025",
+    description:
+      "Louis Martin Audio is proud to announce the appointment of The Show Project as its new official distributor in Mexico, effective July 2025. This strategic partnership marks an exciting step in expanding our presence across Latin America and strengthening our commitment to delivering world-class audio solutions to a growing market.",
+    highlights: [
+      {
+        text: "At the helm of The Show Project is Mr. Humberto Puga, serving as Director. ",
+      },
+      {
+        text: "With his leadership and vision, the company is poised to bring Louis Martin Audio’s premium sound systems to a wider audience, ensuring that clients in Mexico experience the same technical excellence   and innovation that define our brand worldwide.",
+      },
+    //   {
+    //     text: "Sustainable Operations: Built with energy-efficient infrastructure and environmentally conscious practices.",
+    //   },
+    //   {
+    //     text: "Enhanced Logistics: Improved access for international shipping and distributor coordination.",
+    //   },
+    ],
+    quote:
+      "We are thrilled to collaborate with The Show Project,” said a spokesperson for Louis Martin Audio. “Their expertise, passion, and strong market presence make them the ideal partner to represent our products in Mexico.",
+    conclusion:
+      "This collaboration reflects Louis Martin Audio’s dedication to building strong regional partnerships and delivering cutting-edge audio technology to professionals and enthusiasts alike.",
+  },
   {
-    id: 7,
+    id: 6,
     img: plam,
     title: "Louis Martin Showcases Innovation at PALM Expo 2025",
     date: "29 May 2025 - 31 May 2025",
@@ -142,7 +170,7 @@ export const newsData = [
       "PALM Expo 2025 marked a significant step in Louis Martin’s expansion across South Asia. We thank all attendees, partners, and organizers for their enthusiasm and engagement. With Eminent Audio Visual as our trusted distributor, we look forward to deeper market penetration and continued innovation in the Indian professional audio landscape.",
   },
   {
-    id: 8,
+    id: 7,
     img: prolight,
     title: "Louis Martin Audio to Exhibit at Prolight + Sound China 2025",
     date: "23 May 2025 - 26 May 2025 ",
@@ -169,7 +197,7 @@ export const newsData = [
   },
 
   {
-    id: 1,
+    id: 8,
     img: update1,
     title: "Louis Martin Appoints Eminent Audio Visual as India Distributor",
     date: "December 25, 2024",
@@ -194,7 +222,7 @@ export const newsData = [
   },
 
   {
-    id: 3,
+    id: 9,
     img: update3,
     title: "ITALY LOUIS MARTIN AUDIO AT GETSHOW 2023",
     date: "08 May 2023 - 11 May 2023",
@@ -218,7 +246,7 @@ export const newsData = [
       "Stay tuned for more updates as we continue to push the boundaries of professional audio.",
   },
   {
-    id: 2,
+    id: 10,
     img: asian,
     title: "Leadership Announcement: Asia Sales President Appointed",
     date: "2 May 2023",
@@ -242,7 +270,7 @@ export const newsData = [
       "Please join us in welcoming Mr. Cui to the Louis Martin leadership team.",
   },
   {
-    id: 4,
+    id: 11,
     img: update4,
     title: "Louis Martin Audio at Prolight + Sound China 2017",
     date: "22 Feb 2017 -25 Feb 2017",
@@ -269,7 +297,7 @@ export const newsData = [
       "We thank all attendees and partners for their enthusiasm and look forward to building on this momentum in future exhibitions.",
   },
   {
-    id: 4,
+    id: 12,
     img: linearray,
     title:
       "Louis Martin Famous Series Line Array Demonstrated and Adopted by Wahlap Technology",
