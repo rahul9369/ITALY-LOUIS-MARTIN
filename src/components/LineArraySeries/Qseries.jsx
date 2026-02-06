@@ -6,7 +6,7 @@ import q60front from "../../assets/q60/q60front.JPG";
 import q70front from "../../assets/q70/q70front.JPG";
 import q80f from "../../assets/q80/q80f.JPG";
 import qss from "../../assets/q50/qss.JPG";
-import q60s from "../../assets/q60/q60s.jpg"
+import q60s from "../../assets/q60/q60s.JPG";
 // import q60s from "../../assets/q60/q60s.JPG";
 // import q70ss from "../../assets/q70/q70ss.JPG";
 // import coxs from "../assets/coximg/coxs.jpg";
