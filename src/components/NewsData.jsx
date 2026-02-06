@@ -48,30 +48,30 @@ export const newsData = [
     conclusion:
       "The COX15 will be available through authorized Louis Martin Audio distributors worldwide. For technical documentation, demo scheduling, or dealer inquiries, please contact our sales team.",
   },
-  {
-    id: 2,
-    img: gril,
-    title: "Q Series Line Array Gets a  New Grill Design",
-    date: "Comming Soon",
-    description:
-      "Louis Martin Audio is excited to announce a grill upgrade for the acclaimed Q Series line array, combining refined visual appeal with improved mechanical integrity. This update reflects our ongoing commitment to innovation, durability, and design excellence in professional sound reinforcement.",
-    highlights: [
-      {
-        text: "Modernized Appearance: The new grill features a precision-cut hexagonal pattern with a matte black finish, delivering a sleek, contemporary look that complements any stage or venue.",
-      },
-      {
-        text: "Improved Structural Support: Reinforced grill architecture enhances rigidity and protection, ensuring long-term reliability in demanding touring and installation environments.",
-      },
-      {
-        text: "Brand Signature: The grill proudly displays the Louis Martin emblem, symbolizing Italian engineering and acoustic precision.",
-      },
-    ],
-    quote:
-      "The Q Series is trusted by audio professionals worldwide for its clarity, coverage, and power. This grill update elevates the system’s visual identity while reinforcing its rugged performance standards—ideal for concerts, auditoriums, houses of worship, and outdoor events.",
+  // {
+  //   id: 2,
+  //   img: gril,
+  //   title: "Q Series Line Array Gets a  New Grill Design",
+  //   date: "Comming Soon",
+  //   description:
+  //     "Louis Martin Audio is excited to announce a grill upgrade for the acclaimed Q Series line array, combining refined visual appeal with improved mechanical integrity. This update reflects our ongoing commitment to innovation, durability, and design excellence in professional sound reinforcement.",
+  //   highlights: [
+  //     {
+  //       text: "Modernized Appearance: The new grill features a precision-cut hexagonal pattern with a matte black finish, delivering a sleek, contemporary look that complements any stage or venue.",
+  //     },
+  //     {
+  //       text: "Improved Structural Support: Reinforced grill architecture enhances rigidity and protection, ensuring long-term reliability in demanding touring and installation environments.",
+  //     },
+  //     {
+  //       text: "Brand Signature: The grill proudly displays the Louis Martin emblem, symbolizing Italian engineering and acoustic precision.",
+  //     },
+  //   ],
+  //   quote:
+  //     "The Q Series is trusted by audio professionals worldwide for its clarity, coverage, and power. This grill update elevates the system’s visual identity while reinforcing its rugged performance standards—ideal for concerts, auditoriums, houses of worship, and outdoor events.",
 
-    conclusion:
-      "The new grill design is now standard on all Q Series models and available soon from new production only. ",
-  },
+  //   conclusion:
+  //     "The new grill design is now standard on all Q Series models and available soon from new production only. ",
+  // },
   {
     id: 3,
     img: raipur,
