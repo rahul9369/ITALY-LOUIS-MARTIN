@@ -27,8 +27,8 @@ import qfront from "../assets/q50/qfront.JPG";
 import qback from "../assets/q50/qback.JPG";
 import qnos from "../assets/q50/qnos.JPG";
 import qs from "../assets/q50/qs.JPG";
-import qss from "../assets/q50/qss.JPG";
-import q50layer from "../assets/q50/q50layer.jpg";
+// import qss from "../assets/q50/qss.JPG";
+// import q50layer from "../assets/q50/q50layer.jpg";
 //q60//
 import q60front from "../assets/q60/q60front.JPG";
 import q60s from "../assets/q60/q60s.JPG";
@@ -41,9 +41,9 @@ import q60layer from "../assets/q60/q60layer.jpg";
 import q70front from "../assets/q70/q70front.JPG";
 import q70j from "../assets/q70/q70j.JPG";
 import q70s from "../assets/q70/q70s.JPG";
-import q70ss from "../assets/q70/q70ss.JPG";
+// import q70ss from "../assets/q70/q70ss.JPG";
 import q70back from "../assets/q70/q70back.JPG";
-import q70layer from "../assets/q70/q70layer.jpg";
+// import q70layer from "../assets/q70/q70layer.jpg";
 //q80//
 import q80front from "../assets/q80/q80f.JPG";
 import q80s from "../assets/q80/q80s.JPG";
@@ -121,7 +121,7 @@ const products = [
     ],
   },
   {
-    img: [qfront, qnos, qback, qss, qs, q50layer],
+    img: [qfront, qnos, qback, qs],
     title: "Line Array ",
     model: "Q 50",
     description:
@@ -228,7 +228,7 @@ const products = [
     ],
   },
   {
-    img: [q70front, q70j, q70back, q70ss, q70layer],
+    img: [q70front, q70j, q70back,],
     title: "Line array ",
     model: "Q 70",
     description:
