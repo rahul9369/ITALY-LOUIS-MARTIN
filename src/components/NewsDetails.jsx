@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import cox15 from "../assets/news/cox15.jpg";
 import gril from "../assets/news/gril.jpg";
 import factory from "../assets/news/factory.jpg";
+import raipur from "../assets/news/raipur.jpg";
 import { useEffect } from "react";
 
 const newsData = [
@@ -32,28 +33,25 @@ const newsData = [
       "The COX15 will be available through authorized Louis Martin Audio distributors worldwide. For technical documentation, demo scheduling, or dealer inquiries, please contact our sales team.",
   },
   {
-    id: 2,
-    img: gril,
-    title: "Q Series Line Array Gets a  New Grill Design",
-    date: "Comming Soon",
-    description:
-      "Louis Martin Audio is excited to announce a grill upgrade for the acclaimed Q Series line array, combining refined visual appeal with improved mechanical integrity.",
-    highlights: [
-      {
-        text: "Modernized Appearance: Precision-cut hexagonal pattern, matte black finish",
-      },
-      {
-        text: "Improved Structural Support: Reinforced grill architecture for reliability",
-      },
-      {
-        text: "Brand Signature: Displays Louis Martin emblem, symbolizing engineering and acoustic precision",
-      },
-    ],
-    quote:
-      "The Q Series is trusted by audio professionals worldwide for its clarity, coverage, and power.",
-    conclusion:
-      "The new grill design is now standard on all Q Series models and available soon from new production only.",
-  },
+      id: 2,
+      img: raipur,
+      title: " Red Series Installed at Romeo Lane, Raipur, India.",
+      date: "December 2025",
+      description:
+        "The project was successfully implemented by Eminent Audio Visual, Louis Martin’s trusted distributor in India. Their expertise ensured seamless integration of the Red Series into Romeo Lane’s outdoor terrace, aligning perfectly with the venue’s upscale ambiance and commitment to world-class sound.",
+      highlights: [
+        {
+          text: "Guests have already praised the immersive audio environment, noting how the Red Series enhances the atmosphere and makes Romeo Lane stand out as a premier destination in Raipur. The Red 12 provides commanding power and wide dispersion, while the Red 5 adds precision and balance, together creating a seamless sonic experience across the terrace.",
+        },
+        {
+          text: "The Red Series brings unmatched energy and precision to Romeo Lane’s outdoor terrace, ensuring every event resonates with impact and style, said a representative from Eminent Audio Visual.",
+        },
+      ],
+      quote:
+        "With the Red Series now installed by Eminent Audio Visual, Romeo Lane Raipur sets a new benchmark for premium venue sound, combining cutting-edge audio technology with an unforgettable lifestyle experience.",
+      conclusion:
+        "Eminent Audio Visual is a leading distributor of professional audio solutions in India, specializing in delivering world-class sound systems and installations. Their expertise and commitment to excellence make them a trusted partner for venues seeking premium audio experiences.",
+    },
   {
     id: 3,
     img: factory,

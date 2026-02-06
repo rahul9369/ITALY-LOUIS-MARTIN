@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
 import cox15 from "../assets/news/cox15.jpg";
-import gril from "../assets/news/gril.jpg";
+// import gril from "../assets/news/gril.jpg";
 import factory from "../assets/news/factory.jpg";
+import raipur from "../assets/news/raipur.jpg";
 
 const newsData = [
   {
@@ -15,11 +16,11 @@ const newsData = [
   },
   {
     id: 2,
-    img: gril,
-    title: "Q Series Line Array Gets a  New Grill Design",
-    date: "Comming Soon",
+    img: raipur,
+    title: " Red Series Installed at Romeo Lane, Raipur, India.",
+    date: "December 2025",
     shortDesc:
-      "Louis Martin Audio is excited to announce a grill upgrade for the acclaimed Q Series line array, combining refined visual appeal with improved mechanical integrity.",
+      "The project was successfully implemented by Eminent Audio Visual, Louis Martin’s trusted distributor in India. Their expertise ensured seamless integration of the Red Series into Romeo Lane’s outdoor terrace, aligning perfectly with the venue’s upscale ambiance and commitment to world-class sound.",
   },
   {
     id: 3,
