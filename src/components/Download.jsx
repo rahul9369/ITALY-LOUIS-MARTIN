@@ -4,10 +4,10 @@ import Download from "../assets/Download.png";
 import Catelog from "./Catelog";
 
 import Famous210pdf from "../assets/newpdf/Famous210update.pdf";
-import Q50pdf from "../assets/newpdf/q50update.pdf";
-import Q60pdf from "../assets/newpdf/Q60new.pdf";
-import Q70pdf from "../assets/newpdf/Q70new.pdf";
-import Q80pdf from "../assets/newpdf/Q80new.pdf";
+import Q50pdf from "../assets/newpdf/Q50update1.pdf";
+import Q60pdf from "../assets/newpdf/Q60update1.pdf";
+import Q70pdf from "../assets/newpdf/Q70update1.pdf";
+import Q80pdf from "../assets/newpdf/Q80update1.pdf";
 import Coxpdf from "../assets/newpdf/COX12new.pdf";
 import Red10pdf from "../assets/newpdf/Red10new.pdf";
 import Red6pdf from "../assets/newpdf/Red5.5new.pdf";

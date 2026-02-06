@@ -1,5 +1,5 @@
 import React from "react";
-import LOUISMARTINCATALOGUE from "../assets/newpdf/LouisMartinCataloguenewupdate.pdf";
+import LOUISMARTINCATALOGUE from "../assets/newpdf/catelogupdate1.pdf";
 
 function Catalog() {
   const openPDFWithDownload = () => {
