@@ -4,10 +4,10 @@ import Footer from "./Footer";
 
 import Famous210N from "../assets/newpdf/Famous210update.pdf";
 import Cox112 from "../assets/newpdf/COX12new.pdf";
-import Q50a from "../assets/newpdf/q50update.pdf";
-import Q60a from "../assets/newpdf/Q60new.pdf";
-import Q70a from "../assets/newpdf/Q70new.pdf";
-import Q80a from "../assets/newpdf/Q80new.pdf";
+import Q50a from "../assets/newpdf/Q50update1.pdf";
+import Q60a from "../assets/newpdf/Q60update1.pdf";
+import Q70a from "../assets/newpdf/Q70update1.pdf";
+import Q80a from "../assets/newpdf/Q80update1.pdf";
 import { Helmet } from "react-helmet";
 
 ///cox//
@@ -228,7 +228,7 @@ const products = [
     ],
   },
   {
-    img: [q70front, q70j, q70back,],
+    img: [q70front, q70j, q70back],
     title: "Line array ",
     model: "Q 70",
     description:
