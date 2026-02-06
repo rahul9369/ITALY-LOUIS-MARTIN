@@ -4,7 +4,7 @@ import update3 from "../assets/news/update1.jpg";
 import update4 from "../assets/news/upadate3.jpg";
 import cox15 from "../assets/news/cox15.jpg";
 import factory from "../assets/news/factory.jpg";
-import gril from "../assets/news/gril.jpg";
+// import gril from "../assets/news/gril.jpg";
 import plam from "../assets/news/plam.jpg";
 import prolight from "../assets/news/prolight.jpg";
 import asian from "../assets/news/asian.png";

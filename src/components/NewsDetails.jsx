@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import Footer from "./Footer";
 import cox15 from "../assets/news/cox15.jpg";
-import gril from "../assets/news/gril.jpg";
+// import gril from "../assets/news/gril.jpg";
 import factory from "../assets/news/factory.jpg";
 import raipur from "../assets/news/raipur.jpg";
 import { useEffect } from "react";
