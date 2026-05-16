@@ -64,6 +64,9 @@ import sf18 from "../assets/s18/s18front.jpg";
 import redfront from "../assets/red10/redfront.JPG";
 import ft1003 from "../assets/tip1002/ft1003.jpg";
 
+//manual
+import redseriesmanual from "../assets/manual/redseriesmanual.pdf";
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
@@ -98,6 +101,7 @@ const products = [
     Size_mm: "330 x 1100 x 600 mm (H x W x D)",
     Weight: "50 / 110.2 ",
     pdf: Famous210N,
+    manualPdf: redseriesmanual,
     relatedProducts: [
       {
         name: "TTA-800",
@@ -122,7 +126,7 @@ const products = [
     ],
   },
   {
-    img: [qfront, qnos,q70ss, qback, qs,q70layer45],
+    img: [qfront, qnos, q70ss, qback, qs, q70layer45],
     title: "Line Array ",
     model: "QS 50",
     description:
@@ -147,7 +151,8 @@ const products = [
     Crossover_Mode: "Passive/Bi-amplified Switchable",
     Crossover_Point_Biamp_Mode: "LF : 65 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
-    Cabinet_Material: "High density multi-layer birch plywood with Polyurea Paint",
+    Cabinet_Material:
+      "High density multi-layer birch plywood with Polyurea Paint",
     Size_mm: "286 x 478 x 360mm (H x W x D)",
     Weight: "16.8/37 ",
     pdf: Q50a,
@@ -201,7 +206,8 @@ const products = [
     Crossover_Mode: "Passive/Bi-amplified Switchable",
     Crossover_Point_Biamp_Mode: "LF : 60 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
-    Cabinet_Material: "High density multi-layer birch plywood with Polyurea Paint",
+    Cabinet_Material:
+      "High density multi-layer birch plywood with Polyurea Paint",
     Size_mm: "286 x 754 x 380mm (H x W x D)",
     Weight: "22.8/50.2 ",
     pdf: Q60a,
@@ -229,7 +235,7 @@ const products = [
     ],
   },
   {
-    img: [q70front, q70j,q70ss, q70back,q70layer45],
+    img: [q70front, q70j, q70ss, q70back, q70layer45],
     title: "Line array ",
     model: "QS 70",
     description:
@@ -254,7 +260,8 @@ const products = [
     Crossover_Mode: "Passive/Bi-amplified Switchable",
     Crossover_Point_Biamp_Mode: "LF : 60 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
-    Cabinet_Material: "High density multi-layer birch plywood with Polyurea Paint",
+    Cabinet_Material:
+      "High density multi-layer birch plywood with Polyurea Paint",
     Size_mm: "348 x 600 x 422mm (H x W x D)",
     Weight: "22/48.5 ",
     pdf: Q70a,
@@ -308,7 +315,8 @@ const products = [
     Crossover_Mode: "Passive/Bi-amplified Switchable",
     Crossover_Point_Biamp_Mode: "LF : 50 Hz – 1.8 kHz | HF : 1.8 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
-    Cabinet_Material: "High density multi-layer birch plywood with Polyurea Paint",
+    Cabinet_Material:
+      "High density multi-layer birch plywood with Polyurea Paint",
     Size_mm: "348 x 910 x 520mm (H x W x D)",
     Weight: "36.8/81.1 ",
     pdf: Q80a,
@@ -668,7 +676,21 @@ const ProductDetail = () => {
                 </a>
               </div>
 
-              <hr className="border-t border-gray-300" />
+              <hr className="border-t my-2 border-gray-300" />
+              <div className="flex justify-between items-center">
+                <p className="text-gray-700 text-lg font-bold">Manual</p>
+
+                <a
+                  href={`/view-pdf?url=${encodeURIComponent(
+                    product.manualPdf,
+                  )}&name=${product.model}_manual.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-green-600 text-white rounded-lg text-sm md:text-base hover:bg-green-700 transition-colors">
+                  View PDF
+                </a>
+              </div>
+              <hr className="border-t my-2 border-gray-300" />
             </div>
           )}
         </div>
