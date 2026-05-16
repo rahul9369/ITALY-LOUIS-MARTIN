@@ -28,12 +28,13 @@ const PDFViewer = () => {
     <div className="w-full h-screen flex flex-col">
       {/* Header with download button */}
       <div className="bg-gray-900 text-white p-2 flex justify-end items-center">
-        <a
-          href={pdfUrl}
-          download={fileName}
-          className="bg-green-600 px-4 py-2 rounded hover:bg-green-700 transition">
-          Download PDF
-        </a>
+       <a
+  href={pdfUrl}
+  download={fileName.split("_")[0] + " Datasheet.pdf"}
+  className="bg-green-600 px-4 py-2 rounded hover:bg-green-700 transition"
+>
+  Download PDF
+</a>
       </div>
 
       {/* PDF Display */}

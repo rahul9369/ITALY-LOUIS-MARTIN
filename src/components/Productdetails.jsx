@@ -214,7 +214,7 @@ const products = [
     title: "Point Source ",
     model: "Red 5",
     description:
-      " The Red – 5 has one powerful 5.25” (133 mm)  coaxial driver with 1.34” (34 mm) HF. It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install market applications, including hospitality segment and premium home cinema installation. With a ruler-flat response, the cabinet offers uncoloured, transparent sound quality. Crafted from glass fiber reinforced plastic, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response",
+      " The Red – 5 has one powerful 5.25” (133 mm)  coaxial driver with . It is a high-performance, versatile, passive speaker system designed for unmatched sound reinforcement. Featuring a passive crossover, two-way full-range configuration, it is ideal for install market applications, including hospitality segment and premium home cinema installation. With a ruler-flat response, the cabinet offers uncoloured, transparent sound quality. Crafted from glass fiber reinforced plastic, it is suitable for both installation and portable use. The cabinet's design emphasizes vocal clarity, fidelity, and minimal distortion without compromising transient response",
     application: [
       "Lounge ",
       "Pub/Bar",
@@ -222,16 +222,16 @@ const products = [
       "Multi-functional room",
       "High-end Home Cinema Installation",
     ],
-    Type: "Two-way Coaxial full range passive loudspeaker",
+    Type: " Coaxial full range passive loudspeaker",
     Frequency_Response: "90 Hz – 19 kHz",
-    LF_Drivers: "1x 5.25” (133 mm) Coaxial Driver",
-    HF_Drivers: "1 x 1.34” (34 mm) HF Driver",
-    RMS_Power: "100W",
-    Program_Power: "200W",
-    Peak_Power: "400W",
-    Sensitivity: "93 dB ",
-    Max_SPL: "115 dB ",
-    Max_SPL_Peak: "118 dB ",
+    LF_Drivers: "1x 5.25” (133 mm) Coaxial full range Driver",
+    HF_Drivers: "N/A",
+    RMS_Power: "50W",
+    Program_Power: "100W",
+    Peak_Power: "200W",
+    Sensitivity: "93dB ",
+    Max_SPL: "112dB ",
+    Max_SPL_Peak: "115dB ",
     Nominal_Impedance: "8 Ohms (typical)",
     Crossover_Mode: "Passive, optimized for linearity",
     Dispersion: "90° (H) x 90° (V)",
@@ -617,6 +617,7 @@ const products = [
     Size_mm: "525 x 410 x 385mm (H x W x D)",
     Weight: "21.5/47.4 ",
     pdf: F12AMPDF,
+    
     relatedProducts: [
       // {
       //   name: "TIP-1002",
@@ -931,6 +932,19 @@ const ProductDetail = () => {
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
                   View PDF
+                </a>
+              </div>
+              {/* //user manual is the same as datasheet for now, can be updated later if needed// */}
+              <div className="flex justify-between items-center mb-2">
+                <p className="text-gray-700 text-lg font-bold"> User Manual</p>
+                <a
+                  href={`/view-pdf?url=${encodeURIComponent(
+                    product.pdf,
+                  )}&name=${product.model}_specifications.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
+                  View manual
                 </a>
               </div>
 

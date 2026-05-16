@@ -48,7 +48,7 @@ const Navbar = () => {
               path: "/linearray",
               sublinks: [
                 { name: "Famous series", path: "/famousseries" },
-                { name: "Q Series", path: "/qseries" },
+                { name: "QS Series", path: "/qseries" },
                 { name: "Cox series", path: "/coxseries" },
               ],
             },

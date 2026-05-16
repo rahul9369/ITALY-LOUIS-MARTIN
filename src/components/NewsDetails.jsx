@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Footer from "./Footer";
 import cox15 from "../assets/news/cox15.jpg";
+import q80f from "../assets/q80/q80f.JPG";
 // import gril from "../assets/news/gril.jpg";
 import factory from "../assets/news/factory.jpg";
 import raipur from "../assets/news/raipur.jpg";
@@ -11,7 +12,7 @@ const newsData = [
     id: 1,
     img: cox15,
     title: "Product Launch: Introducing the COX15 Coaxial Line Array System",
-    date: "Comming Soon",
+    date: "Coming Soon",
     description:
       "The COX15 delivers exceptional clarity and dynamic range with a passive MF/HF configuration, combining advanced driver technology and optimized acoustic architecture.",
     highlights: [
@@ -32,8 +33,33 @@ const newsData = [
     conclusion:
       "The COX15 will be available through authorized Louis Martin Audio distributors worldwide. For technical documentation, demo scheduling, or dealer inquiries, please contact our sales team.",
   },
+    {
+    id: 2,
+    img: q80f,
+    title: "Introducing the QS Series – Second Generation Line Array Systems",
+    date: "New Update",
+    description:
+      "Elevated Design, Enhanced Performance",
+    highlights: [
+      { text: "Advanced Acoustic Updates: Enhanced LF & HF performance ensures even greater clarity, power, and precision across large venues" },
+      {
+        text: "Modern Aesthetic: A sleek new paint finish and grille design elevate the visual identity, making the QS Series as striking to look at as it is to hear.",
+      },
+      {
+        text: "Second Generation Engineering: Every detail has been meticulously refined to meet the demands of today’s concerts, conferences, and immersive events",
+      },
+      // { text: "Maximum SPL: 129dB continuous / 135dB peak" },
+      // { text: "Impedance: 8 Ohms (LF and MF/HF)" },
+      // { text: "Dispersion: 100° horizontal / 10° vertical" },
+      // { text: "Crossover Points: 650Hz / 4.8kHz" },
+    ],
+    quote:
+      "Louis Martin Audio proudly unveils the QS Series, the next evolution of our acclaimed Q Series line arrays. Building on the trusted foundation of uniform sound distribution, controlled dispersion, and high output levels, the QS Series delivers refined technical updates and a bold new aesthetic",
+    conclusion:
+      "The QS Series represents the perfect balance of technical innovation and design sophistication. Whether powering a stadium concert, a corporate convention, or a high-profile installation, it guarantees reliable, immersive sound with a contemporary look that complements any environment.",
+  },
   {
-      id: 2,
+      id: 3,
       img: raipur,
       title: " Red Series Installed at Romeo Lane, Raipur, India.",
       date: "December 2025",
@@ -53,7 +79,7 @@ const newsData = [
         "Eminent Audio Visual is a leading distributor of professional audio solutions in India, specializing in delivering world-class sound systems and installations. Their expertise and commitment to excellence make them a trusted partner for venues seeking premium audio experiences.",
     },
   {
-    id: 3,
+    id: 4,
     img: factory,
     title: "Louis Martin Audio Opens New Factory Facility",
     date: "26 November 2025",

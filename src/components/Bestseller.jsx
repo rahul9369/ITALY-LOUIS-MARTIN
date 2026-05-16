@@ -4,18 +4,27 @@ import cox15 from "../assets/news/cox15.jpg";
 // import gril from "../assets/news/gril.jpg";
 import factory from "../assets/news/factory.jpg";
 import raipur from "../assets/news/raipur.jpg";
+import q80f from "../assets/q80/q80f.JPG";
 
 const newsData = [
   {
     id: 1,
     img: cox15,
     title: "Product Launch: Introducing the COX15 Coaxial Line Array System",
-    date: "Comming Soon",
+    date: "Coming Soon",
     shortDesc:
       "The COX15 delivers exceptional clarity and dynamic range with a passive MF/HF configuration, combining advanced driver technology and optimized acoustic architecture.",
   },
-  {
+    {
     id: 2,
+    img: q80f,
+    title: "Introducing the QS Series – Second Generation Line Array Systems",
+    date: "updated",
+    shortDesc:
+      "Louis Martin Audio proudly unveils the QS Series, the next evolution of our acclaimed Q Series line arrays. Building on the trusted foundation of uniform sound distribution, controlled dispersion, and high output levels, the QS Series delivers refined technical updates and a bold new aesthetic.",
+  },
+  {
+    id: 3,
     img: raipur,
     title: " Red Series Installed at Romeo Lane, Raipur, India.",
     date: "December 2025",
@@ -23,7 +32,7 @@ const newsData = [
       "The project was successfully implemented by Eminent Audio Visual, Louis Martin’s trusted distributor in India. Their expertise ensured seamless integration of the Red Series into Romeo Lane’s outdoor terrace, aligning perfectly with the venue’s upscale ambiance and commitment to world-class sound.",
   },
   {
-    id: 3,
+    id: 4,
     img: factory,
     title: "Louis Martin Audio Opens New Factory Facility",
     date: "26 November 2025",

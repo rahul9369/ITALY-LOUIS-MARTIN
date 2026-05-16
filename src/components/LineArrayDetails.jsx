@@ -41,8 +41,9 @@ import q60layer from "../assets/q60/q60layer.jpg";
 import q70front from "../assets/q70/q70front.JPG";
 import q70j from "../assets/q70/q70j.JPG";
 import q70s from "../assets/q70/q70s.JPG";
-// import q70ss from "../assets/q70/q70ss.JPG";
+import q70ss from "../assets/q70/q70ss.JPG";
 import q70back from "../assets/q70/q70back.JPG";
+import q70layer45 from "../assets/q70/q70layer45.jpg";
 // import q70layer from "../assets/q70/q70layer.jpg";
 //q80//
 import q80front from "../assets/q80/q80f.JPG";
@@ -121,11 +122,11 @@ const products = [
     ],
   },
   {
-    img: [qfront, qnos, qback, qs],
+    img: [qfront, qnos,q70ss, qback, qs,q70layer45],
     title: "Line Array ",
-    model: "Q 50",
+    model: "QS 50",
     description:
-      " The Q-50 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features one 10-inch neodymium drivers and two 1.4-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
+      " The QS-50 – Second Generation Line Array is the enhanced successor to the Q 50, carefully engineered for touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features a 10-inch neodymium LF driver and two 1.75-inch HF compression drivers, delivering exceptional clarity and power. With a new matt polyurea finish, updated grille design, and upgraded HF driver, the QS-50 combines robust performance with refined aesthetics, setting a benchmark in reliability and impact for professional sound applications.",
     application: [
       "Outdoor Events",
       "Fixed Installations",
@@ -134,8 +135,8 @@ const products = [
     ],
     Type: "Two-way full range Bi-amplified/passive switchable Line array loudspeaker",
     Frequency_Response: "65 Hz – 20 kHz (-10 dB)",
-    LF_Drivers: "1 x 10” (254 mm) with a 2.5” (64 mm) Voice Coil",
-    HF_Drivers: "2 x 1.4” (35 mm) High Compression Driver",
+    LF_Drivers: "1 x 10” (254 mm) Neodymium driver with 3” voice coil",
+    HF_Drivers: "2 x 1.75” (44 mm) High Compression Driver",
     RMS_Power: "500W (Passive) / LF:350W, HF:150W (Bi-Amp)",
     Program_Power: "1000W (Passive) / LF:700W, HF:300W (Bi-Amp))",
     Peak_Power: "2000W (Passive) / LF:1400W, HF:600W (Bi-Amp)",
@@ -146,7 +147,7 @@ const products = [
     Crossover_Mode: "Passive/Bi-amplified Switchable",
     Crossover_Point_Biamp_Mode: "LF : 65 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
-    Cabinet_Material: "Birch Plywood",
+    Cabinet_Material: "High density multi-layer birch plywood with Polyurea Paint",
     Size_mm: "286 x 478 x 360mm (H x W x D)",
     Weight: "16.8/37 ",
     pdf: Q50a,
@@ -176,9 +177,9 @@ const products = [
   {
     img: [q60front, q60s, q60back, q60j, q60layer],
     title: "Line array ",
-    model: "Q 60",
+    model: "QS 60",
     description:
-      " The Q-60 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features two 10-inch neodymium drivers and two 1.4-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
+      " The QS-60 – Second Generation Line Array is the enhanced successor to the Q 60, carefully engineered for touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features dual 10-inch neodymium LF drivers and two 1.75-inch HF compression drivers, delivering exceptional clarity and power. With a new matt polyurea finish, updated grille design, and upgraded HF driver, the QS-60 combines robust performance with refined aesthetics, setting a benchmark in reliability and impact for professional sound applications.",
     application: [
       "Outdoor Events",
       "Live Performance",
@@ -188,11 +189,11 @@ const products = [
     ],
     Type: "Two-way full range Bi-amplified/passive switchable Line array loudspeaker",
     Frequency_Response: "60 Hz – 20 kHz",
-    LF_Drivers: "2x 10” (254 mm) with a 2.5” Voice Coil",
-    HF_Drivers: "2 x 1.4” (35 mm) High Compression Driver",
-    RMS_Power: "750W (Passive) / LF:500W,HF:150W (Bi-Amp)",
-    Program_Power: "1500W (Passive) / LF:1000W,HF:300W (Bi-Amp)",
-    Peak_Power: "2600W (Passive) / LF:2000W,HF:600W (Bi-Amp)",
+    LF_Drivers: "2 x 10” (254 mm) Neodymium driver with 3” voice coil",
+    HF_Drivers: "2 x 1.75” (44 mm) High Compression Driver",
+    RMS_Power: "750W (Passive) / LF:600W,HF:150W (Bi-Amp)",
+    Program_Power: "1500W (Passive) / LF:1200W,HF:300W (Bi-Amp)",
+    Peak_Power: "3000W (Passive) / LF:2400W,HF:600W (Bi-Amp)",
     Sensitivity: "102 dB ",
     Max_SPL: "133 dB  (Passive/Bi-Amp)",
     Max_SPL_Peak: "136 dB  (Passive/Bi-Amp)",
@@ -200,7 +201,7 @@ const products = [
     Crossover_Mode: "Passive/Bi-amplified Switchable",
     Crossover_Point_Biamp_Mode: "LF : 60 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
-    Cabinet_Material: "Birch Plywood",
+    Cabinet_Material: "High density multi-layer birch plywood with Polyurea Paint",
     Size_mm: "286 x 754 x 380mm (H x W x D)",
     Weight: "22.8/50.2 ",
     pdf: Q60a,
@@ -228,11 +229,11 @@ const products = [
     ],
   },
   {
-    img: [q70front, q70j, q70back],
+    img: [q70front, q70j,q70ss, q70back,q70layer45],
     title: "Line array ",
-    model: "Q 70",
+    model: "QS 70",
     description:
-      " The Q-70 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features one 12-inch neodymium drivers and one 1.75-inch highfrequency compression drivers, ensuring exceptional sound quality and performance.",
+      " The QS-70 – Second Generation Line Array is the enhanced successor to the Q 70, carefully engineered for touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features a 12-inch neodymium LF driver and two 1.75-inch HF compression drivers, delivering exceptional clarity and power. With a new matt polyurea finish, updated grille design, and upgraded HF driver, the QS-70 combines robust performance with refined aesthetics, setting a benchmark in reliability and impact for professional sound applications.",
     application: [
       " Outdoor Events",
       "Concerts and Live Events",
@@ -241,11 +242,11 @@ const products = [
     ],
     Type: "Two-way full range Bi-amplified/passive switchable Line array loudspeaker",
     Frequency_Response: "60 Hz – 20 kHz",
-    LF_Drivers: "1x 12” (304 mm) with a 3” Voice Coil",
-    HF_Drivers: "1 x 1.75” (44 mm) High Compression Driver",
-    RMS_Power: "550W (Passive) / LF:400W, HF:150W (Bi-Amp)",
-    Program_Power: "1100W (Passive) / LF:800W, HF:300W (Bi-Amp)",
-    Peak_Power: "2200W (Passive) / LF:1600W, HF:600W (Bi-Amp)",
+    LF_Drivers: "1 x 12” (304 mm) Neodymium driver with 3” voice coil",
+    HF_Drivers: "2 x 1.75” (44 mm) High Compression Driver",
+    RMS_Power: "600W (Passive) / LF:450W, HF:150W (Bi-Amp)",
+    Program_Power: "1200W (Passive) / LF:900W, HF:300W (Bi-Amp)",
+    Peak_Power: "2400W (Passive) / LF:1800W, HF:600W (Bi-Amp)",
     Sensitivity: "103 dB ",
     Max_SPL: "133 dB  (Passive/Bi-Amp)",
     Max_SPL_Peak: "136 dB  (Passive/Bi-Amp)",
@@ -253,7 +254,7 @@ const products = [
     Crossover_Mode: "Passive/Bi-amplified Switchable",
     Crossover_Point_Biamp_Mode: "LF : 60 Hz – 2.2 kHz | HF : 2.2 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
-    Cabinet_Material: "Birch Plywood",
+    Cabinet_Material: "High density multi-layer birch plywood with Polyurea Paint",
     Size_mm: "348 x 600 x 422mm (H x W x D)",
     Weight: "22/48.5 ",
     pdf: Q70a,
@@ -283,9 +284,9 @@ const products = [
   {
     img: [q80front, q80j, q80s, q80b, q80layer],
     title: "Line array ",
-    model: "Q 80",
+    model: "QS 80",
     description:
-      " The Q-80 is carefully designed & engineered to meet the rigorous demands of touring performances, rental services, and fixed installations. This bi-amplified & passive switchable model features two 12-inch neodymium drivers and two 3-inch high frequency compression drivers, ensuring exceptional sound quality and performance.",
+      "The QS-80 – Second Generation Line Array is an enhanced evolution of the Q 80, carefully engineered for touring performances, rental services, and high-end fixed installations. This bi-amplified & passive switchable model features dual 12-inch neodymium LF drivers and two 3-inch HF compression drivers, delivering powerful, refined sound quality. With an updated matt polyurea finish, a new grille design, upgraded LF driver power, and enhanced acoustics, the QS-80 sets a new benchmark in clarity, reliability, and performance for professional sound reinforcement.",
     application: [
       " Outdoor Events",
       "Live Performance",
@@ -294,20 +295,20 @@ const products = [
       // "Places of worKship",
     ],
     Type: "Two-way full range Bi-amplified/passive switchable Line array loudspeaker",
-    Frequency_Response: "60 Hz – 20 kHz",
+    Frequency_Response: "50 Hz – 20 kHz",
     LF_Drivers: " 2 x 12” (304 mm) Neodymium driver with 3” voice coil",
     HF_Drivers: "2 x 3” (75mm) HF Compression Driver with 1.5” Exit",
-    RMS_Power: "1000W (Passive) / LF:850W,HF:150W (Bi-Amp)",
-    Program_Power: "2000W (Passive) / LF:1700W,HF:300W (Bi-Amp)",
-    Peak_Power: "4000W (Passive) / LF:3400W,HF:600W (Bi-Amp)",
+    RMS_Power: "1200W (Passive) / LF:900W,HF:300W (Bi-Amp)",
+    Program_Power: "2400W (Passive) / LF:1800W,HF:600W (Bi-Amp)",
+    Peak_Power: "4800W (Passive) / LF:3600W,HF:1200W (Bi-Amp)",
     Sensitivity: "103 dB ",
-    Max_SPL: "136 dB  (Passive/Bi-Amp)",
-    Max_SPL_Peak: "139 dB  (Passive/Bi-Amp)",
+    Max_SPL: "137 dB  (Passive/Bi-Amp)",
+    Max_SPL_Peak: "140 dB  (Passive/Bi-Amp)",
     Nominal_Impedance: " 8 Ohms (Passive/Bi-Amp)",
     Crossover_Mode: "Passive/Bi-amplified Switchable",
-    Crossover_Point_Biamp_Mode: "LF : 60 Hz – 1.8 kHz | HF : 1.8 kHz – 20 kHz",
+    Crossover_Point_Biamp_Mode: "LF : 50 Hz – 1.8 kHz | HF : 1.8 kHz – 20 kHz",
     Dispersion: "100° (H) x 10° (V)",
-    Cabinet_Material: "High density multi-layer birch plywood",
+    Cabinet_Material: "High density multi-layer birch plywood with Polyurea Paint",
     Size_mm: "348 x 910 x 520mm (H x W x D)",
     Weight: "36.8/81.1 ",
     pdf: Q80a,

@@ -16,8 +16,8 @@ import { useNavigate } from "react-router-dom";
 const products = [
   {
     img: qfront,
-    title: "Q Series",
-    model: "Q 50",
+    title: "QS Series",
+    model: "QS 50",
     description: `1x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
     power: "500W/2000W（Passive); LF:350W/1400W, HF:150W/600W (Bi-Amp)",
     response: "65Hz-20kHz",
@@ -27,10 +27,11 @@ const products = [
   },
   {
     img: q60s,
-    title: "Q Series",
-    model: "Q 60",
-    description: `2x10" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
-    power: "650W/2600W（Passive); LF:500W/2000W,HF:150W/600W(Bi-Amp)",
+    title: "QS Series",
+    model: "QS 60",
+
+    description: `2x10" Two-way Passive/ Bi-Amp Switchable Line Array Speaker System`,
+    power: "750W/3000W（Passive); LF: 600W/2400W, HF:150W/600W (Bi-Amp)",
     response: "60Hz-20kHz",
     Sensitivity: "102dB",
     spl: "133dB（Passive/Bi-Amp)",
@@ -38,44 +39,55 @@ const products = [
   },
   {
     img: q70front,
-    title: "Q Series",
-    model: "Q 70",
+    title: "QS Series",
+    model: "QS 70",
     description: `1x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
-    power: "550W/2200W（Passive); LF:400W/1600W, HF:150W/600W (Bi-Amp)",
+    power: "600W/2400W（Passive); LF:400W/1600W, HF:150W/600W (Bi-Amp)",
     response: "60Hz-20kHz",
     Sensitivity: "103dB",
     spl: "133dB（Passive/Bi-Amp)",
     weight: "22Kg",
   },
-  {
-    img: q60s,
-    title: "Q Series",
-    model: "Q 80",
-    description: `2x12" Two-way Passive/Bi-Amp Switchable Line Array Speaker System`,
-    power: "1000W/4000W（Passive）; LF:700W/2800W, HF:300W/1200W (Bi-Amp)",
-    response: "60Hz-20kHz",
-    Sensitivity: "103dB",
-    spl: "136dB（Passive/Bi-Amp)",
-    weight: "36.8Kg",
-  },
+ {
+     img: q60s,
+     title: "QS Series",
+     model: "QS 80",
+     description: `2x12" Two-way Passive/ Bi-Amp Switchable Line Array Speaker System`,
+     power: "1200W/4800W（Passive); LF:900W/3600W, HF:300W/1200W (Bi-Amp)",
+     response: "50Hz-20kHz",
+     Sensitivity: "103dB",
+     spl: " 137 dB / 140 dB",
+     weight: "36.8Kg",
+   },
 ];
 
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   return (
     <div className="bg-white shadow-lg rounded-xl p-6 w-full ">
-      <img
-        src={product.img}
-        alt={product.model}
-        className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
-        loading="eager"
-        decoding="async"
-        onClick={() =>
-          navigate(
-            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
-          )
-        }
-      />
+      
+      {/* Wrapper div add kiya hai relative position ke sath */}
+      <div className="relative w-full">
+        {/* Condition check: agar isNew true hai toh badge dikhega */}
+        {product.isNew && (
+          <span className="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded shadow-md z-10">
+            NEW PRODUCT
+          </span>
+        )}
+        <img
+          src={product.img}
+          alt={product.model}
+          className="w-full h-[300px] object-contain rounded-lg cursor-pointer"
+          loading="eager"
+          decoding="async"
+          onClick={() =>
+            navigate(
+              `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
+            )
+          }
+        />
+      </div>
+
       <h2 className="text-xl  text-gray-600 mt-4">{product.title}</h2>
       <h3 className="text-xl font-bold text-gray-600">{product.model}</h3>
       <p className="text-md text-black font-bold my-2">{product.description}</p>
@@ -106,7 +118,7 @@ hover:bg-red-800 hover:text-white
 transition duration-300"
         onClick={() =>
           navigate(
-            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`,
+            `/linearray/${product.model.toLowerCase().replace(/\s+/g, " ")}`
           )
         }>
         {product.model}
@@ -121,15 +133,11 @@ const ProductList = () => {
       <img src={Linearray} alt="Line Array" className="w-full" />
       <div className="w-full text-center py-6 px-4">
         <h1 className="sm:text-4xl text-[22px] mx-auto font-bold  mb-4 text-red-800">
-          Line Arrays - Q Series
+          Line Arrays - QS Series
         </h1>
         <p className="text-lg text-gray-700 max-w-7xl mt-5 mx-auto">
-          Our Line Array Systems are meticulously designed to provide consistent
-          and even sound coverage across large areas. With features like Uniform
-          Sound Distribution, Controlled Dispersion, and High Output Levels,
-          they ensure exceptional audio clarity and quality. These systems are
-          the perfect solution for concerts, conferences, and other events where
-          reliable and immersive sound is essential.
+          QS Series – Second Generation Line Arrays  
+Building on the success of the Q Series, the new QS Series delivers refined LF & HF performance, modern aesthetics with updated paint and grille design, and second‑generation engineering for consistent, immersive sound. Perfect for concerts, conferences, and large‑scale events, the QS Series sets a new benchmark in clarity, coverage, and reliability.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2 sm:p-10 bg-gray-100 justify-items-center">

@@ -11,13 +11,14 @@ import asian from "../assets/news/asian.png";
 import linearray from "../assets/news/linearray.jpg";
 import raipur from "../assets/news/raipur.jpg";
 import max1 from "../assets/news/max1.jpg";
+import q80f from "../assets/q80/q80f.JPG";
 
 export const newsData = [
   {
     id: 1,
     img: cox15,
     title: "Product Launch: Introducing the COX15 Coaxial Line Array System",
-    date: "Comming Soon ",
+    date: "Coming Soon ",
     description:
       "The COX15 delivers exceptional clarity and dynamic range with a passive MF/HF configuration, combining advanced driver technology and optimized acoustic architecture.",
     highlights: [
@@ -48,30 +49,30 @@ export const newsData = [
     conclusion:
       "The COX15 will be available through authorized Louis Martin Audio distributors worldwide. For technical documentation, demo scheduling, or dealer inquiries, please contact our sales team.",
   },
-  // {
-  //   id: 2,
-  //   img: gril,
-  //   title: "Q Series Line Array Gets a  New Grill Design",
-  //   date: "Comming Soon",
-  //   description:
-  //     "Louis Martin Audio is excited to announce a grill upgrade for the acclaimed Q Series line array, combining refined visual appeal with improved mechanical integrity. This update reflects our ongoing commitment to innovation, durability, and design excellence in professional sound reinforcement.",
-  //   highlights: [
-  //     {
-  //       text: "Modernized Appearance: The new grill features a precision-cut hexagonal pattern with a matte black finish, delivering a sleek, contemporary look that complements any stage or venue.",
-  //     },
-  //     {
-  //       text: "Improved Structural Support: Reinforced grill architecture enhances rigidity and protection, ensuring long-term reliability in demanding touring and installation environments.",
-  //     },
-  //     {
-  //       text: "Brand Signature: The grill proudly displays the Louis Martin emblem, symbolizing Italian engineering and acoustic precision.",
-  //     },
-  //   ],
-  //   quote:
-  //     "The Q Series is trusted by audio professionals worldwide for its clarity, coverage, and power. This grill update elevates the system’s visual identity while reinforcing its rugged performance standards—ideal for concerts, auditoriums, houses of worship, and outdoor events.",
+  {
+    id: 2,
+    img: q80f,
+    title: "Introducing the QS Series – Second Generation Line Array Systems",
+    date: "New Update",
+    description:
+      "Elevated Design, Enhanced Performance",
+    highlights: [
+      {
+        text: "•	Advanced Acoustic Updates: Enhanced LF & HF performance ensures even greater clarity, power, and precision across large venues",
+      },
+      {
+        text: "•	Modern Aesthetic: A sleek new paint finish and grille design elevate the visual identity, making the QS Series as striking to look at as it is to hear",
+      },
+      {
+        text: "•	Second Generation Engineering: Every detail has been meticulously refined to meet the demands of today’s concerts, conferences, and immersive events",
+      },
+    ],
+    quote:
+      "Louis Martin Audio proudly unveils the QS Series, the next evolution of our acclaimed Q Series line arrays. Building on the trusted foundation of uniform sound distribution, controlled dispersion, and high output levels, the QS Series delivers refined technical updates and a bold new aesthetic",
 
-  //   conclusion:
-  //     "The new grill design is now standard on all Q Series models and available soon from new production only. ",
-  // },
+    conclusion:
+      "The QS Series represents the perfect balance of technical innovation and design sophistication. Whether powering a stadium concert, a corporate convention, or a high-profile installation, it guarantees reliable, immersive sound with a contemporary look that complements any environment. ",
+  },
   {
     id: 3,
     img: raipur,

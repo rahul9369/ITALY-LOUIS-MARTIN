@@ -5,6 +5,7 @@ import Indonesiya from "../assets/Distributor/Indonesiya.jpg";
 import Maxico from "../assets/Distributor/Maxico.jpg";
 import Thailand from "../assets/Distributor/Thailand.jpg";
 import Vetnam from "../assets/Distributor/Vetnam.jpg";
+import Malaysia from "../assets/Distributor/Malaysia.jpg";
 import Footer from "./Footer";
 // import img from "../assets/carausalimg2.jpg";
 import Distributors from "../assets/Distributor/Distributors.png";
@@ -42,6 +43,12 @@ const distributors = [
     company: "The Show Project ",
     image: Maxico,
     link: "https://theshowproject.com.mx/",
+  },
+    {
+    country: " Kuala Lumpur(Malaysia) ",
+    company: "PEGASUS AUDIO  ",
+    image: Malaysia,
+    link: "https://avpegasus.com/",
   },
 ];
 

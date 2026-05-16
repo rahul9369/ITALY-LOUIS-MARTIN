@@ -67,7 +67,7 @@ const products = [
     title: "Plastic Speaker",
     model: "HW6.5",
     description: " Two-way full range plastic IP 65 Weatherproof loudspeaker",
-    power: " 40W / 80W @8Ω",
+    power: " 40W / 160W @8Ω",
     Sensitivity: " 88 dB",
     response: " 65 Hz – 18 kHz",
     spl: "109dB",

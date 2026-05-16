@@ -10,13 +10,13 @@ const slides = [
   {
     image: CarausalImg1,
     title: "RED-SERIES",
-    subtitle: "Object of Desire",
+    subtitle: "Object of Desire", 
     text: "Read More",
     link: "/redseries",
   },
   {
     image: CarausalImg2,
-    title: "Q-SERIES",
+    title: "QS-SERIES",
     subtitle: "High Performance Line Array",
     text: "Read More",
     link: "/qseries",
