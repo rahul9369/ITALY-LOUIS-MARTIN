@@ -104,7 +104,7 @@ const products = [
     Size_mm: "330 x 1100 x 600 mm (H x W x D)",
     Weight: "50 / 110.2 ",
     pdf: Famous210N,
-    manualPdf: redseriesmanual,
+  
     relatedProducts: [
       {
         name: "TTA-800",

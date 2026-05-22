@@ -160,7 +160,7 @@ const products = [
     Size_mm: "580 x 1160 x890mm (H x W x D)",
     Weight: "88/194.0",
     pdf: KS218a,
-    maualPdf: KSUserManual,
+    manualPdf: KSUserManual,
     relatedProducts: [
       {
         name: "TIP-2402",

@@ -89,6 +89,7 @@ const products = [
     Size_mm: "328 x 192 x 160mm (H x W x D)",
     Weight: "5/11.02 ",
     pdf: DS5PDF,
+    manualPdf: DSUserManual,
 
     relatedProducts: [
       {
@@ -198,6 +199,7 @@ const products = [
     Size_mm: "425 x 415 x 435mm (H x W x D)",
     Weight: "17/37.4 ",
     pdf: DS12PDF,
+    manualPdf: DSUserManual,
 
     relatedProducts: [
       {
