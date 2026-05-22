@@ -40,6 +40,7 @@ import fd4300 from "../assets/d4300/fd4300.jpg";
 import fronts12 from "../assets/s12/fronts12.JPG";
 import ft300 from "../assets/tta300/ft300.jpg";
 import df2001 from "../assets/d200/df2001.jpg";
+import KulamUserManual from "../assets/manual/KulamUserManual.pdf";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -73,6 +74,7 @@ const products = [
     Size_mm: "114 x 101 x 110mm (H x W x D)",
     Weight: "2.2/4.85 ",
     pdf: K302PDF,
+    manualPdf: KulamUserManual,
     relatedProducts: [
       {
         name: "D-200",
@@ -124,6 +126,7 @@ const products = [
     Size_mm: "439 x 101 x 110mm (H x W x D)",
     Weight: "4.1/9.03 ",
     pdf: K304PDF,
+    manualPdf: KulamUserManual,
     relatedProducts: [
       {
         name: "D-200",
@@ -175,6 +178,7 @@ const products = [
     Size_mm: "649 x 101 x 110mm (H x W x D)",
     Weight: "5.9/13.0 ",
     pdf: K306PDF,
+    manualPdf: KulamUserManual,
     relatedProducts: [
       {
         name: "D200",
@@ -226,6 +230,7 @@ const products = [
     Size_mm: "859 x 101 x 110mm (H x W x D)",
     Weight: "7.8/17.2 ",
     pdf: K308PDF,
+    manualPdf: KulamUserManual,
     relatedProducts: [
       {
         name: "D-200",
@@ -277,6 +282,7 @@ const products = [
     Size_mm: "1120 x 101 x 110mm (H x W x D)",
     Weight: "10.6/23.3 ",
     pdf: K312PDF,
+    manualPdf: KulamUserManual,
     relatedProducts: [
       {
         name: "D-4300",
@@ -561,12 +567,27 @@ const ProductDetail = () => {
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
                   View PDF
                 </a>
               </div>
 
               <hr className="border-t border-gray-300" />
+              <div className="flex justify-between items-center">
+                <p className="text-gray-700 text-lg font-bold">Manual</p>
+
+                <a
+                  href={`/view-pdf?url=${encodeURIComponent(
+                    product.manualPdf,
+                  )}&name=${product.model}_manual.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
+                  View PDF
+                </a>
+              </div>
+              <hr className="border-t my-2 border-gray-300" />
+              
             </div>
           )}
         </div>

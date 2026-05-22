@@ -73,6 +73,10 @@ import df2001 from "../assets/d200/df2001.jpg";
 import redfront from "../assets/red10/redfront.JPG";
 import q80f from "../assets/q80/q80f.JPG";
 import sf218 from "../assets/s218/sf218.JPG";
+import ttauserManual from "../assets/manual/ttauserManual.pdf";
+import tipuserManual from "../assets/manual/tipuserManual.pdf";
+import dusermanual from "../assets/manual/duserManual.pdf";
+import PLUserManual from "../assets/manual/PLUserManual.pdf";
 
 import q60front from "../assets/q60/q60front.JPG";
 
@@ -106,6 +110,7 @@ const products = [
     Size_mm: "482 x 220 x 48",
     Weight: " 2.5",
     pdf: DSeriesAmplifiers,
+    manualPdf: dusermanual,
     relatedProducts: [
       {
         name: "D300",
@@ -150,6 +155,7 @@ const products = [
     Size_mm: "482 x 220 x 48",
     Weight: "2.5",
     pdf: DSeriesAmplifiers,
+    manualPdf: dusermanual,
     relatedProducts: [
       {
         name: "D 200",
@@ -194,6 +200,7 @@ const products = [
     Size_mm: "482 x 350 x 44",
     Weight: "4.8",
     pdf: DSeriesAmplifiers,
+    manualPdf: dusermanual,
     relatedProducts: [
       {
         name: "PL 1004 ",
@@ -238,6 +245,7 @@ const products = [
     Size_mm: " 482 x 350 x 44",
     Weight: "5",
     pdf: DSeriesAmplifiers,
+    manualPdf: dusermanual,
     relatedProducts: [
       {
         name: "D 200",
@@ -282,6 +290,7 @@ const products = [
     Size_mm: "482 x 330 x88 ",
     Weight: "10",
     pdf: PLSeriesAmplifiers,
+    manualPdf: PLUserManual,
     relatedProducts: [
       {
         name: "PL4.5",
@@ -327,6 +336,7 @@ const products = [
     Size_mm: "482 x 330 x88 ",
     Weight: "11",
     pdf: PLSeriesAmplifiers,
+    manualPdf: PLUserManual,
     relatedProducts: [
       {
         name: "PL4.1",
@@ -371,6 +381,7 @@ const products = [
     Size_mm: "482 x 330 x88 ",
     Weight: "11",
     pdf: PLSeriesAmplifiers,
+    manualPdf: PLUserManual,
     relatedProducts: [
       {
         name: "PL4.1",
@@ -415,6 +426,7 @@ const products = [
     Size_mm: "482 x 330 x88 ",
     Weight: "11",
     pdf: PLSeriesAmplifiers,
+    manualPdf: PLUserManual,
     relatedProducts: [
       {
         name: "PL4.1",
@@ -459,6 +471,7 @@ const products = [
     Size_mm: "483 x 442x88mm (H x W x D)",
     Weight: "15",
     pdf: TTAPDF,
+   manualPdf: ttauserManual,
     relatedProducts: [
       {
         name: "TTA-500",
@@ -508,6 +521,7 @@ const products = [
     Size_mm: "483 x 442x88mm",
     Weight: "17",
     pdf: TTAPDF,
+    manualPdf: ttauserManual,
     relatedProducts: [
       {
         name: "TTA-450",
@@ -557,6 +571,7 @@ const products = [
     Size_mm: "483 x 442x88mm (H x W x D)",
     Weight: "18",
     pdf: TTAPDF,
+    manualPdf: ttauserManual,
     relatedProducts: [
       {
         name: "TIP 1002",
@@ -607,6 +622,7 @@ const products = [
     Size_mm: "483 x 442x88mm",
     Weight: "20",
     pdf: TTAPDF,
+    manualPdf: ttauserManual,
     relatedProducts: [
       {
         name: "TIP 1602",
@@ -657,6 +673,7 @@ const products = [
     Size_mm: "(483 x 462 x 88) mm",
     Weight: "24",
     pdf: TTAPDF,
+    manualPdf: ttauserManual,
     relatedProducts: [
       {
         name: "TTA 1300",
@@ -707,6 +724,7 @@ const products = [
     Size_mm: " (483 x 462 x 88) mm",
     Weight: "26",
     pdf: TTAPDF,
+    manualPdf: ttauserManual,
     relatedProducts: [
       {
         name: "TTA-450",
@@ -757,6 +775,7 @@ const products = [
     Size_mm: "(483 x 462 x 88) mm",
     Weight: "23",
     pdf: TTAPDF,
+    manualPdf: ttauserManual,
     relatedProducts: [
       {
         name: "TTA-460",
@@ -807,6 +826,7 @@ const products = [
     Size_mm: "(483 x 462 x 88) mm",
     Weight: "25",
     pdf: TTAPDF,
+    manualPdf: ttauserManual,
     relatedProducts: [
       {
         name: "TTA-450",
@@ -857,6 +877,7 @@ const products = [
     Size_mm: "482 x 360 x 88mm",
     Weight: " 5.8",
     pdf: TIPPDF,
+    manualPdf: tipuserManual,
     relatedProducts: [
       {
         name: "TIP-1602",
@@ -901,6 +922,7 @@ const products = [
     Size_mm: "482 x 360 x 88mm",
     Weight: " 6.8",
     pdf: TIPPDF,
+    manualPdf: tipuserManual,
     relatedProducts: [
       {
         name: "TIP-1002",
@@ -945,6 +967,7 @@ const products = [
     Size_mm: "482 x 360 x 88mm",
     Weight: " 6.5",
     pdf: TIPPDF,
+    manualPdf: tipuserManual,
     relatedProducts: [
       {
         name: "TIP-1002",
@@ -989,6 +1012,7 @@ const products = [
     Size_mm: "482 x 360 x 88mm",
     Weight: " 7",
     pdf: TIPPDF,
+    manualPdf: tipuserManual,
     relatedProducts: [
       {
         name: "PL 1504",
@@ -1485,12 +1509,26 @@ const ProductDetail = () => {
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
                   View PDF
                 </a>
               </div>
 
               <hr className="border-t border-gray-300" />
+              <div className="flex justify-between items-center">
+                <p className="text-gray-700 text-lg font-bold">Manual</p>
+
+                <a
+                  href={`/view-pdf?url=${encodeURIComponent(
+                    product.manualPdf,
+                  )}&name=${product.model}_manual.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
+                  View PDF
+                </a>
+              </div>
+              <hr className="border-t my-2 border-gray-300" />
               {product?.title?.trim() === "DSP" && (
                 <div className="flex justify-between my-2 items-center">
                   <p className="text-gray-700 text-lg font-bold">
@@ -1502,7 +1540,7 @@ const ProductDetail = () => {
                     <a
                       href="/dl26.zip"
                       download
-                      className="px-4 py-2 bg-green-600 text-white rounded-lg text-sm md:text-base hover:bg-green-700 transition-colors">
+                      className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
                       Download
                     </a>
                   )}

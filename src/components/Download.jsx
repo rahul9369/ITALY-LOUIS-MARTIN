@@ -52,23 +52,23 @@ const pdfList = [
     filename: "Famous_210_Linearray_Datasheet.pdf",
   },
   {
-    title: "Q50_Linearray",
+    title: "QS50_Linearray",
     path: Q50pdf,
     filename: "Q50_Linearray_Datasheet.pdf",
   },
   {
-    title: "Q60_Linearray",
+    title: "QS60_Linearray",
     path: Q60pdf,
     filename: "Q60_Linearray_Datasheet.pdf",
   },
 
   {
-    title: "Q70_Linearray",
+    title: "QS70_Linearray",
     path: Q70pdf,
     filename: "Q70_Linearray_Datasheet.pdf",
   },
   {
-    title: "Q80_Linearray",
+    title: "QS80_Linearray",
     path: Q80pdf,
     filename: "Q80_Linearray_Datasheet.pdf",
   },

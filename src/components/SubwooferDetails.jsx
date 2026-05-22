@@ -72,6 +72,8 @@ import ft2402 from "../assets/tip1002/ft2402.jpg";
 import q60front from "../assets/q60/q60front.JPG";
 import q80f from "../assets/q80/q80f.JPG";
 import redfront5 from "../assets/red5/redfront5.jpg";
+import KSUserManual from "../assets/manual/KSUserManual.pdf";
+import SubUserManual from "../assets/manual/SubUserManual.pdf";
 const products = [
   {
     img: [ksf18, ksb18, kstop18, ks418, ksd18],
@@ -101,6 +103,7 @@ const products = [
     Size_mm: "910 x 610 x710mm (H x W x D)",
     Weight: "58/127.8",
     pdf: KS18a,
+    manualPdf: KSUserManual,
 
     // ✅ Related Products Section
     relatedProducts: [
@@ -157,6 +160,7 @@ const products = [
     Size_mm: "580 x 1160 x890mm (H x W x D)",
     Weight: "88/194.0",
     pdf: KS218a,
+    maualPdf: KSUserManual,
     relatedProducts: [
       {
         name: "TIP-2402",
@@ -210,6 +214,7 @@ const products = [
     Size_mm: "360x 421x 500mm (H x W x D)",
     Weight: "20/44.1",
     pdf: S12a,
+    manualPdf: SubUserManual,
     relatedProducts: [
       {
         name: "TTA-800",
@@ -264,6 +269,7 @@ const products = [
     Size_mm: "560 x 690 x 700mm (H x W x D)",
     Weight: "48/105.8",
     pdf: S18a,
+    manualPdf: SubUserManual,
     relatedProducts: [
       {
         name: "TIP-1602",
@@ -318,6 +324,7 @@ const products = [
     Size_mm: "580 x 1160 x890mm (H x W x D)",
     Weight: "78/171.9 ",
     pdf: S218a,
+    manualPdf: SubUserManual,
     relatedProducts: [
       {
         name: "TIP-2402",
@@ -598,12 +605,26 @@ const ProductDetail = () => {
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
                   View PDF
                 </a>
               </div>
 
               <hr className="border-t border-gray-300" />
+              <div className="flex justify-between items-center">
+                <p className="text-gray-700 text-lg font-bold">Manual</p>
+
+                <a
+                  href={`/view-pdf?url=${encodeURIComponent(
+                    product.manualPdf,
+                  )}&name=${product.model}_manual.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
+                  View PDF
+                </a>
+              </div>
+              <hr className="border-t my-2 border-gray-300" />
             </div>
           )}
         </div>

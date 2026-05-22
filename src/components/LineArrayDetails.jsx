@@ -66,6 +66,9 @@ import ft1003 from "../assets/tip1002/ft1003.jpg";
 
 //manual
 import redseriesmanual from "../assets/manual/redseriesmanual.pdf";
+import qseriesmanual from "../assets/manual/qseriesmanual.pdf";
+import COXUserManual from "../assets/manual/COXUserManual.pdf";
+import QSUserManual from "../assets/manual/QSUserManual.pdf";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -156,6 +159,7 @@ const products = [
     Size_mm: "286 x 478 x 360mm (H x W x D)",
     Weight: "16.8/37 ",
     pdf: Q50a,
+    manualPdf: QSUserManual,
     relatedProducts: [
       {
         name: "TTA-800",
@@ -211,6 +215,7 @@ const products = [
     Size_mm: "286 x 754 x 380mm (H x W x D)",
     Weight: "22.8/50.2 ",
     pdf: Q60a,
+      manualPdf: QSUserManual,
     relatedProducts: [
       {
         name: "TIP-1002",
@@ -265,6 +270,7 @@ const products = [
     Size_mm: "348 x 600 x 422mm (H x W x D)",
     Weight: "22/48.5 ",
     pdf: Q70a,
+    manualPdf: QSUserManual,
     relatedProducts: [
       {
         name: "TIP-1002",
@@ -320,6 +326,8 @@ const products = [
     Size_mm: "348 x 910 x 520mm (H x W x D)",
     Weight: "36.8/81.1 ",
     pdf: Q80a,
+      manualPdf: QSUserManual,
+
     relatedProducts: [
       {
         name: "TIP-1602",
@@ -376,6 +384,7 @@ const products = [
     Size_mm: "350 x 500 x 450mm (H x W x D)",
     Weight: "22/48.5 ",
     pdf: Cox112,
+      manualPdf: COXUserManual,
     relatedProducts: [
       {
         name: "TTA-800",
@@ -671,7 +680,7 @@ const ProductDetail = () => {
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
                   View PDF
                 </a>
               </div>
@@ -686,7 +695,7 @@ const ProductDetail = () => {
                   )}&name=${product.model}_manual.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-green-600 text-white rounded-lg text-sm md:text-base hover:bg-green-700 transition-colors">
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
                   View PDF
                 </a>
               </div>

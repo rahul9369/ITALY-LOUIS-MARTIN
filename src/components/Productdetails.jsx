@@ -98,6 +98,13 @@ import fronts12 from "../assets/s12/fronts12.JPG";
 import ft500 from "../assets/tta300/ft500.jpg";
 import sf18 from "../assets/s18/s18front.jpg";
 
+
+//manual//
+import FUserManual from "../assets/manual/FUserManual.pdf";
+
+//manual//
+import redseriesmanual from "../assets/manual/redseriesmanual.pdf";
+
 const products = [
   {
     img: [redfront, redback, redn, redside, redu],
@@ -132,6 +139,7 @@ const products = [
     Size_mm: "300 x 800 x 350mm (H x W x D)",
     Weight: "25/55.1 ",
     pdf: Red10PDF,
+    manualPdf: redseriesmanual,
     relatedProducts: [
       {
         name: "TTA-800",
@@ -186,6 +194,7 @@ const products = [
     Size_mm: "200 x320 x 200mm (H x W x D)",
     Weight: "9/19.8",
     pdf: Red6PDF,
+    manualPdf: redseriesmanual,
     relatedProducts: [
       {
         name: "TTA-300",
@@ -239,6 +248,7 @@ const products = [
     Size_mm: "200 x 200 x 200mm (H x W x D)",
     Weight: "6/13.2",
     pdf: Red5PDF,
+    manualPdf: redseriesmanual,
     relatedProducts: [
       {
         name: "D-200",
@@ -293,6 +303,7 @@ const products = [
     Size_mm: "310 x 320 x 310mm (H x W x D)",
     Weight: "15/33.06 ",
     pdf: Red9PDF,
+    manualPdf: redseriesmanual,
     relatedProducts: [
       {
         name: "TTA-500",
@@ -347,6 +358,7 @@ const products = [
     Size_mm: "350 x 350 x 330mm (H x W x D)",
     Weight: "18/39.6 ",
     pdf: Red12PDF,
+    manualPdf: redseriesmanual,
     relatedProducts: [
       {
         name: "TTA-500",
@@ -400,6 +412,7 @@ const products = [
     Size_mm: "435 x 299 x 269mm (H x W x D)",
     Weight: "12/26.4 ",
     pdf: F8,
+    manualPdf: FUserManual,
     relatedProducts: [
       {
         name: "TTA-300",
@@ -453,6 +466,7 @@ const products = [
     Size_mm: "500 x 351 x 317mm (H x W x D)",
     Weight: "17/37.4",
     pdf: F10,
+    manualPdf: FUserManual,
     relatedProducts: [
       {
         name: "TTA-500",
@@ -507,6 +521,7 @@ const products = [
     Size_mm: "600 x 398 x 365mm (H x W x D)",
     Weight: "25/55.1",
     pdf: F12,
+    manualPdf: FUserManual,
     relatedProducts: [
       {
         name: "TTA-800",
@@ -561,6 +576,7 @@ const products = [
     Size_mm: "690 x 470 x 443mm (H x W x D)",
     Weight: "30/66.1 ",
     pdf: F15PDF,
+    manualPdf: FUserManual,
     relatedProducts: [
       {
         name: "TIP-1002",
@@ -930,25 +946,28 @@ const ProductDetail = () => {
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
                   View PDF
                 </a>
               </div>
-              {/* //user manual is the same as datasheet for now, can be updated later if needed// */}
-              <div className="flex justify-between items-center mb-2">
-                <p className="text-gray-700 text-lg font-bold"> User Manual</p>
-                <a
-                  href={`/view-pdf?url=${encodeURIComponent(
-                    product.pdf,
-                  )}&name=${product.model}_specifications.pdf`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
-                  View manual
-                </a>
-              </div>
+             
 
               <hr className="border-t border-gray-300" />
+              <div className="flex justify-between items-center">
+                <p className="text-gray-700 text-lg font-bold">Manual</p>
+
+                <a
+                  href={`/view-pdf?url=${encodeURIComponent(
+                    product.manualPdf,
+                  )}&name=${product.model}_manual.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
+                  View PDF
+                </a>
+              </div>
+              <hr className="border-t my-2 border-gray-300" />
+              
             </div>
           )}
         </div>

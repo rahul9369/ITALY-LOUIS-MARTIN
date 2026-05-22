@@ -54,6 +54,7 @@ import tl45 from "../assets/tl55/tl45.jpg";
 import ft800 from "../assets/tta300/ft800.jpg";
 import sf18 from "../assets/s18/s18front.jpg";
 import Footer from "./Footer";
+import DSUserManual from "../assets/manual/DSUserManual.pdf";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 const products = [
@@ -88,6 +89,7 @@ const products = [
     Size_mm: "328 x 192 x 160mm (H x W x D)",
     Weight: "5/11.02 ",
     pdf: DS5PDF,
+
     relatedProducts: [
       {
         name: "D-200",
@@ -136,12 +138,13 @@ const products = [
     Max_SPL_Peak: "121 dB ",
     Nominal_Impedance: "8 Ohms",
     Crossover_Mode: "Passive",
-    Dispersion: "90° (H) x 60° (V)",
+    Dispersion: "115°(H) x 115°(V)",
     Cabinet_Material: "Plastic materials",
     IP_Rating: "IP 54 Weatherproof",
     Size_mm: "470 x 230 x 260mm (H x W x D)",
     Weight: "8/17.6 ",
     pdf: DS8PDF,
+    manualPdf: DSUserManual,
     relatedProducts: [
       {
         name: "D-200",
@@ -195,6 +198,7 @@ const products = [
     Size_mm: "425 x 415 x 435mm (H x W x D)",
     Weight: "17/37.4 ",
     pdf: DS12PDF,
+
     relatedProducts: [
       {
         name: "TTA-800",
@@ -248,6 +252,7 @@ const products = [
     Size_mm: "490 x 490 x 520mm (H x W x D)",
     Weight: "25/55.1",
     pdf: DS15PDF,
+    manualPdf: DSUserManual,
     relatedProducts: [
       {
         name: "TIP-1002",
@@ -652,12 +657,26 @@ const ProductDetail = () => {
                   )}&name=${product.model}_specifications.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm md:text-base hover:bg-blue-700 transition-colors">
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
                   View PDF
                 </a>
               </div>
 
               <hr className="border-t border-gray-300" />
+              <div className="flex justify-between items-center">
+                <p className="text-gray-700 text-lg font-bold">Manual</p>
+
+                <a
+                  href={`/view-pdf?url=${encodeURIComponent(
+                    product.manualPdf,
+                  )}&name=${product.model}_manual.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm md:text-base hover:bg-red-700 transition-colors">
+                  View PDF
+                </a>
+              </div>
+              <hr className="border-t my-2 border-gray-300" />
             </div>
           )}
         </div>
