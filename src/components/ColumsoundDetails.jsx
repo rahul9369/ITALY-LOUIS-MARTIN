@@ -572,7 +572,7 @@ const ProductDetail = () => {
                 </a>
               </div>
 
-              <hr className="border-t border-gray-300" />
+              <hr className="border-t my-2 border-gray-300" />
               <div className="flex justify-between items-center">
                 <p className="text-gray-700 text-lg font-bold">Manual</p>
 
