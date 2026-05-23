@@ -75,7 +75,7 @@ import q80f from "../assets/q80/q80f.JPG";
 import sf218 from "../assets/s218/sf218.JPG";
 import ttauserManual from "../assets/manual/ttauserManual.pdf";
 import tipuserManual from "../assets/manual/tipuserManual.pdf";
-import dusermanual from "../assets/manual/duserManual.pdf";
+import dusermanual from "../assets/manual/dusermanual.pdf";
 import PLUserManual from "../assets/manual/PLUserManual.pdf";
 
 import q60front from "../assets/q60/q60front.JPG";
